@@ -1,0 +1,152 @@
+[
+  {
+    "id": "adm01",
+    "category": "general_admissions",
+    "question": "What is a non-degree student at IIT Jodhpur?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm02",
+    "category": "general_admissions",
+    "question": "Who can be admitted as a casual student for specific courses?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm03",
+    "category": "general_admissions",
+    "question": "What academic activities can a non-degree student undertake at IIT Jodhpur?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm04",
+    "category": "general_admissions",
+    "question": "How must a non-degree student's application be routed?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm05",
+    "category": "general_admissions",
+    "question": "What rules apply to students admitted as non-degree students?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm06",
+    "category": "general_admissions",
+    "question": "When can I apply for a particular program at IIT Jodhpur according to the admissions FAQ?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm07",
+    "category": "general_admissions",
+    "question": "What are the two general application periods mentioned in the admissions FAQ?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm08",
+    "category": "general_admissions",
+    "question": "What are the eligibility requirements mentioned for the Ph.D. at the School of AI and Data Science?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm09",
+    "category": "general_admissions",
+    "question": "What processing fee is required for the School of AI and Data Science Ph.D. application?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm10",
+    "category": "general_admissions",
+    "question": "What documents must shortlisted School of AI and Data Science Ph.D. applicants bring?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm11",
+    "category": "general_admissions",
+    "question": "What are the categories of postgraduate admission at IIT Jodhpur?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm12",
+    "category": "general_admissions",
+    "question": "Are all postgraduate admission categories applicable to every PG program?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm13",
+    "category": "general_admissions",
+    "question": "When is postgraduate admission normally underway for Semester 1?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm14",
+    "category": "general_admissions",
+    "question": "What happens if an admitted student fails to submit required documents by the specified deadline?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "adm15",
+    "category": "general_admissions",
+    "question": "What does IIT Jodhpur require for admission to an undergraduate program?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "unknown01",
+    "category": "unsupported_in_scope",
+    "question": "What is the exact IIT Jodhpur B.Tech tuition fee per semester?",
+    "expected": "unsupported_in_scope"
+  },
+  {
+    "id": "unknown02",
+    "category": "unsupported_in_scope",
+    "question": "What are the hostel facilities for B.Tech students?",
+    "expected": "unsupported_in_scope"
+  },
+  {
+    "id": "unknown03",
+    "category": "unsupported_in_scope",
+    "question": "What research areas are available in Electrical Engineering?",
+    "expected": "unsupported_in_scope"
+  },
+  {
+    "id": "unknown04",
+    "category": "unsupported_in_scope",
+    "question": "What are the mess facilities at IIT Jodhpur?",
+    "expected": "unsupported_in_scope"
+  },
+  {
+    "id": "unknown05",
+    "category": "unsupported_in_scope",
+    "question": "How many student hostels are there at IIT Jodhpur?",
+    "expected": "unsupported_in_scope"
+  },
+  {
+    "id": "phd08",
+    "category": "phd",
+    "question": "How much work experience is required for sponsored, external, or part-time Ph.D. admission?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "phd07",
+    "category": "phd",
+    "question": "What are the Ph.D. eligibility requirements for sponsored, external, or part-time admission?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "phd06",
+    "category": "phd",
+    "question": "Can a four-year bachelor's degree qualify someone for Ph.D. admission?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "phd05",
+    "category": "phd",
+    "question": "What professional qualifications are accepted for Ph.D. admission?",
+    "expected": "answerable_in_scope"
+  },
+  {
+    "id": "phd04",
+    "category": "phd",
+    "question": "What minimum percentage is required for SC/ST candidates with a master's degree?",
+    "expected": "answerable_in_scope"
+  }
+]

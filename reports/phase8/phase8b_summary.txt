@@ -1,0 +1,218 @@
+PHASE 8B — REAL-WORLD EVALUATION
+========================================================================
+Generated: 2026-09-01T17:12:53
+Cases: 10
+PASS: 10 | CHECK: 0 | FAIL: 0
+Broad: 5/5 PASS
+Narrow: 5/5 PASS
+Average latency: 4.56s
+Max latency: 13.91s
+
+------------------------------------------------------------------------
+[01] broad_programs | PASS
+QUESTION: What academic programs are available at IIT Jodhpur?
+RESOLVED: What academic programs are available at IIT Jodhpur?
+RETRIEVAL: What academic programs are available at IIT Jodhpur?
+EVIDENCE: supported (score=0.357)
+COVERAGE: supported (type=list)
+LATENCY: 13.912s
+TOP SOURCES:
+  1. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/schools/artificial_intelligence_and_data_science/programs.docx
+     The PhD program at present is designed to offer degrees in the following areas: Divya Saxena IIT Jodhpur PhD in Computational and Mathematical Economics Hosted by: Center for Computational and Mathematical Economics, SAIDE
+  2. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/schools/artificial_intelligence_and_data_science/programs.docx
+     IIT Jodhpur — School of Artificial Intelligence and Data Science — Programs IIT Jodhpur • School of Artificial Intelligence and Data Science • Programs Internship Programs The Internship Program in AI and DS at AIDE is designed to bridge the gap between academ...
+  3. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/departments/bioscience_and_bioengineering/overview.docx
+     The Department of Bioscience & Bioengineering at IIT Jodhpur, established in 2009 offers a B.Tech. program in Bioengineering, an M.Tech. and M.Tech-Ph.D. dual degree programs in Bioscience & Bioengineering. Our programs are uniquely designed to inspire innovat...
+  4. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/departments/bioscience_and_bioengineering/overview.docx
+     We also offer a competitive Ph.D. program to inculcate scientific temper, independent thinking, and skillsets for scientific entrepreneurship. We encourage and provide avenues for the participation of bioengineering graduates with diverse engineering disciplin...
+  5. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/schools/artificial_intelligence_and_data_science/programs.docx
+     The School runs degree, diploma and certificate programmes in online and/or part-time mode for interested learners, having different career paths and different levels of preparation. This will include specialised programmmes meeting need of working professiona...
+ANSWER:
+IIT Jodhpur offers a diverse range of academic programs across disciplines, including: ### **1. Undergraduate Programs** - **B.Tech. in Bioengineering** (Department of Bioscience & Bioengineering) - **B.Tech. programs** (other disciplines, though specific details are not listed in the retrieved context). ### **2. Postgraduate Programs** - **M.Tech. in Bioscience & Bioengineering** (Department of Bioscience & Bioengineering) - **M.Tech-Ph.D. dual degree programs** in Bioscience & Bioengineering - **Ph.D. programs**: - *Computational and Mathematical Economics* (hosted by Center for Computational and Mathematical Economics, SAIDE) - *Bioengineering* (focus areas: affordable healthcare, clean environment, precision medicine, sustainable energy, etc.) - **M.S. (by Research)** in AI & DS (offered by Centre of Excellence on Brain Science and Applications, CBSA) ### **3. Specialized and Flexible Programs** - **Internship Programs** in AI and Data Science (AIDE School) - **Diploma and Certific
+[TRUNCATED — FULL ANSWER IN JSON]
+------------------------------------------------------------------------
+[02] broad_departments | PASS
+QUESTION: What departments are there at IIT Jodhpur?
+RESOLVED: What departments are there at IIT Jodhpur?
+RETRIEVAL: What departments are there at IIT Jodhpur?
+EVIDENCE: supported (score=1.0)
+COVERAGE: supported (type=list)
+LATENCY: 2.867s
+TOP SOURCES:
+  1. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/departments/bioscience_and_bioengineering/overview.docx
+     The Department of Bioscience & Bioengineering at IIT Jodhpur, established in 2009 offers a B.Tech. program in Bioengineering, an M.Tech. and M.Tech-Ph.D. dual degree programs in Bioscience & Bioengineering. Our programs are uniquely designed to inspire innovat...
+  2. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_accounts/overview.docx
+     We work closely with various departments to streamline financial processes and provide timely financial insights for informed decision-making. We also focus on continuous improvement and innovation in financial management practices. Through regular audits, fin...
+  3. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_accounts/overview.docx
+     The Office of Accounts at the Indian Institute of Technology Jodhpur is dedicated to managing the institute's financial resources with transparency, accuracy, and integrity. Our mission is to ensure effective financial planning, budgeting, and reporting to sup...
+  4. data/data_iitj/iitj_rag_v1_docs_production/departments/chemistry/overview.docx
+     In short IIT Jodhpur Chemistry department is where Chemistry meets Technology through Collaboration, Communication and Cooperation. I encourage the future aspirants to get enrolled at IIT Jodhpur and wish you all the very best in your future endeavours. | The ...
+ANSWER:
+IIT Jodhpur has several academic departments, including: - **Department of Bioscience & Bioengineering** Offers programs like B.Tech in Bioengineering, M.Tech in Bioscience & Bioengineering (with M.Tech-Ph.D. dual degree options). Research focuses on neurosciences, computational biology, environmental microbiology, and bioprospecting in the Thar ecoregion. - **Department of Chemistry** Emphasizes collaboration between chemistry and technology, with research areas in active chemical innovation and interdisciplinary projects. *(Note: The retrieved context only explicitly mentions these two departments. Further details about other departments would require additional information.)*
+------------------------------------------------------------------------
+[03] broad_research | PASS
+QUESTION: What research opportunities are available at IIT Jodhpur?
+RESOLVED: What research opportunities are available at IIT Jodhpur?
+RETRIEVAL: What research opportunities are available at IIT Jodhpur?
+EVIDENCE: supported (score=0.607)
+COVERAGE: supported (type=list)
+LATENCY: 4.126s
+TOP SOURCES:
+  1. data/data_iitj/iitj_rag_v1_docs_production/departments/economics/research.docx
+     IIT Jodhpur — Economics — Research IIT Jodhpur • Economics • Research
+  2. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/departments/economics/research.docx
+     Find out about our research areas, thematic expertise, and faculty research interests in the Department of Economics at IIT Jodhpur. The Department of Economics at IIT Jodhpur promotes interdisciplinary and technology-driven research to address emerging econom...
+  3. data/data_iitj/iitj_rag_v1_docs_production/schools/artificial_intelligence_and_data_science/research.docx
+     IIT Jodhpur invites applications for project-linked research to various funded projects in specific disciplines and interdisciplinary areas. Broad Research Areas in SAIDE Foundational AI & DS AI & DS Applications Brain Science and Applications Mathematical and...
+  4. data/data_iitj/iitj_rag_v1_docs_production/research/research.docx
+     IIT Jodhpur — Research IIT Jodhpur • Research • Research Current Research Areas
+  5. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/departments/electrical_engineering/research.docx
+     ](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems) If you wish to browse Research Areas mapped to the Technology Tracks of the Department, please click on the respective Tracks below to view the research themes, associated research groups, lab...
+ANSWER:
+IIT Jodhpur offers diverse research opportunities across disciplines, including: 1. **Broad Research Areas in SAIDE**: - Foundational AI & Data Science (AI & DS) - AI & DS Applications - Brain Science and Applications - Mathematical and Computational Economics 2. **Interdisciplinary Research**: - Integration of economics with data science, engineering systems, sustainability studies, and policy analytics. - Collaboration through Interdisciplinary Research Platforms (IDRPs) across departments. 3. **Postdoctoral Opportunities**: - Project-linked research positions in specific disciplines and interdisciplinary areas. 4. **Technology Track Research**: - Research themes mapped to Technology Tracks (e.g., Control Systems, Wireless Communications) with associated labs and faculty. 5. **Glocal Approach**: - Combining globally informed research with locally relevant applications to address societal and environmental challenges. For detailed department-specific research areas, visit the respecti
+[TRUNCATED — FULL ANSWER IN JSON]
+------------------------------------------------------------------------
+[04] broad_facilities | PASS
+QUESTION: What facilities are available at IIT Jodhpur?
+RESOLVED: What facilities are available at IIT Jodhpur?
+RETRIEVAL: What facilities are available at IIT Jodhpur?
+EVIDENCE: supported (score=1.0)
+COVERAGE: supported (type=list)
+LATENCY: 4.228s
+TOP SOURCES:
+  1. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/research_and_technology_facilities/facilities.docx
+     The Health Centre (HC) has been started at the Permanent Campus of IIT Jodhpur from 15 June 2017. IIT Jodhpur provides round-the-clock health care facilities to Students, Faculty/ Staff Members and their dependents, also other residents and working staff of th...
+  2. data/data_iitj/iitj_rag_v1_docs_production/research_and_technology_facilities/facilities.docx
+     State-of-the-art laboratories supporting biotechnology, life sciences, and deep tech research and development. The Fab is equipped with a set of instruments for the development & characterization of sensors of various kinds that are the foundation of an IoT ec...
+  3. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/research_and_technology_facilities/facilities.docx
+     Two important facilities are created for the development of AIOT technologies by faculty and Students of IIT Jodhpur, with participation of industry and other academic partners
+  4. data/data_iitj/iitj_rag_v1_docs_production/departments/materials_engineering/facilities.docx
+     IIT Jodhpur — Materials Engineering — Facilities IIT Jodhpur • Materials Engineering • Facilities Metallography Laboratory The characterization of various materials is done in the metallography Laboratory for teaching and research activities. The laboratory cu...
+  5. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/departments/materials_engineering/facilities.docx
+     Density measurement system for solids Specimen leveling press Metallography Laboratory equipment image 3. Mechanical Testing Laboratory The Mechanical Testing Laboratory supports teaching and research activities in the area of materials processing, testing, an...
+ANSWER:
+IIT Jodhpur offers a wide range of facilities, including: ### **Health Centre (HC)** - **24/7 Medical Officers** and **Nursing Officers** (male & female). - **Regular visits** by specialist doctors (Psychiatrist, Gynaecologist, Paediatrician, ENT, Medicine, Orthopaedician). - **Diagnostic Laboratory** for medical testing. - Round-the-clock healthcare services for students, faculty, staff, and their dependents. ### **Research & Development Facilities** 1. **Fab Facility (AIoT Fab)**: - State-of-the-art instruments for sensor development and IoT ecosystems. - Focus areas: photonics, biotechnology, solar cells, flexible sensors, and wearable devices. - Includes MEMS technology for inertial sensors. - Ongoing upgrades with new instruments. 2. **Metallography Laboratory**: - Equipment: Grinding/polishing machines, metallographic specimen cutoff machine, stereo-zoom microscopes, electronic weigh balance, density measurement system, specimen leveling press. 3. **Mechanical Testing Laboratory*
+[TRUNCATED — FULL ANSWER IN JSON]
+------------------------------------------------------------------------
+[05] broad_admissions | PASS
+QUESTION: What admission opportunities are available at IIT Jodhpur?
+RESOLVED: What admission opportunities are available at IIT Jodhpur?
+RETRIEVAL: admission admission application requirements
+EVIDENCE: supported (score=1.0)
+COVERAGE: supported (type=requirements)
+LATENCY: 4.564s
+TOP SOURCES:
+  1. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx
+     Application Process and Shortlist Interested students apply to the company and submit their resumes through the Student Placements Committee. The selection process generally consists of resume-based shortlisting and one or more rounds of personal interviews. T...
+  2. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx
+     Certain professional qualifications (e.g., MBBS with MD) are also accepted​ OR The applicant must have a bachelor’s degree of minimum four-year duration in engineering or science or medicine or pharmacy or agricultural science or veterinary science or design o...
+  3. data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx
+     IIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions 20.2.3 Admission to M Tech Program (Regular) The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Phar...
+  4. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx
+     IIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions
+  5. data/data_iitj/iitj_rag_v1_docs_production/admissions/phd_admissions.docx
+     IIT Jodhpur — Admissions — Phd Admissions IIT Jodhpur • Admissions • Phd Admissions Advertisement for Admission to PhD Program
+ANSWER:
+IIT Jodhpur offers the following admission opportunities based on the provided information: ### **1. MTech Admissions (Regular)** - **Eligibility**: - Bachelor’s degree in engineering, science (4-year program), or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences, Veterinary Sciences, or related fields. - Minimum **60% marks** (55% for SC/ST) in aggregate or as specified by the university/institute. - Alternatively, a **CGPA of 6.0** (5.5 for SC/ST) on a 10-point scale, with proportional requirements for other scales (e.g., 4.8 for GEN/OBC on an 8-point scale). - First-class qualification as specified by the university/institute may also be acceptable. ### **2. Ph.D. Admissions** - **Eligibility**: - A **master’s degree** in a relevant discipline with a minimum of **60% marks** (or equivalent CGPA). - **Full-time** Ph.D. candidates dedicate all their time to research. - **Part-time** Ph.D. candidates are working professionals (often employed by extern
+[TRUNCATED — FULL ANSWER IN JSON]
+------------------------------------------------------------------------
+[06] narrow_mtech | PASS
+QUESTION: What is the M.Tech eligibility?
+RESOLVED: What is the M.Tech eligibility?
+RETRIEVAL: M.Tech eligibility requirements
+EVIDENCE: supported (score=1.0)
+COVERAGE: supported (type=requirements)
+LATENCY: 4.042s
+TOP SOURCES:
+  1. data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx
+     IIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions 20.2.3 Admission to M Tech Program (Regular) The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Phar...
+  2. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx
+     IIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions
+  3. data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx
+     The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. 20.2.2 Admission to M Sc – M Tech...
+ANSWER:
+To be eligible for the **M.Tech (Regular) program** at IIT Jodhpur, applicants must meet the following criteria: ### **Academic Qualifications** 1. **Bachelor’s Degree**: - A **bachelor’s degree in engineering or science** (4-year program) - OR a **master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences, Veterinary Sciences**, or a related field. 2. **Minimum Academic Performance**: - **60% marks** (or equivalent CGPA) for **GEN/OBC** categories. - **55% marks** (or equivalent CGPA) for **SC/ST** categories. - **CGPA Requirements**: - **6.0** (or equivalent) for GEN/OBC (on a 10-scale). - **5.5** (or equivalent) for SC/ST (on a 10-scale). - For other scales (e.g., 8-scale), proportional requirements apply: - **4.8** for GEN/OBC (4.4 for SC/ST). ### **Entrance Exam Requirements** Applicants must satisfy **one of the following**: 1. **Valid GATE Score**: - A valid GATE score as per the MHRD guidelines. 2. **Exemption from GATE**: - Exempted under the MHRD circu
+[TRUNCATED — FULL ANSWER IN JSON]
+------------------------------------------------------------------------
+[07] narrow_phd | PASS
+QUESTION: What are the regular Ph.D. eligibility requirements?
+RESOLVED: What are the regular Ph.D. eligibility requirements?
+RETRIEVAL: regular Ph.D. requirements criteria
+EVIDENCE: supported (score=1.0)
+COVERAGE: supported (type=requirements)
+LATENCY: 4.080s
+TOP SOURCES:
+  1. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/programs/phd/general_information.docx
+     In case of any query with respect to online application, applicants may contact the Office of Automation (Academics) (oaautomation@iitj.ac.in). Other general queries may be directed to the PhD Program Coordinator, Dr. Deepak Saxena, at pgcconvener@cete.iitj.ac...
+  2. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/programs/phd/general_information.docx
+     Detailed information about the Faculty Members and their research areas can be obtained from the Center’s website at iitj.ac.in/cete. Application Procedure This is a rolling advertisement , and the Cut-off date/Application Deadline for the Fall Semester is 20 ...
+  3. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/programs/phd/general_information.docx
+     The relaxation for SC/ST/PD candidates in the qualifying degree marks is as per Ministry of Education rules. (i) Candidates admitted in the PhD Program in Regular Mode shall not be a registered student in any other academic program in India or abroad, and shal...
+ANSWER:
+The regular Ph.D. eligibility requirements at IIT Jodhpur include the following: 1. **Minimum Qualifications**: Candidates must meet the absolute minimum eligibility criteria prescribed by the institute. These criteria are based on academic qualifications and qualifying exams, though specific details (e.g., minimum marks, qualifying exams) are not explicitly outlined in the provided context. 2. **Relaxation for SC/ST/PD Candidates**: The qualifying degree marks are relaxed as per the rules of the Ministry of Education. 3. **Employment Status**: Candidates admitted in the regular Ph.D. mode must not be registered students in any other academic program (in India or abroad) or employed as full-time/part-time employees of any organization (in India or abroad). 4. **Admission Process**: CETE (Center for Excellence in Teaching and Education) may apply higher performance criteria than the minimum if the number of applications exceeds available seats. For detailed eligibility criteria, applica
+[TRUNCATED — FULL ANSWER IN JSON]
+------------------------------------------------------------------------
+[08] narrow_robotics | PASS
+QUESTION: Which Electrical Engineering research area explicitly mentions robotics?
+RESOLVED: Which Electrical Engineering research area explicitly mentions robotics?
+RETRIEVAL: electrical engineering research areas topics robotics | electrical engineering research areas topics | electrical engineering robotics
+EVIDENCE: supported (score=0.667)
+COVERAGE: supported (type=descriptive)
+LATENCY: 2.649s
+TOP SOURCES:
+  1. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/departments/electrical_engineering/research.docx
+     2D materials: MoS2, AlGaN/GaN HEMTs Bandgap engineering and surface studies of semiconductors Micro and Nano device fabrications Organic and Flexible Electronics: Field-effect transistors (FETs), Circuits, and Sensors Electrical characterization, Parameter ext...
+  2. data/data_iitj/iitj_rag_v1_docs_production/departments/electrical_engineering/research.docx
+     IIT Jodhpur — Electrical Engineering — Research IIT Jodhpur • Electrical Engineering • Research Associated Research Groups Rate, reliability and complexity limits in MIMO communications Performance improvement and security of Optical Wireless Communications Mi...
+  3. data/data_iitj/iitj_rag_v1_docs_production/departments/electrical_engineering/research.docx
+     ](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems) If you wish to browse Research Areas mapped to the Technology Tracks of the Department, please click on the respective Tracks below to view the research themes, associated research groups, lab...
+  4. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/departments/electrical_engineering/research.docx
+     Source Original source URLs preserved from the Command 5 knowledge source. http://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH https://www.iitj.ac.in/Electrical-Engineering/en/Communication-Engineering https://www.iitj.ac.in/Electrical-Engineering/en...
+  5. data/data_iitj/iitj_rag_v1_docs_production/departments/electrical_engineering/overview.docx
+     Electrical Engineering Electrical Engineering, IIT Jodhpur The Department maintains active collaborations with leading industries, research laboratories, healthcare institutions, and government agencies in areas such as sustainable energy systems, cyber-physic...
+ANSWER:
+The Electrical Engineering research area at IIT Jodhpur that explicitly mentions robotics is **"Adaptive control & robotics"**. This is directly listed in the research groups associated with the department's interdisciplinary efforts.
+------------------------------------------------------------------------
+[09] narrow_hostel | PASS
+QUESTION: What are the short-term hostel rates?
+RESOLVED: What are the short-term hostel rates?
+RETRIEVAL: hostel information
+EVIDENCE: supported (score=0.5)
+COVERAGE: partially_supported (type=descriptive)
+LATENCY: 2.437s
+TOP SOURCES:
+  1. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/hostel_accommodation/general_information.docx
+     Hostel accommodation at IIT Jodhpur is managed by the Office of Students(Hostel Affairs) through an online ERP-based booking and allotment system. The booking process and charges vary depending on the duration of stay and the category of the resident (student,...
+  2. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/hostel_accommodation/general_information.docx
+     Indian Institute of Technology Jodhpur (IIT Jodhpur) offers comprehensive on- campus residential facilities that form an integral
+ANSWER:
+The retrieved context indicates that short-term hostel accommodation at IIT Jodhpur is available for visitors, interns, executive students, and approved invitees for stays not exceeding 10 days. However, the specific rates or fees for short-term stays are not provided in the available information. Charges are mentioned to vary based on the duration of stay and the resident category (e.g., student, staff, visitor). For exact pricing details, please refer to the official hostel fee structure or contact the Office of Students (Hostel Affairs) directly.
+------------------------------------------------------------------------
+[10] narrow_msc | PASS
+QUESTION: What are the admission routes for M.Sc.?
+RESOLVED: What are the admission routes for M.Sc.?
+RETRIEVAL: m.sc admission application requirements
+EVIDENCE: supported (score=1.0)
+COVERAGE: supported (type=requirements)
+LATENCY: 2.677s
+TOP SOURCES:
+  1. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx
+     The procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate. Please note that admissions to M.Sc. and Ph.D programs in Digital Humanities for AY 2021-2022 are now complete, and no further Waiting List may ...
+  2. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx
+     Composite Score Personal Interview 20.1 Categories of Admission [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.1%20%20Categories%20of%20Admission) A candidate can be admitted in any one of the following categories ...
+  3. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx
+     [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top10.5%20Cancellation%20of%20Admission) Students admitted provisionally or otherwise to any Program shall submit copies of their mark sheets, provisional certificates, etc....
+  4. /mnt/raid/rl_gaming/IITJ_V1_SERVER/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx
+     Application Process and Shortlist Interested students apply to the company and submit their resumes through the Student Placements Committee. The selection process generally consists of resume-based shortlisting and one or more rounds of personal interviews. T...
+  5. data/data_iitj/iitj_rag_v1_docs_production/admissions/msc_admissions.docx
+     IIT Jodhpur — Admissions — Msc Admissions IIT Jodhpur • Admissions • Msc Admissions 20.2.1 Admission to M. The admission to the M.Sc. Programs offered by the Institute will be through any one of the following two avenues. The applicants qualified through the J...
+ANSWER:
+The admission routes for M.Sc. programs at IIT Jodhpur are as follows: 1. **Joint Admission Test for Master's (JAM)**: Candidates qualified through the JAM organized by IITs. 2. **Institute-Conducted Process**: Applicants with a bachelor’s degree in a relevant discipline (3- or 4-year program) may be admitted based on a written test and/or interview conducted by IIT Jodhpur. These are the two primary avenues specified for M.Sc. admissions.
+
+========================================================================
+INTERPRETATION
+========================================================================
+PASS = structurally healthy evidence/answer path.
+CHECK = pipeline worked but requires human factual/scope review.
+FAIL = runtime failure, empty answer, or internal leakage.
+This is not a factual accuracy score.

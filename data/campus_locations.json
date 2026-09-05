@@ -1,0 +1,311 @@
+[
+    {
+        "id": "lecture_hall_complex",
+        "name": "Lecture Hall Complex",
+        "aliases": [
+            "lhc",
+            "lecture hall",
+            "lecture halls",
+            "classrooms",
+            "xerox",
+            "photocopy",
+            "printing"
+        ],
+        "category": "Academic",
+        "description": "The primary academic complex where lectures, tutorials, examinations, and academic activities are conducted. A Xerox/photocopy and printing facility is also available here.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/f17EDGE344LJCyMa6",
+        "directions": "Located in the central academic area of the campus.",
+        "help_text": "Visit this location for regular classes, lectures, examinations, and Xerox/photocopy and printing services.",
+        "show_in_map": true
+    },
+    {
+        "id": "new_mess",
+        "name": "New Mess",
+        "aliases": [
+            "new mess",
+            "mess",
+            "mess hall",
+            "dining hall"
+        ],
+        "category": "Food",
+        "description": "The primary dining facility serving breakfast, lunch, snacks, and dinner for students.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/ugRtcBLtbyFvvn966",
+        "directions": "Located near the hostel area.",
+        "help_text": "Check the daily mess timings before visiting.",
+        "show_in_map": true
+    },
+    {
+        "id": "old_mess",
+        "name": "Old Mess",
+        "aliases": [
+            "old mess",
+            "mess 1",
+            "old dining hall",
+            "canteen"
+        ],
+        "category": "Food",
+        "description": "The original dining facility on campus used by students.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/j851yrSpEK8HvveE9",
+        "directions": "Located within the older hostel area.",
+        "help_text": "Visit during operational hours for meals.",
+        "show_in_map": true
+    },
+    {
+        "id": "ramanujan_computer_centre",
+        "name": "Ramanujan Computer Centre",
+        "aliases": [
+            "rcc",
+            "computer centre",
+            "computer center",
+            "ramanujan"
+        ],
+        "category": "Academic",
+        "description": "Provides computing facilities, internet services, and IT support for the institute.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/rXfr8ik7Y1Ku7QNt6",
+        "directions": "Located in the academic area.",
+        "help_text": "Visit for institute IT-related support and computing facilities.",
+        "show_in_map": true
+    },
+    {
+        "id": "library",
+        "name": "S. R. Ranganathan Learning Hub",
+        "aliases": [
+            "library",
+            "learning hub",
+            "sr library",
+            "central library"
+        ],
+        "category": "Academic",
+        "description": "The central library offering books, journals, digital resources, and study spaces.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/5XEGpJtfQvr7fnX49",
+        "directions": "Located in the academic area.",
+        "help_text": "Carry your institute ID card while visiting the library.",
+        "show_in_map": true
+    },
+    {
+        "id": "o3_rudra_palash_hostel",
+        "name": "O-3 Rudra Palash Hostel",
+        "aliases": [
+            "o3",
+            "rudra palash",
+            "boys hostel",
+            "o3 hostel"
+        ],
+        "category": "Hostel",
+        "description": "A boys' hostel providing residential accommodation for students.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/52T5k3yRz5caQwh1A",
+        "directions": "Located in the O-block hostel area.",
+        "help_text": "Only authorised residents and visitors are permitted.",
+        "show_in_map": true
+    },
+    {
+        "id": "e15_berms",
+        "name": "E-15 Berms",
+        "aliases": [
+            "e15",
+            "e-15",
+            "berms",
+            "e15 hostel"
+        ],
+        "category": "Hostel",
+        "description": "A student residential area on the IIT Jodhpur campus.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/8CR471LgB9ETFfEM9",
+        "directions": "Located in the E-block residential area.",
+        "help_text": "Follow hostel rules while visiting.",
+        "show_in_map": true
+    },
+    {
+        "id": "g4_shirish_hostel",
+        "name": "G-4 Shirish Hostel",
+        "aliases": [
+            "g4",
+            "shirish",
+            "girls hostel",
+            "g4 hostel"
+        ],
+        "category": "Hostel",
+        "description": "A girls' hostel providing residential accommodation for students.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/fhVKTS5cyXYG5nVN6",
+        "directions": "Located in the G-block hostel area.",
+        "help_text": "Only authorised residents and visitors are permitted.",
+        "show_in_map": true
+    },
+    {
+        "id": "fresh_n_green",
+        "name": "Fresh n Green",
+        "aliases": [
+            "fresh n green",
+            "supermarket",
+            "grocery",
+            "store"
+        ],
+        "category": "Shopping",
+        "description": "The campus supermarket for groceries, snacks, and daily essentials.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/7JrpuLTvuThKurr88",
+        "directions": "Located inside the campus shopping area.",
+        "help_text": "Visit during store operating hours.",
+        "show_in_map": true
+    },
+    {
+        "id": "b1_lane",
+        "name": "B-1 Lane",
+        "aliases": [
+            "b1",
+            "b lane",
+            "b-1",
+            "b1 lane"
+        ],
+        "category": "Campus",
+        "description": "A campus lane connecting multiple residential and institute buildings.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/PqW6az6FdUEddxkj8",
+        "directions": "Located within the B-block area.",
+        "help_text": "Use the map link for accurate navigation.",
+        "show_in_map": true
+    },
+    {
+        "id": "knowledge_tree",
+        "name": "Knowledge Tree",
+        "aliases": [
+            "knowledge tree",
+            "kt",
+            "meeting point",
+            "tree"
+        ],
+        "category": "Campus",
+        "description": "A well-known campus landmark and a popular student meeting point.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/m5rzJBNdNrHuDRw9A",
+        "directions": "Located near the central campus area.",
+        "help_text": "A common place to meet before events and activities.",
+        "show_in_map": true
+    },
+    {
+        "id": "main_gate",
+        "name": "Main Gate",
+        "aliases": [
+            "main gate",
+            "gate 1",
+            "gate no 1",
+            "entrance"
+        ],
+        "category": "Campus",
+        "description": "The primary entrance and exit point of IIT Jodhpur.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/RzVwSFQodFzHLetT6",
+        "directions": "Located at the main entrance of the campus.",
+        "help_text": "Visitors should carry a valid government or institute ID.",
+        "show_in_map": true
+    },
+    {
+        "id": "shamiyana_food_court",
+        "name": "Shamiyana Food Court",
+        "aliases": [
+            "shamiyana",
+            "food court",
+            "canteen",
+            "restaurants"
+        ],
+        "category": "Food",
+        "description": "A food court with multiple eateries offering meals, beverages, and snacks.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/5gSUXdLxNHR65eHv5",
+        "directions": "Located in the student activity area.",
+        "help_text": "Multiple food outlets are available here.",
+        "show_in_map": true
+    },
+    {
+        "id": "admin_block",
+        "name": "IITJ Admin Block",
+        "aliases": [
+            "admin block",
+            "administration",
+            "admin",
+            "office"
+        ],
+        "category": "Administration",
+        "description": "The institute's administrative building housing major administrative offices.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/DyXtw9p4fjTYeisP8",
+        "directions": "Located near the academic area.",
+        "help_text": "Visit for official administrative and student-related services.",
+        "show_in_map": true
+    },
+    {
+        "id": "y_lane",
+        "name": "Y Lane",
+        "aliases": [
+            "y lane",
+            "y-lane",
+            "y road",
+            "y"
+        ],
+        "category": "Campus",
+        "description": "A campus road connecting residential and academic areas.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/hYcvrnG75MRLvsf58",
+        "directions": "Located within the campus road network.",
+        "help_text": "Use the map for accurate navigation.",
+        "show_in_map": true
+    },
+    {
+        "id": "g_lane",
+        "name": "G Lane",
+        "aliases": [
+            "g lane",
+            "g-lane",
+            "g road",
+            "g"
+        ],
+        "category": "Campus",
+        "description": "A campus road connecting hostels and nearby facilities.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/avk8tnheUZFDEKGi9",
+        "directions": "Located in the G-block area.",
+        "help_text": "Use the map link for accurate navigation.",
+        "show_in_map": true
+    },
+    {
+        "id": "i2_ground",
+        "name": "I-2 Ground",
+        "aliases": [
+            "i2",
+            "i lane",
+            "i-2 ground",
+            "sports ground"
+        ],
+        "category": "Sports",
+        "description": "An open ground used for sports, practice sessions, and student events.",
+        "timings": "",
+        "google_maps": "https://maps.app.goo.gl/uPczEr4ZjsQ3grUF6",
+        "directions": "Located in the I-block area.",
+        "help_text": "Suitable for outdoor sports and recreational activities.",
+        "show_in_map": true
+    },
+    {
+        "id": "o_lane",
+        "name": "O Lane",
+        "aliases": [
+            "o lane",
+            "o-lane",
+            "o road",
+            "o"
+        ],
+        "category": "Campus",
+        "description": "A campus road connecting the O-block hostels and nearby facilities.",
+        "timings": "24 Hours",
+        "google_maps": "https://maps.app.goo.gl/TzXNvXzfmyPc4e3i8",
+        "directions": "Located in the O-block area.",
+        "help_text": "Use the map link for accurate navigation.",
+        "show_in_map": true
+    }
+]

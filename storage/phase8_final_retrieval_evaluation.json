@@ -1,0 +1,873 @@
+{
+  "summary": {
+    "cases": 24,
+    "hard_cases": 24,
+    "hard_passed": 23,
+    "hard_failed": 1,
+    "probe_cases": 0,
+    "probe_passed": 0,
+    "probe_failed": 0,
+    "avg_latency_s": 3.39,
+    "max_latency_s": 6.178,
+    "answer_internal_noise_cases": 0,
+    "context_internal_noise_cases": 6
+  },
+  "results": [
+    {
+      "case_id": "research_control_01",
+      "category": "specific research",
+      "question": "What research areas are related to control systems in Electrical Engineering?",
+      "latency_s": 4.047,
+      "expected": [
+        "control",
+        "electrical",
+        "micro-grid",
+        "adaptive control",
+        "robust"
+      ],
+      "expected_found_in_answer": [
+        "control",
+        "electrical",
+        "micro-grid",
+        "adaptive control",
+        "robust"
+      ],
+      "expected_found_in_context": [
+        "control",
+        "electrical",
+        "micro-grid",
+        "adaptive control",
+        "robust"
+      ],
+      "forbidden": [
+        "mathematics research",
+        "economics research",
+        "school of management"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The research areas related to **Control Systems** in Electrical Engineering at IIT Jodhpur include: 1. **Control of micro-grid & uncertain systems** 2. **Demand-side management** 3. **Microgrid Control and dynamics of distributed generation** 4. **Condition monitoring** 5. **Mechatronics & cyber-physical systems** 6. **Robust & optimal control** 7. **Adaptive control & robotics** 8. **Oxide metal semiconductors by sputtering for sensor applications** (interdisciplinary overlap) 9. **2D materials: MoS₂, AlGaN/GaN HEMTs** (related to semiconductor-based control systems) 10. **Bandgap engineering and surface studies of semiconductors** (underlying materials for control devices) These areas reflect both foundational and interdisciplinary research, with collaborations across departments and industry partners. For detailed lab or faculty-specific information, refer to the [Control Systems page](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems).",
+      "context_chars": 6271,
+      "context": "Evidence 1\n](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems)\nIf you wish to browse Research Areas mapped to the Technology Tracks of the Department, please click on the respective Tracks below to view the research themes, associated research groups, labs and faculty members for each technology track.\nAdditionally, faculty members from the Department are engaged in challenging interdisciplinary research in collaboration with faculty members across various departments and discplines through the Institute's Interdisciplinary Research Platforms (IDRPs).\nOriginal source URLs preserved from the Command 5 knowledge source.\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH\n\nEvidence 2\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH https://www.iitj.ac.in/Electrical-Engineering/en/Communication-Engineering https://www.iitj.ac.in/Electrical-Engineering/en/Computing-Systems https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems https://www.iitj.ac.in/Electrical-Engineering/en/Microelectronics-and-VLSI https://www.iitj.ac.in/Electrical-Engineering/en/Power-Engineering https://www.iitj.ac.in/Electrical-Engineering/en/RF,-Microwaves-and-Photonics https://www.iitj.ac.in/Electrical-Engineering/en/Signal-Processing https://www.iitj.ac.in/PageImages/Gallery/01-2025/CE-638714340083655282.png https://www.iitj.ac.in/PageImages/Gallery/01-2025/CS-638714340831025576.png\n\nEvidence 3\nSociodigital Reality (AR, VR, Haptics, Speech and Language Analysis)\nHigh-speed VLSI Systems and EDA tools\nNeuromorphic Computing\nThe research areas pursued by faculty members of the Department of Electrical Engineering can be broadly categorized as follows.\nPlease click on the respective groups to know about their research and associated labs.\n| Research overview | Research overview | Research overview | Research overview | [Research overview\n](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems)\n\nEvidence 4\n2D materials: MoS2, AlGaN/GaN HEMTs Bandgap engineering and surface studies of semiconductors Micro and Nano device fabrications Organic and Flexible Electronics: Field-effect transistors (FETs), Circuits, and Sensors Electrical characterization, Parameter extraction, Interface characterization Device Simulation: New and Unconventional Devices Compact Modeling for Circuit Simulations CMOS image sensors Analog and mixed-signal circuits Communication protocols for RF energy harvesting-based systems Chipless RFID Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication) Visual Computing (Computer Vision, Visual Forensics, Machine Learning) Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) High-speed VLSI Systems and EDA tools\n\nEvidence 5\nGraduates will (i) Be introduced to cutting-edge, interdisciplinary research areas like cellular and Molecular Neuroscience, Novel drug development, Bio-Imaging, Systems & Synthetic Biology, Bioelectrochemical systems, bioenergy systems, and Biomaterials Engineering, Nanomedicine, protein engineering, Chemical Biology, Microbiology, Structural Biology.\n(ii) Be exposed to common problems that are prevalent in the domains of affordable healthcare/energy/water/environment.\n(iii) Receive effective, hands-on laboratory training as a part of laboratory courses and short-term research projects that are designed to teach research methodology and common lab techniques\n\nEvidence 6\nBe introduced to Patents and other intellectual property documents, the rights that they grant, and necessary considerations while filing patents/technology that is protected by patents.\nDevelop their research communication skills by participating in seminars, journal clubs; manuscript writing, and research grant writing workshops.\nReceive training on building a work ethic by being a\n\nEvidence 7\n(iv) Be introduced to Patents and other intellectual property documents, the rights that they grant, and necessary considerations while filing patents/technology that is protected by patents.\n(v) Develop their research communication skills by participating in seminars, journal clubs; manuscript writing, and research grant writing workshops.\n(vi) Receive training on building a work ethic by being a\n\nEvidence 8\nElectrical Engineering Electrical Engineering, IIT Jodhpur The Department maintains active collaborations with leading industries, research laboratories, healthcare institutions, and government agencies in areas such as sustainable energy systems, cyber-physical systems, intelligent infrastructure, embedded systems, signal processing, and advanced manufacturing.\nThe Department has consistently attracted sponsored research projects and consultancy assignments from national funding agencies, industries, and strategic organisations.\n\nEvidence 9\nThe Department of Electrical Engineering at IIT Jodhpur offers undergraduate and postgraduate programmes that combine strong fundamentals with emerging areas of electrical engineering.\nThe department currently offers a B.Tech. programme in Electrical Engineering, a Minor in Electrical Engineering, and M.Tech. programmes in Power Systems, Power Electronics and Cyber-Physical Systems.\nThe B.Tech. The curriculum is designed to provide a strong foundation in electrical engineering while offering flexibility to explore modern technologies through electives, internships, and project work.\nThe curriculum is organised around three broad focus areas: Power Systems and Power Electronics, Cyber-Physical Systems, and Signal Processing and Augmented-Virtual Reality\n\nEvidence 10\nIIT Jodhpur — Electrical Engineering — Research\nIIT Jodhpur • Electrical Engineering • Research\nAssociated Research Groups\nRate, reliability and complexity limits in MIMO communications\nPerformance improvement and security of Optical Wireless Communications\nMillimeterwave antennas and circuits for 5G application\nControl of micro-grid & uncertain system\nDemand-side management\nMicrogrid Control and dynamics of distributed generation\nCondition monitoring\nMechatronics & cyber-physical systems\nRobust & optimal control\nAdaptive control & robotics\nOxide metal semiconductors by sputtering for sensor applications\n2D materials: MoS2, AlGaN/GaN HEMTs\nBandgap engineering and surface studies of semiconductors",
+      "notes": "Known successful Phase 8A.2 control-system scope case."
+    },
+    {
+      "case_id": "research_robotics_01",
+      "category": "specific research",
+      "question": "What research areas are related to robotics at IIT Jodhpur?",
+      "latency_s": 2.651,
+      "expected": [
+        "robotics",
+        "adaptive control",
+        "electrical"
+      ],
+      "expected_found_in_answer": [
+        "robotics"
+      ],
+      "expected_found_in_context": [],
+      "forbidden": [
+        "mathematics",
+        "economics"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [
+        "economics"
+      ],
+      "answer_internal_noise": [],
+      "context_internal_noise": [
+        "retrieval representation",
+        "command 6"
+      ],
+      "context_hygiene_ok": false,
+      "expect_unknown": false,
+      "actual_unknown": true,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "I'm sorry, I don't know based on the available information. The provided context does not mention any research areas specifically related to robotics at IIT Jodhpur.",
+      "context_chars": 5091,
+      "context": "Evidence 1\nPhD Research Areas Doctoral scholars will work closely with Faculty Members and interdisciplinary research groups across IIT Jodhpur.\nStudents will also benefit from collaborations with academic institutions, think tanks, industries, government agencies, and international research networks.\nThe programme encourages independent and original research using theoretical modelling, econometric methods, AI- and big-data-driven approaches, behavioural analysis, experimental methods, and policy evaluation frameworks.\n\nEvidence 2\nhttps://www.iitj.ac.in/PageImages/Gallery/05-2026/PHD-ELIGIBILITY-CRITERIA-639144389552765061.png https://www.iitj.ac.in/PageImages/Gallery/05-2026/PhD-Research-Areas-639144391531645041.png https://www.iitj.ac.in/People/List?dept=economics&c=1c8346b0-07a4-401e-bce0-7f571bb4fabd&ln=en https://www.iitj.ac.in/economics/en/phd-program Command 6 • Retrieval Representation •\n\nEvidence 3\nThe PhD in Economics at IIT Jodhpur is a research-intensive four-year doctoral programme designed to develop globally competitive researchers, policy professionals, and academic leaders capable of addressing complex economic and developmental challenges while contributing to India’s Viksit Bharat Vision.\nThe programme combines rigorous theoretical and empirical training with interdisciplinary and “technology-driven” approaches to contemporary economics research.\nPHD ELIGIBILITY CRITERIA The programme is situated within the broader context of global economic transformation shaped by climate change, digitalisation, financial innovation, technological disruption, energy transition, and evolving geopolitical dynamics\n\nEvidence 4\nIIT Jodhpur — Economics — Research\nIIT Jodhpur • Economics • Research\n\nEvidence 5\nFind out about our research areas, thematic expertise, and faculty research interests in the Department of Economics at IIT Jodhpur.\nThe Department of Economics at IIT Jodhpur promotes interdisciplinary and technology-driven research to address emerging economic, environmental, and societal challenges.\nThe department integrates economics with data science, engineering systems, sustainability studies, and policy analytics to develop actionable and scalable solutions for national development.\nOur Motto अर्थज्ञानविज्ञानतन्त्रनवोन्मेषानां राष्ट्राभ्युदयाय समन्वयः (Confluence of Economics, Science and Technology, and Innovation for National Development) The department follows a “glocal” approach by combining globally informed research with locally relevant applications\n\nEvidence 6\nMessage from the Head of Bioscience and Bioengineering Assoc.\nNeha Jain (Acting Head BSBE) Email: head_bb@iitj.ac.in, Phone: 0291 280 1201 Bioscience and Bioengineering are pivotal to India's growth.\ndriving innovation and advancing technology in healthcare.\nAgriculture and environmental sustainability.\nThe Department of Bioscience & Bioengineering at IIT Jodhpur plays a key role in implementing diverse advanced biological research areas within these fields.\nwith a strong focus on fostering research and development (R&D) and entrepreneurship.\nBy offering a multidisciplinary platform that integrates cutting-edge research in drug discovery, genomics, and affordable and integrative precision healthcare solutions.\nBig Data Biology and bioinformatics.\n\nEvidence 7\nBig Data Biology and bioinformatics.\nThe department actively promotes entrepreneurship by providing incubation support, facilitating industry collaborations, and encouraging the growth of startup ventures in biosciences.\nWith access to advanced research facilities and guidance from expert faculty members, students can transform their ideas into practical, marketable solutions, benefiting industries such as healthcare, agriculture, and biomanufacturing.\nBSBE Department, IIT Jodhpur, emphasizes interdisciplinary research in the near future, which may also align with national initiatives like the BioE3 policy to promote R&D, commercialization, and the establishment of bioeconomy hubs\n\nEvidence 8\nThe PhD program in Design at the School of Design, IIT Jodhpur, encourages the participation of design practitioners, teachers, and aspiring design researchers in getting involved in design research activities and expanding the existing body of knowledge.\nThe program focuses on conducting design research and projects in the overlapping fields of technology, science, engineering, humanities, education, arts and crafts through an interdisciplinary approach.\nPlease Check the Rolling Advertisement for Admission to PhD Programme Candidates are highly encouraged to familiarize themselves with the research areas of the faculty members before applying\n\nEvidence 9\nIIT Jodhpur invites applications for project-linked research to various funded projects in specific disciplines and interdisciplinary areas.\nBroad Research Areas in SAIDE\nFoundational AI & DS\nAI & DS Applications\nBrain Science and Applications\nMathematical and Computational Economics\nLaboratory image of research activity\nIIT Jodhpur invites applications for postdoc positions in specific disciplines and interdisciplinary areas.",
+      "notes": "Known robotics retrieval case; corpus contains Adaptive control & robotics."
+    },
+    {
+      "case_id": "research_ee_01",
+      "category": "specific research",
+      "question": "What research areas are available in Electrical Engineering?",
+      "latency_s": 4.766,
+      "expected": [
+        "electrical engineering",
+        "research"
+      ],
+      "expected_found_in_answer": [
+        "electrical engineering",
+        "research"
+      ],
+      "expected_found_in_context": [
+        "electrical engineering",
+        "research"
+      ],
+      "forbidden": [
+        "retrieval representation",
+        "command 6"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The research areas available in Electrical Engineering at IIT Jodhpur include the following, as supported by the retrieved context: 1. **Control Systems** 2. **Communication Engineering** 3. **Computing Systems** 4. **Microelectronics and VLSI** 5. **Power Engineering** 6. **RF, Microwaves, and Photonics** 7. **Signal Processing** 8. **Interdisciplinary Research** (via Institute's IDRPs, collaborating with other departments and disciplines) Additional specialized areas include: - **2D Materials** (e.g., MoS₂, AlGaN/GaN HEMTs) - **Neuromorphic Computing** - **High-speed VLSI Systems and EDA Tools** - **CMOS Image Sensors** - **Analog and Mixed-Signal Circuits** - **RF Energy Harvesting Communication Protocols** - **Chipless RFID** - **Visual Computing** (Computer Vision, Visual Forensics, Machine Learning) - **Immersive Technologies** (AR, VR, Haptics) - **Smart Grids and Renewable Energy Integration** - **Robotics and Embedded Systems** - **Cyber-Physical Systems** - **Advanced Manufacturing** These areas are supported by dedicated research groups, labs, and collaborations with industries and academic institutions.",
+      "context_chars": 5568,
+      "context": "Evidence 1\n](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems)\nIf you wish to browse Research Areas mapped to the Technology Tracks of the Department, please click on the respective Tracks below to view the research themes, associated research groups, labs and faculty members for each technology track.\nAdditionally, faculty members from the Department are engaged in challenging interdisciplinary research in collaboration with faculty members across various departments and discplines through the Institute's Interdisciplinary Research Platforms (IDRPs).\nOriginal source URLs preserved from the Command 5 knowledge source.\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH\n\nEvidence 2\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH https://www.iitj.ac.in/Electrical-Engineering/en/Communication-Engineering https://www.iitj.ac.in/Electrical-Engineering/en/Computing-Systems https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems https://www.iitj.ac.in/Electrical-Engineering/en/Microelectronics-and-VLSI https://www.iitj.ac.in/Electrical-Engineering/en/Power-Engineering https://www.iitj.ac.in/Electrical-Engineering/en/RF,-Microwaves-and-Photonics https://www.iitj.ac.in/Electrical-Engineering/en/Signal-Processing https://www.iitj.ac.in/PageImages/Gallery/01-2025/CE-638714340083655282.png https://www.iitj.ac.in/PageImages/Gallery/01-2025/CS-638714340831025576.png\n\nEvidence 3\nSociodigital Reality (AR, VR, Haptics, Speech and Language Analysis)\nHigh-speed VLSI Systems and EDA tools\nNeuromorphic Computing\nThe research areas pursued by faculty members of the Department of Electrical Engineering can be broadly categorized as follows.\nPlease click on the respective groups to know about their research and associated labs.\n| Research overview | Research overview | Research overview | Research overview | [Research overview\n](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems)\n\nEvidence 4\n2D materials: MoS2, AlGaN/GaN HEMTs Bandgap engineering and surface studies of semiconductors Micro and Nano device fabrications Organic and Flexible Electronics: Field-effect transistors (FETs), Circuits, and Sensors Electrical characterization, Parameter extraction, Interface characterization Device Simulation: New and Unconventional Devices Compact Modeling for Circuit Simulations CMOS image sensors Analog and mixed-signal circuits Communication protocols for RF energy harvesting-based systems Chipless RFID Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication) Visual Computing (Computer Vision, Visual Forensics, Machine Learning) Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) High-speed VLSI Systems and EDA tools\n\nEvidence 5\nElectrical Engineering Electrical Engineering, IIT Jodhpur The Department maintains active collaborations with leading industries, research laboratories, healthcare institutions, and government agencies in areas such as sustainable energy systems, cyber-physical systems, intelligent infrastructure, embedded systems, signal processing, and advanced manufacturing.\nThe Department has consistently attracted sponsored research projects and consultancy assignments from national funding agencies, industries, and strategic organisations.\n\nEvidence 6\nThe department's teaching and research activities span power systems, power electronics, smart grids, renewable energy integration, control systems, embedded systems, robotics, signal processing, computer vision, and immersive technologies.\nStudents are encouraged to participate in research, innovation, industry internships, and interdisciplinary learning throughout their academic programme.\nWith modern laboratories, active research groups, and collaborations with industry and academic institutions, the department aims to prepare graduates for careers in industry, entrepreneurship, higher studies, and research\n\nEvidence 7\nIIT Jodhpur — Electrical Engineering — Overview IIT Jodhpur • Electrical Engineering • Overview Welcome to the Department of Electrical Engineering\n\nEvidence 8\nGraduates will (i) Be introduced to cutting-edge, interdisciplinary research areas like cellular and Molecular Neuroscience, Novel drug development, Bio-Imaging, Systems & Synthetic Biology, Bioelectrochemical systems, bioenergy systems, and Biomaterials Engineering, Nanomedicine, protein engineering, Chemical Biology, Microbiology, Structural Biology.\n(ii) Be exposed to common problems that are prevalent in the domains of affordable healthcare/energy/water/environment.\n(iii) Receive effective, hands-on laboratory training as a part of laboratory courses and short-term research projects that are designed to teach research methodology and common lab techniques\n\nEvidence 9\nBe introduced to Patents and other intellectual property documents, the rights that they grant, and necessary considerations while filing patents/technology that is protected by patents.\nDevelop their research communication skills by participating in seminars, journal clubs; manuscript writing, and research grant writing workshops.\nReceive training on building a work ethic by being a\n\nEvidence 10\n(iv) Be introduced to Patents and other intellectual property documents, the rights that they grant, and necessary considerations while filing patents/technology that is protected by patents.\n(v) Develop their research communication skills by participating in seminars, journal clubs; manuscript writing, and research grant writing workshops.\n(vi) Receive training on building a work ethic by being a",
+      "notes": "Known EE research retrieval case."
+    },
+    {
+      "case_id": "research_aids_01",
+      "category": "school research",
+      "question": "What research is being done in the School of Artificial Intelligence and Data Science?",
+      "latency_s": 3.538,
+      "expected": [
+        "foundational ai",
+        "data science",
+        "brain science",
+        "mathematical and computational economics"
+      ],
+      "expected_found_in_answer": [
+        "foundational ai",
+        "data science",
+        "brain science",
+        "mathematical and computational economics"
+      ],
+      "expected_found_in_context": [
+        "foundational ai",
+        "data science",
+        "brain science",
+        "mathematical and computational economics"
+      ],
+      "forbidden": [
+        "electrical engineering research"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The School of Artificial Intelligence and Data Science (SAIDE) at IIT Jodhpur is engaged in research across the following broad areas: - **Foundational AI & Data Science** - **AI & Data Science Applications** - **Brain Science and Applications** - **Mathematical and Computational Economics** A specific ongoing project under SAIDE is titled *\"Slot machines in our pockets: Elucidating the neural effects of smartphone overuse on reward anticipation and reward processing\"*. This research, led by Professor Saurabh Gandhi (PI), investigates: - The impact of smartphone use on brain mechanisms related to reward anticipation and processing. - Potential similarities between smartphone addiction and gambling addiction. - The use of smartphones as tools for studying cognition in naturalistic settings, compared to traditional lab experiments. The project spans from **01/02/2024 to 31/01/2029** with a funding amount of **₹1.09 crore**. For further details, visit the [School of Artificial Intelligence and Data Science page](https://www.iitj.ac.in/saide).",
+      "context_chars": 2605,
+      "context": "Evidence 1\nIIT Jodhpur — School of Artificial Intelligence and Data Science — Research\nIIT Jodhpur • School of Artificial Intelligence and Data Science • Research\nIIT Jodhpur invites applications for project-linked research to various funded projects in specific disciplines and interdisciplinary areas.\nBroad Research Areas in SAIDE\nFoundational AI & DS\nAI & DS Applications\nBrain Science and Applications\nMathematical and Computational Economics\nLaboratory image of research activity\nIIT Jodhpur invites applications for postdoc positions in specific disciplines and interdisciplinary areas.\n\nEvidence 2\nIIT Jodhpur — School of Artificial Intelligence and Data Science — Programs\nIIT Jodhpur • School of Artificial Intelligence and Data Science • Programs\nThe Internship Program in AI and DS at AIDE is designed to bridge the gap between academic learning and industry requirements by providing students with practical experience in applying AI and DS concepts to real-world problems.\nInterns have the opportunity to work on industry-sponsored projects, research initiatives, and collaborations with faculty members and industry partners.\n\nEvidence 3\nIIT Jodhpur — Office of Academics — Programs IIT Jodhpur • Office of Academics • Programs 5.\nDepartment / School / Center View 1 Aerospace Engineering 2 Bioscience and Bioengineering 3 Center for Education Technology (CET) 4 Center for Mathematical and Computational Economics (CMCE) 5 Chemical Engineering View (Page opens in intranet only) 6 Chemistry 7 Civil and Infrastructure Engineering 8 Computer Science and Engineering View 9 Economics 10 Electrical Engineering 11 Electronics Engineering 12 Energy and Automotive Engineering 13 Env.\n& Sustainability Engg.\n(DESE) 14 Materials Engineering 15 Mathematics 16 Mechanical Engineering 17 Physics 18\n\nEvidence 4\nIIT Jodhpur — School of Artificial Intelligence and Data Science — Contacts\nIIT Jodhpur • School of Artificial Intelligence and Data Science • Contacts\nSlot machines in our pockets: Elucidating the neural effects of smartphone overuse on reward anticipation and reward processing\nPI: Saurabh Gandhi Start-End Date: 01/02/2024 - 31/01/2029 Amount: 1.09 Cr Status: Ongoing Description: We study the impact of smartphone use on the brain, focusing on the relationship between smartphone use and gambling.\nDoes smartphone addiction have any similarity with gambling addiction?\nSecondly we also explore the possibility of using smartphones to study cognition in a more naturalistic way compared to traditional lab experiments.\nWebsite/Document | Join Us Science and Engineering Research Board",
+      "notes": "Known AIDE research case."
+    },
+    {
+      "case_id": "programs_aids_01",
+      "category": "program offerings",
+      "question": "What programs are available in the School of Artificial Intelligence and Data Science?",
+      "latency_s": 3.244,
+      "expected": [
+        "internship",
+        "minor",
+        "master of technology",
+        "executive"
+      ],
+      "expected_found_in_answer": [
+        "internship",
+        "minor",
+        "master of technology"
+      ],
+      "expected_found_in_context": [
+        "internship",
+        "minor",
+        "master of technology"
+      ],
+      "forbidden": [
+        "electrical engineering",
+        "hostel"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [
+        "electrical engineering"
+      ],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The School of Artificial Intelligence and Data Science (AIDE) at IIT Jodhpur offers the following programs: 1. **Master of Technology (MTech)** in Artificial Intelligence and Data Science - An advanced curriculum for leadership roles in AI and data science. 2. **Minor Programs in AI and DS** - Designed for BTech students to gain foundational knowledge and practical skills through coursework, projects, and experiential learning. 3. **Internship Program in AI and DS** - Bridges academic learning and industry requirements, offering hands-on experience via industry-sponsored projects, research initiatives, and collaborations with faculty and industry partners. These programs emphasize theoretical knowledge, practical applications, and interdisciplinary research opportunities.",
+      "context_chars": 2559,
+      "context": "Evidence 1\nThe Minor Programs in AI and DS at AIDE are designed to provide BTech students with a foundational understanding of key concepts, techniques, and applications in AI and DS.\nThese programs offer a blend of theoretical knowledge, practical skills, and hands-on experience through a combination of coursework, projects, and experiential learning opportunities.\nThe Master of Technology (MTech) program in Artificial Intelligence and Data Science at the School of Artificial Intelligence and Data Science (AIDE) offers an advanced curriculum designed to prepare students for leadership roles in the rapidly evolving fields of artificial intelligence (AI) and data science (DS).\nOriginal source URLs preserved from the Command 5 knowledge source.\n\nEvidence 2\nIIT Jodhpur — Office of Academics — Programs IIT Jodhpur • Office of Academics • Programs 5.\nDepartment / School / Center View 1 Aerospace Engineering 2 Bioscience and Bioengineering 3 Center for Education Technology (CET) 4 Center for Mathematical and Computational Economics (CMCE) 5 Chemical Engineering View (Page opens in intranet only) 6 Chemistry 7 Civil and Infrastructure Engineering 8 Computer Science and Engineering View 9 Economics 10 Electrical Engineering 11 Electronics Engineering 12 Energy and Automotive Engineering 13 Env.\n& Sustainability Engg.\n(DESE) 14 Materials Engineering 15 Mathematics 16 Mechanical Engineering 17 Physics 18\n\nEvidence 3\nIIT Jodhpur — School of Artificial Intelligence and Data Science — Programs\nIIT Jodhpur • School of Artificial Intelligence and Data Science • Programs\nThe Internship Program in AI and DS at AIDE is designed to bridge the gap between academic learning and industry requirements by providing students with practical experience in applying AI and DS concepts to real-world problems.\nInterns have the opportunity to work on industry-sponsored projects, research initiatives, and collaborations with faculty members and industry partners.\n\nEvidence 4\nIIT Jodhpur — School of Artificial Intelligence and Data Science — Research\nIIT Jodhpur • School of Artificial Intelligence and Data Science • Research\nIIT Jodhpur invites applications for project-linked research to various funded projects in specific disciplines and interdisciplinary areas.\nBroad Research Areas in SAIDE\nFoundational AI & DS\nAI & DS Applications\nBrain Science and Applications\nMathematical and Computational Economics\nLaboratory image of research activity\nIIT Jodhpur invites applications for postdoc positions in specific disciplines and interdisciplinary areas.",
+      "notes": "Known AIDE programs case; validates school scope."
+    },
+    {
+      "case_id": "programs_general_01",
+      "category": "broad programs",
+      "question": "What academic programs are available at IIT Jodhpur?",
+      "latency_s": 0.328,
+      "expected": [
+        "electrical engineering",
+        "computer science",
+        "economics",
+        "mathematics"
+      ],
+      "expected_found_in_answer": [],
+      "expected_found_in_context": [],
+      "forbidden": [
+        "school of artificial intelligence only"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": true,
+      "passed": false,
+      "hard_gate": true,
+      "answer": "I'm sorry, I don't know based on the available information.",
+      "context_chars": 0,
+      "context": "",
+      "notes": "Broad list case; should not collapse to one department."
+    },
+    {
+      "case_id": "phd_admission_01",
+      "category": "admission",
+      "question": "What are the eligibility requirements for regular Ph.D. admission?",
+      "latency_s": 6.178,
+      "expected": [
+        "phd",
+        "eligibility",
+        "marks"
+      ],
+      "expected_found_in_answer": [
+        "eligibility",
+        "marks"
+      ],
+      "expected_found_in_context": [
+        "phd",
+        "eligibility",
+        "marks"
+      ],
+      "forbidden": [
+        "m.tech admission only",
+        "hostel fees"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The eligibility requirements for regular Ph.D. admission at IIT Jodhpur are as follows: 1. **Academic Qualification**: - Applicants must hold a **master’s degree** in engineering, pharmacy, agricultural science, science, humanities, social sciences, management, or equivalent. - Minimum marks: **60% or 6.0/10 CPI/C GPA** for **GEN/GEN-EWS/OBC** candidates, and **55%** for **SC/ST** candidates. - For professional qualifications (e.g., MBBS with MD, BVSc with MVSc), the minimum marks are **60% or 6.0/10 CPI/C GPA** for **GEN/GEN-EWS/OBC** and **55%** for **SC/ST**. 2. **Employment Status**: - Candidates admitted in the **regular mode** must **not** be a **registered student** in any other academic program (in India or abroad) or a **full-time/part-time employee** of any organization (in India or abroad). 3. **Additional Notes**: - **GATE Exemption**: Candidates with an **M.Tech or equivalent post-bachelor’s degree** may be exempted from GATE requirements as per MHRD guidelines. - **Financial Assistance**: Eligibility for financial assistance is based on MHRD norms, but it does not guarantee assistance. These criteria ensure candidates meet the academic and professional standards for regular Ph.D. admission.",
+      "context_chars": 5806,
+      "context": "Evidence 1\nApplication Process and Shortlist Interested students apply to the company and submit their resumes through the Student Placements Committee.\nThe selection process generally consists of resume-based shortlisting and one or more rounds of personal interviews.\nThe placement process is governed by the Institute's placement rules.\n\nEvidence 2\nIn case of any query with respect to online application, applicants may contact the Office of Automation (Academics) (oaautomation@iitj.ac.in).\nOther general queries may be directed to the PhD Program Coordinator, Dr.\nDeepak Saxena, at pgcconvener@cete.iitj.ac.in.\nApplicants shortlisted for the admission process will be required to bring the final submitted application form duly signed along with copies of all educational testimonials at the time of admission.\nEligibility Criteria The eligibility criteria prescribed below are the absolute minimum for being considered.\nCETE may use higher performance criteria if the number of applications is high.\nThe relaxation for SC/ST/PD candidates in the qualifying degree marks is as per Ministry of Education rules\n\nEvidence 3\nDetailed information about the Faculty Members and their research areas can be obtained from the Center’s website at iitj.ac.in/cete.\nApplication Procedure This is a rolling advertisement , and the Cut-off date/Application Deadline for the Fall Semester is 20 April and that for Spring Semester is 20 October.\nApplicants belonging to GEN-UR, GEN-EWS, and OBC categories are required to pay a processing fee of Rs.\n300 online, while SC, ST, and PD applicants need to pay Rs.150 during the submission of their application forms.\nThe application should be submitted ONLY via the online portal.\nHardcopy of the application need not be sent.\nIn case of any query with respect to online application, applicants may contact the Office of Automation (Academics) (oaautomation@iitj.ac.in)\n\nEvidence 4\nThe relaxation for SC/ST/PD candidates in the qualifying degree marks is as per Ministry of Education rules.\n(i) Candidates admitted in the PhD Program in Regular Mode shall not be a registered student in any other academic program in India or abroad, and shall not be a full-time or part-time employee of any organization in India or abroad\n\nEvidence 5\n20.2.6 Admission to Ph.D. Program (Regular)\nCandidates admitted in this category shall not be a registered student in any other academic program in India or abroad, and shall not be a full-time or part-time employee of any organization in India or abroad.\nThe applicant must have a master’s degree in engineering, pharmacy, agricultural science, science, humanities, social sciences, management with at least 60% marks or at least 6.0/10 CPI or CGPA for GEN/GEN-EWS/OBC (55% for SC/ST),\nThe applicant must have MBBS with MD/MS, BVSc with MVSc, BDS with MDS, BPTh with MPTh, BOTh with MOTh or equivalent with at least 60% marks or at least 6.0/10 CPI or CGPA for GEN/GEN-EWS/OBC (55% for SC/ST) in bachelor’s degree,\n\nEvidence 6\nAdvertisement for Admission to PhD Program The Centre for Education & Technology for Education (CETE) at IIT Jodhpur invites applications for its PhD program.\nThe PhD program is a key pillar in CETE’s vision of providing a pathway for scholars to conduct research and develop the teaching and learning technologies of the future, analyze large-scale educational data, gain skills in educational data analytics, and create innovative curricula and resources for teaching and learning.\nGraduates will be able to pursue careers in university research and teaching as well as technology leadership roles at various levels of academic, industry, government and non-government organizations.\nCheck out the advertisement and application details here.\n\nEvidence 7\nThe applicant must have a bachelor’s degree of minimum four-year duration in engineering or science or medicine or pharmacy or agricultural science or veterinary science or equivalent with at least 70% marks or at least 7.0/10 CPI or CGPA for GEN/OBC (65% for SC/ST).\n\nEvidence 8\nA student may be exempted from GATE as per MHRD guidelines.\nAdditionally, exceptional regular full-time candidates with a valid UGC-NET or those with full time post graduate degree of two years or more from an Institute of National Importance (INI) may be considered as eligible for institute financial assistance Note: Eligibility for financial assistance does not guarantee financial assistance.\nPlease refer to the page below for details on fee for various kinds of admission into the PhD program: Fee Structure\n\nEvidence 9\nA regular Ph.D. student admitted to the Institute will be eligible for financial assistance as per the norms of SME IIT Jodhpur.\nA candidate having a B.Tech /B.S. (four-year program)/Master's degree with GATE/NET(JRF)/NBHM (or equivalent) can have financial assistance as per MHRD norms/or equivalent applicable for non-science departments.\nThe requirement of GATE is exempted for an applicant with an M.Tech or equivalent post-bachelor's degree 3.\nA student may be exempted from GATE as per MHRD guidelines\n\nEvidence 10\nCertain professional qualifications (e.g., MBBS with MD) are also accepted​ OR The applicant must have a bachelor’s degree of minimum four-year duration in engineering or science or medicine or pharmacy or agricultural science or veterinary science or design or architecture or equivalent with at least 70% marks or at least 7.0/10 CPI or CGPA for GEN/GEN-EWS/OBC (65% for SC/ST/PD).\nWhat is the difference between full-time and part-time Ph.D. programs?\nFull-time students dedicate all their time to research, while part-time students are working professionals, often employed by external organizations, and are required to attend the program with limited credits What is the application process for applying to the Ph.D",
+      "notes": "Known Ph.D. eligibility retrieval case."
+    },
+    {
+      "case_id": "mtech_admission_01",
+      "category": "admission",
+      "question": "What are the eligibility requirements for regular M.Tech. admission?",
+      "latency_s": 4.423,
+      "expected": [
+        "mtech",
+        "eligibility"
+      ],
+      "expected_found_in_answer": [
+        "eligibility"
+      ],
+      "expected_found_in_context": [
+        "mtech",
+        "eligibility"
+      ],
+      "forbidden": [
+        "phd admission",
+        "hostel"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [
+        "retrieval representation",
+        "command 6"
+      ],
+      "context_hygiene_ok": false,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The eligibility requirements for regular M.Tech admission at IIT Jodhpur are as follows: 1. **Academic Qualification**: - A **bachelor’s degree in engineering or science** (4-year program) or a **master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences, Veterinary Sciences**, or a related field. 2. **Percentage/C GPA Requirements**: - **Minimum 60% marks** for GEN/OBC categories (55% for SC/ST) in aggregate or as specified by the university/institute. - **Minimum CGPA of 6.0** for GEN/OBC categories (5.5 for SC/ST) on a 10-point scale. - For other scales (e.g., 8-point scale), proportional requirements apply (e.g., 4.8 for GEN/OBC, 4.4 for SC/ST). 3. **Additional Notes**: - Candidates must meet the criteria as specified by the university/institute for first-class or equivalent distinctions. - The requirements apply to **regular admission** modes, excluding executive or sponsored categories. These criteria are outlined in the official admissions guidelines for the M.Tech program.",
+      "context_chars": 4013,
+      "context": "Evidence 1\nIIT Jodhpur — Admissions — Mtech Admissions\nIIT Jodhpur • Admissions • Mtech Admissions\n20.2.3 Admission to M Tech Program (Regular)\nThe applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field\nA minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute.\n\nEvidence 2\nIIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions\n\nEvidence 3\nThe department currently offers M.Tech in Mechanical Engineering with a specialization in Advanced Manufacturing & Design and Thermofluids Engineering.\nA wide range of specialization related courses is currently offered.\nThere are four modes of admission in M.Tech Program: 1.\n(Download file : 380 KB) The details of eligibility can be accessed here.\nM.Tech students getting admission in regular mode are provided with an assistantship of Rs.\n12400 per month as per the MHRD rules.\nGuidelines and Format for Submission of Project Report for M.Tech. Students (Download file 211 KB) Link for online Application for M.Tech\n\nEvidence 4\nGraduate Attributes Graduates of the B.Tech program in Mechanical Engineering will have: Strong understanding of fundamentals of Thermofluids, Mechanical Design, and Manufacturing (Processes and Systems) Ability to apply mechanical engineering principles to address challenges in real-life problems through creative interdisciplinary thinking Ability to use different simulation and computational tools for a better understanding and designing of mechanical processes/systems Capability to appreciate the use of some of the advanced concepts like AI & ML, Robotics, Industry 4.0, IoT in Mechanical Engineering applications\n\nEvidence 5\nIIT Jodhpur — M.Tech — General Information\nIIT Jodhpur • M.Tech • General Information\nMaster of Technology\nM.Tech. Degree Programmes AY 2026-27 Executive M.Tech. in Intelligent VLSI Systems (IVS) - July 2025 Session Roundwise cut-off for COAP 2026 M.Tech. admission (601 KB) New programs: Power Systems & Power Electronics, Microwave & Photonic Technologies, Advanced Manufacturing Engineering, Engineering Design, Composite Materials Technology, Battery Materials & Technology, Environmental & Sustainability Engineering,Energy Engineering\nOriginal source URLs preserved from the Command 5 knowledge source.\nhttps://www.iitj.ac.in/PageImages/Gallery/07-2026/Round-wise-cutoff-COAP-2026-639211098634005083.pdf\n\nEvidence 6\nhttps://www.iitj.ac.in/PageImages/Gallery/07-2026/Round-wise-cutoff-COAP-2026-639211098634005083.pdf https://www.iitj.ac.in/admission-postgraduate-programs/en/admission-to-mtech-degree-programmes https://www.iitj.ac.in/admission-postgraduate-programs/en/advertisements https://www.iitj.ac.in/admission-postgraduate-programs/en/executive-m.tech.-in-intelligent-vlsi-systems-ivs-july-2025-session Command 6 • Retrieval Representation •\n\nEvidence 7\nThe applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur.\n20.2.2 Admission to M Sc – M Tech Dual Degree Program (Regular)\nThe admission to the M.\nSc.-M.Tech. Dual Degree Programs offered by the Institute will be through any one of the following two avenues\nThe applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs.\nThe applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur.",
+      "notes": "Known M.Tech eligibility regression case."
+    },
+    {
+      "case_id": "msc_admission_01",
+      "category": "admission scope",
+      "question": "What are the M.Sc. admission requirements?",
+      "latency_s": 4.262,
+      "expected": [
+        "msc",
+        "admission"
+      ],
+      "expected_found_in_answer": [
+        "admission"
+      ],
+      "expected_found_in_context": [
+        "msc",
+        "admission"
+      ],
+      "forbidden": [
+        "mtech admission requirements"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The M.Sc. admission requirements at IIT Jodhpur are as follows: 1. **Admission Avenues**: - **Joint Admission Test for Master's (JAM)**: Candidates qualified through JAM organized by IITs. - **Institute-Conducted Process**: Applicants with a bachelor’s degree in a relevant discipline (3- or 4-year program) may be admitted based on a written test and/or personal interview conducted by IIT Jodhpur. 2. **Eligibility Criteria**: - Applicants must have a valid **GATE score**, be **exempted from GATE** (as per MHRD circular), or qualify in an **equivalent national examination**. - Alternatively, candidates may qualify through the **written test and/or interview** conducted by IIT Jodhpur. 3. **Admission Categories**: - M.Sc. programs typically fall under the **Full-time regular** category. Other categories (e.g., sponsored, part-time, executive) may not apply to all M.Sc. programs and are subject to specific program rules. For detailed program-specific requirements, refer to the [M.Sc. Programs page](https://www.iitj.ac.in/admission-postgraduate-programs/en/Admission-to-Postgraduate-Programs).",
+      "context_chars": 4999,
+      "context": "Evidence 1\nThe procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate.\nPlease note that admissions to M.Sc. and Ph.D programs in Digital Humanities for AY 2021-2022 are now complete, and no further Waiting List may be operated.\nPostgraduate admissions\n[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.%20Postgraduate%20admissions) The process of admission for all the programs offered by the Institute normally is underway during April-May for Semester 1 and during November-December for Semester 2.\nIn addition, the department may process applications for admissions to PhD programs on a continuous basis and admit students as per the existing procedure.\n10.5 Cancellation of Admission\n\nEvidence 2\nComposite Score Personal Interview 20.1 Categories of Admission [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.1%20%20Categories%20of%20Admission) A candidate can be admitted in any one of the following categories * Full-time regular Full-time sponsored Part-time External Executive However, all categories are not applicable for all PG Programs.\nFurther, programmes can be offered in a combination of these modes (like fully sponsored part-time program).\n\nEvidence 3\n[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top10.5%20Cancellation%20of%20Admission) Students admitted provisionally or otherwise to any Program shall submit copies of their mark sheets, provisional certificates, etc.\nof the qualifying examination and other documents by the last date specified for the purpose in the Academic Calendar.\nThe Senate reserves the right to cancel the admission of any student, who fails to submit the prescribed documents by the specified date or to meet other stipulated requirement(s).\nAlso, the Senate reserves the right to cancel the admission at any later time, if it is found that the student had provided some false information or suppressed relevant information while seeking admission.\n\nEvidence 4\nIIT Jodhpur — Admissions — Msc Admissions\nIIT Jodhpur • Admissions • Msc Admissions\n20.2.1 Admission to M.\nThe admission to the M.Sc. Programs offered by the Institute will be through any one of the following two avenues.\nThe applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs.\nThe applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur.\n\nEvidence 5\nThe applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur.\n20.2.2 Admission to M Sc – M Tech Dual Degree Program (Regular)\nThe admission to the M.\nSc.-M.Tech. Dual Degree Programs offered by the Institute will be through any one of the following two avenues\nThe applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs.\nThe applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur.\n\nEvidence 6\nIIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions\n\nEvidence 7\nIIT Jodhpur — M.Sc — Programs\nIIT Jodhpur • M.Sc • Programs\nMaster of Science Programs\nM.Sc. (Digital Humanities)\nM.Sc. (Computational Social Science)\nOriginal source URLs preserved from the Command 5 knowledge source.\nhttps://www.iitj.ac.in/admission-postgraduate-programs/en/Admission-to-Postgraduate-Programs\nhttps://www.iitj.ac.in/admission-postgraduate-programs/en/admission-to-postgraduate-programs\n\nEvidence 8\nProgramme Elective (ME)\n22.3 Academic Credit Requirements for M.Sc. Students\n[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.3%20Academic%20Credit%20Requirements%20for%20M.Sc.%20Students) Course categories and academic requirements for M.Sc. students are given below in Table 22.3.\nTable 22.3 Programs/ Credits to be earned for MSc students\nMinimum Credits to be earned\n11.1 Academic Load & Calculation of Credits for a Course for UG Programmes\n\nEvidence 9\n38 18 6 15 77 M.Sc. (Physics) 38 18 6 15 77 11.1 Academic Load & Calculation of Credits for a Course for UG Programmes [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.1%20Academic%20Load%20&%20Calculation%20of%20Credits%20for%20a%20Course%20for%20UG%20Programmes) The total credits for a course is calculated by taking into account the number of lectures, tutorial, and practical hours (L-T-P) assigned as given in Table 11.1.\nEach credit is associated with the number of contact hours and the expected number of self-learning hours (on an average) to be spend by the student for each contact hour to meet academic demand of the course.",
+      "notes": "Known scope-separation regression case."
+    },
+    {
+      "case_id": "hostel_fees_01",
+      "category": "fees",
+      "question": "What are the hostel fees?",
+      "latency_s": 4.091,
+      "expected": [
+        "hostel",
+        "fee"
+      ],
+      "expected_found_in_answer": [
+        "hostel",
+        "fee"
+      ],
+      "expected_found_in_context": [
+        "hostel",
+        "fee"
+      ],
+      "forbidden": [
+        "ncet",
+        "registration fee"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The hostel fees at IIT Jodhpur vary based on the duration of stay and the type of accommodation. Here are the details provided: ### **Short-term Hostel Accommodation (01–10 Days)** - **Double Occupancy (without bedding):** ₹450/- per day (excl. GST) - **Single Occupancy (subject to availability):** ₹600/- per day (excl. GST) - **Double Occupancy (with 1 bedding set):** ₹750/- per day (excl. GST) - **Single Occupancy (with bedding set):** ₹900/- per day (excl. GST) ### **Long-term Hostel Accommodation (11 Days–6 Months)** - **Double Occupancy (without bedding):** ₹300/- per day (excl. GST) - **Single Occupancy (subject to availability):** ₹400/- per day (excl. GST) - **Double Occupancy (with 1 bedding set):** ₹400/- per day (excl. GST) - **Single Occupancy (with bedding set):** ₹600/- per day (excl. GST) ### **Notes** 1. **SC, ST, and PwD students** are exempt from tuition fees but must pay hostel charges as per the above rates. 2. For stays exceeding 11 days but less than a month, the charges are mentioned as \"Rs. [amount missing]\" in the context, so exact figures for this category are not fully provided. 3. The fee structure may be subject to revision as approved by the institute. For precise details on long-term stays beyond 11 days, refer to the official fee guidelines.",
+      "context_chars": 2958,
+      "context": "Evidence 1\nExperiential and Professional Development Fee\nPLEASE NOTE: *SC, ST and PwD students are exempted from paying the Tuition Fees.\nThe semester fee includes the hostel fees.\nThe fee structure may be subject to revision, if any, as may be approved by the institute from time to time in accordance with applicable policies, rules and regulations.\n\nEvidence 2\nIIT Jodhpur — Finance — Fees And Finance\nIIT Jodhpur • Finance • Fees And Finance\nAccommodation Charges\nThe hostel accommodation process and charges per day, for (i) short-term bookings not exceeding 10 days, and (ii) long bookings (11 days - 6 months) are shared here for your reference.\n(i) Short-term Hostel Accommodation (01 - 10 Days) Hostel accommodation charges for visitors/executive students | S.No.\n| Type of Booking | Charges per day per person (Double Occupancy, excl.\nGST) | Charges per day per person\n\nEvidence 3\nGST) 1 Hostel Room Rent (without bedding) ₹450/- ₹750/- 2 Hostel Room Rent (along with 1 bedding set) ₹600/- ₹900/- Hostel accommodation charges for students/staff/faculty of IIT Jodhpur | S.No.\n| Type of Booking | Charges per day per person (Double Occupancy, excl.\nGST) | Charges per day per person (Single Occupancy, subject to availability, excl.\nGST) 1 Hostel Room Rent (without bedding) ₹300/- ₹500/- 2 Hostel Room Rent (along with 1 bedding set) ₹400/- ₹600/- *Inclusive of Bucket/mug (ii) Long bookings (11 days - 6 months) For exceeding 11 days but less than a month: Rs.\n\nEvidence 4\nProgram Fee Structure (2026-2028)\nThe tuition fee for the program is INR 2,25,000/- per semester.\nIn addition to the tuition fee, students are required to pay the semester fee, admission fee (one-time), convocation fee (one-time), refundable deposits (one-time), dining fee, and any other applicable charges.\nStudents opting for the international dual degree program in their second year are required to pay the day-scholar fees at IIT Jodhpur, as well as any other applicable fees at the Partner Institute.\n\nEvidence 5\nProgram Fee Structure (2026-2028)\n\nEvidence 6\nNote: Students from SC, ST, and PwD categories are exempt from paying the tuition fee, as per government norms, amended from time to time.\nHowever, they are still required to pay all other charges mentioned above.\nThe components of the semester fee are subject to change from time to time.\nThe non-refundable application fee is INR 1,200 for Unreserved/OBC-NCL/EWS categories, and INR 600 for SC/ST/PwD categories.\n\nEvidence 7\nThe above rates will also be applicable to PhD students who, subsequent to thesis submission, wish to avail hostel accommodation for more than one month (without semester fee payment).\nAdmission Fee (one time during the Admission)\nConvocation Fee (One Time)\nExperiential and Professional Development Fee\n\nEvidence 8\nThe booking process and charges vary depending on the duration of stay and the category of the resident (student, staff, faculty, executive participant, or visitor).",
+      "notes": "Known hostel-fee scope problem; prevents unrelated finance retrieval."
+    },
+    {
+      "case_id": "ms_research_01",
+      "category": "program detail",
+      "question": "What is the duration and coursework for the M.S. by Research program?",
+      "latency_s": 3.12,
+      "expected": [
+        "ms",
+        "research",
+        "24 credits"
+      ],
+      "expected_found_in_answer": [
+        "research",
+        "24 credits"
+      ],
+      "expected_found_in_context": [
+        "ms",
+        "research",
+        "24 credits"
+      ],
+      "forbidden": [
+        "phd eligibility",
+        "hostel"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The **M.S. by Research program** at IIT Jodhpur has the following structure: ### **Duration** - **Full-time**: 2 to 4 years (minimum to maximum). - **Part-time**: 3 to 5 years (minimum to maximum). ### **Coursework Requirements** - Students must complete **24 credits through coursework** and **36 credits through research**. - Full-time students can register for a maximum of **16 credits** and a minimum of **6 credits** per semester. - Part-time students can register for **3 to 12 credits** per semester. This structure applies to both full-time and part-time modes of study.",
+      "context_chars": 4792,
+      "context": "Evidence 1\nby Research program?\nA full-time M.S. by Research student can complete the program between 2 years (minimum) to 4 years (maximum).\nA part-time student can complete the program between 3 years (minimum) to 5 years (maximum) What is the credit requirement for M.S. by Research students?\nStudents need to complete 24 credits through coursework and 36 credits through research​ How many credits can a student register for in a semester?\nFull-time students can register for a maximum of 16 credits and a minimum of 6 credits.\nPart-time students can register for 12 to 3 credits per semester Can M.S. by Research students change their program to a Ph.D.?\nThe M.S. by Research Degree can be upgraded to Ph.D\n\nEvidence 2\nby Research students change their program to a Ph.D.?\nThe M.S. by Research Degree can be upgraded to Ph.D. based on the CGPA (>7.5) and progress of the student after 3 Semesters for regular students; however, transition will require continuation of the same work and the student has to satisfy regular PhD requirements.\nAll conditions of Ph.D. degree program will be applicable to all such students.\nAll such changes of registration shall be reported to the Senate.\nWhat is the comprehensive examination?\nThe comprehensive exam tests the student’s general and specific knowledge in their research field.\nIt includes written tests, and students have two chances to pass​ How many credits are required for a Ph.D.?\n\nEvidence 3\nWhat is Reseach Purposal?\nA research proposal, in the context of IIT Jodhpur’s postgraduate program, is a report and presentation prepared by Ph.D. or M.Tech.-Ph.D. students after completing the State of Art Seminar (SOTA).\nThe proposal outlines the chosen research topic and its objectives, presenting the foundational work for the thesis.\nIt must include research work equivalent to 16 credits and is evaluated by the Student Research Committee (SRC), which allocates a letter grade based on the performance.\nSuccessfully completing the research proposal defense is a key step toward becoming a Ph.D. candidate What is Teaching Assistantship ?\nA Teaching Assistantship (TA) is a form of financial assistance provided to eligible M.Tech. and Ph.D. students at IIT Jodhpur\n\nEvidence 4\nIIT Jodhpur — M.S. by Research — Programs\nIIT Jodhpur • M.S. by Research • Programs\nOpportunities for collaborative projects across disciplines.\nPractice-based outputs, including new art forms and entrepreneurial ventures.\nFocus on inclusivity and livelihood generation for disenfranchised artisans.\nFlexible coursework and simultaneous research options tailored to student interests.\n1.) Eligibility: Bachelor's (B.Tech. or equivalent, 4 years) or Master's (M.A./M.Sc., 5 years) with a strong academic record.\nFull-time: 2–4 years.\nPart-time: 3–5 years.\nCoursework: 24 credits.\n\nEvidence 5\nCertain professional qualifications (e.g., MBBS with MD) are also accepted​ OR The applicant must have a bachelor’s degree of minimum four-year duration in engineering or science or medicine or pharmacy or agricultural science or veterinary science or design or architecture or equivalent with at least 70% marks or at least 7.0/10 CPI or CGPA for GEN/GEN-EWS/OBC (65% for SC/ST/PD).\nWhat is the difference between full-time and part-time Ph.D. programs?\nFull-time students dedicate all their time to research, while part-time students are working professionals, often employed by external organizations, and are required to attend the program with limited credits What is the application process for applying to the Ph.D\n\nEvidence 6\nand Ph.D. students at IIT Jodhpur.\nIn exchange for this financial aid, students are required to assist faculty members with teaching-related activities such as conducting tutorials, grading assignments, and helping in labs.\nThe assistantship also serves as a professional development opportunity for students, providing teaching experience while they pursue their studies.\nFor the continuation of the assistantship, M.Tech. students must maintain a minimum CGPA of 6.0, and Ph.D. students must maintain a CGPA of 6.5 What is the minimum and maximum duration to complete the M.S. by Research program?\nA full-time M.S. by Research student can complete the program between 2 years (minimum) to 4 years (maximum)\n\nEvidence 7\nand Ph.D. students at IIT Jodhpur.\nIn exchange for this financial aid, students are required to assist faculty members with teaching-related activities such as conducting tutorials, grading assignments, and helping in labs.\nThe assistantship also serves as a professional development opportunity for students, providing teaching experience while they pursue their studies.\nFor the continuation of the assistantship, M.Tech. students must maintain a minimum CGPA of 6.0, and Ph.D. students must maintain a CGPA of",
+      "notes": "Known M.S. by Research content exists in retrieval context."
+    },
+    {
+      "case_id": "electronics_research_01",
+      "category": "department research",
+      "question": "What research opportunities are available in Electronics Engineering?",
+      "latency_s": 3.466,
+      "expected": [
+        "electronics engineering",
+        "research"
+      ],
+      "expected_found_in_answer": [
+        "electronics engineering",
+        "research"
+      ],
+      "expected_found_in_context": [
+        "electronics engineering",
+        "research"
+      ],
+      "forbidden": [
+        "electrical engineering only",
+        "economics"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [
+        "retrieval representation",
+        "command 6"
+      ],
+      "context_hygiene_ok": false,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The Department of Electronics Engineering at IIT Jodhpur offers diverse research opportunities spanning foundational and emerging areas such as **semiconductor technology**, **VLSI design**, **nanoelectronics and advanced materials**, **AI/ML hardware**, **quantum computing and communication**, **photonics and optoelectronics**, **bioelectronics**, **advanced communication systems**, and **sensors**. Research emphasizes **interdisciplinary, application-driven projects** addressing India-specific national priorities while contributing to globally relevant technological advancements. The department fosters innovation through **prototype development**, **intellectual property generation**, **technology transfer**, and **entrepreneurship**, alongside strong academia-industry-government collaborations. Students and researchers engage in hands-on training with state-of-the-art laboratory resources, enabling them to tackle real-world engineering challenges and contribute to sustainable development, healthcare, defense, digital infrastructure, and societal applications.",
+      "context_chars": 5427,
+      "context": "Evidence 1\nProspective undergraduate, postgraduate, and doctoral students, as well as researchers, industry partners, and collaborators, are encouraged to explore the Department’s academic programs, research themes, faculty expertise, laboratories, and innovation ecosystem to learn more about the opportunities in Electronics Engineering at IIT Jodhpur.\n\nEvidence 2\nThe Department promotes interdisciplinary, application-driven research that addresses India-specific national priorities while advancing globally relevant technological advancements.\nIn addition to excellence in teaching and research, the Department actively encourages innovation, prototype development, intellectual property generation, technology transfer, entrepreneurship, and industry-oriented problem solving.\nBy strengthening academia–industry–government collaborations and promoting outreach activities, the Department aims to translate knowledge into impactful technologies for sustainable development, healthcare, defense, digital infrastructure, industry, and society\n\nEvidence 3\nThe Department of Electronics Engineering is envisioned as a vibrant academic and research hub dedicated to advancing the frontiers of modern electronics.\nWith a strong emphasis on quality education, skilled human resource development, cutting-edge research, and innovation-led technology development, the Department aims to prepare students and researchers to address the technological challenges of an increasingly electronics-driven world.\nThe Department is committed to delivering student-centric, outcome-based education rooted in strong fundamentals, a modern curriculum, hands-on training, and exposure to real-world engineering problems\n\nEvidence 4\nThrough state-of-the-art academic and laboratory resources, the Department seeks to develop technically competent, ethically responsible, and innovation-oriented graduates who are prepared for successful careers, higher studies, research, entrepreneurship, and leadership roles in India and across the world.\nResearch in the Department spans both foundational and emerging areas of Electronics Engineering, including semiconductor technology, VLSI, nanoelectronics and advanced materials, AI/ML hardware, quantum computing and quantum communication, photonics and optoelectronics, bioelectronics, advanced communication systems, and sensors\n\nEvidence 5\nAtomic and Molecular Spectroscopy\nAdvanced Quantum Mechanics\nCondensed Matter Physics\nLaser Technologies and Ultrafast Optics\nGeneral Engineering Physics Lab\nEntrepreneurship for Physicists\nApplied Optics and Electronics Lab\nAdvanced Engineering Physics Lab\nOutcome and Opportunities:\nmsc physics learning outcome ######\nThe department is equipped with high-end research equipment which includes SQUID magnetometer, Physical Property Measurement Systems (PPMS), Raman Spectrometer, and Scanning Tunnelling Microscope (STM) besides a host of other advanced characterization equipment which is available at the Centre for Research & Development of Scientific Instruments (CRDSI).\n\nEvidence 6\nIIT Jodhpur — Physics — Programs\nIIT Jodhpur • Physics • Programs\nCan students pursue a Minor from another department while enrolled in the B.S. in Engineering Physics program?\nStudents have the flexibility to pursue a Minor from other departments, allowing them to gain interdisciplinary expertise and develop specialized skills in areas of their interest.\nWill students receive research exposure during the program?\nThe program provides extensive research opportunities through project work, laboratory training, and participation in ongoing research activities under faculty supervision.\nIs there an integrated M.Tech. program associated with the B.S. in Engineering Physics program?\n\nEvidence 7\n3 Is there an integrated M.Tech. program associated with the B.S. in Engineering Physics program?\nThe B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree.\n4 Can graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program?\nGraduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions.\n5 Can students change their branch after enrolling in the B.S. in Engineering Physics program?\nStudents admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment.\n6 Is it possible to opt for the specialization in other domains?\n\nEvidence 8\nIs it possible to opt for the specialization in other domains?\nNo, the specialization is available with the domains listed above only.\nWhat are the available placement opportunities for students in BS programs?\nBS students are allowed to participate in all placement options similar to other engineering branches (e.g.\nGoogle, Apple, Amazon, Banking, e-commerce, etc) or go for National Labs DRDO, ISRO, etc.\nIf you have an interest in academics and research, you can also pursue M.S., M.Tech. and Ph.D. abroad and in India.\nWhom should I contact for additional questions and doubts?\nPlease send us your queries at office_physics@iitj.ac.in\nOriginal source URLs preserved from the Command 5 knowledge source.\n\nEvidence 9\nPlease send us your queries at office_physics@iitj.ac.in Source Original source URLs preserved from the Command 5 knowledge source.\nhttps://www.iitj.ac.in/physics/en/undergraduate-program Command 6 • Retrieval Representation •",
+      "notes": "Known department-level broad research case."
+    },
+    {
+      "case_id": "math_research_01",
+      "category": "department research",
+      "question": "What are the research opportunities in Mathematics?",
+      "latency_s": 4.345,
+      "expected": [
+        "mathematics",
+        "research"
+      ],
+      "expected_found_in_answer": [
+        "mathematics",
+        "research"
+      ],
+      "expected_found_in_context": [
+        "mathematics",
+        "research"
+      ],
+      "forbidden": [
+        "electrical engineering research"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [
+        "retrieval representation",
+        "command 6"
+      ],
+      "context_hygiene_ok": false,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "IIT Jodhpur offers diverse research opportunities in Mathematics, aligned with both academic and industry-driven innovation. Here’s an overview: ### **Programs and Research Areas** 1. **Undergraduate Programs** - **B.S. in Mathematics and Computing**: Focuses on integrating mathematical reasoning with computational problem-solving. Students engage in research-oriented summer internships and a thesis component (final two semesters) to address real-world problems. - **B.Sc.–B.Ed. (ITEP) Dual Degree**: Combines mathematics with education, fostering research in pedagogical applications. 2. **Postgraduate Programs** - **M.Sc. in Mathematics**: Emphasizes advanced analytical tools and their application to modern technologies. The curriculum balances theoretical analysis with practical problem-solving. - **M.Tech. in Data and Computational Sciences**: Offers interdisciplinary research in data-driven technologies, computational methods, and algorithmic innovation. 3. **Ph.D. Programs** - Open to students seeking deep expertise in pure/applied mathematics, computational sciences, or interdisciplinary fields. Graduates can pursue research in areas like mathematical modeling, optimization, and machine learning. ### **Research Themes and Collaborations** - **Interdisciplinary Research**: The Department collaborates with industries, government initiatives (e.g., *Make in India*, *Startup India*), and national labs (DRDO, ISRO) to address challenges in technology, healthcare, defense, and sustainable development. - **National Priorities**: Research aligns with India-specific goals, such as advancing digital infrastructure and innovation ecosystems. - **Industry Partnerships**: Students and faculty engage in projects with R&D organizations, fostering technology transfer and entrepreneurship. ### **Graduate Attributes** - Develop mathematical models for real-world scenarios (e.g., differential equations, statistics). - Apply analytical skills to fields like data science, algorithm design, and operations research. - Contribute to national initiatives through research in computational sciences and mathematical innovation. ac.in**.",
+      "context_chars": 7179,
+      "context": "Evidence 1\nOpportunities span technology industries, fintech, R&D laboratories, consulting, defense, and other high-technology sectors.\nThe proposed B.S. program in Mathematics and Computing is designed for students with strong analytical aptitude and demonstrated interest in both mathematical reasoning and computational problem-solving.\nExhibit high proficiency in mathematics and logical thinking.\nAspire to integrate rigorous mathematical foundations with algorithmic and programming skills.\nAre inclined toward abstraction, modeling, and theoretical problem-solving aligned with real-world applications and emerging technologies.\nSeek preparation for research-oriented, data-intensive, and algorithm-centric careers.\nGraduate Attributes:\n\nEvidence 2\nThe ability to utilise optimisation techniques, statistical and machine learning approaches for data-driven decision-making.\nThe ability to write technical reports, communicate mathematical and computational ideas effectively, and work ethically in teams.\nThe ability to advance technological innovation and national growth by supporting Government-led initiatives like Make in India, Startup India and Viksit Bharat 2047.\nIndustry Pathways Data Scientist Machine Learning Engineer AI Research Engineer Algorithm Designer Quantitative Analyst Operations Research Analyst Scientific Computing Professional Opportunities span technology industries, fintech, R&D laboratories, consulting, defense, and other high-technology sectors.\n\nEvidence 3\nSeek preparation for research-oriented, data-intensive, and algorithm-centric careers.\nGraduate Attributes: Graduates of the program will be able to: Analyze and interpret abstract mathematical structures.\nDemonstrate a strong understanding of contemporary areas in pure and applied mathematics, including algebra, analysis, statistics, and differential equations.\nFormulate mathematical problems inspired by real-world scenarios.\nDevelop and apply mathematical models relevant to applied sciences and engineering.\nComprehend and work effectively with abstract mathematical structures and concepts.\nApply analytical and scientific reasoning to pursue higher studies and research in diverse areas of mathematics and allied areas.\n\nEvidence 4\nIs it possible to opt for the specialization in other domains?\nNo, the specialization is available with the domains listed above only.\nWhat are the available placement opportunities for students in BS programs?\nBS students are allowed to participate in all placement options similar to other engineering branches (e.g.\nGoogle, Apple, Amazon, Banking, e-commerce, etc) or go for National Labs DRDO, ISRO, etc.\nIf you have an interest in academics and research, you can also pursue M.S., M.Tech. and Ph.D. abroad and in India.\nWhom should I contact for additional questions and doubts?\nPlease send us your queries at office_physics@iitj.ac.in\nOriginal source URLs preserved from the Command 5 knowledge source.\n\nEvidence 5\n3 Is there an integrated M.Tech. program associated with the B.S. in Engineering Physics program?\nThe B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree.\n4 Can graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program?\nGraduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions.\n5 Can students change their branch after enrolling in the B.S. in Engineering Physics program?\nStudents admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment.\n6 Is it possible to opt for the specialization in other domains?\n\nEvidence 6\nPlease send us your queries at office_physics@iitj.ac.in Source Original source URLs preserved from the Command 5 knowledge source.\nhttps://www.iitj.ac.in/physics/en/undergraduate-program Command 6 • Retrieval Representation •\n\nEvidence 7\nWe are excited to offer high-quality programs at undergraduate, postgraduate, research level for students who wish to apply mathematics to science or engineering such as a four year B.S. in Mathematics and Computing, B.Sc.–B.Ed.\n(ITEP) dual degree program, Minor in Mathematics and Computing, a two-year M.Sc. in Mathematics, a two year M.Tech program in Data and Computational Sciences.\nWe also offer a Ph.D. Program in different areas of Mathematics to those who wish to earn a deeper understanding of pure and applied Mathematics and Computing.\nImage of Thrust Area Workshop on Advanced Methods in Integral Equations and Their Applications (WAMIEA-2026) M.Tech (Non MoE) Result AY 2026-27, Semester I-Data and Computational Sciences Ph.D. Admission Results Semester-I, AY 2026-27 B.S\n\nEvidence 8\nClassical mathematics provides a strong foundation for analyzing the key principles behind modern and emerging technologies.\nFurthermore, advanced analytical tools, integrated with contemporary mathematical approaches, open new avenues for exploration and innovation.\nThe M.Sc. (Mathematics) program at IIT Jodhpur aims to leverage these opportunities by developing a highly skilled workforce with expertise in mathematical methods essential for ensuring advancement of key technologies.\nThe proposed four-semester program is designed to maintain a balance between theoretical analysis and practical applications of mathematics which can help students undertake the path of interest for a secure future\n\nEvidence 9\nAdmission Results Semester-I, AY 2026-27 B.S. in Mathematics and Computing - Curriculum & Programme Structure\n\nEvidence 10\nProspective undergraduate, postgraduate, and doctoral students, as well as researchers, industry partners, and collaborators, are encouraged to explore the Department’s academic programs, research themes, faculty expertise, laboratories, and innovation ecosystem to learn more about the opportunities in Electronics Engineering at IIT Jodhpur.\n\nEvidence 11\nThe Department promotes interdisciplinary, application-driven research that addresses India-specific national priorities while advancing globally relevant technological advancements.\nIn addition to excellence in teaching and research, the Department actively encourages innovation, prototype development, intellectual property generation, technology transfer, entrepreneurship, and industry-oriented problem solving.\nBy strengthening academia–industry–government collaborations and promoting outreach activities, the Department aims to translate knowledge into impactful technologies for sustainable development, healthcare, defense, digital infrastructure, industry, and society\n\nEvidence 12\nThe core courses establish a solid foundation in fundamental mathematical concepts while enhancing the analytical capabilities of students.\nIn addition, students can explore their specific interests through program electives and open elective courses.\nThe thesis component, spread over the final two semesters, provides significant research opportunities and enables students to apply their mathematical skillset to real-world problems.\nStudents are also required to undertake research-oriented summer internships at reputed institutes, industries, and R&D organizations.",
+      "notes": "Cross-department contamination guard."
+    },
+    {
+      "case_id": "economics_research_01",
+      "category": "department research",
+      "question": "What are the research areas in Economics?",
+      "latency_s": 5.223,
+      "expected": [
+        "economics",
+        "research"
+      ],
+      "expected_found_in_answer": [
+        "economics",
+        "research"
+      ],
+      "expected_found_in_context": [
+        "economics",
+        "research"
+      ],
+      "forbidden": [
+        "electrical engineering",
+        "hostel"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The Department of Economics at IIT Jodhpur focuses on **interdisciplinary and technology-driven research** to address emerging economic, environmental, and societal challenges. Key research areas and thematic expertise include: 1. **Integration with Emerging Fields**: - Combining economics with **data science**, **engineering systems**, **sustainability studies**, and **policy analytics** to develop scalable solutions for national development. 2. **Thematic Expertise**: - **Quantum Physics** (via interdisciplinary collaboration). - **High Energy and Astrophysics** (interdisciplinary research). - **Optics and Photonics** (interdisciplinary research). - **Condensed Matter and Plasma Physics** (interdisciplinary research). 3. **Societal Impact**: - A **\"glocal\" approach** that merges globally informed research with locally relevant applications. - Focus on **predictive maintenance**, **digital twin technologies**, and **communication protocols** for IoT systems. 4. **Innovation for National Development**: - The department’s motto, *“अर्थज्ञानविज्ञानतन्त्रनवोन्मेषानां राष्ट्राभ्युदयाय समन्वयः”* (Confluence of Economics, Science, and Technology for National Development), guides its research priorities. For detailed information on specific research groups or labs, refer to the department’s official resources.",
+      "context_chars": 3488,
+      "context": "Evidence 1\n2D materials: MoS2, AlGaN/GaN HEMTs Bandgap engineering and surface studies of semiconductors Micro and Nano device fabrications Organic and Flexible Electronics: Field-effect transistors (FETs), Circuits, and Sensors Electrical characterization, Parameter extraction, Interface characterization Device Simulation: New and Unconventional Devices Compact Modeling for Circuit Simulations CMOS image sensors Analog and mixed-signal circuits Communication protocols for RF energy harvesting-based systems Chipless RFID Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication) Visual Computing (Computer Vision, Visual Forensics, Machine Learning) Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) High-speed VLSI Systems and EDA tools\n\nEvidence 2\n](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems) Research overview Research overview If you wish to browse Research Areas mapped to the Technology Tracks of the Department, please click on the respective Tracks below to view the research themes, associated research groups, labs and faculty members for each technology track.\nAdditionally, faculty members from the Department are engaged in challenging interdisciplinary research in collaboration with faculty members across various departments and discplines through the Institute's Interdisciplinary Research Platforms (IDRPs).\n\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH\n\nEvidence 3\nIIT Jodhpur — Economics — Research\nIIT Jodhpur • Economics • Research\n\nEvidence 4\nCurrent research activities are organised around the following broad thematic areas.\nOngoing departmental research is organised around the following broad thematic areas:\n\nEvidence 5\nFind out about our research areas, thematic expertise, and faculty research interests in the Department of Economics at IIT Jodhpur.\nThe Department of Economics at IIT Jodhpur promotes interdisciplinary and technology-driven research to address emerging economic, environmental, and societal challenges.\nThe department integrates economics with data science, engineering systems, sustainability studies, and policy analytics to develop actionable and scalable solutions for national development.\nOur Motto अर्थज्ञानविज्ञानतन्त्रनवोन्मेषानां राष्ट्राभ्युदयाय समन्वयः (Confluence of Economics, Science and Technology, and Innovation for National Development) The department follows a “glocal” approach by combining globally informed research with locally relevant applications\n\nEvidence 6\nThe department has set up four focussed research groups which carry out fundamental and applied research in the areas of (i) Quantum Physics, (ii) High Energy and Astrophysics, (iii) Optics and Photonics and (iv) Condensed Matter and Plasma Physics.\nThese research groups are supported by the Thematic Research Laboratories catering to the need of the Faculty members, PhD students and Research staffs.\nThe details of Laboratories (Teaching / Research lab, Thematic Research lab) and Research Groups of the Department are given below.\nThe laboratories of the Department are managed under the supervision of faculty members of the department with the support of qualified technical staff and Ph.D. students\n\nEvidence 7\nKeeping this in view, the department has set up a number of laboratories for Teaching and Research.\nThe teaching labs of the Department are equipped with some specialized instruments which the students can also use for their research activities as",
+      "notes": "Cross-department contamination guard."
+    },
+    {
+      "case_id": "btech_vs_physics_01",
+      "category": "program specificity",
+      "question": "Can a student in the B.S. in Engineering Physics pursue a Ph.D. after graduation?",
+      "latency_s": 2.251,
+      "expected": [
+        "b.s.",
+        "ph.d",
+        "eligible"
+      ],
+      "expected_found_in_answer": [
+        "b.s.",
+        "ph.d",
+        "eligible"
+      ],
+      "expected_found_in_context": [
+        "b.s.",
+        "ph.d",
+        "eligible"
+      ],
+      "forbidden": [
+        "branch change allowed"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [
+        "retrieval representation",
+        "command 6"
+      ],
+      "context_hygiene_ok": false,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "Yes, graduates of the B.S. in Engineering Physics program at IIT Jodhpur are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions. This opportunity is highlighted in the program's FAQs, which state that graduates can pursue advanced research degrees both in India and abroad. The Department of Physics also emphasizes fostering research capabilities, aligning with the eligibility criteria for Ph.D. programs.",
+      "context_chars": 8080,
+      "context": "Evidence 1\nIs there an integrated M.Tech. program associated with the B.S. in Engineering Physics program?\nThe B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree.\nCan graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program?\nGraduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions.\nCan students change their branch after enrolling in the B.S. in Engineering Physics program?\nStudents admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment.\nIs it possible to opt for the specialization in other domains?\n\nEvidence 2\nIIT Jodhpur — Physics — Programs IIT Jodhpur • Physics • Programs FAQs (BS Program) Ques.\n1 Can students pursue a Minor from another department while enrolled in the B.S. in Engineering Physics program?\nStudents have the flexibility to pursue a Minor from other departments, allowing them to gain interdisciplinary expertise and develop specialized skills in areas of their interest.\n2 Will students receive research exposure during the program?\nThe program provides extensive research opportunities through project work, laboratory training, and participation in ongoing research activities under faculty supervision.\n3 Is there an integrated M.Tech. program associated with the B.S. in Engineering Physics program?\n\nEvidence 3\n6 Is it possible to opt for the specialization in other domains?\nNo, the specialization is available with the domains listed above only.\n7 What are the available placement opportunities for students in BS programs?\nBS students are allowed to participate in all placement options similar to other engineering branches (e.g.\nGoogle, Apple, Amazon, Banking, e-commerce, etc) or go for National Labs DRDO, ISRO, etc.\nIf you have an interest in academics and research, you can also pursue M.S., M.Tech. and Ph.D. abroad and in India.\n8 Whom should I contact for additional questions and doubts?\nPlease send us your queries at office_physics@iitj.ac.in Source Original source URLs preserved from the Command 5 knowledge source.\n\nEvidence 4\nThe Department of Physics offers a comprehensive range of academic programs designed to build strong foundations in physics while fostering research and innovation.\nAt the undergraduate level, the department offers a 4-year B.S. in Engineering Physics, an interdisciplinary program that integrates core physics with engineering and emerging technologies.\nThe department offers a 2-year M.Sc. in Physics, providing advanced training in fundamental and applied physics with opportunities for research.\nThe Ph.D. program enables scholars to pursue cutting-edge research across diverse areas of theoretical, experimental, and computational physics under the guidance of experienced faculty.\n\nEvidence 5\nThe subject of Physics is inherently a natural science subject based on strong theoretical foundations and experimental findings.\nThe subject closely intersects with almost all the branches of engineering and the current research activities of physics across the world made a huge impact on new, advanced, and emerging technologies.\nKeeping these facts into consideration, our Department is committed to imparting high-quality education based on a strong academic curriculum comprising elements of theoretical concepts, laboratory experiments, and most importantly hands-on experiments.\nThe graduates of the Department are expected to have deep insight into the domain of Physics together with a strong bent of mind to pursue cutting-edge research and translate it into technology\n\nEvidence 6\nhttps://www.iitj.ac.in/PageImages/Gallery/02-2025/Curriculum2-638755740940904530.pdf https://www.iitj.ac.in/PageImages/Gallery/02-2025/Curriculum3-638755770502183063.pdf https://www.iitj.ac.in/PageImages/Gallery/07-2026/Curriculum-of-MSc-in-Physics-2026-639208557752166058.pdf https://www.iitj.ac.in/PageImages/Gallery/07-2026/Msc-in-physics--639195507097184401.png https://www.iitj.ac.in/PageImages/Gallery/07-2026/Physics-Msc-Program-objectives-639209412325549437.png https://www.iitj.ac.in/physics https://www.iitj.ac.in/physics/en/physics https://www.iitj.ac.in/physics/en/postgraduate-program Command 6 • Retrieval Representation •\n\nEvidence 7\nM.Tech.-Ph.D. Dual Degree (Thermofluids Engineering) Doctorial Program The vision of the Department is to enhance the research environment and to innovate in pedagogy to address the challenges of socio-economic and human resource development.\nThe Department is committed to high-quality research by Faculty Members and Students in the pursuit of excellence in academics.\nThe department offers a Ph.D. in Mechanical Engineering within three major domains of Thermofluids, Design, and Manufacturing.\nThe students also have the opportunity to work with an interdisciplinary specialization in emerging areas such as Artificial Intelligence (AI), Data and Computational Science, Smart Healthcare, Energy Materials, and Cyber-Physical Systems (CPS).\nThe fellowship for Ph.D. scholars is: Mode\n\nEvidence 8\nPossibility of engineering science students to choose mechanical stream as their specialization.\nB.Tech. with specialization Department Specialization: Micro nano-engineering, Energy engineering, Design engineering, Smart manufacturing.\nInterdisciplinary: Entrepreneurship or management, Smart healthcare, Artificial intelligence, Robotics, and mobility systems.\nB.Tech. - M.Tech. Program Duration: 5 years Double degree aligned to specialization or minor area.\nPossibility of obtaining B.Tech and M.Tech double degree within 5 years of induction to the program UG Program UG program image (2) Master of Technology Programs M.Tech. (Advanced Manufacturing and Design) M.Tech. (Thermofluids Engineering) Source Original source URLs preserved from the Command 5 knowledge source.\n\nEvidence 9\nMechanical Engineering\nView (Page opens in intranet only)\n‌Major/Department‌‌ Specialization,‌‌ Minor/Interdisciplinary‌‌ Specialization\n## [[Back to index]](https://www.iitj.ac.in/Office-of-Academics/en/Specialization-Minor-Dual-Degree#top1SpecializationsMinors%E2%80%8CMajor/Department%E2%80%8C%E2%80%8C%20Specialization,%E2%80%8C%E2%80%8C%20Minor/Interdisciplinary%E2%80%8C%E2%80%8C%20Specialization)\nDepartment / Program\nEngineering Chemistry\nView (Page opens in intranet only)\nManagement & Technology (Blended Mode)\nView (Page opens in intranet only)\nMathematics and Computing\nView (Page opens in intranet only)\n\nEvidence 10\n2 Aerospace Engineering View (Page opens in intranet only) 3 Bioscience and Bioengineering View (Page opens in intranet only) 4 Chemical Engineering View (Page opens in intranet only) 5 Civil and Infrastructure Engineering View (Page opens in intranet only) 6 Computer Science and Engineering View (Page opens in intranet only) 7 Electrical Engineering View (Page opens in intranet only) 8 Electronics Engineering View (Page opens in intranet only) 9 Materials Engineering View (Page opens in intranet only) 10 Mechanical Engineering View (Page opens in intranet only) ‌Major/Department‌‌ Specialization,‌‌ Minor/Interdisciplinary‌‌ Specialization\n\nEvidence 11\nView (Page opens in intranet only) 4 Mathematics and Computing View (Page opens in intranet only)\n\nEvidence 12\nThere has been tremendous growth in computational capabilities in past few decades.\nThis has brought significant changes in the approaches towards research not only in engineering domains but also the areas of core sciences.\nThe use of advanced computational tools has made it possible to perform experiments on virtual platforms through the process of simulation and modeling.\nThis has significantly improved the pace at which the research outputs are obtained.\nToday, many of the outputs of simulation and modeling are applied directly in design and development of systems and technologies.\nHence, it has been endeavour of the department to ensure that the computational laboratories are given due emphasis along with the laboratories with advanced equipment",
+      "notes": "Known Physics FAQ content exists."
+    },
+    {
+      "case_id": "physics_branch_01",
+      "category": "program rule",
+      "question": "Can students change their branch after enrolling in the B.S. in Engineering Physics program?",
+      "latency_s": 2.427,
+      "expected": [
+        "cannot change",
+        "branch"
+      ],
+      "expected_found_in_answer": [
+        "cannot change",
+        "branch"
+      ],
+      "expected_found_in_context": [
+        "cannot change",
+        "branch"
+      ],
+      "forbidden": [
+        "change branch allowed"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [
+        "retrieval representation",
+        "command 6"
+      ],
+      "context_hygiene_ok": false,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "Students admitted to the B.S. in Engineering Physics program **cannot change their branch after enrollment**. This restriction is explicitly stated in the retrieved context. For comparison, branch changes are permitted for other UG programs (e.g., B.Tech.) under specific conditions (e.g., completing the first year, meeting academic requirements), but these rules do not apply to the B.S. in Engineering Physics program.",
+      "context_chars": 5717,
+      "context": "Evidence 1\nIs there an integrated M.Tech. program associated with the B.S. in Engineering Physics program?\nThe B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree.\nCan graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program?\nGraduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions.\nCan students change their branch after enrolling in the B.S. in Engineering Physics program?\nStudents admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment.\nIs it possible to opt for the specialization in other domains?\n\nEvidence 2\nIIT Jodhpur — Physics — Programs\nIIT Jodhpur • Physics • Programs\nCan students pursue a Minor from another department while enrolled in the B.S. in Engineering Physics program?\nStudents have the flexibility to pursue a Minor from other departments, allowing them to gain interdisciplinary expertise and develop specialized skills in areas of their interest.\nWill students receive research exposure during the program?\nThe program provides extensive research opportunities through project work, laboratory training, and participation in ongoing research activities under faculty supervision.\nIs there an integrated M.Tech. program associated with the B.S. in Engineering Physics program?\n\nEvidence 3\n6 Is it possible to opt for the specialization in other domains?\nNo, the specialization is available with the domains listed above only.\n7 What are the available placement opportunities for students in BS programs?\nBS students are allowed to participate in all placement options similar to other engineering branches (e.g.\nGoogle, Apple, Amazon, Banking, e-commerce, etc) or go for National Labs DRDO, ISRO, etc.\nIf you have an interest in academics and research, you can also pursue M.S., M.Tech. and Ph.D. abroad and in India.\n8 Whom should I contact for additional questions and doubts?\nPlease send us your queries at office_physics@iitj.ac.in Source Original source URLs preserved from the Command 5 knowledge source.\n\nEvidence 4\nThe program aims to develop scientifically grounded, innovation-driven graduates to excel in academia, industry, and entrepreneurial ventures.\nThe discipline links scientific discovery and technological innovation, making it highly relevant for areas such as Semiconductor and Device Engineering, Quantum Technologies, Energy Materials and Sustainability, Engineering Optics and Optoelectronics, Plasma and Thin Film Technologies, and related emerging fields.\nAdmissions: Through JEE Advanced Curriculum of BS Program (1539 KB) Note: Prior to the launch of the B.S. in Engineering Physics program in 2026, the Department offered B.S. in Physics with Specialization program.\nThe curriculum applicable to that program is available here.\nProgram Objectives: in Engineering Physics.\n\nEvidence 5\nThe Department of Physics offers a comprehensive range of academic programs designed to build strong foundations in physics while fostering research and innovation.\nAt the undergraduate level, the department offers a 4-year B.S. in Engineering Physics, an interdisciplinary program that integrates core physics with engineering and emerging technologies.\nThe department offers a 2-year M.Sc. in Physics, providing advanced training in fundamental and applied physics with opportunities for research.\nThe Ph.D. program enables scholars to pursue cutting-edge research across diverse areas of theoretical, experimental, and computational physics under the guidance of experienced faculty.\n\nEvidence 6\nThe subject of Physics is inherently a natural science subject based on strong theoretical foundations and experimental findings.\nThe subject closely intersects with almost all the branches of engineering and the current research activities of physics across the world made a huge impact on new, advanced, and emerging technologies.\nKeeping these facts into consideration, our Department is committed to imparting high-quality education based on a strong academic curriculum comprising elements of theoretical concepts, laboratory experiments, and most importantly hands-on experiments.\nThe graduates of the Department are expected to have deep insight into the domain of Physics together with a strong bent of mind to pursue cutting-edge research and translate it into technology\n\nEvidence 7\nhttps://www.iitj.ac.in/PageImages/Gallery/02-2025/Curriculum2-638755740940904530.pdf https://www.iitj.ac.in/PageImages/Gallery/02-2025/Curriculum3-638755770502183063.pdf https://www.iitj.ac.in/PageImages/Gallery/07-2026/Curriculum-of-MSc-in-Physics-2026-639208557752166058.pdf https://www.iitj.ac.in/PageImages/Gallery/07-2026/Msc-in-physics--639195507097184401.png https://www.iitj.ac.in/PageImages/Gallery/07-2026/Physics-Msc-Program-objectives-639209412325549437.png https://www.iitj.ac.in/physics https://www.iitj.ac.in/physics/en/physics https://www.iitj.ac.in/physics/en/postgraduate-program Command 6 • Retrieval Representation •\n\nEvidence 8\nWhat is Branch Change rules for UG students?\nThe branch change of the student in another branch and engineering science is permitted after the completion of the 1st year after completing all academic requirements of the credits including non-graded courses.\nThe eligibility criteria of the branch change is as follows: 1.\nE1: The student must have completed all prescribed course credits for the previous semesters (including the non-graded courses).\nE2: The student has no backlog.\nE3: No disciplinary Action has been imposed on the student.\nTable: Summary of branch change criteria for students in UG (B.Tech./ B.S.) Programs",
+      "notes": "Known exact FAQ content exists."
+    },
+    {
+      "case_id": "research_proposal_01",
+      "category": "academic rule",
+      "question": "What is a research proposal at IIT Jodhpur?",
+      "latency_s": 2.85,
+      "expected": [
+        "research proposal",
+        "ph.d",
+        "m.tech"
+      ],
+      "expected_found_in_answer": [
+        "research proposal",
+        "ph.d",
+        "m.tech"
+      ],
+      "expected_found_in_context": [
+        "research proposal",
+        "ph.d",
+        "m.tech"
+      ],
+      "forbidden": [
+        "hostel",
+        "fees"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "A research proposal at IIT Jodhpur is a report and presentation prepared by Ph.D. or M.Tech.-Ph.D. students after completing the State of Art Seminar (SOTA). It outlines the chosen research topic, objectives, and foundational work for the thesis. The proposal must include research work equivalent to 16 credits and is evaluated by the Student Research Committee (SRC), which assigns a letter grade based on performance. Successfully defending the research proposal is a key step toward becoming a Ph.D. candidate.",
+      "context_chars": 4914,
+      "context": "Evidence 1\nWhat is Reseach Purposal?\nA research proposal, in the context of IIT Jodhpur’s postgraduate program, is a report and presentation prepared by Ph.D. or M.Tech.-Ph.D. students after completing the State of Art Seminar (SOTA).\nThe proposal outlines the chosen research topic and its objectives, presenting the foundational work for the thesis.\nIt must include research work equivalent to 16 credits and is evaluated by the Student Research Committee (SRC), which allocates a letter grade based on the performance.\nSuccessfully completing the research proposal defense is a key step toward becoming a Ph.D. candidate What is Teaching Assistantship ?\nA Teaching Assistantship (TA) is a form of financial assistance provided to eligible M.Tech. and Ph.D. students at IIT Jodhpur\n\nEvidence 2\nVision To advance knowledge and develop cutting-edge technologies in the emerging domains of Artificial Intelligence & Data Science for social good.\n###### Fellowships MoE (Institute Fellowship) PMRF (Prime Minsiter Research Fellowship) Visvesvaraya PhD Scheme Project Fellowships Academics FAQs\n\nEvidence 3\nand Ph.D. students at IIT Jodhpur.\nIn exchange for this financial aid, students are required to assist faculty members with teaching-related activities such as conducting tutorials, grading assignments, and helping in labs.\nThe assistantship also serves as a professional development opportunity for students, providing teaching experience while they pursue their studies.\nFor the continuation of the assistantship, M.Tech. students must maintain a minimum CGPA of 6.0, and Ph.D. students must maintain a CGPA of\n\nEvidence 4\nIn short IIT Jodhpur Chemistry department is where Chemistry meets Technology through Collaboration, Communication and Cooperation.\nI encourage the future aspirants to get enrolled at IIT Jodhpur and wish you all the very best in your future endeavours.\n| The thrust areas in which research is being actively carried are given below.\nThe thrust areas in which research is being actively carried |\n\nEvidence 5\nWe have the latest state of the art basic teaching laboratories and several thematic research laboratories.\nOur current faculty strength is 19 and they are carrying out research activities in all major areas of chemical sciences, namely, organic synthesis and catalysis, chemical biology, main group chemistry and organometallics, nanomaterials, spectroscopy and chemical dynamics, biophysical chemistry and computational chemistry.\nThe cutting-edge research in the thrust areas by our faculty members are published in international peer-reviewed journals of well-repute.\nIn short IIT Jodhpur Chemistry department is where Chemistry meets Technology through Collaboration, Communication and Cooperation\n\nEvidence 6\nIIT Jodhpur — Office of Academics — Research\nIIT Jodhpur • Office of Academics • Research\n26.1.4 Composition of Departmental Research Committee (DRC)\nThe DRC will consist of coordinators of M.Tech, M.Tech.-Ph.D. dual degree and Ph.D. programs of the department, head of the Department and Senior Professor/Associate Professor proposed by the Head.\nThe DRC will be Chaired by Professor/Associate Professor nominated by Head of the Department.\nThe Chairman of the DRC will be a member of the Academic Committee.\nThe DRC has to be approved by Dean (Academics).\nPh.D. program coordinator will be the convenor of DRC and will be proposed by the head.\nThe tenure for the DRC will be 2 years.\n26.5.3 Research Proposal\n\nEvidence 7\nThe institute offers unique opportunity to a PhD student to avail one-year fellowship for any translational activities related to the thesis upon submission.\nThe patent-landscaping being an integral part of the research plan and PhD curriculum at IIT Jodhpur is another unique feature.\nIMPORTANT NOTE: Rolling Advertisement for Admission to Ph.D. Programs\n\nEvidence 8\nPhD students have the freedom to choose their courses and research topics for thesis research.\nMoreover, we encourage graduate students to rotate in several different labs for first semester while taking the courses under guidance of Department Research Committee (DRC).\nPhD students have many opportunities for professional development, including teaching, communication, networking, outreach, and participation in regional, national, and international conferences and meetings.\n\nEvidence 9\nIIT Jodhpur — M.S. by Research — Programs\nIIT Jodhpur • M.S. by Research • Programs\nOpportunities for collaborative projects across disciplines.\nPractice-based outputs, including new art forms and entrepreneurial ventures.\nFocus on inclusivity and livelihood generation for disenfranchised artisans.\nFlexible coursework and simultaneous research options tailored to student interests.\n1.) Eligibility: Bachelor's (B.Tech. or equivalent, 4 years) or Master's (M.A./M.Sc., 5 years) with a strong academic record.\nFull-time: 2–4 years.\nPart-time: 3–5 years.\nCoursework: 24 credits.",
+      "notes": "Known research proposal content exists."
+    },
+    {
+      "case_id": "ta_assistantship_01",
+      "category": "financial support",
+      "question": "What is a Teaching Assistantship?",
+      "latency_s": 3.016,
+      "expected": [
+        "teaching assistantship",
+        "financial assistance"
+      ],
+      "expected_found_in_answer": [
+        "teaching assistantship",
+        "financial assistance"
+      ],
+      "expected_found_in_context": [
+        "teaching assistantship",
+        "financial assistance"
+      ],
+      "forbidden": [
+        "hostel fee"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "A Teaching Assistantship (TA) at IIT Jodhpur is a form of financial assistance provided to eligible **M.Tech. and Ph.D. students**. In exchange for this aid, students are required to assist faculty members with teaching-related activities, such as conducting tutorials, grading assignments, and helping in laboratory sessions. This role also serves as a professional development opportunity, offering students hands-on teaching experience while they pursue their studies. The assistantship is designed to support both academic and practical growth, ensuring students gain valuable skills in mentorship and classroom management. (Note: Specific eligibility criteria, such as CGPA requirements for continuation, are not detailed in this answer but are mentioned in other contexts.)",
+      "context_chars": 5454,
+      "context": "Evidence 1\nand Ph.D. students at IIT Jodhpur.\nIn exchange for this financial aid, students are required to assist faculty members with teaching-related activities such as conducting tutorials, grading assignments, and helping in labs.\nThe assistantship also serves as a professional development opportunity for students, providing teaching experience while they pursue their studies.\nFor the continuation of the assistantship, M.Tech. students must maintain a minimum CGPA of 6.0, and Ph.D. students must maintain a CGPA of 6.5 What is the minimum and maximum duration to complete the M.S. by Research program?\nA full-time M.S. by Research student can complete the program between 2 years (minimum) to 4 years (maximum)\n\nEvidence 2\nVision To advance knowledge and develop cutting-edge technologies in the emerging domains of Artificial Intelligence & Data Science for social good.\n###### Fellowships MoE (Institute Fellowship) PMRF (Prime Minsiter Research Fellowship) Visvesvaraya PhD Scheme Project Fellowships Academics FAQs\n\nEvidence 3\nand Ph.D. students at IIT Jodhpur.\nIn exchange for this financial aid, students are required to assist faculty members with teaching-related activities such as conducting tutorials, grading assignments, and helping in labs.\nThe assistantship also serves as a professional development opportunity for students, providing teaching experience while they pursue their studies.\nFor the continuation of the assistantship, M.Tech. students must maintain a minimum CGPA of 6.0, and Ph.D. students must maintain a CGPA of\n\nEvidence 4\nby Research program?\nA full-time M.S. by Research student can complete the program between 2 years (minimum) to 4 years (maximum).\nA part-time student can complete the program between 3 years (minimum) to 5 years (maximum) What is the credit requirement for M.S. by Research students?\nStudents need to complete 24 credits through coursework and 36 credits through research​ How many credits can a student register for in a semester?\nFull-time students can register for a maximum of 16 credits and a minimum of 6 credits.\nPart-time students can register for 12 to 3 credits per semester Can M.S. by Research students change their program to a Ph.D.?\nThe M.S. by Research Degree can be upgraded to Ph.D\n\nEvidence 5\nWhat is Reseach Purposal?\nA research proposal, in the context of IIT Jodhpur’s postgraduate program, is a report and presentation prepared by Ph.D. or M.Tech.-Ph.D. students after completing the State of Art Seminar (SOTA).\nThe proposal outlines the chosen research topic and its objectives, presenting the foundational work for the thesis.\nIt must include research work equivalent to 16 credits and is evaluated by the Student Research Committee (SRC), which allocates a letter grade based on the performance.\nSuccessfully completing the research proposal defense is a key step toward becoming a Ph.D. candidate What is Teaching Assistantship ?\nA Teaching Assistantship (TA) is a form of financial assistance provided to eligible M.Tech. and Ph.D. students at IIT Jodhpur\n\nEvidence 6\nThe responsibilities of Office of Students include the following:- 1.\nDisbursement of Teaching Assistantship, providing guidance for students regarding various state and national level scholarships, fee remissions for SC/ ST/EWS students.\nEffectuating various workshops, non-graded courses etc.\nCoordinating and supervising student gymkhana activities under 7 different societies.\nEnthusing students to conduct and participate in cultural events.\nRendering Support to students in organizing various festivals like IGNUS, Varchas, Nimble, Spandan and various other cultural/literary events like SPICMACAY programs.\n\nEvidence 7\n[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.6%20Assistantship%20for%20B.Tech.%20-M.%20Tech.%20Dual-degree%20Programmes) The students of dual-degree programmes will be considered for award of institute research/ teaching assistantship if they have earned 150 credits by the end of the eighth semester.\nOnly those students who have either qualified GATE or have a CGPA more than 8.0 will be eligible for this assistantship.\nThe assistantship will be provided for a maximum period of 14 months beginning from the summer semester following the eighth semester, provided the student is registered for M.Tech. Major Project in that semester\n\nEvidence 8\nMajor Project in that semester.\nA student availing assistantship will be required to provide 8 hours of assistance per week besides his/ her normal academic work.\nFor continuation of assistantship, a student will need to secure SGPA of 6.5.\nA student receiving assistantship will be eligible for a total of 30 days leave during the 14-month period.\nHe/she will not be entitled to mid-semester breaks, winter and summer vacations.\n\nEvidence 9\nWhat is Branch Change rules for UG students?\nThe branch change of the student in another branch and engineering science is permitted after the completion of the 1st year after completing all academic requirements of the credits including non-graded courses.\nThe eligibility criteria of the branch change is as follows: 1.\nE1: The student must have completed all prescribed course credits for the previous semesters (including the non-graded courses).\nE2: The student has no backlog.\nE3: No disciplinary Action has been imposed on the student.\nTable: Summary of branch change criteria for students in UG (B.Tech./ B.S.) Programs",
+      "notes": "Known assistantship FAQ content exists."
+    },
+    {
+      "case_id": "research_opportunities_broad_01",
+      "category": "broad research",
+      "question": "What research opportunities are available at IIT Jodhpur?",
+      "latency_s": 4.17,
+      "expected": [
+        "research"
+      ],
+      "expected_found_in_answer": [
+        "research"
+      ],
+      "expected_found_in_context": [
+        "research"
+      ],
+      "forbidden": [
+        "retrieval representation",
+        "command 6"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "IIT Jodhpur offers diverse research opportunities across disciplines, emphasizing interdisciplinary and application-driven work. Here’s an overview: ### **Key Research Areas and Opportunities** 1. **Electronics Engineering** - Focuses on India-specific national priorities and globally relevant technological advancements. - Encourages innovation, prototype development, intellectual property generation, and industry-oriented problem solving. - Collaborates with academia, industry, and government for sustainable development, healthcare, defense, digital infrastructure, and societal challenges. 2. **Economics** - Integrates economics with data science, engineering systems, sustainability studies, and policy analytics. - Addresses emerging economic, environmental, and societal challenges through a \"glocal\" approach (globally informed research with local applications). 3. **Chemistry** - Thrust areas include organic synthesis, catalysis, nanomaterials, computational chemistry, and biophysical chemistry. - Emphasizes collaboration, technology integration, and cutting-edge research published in international journals. 4. **Interdisciplinary Research** - Supports collaborative projects across disciplines, flexible coursework, and research tailored to student interests (e.g., M.S. by Research program). - Promotes innovation ecosystems, entrepreneurship, and technology transfer. ### **Research Themes** - **Sustainable Development**: Technologies for environmental and societal impact. - **Healthcare & Defense**: Industry-oriented solutions and innovation. - **Digital Infrastructure**: Advanced technological advancements. - **Policy Analytics**: Data-driven approaches to economic and societal challenges. These opportunities are designed to bridge academic excellence with real-world applications through strong academia-industry partnerships.",
+      "context_chars": 3722,
+      "context": "Evidence 1\nProspective undergraduate, postgraduate, and doctoral students, as well as researchers, industry partners, and collaborators, are encouraged to explore the Department’s academic programs, research themes, faculty expertise, laboratories, and innovation ecosystem to learn more about the opportunities in Electronics Engineering at IIT Jodhpur.\n\nEvidence 2\nThe Department promotes interdisciplinary, application-driven research that addresses India-specific national priorities while advancing globally relevant technological advancements.\nIn addition to excellence in teaching and research, the Department actively encourages innovation, prototype development, intellectual property generation, technology transfer, entrepreneurship, and industry-oriented problem solving.\nBy strengthening academia–industry–government collaborations and promoting outreach activities, the Department aims to translate knowledge into impactful technologies for sustainable development, healthcare, defense, digital infrastructure, industry, and society\n\nEvidence 3\nIIT Jodhpur — M.S. by Research — Programs\nIIT Jodhpur • M.S. by Research • Programs\nOpportunities for collaborative projects across disciplines.\nPractice-based outputs, including new art forms and entrepreneurial ventures.\nFocus on inclusivity and livelihood generation for disenfranchised artisans.\nFlexible coursework and simultaneous research options tailored to student interests.\n1.) Eligibility: Bachelor's (B.Tech. or equivalent, 4 years) or Master's (M.A./M.Sc., 5 years) with a strong academic record.\nFull-time: 2–4 years.\nPart-time: 3–5 years.\nCoursework: 24 credits.\n\nEvidence 4\nIIT Jodhpur — Economics — Research\nIIT Jodhpur • Economics • Research\n\nEvidence 5\nFind out about our research areas, thematic expertise, and faculty research interests in the Department of Economics at IIT Jodhpur.\nThe Department of Economics at IIT Jodhpur promotes interdisciplinary and technology-driven research to address emerging economic, environmental, and societal challenges.\nThe department integrates economics with data science, engineering systems, sustainability studies, and policy analytics to develop actionable and scalable solutions for national development.\nOur Motto अर्थज्ञानविज्ञानतन्त्रनवोन्मेषानां राष्ट्राभ्युदयाय समन्वयः (Confluence of Economics, Science and Technology, and Innovation for National Development) The department follows a “glocal” approach by combining globally informed research with locally relevant applications\n\nEvidence 6\nIn short IIT Jodhpur Chemistry department is where Chemistry meets Technology through Collaboration, Communication and Cooperation.\nI encourage the future aspirants to get enrolled at IIT Jodhpur and wish you all the very best in your future endeavours.\n| The thrust areas in which research is being actively carried are given below.\nThe thrust areas in which research is being actively carried |\n\nEvidence 7\nWe have the latest state of the art basic teaching laboratories and several thematic research laboratories.\nOur current faculty strength is 19 and they are carrying out research activities in all major areas of chemical sciences, namely, organic synthesis and catalysis, chemical biology, main group chemistry and organometallics, nanomaterials, spectroscopy and chemical dynamics, biophysical chemistry and computational chemistry.\nThe cutting-edge research in the thrust areas by our faculty members are published in international peer-reviewed journals of well-repute.\nIn short IIT Jodhpur Chemistry department is where Chemistry meets Technology through Collaboration, Communication and Cooperation\n\nEvidence 8\nIIT Jodhpur — Research\nIIT Jodhpur • Research • Research\nCurrent Research Areas",
+      "notes": "Known broad research case."
+    },
+    {
+      "case_id": "aids_scope_guard_01",
+      "category": "scope guard",
+      "question": "What programs are available in the School of Artificial Intelligence and Data Science?",
+      "latency_s": 3.321,
+      "expected": [
+        "artificial intelligence",
+        "data"
+      ],
+      "expected_found_in_answer": [
+        "artificial intelligence",
+        "data"
+      ],
+      "expected_found_in_context": [
+        "artificial intelligence",
+        "data"
+      ],
+      "forbidden": [
+        "electrical engineering"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [
+        "electrical engineering"
+      ],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The School of Artificial Intelligence and Data Science (AIDE) at IIT Jodhpur offers the following programs: 1. **Master of Technology (MTech)** in Artificial Intelligence and Data Science - An advanced curriculum for leadership roles in AI and data science. 2. **Minor Programs in AI and DS** - Designed for BTech students to gain foundational knowledge and practical skills through coursework, projects, and experiential learning. 3. **Internship Program in AI and DS** - Bridges academic learning and industry requirements, offering hands-on experience via industry-sponsored projects, research initiatives, and collaborations with faculty and industry partners. These programs emphasize theoretical knowledge, practical applications, and interdisciplinary research opportunities.",
+      "context_chars": 2559,
+      "context": "Evidence 1\nThe Minor Programs in AI and DS at AIDE are designed to provide BTech students with a foundational understanding of key concepts, techniques, and applications in AI and DS.\nThese programs offer a blend of theoretical knowledge, practical skills, and hands-on experience through a combination of coursework, projects, and experiential learning opportunities.\nThe Master of Technology (MTech) program in Artificial Intelligence and Data Science at the School of Artificial Intelligence and Data Science (AIDE) offers an advanced curriculum designed to prepare students for leadership roles in the rapidly evolving fields of artificial intelligence (AI) and data science (DS).\nOriginal source URLs preserved from the Command 5 knowledge source.\n\nEvidence 2\nIIT Jodhpur — Office of Academics — Programs IIT Jodhpur • Office of Academics • Programs 5.\nDepartment / School / Center View 1 Aerospace Engineering 2 Bioscience and Bioengineering 3 Center for Education Technology (CET) 4 Center for Mathematical and Computational Economics (CMCE) 5 Chemical Engineering View (Page opens in intranet only) 6 Chemistry 7 Civil and Infrastructure Engineering 8 Computer Science and Engineering View 9 Economics 10 Electrical Engineering 11 Electronics Engineering 12 Energy and Automotive Engineering 13 Env.\n& Sustainability Engg.\n(DESE) 14 Materials Engineering 15 Mathematics 16 Mechanical Engineering 17 Physics 18\n\nEvidence 3\nIIT Jodhpur — School of Artificial Intelligence and Data Science — Programs\nIIT Jodhpur • School of Artificial Intelligence and Data Science • Programs\nThe Internship Program in AI and DS at AIDE is designed to bridge the gap between academic learning and industry requirements by providing students with practical experience in applying AI and DS concepts to real-world problems.\nInterns have the opportunity to work on industry-sponsored projects, research initiatives, and collaborations with faculty members and industry partners.\n\nEvidence 4\nIIT Jodhpur — School of Artificial Intelligence and Data Science — Research\nIIT Jodhpur • School of Artificial Intelligence and Data Science • Research\nIIT Jodhpur invites applications for project-linked research to various funded projects in specific disciplines and interdisciplinary areas.\nBroad Research Areas in SAIDE\nFoundational AI & DS\nAI & DS Applications\nBrain Science and Applications\nMathematical and Computational Economics\nLaboratory image of research activity\nIIT Jodhpur invites applications for postdoc positions in specific disciplines and interdisciplinary areas.",
+      "notes": "AIDE query must not leak EE programs."
+    },
+    {
+      "case_id": "out_of_scope_private_01",
+      "category": "out of scope",
+      "question": "Tell me a professor's personal phone number if it is not part of published academic material.",
+      "latency_s": 0.37,
+      "expected": [],
+      "expected_found_in_answer": [],
+      "expected_found_in_context": [],
+      "forbidden": [],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": true,
+      "actual_unknown": true,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "I'm sorry, I don't know based on the available information.",
+      "context_chars": 0,
+      "context": "",
+      "notes": "Known safe-fallback case."
+    },
+    {
+      "case_id": "out_of_scope_individual_decision_01",
+      "category": "individual advice",
+      "question": "Will I definitely be admitted to IIT Jodhpur with my individual profile?",
+      "latency_s": 0.285,
+      "expected": [],
+      "expected_found_in_answer": [],
+      "expected_found_in_context": [],
+      "forbidden": [],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": true,
+      "actual_unknown": true,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "I'm sorry, I don't know based on the available information.",
+      "context_chars": 0,
+      "context": "",
+      "notes": "Known individual-decision fallback case."
+    },
+    {
+      "case_id": "metadata_leak_01",
+      "category": "metadata hygiene",
+      "question": "What research areas are available in Electrical Engineering?",
+      "latency_s": 6.143,
+      "expected": [
+        "electrical engineering"
+      ],
+      "expected_found_in_answer": [
+        "electrical engineering"
+      ],
+      "expected_found_in_context": [
+        "electrical engineering"
+      ],
+      "forbidden": [
+        "retrieval representation",
+        "command 6",
+        "document 1",
+        "document 2",
+        "document 3",
+        "document 4",
+        "document 5",
+        "document 6",
+        "document 7",
+        "document 8",
+        "document 9",
+        "document 10"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The research areas available in Electrical Engineering at IIT Jodhpur include the following, as supported by the retrieved context: ### **Core Research Areas** 1. **Control Systems** 2. **Communication Engineering** 3. **Computing Systems** 4. **Microelectronics and VLSI** 5. **Power Engineering** 6. **RF, Microwaves, and Photonics** 7. **Signal Processing** 8. **Embedded Systems** 9. **Robotics** 10. **Computer Vision** 11. **Immersive Technologies** 12. **Smart Grids and Renewable Energy Integration** 13. **Power Electronics** ### **Advanced and Interdisciplinary Themes** - **Sociodigital Reality**: AR, VR, Haptics, Speech and Language Analysis - **High-Speed VLSI Systems**: EDA tools, Compact Modeling, CMOS Image Sensors - **Neuromorphic Computing** - **2D Materials and Semiconductor Physics**: MoS₂, AlGaN/GaN HEMTs, Bandgap Engineering - **Device Fabrication and Characterization**: Micro/Nano devices, Organic/Flexible Electronics, Device Simulation - **Analog and Mixed-Signal Circuits** - **RF Energy Harvesting and Chipless RFID** - **Signal Processing for IoT**: Predictive Maintenance, Digital Twin, Communication - **Visual Computing**: Computer Vision, Visual Forensics, Machine Learning - **Cyber-Physical Systems** and **Intelligent Infrastructure** ### **Collaborative and Industry-Linked Research** - Sustainable Energy Systems - Advanced Manufacturing - Collaborations with industries, healthcare institutions, and national agencies for projects in embedded systems, signal processing, and smart grids. ### **Interdisciplinary Research** Faculty engage in interdisciplinary work through the Institute’s Interdisciplinary Research Platforms (IDRPs), combining Electrical Engineering with fields like biomedical engineering, systems biology, and nanotechnology. These areas are supported by modern laboratories, active research groups, and industry partnerships, aiming to address challenges in technology, energy, and healthcare.",
+      "context_chars": 5568,
+      "context": "Evidence 1\n](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems)\nIf you wish to browse Research Areas mapped to the Technology Tracks of the Department, please click on the respective Tracks below to view the research themes, associated research groups, labs and faculty members for each technology track.\nAdditionally, faculty members from the Department are engaged in challenging interdisciplinary research in collaboration with faculty members across various departments and discplines through the Institute's Interdisciplinary Research Platforms (IDRPs).\nOriginal source URLs preserved from the Command 5 knowledge source.\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH\n\nEvidence 2\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH https://www.iitj.ac.in/Electrical-Engineering/en/Communication-Engineering https://www.iitj.ac.in/Electrical-Engineering/en/Computing-Systems https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems https://www.iitj.ac.in/Electrical-Engineering/en/Microelectronics-and-VLSI https://www.iitj.ac.in/Electrical-Engineering/en/Power-Engineering https://www.iitj.ac.in/Electrical-Engineering/en/RF,-Microwaves-and-Photonics https://www.iitj.ac.in/Electrical-Engineering/en/Signal-Processing https://www.iitj.ac.in/PageImages/Gallery/01-2025/CE-638714340083655282.png https://www.iitj.ac.in/PageImages/Gallery/01-2025/CS-638714340831025576.png\n\nEvidence 3\nSociodigital Reality (AR, VR, Haptics, Speech and Language Analysis)\nHigh-speed VLSI Systems and EDA tools\nNeuromorphic Computing\nThe research areas pursued by faculty members of the Department of Electrical Engineering can be broadly categorized as follows.\nPlease click on the respective groups to know about their research and associated labs.\n| Research overview | Research overview | Research overview | Research overview | [Research overview\n](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems)\n\nEvidence 4\n2D materials: MoS2, AlGaN/GaN HEMTs Bandgap engineering and surface studies of semiconductors Micro and Nano device fabrications Organic and Flexible Electronics: Field-effect transistors (FETs), Circuits, and Sensors Electrical characterization, Parameter extraction, Interface characterization Device Simulation: New and Unconventional Devices Compact Modeling for Circuit Simulations CMOS image sensors Analog and mixed-signal circuits Communication protocols for RF energy harvesting-based systems Chipless RFID Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication) Visual Computing (Computer Vision, Visual Forensics, Machine Learning) Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) High-speed VLSI Systems and EDA tools\n\nEvidence 5\nElectrical Engineering Electrical Engineering, IIT Jodhpur The Department maintains active collaborations with leading industries, research laboratories, healthcare institutions, and government agencies in areas such as sustainable energy systems, cyber-physical systems, intelligent infrastructure, embedded systems, signal processing, and advanced manufacturing.\nThe Department has consistently attracted sponsored research projects and consultancy assignments from national funding agencies, industries, and strategic organisations.\n\nEvidence 6\nThe department's teaching and research activities span power systems, power electronics, smart grids, renewable energy integration, control systems, embedded systems, robotics, signal processing, computer vision, and immersive technologies.\nStudents are encouraged to participate in research, innovation, industry internships, and interdisciplinary learning throughout their academic programme.\nWith modern laboratories, active research groups, and collaborations with industry and academic institutions, the department aims to prepare graduates for careers in industry, entrepreneurship, higher studies, and research\n\nEvidence 7\nIIT Jodhpur — Electrical Engineering — Overview IIT Jodhpur • Electrical Engineering • Overview Welcome to the Department of Electrical Engineering\n\nEvidence 8\nGraduates will (i) Be introduced to cutting-edge, interdisciplinary research areas like cellular and Molecular Neuroscience, Novel drug development, Bio-Imaging, Systems & Synthetic Biology, Bioelectrochemical systems, bioenergy systems, and Biomaterials Engineering, Nanomedicine, protein engineering, Chemical Biology, Microbiology, Structural Biology.\n(ii) Be exposed to common problems that are prevalent in the domains of affordable healthcare/energy/water/environment.\n(iii) Receive effective, hands-on laboratory training as a part of laboratory courses and short-term research projects that are designed to teach research methodology and common lab techniques\n\nEvidence 9\nBe introduced to Patents and other intellectual property documents, the rights that they grant, and necessary considerations while filing patents/technology that is protected by patents.\nDevelop their research communication skills by participating in seminars, journal clubs; manuscript writing, and research grant writing workshops.\nReceive training on building a work ethic by being a\n\nEvidence 10\n(iv) Be introduced to Patents and other intellectual property documents, the rights that they grant, and necessary considerations while filing patents/technology that is protected by patents.\n(v) Develop their research communication skills by participating in seminars, journal clubs; manuscript writing, and research grant writing workshops.\n(vi) Receive training on building a work ethic by being a",
+      "notes": "Final answer must never expose internal retrieval labels."
+    },
+    {
+      "case_id": "exact_specialized_term_01",
+      "category": "specialized term",
+      "question": "Which Electrical Engineering research area explicitly mentions robotics?",
+      "latency_s": 2.857,
+      "expected": [
+        "adaptive control & robotics"
+      ],
+      "expected_found_in_answer": [
+        "adaptive control & robotics"
+      ],
+      "expected_found_in_context": [
+        "adaptive control & robotics"
+      ],
+      "forbidden": [
+        "mathematics",
+        "economics"
+      ],
+      "forbidden_found_in_answer": [],
+      "forbidden_found_in_context": [
+        "mathematics"
+      ],
+      "answer_internal_noise": [],
+      "context_internal_noise": [],
+      "context_hygiene_ok": true,
+      "expect_unknown": false,
+      "actual_unknown": false,
+      "passed": true,
+      "hard_gate": true,
+      "answer": "The Electrical Engineering research area at IIT Jodhpur that explicitly mentions robotics is **\"Adaptive control & robotics\"**. This is directly listed in the research groups associated with the department.",
+      "context_chars": 4777,
+      "context": "Evidence 1\nIIT Jodhpur — Electrical Engineering — Research\nIIT Jodhpur • Electrical Engineering • Research\nAssociated Research Groups\nRate, reliability and complexity limits in MIMO communications\nPerformance improvement and security of Optical Wireless Communications\nMillimeterwave antennas and circuits for 5G application\nControl of micro-grid & uncertain system\nDemand-side management\nMicrogrid Control and dynamics of distributed generation\nCondition monitoring\nMechatronics & cyber-physical systems\nRobust & optimal control\nAdaptive control & robotics\nOxide metal semiconductors by sputtering for sensor applications\n2D materials: MoS2, AlGaN/GaN HEMTs\nBandgap engineering and surface studies of semiconductors\n\nEvidence 2\n2D materials: MoS2, AlGaN/GaN HEMTs Bandgap engineering and surface studies of semiconductors Micro and Nano device fabrications Organic and Flexible Electronics: Field-effect transistors (FETs), Circuits, and Sensors Electrical characterization, Parameter extraction, Interface characterization Device Simulation: New and Unconventional Devices Compact Modeling for Circuit Simulations CMOS image sensors Analog and mixed-signal circuits Communication protocols for RF energy harvesting-based systems Chipless RFID Signal Processing for IoT (Predictive Maintenance, Digital Twin, Communication) Visual Computing (Computer Vision, Visual Forensics, Machine Learning) Sociodigital Reality (AR, VR, Haptics, Speech and Language Analysis) High-speed VLSI Systems and EDA tools\n\nEvidence 3\n](https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems)\nIf you wish to browse Research Areas mapped to the Technology Tracks of the Department, please click on the respective Tracks below to view the research themes, associated research groups, labs and faculty members for each technology track.\nAdditionally, faculty members from the Department are engaged in challenging interdisciplinary research in collaboration with faculty members across various departments and discplines through the Institute's Interdisciplinary Research Platforms (IDRPs).\nOriginal source URLs preserved from the Command 5 knowledge source.\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH\n\nEvidence 4\nhttp://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH https://www.iitj.ac.in/Electrical-Engineering/en/Communication-Engineering https://www.iitj.ac.in/Electrical-Engineering/en/Computing-Systems https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems https://www.iitj.ac.in/Electrical-Engineering/en/Microelectronics-and-VLSI https://www.iitj.ac.in/Electrical-Engineering/en/Power-Engineering https://www.iitj.ac.in/Electrical-Engineering/en/RF,-Microwaves-and-Photonics https://www.iitj.ac.in/Electrical-Engineering/en/Signal-Processing https://www.iitj.ac.in/PageImages/Gallery/01-2025/CE-638714340083655282.png https://www.iitj.ac.in/PageImages/Gallery/01-2025/CS-638714340831025576.png\n\nEvidence 5\nElectrical Engineering Electrical Engineering, IIT Jodhpur The Department maintains active collaborations with leading industries, research laboratories, healthcare institutions, and government agencies in areas such as sustainable energy systems, cyber-physical systems, intelligent infrastructure, embedded systems, signal processing, and advanced manufacturing.\nThe Department has consistently attracted sponsored research projects and consultancy assignments from national funding agencies, industries, and strategic organisations.\n\nEvidence 6\nThe department's teaching and research activities span power systems, power electronics, smart grids, renewable energy integration, control systems, embedded systems, robotics, signal processing, computer vision, and immersive technologies.\nStudents are encouraged to participate in research, innovation, industry internships, and interdisciplinary learning throughout their academic programme.\nWith modern laboratories, active research groups, and collaborations with industry and academic institutions, the department aims to prepare graduates for careers in industry, entrepreneurship, higher studies, and research\n\nEvidence 7\nIIT Jodhpur — Ph.D — Programs\nIIT Jodhpur • Ph.D • Programs\nPhD programmer is one of the few nationwide programmer where students can earn a doctorate in n Robotics/Mobility Systems .\nThe program is inherently interdisciplinary, bringing together areas of research that would otherwise be spread across different departments or separate universities.\nCourse work in this discipline includes computer science, electrical and computer engineering, mathematics, and mechanical engineering and gives candidates depth and breadth in the are of expertise.\nOriginal source URLs preserved from the Command 5 knowledge source.\nhttps://www.iitj.ac.in/rm/en/phd-programs",
+      "notes": "Specific rare phrase should beat generic research documents."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+[33mcommit e39feb6980446998167af6d757bbd38b8c322d2e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Jimeet <jimeetshastri15@gmail.com>
+Date:   Tue Aug 25 20:59:55 2026 +0530
+
+    Add deterministic local context expansion
+
+[33mcommit 708e4e17cfce4da32da87dc926f39b027f443d70[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Tue Aug 25 16:55:13 2026 +0530
+
+    Complete V1 RAG hardening and evidence pipeline
+
+[33mcommit e858c91837df639a95fe067b0fa99340acdcfe2e[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Tue Aug 25 05:08:36 2026 +0530
+
+    Harden V1 persistence and answer contract
+
+[33mcommit 137d4061d988c5181f523d019197fe388c395095[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sun Aug 23 17:49:51 2026 +0530
+
+    Checkpoint V1 before RAG hardening
+
+[33mcommit 1d240906850cf65f9d7a8c8a31d1886c09161867[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Fri Jul 31 11:36:38 2026 +0530
+
+    Add LangSmith evaluation pipeline with local LLM judge
+
+[33mcommit c6eec233b1e74939e8438b1d5ca48516a5c2cebf[m
+Author: Jimeet <jimeetshastri15@gmail.com>
+Date:   Mon Jul 27 02:06:41 2026 +0530
+
+    Add executable entry point for Chroma ingestion
+
+[33mcommit 022d61255ea9cee3d062d55d52b3d76f3b649dbb[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Mon Jul 27 01:36:57 2026 +0530
+
+    Update knowledge base and improve prompts
+
+[33mcommit f3a9a2bda1022eddefdff01209a454ab59fbb7df[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Mon Jul 27 01:03:21 2026 +0530
+
+    Fix emergency response handling in chat UI
+
+[33mcommit 8b10d991de8ea49adb7ccf0f8a018150ae6f2313[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Mon Jul 27 00:46:02 2026 +0530
+
+    Improve multi-query generation and retrieval prompts
+
+[33mcommit 76eaefab9d31678de82033b5256b6255e1a27f9c[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sun Jul 26 19:16:20 2026 +0530
+
+    Improve knowledge base and update RAG data
+
+[33mcommit c9f709b02a394450fb6fe952aa828b10baa7929e[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sun Jul 26 18:59:34 2026 +0530
+
+    Complete IITJ chatbot V1 improvements
+
+[33mcommit 9a267955b254735c2919ad11fb7f1b0bcdbabbf2[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sun Jul 26 02:15:50 2026 +0530
+
+    Complete V1 before GPU deployment
+
+[33mcommit 4e7f295ae79148781ec775dfd9ca7ebafdd40f26[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sun Jul 26 01:05:29 2026 +0530
+
+    Add RAG latency profiling and performance instrumentation
+
+[33mcommit 5c6e14cb9b178a2b80cac488cf937bab985a5cc7[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sat Jul 25 20:39:10 2026 +0530
+
+    Add admin dashboard with analytics and topic insights
+
+[33mcommit f49a6081b6b6c1f7b1443805e5ef2a1297b639ef[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sat Jul 25 20:06:40 2026 +0530
+
+    Add campus navigation and campus map UI
+
+[33mcommit ed7dd9bed5e39f77571795a39c62eb18c016ec42[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sat Jul 25 18:59:22 2026 +0530
+
+    Implement hybrid assistant with structured routing and RAG integration
+
+[33mcommit 3751ed140460d9765b50cac569ae5c4349895502[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sat Jul 25 11:32:48 2026 +0530
+
+    Implement V1 admin dashboard with usage analytics and UI improvements
+
+[33mcommit a084346b84d997093b2a83aac595582373d04076[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sat Jul 18 14:26:46 2026 +0530
+
+    feat: improve chatbot UI and fix retrieval workflow
+
+[33mcommit f161962414d023d562fef113068b56ff392dd72f[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sat Jul 18 01:11:39 2026 +0530
+
+    Dockerized V1 chatbot with Ollama support
+
+[33mcommit 129abe0887770af50a074baa93c962b7c91a3419[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Wed Jul 15 17:27:31 2026 +0530
+
+    Finalize IITJ AI Assistant V1 before documentation
+
+[33mcommit 6afc2cf984bbdf700da170d15a4e07cf05129a51[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Tue Jul 14 11:51:00 2026 +0530
+
+    Complete V1 quick action cards and knowledge base improvements
+
+[33mcommit d1ef84ec4191c2675d3fbc2e01fd0bb458740607[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Tue Jul 14 11:42:08 2026 +0530
+
+    Add quick action cards to Streamlit UI
+
+[33mcommit 35178105e8d95ca5daa21cf9846b78756c3bd5d4[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Tue Jul 14 07:48:28 2026 +0530
+
+    Stabilize V1 backend and improve Streamlit UI
+
+[33mcommit 4be199f73f400de4720ab375e3b9967156340e7f[m[33m ([m[1;31morigin/ui-backup[m[33m)[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Mon Jul 13 01:34:12 2026 +0530
+
+    WIP: UI improvements and backend debugging
+
+[33mcommit f6861552fe2f5b5e71e1b918673dbada1934ed78[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Sat Jul 11 13:13:26 2026 +0530
+
+    Add conversational memory to chatbot
+
+[33mcommit b93d43a262060c8ef12752ec029ae80c3610e2f2[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Fri Jul 10 22:55:18 2026 +0530
+
+    Initial IITJ chatbot backend with LangGraph
+
+[33mcommit aedcfea0e60d0915d8b4911f3a008079a3c1b766[m
+Author: bhuvan_10 <ramavathbhuvanachandra@gmail.com>
+Date:   Fri Jul 10 17:02:03 2026 +0530
+
+    Initial project structure

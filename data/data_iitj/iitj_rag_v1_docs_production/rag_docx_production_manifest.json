@@ -1,0 +1,1135 @@
+{
+  "representation_version": "command6_rag_representation_docx_production_v1",
+  "source_of_truth": "Command 5 Markdown",
+  "consumed_format": "Markdown",
+  "output_format": "DOCX",
+  "source_root": "/Users/bhuvanachandra/Documents/knowledge-ingestion-engine/storage_v2/command5/iitj_final",
+  "output_root": "/Users/bhuvanachandra/Documents/knowledge-ingestion-engine/storage_v2/command6/iitj_rag_v1_docs_production",
+  "input_document_count": 139,
+  "output_document_count": 139,
+  "exact_document_count_match": true,
+  "unit_ids_in_retrieval_text": false,
+  "source_urls_preserved": true,
+  "chunking_performed": false,
+  "embedding_performed": false,
+  "vector_db_written": false,
+  "bm25_performed": false,
+  "retrieval_performed": false,
+  "llm_rewriting_performed": false,
+  "duplicate_visible_occurrences_removed": 703,
+  "source_url_reference_count": 1393,
+  "documents": [
+    {
+      "source_markdown": "academic_administration/registration.md",
+      "output_docx": "academic_administration/registration.docx",
+      "title": "IIT Jodhpur — Academic Administration — Registration",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 5,
+      "source_hash": "4c7db3721d625044"
+    },
+    {
+      "source_markdown": "admissions/general_admissions.md",
+      "output_docx": "admissions/general_admissions.docx",
+      "title": "IIT Jodhpur — Admissions — General Admissions",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 24,
+      "source_hash": "0aff748c33163a5c"
+    },
+    {
+      "source_markdown": "admissions/msc_admissions.md",
+      "output_docx": "admissions/msc_admissions.docx",
+      "title": "IIT Jodhpur — Admissions — Msc Admissions",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "c5a93cd865e0eb20"
+    },
+    {
+      "source_markdown": "admissions/mtech_admissions.md",
+      "output_docx": "admissions/mtech_admissions.docx",
+      "title": "IIT Jodhpur — Admissions — Mtech Admissions",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 1,
+      "source_hash": "46394d4e3551e3bb"
+    },
+    {
+      "source_markdown": "admissions/phd_admissions.md",
+      "output_docx": "admissions/phd_admissions.docx",
+      "title": "IIT Jodhpur — Admissions — Phd Admissions",
+      "duplicate_visible_occurrences_removed": 3,
+      "source_url_count": 4,
+      "source_hash": "de35ff468552eb1c"
+    },
+    {
+      "source_markdown": "campus_and_student_services/sustainability.md",
+      "output_docx": "campus_and_student_services/sustainability.docx",
+      "title": "IIT Jodhpur — Campus And Student Services — Sustainability",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "e98f18752e1ffb9d"
+    },
+    {
+      "source_markdown": "departments/aerospace_engineering/general_information.md",
+      "output_docx": "departments/aerospace_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Aerospace Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "9a5a3d58f1477028"
+    },
+    {
+      "source_markdown": "departments/aerospace_engineering/programs.md",
+      "output_docx": "departments/aerospace_engineering/programs.docx",
+      "title": "IIT Jodhpur — Aerospace Engineering — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "914b9500bec225dc"
+    },
+    {
+      "source_markdown": "departments/bioscience_and_bioengineering/facilities.md",
+      "output_docx": "departments/bioscience_and_bioengineering/facilities.docx",
+      "title": "IIT Jodhpur — Bioscience and Bioengineering — Facilities",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "b08a65150bf32d76"
+    },
+    {
+      "source_markdown": "departments/bioscience_and_bioengineering/faculty.md",
+      "output_docx": "departments/bioscience_and_bioengineering/faculty.docx",
+      "title": "IIT Jodhpur — Bioscience and Bioengineering — Faculty",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "7a95848844aa41d6"
+    },
+    {
+      "source_markdown": "departments/bioscience_and_bioengineering/general_information.md",
+      "output_docx": "departments/bioscience_and_bioengineering/general_information.docx",
+      "title": "IIT Jodhpur — Bioscience and Bioengineering — General Information",
+      "duplicate_visible_occurrences_removed": 6,
+      "source_url_count": 10,
+      "source_hash": "6b204095d26ba72e"
+    },
+    {
+      "source_markdown": "departments/bioscience_and_bioengineering/overview.md",
+      "output_docx": "departments/bioscience_and_bioengineering/overview.docx",
+      "title": "IIT Jodhpur — Bioscience and Bioengineering — Overview",
+      "duplicate_visible_occurrences_removed": 4,
+      "source_url_count": 6,
+      "source_hash": "7a72c3fdef6c84d8"
+    },
+    {
+      "source_markdown": "departments/bioscience_and_bioengineering/programs.md",
+      "output_docx": "departments/bioscience_and_bioengineering/programs.docx",
+      "title": "IIT Jodhpur — Bioscience and Bioengineering — Programs",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 3,
+      "source_hash": "80ff11c9905adace"
+    },
+    {
+      "source_markdown": "departments/bioscience_and_bioengineering/research.md",
+      "output_docx": "departments/bioscience_and_bioengineering/research.docx",
+      "title": "IIT Jodhpur — Bioscience and Bioengineering — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 21,
+      "source_hash": "bc77bf9b6dc60cd8"
+    },
+    {
+      "source_markdown": "departments/chemical_engineering/curriculum.md",
+      "output_docx": "departments/chemical_engineering/curriculum.docx",
+      "title": "IIT Jodhpur — Chemical Engineering — Curriculum",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 4,
+      "source_hash": "faee198581617a45"
+    },
+    {
+      "source_markdown": "departments/chemical_engineering/faculty.md",
+      "output_docx": "departments/chemical_engineering/faculty.docx",
+      "title": "IIT Jodhpur — Chemical Engineering — Faculty",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "62e7e0865d8e361a"
+    },
+    {
+      "source_markdown": "departments/chemical_engineering/general_information.md",
+      "output_docx": "departments/chemical_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Chemical Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 2,
+      "source_hash": "c7e55e3383789274"
+    },
+    {
+      "source_markdown": "departments/chemical_engineering/programs.md",
+      "output_docx": "departments/chemical_engineering/programs.docx",
+      "title": "IIT Jodhpur — Chemical Engineering — Programs",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 5,
+      "source_hash": "09f94eefbbe50303"
+    },
+    {
+      "source_markdown": "departments/chemistry/curriculum.md",
+      "output_docx": "departments/chemistry/curriculum.docx",
+      "title": "IIT Jodhpur — Chemistry — Curriculum",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "dce66f9c1d734214"
+    },
+    {
+      "source_markdown": "departments/chemistry/facilities.md",
+      "output_docx": "departments/chemistry/facilities.docx",
+      "title": "IIT Jodhpur — Chemistry — Facilities",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "6aad244d583a6842"
+    },
+    {
+      "source_markdown": "departments/chemistry/general_information.md",
+      "output_docx": "departments/chemistry/general_information.docx",
+      "title": "IIT Jodhpur — Chemistry — General Information",
+      "duplicate_visible_occurrences_removed": 73,
+      "source_url_count": 30,
+      "source_hash": "23ffad201d480ba5"
+    },
+    {
+      "source_markdown": "departments/chemistry/overview.md",
+      "output_docx": "departments/chemistry/overview.docx",
+      "title": "IIT Jodhpur — Chemistry — Overview",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 5,
+      "source_hash": "f148f7d6b4eb8a83"
+    },
+    {
+      "source_markdown": "departments/chemistry/programs.md",
+      "output_docx": "departments/chemistry/programs.docx",
+      "title": "IIT Jodhpur — Chemistry — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 3,
+      "source_hash": "bbe598032f4f4644"
+    },
+    {
+      "source_markdown": "departments/chemistry/research.md",
+      "output_docx": "departments/chemistry/research.docx",
+      "title": "IIT Jodhpur — Chemistry — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "a423cd45244180c5"
+    },
+    {
+      "source_markdown": "departments/chemistry/rules_and_regulations.md",
+      "output_docx": "departments/chemistry/rules_and_regulations.docx",
+      "title": "IIT Jodhpur — Chemistry — Rules And Regulations",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 1,
+      "source_hash": "2e148550ca7c4cb7"
+    },
+    {
+      "source_markdown": "departments/civil_and_infrastructure_engineering/faculty.md",
+      "output_docx": "departments/civil_and_infrastructure_engineering/faculty.docx",
+      "title": "IIT Jodhpur — Civil and Infrastructure Engineering — Faculty",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 3,
+      "source_hash": "eaa30bb5bacad99c"
+    },
+    {
+      "source_markdown": "departments/civil_and_infrastructure_engineering/general_information.md",
+      "output_docx": "departments/civil_and_infrastructure_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Civil and Infrastructure Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 4,
+      "source_url_count": 9,
+      "source_hash": "36052b8af2291b6d"
+    },
+    {
+      "source_markdown": "departments/civil_and_infrastructure_engineering/overview.md",
+      "output_docx": "departments/civil_and_infrastructure_engineering/overview.docx",
+      "title": "IIT Jodhpur — Civil and Infrastructure Engineering — Overview",
+      "duplicate_visible_occurrences_removed": 7,
+      "source_url_count": 3,
+      "source_hash": "dd13816a9f56b8ca"
+    },
+    {
+      "source_markdown": "departments/computer_science_and_engineering/faculty.md",
+      "output_docx": "departments/computer_science_and_engineering/faculty.docx",
+      "title": "IIT Jodhpur — Computer Science and Engineering — Faculty",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "cdb39ca81b935c64"
+    },
+    {
+      "source_markdown": "departments/computer_science_and_engineering/general_information.md",
+      "output_docx": "departments/computer_science_and_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Computer Science and Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 4,
+      "source_url_count": 4,
+      "source_hash": "06fcc89b201ba7e2"
+    },
+    {
+      "source_markdown": "departments/computer_science_and_engineering/overview.md",
+      "output_docx": "departments/computer_science_and_engineering/overview.docx",
+      "title": "IIT Jodhpur — Computer Science and Engineering — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 2,
+      "source_hash": "bef374b863085dd7"
+    },
+    {
+      "source_markdown": "departments/economics/facilities.md",
+      "output_docx": "departments/economics/facilities.docx",
+      "title": "IIT Jodhpur — Economics — Facilities",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "2223201a877b582a"
+    },
+    {
+      "source_markdown": "departments/economics/general_information.md",
+      "output_docx": "departments/economics/general_information.docx",
+      "title": "IIT Jodhpur — Economics — General Information",
+      "duplicate_visible_occurrences_removed": 6,
+      "source_url_count": 42,
+      "source_hash": "c1b4998786883a65"
+    },
+    {
+      "source_markdown": "departments/economics/overview.md",
+      "output_docx": "departments/economics/overview.docx",
+      "title": "IIT Jodhpur — Economics — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 5,
+      "source_hash": "4e63b5083301e59e"
+    },
+    {
+      "source_markdown": "departments/economics/programs.md",
+      "output_docx": "departments/economics/programs.docx",
+      "title": "IIT Jodhpur — Economics — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 4,
+      "source_hash": "c0a214b7e8bddee9"
+    },
+    {
+      "source_markdown": "departments/economics/research.md",
+      "output_docx": "departments/economics/research.docx",
+      "title": "IIT Jodhpur — Economics — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "f8a7c47d1fd59417"
+    },
+    {
+      "source_markdown": "departments/electrical_engineering/facilities.md",
+      "output_docx": "departments/electrical_engineering/facilities.docx",
+      "title": "IIT Jodhpur — Electrical Engineering — Facilities",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 3,
+      "source_hash": "eb8f567ba595c5a5"
+    },
+    {
+      "source_markdown": "departments/electrical_engineering/faculty.md",
+      "output_docx": "departments/electrical_engineering/faculty.docx",
+      "title": "IIT Jodhpur — Electrical Engineering — Faculty",
+      "duplicate_visible_occurrences_removed": 5,
+      "source_url_count": 30,
+      "source_hash": "78a7195ec909d4de"
+    },
+    {
+      "source_markdown": "departments/electrical_engineering/general_information.md",
+      "output_docx": "departments/electrical_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Electrical Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 8,
+      "source_hash": "1226f3e5b34d67c1"
+    },
+    {
+      "source_markdown": "departments/electrical_engineering/overview.md",
+      "output_docx": "departments/electrical_engineering/overview.docx",
+      "title": "IIT Jodhpur — Electrical Engineering — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 3,
+      "source_hash": "16d24917a502f581"
+    },
+    {
+      "source_markdown": "departments/electrical_engineering/research.md",
+      "output_docx": "departments/electrical_engineering/research.docx",
+      "title": "IIT Jodhpur — Electrical Engineering — Research",
+      "duplicate_visible_occurrences_removed": 11,
+      "source_url_count": 16,
+      "source_hash": "65aab9972c13e6fc"
+    },
+    {
+      "source_markdown": "departments/electronics_engineering/general_information.md",
+      "output_docx": "departments/electronics_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Electronics Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "3f3adb3953596214"
+    },
+    {
+      "source_markdown": "departments/electronics_engineering/overview.md",
+      "output_docx": "departments/electronics_engineering/overview.docx",
+      "title": "IIT Jodhpur — Electronics Engineering — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 3,
+      "source_hash": "e0c331b5cbca7f04"
+    },
+    {
+      "source_markdown": "departments/electronics_engineering/programs.md",
+      "output_docx": "departments/electronics_engineering/programs.docx",
+      "title": "IIT Jodhpur — Electronics Engineering — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "b31f54e8e9eb839d"
+    },
+    {
+      "source_markdown": "departments/energy_and_automotive_engineering/general_information.md",
+      "output_docx": "departments/energy_and_automotive_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Energy and Automotive Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 9,
+      "source_url_count": 4,
+      "source_hash": "76ef21924ed75cd0"
+    },
+    {
+      "source_markdown": "departments/energy_and_automotive_engineering/overview.md",
+      "output_docx": "departments/energy_and_automotive_engineering/overview.docx",
+      "title": "IIT Jodhpur — Energy and Automotive Engineering — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 2,
+      "source_hash": "2905958c4a417be6"
+    },
+    {
+      "source_markdown": "departments/energy_and_automotive_engineering/research.md",
+      "output_docx": "departments/energy_and_automotive_engineering/research.docx",
+      "title": "IIT Jodhpur — Energy and Automotive Engineering — Research",
+      "duplicate_visible_occurrences_removed": 16,
+      "source_url_count": 3,
+      "source_hash": "9433e5d30ae5d51b"
+    },
+    {
+      "source_markdown": "departments/environmental_and_sustainability_engineering/general_information.md",
+      "output_docx": "departments/environmental_and_sustainability_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Environmental and Sustainability Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 7,
+      "source_url_count": 3,
+      "source_hash": "bf06fb229ae0d679"
+    },
+    {
+      "source_markdown": "departments/environmental_and_sustainability_engineering/sustainability.md",
+      "output_docx": "departments/environmental_and_sustainability_engineering/sustainability.docx",
+      "title": "IIT Jodhpur — Environmental and Sustainability Engineering — Sustainability",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "3d6b133779306670"
+    },
+    {
+      "source_markdown": "departments/materials_engineering/facilities.md",
+      "output_docx": "departments/materials_engineering/facilities.docx",
+      "title": "IIT Jodhpur — Materials Engineering — Facilities",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 9,
+      "source_hash": "8df680d37c84c08f"
+    },
+    {
+      "source_markdown": "departments/materials_engineering/general_information.md",
+      "output_docx": "departments/materials_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Materials Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 7,
+      "source_hash": "2f19c60a0e9dc637"
+    },
+    {
+      "source_markdown": "departments/materials_engineering/overview.md",
+      "output_docx": "departments/materials_engineering/overview.docx",
+      "title": "IIT Jodhpur — Materials Engineering — Overview",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 3,
+      "source_hash": "ab40efc9499b0f6b"
+    },
+    {
+      "source_markdown": "departments/materials_engineering/programs.md",
+      "output_docx": "departments/materials_engineering/programs.docx",
+      "title": "IIT Jodhpur — Materials Engineering — Programs",
+      "duplicate_visible_occurrences_removed": 5,
+      "source_url_count": 3,
+      "source_hash": "8eb5f188d515d228"
+    },
+    {
+      "source_markdown": "departments/mathematics/curriculum.md",
+      "output_docx": "departments/mathematics/curriculum.docx",
+      "title": "IIT Jodhpur — Mathematics — Curriculum",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "8c442ae610a52baa"
+    },
+    {
+      "source_markdown": "departments/mathematics/general_information.md",
+      "output_docx": "departments/mathematics/general_information.docx",
+      "title": "IIT Jodhpur — Mathematics — General Information",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 7,
+      "source_hash": "5237bd7b9e46f2cd"
+    },
+    {
+      "source_markdown": "departments/mathematics/overview.md",
+      "output_docx": "departments/mathematics/overview.docx",
+      "title": "IIT Jodhpur — Mathematics — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 9,
+      "source_hash": "4b375b28f737bb1f"
+    },
+    {
+      "source_markdown": "departments/mathematics/programs.md",
+      "output_docx": "departments/mathematics/programs.docx",
+      "title": "IIT Jodhpur — Mathematics — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 6,
+      "source_hash": "a81c1ea921202f94"
+    },
+    {
+      "source_markdown": "departments/mathematics/research.md",
+      "output_docx": "departments/mathematics/research.docx",
+      "title": "IIT Jodhpur — Mathematics — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "3c44cec39aa694c7"
+    },
+    {
+      "source_markdown": "departments/mechanical_engineering/general_information.md",
+      "output_docx": "departments/mechanical_engineering/general_information.docx",
+      "title": "IIT Jodhpur — Mechanical Engineering — General Information",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 10,
+      "source_hash": "a1da7061e2b5503e"
+    },
+    {
+      "source_markdown": "departments/mechanical_engineering/overview.md",
+      "output_docx": "departments/mechanical_engineering/overview.docx",
+      "title": "IIT Jodhpur — Mechanical Engineering — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 2,
+      "source_hash": "176a156f27c69d5b"
+    },
+    {
+      "source_markdown": "departments/mechanical_engineering/programs.md",
+      "output_docx": "departments/mechanical_engineering/programs.docx",
+      "title": "IIT Jodhpur — Mechanical Engineering — Programs",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 5,
+      "source_hash": "43aa72f493a7541b"
+    },
+    {
+      "source_markdown": "departments/physics/facilities.md",
+      "output_docx": "departments/physics/facilities.docx",
+      "title": "IIT Jodhpur — Physics — Facilities",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 5,
+      "source_hash": "6b33871ca0b97eb6"
+    },
+    {
+      "source_markdown": "departments/physics/general_information.md",
+      "output_docx": "departments/physics/general_information.docx",
+      "title": "IIT Jodhpur — Physics — General Information",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 12,
+      "source_hash": "bb8338acea7ab930"
+    },
+    {
+      "source_markdown": "departments/physics/overview.md",
+      "output_docx": "departments/physics/overview.docx",
+      "title": "IIT Jodhpur — Physics — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 8,
+      "source_hash": "ed5f42919c328d3f"
+    },
+    {
+      "source_markdown": "departments/physics/programs.md",
+      "output_docx": "departments/physics/programs.docx",
+      "title": "IIT Jodhpur — Physics — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "7024def58d4197c3"
+    },
+    {
+      "source_markdown": "departments/physics/research.md",
+      "output_docx": "departments/physics/research.docx",
+      "title": "IIT Jodhpur — Physics — Research",
+      "duplicate_visible_occurrences_removed": 6,
+      "source_url_count": 23,
+      "source_hash": "1660fa061396e774"
+    },
+    {
+      "source_markdown": "faculty/faculty.md",
+      "output_docx": "faculty/faculty.docx",
+      "title": "IIT Jodhpur — Faculty",
+      "duplicate_visible_occurrences_removed": 9,
+      "source_url_count": 25,
+      "source_hash": "a38eb0e51a8d5a95"
+    },
+    {
+      "source_markdown": "fallback/knowledge_buffer_general.md",
+      "output_docx": "fallback/knowledge_buffer_general.docx",
+      "title": "IIT Jodhpur — Fallback — Knowledge Buffer General",
+      "duplicate_visible_occurrences_removed": 236,
+      "source_url_count": 143,
+      "source_hash": "eaf1f7e79227e402"
+    },
+    {
+      "source_markdown": "finance/fees_and_finance.md",
+      "output_docx": "finance/fees_and_finance.docx",
+      "title": "IIT Jodhpur — Finance — Fees And Finance",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "faac293a131048d7"
+    },
+    {
+      "source_markdown": "hostel_accommodation/general_information.md",
+      "output_docx": "hostel_accommodation/general_information.docx",
+      "title": "IIT Jodhpur — Hostel Accommodation — General Information",
+      "duplicate_visible_occurrences_removed": 6,
+      "source_url_count": 22,
+      "source_hash": "fb32045efc3c51b9"
+    },
+    {
+      "source_markdown": "institute_overview/overview.md",
+      "output_docx": "institute_overview/overview.docx",
+      "title": "IIT Jodhpur — Institute Overview — Overview",
+      "duplicate_visible_occurrences_removed": 4,
+      "source_url_count": 22,
+      "source_hash": "48c1d2a3b680132d"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/academic_progression.md",
+      "output_docx": "offices_and_administration/office_of_academics/academic_progression.docx",
+      "title": "IIT Jodhpur — Office of Academics — Academic Progression",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 18,
+      "source_hash": "ff4fc5c44fc93130"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/curriculum.md",
+      "output_docx": "offices_and_administration/office_of_academics/curriculum.docx",
+      "title": "IIT Jodhpur — Office of Academics — Curriculum",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 14,
+      "source_hash": "d5b2c03f4cd22e8e"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/examinations_and_grading.md",
+      "output_docx": "offices_and_administration/office_of_academics/examinations_and_grading.docx",
+      "title": "IIT Jodhpur — Office of Academics — Examinations And Grading",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 10,
+      "source_hash": "ec33fe4122f21e94"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/general_information.md",
+      "output_docx": "offices_and_administration/office_of_academics/general_information.docx",
+      "title": "IIT Jodhpur — Office of Academics — General Information",
+      "duplicate_visible_occurrences_removed": 7,
+      "source_url_count": 52,
+      "source_hash": "86e74f4f29f124d6"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/international_relations.md",
+      "output_docx": "offices_and_administration/office_of_academics/international_relations.docx",
+      "title": "IIT Jodhpur — Office of Academics — International Relations",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "2c5dff2855229a98"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/overview.md",
+      "output_docx": "offices_and_administration/office_of_academics/overview.docx",
+      "title": "IIT Jodhpur — Office of Academics — Overview",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "cba8d4b3794e5abd"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/programs.md",
+      "output_docx": "offices_and_administration/office_of_academics/programs.docx",
+      "title": "IIT Jodhpur — Office of Academics — Programs",
+      "duplicate_visible_occurrences_removed": 6,
+      "source_url_count": 52,
+      "source_hash": "2143a7dbc2a48c9a"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/registration.md",
+      "output_docx": "offices_and_administration/office_of_academics/registration.docx",
+      "title": "IIT Jodhpur — Office of Academics — Registration",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 9,
+      "source_hash": "e6663267664e7081"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/research.md",
+      "output_docx": "offices_and_administration/office_of_academics/research.docx",
+      "title": "IIT Jodhpur — Office of Academics — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "238ab30fb04ad387"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_academics/rules_and_regulations.md",
+      "output_docx": "offices_and_administration/office_of_academics/rules_and_regulations.docx",
+      "title": "IIT Jodhpur — Office of Academics — Rules And Regulations",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 20,
+      "source_hash": "e88ce5a0021bcf2b"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_accounts/overview.md",
+      "output_docx": "offices_and_administration/office_of_accounts/overview.docx",
+      "title": "IIT Jodhpur — Office of Accounts — Overview",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "1e7e72320b961fd2"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_alumni_affairs/alumni.md",
+      "output_docx": "offices_and_administration/office_of_alumni_affairs/alumni.docx",
+      "title": "IIT Jodhpur — Office of Alumni Affairs — Alumni",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "6d99c6bc9c08bba3"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_corporate_relations/faculty.md",
+      "output_docx": "offices_and_administration/office_of_corporate_relations/faculty.docx",
+      "title": "IIT Jodhpur — Office of Corporate Relations — Faculty",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "a1fe554989b2e375"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_corporate_relations/general_information.md",
+      "output_docx": "offices_and_administration/office_of_corporate_relations/general_information.docx",
+      "title": "IIT Jodhpur — Office of Corporate Relations — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 3,
+      "source_hash": "cc0355f4c1427a67"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_corporate_relations/registration.md",
+      "output_docx": "offices_and_administration/office_of_corporate_relations/registration.docx",
+      "title": "IIT Jodhpur — Office of Corporate Relations — Registration",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "cbf9cb14e10d1395"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_deputy_director/general_information.md",
+      "output_docx": "offices_and_administration/office_of_deputy_director/general_information.docx",
+      "title": "IIT Jodhpur — Office of Deputy Director — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "ff20e4ee76865ea0"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_deputy_director/overview.md",
+      "output_docx": "offices_and_administration/office_of_deputy_director/overview.docx",
+      "title": "IIT Jodhpur — Office of Deputy Director — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 2,
+      "source_hash": "d60a3b508a96c270"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_director/overview.md",
+      "output_docx": "offices_and_administration/office_of_director/overview.docx",
+      "title": "IIT Jodhpur — Office of Director — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 2,
+      "source_hash": "753fb0c15f9225d1"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_estate/overview.md",
+      "output_docx": "offices_and_administration/office_of_estate/overview.docx",
+      "title": "IIT Jodhpur — Office of Estate — Overview",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "544cffeff8670390"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_internal_audit/general_information.md",
+      "output_docx": "offices_and_administration/office_of_internal_audit/general_information.docx",
+      "title": "IIT Jodhpur — Office of Internal Audit — General Information",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 1,
+      "source_hash": "8aa5c5b3228dac17"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_international_relations/international_relations.md",
+      "output_docx": "offices_and_administration/office_of_international_relations/international_relations.docx",
+      "title": "IIT Jodhpur — Office of International Relations — International Relations",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "e9b33cfa953c7df1"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_international_relations/research.md",
+      "output_docx": "offices_and_administration/office_of_international_relations/research.docx",
+      "title": "IIT Jodhpur — Office of International Relations — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "c26e42c0f8978de7"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_registrar/overview.md",
+      "output_docx": "offices_and_administration/office_of_registrar/overview.docx",
+      "title": "IIT Jodhpur — Office of Registrar — Overview",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 2,
+      "source_hash": "2a49beb1998c3eb0"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_research_and_development/contacts.md",
+      "output_docx": "offices_and_administration/office_of_research_and_development/contacts.docx",
+      "title": "IIT Jodhpur — Office of Research and Development — Contacts",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "03a5feb9db7f4037"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_research_and_development/general_information.md",
+      "output_docx": "offices_and_administration/office_of_research_and_development/general_information.docx",
+      "title": "IIT Jodhpur — Office of Research and Development — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "84f264128e203d20"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_research_and_development/research.md",
+      "output_docx": "offices_and_administration/office_of_research_and_development/research.docx",
+      "title": "IIT Jodhpur — Office of Research and Development — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "c494eae4d37e326f"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_resources_and_alumni/alumni.md",
+      "output_docx": "offices_and_administration/office_of_resources_and_alumni/alumni.docx",
+      "title": "IIT Jodhpur — Office of Resources and Alumni — Alumni",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 9,
+      "source_hash": "1cfc568fb20d4223"
+    },
+    {
+      "source_markdown": "offices_and_administration/office_of_stores_and_purchase/overview.md",
+      "output_docx": "offices_and_administration/office_of_stores_and_purchase/overview.docx",
+      "title": "IIT Jodhpur — Office of Stores and Purchase — Overview",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "03ca4659bb6ec891"
+    },
+    {
+      "source_markdown": "placements_and_careers/placements.md",
+      "output_docx": "placements_and_careers/placements.docx",
+      "title": "IIT Jodhpur — Placements And Careers — Placements",
+      "duplicate_visible_occurrences_removed": 20,
+      "source_url_count": 12,
+      "source_hash": "4ee258a357ed45c7"
+    },
+    {
+      "source_markdown": "programs/btech/academic_progression.md",
+      "output_docx": "programs/btech/academic_progression.docx",
+      "title": "IIT Jodhpur — B.Tech — Academic Progression",
+      "duplicate_visible_occurrences_removed": 6,
+      "source_url_count": 12,
+      "source_hash": "599b44add887bfb5"
+    },
+    {
+      "source_markdown": "programs/btech/curriculum.md",
+      "output_docx": "programs/btech/curriculum.docx",
+      "title": "IIT Jodhpur — B.Tech — Curriculum",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 2,
+      "source_hash": "8540befa9efdb478"
+    },
+    {
+      "source_markdown": "programs/btech/overview.md",
+      "output_docx": "programs/btech/overview.docx",
+      "title": "IIT Jodhpur — B.Tech — Overview",
+      "duplicate_visible_occurrences_removed": 28,
+      "source_url_count": 10,
+      "source_hash": "653dec60915332d0"
+    },
+    {
+      "source_markdown": "programs/general_information.md",
+      "output_docx": "programs/general_information.docx",
+      "title": "IIT Jodhpur — Programs — General Information",
+      "duplicate_visible_occurrences_removed": 36,
+      "source_url_count": 11,
+      "source_hash": "c3a3318813693372"
+    },
+    {
+      "source_markdown": "programs/ms_by_research/programs.md",
+      "output_docx": "programs/ms_by_research/programs.docx",
+      "title": "IIT Jodhpur — M.S. by Research — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "5d10c773475d349d"
+    },
+    {
+      "source_markdown": "programs/ms_by_research/research.md",
+      "output_docx": "programs/ms_by_research/research.docx",
+      "title": "IIT Jodhpur — M.S. by Research — Research",
+      "duplicate_visible_occurrences_removed": 12,
+      "source_url_count": 3,
+      "source_hash": "2887f0cd451bc2fd"
+    },
+    {
+      "source_markdown": "programs/msc/programs.md",
+      "output_docx": "programs/msc/programs.docx",
+      "title": "IIT Jodhpur — M.Sc — Programs",
+      "duplicate_visible_occurrences_removed": 6,
+      "source_url_count": 2,
+      "source_hash": "f4f4f2107191f481"
+    },
+    {
+      "source_markdown": "programs/mtech/general_information.md",
+      "output_docx": "programs/mtech/general_information.docx",
+      "title": "IIT Jodhpur — M.Tech — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 4,
+      "source_hash": "b3afe1c99883a8ef"
+    },
+    {
+      "source_markdown": "programs/mtech/programs.md",
+      "output_docx": "programs/mtech/programs.docx",
+      "title": "IIT Jodhpur — M.Tech — Programs",
+      "duplicate_visible_occurrences_removed": 67,
+      "source_url_count": 2,
+      "source_hash": "4840cd9a360c014f"
+    },
+    {
+      "source_markdown": "programs/phd/general_information.md",
+      "output_docx": "programs/phd/general_information.docx",
+      "title": "IIT Jodhpur — Ph.D — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 4,
+      "source_hash": "ff1ec21f82363b82"
+    },
+    {
+      "source_markdown": "programs/phd/programs.md",
+      "output_docx": "programs/phd/programs.docx",
+      "title": "IIT Jodhpur — Ph.D — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "52262aaed2911004"
+    },
+    {
+      "source_markdown": "research/research.md",
+      "output_docx": "research/research.docx",
+      "title": "IIT Jodhpur — Research",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 13,
+      "source_hash": "8875603d7a045d64"
+    },
+    {
+      "source_markdown": "research_and_technology_facilities/facilities.md",
+      "output_docx": "research_and_technology_facilities/facilities.docx",
+      "title": "IIT Jodhpur — Research And Technology Facilities — Facilities",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 12,
+      "source_hash": "74061e36c5ed5d3a"
+    },
+    {
+      "source_markdown": "research_platforms/digital_humanities/research.md",
+      "output_docx": "research_platforms/digital_humanities/research.docx",
+      "title": "IIT Jodhpur — Digital Humanities — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "40bdf4f0d42b5f1f"
+    },
+    {
+      "source_markdown": "research_platforms/internet_of_things_and_applications/programs.md",
+      "output_docx": "research_platforms/internet_of_things_and_applications/programs.docx",
+      "title": "IIT Jodhpur — Internet of Things and Applications — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "46672f48bfe468b3"
+    },
+    {
+      "source_markdown": "research_platforms/internet_of_things_and_applications/research.md",
+      "output_docx": "research_platforms/internet_of_things_and_applications/research.docx",
+      "title": "IIT Jodhpur — Internet of Things and Applications — Research",
+      "duplicate_visible_occurrences_removed": 5,
+      "source_url_count": 29,
+      "source_hash": "a153cdedf2d5b2bf"
+    },
+    {
+      "source_markdown": "research_platforms/quantum_information_and_computation/research.md",
+      "output_docx": "research_platforms/quantum_information_and_computation/research.docx",
+      "title": "IIT Jodhpur — Quantum Information and Computation — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 3,
+      "source_hash": "f6f6591375efd88c"
+    },
+    {
+      "source_markdown": "rules_regulations/rules_and_regulations.md",
+      "output_docx": "rules_regulations/rules_and_regulations.docx",
+      "title": "IIT Jodhpur — Rules Regulations — Rules And Regulations",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "8bbcb4deaf2a7069"
+    },
+    {
+      "source_markdown": "schools/artificial_intelligence_and_data_science/contacts.md",
+      "output_docx": "schools/artificial_intelligence_and_data_science/contacts.docx",
+      "title": "IIT Jodhpur — School of Artificial Intelligence and Data Science — Contacts",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 5,
+      "source_hash": "97f7de708402ddf4"
+    },
+    {
+      "source_markdown": "schools/artificial_intelligence_and_data_science/facilities.md",
+      "output_docx": "schools/artificial_intelligence_and_data_science/facilities.docx",
+      "title": "IIT Jodhpur — School of Artificial Intelligence and Data Science — Facilities",
+      "duplicate_visible_occurrences_removed": 10,
+      "source_url_count": 6,
+      "source_hash": "f020c859a919af1a"
+    },
+    {
+      "source_markdown": "schools/artificial_intelligence_and_data_science/faculty.md",
+      "output_docx": "schools/artificial_intelligence_and_data_science/faculty.docx",
+      "title": "IIT Jodhpur — School of Artificial Intelligence and Data Science — Faculty",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "ab0730de547f5528"
+    },
+    {
+      "source_markdown": "schools/artificial_intelligence_and_data_science/general_information.md",
+      "output_docx": "schools/artificial_intelligence_and_data_science/general_information.docx",
+      "title": "IIT Jodhpur — School of Artificial Intelligence and Data Science — General Information",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 15,
+      "source_hash": "c0dce667afb96e5d"
+    },
+    {
+      "source_markdown": "schools/artificial_intelligence_and_data_science/overview.md",
+      "output_docx": "schools/artificial_intelligence_and_data_science/overview.docx",
+      "title": "IIT Jodhpur — School of Artificial Intelligence and Data Science — Overview",
+      "duplicate_visible_occurrences_removed": 7,
+      "source_url_count": 8,
+      "source_hash": "46f4ba0e4ef07c7a"
+    },
+    {
+      "source_markdown": "schools/artificial_intelligence_and_data_science/programs.md",
+      "output_docx": "schools/artificial_intelligence_and_data_science/programs.docx",
+      "title": "IIT Jodhpur — School of Artificial Intelligence and Data Science — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 9,
+      "source_hash": "668571fd9d82fc18"
+    },
+    {
+      "source_markdown": "schools/artificial_intelligence_and_data_science/research.md",
+      "output_docx": "schools/artificial_intelligence_and_data_science/research.docx",
+      "title": "IIT Jodhpur — School of Artificial Intelligence and Data Science — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 5,
+      "source_hash": "6f8b436ee5901da3"
+    },
+    {
+      "source_markdown": "schools/design/curriculum.md",
+      "output_docx": "schools/design/curriculum.docx",
+      "title": "IIT Jodhpur — School of Design — Curriculum",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 2,
+      "source_hash": "a2d81297995b3075"
+    },
+    {
+      "source_markdown": "schools/design/general_information.md",
+      "output_docx": "schools/design/general_information.docx",
+      "title": "IIT Jodhpur — School of Design — General Information",
+      "duplicate_visible_occurrences_removed": 4,
+      "source_url_count": 294,
+      "source_hash": "9fa5f2f014a0e56a"
+    },
+    {
+      "source_markdown": "schools/design/overview.md",
+      "output_docx": "schools/design/overview.docx",
+      "title": "IIT Jodhpur — School of Design — Overview",
+      "duplicate_visible_occurrences_removed": 4,
+      "source_url_count": 8,
+      "source_hash": "b92afcae6abc6da0"
+    },
+    {
+      "source_markdown": "schools/design/programs.md",
+      "output_docx": "schools/design/programs.docx",
+      "title": "IIT Jodhpur — School of Design — Programs",
+      "duplicate_visible_occurrences_removed": 3,
+      "source_url_count": 11,
+      "source_hash": "731439b6aa2cbce0"
+    },
+    {
+      "source_markdown": "schools/liberal_arts/curriculum.md",
+      "output_docx": "schools/liberal_arts/curriculum.docx",
+      "title": "IIT Jodhpur — School of Liberal Arts — Curriculum",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "6d454120d9402fd6"
+    },
+    {
+      "source_markdown": "schools/liberal_arts/general_information.md",
+      "output_docx": "schools/liberal_arts/general_information.docx",
+      "title": "IIT Jodhpur — School of Liberal Arts — General Information",
+      "duplicate_visible_occurrences_removed": 10,
+      "source_url_count": 37,
+      "source_hash": "539ab55885ee8629"
+    },
+    {
+      "source_markdown": "schools/management_and_entrepreneurship/curriculum.md",
+      "output_docx": "schools/management_and_entrepreneurship/curriculum.docx",
+      "title": "IIT Jodhpur — School of Management and Entrepreneurship — Curriculum",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "48757dc5ef0afd9d"
+    },
+    {
+      "source_markdown": "schools/management_and_entrepreneurship/faculty.md",
+      "output_docx": "schools/management_and_entrepreneurship/faculty.docx",
+      "title": "IIT Jodhpur — School of Management and Entrepreneurship — Faculty",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 3,
+      "source_hash": "726074ebfb45ac83"
+    },
+    {
+      "source_markdown": "schools/management_and_entrepreneurship/general_information.md",
+      "output_docx": "schools/management_and_entrepreneurship/general_information.docx",
+      "title": "IIT Jodhpur — School of Management and Entrepreneurship — General Information",
+      "duplicate_visible_occurrences_removed": 1,
+      "source_url_count": 11,
+      "source_hash": "b792fea31cb9584a"
+    },
+    {
+      "source_markdown": "schools/management_and_entrepreneurship/international_relations.md",
+      "output_docx": "schools/management_and_entrepreneurship/international_relations.docx",
+      "title": "IIT Jodhpur — School of Management and Entrepreneurship — International Relations",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 3,
+      "source_hash": "b0cea04dcb238ada"
+    },
+    {
+      "source_markdown": "schools/management_and_entrepreneurship/programs.md",
+      "output_docx": "schools/management_and_entrepreneurship/programs.docx",
+      "title": "IIT Jodhpur — School of Management and Entrepreneurship — Programs",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "23d01d8945169000"
+    },
+    {
+      "source_markdown": "schools/management_and_entrepreneurship/research.md",
+      "output_docx": "schools/management_and_entrepreneurship/research.docx",
+      "title": "IIT Jodhpur — School of Management and Entrepreneurship — Research",
+      "duplicate_visible_occurrences_removed": 0,
+      "source_url_count": 1,
+      "source_hash": "5ec06e6613e199f2"
+    },
+    {
+      "source_markdown": "schools/management_and_entrepreneurship/training.md",
+      "output_docx": "schools/management_and_entrepreneurship/training.docx",
+      "title": "IIT Jodhpur — School of Management and Entrepreneurship — Training",
+      "duplicate_visible_occurrences_removed": 2,
+      "source_url_count": 8,
+      "source_hash": "5d321c3715da04ed"
+    },
+    {
+      "source_markdown": "training_and_upskilling/training.md",
+      "output_docx": "training_and_upskilling/training.docx",
+      "title": "IIT Jodhpur — Training And Upskilling — Training",
+      "duplicate_visible_occurrences_removed": 3,
+      "source_url_count": 2,
+      "source_hash": "a2729a1146d96c26"
+    }
+  ]
+}
