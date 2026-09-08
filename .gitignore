@@ -1,1 +1,75 @@
+# ==========================
+# Environment & Secrets
+# ==========================
 .env
+.env.*
+*.pem
+*.key
+
+# ==========================
+# Python cache
+# ==========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================
+# macOS / VS Code
+# ==========================
+.DS_Store
+.vscode/settings.json
+
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+startup.log
+rag_time.log
+
+# ==========================
+# Runtime databases
+# ==========================
+chroma_db/
+storage/
+*.sqlite3
+*.db
+
+# ==========================
+# Generated outputs
+# ==========================
+results/
+reports/
+evaluation/output/
+diagnostics/output/
+
+# ==========================
+# Notebook checkpoints
+# ==========================
+.ipynb_checkpoints/
+
+# ==========================
+# Temporary / Backup files
+# ==========================
+*.before_*
+*.backup
+*.bak
+*.old
+*.tmp
+
+# ==========================
+# Downloaded / Personal files
+# ==========================
+Music/
+downloads/
+tmp/
+# Docker Desktop runtime
+.docker/
+
+tests/evaluation/results/
+
+tests/reports/
