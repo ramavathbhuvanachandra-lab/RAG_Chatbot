@@ -34,3 +34,6 @@ retrieval_probe_output.txt
 # Generated test reports / simulation artifacts
 tests_reusable/.simrepo/
 tests_reusable/**/reports/
+
+# Local backup snapshots
+backend_snapshot/
