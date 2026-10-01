@@ -1,0 +1,77 @@
+{
+    "version": 1,
+    "dimensions": {
+        "program": {
+            "btech": [
+                "B.Tech.",
+                "B.Tech",
+                "BTech",
+                "Bachelor of Technology"
+            ],
+            "mtech": [
+                "M.Tech.",
+                "M.Tech",
+                "MTech",
+                "Master of Technology",
+                "Masters Tech"
+            ],
+            "msc": [
+                "M.Sc.",
+                "M.Sc",
+                "MSc",
+                "Master of Science"
+            ],
+            "phd": [
+                "Ph.D.",
+                "Ph.D",
+                "PhD",
+                "Doctoral",
+                "Doctorate"
+            ],
+            "mba": [
+                "MBA",
+                "M.B.A.",
+                "Master of Business Administration"
+            ],
+            "ms_by_research": [
+                "M.S. by Research",
+                "MS by Research",
+                "Master of Science by Research"
+            ]
+        },
+        "admission_route": {
+            "jee": [
+                "JEE",
+                "JEE Advanced"
+            ],
+            "josaa": [
+                "JoSAA",
+                "JOSAA"
+            ],
+            "gate": [
+                "GATE"
+            ],
+            "idrp": [
+                "IDRP"
+            ]
+        },
+        "student_status": {
+            "regular": [
+                "regular",
+                "full-time",
+                "full time"
+            ],
+            "part_time": [
+                "part-time",
+                "part time"
+            ],
+            "sponsored": [
+                "sponsored",
+                "sponsor"
+            ],
+            "external": [
+                "external"
+            ]
+        }
+    }
+}

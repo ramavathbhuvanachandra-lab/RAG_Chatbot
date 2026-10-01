@@ -1,23 +1,21 @@
-import os
+"""Backward-compatible embedding bridge.
 
-from langchain_ollama import OllamaEmbeddings
+The active embedding configuration now lives in backend.runtime.embedding.
+This module preserves the old import path used by the legacy retrieval and
+ingestion modules during the migration.
+"""
+
+from backend.runtime.embedding import (
+    EMBEDDING_MODEL,
+    OLLAMA_BASE_URL,
+    embeddings,
+    get_embeddings,
+)
 
 
-# =========================================================
-# Ollama Configuration
-# =========================================================
-
-OLLAMA_URL = os.getenv(
+__all__ = [
     "OLLAMA_BASE_URL",
-    "http://localhost:11434",
-)
-
-
-# =========================================================
-# Embedding Model
-# =========================================================
-
-embeddings = OllamaEmbeddings(
-    model="nomic-embed-text:latest",
-    base_url=OLLAMA_URL,
-)
+    "EMBEDDING_MODEL",
+    "get_embeddings",
+    "embeddings",
+]

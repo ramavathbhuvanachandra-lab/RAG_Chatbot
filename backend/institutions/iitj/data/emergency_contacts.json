@@ -1,0 +1,51 @@
+[
+    {
+        "id": "medical_centre",
+        "name": "Medical Centre",
+        "aliases": [
+            "medical",
+            "medical centre",
+            "health centre",
+            "doctor",
+            "clinic"
+        ],
+        "phone": "+91-XXXXXXXXXX",
+        "description": "Campus Medical Centre for students.",
+        "help_text": "Visit immediately in case of illness or injury."
+    },
+    {
+        "id": "ambulance",
+        "name": "Ambulance",
+        "aliases": [
+            "ambulance",
+            "emergency ambulance"
+        ],
+        "phone": "108",
+        "description": "Emergency ambulance service.",
+        "help_text": "Call immediately during a medical emergency."
+    },
+    {
+        "id": "security",
+        "name": "Security Office",
+        "aliases": [
+            "security",
+            "security office",
+            "guard"
+        ],
+        "phone": "+91-XXXXXXXXXX",
+        "description": "Campus security office.",
+        "help_text": "Contact for security-related emergencies."
+    },
+    {
+        "id": "swc",
+        "name": "SWC Help Desk",
+        "aliases": [
+            "swc",
+            "student wellbeing",
+            "student wellbeing committee"
+        ],
+        "phone": "+91-XXXXXXXXXX",
+        "description": "Student Wellbeing Committee help desk.",
+        "help_text": "Contact for student support and onboarding assistance."
+    }
+]

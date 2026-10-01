@@ -1,10 +1,6 @@
 """
 IIT Jodhpur V1 — Phase 8E
 Final evidence-scope regression tests.
-
-The tests cover both controlled scope behavior and natural student-style
-questions. They intentionally do not hardcode production document names into
-production code; filenames below are only synthetic test fixtures.
 """
 
 from __future__ import annotations
@@ -30,15 +26,17 @@ def _programs(text: str):
 
     if "m.sc" in value or "msc" in value:
         result.append("msc")
+
     if "m.tech" in value or "mtech" in value:
         result.append("mtech")
+
     if "ph.d" in value or "phd" in value:
         result.append("phd")
 
     return result
 
 
-def _entities(_text: str):
+def _entities(text: str):
     return []
 
 
@@ -52,6 +50,55 @@ def _patches():
             "backend.evidence_scope_gate.detect_entities",
             side_effect=_entities,
         ),
+    )
+
+
+def test_robotics_broad_query_recovers_lower_ranked_robotics_evidence():
+    docs = [
+        _doc(
+            "/research/research.docx",
+            "IIT Jodhpur current research areas.",
+        ),
+        _doc(
+            "/departments/chemistry/research.docx",
+            "Research areas include inorganic, organic and physical chemistry.",
+        ),
+        _doc(
+            "/departments/electrical_engineering/research.docx",
+            "Electrical Engineering research themes include robotics and adaptive control.",
+        ),
+        _doc(
+            "/departments/electrical_engineering/overview.docx",
+            "The department's research activities span embedded systems, robotics and signal processing.",
+        ),
+        _doc(
+            "/departments/economics/research.docx",
+            "Research areas in economics include econometrics and human capital.",
+        ),
+        _doc(
+            "/schools/artificial_intelligence_and_data_science/research.docx",
+            "Research project positions and AI research opportunities.",
+        ),
+    ]
+
+    result = select_answer_evidence(
+        query="What research areas are related to robotics at IIT Jodhpur?",
+        documents=docs,
+        max_documents=5,
+    )
+
+    sources = [
+        doc.metadata["source"]
+        for doc in result
+    ]
+
+    assert (
+        "/departments/electrical_engineering/research.docx"
+        in sources
+    )
+    assert (
+        "/departments/electrical_engineering/overview.docx"
+        in sources
     )
 
 
@@ -217,6 +264,7 @@ def test_real_life_msc_questions_stay_on_admission_scope():
         "/admissions/general_admissions.docx",
         "General M.Sc. admission information.",
     )
+
     scoped = _doc(
         "/admissions/msc_admissions.docx",
         "M.Sc. admission routes.",
@@ -224,6 +272,7 @@ def test_real_life_msc_questions_stay_on_admission_scope():
 
     for question in questions:
         p1, p2 = _patches()
+
         with p1, p2:
             result = select_answer_evidence(
                 query=question,
@@ -244,6 +293,7 @@ def test_real_life_mtech_questions_stay_on_admission_scope():
         "/admissions/general_admissions.docx",
         "General M.Tech admission information.",
     )
+
     scoped = _doc(
         "/admissions/mtech_admissions.docx",
         "M.Tech admission eligibility.",
@@ -251,6 +301,7 @@ def test_real_life_mtech_questions_stay_on_admission_scope():
 
     for question in questions:
         p1, p2 = _patches()
+
         with p1, p2:
             result = select_answer_evidence(
                 query=question,
@@ -271,6 +322,7 @@ def test_real_life_phd_questions_stay_on_admission_scope():
         "/admissions/general_admissions.docx",
         "General postgraduate admission information.",
     )
+
     scoped = _doc(
         "/admissions/phd_admissions.docx",
         "Ph.D. admission procedure.",
@@ -278,6 +330,7 @@ def test_real_life_phd_questions_stay_on_admission_scope():
 
     for question in questions:
         p1, p2 = _patches()
+
         with p1, p2:
             result = select_answer_evidence(
                 query=question,
@@ -285,6 +338,37 @@ def test_real_life_phd_questions_stay_on_admission_scope():
             )
 
         assert result == [scoped]
+
+
+def test_content_can_establish_scope_for_non_program_query():
+    docs = [
+        _doc(
+            "/hostel/general.docx",
+            "Hostel accommodation and rooms.",
+        ),
+        _doc(
+            "/research/facilities.docx",
+            "Hostel Wi-Fi and laundry facilities are available.",
+        ),
+    ]
+
+    with patch(
+        "backend.evidence_scope_gate.detect_entities",
+        side_effect=lambda text: (
+            {"hostel"}
+            if "hostel" in text.lower()
+            else set()
+        ),
+    ):
+        result = select_answer_evidence(
+            query="hostel Wi-Fi laundry",
+            documents=docs,
+            max_documents=5,
+        )
+
+    assert result[0].metadata["source"] == (
+        "/research/facilities.docx"
+    )
 
 
 def test_max_document_limit_is_respected():
@@ -304,6 +388,7 @@ def test_max_document_limit_is_respected():
     ]
 
     p1, p2 = _patches()
+
     with p1, p2:
         result = select_answer_evidence(
             query="m.sc admission",

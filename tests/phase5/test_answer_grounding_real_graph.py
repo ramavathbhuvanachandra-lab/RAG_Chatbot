@@ -18,7 +18,7 @@ Purpose:
 """
 
 from backend.graph import create_graph
-from backend.answer_grounding import assess_answer_grounding
+from backend.core.answering.grounding import  assess_answer_grounding
 
 
 def invoke_real_graph(question: str):

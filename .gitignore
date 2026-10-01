@@ -1,1 +1,36 @@
+# Environment / secrets
 .env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local databases / vector stores
+chroma_db/
+
+# Test / debug outputs
+test_outputs/
+test_debug/
+test_deubug/
+*.log
+
+# Generated reports / probes
+retrieval_probe_output.txt
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Generated test reports / simulation artifacts
+tests_reusable/.simrepo/
+tests_reusable/**/reports/

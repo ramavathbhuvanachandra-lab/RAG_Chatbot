@@ -1,0 +1,96 @@
+{
+    "eligibility": [
+        "eligibility requirements",
+        "admission requirements",
+        "qualifying degree",
+        "qualifying qualification",
+        "minimum percentage",
+        "minimum marks",
+        "minimum CGPA",
+        "entrance examination",
+        "entrance exam"
+    ],
+    "application": [
+        "application process",
+        "application form",
+        "how to apply",
+        "online application",
+        "admission process",
+        "admission workflow",
+        "admission routes"
+    ],
+    "fees": [
+        "fee structure",
+        "tuition fee",
+        "semester fee",
+        "admission fee",
+        "application fee",
+        "hostel fee",
+        "mess fee",
+        "refundable deposit",
+        "experiential fee",
+        "fee and finance"
+    ],
+    "hostel": [
+        "hostel accommodation",
+        "hostel facilities",
+        "hostel booking",
+        "hostel allocation",
+        "hostel room rent",
+        "room rent",
+        "dining options",
+        "mess facilities"
+    ],
+    "research": [
+        "research areas",
+        "research themes",
+        "research groups",
+        "research opportunities",
+        "research overview",
+        "research facilities"
+    ],
+    "facilities": [
+        "campus facilities",
+        "campus amenities",
+        "research facilities",
+        "medical facilities",
+        "sports facilities",
+        "student facilities"
+    ],
+    "academics": [
+        "academic calendar",
+        "course registration",
+        "semester registration",
+        "academic advising",
+        "faculty advisor",
+        "faculty adviser"
+    ],
+    "student_life": [
+        "student activity centre",
+        "student activity center",
+        "extracurricular clubs",
+        "student clubs",
+        "student welfare",
+        "student guide"
+    ],
+    "transport": [
+        "campus transport",
+        "airport transport",
+        "airport transfer",
+        "shuttle service"
+    ],
+    "safety": [
+        "women cell",
+        "women's cell",
+        "student safety",
+        "student welfare",
+        "anti ragging"
+    ],
+    "financial_assistance": [
+        "financial assistance",
+        "financial aid",
+        "financial assistance and scholarship",
+        "financial support",
+        "research fellowship"
+    ]
+}

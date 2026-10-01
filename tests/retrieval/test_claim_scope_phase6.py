@@ -4,8 +4,18 @@ Phase 6 — Organizational Scope Regression Tests
 Purpose
 -------
 Verify that organizational identity matching is precise enough to allow
-legitimate department/school evidence while preserving protection against
-scope collisions.
+legitimate evidence while preserving protection against explicit
+organizational scope collisions.
+
+Design contract
+---------------
+1. A broad query may use narrower organizational evidence when there is
+   no explicit organizational conflict.
+2. A query naming a specific organization must not use evidence from a
+   different organization.
+3. Matching organizational identities must remain allowed.
+4. Scope filtering should reject actual identity collisions, not merely
+   differences in organizational breadth.
 """
 
 from backend.claim_scope import (
@@ -39,7 +49,7 @@ def test_named_department_matches_query_without_department_word():
     )
 
 
-def test_generic_query_cannot_use_narrow_department_evidence():
+def test_broad_query_can_use_narrow_department_evidence():
 
     query = (
         "What research areas are available?"
@@ -50,7 +60,15 @@ def test_generic_query_cannot_use_narrow_department_evidence():
         "research areas include control systems."
     )
 
-    assert organizational_scope_conflict(
+    # A broad institutional question does not conflict with
+    # department-level evidence. The evidence may contribute
+    # to answering the broader question.
+    assert not organizational_scope_conflict(
+        query,
+        evidence,
+    )
+
+    assert not has_scope_conflict(
         query,
         evidence,
     )

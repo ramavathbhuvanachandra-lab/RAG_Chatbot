@@ -1,0 +1,286 @@
+{
+    "institution": {
+        "iitj": [
+            "IITJ",
+            "IIT J",
+            "IIT Jodhpur",
+            "Indian Institute of Technology Jodhpur",
+            "Indian Institute of Technology, Jodhpur"
+        ]
+    },
+    "programs": {
+        "btech": [
+            "B.Tech.",
+            "B.Tech",
+            "B Tech",
+            "BTech",
+            "Bachelor of Technology",
+            "Bachelor Technology"
+        ],
+        "mtech": [
+            "M.Tech.",
+            "M.Tech",
+            "M Tech",
+            "MTech",
+            "Master of Technology",
+            "Master Technology",
+            "Masters Tech",
+            "Masters Technology",
+            "Tech Masters"
+        ],
+        "msc": [
+            "M.Sc.",
+            "M.Sc",
+            "M Sc",
+            "MSc",
+            "Master of Science",
+            "Master Science",
+            "Masters Science",
+            "Masters in Science"
+        ],
+        "phd": [
+            "Ph.D.",
+            "Ph.D",
+            "Ph D",
+            "PhD",
+            "Doctoral",
+            "Doctorate"
+        ],
+        "mba": [
+            "MBA",
+            "M.B.A.",
+            "Master of Business Administration"
+        ],
+        "ms_by_research": [
+            "M.S. by Research",
+            "M.S by Research",
+            "MS by Research",
+            "Master of Science by Research"
+        ]
+    },
+    "entities": {
+        "admission": [
+            "admission",
+            "admissions"
+        ],
+        "hostel": [
+            "hostel",
+            "hostels",
+            "accommodation",
+            "residence"
+        ],
+        "mess": [
+            "mess",
+            "dining",
+            "meal",
+            "meals"
+        ],
+        "library": [
+            "library",
+            "libraries"
+        ],
+        "electrical_engineering": [
+            "Electrical Engineering",
+            "Electrical Engineering Department",
+            "Department of Electrical Engineering"
+        ],
+        "electronics_engineering": [
+            "Electronics Engineering",
+            "Electronics Engineering Department",
+            "Electronics and ICT"
+        ],
+        "physics": [
+            "Physics Department",
+            "Department of Physics"
+        ],
+        "research": [
+            "research",
+            "research areas",
+            "research themes",
+            "research groups"
+        ],
+        "placement": [
+            "placement",
+            "placements",
+            "campus placement"
+        ],
+        "registration": [
+            "registration",
+            "course registration",
+            "semester registration"
+        ],
+        "finance": [
+            "finance",
+            "fees and finance",
+            "fee office"
+        ],
+        "academic_calendar": [
+            "academic calendar",
+            "academic calendars"
+        ],
+        "medical": [
+            "health centre",
+            "health center",
+            "medical centre",
+            "medical center",
+            "emergency medical"
+        ],
+        "transport": [
+            "campus transport",
+            "transportation",
+            "shuttle service",
+            "airport transport"
+        ],
+        "student_activity_centre": [
+            "Student Activity Centre",
+            "Student Activity Center",
+            "SAC"
+        ],
+        "women_cell": [
+            "Women Cell",
+            "Women's Cell",
+            "Womens Cell"
+        ],
+        "faculty_advisor": [
+            "faculty advisor",
+            "faculty adviser"
+        ],
+        "clubs": [
+            "student clubs",
+            "extracurricular clubs",
+            "student activities"
+        ]
+    },
+    "topics": {
+        "admission": [
+            "admission",
+            "admissions",
+            "eligibility",
+            "eligible",
+            "qualification",
+            "qualifications",
+            "criteria",
+            "criterion",
+            "requirements",
+            "requirement",
+            "apply",
+            "applying",
+            "application"
+        ],
+        "fees": [
+            "fee",
+            "fees",
+            "tuition",
+            "charges",
+            "cost",
+            "costs",
+            "payment"
+        ],
+        "hostel": [
+            "hostel",
+            "hostels",
+            "accommodation",
+            "residence",
+            "room"
+        ],
+        "mess": [
+            "mess",
+            "dining",
+            "food",
+            "meal",
+            "meals"
+        ],
+        "research": [
+            "research",
+            "research area",
+            "research areas",
+            "research theme",
+            "research themes",
+            "research group",
+            "research groups",
+            "research field",
+            "research fields"
+        ],
+        "facility": [
+            "facility",
+            "facilities",
+            "amenity",
+            "amenities",
+            "infrastructure"
+        ],
+        "department": [
+            "department",
+            "departments"
+        ],
+        "curriculum": [
+            "curriculum",
+            "course",
+            "courses",
+            "syllabus",
+            "credits"
+        ],
+        "vision": [
+            "vision",
+            "mission",
+            "goals"
+        ],
+        "placement": [
+            "placement",
+            "placements",
+            "recruiter",
+            "recruiters"
+        ],
+        "registration": [
+            "registration",
+            "register",
+            "course registration",
+            "semester registration"
+        ],
+        "scholarship": [
+            "scholarship",
+            "scholarships",
+            "fellowship",
+            "fellowships",
+            "stipend",
+            "funding"
+        ],
+        "library": [
+            "library",
+            "libraries",
+            "journal",
+            "journals"
+        ],
+        "medical": [
+            "medical",
+            "health",
+            "emergency medical"
+        ],
+        "transport": [
+            "transport",
+            "transportation",
+            "shuttle",
+            "airport"
+        ],
+        "student_life": [
+            "student life",
+            "student activities",
+            "extracurricular"
+        ],
+        "safety": [
+            "safety",
+            "welfare",
+            "ragging"
+        ],
+        "academic_calendar": [
+            "academic calendar",
+            "semester calendar"
+        ],
+        "guidance": [
+            "advisor",
+            "adviser",
+            "guidance",
+            "mentorship",
+            "student guide"
+        ]
+    }
+}

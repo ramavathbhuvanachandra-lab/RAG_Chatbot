@@ -1,23 +1,50 @@
 """
-IIT Jodhpur V1 — LangGraph Workflow
+LangGraph workflow.
 
-Production pipeline
--------------------
-Single-intent questions retain the established linear retrieval/evidence
-pipeline.
+Pipeline
+--------
+Conversation resolution
+    ↓
+Multi-intent planning
+    ↓
+Single-intent:
+    Canonical query processing
+    ↓
+    Hybrid retrieval
+    ↓
+    RRF / fusion
+    ↓
+    Reranking
+    ↓
+    Local context expansion
+    ↓
+    Evidence verification
+    ↓
+    Evidence coverage
+    ↓
+    Compression
+    ↓
+    Answer generation
 
-Multi-intent questions are routed after conversation resolution into an
-intent-specific evidence orchestration node. Each intent reuses the same
-deterministic evidence pipeline, after which one final answer LLM call
-composes the independent results.
+Multi-intent:
+    Independent evidence processing
+    ↓
+    One final answer generation call
 
 Important invariants
 --------------------
-- Single-intent behavior remains unchanged after planning.
-- Multi-intent processing does not add an answer LLM call per intent.
-- Evidence for each intent is evaluated independently.
-- A final answer is generated once.
+- The user's resolved question remains the authoritative question.
+- Canonical query planning preserves that question as the primary query.
+- Single-intent retrieval no longer depends on the legacy Phase-5
+  StudentSituation -> DecisionContext -> RetrievalPlan chain.
+- Multi-intent behavior remains unchanged for now.
+- Retrieval, evidence, and answer-generation implementations are not
+  redesigned in this file.
 """
+
+from __future__ import annotations
+
+from typing import Any
 
 from langgraph.graph import (
     StateGraph,
@@ -27,8 +54,8 @@ from langgraph.graph import (
 
 from backend.state import GraphState
 
-from backend.situation_retrieval_integration import (
-    prepare_situation_retrieval_node,
+from backend.core.query_pipeline import (
+    process_query,
 )
 
 from backend.nodes import (
@@ -48,15 +75,64 @@ from backend.nodes import (
 
 
 # =========================================================
+# Canonical Query Preparation
+# =========================================================
+
+
+def prepare_query_node(
+    state: GraphState,
+) -> GraphState:
+    """
+    Run the canonical reusable query-processing pipeline.
+
+    Flow:
+        resolved question
+            ↓
+        QueryInterpreter
+            ↓
+        SemanticQueryFrame
+            ↓
+        RetrievalQueryPlan
+            ↓
+        bounded retrieval queries
+
+    The original user question remains the first/primary query.
+    """
+
+    question = str(
+        state.get(
+            "resolved_question",
+            state["question"],
+        )
+        or ""
+    ).strip()
+
+    if not question:
+        raise ValueError(
+            "Cannot prepare query from an empty question."
+        )
+
+    result = process_query(
+        question
+    )
+
+    return {
+        "generated_queries": list(
+            result.plan.queries
+        ),
+    }
+
+
+# =========================================================
 # Routing
 # =========================================================
+
 
 def route_after_intent_planning(
     state: GraphState,
 ) -> str:
     """
-    Route to the independent multi-intent path or the existing single-
-    intent path.
+    Route to the multi-intent branch or the normal single-intent branch.
     """
 
     if state.get(
@@ -72,9 +148,10 @@ def route_after_intent_planning(
 # Create Graph
 # =========================================================
 
+
 def create_graph():
     """
-    Build the production IIT Jodhpur V1 workflow.
+    Build the production LangGraph workflow.
     """
 
     workflow = StateGraph(
@@ -101,8 +178,8 @@ def create_graph():
     )
 
     workflow.add_node(
-        "prepare_situation_retrieval",
-        prepare_situation_retrieval_node,
+        "prepare_query",
+        prepare_query_node,
     )
 
     workflow.add_node(
@@ -172,13 +249,15 @@ def create_graph():
         "plan_multi_intent",
         route_after_intent_planning,
         {
-            "single_intent": "prepare_situation_retrieval",
+            "single_intent": "prepare_query",
             "multi_intent": "process_multi_intent",
         },
     )
 
     # -----------------------------------------------------
     # Multi-intent path
+    #
+    # Kept unchanged for this migration step.
     # -----------------------------------------------------
 
     workflow.add_edge(
@@ -187,11 +266,11 @@ def create_graph():
     )
 
     # -----------------------------------------------------
-    # Phase-5 single-intent path
+    # Single-intent path
     # -----------------------------------------------------
 
     workflow.add_edge(
-        "prepare_situation_retrieval",
+        "prepare_query",
         "hybrid_retrieve",
     )
 
@@ -245,3 +324,10 @@ def create_graph():
     )
 
     return workflow.compile()
+
+
+__all__ = [
+    "create_graph",
+    "route_after_intent_planning",
+    "prepare_query_node",
+]

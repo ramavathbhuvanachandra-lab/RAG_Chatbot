@@ -1,0 +1,66 @@
+{
+    "iitj": [
+        "IITJ",
+        "IIT J",
+        "I.I.T.J."
+    ],
+    "iit": [
+        "IIT",
+        "I.I.T."
+    ],
+    "btech": [
+        "B.Tech.",
+        "B.Tech",
+        "BTech"
+    ],
+    "mtech": [
+        "M.Tech.",
+        "M.Tech",
+        "MTech"
+    ],
+    "msc": [
+        "M.Sc.",
+        "M.Sc",
+        "MSc"
+    ],
+    "phd": [
+        "Ph.D.",
+        "Ph.D",
+        "PhD"
+    ],
+    "mba": [
+        "MBA",
+        "M.B.A."
+    ],
+    "ms_by_research": [
+        "M.S. by Research",
+        "M.S by Research",
+        "MS by Research"
+    ],
+    "jee": [
+        "JEE",
+        "JEE Advanced"
+    ],
+    "josaa": [
+        "JoSAA",
+        "JOSAA"
+    ],
+    "gate": [
+        "GATE"
+    ],
+    "erp": [
+        "ERP"
+    ],
+    "idrp": [
+        "IDRP"
+    ],
+    "sme": [
+        "SME",
+        "School of Management and Entrepreneurship"
+    ],
+    "sac": [
+        "SAC",
+        "Student Activity Centre",
+        "Student Activity Center"
+    ]
+}

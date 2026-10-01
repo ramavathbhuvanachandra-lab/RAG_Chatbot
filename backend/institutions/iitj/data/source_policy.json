@@ -1,0 +1,138 @@
+{
+    "version": 2,
+    "categories": {
+        "admissions": {
+            "path_markers": [
+                "/admissions/"
+            ],
+            "rank_weight": 1.0
+        },
+        "programs": {
+            "path_markers": [
+                "/programs/"
+            ],
+            "rank_weight": 0.9
+        },
+        "finance": {
+            "path_markers": [
+                "/finance/",
+                "/fees_and_finance"
+            ],
+            "rank_weight": 1.0
+        },
+        "hostel": {
+            "path_markers": [
+                "/hostel_accommodation/"
+            ],
+            "rank_weight": 1.0
+        },
+        "research": {
+            "path_markers": [
+                "/research/",
+                "/research_platforms/"
+            ],
+            "rank_weight": 1.0
+        },
+        "research_facilities": {
+            "path_markers": [
+                "/research_and_technology_facilities/"
+            ],
+            "rank_weight": 0.95
+        },
+        "departments": {
+            "path_markers": [
+                "/departments/"
+            ],
+            "rank_weight": 0.85
+        },
+        "schools": {
+            "path_markers": [
+                "/schools/"
+            ],
+            "rank_weight": 0.75
+        },
+        "academics": {
+            "path_markers": [
+                "/offices_and_administration/office_of_academics/"
+            ],
+            "rank_weight": 0.85
+        },
+        "director": {
+            "path_markers": [
+                "/offices_and_administration/office_of_director/"
+            ],
+            "rank_weight": 0.75
+        },
+        "institute_overview": {
+            "path_markers": [
+                "/institute_overview/"
+            ],
+            "rank_weight": 1.0
+        },
+        "fallback": {
+            "path_markers": [
+                "/fallback/"
+            ],
+            "rank_weight": 0.15
+        }
+    },
+    "preference_by_request": {
+        "admission": {
+            "admissions": 1.0,
+            "programs": 0.85,
+            "academics": 0.7,
+            "schools": 0.65,
+            "departments": 0.65
+        },
+        "eligibility": {
+            "admissions": 1.0,
+            "programs": 0.9,
+            "schools": 0.75,
+            "departments": 0.7,
+            "academics": 0.65
+        },
+        "fees": {
+            "finance": 1.0,
+            "admissions": 0.65,
+            "programs": 0.75,
+            "schools": 0.8,
+            "hostel": 0.85
+        },
+        "hostel": {
+            "hostel": 1.0,
+            "finance": 0.9,
+            "research_facilities": 0.45
+        },
+        "mess": {
+            "hostel": 1.0,
+            "finance": 0.8
+        },
+        "research": {
+            "research": 1.0,
+            "research_facilities": 0.95,
+            "departments": 0.9,
+            "schools": 0.75
+        },
+        "vision": {
+            "institute_overview": 1.0,
+            "director": 0.9,
+            "academics": 0.7
+        },
+        "facilities": {
+            "research_facilities": 1.0,
+            "hostel": 0.8,
+            "departments": 0.65,
+            "schools": 0.6
+        },
+        "registration": {
+            "academics": 1.0,
+            "programs": 0.7,
+            "admissions": 0.55
+        },
+        "placement": {
+            "schools": 0.9,
+            "departments": 0.9,
+            "programs": 0.7
+        }
+    }
+}

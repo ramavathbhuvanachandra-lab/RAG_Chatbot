@@ -1,272 +1,494 @@
 """
-Phase 5 -> Existing Retrieval Integration Tests
+Canonical Query Planning Tests
 
-These tests verify that the four Phase-5 layers actually form one
-pipeline before real retrieval/evidence processing begins.
+These tests verify the current reusable query-processing contract:
 
-They intentionally test difficult student language rather than simple
-"What programs are available?" questions.
+    user question
+        ↓
+    SemanticQueryFrame
+        ↓
+    RetrievalQueryPlan
+        ↓
+    bounded retrieval queries
+
+The legacy StudentSituation / DecisionContext / RetrievalControl
+pipeline is intentionally no longer tested here because it has been
+removed from the active single-intent graph path.
 """
 
-from types import SimpleNamespace
+from dataclasses import replace
 
-from backend.situation_retrieval_integration import (
-    prepare_situation_retrieval,
+from backend.core.query_interpreter import (
+    fallback_query_frame,
+)
+
+from backend.core.query_frame import (
+    QueryFacet,
+)
+
+from backend.core.retrieval_query import (
+    MAX_RETRIEVAL_QUERIES,
+    build_retrieval_query_plan,
 )
 
 
-def test_personal_phd_question_reaches_retrieval_ready_state():
-    result = prepare_situation_retrieval(
-        "I have a four-year B.Tech with 74% and want regular Ph.D. admission."
-    )
-
-    situation = result[
-        "student_situation"
-    ]
-
-    decision = result[
-        "decision_context"
-    ]
-
-    plan = result[
-        "retrieval_plan"
-    ]
-
-    control = result[
-        "retrieval_control"
-    ]
-
-    assert situation.intent == "phd_eligibility"
-
-    assert decision.target == "phd"
-    assert decision.goal == "determine_eligibility"
-
-    assert decision.facts[
-        "degree"
-    ] == "bachelors_degree"
-
-    assert 74.0 in decision.facts[
-        "percentages"
-    ]
-
-    query_blob = " ".join(
-        result["generated_queries"]
-    ).lower()
-
-    assert "ph.d." in query_blob
-    assert "bachelor" in query_blob
-    assert "74 percent" in query_blob
-    assert "eligibility" in query_blob
-
-    assert control.mode == "situational"
-    assert plan.primary_query
+# ============================================================
+# Test helpers
+# ============================================================
 
 
-def test_hostel_problem_preserves_real_decision_constraints():
-    result = prepare_situation_retrieval(
-        "I'll stay 20 days and I'm okay sharing a room to save money."
-    )
-
-    decision = result[
-        "decision_context"
-    ]
-
-    assert decision.target == "hostel"
-    assert decision.goal == "minimize_cost"
-
-    assert decision.constraints[
-        "stay_duration"
-    ] == {
-        "value": 20.0,
-        "unit": "days",
-    }
-
-    assert decision.constraints[
-        "occupancy"
-    ] == "double"
-
-    assert decision.preferences[
-        "cost_sensitive"
-    ] is True
-
-    query_blob = " ".join(
-        result["generated_queries"]
-    ).lower()
-
-    assert "20 days" in query_blob
-    assert "double occupancy" in query_blob
-
-
-def test_research_problem_preserves_interest_and_target():
-    result = prepare_situation_retrieval(
-        "My interest is robotics and control systems, and I'm considering Electrical Engineering."
-    )
-
-    situation = result[
-        "student_situation"
-    ]
-
-    decision = result[
-        "decision_context"
-    ]
-
-    queries = result[
-        "generated_queries"
-    ]
-
-    assert situation.intent == "research"
-
-    assert decision.target == (
-        "electrical engineering"
-    )
-
-    blob = " ".join(
-        queries
-    ).lower()
-
-    assert "robotics" in blob
-    assert "control systems" in blob
-    assert "electrical engineering" in blob
-
-
-def test_irrelevant_personal_story_does_not_pollute_retrieval():
-    result = prepare_situation_retrieval(
-        "I play football every weekend and love music, "
-        "but my B.Tech is 72% and my main concern is Ph.D. eligibility."
-    )
-
-    blob = " ".join(
-        result["generated_queries"]
-    ).lower()
-
-    assert "football" not in blob
-    assert "music" not in blob
-
-    assert "72 percent" in blob
-    assert "bachelor" in blob
-    assert "eligibility" in blob
-
-
-def test_negative_hostel_constraint_survives_all_four_layers():
-    result = prepare_situation_retrieval(
-        "I need my own room for five days and I don't need bedding."
-    )
-
-    decision = result[
-        "decision_context"
-    ]
-
-    assert decision.constraints[
-        "occupancy"
-    ] == "single"
-
-    assert decision.constraints[
-        "bedding"
-    ] == "without"
-
-    blob = " ".join(
-        result["generated_queries"]
-    ).lower()
-
-    assert "single occupancy" in blob
-    assert "without bedding" in blob
-    assert "with bedding" not in blob
-
-
-def test_low_confidence_path_is_conservative():
+def make_frame(
+    question: str,
+    *,
+    target: str | None = None,
+    request_type: str | None = None,
+    facets: tuple[QueryFacet, ...] = (),
+    qualifiers: tuple[str, ...] = (),
+    conditions: tuple[str, ...] = (),
+    relations: tuple[str, ...] = (),
+    temporal_context: tuple[str, ...] = (),
+    comparison_targets: tuple[str, ...] = (),
+    preserved_terms: tuple[str, ...] = (),
+    confidence: float = 0.90,
+):
     """
-    Directly exercise the Phase-5 control contract through a deliberately
-    low-confidence context. This proves the integration does not blindly
-    fan out when understanding is uncertain.
+    Build a valid SemanticQueryFrame starting from the canonical
+    safe fallback frame.
+
+    This keeps the test focused on retrieval planning rather than
+    duplicating the frame constructor contract.
     """
-    from backend.situation_retrieval_control import (
-        build_retrieval_control,
+
+    frame = fallback_query_frame(
+        question
     )
 
-    context = SimpleNamespace(
+    return replace(
+        frame,
+        target=target,
+        request_type=request_type,
+        facets=facets,
+        qualifiers=qualifiers,
+        conditions=conditions,
+        relations=relations,
+        temporal_context=temporal_context,
+        comparison_targets=comparison_targets,
+        preserved_terms=preserved_terms,
+        confidence=confidence,
+    )
+
+
+# ============================================================
+# Original question authority
+# ============================================================
+
+
+def test_original_question_is_always_primary():
+    question = (
+        "What are the admission routes for M.Sc.?"
+    )
+
+    frame = make_frame(
+        question,
+        target="M.Sc.",
+        request_type="admission routes",
+        facets=(
+            QueryFacet(
+                name="requested_attribute",
+                value="admission routes",
+                required=True,
+                importance=1.0,
+            ),
+        ),
+    )
+
+    plan = build_retrieval_query_plan(
+        frame
+    )
+
+    assert plan.original_query == question
+
+    assert plan.primary_query == question
+
+    assert plan.queries[0] == question
+
+
+# ============================================================
+# Entity preservation
+# ============================================================
+
+
+def test_exact_program_identity_is_preserved():
+    question = (
+        "What are the admission routes for M.Sc.?"
+    )
+
+    frame = make_frame(
+        question,
+        target="M.Sc.",
+        request_type="admission routes",
+        facets=(
+            QueryFacet(
+                name="requested_attribute",
+                value="admission routes",
+                required=True,
+                importance=1.0,
+            ),
+        ),
+    )
+
+    plan = build_retrieval_query_plan(
+        frame
+    )
+
+    assert "M.Sc." in plan.structured_query
+
+    # Similar program names must not be introduced by the planner.
+    assert "M.S." not in plan.structured_query
+
+
+def test_msc_and_ms_remain_distinct():
+    msc_question = (
+        "What are the admission routes for M.Sc.?"
+    )
+
+    ms_question = (
+        "What are the admission routes for M.S.?"
+    )
+
+    msc_frame = make_frame(
+        msc_question,
+        target="M.Sc.",
+        request_type="admission routes",
+        facets=(
+            QueryFacet(
+                name="requested_attribute",
+                value="admission routes",
+                required=True,
+                importance=1.0,
+            ),
+        ),
+    )
+
+    ms_frame = make_frame(
+        ms_question,
+        target="M.S.",
+        request_type="admission routes",
+        facets=(
+            QueryFacet(
+                name="requested_attribute",
+                value="admission routes",
+                required=True,
+                importance=1.0,
+            ),
+        ),
+    )
+
+    msc_plan = build_retrieval_query_plan(
+        msc_frame
+    )
+
+    ms_plan = build_retrieval_query_plan(
+        ms_frame
+    )
+
+    assert "M.Sc." in msc_plan.structured_query
+    assert "M.S." not in msc_plan.structured_query
+
+    assert "M.S." in ms_plan.structured_query
+    assert "M.Sc." not in ms_plan.structured_query
+
+
+# ============================================================
+# Structured retrieval signal
+# ============================================================
+
+
+def test_structured_query_contains_information_need():
+    question = (
+        "What is the admission process for M.Tech?"
+    )
+
+    frame = make_frame(
+        question,
+        target="M.Tech",
+        request_type="admission process",
+        facets=(
+            QueryFacet(
+                name="requested_attribute",
+                value="admission process",
+                required=True,
+                importance=1.0,
+            ),
+        ),
+    )
+
+    plan = build_retrieval_query_plan(
+        frame
+    )
+
+    structured = (
+        plan.structured_query.lower()
+    )
+
+    assert "m.tech" in structured
+    assert "admission process" in structured
+
+
+def test_conditions_are_preserved_in_structured_query():
+    question = (
+        "What are the admission requirements for Ph.D. "
+        "with a four-year bachelor's degree?"
+    )
+
+    frame = make_frame(
+        question,
+        target="Ph.D.",
+        request_type="admission requirements",
+        conditions=(
+            "four-year bachelor's degree",
+        ),
+    )
+
+    plan = build_retrieval_query_plan(
+        frame
+    )
+
+    structured = (
+        plan.structured_query.lower()
+    )
+
+    assert "ph.d." in structured
+    assert "admission requirements" in structured
+    assert "four-year bachelor's degree" in structured
+
+
+# ============================================================
+# Low-confidence safety
+# ============================================================
+
+
+def test_low_confidence_uses_original_question_only():
+    question = (
+        "I'm not really sure what I need."
+    )
+
+    frame = make_frame(
+        question,
+        target="college eligibility requirements",
+        request_type="eligibility",
         confidence=0.20,
-        facts={},
-        preferences={},
-        constraints={},
     )
 
-    result = build_retrieval_control(
-        original_query=(
-            "I'm not really sure what I need."
-        ),
-        primary_query=(
-            "college eligibility requirements"
-        ),
-        alternate_queries=(
-            "admission requirements",
-            "program requirements",
-        ),
-        context=context,
+    plan = build_retrieval_query_plan(
+        frame
     )
 
-    assert result.mode == "conservative"
+    assert plan.queries == (
+        question,
+    )
 
-    assert result.queries == (
-        "I'm not really sure what I need.",
+    assert plan.alternate_queries == ()
+
+    assert plan.mode == (
+        "original_only"
     )
 
 
-def test_retrieval_fanout_is_bounded():
-    result = prepare_situation_retrieval(
+# ============================================================
+# No policy conclusion during planning
+# ============================================================
+
+
+def test_retrieval_planning_does_not_answer_policy_question():
+    question = (
+        "I have 74% and want to apply for regular Ph.D. admission."
+    )
+
+    frame = make_frame(
+        question,
+        target="Ph.D.",
+        request_type="admission eligibility",
+        conditions=(
+            "74%",
+            "regular admission",
+        ),
+    )
+
+    plan = build_retrieval_query_plan(
+        frame
+    )
+
+    blob = " ".join(
+        plan.queries
+    ).lower()
+
+    # Planning should describe what to retrieve, not decide the result.
+    assert "eligible" not in blob
+    assert "not eligible" not in blob
+
+    assert "ph.d." in blob
+    assert "74%" in blob
+
+
+# ============================================================
+# Irrelevant information protection
+# ============================================================
+
+
+def test_only_interpreted_information_reaches_structured_query():
+    question = (
+        "I play football every weekend and love music, "
+        "but I want information about Ph.D. admission."
+    )
+
+    frame = make_frame(
+        question,
+        target="Ph.D.",
+        request_type="admission",
+        preserved_terms=(
+            "Ph.D.",
+            "admission",
+        ),
+    )
+
+    plan = build_retrieval_query_plan(
+        frame
+    )
+
+    structured = (
+        plan.structured_query.lower()
+    )
+
+    assert "ph.d." in structured
+    assert "admission" in structured
+
+    assert "football" not in structured
+    assert "music" not in structured
+
+
+# ============================================================
+# Bounded fan-out
+# ============================================================
+
+
+def test_retrieval_query_count_is_bounded():
+    question = (
         "I have a B.Tech with 74%, prefer research, "
         "need hostel accommodation for 20 days, "
         "can share a room, and want to minimize cost "
         "while applying for regular Ph.D."
     )
 
+    frame = make_frame(
+        question,
+        target="Ph.D.",
+        request_type="admission",
+        facets=(
+            QueryFacet(
+                name="requested_attribute",
+                value="admission",
+                required=True,
+                importance=1.0,
+            ),
+            QueryFacet(
+                name="degree",
+                value="B.Tech",
+                required=True,
+                importance=0.8,
+            ),
+        ),
+        conditions=(
+            "74%",
+            "regular admission",
+        ),
+        preserved_terms=(
+            "research",
+            "hostel",
+            "20 days",
+            "double occupancy",
+        ),
+    )
+
+    plan = build_retrieval_query_plan(
+        frame
+    )
+
     assert len(
-        result["generated_queries"]
-    ) <= 3
+        plan.queries
+    ) <= MAX_RETRIEVAL_QUERIES
+
+    assert len(
+        plan.alternate_queries
+    ) <= MAX_RETRIEVAL_QUERIES - 1
 
 
-def test_phase5_does_not_make_policy_decision():
-    result = prepare_situation_retrieval(
-        "I have 74% and want to apply for regular Ph.D."
-    )
-
-    blob = " ".join(
-        result["generated_queries"]
-    ).lower()
-
-    # Retrieval planning must search for the rule.
-    # It must not claim the conclusion.
-    assert "eligible" not in blob
-    assert "not eligible" not in blob
+# ============================================================
+# Determinism
+# ============================================================
 
 
-def test_phase5_output_is_deterministic():
+def test_retrieval_plan_is_deterministic():
     question = (
-        "I have a four-year B.Tech with 74% "
-        "and want regular Ph.D. admission."
+        "What are the admission routes for M.Sc.?"
     )
 
-    first = prepare_situation_retrieval(
-        question
+    frame = make_frame(
+        question,
+        target="M.Sc.",
+        request_type="admission routes",
+        facets=(
+            QueryFacet(
+                name="requested_attribute",
+                value="admission routes",
+                required=True,
+                importance=1.0,
+            ),
+        ),
     )
 
-    second = prepare_situation_retrieval(
-        question
+    first = build_retrieval_query_plan(
+        frame
     )
 
-    assert first[
-        "generated_queries"
-    ] == second[
-        "generated_queries"
-    ]
+    second = build_retrieval_query_plan(
+        frame
+    )
 
-    assert first[
-        "retrieval_plan"
-    ] == second[
-        "retrieval_plan"
-    ]
+    assert first == second
 
-    assert first[
-        "retrieval_control"
-    ] == second[
-        "retrieval_control"
-    ]
+
+# ============================================================
+# Query ordering
+# ============================================================
+
+
+def test_alternate_queries_are_only_supplementary():
+    question = (
+        "How can I apply for M.Tech?"
+    )
+
+    frame = make_frame(
+        question,
+        target="M.Tech",
+        request_type="application procedure",
+        facets=(
+            QueryFacet(
+                name="requested_attribute",
+                value="application procedure",
+                required=True,
+                importance=1.0,
+            ),
+        ),
+    )
+
+    plan = build_retrieval_query_plan(
+        frame
+    )
+
+    assert plan.primary_query == (
+        plan.queries[0]
+    )
+
+    for alternate in plan.alternate_queries:
+        assert alternate != question

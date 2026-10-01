@@ -1,0 +1,1 @@
+"""Evidence contracts and packaging for the reusable RAG core."""

@@ -36,14 +36,17 @@ Important invariants:
 """
 
 from collections import defaultdict
+from importlib import import_module
 from pathlib import Path
-import hashlib
 import math
 import re
 
 from langchain_community.retrievers import BM25Retriever
 
-from backend.config import DATA_PATH
+from backend.config import (
+    DATA_PATH,
+    INSTITUTION_ID,
+)
 from backend.ingestion import (
     load_documents,
     split_documents,
@@ -51,6 +54,13 @@ from backend.ingestion import (
 from backend.vectorstore import vectorstore
 from backend.retrieval_diversity import (
     select_diverse_documents,
+)
+from backend.core.retrieval_contracts import (
+    RetrievalCandidate,
+    document_identity,
+)
+from backend.core.rrf import (
+    fuse_ranked_lists,
 )
 
 # =========================================================
@@ -74,6 +84,44 @@ MAX_RETRIEVAL_QUERIES = 3
 # Alternate queries are deliberately capped so they can recover missed
 # lexical/semantic matches without replacing the user's primary intent.
 MAX_ALTERNATE_SCORE_CONTRIBUTION = 2.0
+
+# =========================================================
+# Active Institution Semantic Registry
+# =========================================================
+
+
+def _load_semantic_registry():
+    """Load the semantic registry for the active deployment."""
+
+    module = import_module(
+        f"backend.institutions.{INSTITUTION_ID}.semantic_registry"
+    )
+
+    registry = getattr(
+        module,
+        "SEMANTIC_REGISTRY",
+        None,
+    )
+
+    # Backward-compatible support for the IITJ-specific export name used
+    # by the deployment registry created in the previous migration step.
+    if registry is None:
+        registry = getattr(
+            module,
+            f"{INSTITUTION_ID.upper()}_SEMANTIC_REGISTRY",
+            None,
+        )
+
+    if registry is None:
+        raise AttributeError(
+            f"backend.institutions.{INSTITUTION_ID}.semantic_registry "
+            "must export SEMANTIC_REGISTRY"
+        )
+
+    registry.validate()
+    return registry
+
+SEMANTIC_REGISTRY = _load_semantic_registry()
 
 # Known ingestion-generated wrapper lines. They are removed only from
 # answer-model context; source metadata remains available for diagnostics.
@@ -267,288 +315,75 @@ def get_source(document):
 
 def get_document_id(document):
     """
-    Generate a stable identifier for one chunk.
+    Return the canonical core document identity.
 
-    Same source + same content:
-        same ID
-
-    Same source + different content:
-        different ID
-
-    Different source + same content:
-        different ID
+    The retrieval layer keeps this compatibility helper because existing
+    callers use the historical function name, while the actual identity
+    contract now lives in backend.core.retrieval_contracts.
     """
 
-    source = get_source(
+    return document_identity(
         document
     )
 
-    content = document.page_content.strip()
-
-    identity = (
-        f"{source}\n"
-        f"{content}"
-    )
-
-    return hashlib.sha256(
-        identity.encode(
-            "utf-8"
-        )
-    ).hexdigest()
-
-
 # =========================================================
-# Program Detection
+# Semantic Registry Detection
 # =========================================================
-
-PROGRAM_TERMS = {
-    "btech": {
-        "btech",
-        "b tech",
-        "bachelor technology",
-    },
-    "mtech": {
-        "mtech",
-        "m tech",
-        "master technology",
-    },
-    "msc": {
-        "msc",
-        "m sc",
-        "master science",
-    },
-    "phd": {
-        "phd",
-        "doctoral",
-        "doctorate",
-    },
-    "mba": {
-        "mba",
-    },
-}
 
 
 def detect_programs(text: str):
-    """
-    Detect broad academic-program signals.
-    """
+    """Detect deployment-configured program signals."""
 
-    normalized = normalize_text(
+    return SEMANTIC_REGISTRY.detect_programs(
         text
     )
-
-    found = set()
-
-    for program, aliases in PROGRAM_TERMS.items():
-
-        for alias in aliases:
-
-            if alias in normalized:
-
-                found.add(
-                    program
-                )
-
-                break
-
-    return found
-
-
-# =========================================================
-# Topic Detection
-# =========================================================
-
-TOPIC_TERMS = {
-    "admission": {
-        "admission",
-        "admissions",
-        "eligibility",
-        "eligible",
-        "qualification",
-        "criteria",
-        "requirements",
-        "apply",
-        "application",
-    },
-    "fees": {
-        "fee",
-        "fees",
-        "tuition",
-        "charges",
-        "cost",
-        "payment",
-    },
-    "hostel": {
-        "hostel",
-        "hostels",
-        "accommodation",
-        "residence",
-        "room",
-        "wifi",
-        "lan",
-    },
-    "mess": {
-        "mess",
-        "dining",
-        "food",
-        "meal",
-        "meals",
-    },
-    "research": {
-        "research",
-        "research areas",
-        "research themes",
-        "research groups",
-        "research fields",
-    },
-    "facility": {
-        "facility",
-        "facilities",
-        "amenities",
-        "infrastructure",
-    },
-    "department": {
-        "department",
-        "departments",
-    },
-    "curriculum": {
-        "curriculum",
-        "course",
-        "courses",
-        "syllabus",
-        "credits",
-    },
-    "vision": {
-        "vision",
-        "mission",
-        "goals",
-    },
-}
 
 
 def detect_topics(text: str):
-    """
-    Detect broad institutional topics.
-    """
+    """Detect deployment-configured topic signals."""
 
-    normalized = normalize_text(
+    return SEMANTIC_REGISTRY.detect_topics(
         text
     )
-
-    found = set()
-
-    for topic, terms in TOPIC_TERMS.items():
-
-        for term in terms:
-
-            if term in normalized:
-
-                found.add(
-                    topic
-                )
-
-                break
-
-    return found
-
-
-# =========================================================
-# Entity Detection
-# =========================================================
-
-ENTITY_TERMS = {
-    "hostel": {
-        "hostel",
-        "hostels",
-        "accommodation",
-        "residence",
-        "residential",
-    },
-    "mess": {
-        "mess",
-        "dining",
-        "food",
-        "meal",
-        "meals",
-    },
-    "library": {
-        "library",
-        "libraries",
-    },
-    "electrical_engineering": {
-        "electrical engineering",
-        "electrical",
-    },
-    "electronics_engineering": {
-        "electronics engineering",
-        "electronics",
-    },
-    "physics": {
-        "physics",
-    },
-    "research": {
-        "research",
-        "research areas",
-        "research themes",
-        "research groups",
-        "research fields",
-    },
-    "admission": {
-        "admission",
-        "admissions",
-    },
-    "placement": {
-        "placement",
-        "placements",
-        "internship",
-        "internships",
-    },
-    "registration": {
-        "registration",
-        "registrations",
-    },
-    "finance": {
-        "finance",
-        "financial",
-        "fees",
-        "fee",
-        "payment",
-    },
-}
 
 
 def detect_entities(text: str):
-    """
-    Detect broad institutional entities.
+    """Detect deployment-configured entity signals."""
 
-    Entity detection is intentionally lightweight and is used
-    only as a soft retrieval preference.
-    """
-
-    normalized = normalize_text(
+    return SEMANTIC_REGISTRY.detect_entities(
         text
     )
-
-    found = set()
-
-    for entity, aliases in ENTITY_TERMS.items():
-
-        for alias in aliases:
-
-            if alias in normalized:
-
-                found.add(
-                    entity
-                )
-
-                break
-
-    return found
 
 
 # =========================================================
 # Weighted Reciprocal Rank Fusion
 # =========================================================
+
+def fuse_retrieval_candidates(
+    ranked_lists,
+    k=RRF_K,
+    weights=None,
+):
+    """
+    Fuse ranked retrieval results into RetrievalCandidate objects.
+
+    This is the canonical retrieval path for the migrated core.
+
+    All RRF provenance is preserved:
+        - Dense rank/score
+        - BM25 rank/score
+        - per-channel retrieval signals
+        - actual weighted RRF score
+
+    The function intentionally does not perform semantic reranking.
+    """
+
+    return fuse_ranked_lists(
+        ranked_lists,
+        weights=weights,
+        rrf_k=k,
+    )
+
 
 def reciprocal_rank_fusion(
     ranked_lists,
@@ -556,106 +391,46 @@ def reciprocal_rank_fusion(
     weights=None,
 ):
     """
-    Combine retrieval results using weighted RRF.
+    Backward-compatible RRF wrapper.
 
-    Current single-query configuration:
-
-        Dense = 0.7
-        BM25  = 0.3
-
-    Future multi-query calls may explicitly provide their
-    own weights.
+    Existing callers still receive plain documents. New code should use
+    fuse_retrieval_candidates() so retrieval provenance is retained.
     """
 
-    document_scores = defaultdict(
-        float
-    )
-
-    document_lookup = {}
-
-    # -----------------------------------------------------
-    # Default weights
-    # -----------------------------------------------------
-
-    if weights is None:
-
-        if len(ranked_lists) == 2:
-
-            weights = [
-                0.7,
-                0.3,
-            ]
-
-        else:
-
-            weights = [
-                1.0
-                for _ in ranked_lists
-            ]
-
-    # -----------------------------------------------------
-    # Validate
-    # -----------------------------------------------------
-
-    if len(weights) != len(
-        ranked_lists
-    ):
-
-        raise ValueError(
-            "Number of RRF weights must "
-            "match number of ranked lists."
-        )
-
-    # -----------------------------------------------------
-    # Calculate scores
-    # -----------------------------------------------------
-
-    for list_index, ranked_documents in enumerate(
-        ranked_lists
-    ):
-
-        weight = weights[
-            list_index
-        ]
-
-        for rank, document in enumerate(
-            ranked_documents,
-            start=1,
-        ):
-
-            document_id = get_document_id(
-                document
-            )
-
-            document_lookup[
-                document_id
-            ] = document
-
-            document_scores[
-                document_id
-            ] += (
-                weight
-                / (
-                    k + rank
-                )
-            )
-
-    # -----------------------------------------------------
-    # Sort
-    # -----------------------------------------------------
-
-    fused_documents = sorted(
-        document_scores.items(),
-        key=lambda item: item[1],
-        reverse=True,
+    candidates = fuse_retrieval_candidates(
+        ranked_lists,
+        k=k,
+        weights=weights,
     )
 
     return [
-        document_lookup[
-            document_id
-        ]
-        for document_id, _ in fused_documents
+        candidate.document
+        for candidate in candidates
     ]
+
+def as_retrieval_candidates(
+    items,
+):
+    """
+    Convert a sequence of documents/candidates into RetrievalCandidate objects.
+
+    Existing document callers remain supported. Existing candidates retain
+    their retrieval provenance.
+    """
+
+    normalized = []
+
+    for item in items:
+        if isinstance(item, RetrievalCandidate):
+            normalized.append(item)
+        else:
+            normalized.append(
+                RetrievalCandidate.from_document(
+                    item
+                )
+            )
+
+    return normalized
 
 
 # =========================================================

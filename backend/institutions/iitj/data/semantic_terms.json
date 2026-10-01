@@ -1,0 +1,324 @@
+{
+    "topics": {
+        "admission": [
+            "admission",
+            "admissions",
+            "apply",
+            "application",
+            "application process",
+            "admission process",
+            "admission route",
+            "admission routes"
+        ],
+        "eligibility": [
+            "eligibility",
+            "eligible",
+            "qualification",
+            "qualifications",
+            "qualifying degree",
+            "requirements",
+            "admission requirements",
+            "eligibility requirements"
+        ],
+        "fees": [
+            "fee",
+            "fees",
+            "tuition",
+            "tuition fee",
+            "charges",
+            "cost",
+            "payment",
+            "fee structure"
+        ],
+        "hostel": [
+            "hostel",
+            "hostels",
+            "accommodation",
+            "residence",
+            "room rent",
+            "hostel accommodation"
+        ],
+        "mess": [
+            "mess",
+            "dining",
+            "dining options",
+            "food",
+            "meal",
+            "meals"
+        ],
+        "research": [
+            "research",
+            "research areas",
+            "research themes",
+            "research groups",
+            "research opportunities"
+        ],
+        "facility": [
+            "facility",
+            "facilities",
+            "amenities",
+            "infrastructure",
+            "campus facilities"
+        ],
+        "department": [
+            "department",
+            "departments",
+            "academic department"
+        ],
+        "curriculum": [
+            "curriculum",
+            "course",
+            "courses",
+            "syllabus",
+            "credits"
+        ],
+        "vision": [
+            "vision",
+            "mission",
+            "goals"
+        ],
+        "placement": [
+            "placement",
+            "placements",
+            "recruiter",
+            "recruiters"
+        ],
+        "registration": [
+            "registration",
+            "course registration",
+            "semester registration",
+            "register"
+        ],
+        "scholarship": [
+            "scholarship",
+            "scholarships",
+            "fellowship",
+            "fellowships",
+            "stipend",
+            "funding"
+        ],
+        "library": [
+            "library",
+            "libraries",
+            "journal",
+            "journals"
+        ],
+        "medical": [
+            "medical",
+            "health centre",
+            "health center",
+            "medical centre",
+            "medical center",
+            "emergency medical"
+        ],
+        "transport": [
+            "transport",
+            "transportation",
+            "shuttle",
+            "airport transport"
+        ],
+        "student_life": [
+            "student life",
+            "student activities",
+            "extracurricular",
+            "student clubs"
+        ],
+        "safety": [
+            "safety",
+            "welfare",
+            "ragging",
+            "women cell",
+            "women's cell"
+        ],
+        "academic_calendar": [
+            "academic calendar",
+            "semester calendar"
+        ],
+        "guidance": [
+            "advisor",
+            "adviser",
+            "guidance",
+            "mentorship",
+            "student guide"
+        ]
+    },
+    "entities": {
+        "hostel": [
+            "hostel",
+            "hostels",
+            "accommodation",
+            "residence"
+        ],
+        "mess": [
+            "mess",
+            "dining",
+            "meal",
+            "meals"
+        ],
+        "library": [
+            "library",
+            "libraries"
+        ],
+        "electrical_engineering": [
+            "Electrical Engineering",
+            "Electrical Engineering Department",
+            "Department of Electrical Engineering"
+        ],
+        "electronics_engineering": [
+            "Electronics Engineering",
+            "Electronics Engineering Department",
+            "Electronics and ICT"
+        ],
+        "physics": [
+            "Physics Department",
+            "Department of Physics"
+        ],
+        "research": [
+            "research",
+            "research areas",
+            "research themes",
+            "research groups"
+        ],
+        "admission": [
+            "admission",
+            "admissions"
+        ],
+        "placement": [
+            "placement",
+            "placements",
+            "campus placement"
+        ],
+        "registration": [
+            "registration",
+            "course registration",
+            "semester registration"
+        ],
+        "finance": [
+            "finance",
+            "fees and finance"
+        ],
+        "academic_calendar": [
+            "academic calendar",
+            "semester calendar"
+        ],
+        "medical": [
+            "health centre",
+            "health center",
+            "medical centre",
+            "medical center",
+            "emergency medical"
+        ],
+        "transport": [
+            "campus transport",
+            "transportation",
+            "shuttle service",
+            "airport transport"
+        ],
+        "student_activity_centre": [
+            "Student Activity Centre",
+            "Student Activity Center",
+            "SAC"
+        ],
+        "women_cell": [
+            "Women Cell",
+            "Women's Cell",
+            "Womens Cell"
+        ],
+        "faculty_advisor": [
+            "faculty advisor",
+            "faculty adviser"
+        ],
+        "clubs": [
+            "student clubs",
+            "extracurricular clubs"
+        ]
+    },
+    "attributes": {
+        "eligibility": [
+            "eligibility",
+            "qualification",
+            "qualifications",
+            "criteria",
+            "requirements"
+        ],
+        "fees": [
+            "fee",
+            "fees",
+            "tuition",
+            "charges",
+            "cost",
+            "payment"
+        ],
+        "documents": [
+            "documents",
+            "document",
+            "certificate",
+            "certificates"
+        ],
+        "deadline": [
+            "deadline",
+            "last date",
+            "closing date",
+            "application date"
+        ],
+        "process": [
+            "process",
+            "procedure",
+            "workflow",
+            "how to apply"
+        ],
+        "location": [
+            "location",
+            "where",
+            "directions",
+            "how do i reach"
+        ],
+        "contact": [
+            "contact",
+            "contact details",
+            "phone number",
+            "email"
+        ],
+        "facilities": [
+            "facility",
+            "facilities",
+            "amenities",
+            "infrastructure"
+        ],
+        "rules": [
+            "rule",
+            "rules",
+            "regulation",
+            "regulations",
+            "policy",
+            "policies"
+        ],
+        "availability": [
+            "available",
+            "availability",
+            "offered"
+        ],
+        "count": [
+            "how many",
+            "number of"
+        ]
+    },
+    "qualifiers": {
+        "regular": [
+            "regular",
+            "full-time",
+            "full time"
+        ],
+        "part_time": [
+            "part-time",
+            "part time"
+        ],
+        "sponsored": [
+            "sponsored",
+            "sponsor"
+        ],
+        "external": [
+            "external"
+        ]
+    }
+}

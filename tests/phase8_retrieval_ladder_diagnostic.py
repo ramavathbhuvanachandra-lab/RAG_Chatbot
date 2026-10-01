@@ -1,38 +1,61 @@
-
 """
-IITJ V1 — Retrieval Ladder Diagnostic
+IITJ V1 — Current Retrieval Ladder Diagnostic
 
 Purpose
 -------
 Identify exactly where a known-good corpus fact disappears.
 
-This script does NOT change production code. It runs:
-    1. resolved question
-    2. planner query set
-    3. Dense + BM25 per query
+This diagnostic follows the current canonical query pipeline:
+
+    1. question understanding
+    2. retrieval query planning
+    3. Dense + BM25 retrieval
     4. weighted RRF
     5. deduplication
     6. initial reranking
-    7. final evidence pipeline
-    8. final answer context
+    7. local context expansion
+    8. final reranking / scope handling
+    9. evidence sufficiency
+    10. evidence coverage
+    11. context compression
+    12. final context inspection
 
-For the robotics test, the corpus is known to contain:
+This file is diagnostic-only.
+It does NOT modify production code.
+
+Known IITJ corpus target for this diagnostic:
     "Adaptive control & robotics"
-
-The diagnostic reports whether that signal survives each stage.
 """
 
-from collections import Counter
 from pathlib import Path
 import sys
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(PROJECT_ROOT))
+# =========================================================
+# Project Root
+# =========================================================
+
+PROJECT_ROOT = Path(
+    __file__
+).resolve().parents[1]
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(
+        0,
+        str(PROJECT_ROOT),
+    )
 
 
-from backend.graph import create_graph
+# =========================================================
+# Current Canonical Query Pipeline
+# =========================================================
+
+from backend.core.query_pipeline import (
+    process_query,
+)
+
 from backend import retriever
+
 from backend.nodes import (
     hybrid_retrieve,
     fuse_retrieved_documents,
@@ -43,20 +66,16 @@ from backend.nodes import (
     assess_evidence_coverage_node,
     compress_context,
 )
-from backend.situation_retrieval_integration import (
-    prepare_situation_retrieval_node,
-)
-from backend.final_evidence_scope import (
-    filter_final_evidence_scope,
-)
-from backend.claim_context_filter import (
-    filter_claim_context,
-)
 
+
+# =========================================================
+# Diagnostic Question
+# =========================================================
 
 QUESTION = (
     "What research areas are related to robotics at IIT Jodhpur?"
 )
+
 
 TARGET_PATTERNS = (
     "robotics",
@@ -66,27 +85,47 @@ TARGET_PATTERNS = (
 )
 
 
+# =========================================================
+# Helpers
+# =========================================================
+
 def source(document):
     return str(
-        document.metadata.get("source", "")
-    ).replace("\\", "/")
+        document.metadata.get(
+            "source",
+            "",
+        )
+    ).replace(
+        "\\",
+        "/",
+    )
 
 
-def snippet(document, limit=260):
-    text = str(document.page_content).replace(
+def snippet(
+    document,
+    limit=260,
+):
+    text = str(
+        document.page_content
+    ).replace(
         "\n",
         " ",
     ).strip()
 
     if len(text) > limit:
-        return text[:limit] + "..."
+        return (
+            text[:limit]
+            + "..."
+        )
 
     return text
 
 
 def contains_target(document):
     text = (
-        str(document.page_content)
+        str(
+            document.page_content
+        )
         + " "
         + source(document)
     ).lower()
@@ -97,31 +136,45 @@ def contains_target(document):
     )
 
 
-def print_documents(label, documents, limit=15):
+def print_documents(
+    label,
+    documents,
+    limit=15,
+):
     print()
     print("=" * 110)
     print(label)
     print("=" * 110)
 
     for index, document in enumerate(
-        list(documents)[:limit],
+        list(documents or [])[:limit],
         start=1,
     ):
-        target = (
+        target_marker = (
             " <<< TARGET"
             if contains_target(document)
             else ""
         )
 
         print(
-            f"[{index:02d}] {source(document)}{target}"
+            f"[{index:02d}] "
+            f"{source(document)}"
+            f"{target_marker}"
         )
+
         print(
             f"     {snippet(document)}"
         )
 
 
-def print_target_presence(label, documents):
+def print_target_presence(
+    label,
+    documents,
+):
+    documents = list(
+        documents or []
+    )
+
     matches = [
         document
         for document in documents
@@ -136,114 +189,195 @@ def print_target_presence(label, documents):
 
     for document in matches[:10]:
         print(
-            f"  TARGET -> {source(document)}"
-        )
-        print(
-            f"             {snippet(document)}"
+            f"  TARGET -> "
+            f"{source(document)}"
         )
 
+        print(
+            f"             "
+            f"{snippet(document)}"
+        )
+
+
+# =========================================================
+# Main Diagnostic
+# =========================================================
 
 def main():
-    print("=" * 110)
-    print("IITJ V1 — FINAL RETRIEVAL LADDER DIAGNOSTIC")
-    print("=" * 110)
-    print(f"QUESTION: {QUESTION}")
 
-    graph = create_graph()
+    print("=" * 110)
+    print(
+        "IITJ V1 — CURRENT RETRIEVAL LADDER DIAGNOSTIC"
+    )
+    print("=" * 110)
 
-    # ---------------------------------------------------------
-    # A. Conversation resolution / retrieval preparation
-    # ---------------------------------------------------------
+    print(
+        f"QUESTION:\n{QUESTION}"
+    )
+
+    # =====================================================
+    # A. Canonical Query Understanding + Planning
+    # =====================================================
+
+    print()
+    print("=" * 110)
+    print(
+        "A. QUERY UNDERSTANDING + PLANNING"
+    )
+    print("=" * 110)
+
+    query_result = process_query(
+        QUESTION
+    )
+
+    frame = query_result.frame
+    plan = query_result.plan
+
+    print(
+        "\nORIGINAL QUESTION:"
+    )
+
+    print(
+        frame.original_query
+    )
+
+    print(
+        "\nNORMALIZED QUESTION:"
+    )
+
+    print(
+        frame.normalized_query
+    )
+
+    print(
+        "\nTARGET:"
+    )
+
+    print(
+        frame.target
+    )
+
+    print(
+        "\nREQUEST TYPE:"
+    )
+
+    print(
+        frame.request_type
+    )
+
+    print(
+        "\nCONFIDENCE:"
+    )
+
+    print(
+        frame.confidence
+    )
+
+    print(
+        "\nRETRIEVAL QUERIES:"
+    )
+
+    for query in (
+        plan.queries
+        or []
+    ):
+        print(
+            f"  - {query}"
+        )
+
+    # =====================================================
+    # B. Build Production-Like State
+    # =====================================================
+
     state = {
         "question": QUESTION,
         "chat_history": [],
         "resolved_question": QUESTION,
+        "generated_queries": list(
+            plan.queries or []
+        ),
     }
 
-    try:
-        prepared = prepare_situation_retrieval_node(
-            state
-        )
-        state.update(prepared)
-    except Exception as exc:
-        print(
-            f"\n[prepare_situation_retrieval] ERROR: {exc}"
-        )
+    # =====================================================
+    # C. Direct Dense / BM25 Visibility
+    # =====================================================
 
+    print()
+    print("=" * 110)
     print(
-        f"\nRESOLVED QUESTION:\n"
-        f"{state.get('resolved_question', QUESTION)}"
+        "C. DIRECT DENSE / BM25 VISIBILITY"
+    )
+    print("=" * 110)
+
+    queries = list(
+        plan.queries or []
     )
 
-    print(
-        "\nGENERATED QUERIES:"
-    )
-
-    for query in (
-        state.get("generated_queries", [])
-        or state.get("retrieval_queries", [])
-        or []
-    ):
-        print(f"  - {query}")
-
-    # ---------------------------------------------------------
-    # B. Direct Dense / BM25 visibility
-    # ---------------------------------------------------------
-    queries = [
-        state.get(
-            "resolved_question",
-            QUESTION,
-        )
-    ]
-
-    for query in (
-        state.get("generated_queries", [])
-        or []
-    ):
-        if query.casefold() in {
-            item.casefold()
-            for item in queries
-        }:
-            continue
-        queries.append(query)
-
-        if len(queries) >= 3:
-            break
+    if not queries:
+        queries = [
+            QUESTION
+        ]
 
     for query_index, query in enumerate(
-        queries,
+        queries[:3],
         start=1,
     ):
-        dense = retriever.dense_retrieve(query)
-        bm25 = retriever.keyword_retrieve(query)
+
+        dense_documents = (
+            retriever.dense_retrieve(
+                query
+            )
+        )
+
+        keyword_documents = (
+            retriever.keyword_retrieve(
+                query
+            )
+        )
 
         print_documents(
-            f"DENSE Q{query_index}: {query}",
-            dense,
+            (
+                f"DENSE Q{query_index}: "
+                f"{query}"
+            ),
+            dense_documents,
             limit=10,
         )
 
         print_target_presence(
             f"DENSE Q{query_index}",
-            dense,
+            dense_documents,
         )
 
         print_documents(
-            f"BM25 Q{query_index}: {query}",
-            bm25,
+            (
+                f"BM25 Q{query_index}: "
+                f"{query}"
+            ),
+            keyword_documents,
             limit=10,
         )
 
         print_target_presence(
             f"BM25 Q{query_index}",
-            bm25,
+            keyword_documents,
         )
 
-    # ---------------------------------------------------------
-    # C. Production nodes, one stage at a time
-    # ---------------------------------------------------------
-    state = hybrid_retrieve(
-        state
+    # =====================================================
+    # D. Hybrid Retrieval
+    # =====================================================
+
+    print()
+    print("=" * 110)
+    print(
+        "D. HYBRID RETRIEVAL"
+    )
+    print("=" * 110)
+
+    state.update(
+        hybrid_retrieve(
+            state
+        )
     )
 
     flat_candidates = []
@@ -253,7 +387,7 @@ def main():
         [],
     ):
         flat_candidates.extend(
-            result_list
+            result_list or []
         )
 
     print_target_presence(
@@ -264,6 +398,7 @@ def main():
     print(
         "\nRETRIEVAL QUERIES USED:"
     )
+
     for query in state.get(
         "retrieval_queries",
         [],
@@ -275,163 +410,379 @@ def main():
     print(
         "\nRETRIEVAL WEIGHTS:"
     )
+
     print(
         state.get(
-            "retrieval_weights"
+            "retrieval_weights",
+            [],
         )
     )
 
-    state = fuse_retrieved_documents(
-        state
+    # =====================================================
+    # E. Weighted RRF + Deduplication
+    # =====================================================
+
+    print()
+    print("=" * 110)
+    print(
+        "E. RRF + DEDUPLICATION"
+    )
+    print("=" * 110)
+
+    state.update(
+        fuse_retrieved_documents(
+            state
+        )
     )
 
-    fused = state.get(
+    fused_documents = state.get(
         "fused_docs",
         [],
     )
 
     print_target_presence(
         "AFTER RRF + DEDUP",
-        fused,
+        fused_documents,
     )
 
     print_documents(
         "TOP 30 AFTER RRF + DEDUP",
-        fused,
+        fused_documents,
         limit=30,
     )
 
-    state = initial_rerank_documents(
-        state
+    # =====================================================
+    # F. Initial Reranking
+    # =====================================================
+
+    print()
+    print("=" * 110)
+    print(
+        "F. INITIAL RERANK"
+    )
+    print("=" * 110)
+
+    state.update(
+        initial_rerank_documents(
+            state
+        )
     )
 
-    initial = state.get(
+    initial_documents = state.get(
         "initial_reranked_docs",
         [],
     )
 
     print_target_presence(
         "AFTER INITIAL RERANK",
-        initial,
+        initial_documents,
     )
 
     print_documents(
-        "INITIAL RERANK",
-        initial,
+        "INITIAL RERANKED DOCUMENTS",
+        initial_documents,
         limit=20,
     )
 
-    state = expand_retrieved_context(
-        state
+    # =====================================================
+    # G. Local Context Expansion
+    # =====================================================
+
+    print()
+    print("=" * 110)
+    print(
+        "G. LOCAL CONTEXT EXPANSION"
+    )
+    print("=" * 110)
+
+    state.update(
+        expand_retrieved_context(
+            state
+        )
     )
 
-    expanded = state.get(
+    expanded_documents = state.get(
         "expanded_docs",
         [],
     )
 
     print_target_presence(
         "AFTER LOCAL CONTEXT",
-        expanded,
+        expanded_documents,
     )
 
-    state = final_rerank_documents(
-        state
+    print_documents(
+        "EXPANDED DOCUMENTS",
+        expanded_documents,
+        limit=20,
     )
 
-    reranked = state.get(
+    # =====================================================
+    # H. Final Reranking / Scope
+    # =====================================================
+
+    print()
+    print("=" * 110)
+    print(
+        "H. FINAL RERANK / SCOPE"
+    )
+    print("=" * 110)
+
+    state.update(
+        final_rerank_documents(
+            state
+        )
+    )
+
+    reranked_documents = state.get(
         "reranked_docs",
         [],
     )
 
     print_target_presence(
-        "AFTER FINAL RERANK / SCOPE FILTER",
-        reranked,
+        "AFTER FINAL RERANK / SCOPE",
+        reranked_documents,
     )
 
     print_documents(
         "FINAL RERANKED DOCUMENTS",
-        reranked,
+        reranked_documents,
         limit=20,
     )
 
-    state = assess_evidence_node(
-        state
-    )
-
-    state = assess_evidence_coverage_node(
-        state
-    )
+    # =====================================================
+    # I. Evidence Sufficiency
+    # =====================================================
 
     print()
+    print("=" * 110)
+    print(
+        "I. EVIDENCE SUFFICIENCY"
+    )
+    print("=" * 110)
+
+    state.update(
+        assess_evidence_node(
+            state
+        )
+    )
+
     print(
         "EVIDENCE STATUS:",
-        state.get("evidence_status"),
+        state.get(
+            "evidence_status"
+        ),
     )
+
     print(
         "EVIDENCE SCORE:",
-        state.get("evidence_score"),
+        state.get(
+            "evidence_score"
+        ),
     )
-    print(
-        "COVERAGE STATUS:",
-        state.get("evidence_coverage_status"),
-    )
+
     print(
         "QUESTION TYPE:",
-        state.get("evidence_question_type"),
+        state.get(
+            "evidence_question_type"
+        ),
     )
+
     print(
         "STRONG DOCUMENTS:",
-        state.get("evidence_strong_documents"),
+        state.get(
+            "evidence_strong_documents"
+        ),
     )
+
     print(
         "PARTIAL DOCUMENTS:",
-        state.get("evidence_partial_documents"),
+        state.get(
+            "evidence_partial_documents"
+        ),
     )
 
-    state = compress_context(
-        state
+    # =====================================================
+    # J. Evidence Coverage
+    # =====================================================
+
+    print()
+    print("=" * 110)
+    print(
+        "J. EVIDENCE COVERAGE"
+    )
+    print("=" * 110)
+
+    state.update(
+        assess_evidence_coverage_node(
+            state
+        )
     )
 
-    compressed = state.get(
+    print(
+        "COVERAGE STATUS:",
+        state.get(
+            "evidence_coverage_status"
+        ),
+    )
+
+    # =====================================================
+    # K. Context Compression
+    # =====================================================
+
+    print()
+    print("=" * 110)
+    print(
+        "K. CONTEXT COMPRESSION"
+    )
+    print("=" * 110)
+
+    state.update(
+        compress_context(
+            state
+        )
+    )
+
+    compressed_documents = state.get(
         "compressed_docs",
         [],
     )
 
     print_target_presence(
         "FINAL COMPRESSED CONTEXT",
-        compressed,
+        compressed_documents,
     )
 
     print_documents(
         "FINAL COMPRESSED DOCUMENTS",
-        compressed,
+        compressed_documents,
         limit=20,
     )
 
+    # =====================================================
+    # L. Final Context Check
+    # =====================================================
+
     final_context = retriever.format_context(
-        compressed
+        compressed_documents
+    )
+
+    final_context_lower = (
+        final_context.lower()
     )
 
     print()
     print("=" * 110)
-    print("FINAL CONTEXT TARGET CHECK")
+    print(
+        "L. FINAL CONTEXT TARGET CHECK"
+    )
+    print("=" * 110)
+
+    print(
+        "contains 'robotics':",
+        "robotics" in final_context_lower,
+    )
+
+    print(
+        "contains 'adaptive control':",
+        "adaptive control" in final_context_lower,
+    )
+
+    print(
+        "contains 'cyber-physical':",
+        "cyber-physical" in final_context_lower,
+    )
+
+    print(
+        "context chars:",
+        len(final_context),
+    )
+
+    # =====================================================
+    # M. Final Summary
+    # =====================================================
+
+    print()
     print("=" * 110)
     print(
-        f"contains 'robotics': "
-        f"{'robotics' in final_context.lower()}"
+        "M. DIAGNOSTIC SUMMARY"
     )
+    print("=" * 110)
+
     print(
-        f"contains 'adaptive control': "
-        f"{'adaptive control' in final_context.lower()}"
+        "Query confidence:",
+        frame.confidence,
     )
+
     print(
-        f"contains 'cyber-physical': "
-        f"{'cyber-physical' in final_context.lower()}"
+        "Generated query count:",
+        len(
+            plan.queries or []
+        ),
     )
+
     print(
-        f"context chars: {len(final_context)}"
+        "Hybrid candidate count:",
+        len(
+            flat_candidates
+        ),
     )
+
+    print(
+        "Fused document count:",
+        len(
+            fused_documents
+        ),
+    )
+
+    print(
+        "Initial reranked count:",
+        len(
+            initial_documents
+        ),
+    )
+
+    print(
+        "Expanded document count:",
+        len(
+            expanded_documents
+        ),
+    )
+
+    print(
+        "Final reranked count:",
+        len(
+            reranked_documents
+        ),
+    )
+
+    print(
+        "Compressed document count:",
+        len(
+            compressed_documents
+        ),
+    )
+
+    print(
+        "Evidence status:",
+        state.get(
+            "evidence_status"
+        ),
+    )
+
+    print(
+        "Coverage status:",
+        state.get(
+            "evidence_coverage_status"
+        ),
+    )
+
+    print()
+    print("=" * 110)
+    print(
+        "DIAGNOSTIC COMPLETE"
+    )
+    print("=" * 110)
 
 
 if __name__ == "__main__":

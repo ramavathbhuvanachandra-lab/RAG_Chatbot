@@ -971,10 +971,15 @@ def final_rerank_documents(
         expanded_docs,
     )
 
+    # Rank every evidence group that survived initial retrieval.
+    #
+    # FINAL_CONTEXT_DOCUMENTS is the answer-context budget, not the
+    # verification budget. Truncating here can discard valid evidence
+    # before scope filtering, sufficiency, and coverage get to inspect it.
     ranked_groups = rank_evidence_groups(
         query=question,
         groups=groups,
-        top_k=FINAL_CONTEXT_DOCUMENTS,
+        top_k=len(groups),
     )
 
     grouped_docs = flatten_evidence_groups(

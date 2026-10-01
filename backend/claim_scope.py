@@ -1,26 +1,49 @@
 """
-Phase 4/5 — Claim Scope Detection
+Generic Claim-Scope Safety Layer
 
 Purpose
 -------
-Identify semantic claim scope, organizational scope, and admission-mode
-compatibility between user queries and retrieved evidence.
+Provide a small deterministic safety layer for retrieved evidence.
 
-The module is institution-agnostic.
+This module is NOT responsible for:
+    - understanding the user's topic
+    - discovering research areas
+    - deciding semantic relevance
+    - generating retrieval queries
+    - replacing the query interpreter
+    - replacing the reranker
+
+The canonical flow is:
+
+    user question
+        ↓
+    query understanding
+        ↓
+    retrieval
+        ↓
+    reranking
+        ↓
+    claim-scope safety check
+        ↓
+    evidence sufficiency / coverage
+        ↓
+    answer generation
+
+This module only removes evidence when there is a concrete,
+explicit incompatibility between the requested claim and the
+retrieved evidence.
 
 Important invariants
 --------------------
-1. Matching is token/phrase aware.
-2. Substrings must not create false matches.
-3. Explicit semantic conflicts reject evidence.
-4. Narrow organizational evidence may support a query when the query
-   identifies the same organization by name, even without explicitly
-   saying "department", "school", or "centre".
-5. Narrow organizational evidence must not satisfy a broader query
-   automatically.
-6. Different named organizations must not be mixed.
-7. Admission modes remain scope-sensitive.
-8. No IITJ-specific organization names are hardcoded.
+1. Broad queries may use narrow evidence.
+2. Narrow evidence is NOT automatically a conflict.
+3. Explicitly different named organizations are a conflict.
+4. Explicitly incompatible admission modes are a conflict.
+5. Financial-assistance-only evidence does not satisfy an admission claim.
+6. No institution-specific organization names are hardcoded.
+7. No topic-specific retrieval vocabulary is used to determine relevance.
+8. Filtering is document-local: one conflicting document is removed,
+   while compatible evidence remains untouched.
 """
 
 from __future__ import annotations
@@ -32,13 +55,21 @@ from backend.retriever import normalize_text
 
 
 # =========================================================
-# Claim scopes
+# Generic claim scopes
 # =========================================================
+#
+# These are generic evidence dimensions that can exist across
+# different institutions.
+#
+# They are NOT institution-specific topics.
+#
 
 ADMISSION_SCOPE = "admission"
 FINANCIAL_ASSISTANCE_SCOPE = "financial_assistance"
 APPLICATION_SCOPE = "application"
 FEES_SCOPE = "fees"
+
+# Backward-compatible names used by older callers.
 HOSTEL_SCOPE = "hostel"
 RESEARCH_SCOPE = "research"
 PROGRAM_SCOPE = "program"
@@ -47,7 +78,7 @@ FACILITIES_SCOPE = "facilities"
 
 
 # =========================================================
-# Organizational scopes
+# Organizational classes
 # =========================================================
 
 INSTITUTE_SCOPE = "institute"
@@ -68,10 +99,17 @@ EXTERNAL_MODE = "external"
 
 
 # =========================================================
-# Claim scope terms
+# Generic claim vocabulary
 # =========================================================
+#
+# Keep this list small.
+#
+# The retriever/query interpreter remains responsible for topic
+# understanding. These terms exist only for explicit safety
+# relationships such as admission vs financial assistance.
+#
 
-SCOPE_TERMS = {
+CLAIM_SCOPE_TERMS = {
     ADMISSION_SCOPE: {
         "admission",
         "admissions",
@@ -119,59 +157,66 @@ SCOPE_TERMS = {
         "tuition",
         "payment",
     },
-
-    HOSTEL_SCOPE: {
-        "hostel",
-        "hostels",
-        "accommodation",
-        "room",
-        "rooms",
-        "residence",
-        "residential",
-    },
-
-    RESEARCH_SCOPE: {
-        "research",
-        "research area",
-        "research areas",
-        "research theme",
-        "research themes",
-        "research group",
-        "research groups",
-        "research work",
-    },
-
-    PROGRAM_SCOPE: {
-        "program",
-        "programs",
-        "programme",
-        "programmes",
-        "degree",
-        "degrees",
-        "course",
-        "courses",
-    },
-
-    FACULTY_SCOPE: {
-        "faculty",
-        "professor",
-        "professors",
-        "faculty member",
-        "faculty members",
-    },
-
-    FACILITIES_SCOPE: {
-        "facility",
-        "facilities",
-        "amenity",
-        "amenities",
-        "infrastructure",
-    },
 }
 
 
 # =========================================================
-# Organizational terms
+# Admission markers
+# =========================================================
+
+ADMISSION_CLAIM_MARKERS = {
+    "must have",
+    "minimum",
+    "minimum four-year",
+    "four-year degree",
+    "bachelor's degree",
+    "bachelor degree",
+    "master's degree",
+    "master degree",
+    "marks",
+    "percentage",
+    "cgpa",
+    "cpi",
+    "qualifying degree",
+    "qualifying qualification",
+    "equivalent",
+    "eligible",
+    "eligibility",
+}
+
+
+# =========================================================
+# Financial-assistance markers
+# =========================================================
+
+FINANCIAL_ASSISTANCE_MARKERS = {
+    "financial assistance",
+    "financial aid",
+    "fellowship",
+    "stipend",
+    "funding",
+    "scholarship",
+}
+
+
+# =========================================================
+# Fee markers
+# =========================================================
+
+FEE_CLAIM_MARKERS = {
+    "fee",
+    "fees",
+    "cost",
+    "costs",
+    "charge",
+    "charges",
+    "rent",
+    "tuition",
+}
+
+
+# =========================================================
+# Organizational vocabulary
 # =========================================================
 
 ORGANIZATIONAL_TERMS = {
@@ -215,7 +260,7 @@ ORGANIZATIONAL_TERMS = {
 
 
 # =========================================================
-# Admission mode terms
+# Admission-mode vocabulary
 # =========================================================
 
 MODE_TERMS = {
@@ -242,53 +287,6 @@ MODE_TERMS = {
 
 
 # =========================================================
-# Direct claim markers
-# =========================================================
-
-ADMISSION_CLAIM_MARKERS = {
-    "must have",
-    "minimum",
-    "minimum four-year",
-    "four-year degree",
-    "bachelor's degree",
-    "bachelor degree",
-    "master's degree",
-    "master degree",
-    "marks",
-    "percentage",
-    "cgpa",
-    "cpi",
-    "qualifying degree",
-    "qualifying qualification",
-    "equivalent",
-    "eligible",
-    "eligibility",
-}
-
-
-FINANCIAL_ASSISTANCE_MARKERS = {
-    "financial assistance",
-    "financial aid",
-    "fellowship",
-    "stipend",
-    "funding",
-    "scholarship",
-}
-
-
-FEE_CLAIM_MARKERS = {
-    "fee",
-    "fees",
-    "cost",
-    "costs",
-    "charge",
-    "charges",
-    "rent",
-    "tuition",
-}
-
-
-# =========================================================
 # Normalization helpers
 # =========================================================
 
@@ -298,6 +296,7 @@ def _normalized(
     """
     Normalize text through the shared retrieval normalizer.
     """
+
     return normalize_text(
         text
     )
@@ -308,12 +307,7 @@ def _contains_term(
     term: str,
 ) -> bool:
     """
-    Match a complete token or phrase.
-
-    Prevents false substring matches such as:
-
-        fee  != feet
-        room != classroom
+    Match complete tokens/phrases rather than arbitrary substrings.
     """
 
     normalized_term = _normalized(
@@ -339,7 +333,6 @@ def _contains_term(
     for index in range(
         len(text_tokens) - width + 1
     ):
-
         if (
             text_tokens[
                 index:
@@ -357,7 +350,7 @@ def _contains_any_term(
     terms: Set[str],
 ) -> bool:
     """
-    Return True when any complete term or phrase exists.
+    Return True when any complete term/phrase is present.
     """
 
     return any(
@@ -377,9 +370,13 @@ def detect_claim_scopes(
     text: str,
 ) -> Set[str]:
     """
-    Detect broad semantic claim scopes.
+    Detect generic claim dimensions.
 
-    Multiple scopes may legitimately be returned.
+    This function intentionally does NOT attempt to identify
+    arbitrary subjects such as robotics, economics, chemistry,
+    electrical engineering, etc.
+
+    The semantic query interpreter/retriever owns that responsibility.
     """
 
     normalized = _normalized(
@@ -388,8 +385,7 @@ def detect_claim_scopes(
 
     scopes: Set[str] = set()
 
-    for scope, terms in SCOPE_TERMS.items():
-
+    for scope, terms in CLAIM_SCOPE_TERMS.items():
         if _contains_any_term(
             normalized,
             terms,
@@ -426,14 +422,14 @@ def detect_claim_scopes(
 
 
 # =========================================================
-# Organizational scope detection
+# Organizational class detection
 # =========================================================
 
 def detect_organizational_scopes(
     text: str,
 ) -> Set[str]:
     """
-    Detect explicit organizational classes.
+    Detect organizational classes only.
 
     Examples:
 
@@ -441,8 +437,6 @@ def detect_organizational_scopes(
         school
         centre
         institute-wide
-
-    Absence of an organizational class does not imply a conflict.
     """
 
     normalized = _normalized(
@@ -452,7 +446,6 @@ def detect_organizational_scopes(
     scopes: Set[str] = set()
 
     for scope, terms in ORGANIZATIONAL_TERMS.items():
-
         if _contains_any_term(
             normalized,
             terms,
@@ -465,41 +458,48 @@ def detect_organizational_scopes(
 
 
 # =========================================================
-# Named organizational identity
+# Organization-name extraction
 # =========================================================
 
-# These are generic claim boundary words.
-# They are NOT institution-specific.
-_ORGANIZATIONAL_BOUNDARY_WORDS = {
+_ORGANIZATIONAL_STOPWORDS = {
     "research",
     "researches",
     "admission",
     "admissions",
     "eligibility",
+    "eligible",
     "requirement",
     "requirements",
-    "offer",
+    "program",
+    "programs",
+    "programme",
+    "programmes",
+    "course",
+    "courses",
+    "faculty",
+    "facilities",
     "offers",
-    "provide",
+    "offer",
     "provides",
-    "pursue",
+    "provide",
     "pursues",
+    "pursue",
     "has",
     "have",
-    "include",
     "includes",
+    "include",
     "with",
     "for",
+    "is",
+    "are",
 }
 
 
-def _clean_organizational_name(
+def _clean_organization_name(
     value: str,
 ) -> str:
     """
     Clean an extracted organization name.
-
-    'and' is intentionally preserved.
     """
 
     normalized = _normalized(
@@ -511,11 +511,10 @@ def _clean_organizational_name(
 
     tokens = normalized.split()
 
-    cleaned: list[str] = []
+    cleaned = []
 
     for token in tokens:
-
-        if token in _ORGANIZATIONAL_BOUNDARY_WORDS:
+        if token in _ORGANIZATIONAL_STOPWORDS:
             break
 
         cleaned.append(
@@ -527,21 +526,18 @@ def _clean_organizational_name(
     ).strip()
 
 
-def _extract_explicit_organizational_entities(
+def _extract_explicit_organization_names(
     text: str,
 ) -> Set[str]:
     """
-    Extract explicit organization identities only from safe structural
-    forms:
+    Extract organization identities from explicit forms:
 
         School of X
         Department of X
         Centre of X
         Center of X
 
-    We intentionally do NOT use a broad suffix regex here. That regex can
-    accidentally capture unrelated words before "school"/"department"
-    inside a normal question.
+    This is deliberately structural and generic.
     """
 
     normalized = _normalized(
@@ -557,18 +553,19 @@ def _extract_explicit_organizational_entities(
         r"\b(?:school|department|centre|center)"
         r"\s+of\s+"
         r"(.+?)"
-        r"(?=\s+(?:research|researches|admission|admissions|"
-        r"eligibility|requirements?|offers?|provides?|"
-        r"pursues?|has|have|includes?|with|for)\b"
-        r"|[,.!?;:]|$)",
+        r"(?=\s+(?:research|researches|"
+        r"admission|admissions|eligibility|eligible|"
+        r"requirements?|program(?:s|mes)?|course(?:s)?|"
+        r"faculty|facilities|offers?|provides?|"
+        r"pursues?|has|have|includes?|include|"
+        r"with|for|is|are)\b|$)",
         flags=re.IGNORECASE,
     )
 
     for match in pattern.finditer(
         normalized
     ):
-
-        name = _clean_organizational_name(
+        name = _clean_organization_name(
             match.group(
                 1
             )
@@ -582,25 +579,21 @@ def _extract_explicit_organizational_entities(
     return names
 
 
-def _extract_contextual_organization_entities(
+def _extract_contextual_organization_names(
     text: str,
 ) -> Set[str]:
     """
-    Extract organization names referenced without explicitly saying
+    Extract an organization referenced without explicitly saying
     school/department/centre.
 
     Examples:
 
         research in Electrical Engineering
-            -> electrical engineering
-
         requirements in Computer Science
-            -> computer science
-
         programs at Data Science
-            -> data science
 
-    This parser is intentionally conservative.
+    This is only used to compare an already-narrow document
+    against a query that names the organization naturally.
     """
 
     normalized = _normalized(
@@ -617,19 +610,19 @@ def _extract_contextual_organization_entities(
         r"\s+"
         r"(?:the\s+)?"
         r"(.+?)"
-        r"(?=\s+(?:research|researches|admission|admissions|"
-        r"eligibility|requirements?|program|programs|programme|"
-        r"programmes|course|courses|facilities?|department|"
-        r"school|centre|center)\b"
-        r"|[,.!?;:]|$)",
+        r"(?=\s+(?:research|researches|"
+        r"admission|admissions|eligibility|"
+        r"requirements?|program(?:s|mes)?|"
+        r"course(?:s)?|faculty|facilities|"
+        r"offers?|provides?|pursues?|has|have|"
+        r"includes?|include|with|for|is|are)\b|$)",
         flags=re.IGNORECASE,
     )
 
     for match in pattern.finditer(
         normalized
     ):
-
-        name = _clean_organizational_name(
+        name = _clean_organization_name(
             match.group(
                 1
             )
@@ -648,12 +641,10 @@ def _organization_names_match(
     second_name: str,
 ) -> bool:
     """
-    Compare two organization identities conservatively.
+    Compare organization identities conservatively.
 
-    Exact normalized identity is preferred.
-
-    A shorter complete phrase may match a longer identity when the shorter
-    phrase occurs as a contiguous sequence.
+    Exact normalized matches are preferred.
+    A complete shorter phrase may also match a longer identity.
     """
 
     first = _normalized(
@@ -688,7 +679,6 @@ def _organization_names_match(
     for index in range(
         len(second_tokens) - width + 1
     ):
-
         if (
             second_tokens[
                 index:
@@ -701,53 +691,44 @@ def _organization_names_match(
     return False
 
 
-def _organizational_identity_compatible(
+def _organization_identity_compatible(
     query: str,
     document_text: str,
 ) -> bool:
     """
-    Determine whether narrow organizational evidence matches the
-    organization referenced by the query.
+    Determine whether the explicitly narrow document organization
+    matches the organization named by the query.
 
-    Explicit organization names are authoritative.
+    Broad queries are allowed to use narrow documents.
 
-    If the document is explicitly narrow and the query does not identify
-    any organization, the evidence is considered too narrow.
+    This function is therefore only used when the query contains
+    an organization identity.
     """
 
     document_names = (
-        _extract_explicit_organizational_entities(
+        _extract_explicit_organization_names(
             document_text
         )
     )
 
-    # Evidence is not explicitly narrow.
     if not document_names:
         return True
 
     query_names = (
-        _extract_explicit_organizational_entities(
+        _extract_explicit_organization_names(
             query
         )
     )
 
-    # A query such as:
-    #
-    #   research in Electrical Engineering
-    #
-    # identifies an organization without saying "department".
     if not query_names:
-
         query_names = (
-            _extract_contextual_organization_entities(
+            _extract_contextual_organization_names(
                 query
             )
         )
 
-    # Narrow evidence without any organization in the query is not
-    # sufficient to establish a broader claim.
     if not query_names:
-        return False
+        return True
 
     return any(
         _organization_names_match(
@@ -760,7 +741,7 @@ def _organizational_identity_compatible(
 
 
 # =========================================================
-# Admission-mode detection
+# Admission mode detection
 # =========================================================
 
 def detect_admission_modes(
@@ -777,7 +758,6 @@ def detect_admission_modes(
     modes: Set[str] = set()
 
     for mode, terms in MODE_TERMS.items():
-
         if _contains_any_term(
             normalized,
             terms,
@@ -790,7 +770,7 @@ def detect_admission_modes(
 
 
 # =========================================================
-# Broad claim compatibility
+# Generic scope compatibility
 # =========================================================
 
 def scopes_compatible(
@@ -798,10 +778,11 @@ def scopes_compatible(
     document_scopes: Set[str],
 ) -> bool:
     """
-    Determine broad semantic compatibility.
+    Determine broad claim compatibility.
 
-    Empty document scopes remain permissive because a useful evidence
-    chunk may not explicitly repeat its category.
+    This helper is intentionally permissive:
+    absence of a scope in a document does not automatically
+    make the document invalid.
     """
 
     if not query_scopes:
@@ -828,7 +809,7 @@ def admission_modes_compatible(
     """
     Determine admission-mode compatibility.
 
-    If evidence does not explicitly identify a mode, it remains usable.
+    Missing mode information remains permissive.
     """
 
     if not query_modes:
@@ -853,33 +834,35 @@ def organizational_scope_conflict(
     document_text: str,
 ) -> bool:
     """
-    Reject explicit organizational mismatches.
+    Reject only explicit organizational identity conflicts.
 
-    Examples:
+    Important:
 
-        Query:
-            research areas in Electrical Engineering
+    A broad query such as:
 
-        Evidence:
-            Department of Electrical Engineering research areas
+        "What research areas are available?"
 
-        -> compatible
+    is NOT in conflict with:
 
-        Query:
-            Ph.D. requirements in School A
+        "Department of Electrical Engineering research areas..."
 
-        Evidence:
-            School B Ph.D. requirements
+    That department document is allowed as candidate evidence.
 
-        -> conflict
+    A narrow query such as:
 
-        Query:
-            What research areas are available?
+        "What research areas are available in Electrical Engineering?"
 
-        Evidence:
-            Department of Electrical Engineering research areas
+    is also compatible with:
 
-        -> conflict because the evidence is narrower than the query.
+        "Department of Electrical Engineering research areas..."
+
+    But:
+
+        "School of Artificial Intelligence and Data Science"
+
+    must not be satisfied by evidence explicitly scoped to:
+
+        "School of Electrical Engineering"
     """
 
     query_org = detect_organizational_scopes(
@@ -902,8 +885,13 @@ def organizational_scope_conflict(
         narrow_scopes
     )
 
+    # No narrow organizational scope in the evidence.
     if not document_narrow_scopes:
         return False
+
+    # -----------------------------------------------------
+    # Query explicitly names a narrow organizational class.
+    # -----------------------------------------------------
 
     query_narrow_scopes = (
         query_org
@@ -911,41 +899,86 @@ def organizational_scope_conflict(
         narrow_scopes
     )
 
-    # -----------------------------------------------------
-    # Query explicitly names the organizational class.
-    # -----------------------------------------------------
-
     if query_narrow_scopes:
 
-        if not (
-            query_narrow_scopes
-            &
-            document_narrow_scopes
-        ):
-            return True
+        query_names = (
+            _extract_explicit_organization_names(
+                query
+            )
+        )
 
-        return not (
-            _organizational_identity_compatible(
-                query,
-                document_text,
+        document_names = (
+            _extract_explicit_organization_names(
+                document_text
+            )
+        )
+
+        # When both sides expose explicit identities,
+        # reject mismatches.
+        if query_names and document_names:
+            return not any(
+                _organization_names_match(
+                    query_name,
+                    document_name,
+                )
+                for query_name in query_names
+                for document_name in document_names
+            )
+
+        # If identities cannot be extracted safely,
+        # do not invent a conflict.
+        return False
+
+    # -----------------------------------------------------
+    # Query names an organization naturally but does not
+    # explicitly say "department"/"school".
+    # -----------------------------------------------------
+
+    query_names = (
+        _extract_explicit_organization_names(
+            query
+        )
+    )
+
+    if not query_names:
+        query_names = (
+            _extract_contextual_organization_names(
+                query
             )
         )
 
     # -----------------------------------------------------
-    # Query does not explicitly name the class.
-    # It may still identify the organization by name.
+    # Broad query:
+    #
+    # No explicit organization means the narrow document
+    # remains a valid candidate. Coverage later decides
+    # whether it is enough.
     # -----------------------------------------------------
 
-    return not (
-        _organizational_identity_compatible(
-            query,
-            document_text,
+    if not query_names:
+        return False
+
+    document_names = (
+        _extract_explicit_organization_names(
+            document_text
         )
+    )
+
+    if not document_names:
+        return False
+
+    return not any(
+        _organization_names_match(
+            query_name,
+            document_name,
+        )
+        for query_name in query_names
+        for document_name in document_names
     )
 
 
 # =========================================================
-# Main scope conflict detection
+# Main claim-scope conflict detection
 # =========================================================
 
 def has_scope_conflict(
@@ -953,7 +986,10 @@ def has_scope_conflict(
     document_text: str,
 ) -> bool:
     """
-    Detect explicit semantic conflicts between query and evidence.
+    Detect only explicit conflicts that should justify removing
+    the individual document.
+
+    Relevance decisions belong to retrieval/reranking.
     """
 
     query_normalized = _normalized(
@@ -964,24 +1000,8 @@ def has_scope_conflict(
         document_text
     )
 
-    query_scopes = detect_claim_scopes(
-        query_normalized
-    )
-
-    document_scopes = detect_claim_scopes(
-        document_normalized
-    )
-
-    query_modes = detect_admission_modes(
-        query_normalized
-    )
-
-    document_modes = detect_admission_modes(
-        document_normalized
-    )
-
     # -----------------------------------------------------
-    # Organizational scope
+    # 1. Organizational identity conflict
     # -----------------------------------------------------
 
     if organizational_scope_conflict(
@@ -991,27 +1011,44 @@ def has_scope_conflict(
         return True
 
     # -----------------------------------------------------
-    # Admission vs financial assistance
+    # 2. Admission vs financial assistance
+    #
+    # Financial assistance may be useful in other contexts,
+    # but it does not satisfy a direct admission/eligibility
+    # claim when it contains no admission claim itself.
     # -----------------------------------------------------
+
+    query_scopes = detect_claim_scopes(
+        query_normalized
+    )
+
+    document_scopes = detect_claim_scopes(
+        document_normalized
+    )
 
     if (
         ADMISSION_SCOPE
-        in
-        query_scopes
+        in query_scopes
         and
         FINANCIAL_ASSISTANCE_SCOPE
-        in
-        document_scopes
+        in document_scopes
         and
         ADMISSION_SCOPE
-        not in
-        document_scopes
+        not in document_scopes
     ):
         return True
 
     # -----------------------------------------------------
-    # Regular vs alternate admission modes
+    # 3. Explicit admission-mode conflict
     # -----------------------------------------------------
+
+    query_modes = detect_admission_modes(
+        query_normalized
+    )
+
+    document_modes = detect_admission_modes(
+        document_normalized
+    )
 
     alternate_modes = {
         PART_TIME_MODE,
@@ -1021,8 +1058,7 @@ def has_scope_conflict(
 
     if (
         REGULAR_MODE
-        in
-        query_modes
+        in query_modes
         and
         bool(
             document_modes
@@ -1031,23 +1067,7 @@ def has_scope_conflict(
         )
         and
         REGULAR_MODE
-        not in
-        document_modes
-    ):
-        return True
-
-    # -----------------------------------------------------
-    # Fee vs unrelated evidence
-    # -----------------------------------------------------
-
-    if (
-        FEES_SCOPE
-        in
-        query_scopes
-        and
-        FEES_SCOPE
-        not in
-        document_scopes
+        not in document_modes
     ):
         return True
 
