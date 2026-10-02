@@ -410,7 +410,7 @@ def _load_semantic_registry(_document: Any, _deps: NodeDependencies) -> Any:
 
     profile = load_institution_profile()
     module = importlib.import_module(
-        f"backend.institutions.{profile.institution_id}.semantic_registry"
+        f"ai_platform.institutions.{profile.institution_id}.semantic_registry"
     )
 
     registry = getattr(module, "SEMANTIC_REGISTRY", None)
@@ -445,7 +445,7 @@ def _resolve_callable(module_name: str, attribute: str) -> Callable[..., Any]:
 def default_dependencies() -> NodeDependencies:
     """Construct production dependencies without eager service startup."""
     query_understanding = _resolve_callable(
-        "backend.core.query.understanding",
+        "ai_platform.core.query.understanding",
         "understand_query",
     )
     conversation_resolver = _resolve_callable(
@@ -459,79 +459,79 @@ def default_dependencies() -> NodeDependencies:
 
     dense = _resolve_callable("backend.retriever", "dense_retrieve")
     keyword = _resolve_callable("backend.retriever", "keyword_retrieve")
-    fuse = _resolve_callable("backend.core.rrf", "fuse_ranked_lists")
+    fuse = _resolve_callable("ai_platform.core.rrf", "fuse_ranked_lists")
 
     align = _resolve_callable(
-        "backend.core.semantic_alignment",
+        "ai_platform.core.semantic_alignment",
         "align_query_to_document",
     )
     rank = _resolve_callable(
-        "backend.core.retrieval.ranking",
+        "ai_platform.core.retrieval.ranking",
         "rank_candidates",
     )
     verify = _resolve_callable(
-        "backend.core.candidate_verification",
+        "ai_platform.core.candidate_verification",
         "verify_candidates",
     )
 
     build_groups = _resolve_callable(
-        "backend.core.evidence.grouping",
+        "ai_platform.core.evidence.grouping",
         "build_evidence_groups",
     )
     expand_groups = _resolve_callable(
-        "backend.core.evidence.grouping",
+        "ai_platform.core.evidence.grouping",
         "expand_group_context",
     )
     flatten_groups = _resolve_callable(
-        "backend.core.evidence.grouping",
+        "ai_platform.core.evidence.grouping",
         "flatten_evidence_groups",
     )
 
     scope_filter = _resolve_callable(
-        "backend.core.evidence.scope",
+        "ai_platform.core.evidence.scope",
         "filter_scope_conflicts",
     )
     evidence_assess = _resolve_callable(
-        "backend.core.evidence.evidence",
+        "ai_platform.core.evidence.evidence",
         "assess_evidence",
     )
     coverage_assess = _resolve_callable(
-        "backend.core.evidence.coverage",
+        "ai_platform.core.evidence.coverage",
         "assess_coverage",
     )
 
     extract_claims = _resolve_callable(
-        "backend.core.evidence.claims",
+        "ai_platform.core.evidence.claims",
         "extract_claims",
     )
     extract_units = _resolve_callable(
-        "backend.core.evidence.claims",
+        "ai_platform.core.evidence.claims",
         "extract_evidence_units",
     )
     audit_claims = _resolve_callable(
-        "backend.core.evidence.claims",
+        "ai_platform.core.evidence.claims",
         "audit_claims",
     )
     package = _resolve_callable(
-        "backend.core.evidence.packaging",
+        "ai_platform.core.evidence.packaging",
         "build_evidence_package",
     )
 
     generator = _resolve_callable(
-        "backend.core.answering.generator",
+        "ai_platform.core.answering.generator",
         "generate_answer",
     )
     request_type = getattr(
-        importlib.import_module("backend.core.answering.generator"),
+        importlib.import_module("ai_platform.core.answering.generator"),
         "AnswerGenerationRequest",
     )
 
     grounding = _resolve_callable(
-        "backend.core.answering.grounding",
+        "ai_platform.core.answering.grounding",
         "assess_answer_grounding",
     )
     guard = _resolve_callable(
-        "backend.core.answering.guard",
+        "ai_platform.core.answering.guard",
         "guard_answer",
     )
 
@@ -540,7 +540,7 @@ def default_dependencies() -> NodeDependencies:
         if explicit is not None:
             return explicit
         return _resolve_callable(
-            "backend.institutions.loader",
+            "ai_platform.institutions.loader",
             "load_institution_profile",
         )()
 
@@ -611,7 +611,7 @@ def _load_scope_policy() -> Any:
 
     profile = load_institution_profile()
     module = importlib.import_module(
-        f"backend.institutions.{profile.institution_id}.scope_policy"
+        f"ai_platform.institutions.{profile.institution_id}.scope_policy"
     )
 
     policy = getattr(module, "SCOPE_POLICY", None)
@@ -928,7 +928,7 @@ class CoreNodes:
         query_frame = None
         try:
             frame_builder = _resolve_callable(
-                "backend.core.query.understanding",
+                "ai_platform.core.query.understanding",
                 "understand_query_frame",
             )
             query_frame = frame_builder(question)

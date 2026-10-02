@@ -4,12 +4,12 @@ The new runtime layer owns active deployment configuration.
 This module remains temporarily so legacy backend modules can continue to
 import the names they already use during the migration.
 
-New code should import from backend.runtime.config instead.
+New code should import from ai_platform.runtime.config instead.
 """
 
 from __future__ import annotations
 
-from backend.runtime.config import PROJECT_ROOT, RUNTIME
+from ai_platform.runtime.config import PROJECT_ROOT, RUNTIME
 
 
 # ---------------------------------------------------------------------

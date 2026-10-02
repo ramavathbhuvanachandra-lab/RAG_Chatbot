@@ -26,14 +26,14 @@ def load_institution_profile(
         selected = DEFAULT_INSTITUTION
 
     module = importlib.import_module(
-        f"backend.institutions.{selected}.profile"
+        f"ai_platform.institutions.{selected}.profile"
     )
 
     profile = module.PROFILE
 
     if not isinstance(profile, InstitutionProfile):
         raise TypeError(
-            f"backend.institutions.{selected}.profile.PROFILE must be "
+            f"ai_platform.institutions.{selected}.profile.PROFILE must be "
             "an InstitutionProfile"
         )
 

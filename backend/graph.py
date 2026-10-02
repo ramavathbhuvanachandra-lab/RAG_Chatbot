@@ -54,7 +54,7 @@ from langgraph.graph import (
 
 from backend.state import GraphState
 
-from backend.core.query_pipeline import (
+from ai_platform.core.query_pipeline import (
     process_query,
 )
 

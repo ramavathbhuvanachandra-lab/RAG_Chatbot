@@ -12,7 +12,7 @@ Existing imports such as:
 continue to work unchanged.
 """
 
-from backend.institutions.iitj.prompts import answer_prompt
+from ai_platform.institutions.iitj.prompts import answer_prompt
 
 __all__ = [
     "answer_prompt",

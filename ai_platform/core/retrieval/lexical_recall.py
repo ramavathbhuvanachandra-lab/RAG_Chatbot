@@ -214,7 +214,7 @@ def _load_institution_adapter() -> tuple[str, Any | None]:
         return "", None
     try:
         module = importlib.import_module(
-            f"backend.institutions.{institution_id}.lexical"
+            f"ai_platform.institutions.{institution_id}.lexical"
         )
     except Exception:
         return institution_id, None

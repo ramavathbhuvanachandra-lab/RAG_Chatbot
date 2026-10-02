@@ -55,11 +55,11 @@ from backend.vectorstore import vectorstore
 from backend.retrieval_diversity import (
     select_diverse_documents,
 )
-from backend.core.retrieval_contracts import (
+from ai_platform.core.retrieval_contracts import (
     RetrievalCandidate,
     document_identity,
 )
-from backend.core.rrf import (
+from ai_platform.core.rrf import (
     fuse_ranked_lists,
 )
 
@@ -94,7 +94,7 @@ def _load_semantic_registry():
     """Load the semantic registry for the active deployment."""
 
     module = import_module(
-        f"backend.institutions.{INSTITUTION_ID}.semantic_registry"
+        f"ai_platform.institutions.{INSTITUTION_ID}.semantic_registry"
     )
 
     registry = getattr(
@@ -114,7 +114,7 @@ def _load_semantic_registry():
 
     if registry is None:
         raise AttributeError(
-            f"backend.institutions.{INSTITUTION_ID}.semantic_registry "
+            f"ai_platform.institutions.{INSTITUTION_ID}.semantic_registry "
             "must export SEMANTIC_REGISTRY"
         )
 

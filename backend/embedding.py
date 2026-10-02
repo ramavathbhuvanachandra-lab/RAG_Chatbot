@@ -5,7 +5,7 @@ This module preserves the old import path used by the legacy retrieval and
 ingestion modules during the migration.
 """
 
-from backend.runtime.embedding import (
+from ai_platform.runtime.embedding import (
     EMBEDDING_MODEL,
     OLLAMA_BASE_URL,
     embeddings,
