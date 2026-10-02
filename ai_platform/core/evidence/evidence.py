@@ -30,8 +30,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Iterable, Literal, Sequence
 
-from backend.core.query.models import Query, RetrievalRequirement
-from backend.core.retrieval_contracts import RetrievalCandidate
+from ai_platform.core.query.models import Query, RetrievalRequirement
+from ai_platform.core.retrieval_contracts import RetrievalCandidate
 
 
 EvidenceStatus = Literal[

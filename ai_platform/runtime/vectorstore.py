@@ -9,8 +9,8 @@ from __future__ import annotations
 
 from langchain_chroma import Chroma
 
-from backend.runtime.config import RUNTIME
-from backend.runtime.embedding import embeddings
+from ai_platform.runtime.config import RUNTIME
+from ai_platform.runtime.embedding import embeddings
 
 
 def get_vectorstore() -> Chroma:

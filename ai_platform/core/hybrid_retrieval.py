@@ -32,7 +32,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Callable
 
-from backend.core.retrieval_query import (
+from ai_platform.core.retrieval_query import (
     MAX_RETRIEVAL_QUERIES,
     RetrievalQueryPlan,
 )

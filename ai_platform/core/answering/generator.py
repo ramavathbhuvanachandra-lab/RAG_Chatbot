@@ -15,7 +15,7 @@ from dataclasses import dataclass
 import re
 from typing import Any, Iterable, Mapping, Protocol, Sequence
 
-from backend.core.evidence.packaging import EvidencePackage
+from ai_platform.core.evidence.packaging import EvidencePackage
 
 
 class ChatModel(Protocol):

@@ -28,11 +28,11 @@ from collections.abc import Mapping
 import math
 from typing import Any
 
-from backend.core.retrieval_contracts import (
+from ai_platform.core.retrieval_contracts import (
     CandidateAlignment,
     DocumentMeaning,
 )
-from backend.core.semantic_registry import (
+from ai_platform.core.semantic_registry import (
     SemanticRegistry,
 )
 

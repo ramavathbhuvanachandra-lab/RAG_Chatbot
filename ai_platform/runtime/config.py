@@ -15,8 +15,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from backend.core.institution import InstitutionProfile
-from backend.institutions.loader import load_institution_profile
+from ai_platform.core.institution import InstitutionProfile
+from ai_platform.institutions.loader import load_institution_profile
 
 
 load_dotenv()

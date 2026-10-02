@@ -30,7 +30,7 @@ from typing import Any, Protocol, Sequence
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from backend.core.query.models import (
+from ai_platform.core.query.models import (
     Ambiguity,
     Constraint,
     Entity,
@@ -1376,7 +1376,7 @@ def fallback_query(original_query: str, reason: str) -> Query:
 
 def _load_default_structured_models() -> tuple[StructuredModel, StructuredModel]:
     """Lazily construct structured-output models from the runtime adapter."""
-    from backend.runtime.llm import query_understanding_llm
+    from ai_platform.runtime.llm import query_understanding_llm
 
     structured_semantic = query_understanding_llm.with_structured_output(
         SemanticInterpretation,

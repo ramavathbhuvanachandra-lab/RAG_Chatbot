@@ -38,7 +38,7 @@ import logging
 import re
 from typing import Any, Protocol
 
-from backend.core.query_frame import (
+from ai_platform.core.query_frame import (
     QueryFacet,
     QueryRequirement,
     SemanticQueryFrame,

@@ -5,7 +5,7 @@ from __future__ import annotations
 import importlib
 import os
 
-from backend.core.institution import InstitutionProfile
+from ai_platform.core.institution import InstitutionProfile
 
 
 DEFAULT_INSTITUTION = "iitj"

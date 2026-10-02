@@ -18,11 +18,11 @@ sys.modules["backend.core.institution"] = core_institution
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT))
 
-from backend.institutions.iitj.lexical import canonical_terms, normalize_for_institution, expand_query, score_pair
-from backend.institutions.iitj.semantic_registry import SEMANTIC_REGISTRY
-from backend.institutions.iitj.source_policy import SOURCE_POLICY
-from backend.institutions.iitj.scope_policy import SCOPE_POLICY
-from backend.institutions.iitj.navigation import NAVIGATION_MODEL
+from ai_platform.institutions.iitj.lexical import canonical_terms, normalize_for_institution, expand_query, score_pair
+from ai_platform.institutions.iitj.semantic_registry import SEMANTIC_REGISTRY
+from ai_platform.institutions.iitj.source_policy import SOURCE_POLICY
+from ai_platform.institutions.iitj.scope_policy import SCOPE_POLICY
+from ai_platform.institutions.iitj.navigation import NAVIGATION_MODEL
 
 def test_program_boundary():
     x = normalize_for_institution("M.Technique is not M.Tech.")

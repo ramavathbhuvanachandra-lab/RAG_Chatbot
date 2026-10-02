@@ -293,8 +293,8 @@ def _lexical_recall_candidates(
     if not documents:
         return (), ()
 
-    from backend.core.retrieval.lexical_recall import retrieve_lexical
-    from backend.core.retrieval_contracts import (
+    from ai_platform.core.retrieval.lexical_recall import retrieve_lexical
+    from ai_platform.core.retrieval_contracts import (
         CandidateAlignment,
         DocumentMeaning,
         RetrievalCandidate,
@@ -382,7 +382,7 @@ def _candidate_trace(candidate: Any, rank: int, stage: str = "ranked") -> dict[s
 
 
 def _to_candidate(document: Document, deps: NodeDependencies, query_text: str) -> Any:
-    from backend.core.retrieval_contracts import RetrievalCandidate
+    from ai_platform.core.retrieval_contracts import RetrievalCandidate
 
     _, meaning, alignment = deps.align_query_to_document(
         query_text,
@@ -406,7 +406,7 @@ def _load_semantic_registry(_document: Any, _deps: NodeDependencies) -> Any:
     vocabulary. Tests normally inject ``align_query_to_document`` and never
     reach this adapter.
     """
-    from backend.institutions.loader import load_institution_profile
+    from ai_platform.institutions.loader import load_institution_profile
 
     profile = load_institution_profile()
     module = importlib.import_module(
@@ -607,7 +607,7 @@ def default_dependencies() -> NodeDependencies:
 
 def _load_scope_policy() -> Any:
     """Load the active deployment's optional claim-scope policy."""
-    from backend.institutions.loader import load_institution_profile
+    from ai_platform.institutions.loader import load_institution_profile
 
     profile = load_institution_profile()
     module = importlib.import_module(
@@ -735,7 +735,7 @@ def _enrich_query_contract(
     terms across retrieval variants.
     """
     from dataclasses import replace
-    from backend.core.query.models import Entity, EntityMention, Target
+    from ai_platform.core.query.models import Entity, EntityMention, Target
 
     desc = _registry_description(registry, question)
     programs = tuple(_clean(value) for value in (desc.get("programs", ()) or ()) if _clean(value))
@@ -1057,7 +1057,7 @@ class CoreNodes:
 
             lexical_docs: tuple[Document, ...] = ()
             if index == 0 and canonical_chunks:
-                from backend.core.retrieval.lexical_recall import retrieve_lexical
+                from ai_platform.core.retrieval.lexical_recall import retrieve_lexical
 
                 lexical_hits = retrieve_lexical(
                     query,
@@ -1824,7 +1824,7 @@ class CoreNodes:
         # preserving claim IDs from each independent intent audit.
         composite_audit = None
         if all_claims:
-            from backend.core.evidence.claims import ClaimAudit
+            from ai_platform.core.evidence.claims import ClaimAudit
 
             composite_audit = ClaimAudit(
                 claims=tuple(all_claims),

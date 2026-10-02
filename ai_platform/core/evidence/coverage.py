@@ -34,8 +34,8 @@ from dataclasses import dataclass
 import re
 from typing import Any, Iterable, Literal, Sequence
 
-from backend.core.query.models import Query
-from backend.core.retrieval_contracts import RetrievalCandidate
+from ai_platform.core.query.models import Query
+from ai_platform.core.retrieval_contracts import RetrievalCandidate
 
 
 CoverageStatus = Literal["supported", "partial", "insufficient"]

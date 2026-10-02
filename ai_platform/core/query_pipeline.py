@@ -28,14 +28,14 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
-from backend.core.query_frame import (
+from ai_platform.core.query_frame import (
     SemanticQueryFrame,
 )
-from backend.core.query_interpreter import (
+from ai_platform.core.query_interpreter import (
     fallback_query_frame,
     interpret_query,
 )
-from backend.core.retrieval_query import (
+from ai_platform.core.retrieval_query import (
     RetrievalQueryPlan,
     build_retrieval_query_plan,
 )

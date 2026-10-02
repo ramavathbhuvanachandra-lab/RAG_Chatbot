@@ -67,10 +67,10 @@ from dataclasses import dataclass
 from typing import Iterable, Literal, Sequence
 
 try:
-    from backend.core.query.models import SemanticQueryFrame
+    from ai_platform.core.query.models import SemanticQueryFrame
 except ImportError:
-    from backend.core.query_frame import SemanticQueryFrame
-from backend.core.retrieval_contracts import RetrievalCandidate
+    from ai_platform.core.query_frame import SemanticQueryFrame
+from ai_platform.core.retrieval_contracts import RetrievalCandidate
 
 
 VerificationStatus = Literal[

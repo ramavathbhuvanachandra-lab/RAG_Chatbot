@@ -27,7 +27,7 @@ from dataclasses import dataclass, field
 import re
 from typing import Iterable
 
-from backend.core.query_frame import SemanticQueryFrame
+from ai_platform.core.query_frame import SemanticQueryFrame
 
 
 # ============================================================

@@ -21,7 +21,7 @@ import re
 from pathlib import Path
 from typing import Any, Mapping
 
-from backend.core.semantic_registry import SemanticRegistry
+from ai_platform.core.semantic_registry import SemanticRegistry
 
 from .profile import DATA_ROOT, INSTITUTION_ID
 

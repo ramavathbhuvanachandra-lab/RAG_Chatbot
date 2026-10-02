@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from backend.core.institution import InstitutionProfile
+from ai_platform.core.institution import InstitutionProfile
 
 
 INSTITUTION_ROOT = Path(__file__).resolve().parent

@@ -25,7 +25,7 @@ from dataclasses import dataclass, field
 import re
 from typing import Iterable, Literal, Sequence
 
-from backend.core.evidence.claims import ClaimAudit, EvidenceUnit
+from ai_platform.core.evidence.claims import ClaimAudit, EvidenceUnit
 
 
 PackageStatus = Literal["ready", "partial", "empty", "conflicted"]

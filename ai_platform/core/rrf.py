@@ -28,7 +28,7 @@ import math
 from collections.abc import Iterable, Sequence
 from typing import Any
 
-from backend.core.retrieval_contracts import (
+from ai_platform.core.retrieval_contracts import (
     RetrievalCandidate,
     RetrievalProvenance,
     RetrievalSignal,
