@@ -31,7 +31,7 @@ from ai_platform.core.query.models import (
     Query,
     TemporalConstraint,
 )
-from ai_platform.core.retrieval_contracts import RetrievalCandidate
+from ai_platform.core.retrieval.contracts import RetrievalCandidate
 
 
 # ---------------------------------------------------------------------------
@@ -45,6 +45,8 @@ _NUMBER_WORDS = {
 }
 
 _MONEY_RE = re.compile(r"(?:₹|rs\.?|inr)\s*\d[\d,]*(?:\.\d+)?", re.I)
+_BARE_CURRENCY_SUFFIX_RE = re.compile(r"(?:₹|rs\.?|inr)\s*[.:]?\s*$", re.I)
+_NUMERIC_ONLY_LINE_RE = re.compile(r"^\s*\d[\d,]*(?:\.\d+)?\s*(?:/-|/)?\s*$", re.I)
 _PERCENT_RE = re.compile(r"\b\d+(?:\.\d+)?\s*%")
 _RATIO_RE = re.compile(r"\b\d+(?:\.\d+)?\s*/\s*\d+(?:\.\d+)?\b")
 _YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
@@ -571,9 +573,51 @@ def split_evidence_units(candidate: RetrievalCandidate) -> tuple[EvidenceUnit, .
     else:
         raw_units = [(content, metadata_heading)]
 
-    # Preserve local label/value attachment after line-level segmentation.
+    # Preserve local label/value attachment after line-level segmentation
     raw_units = _merge_adjacent_value_lines(raw_units)
 
+    # DOCX extraction has a second failure mode where a heading and a field
+    # label arrive as one unit, followed by a separate value cell. Re-attach
+    # only the trailing field-like label; this is generic table syntax, not
+    # institution-specific knowledge. Also repair currency markers split from
+    # their numeric value (e.g. ``Rs.`` + ``300``).
+    repaired_units: list[tuple[str, str | None]] = []
+    index = 0
+    while index < len(raw_units):
+        current_text, current_heading = raw_units[index]
+        if index + 1 < len(raw_units):
+            next_text, next_heading = raw_units[index + 1]
+            next_clean = next_text.strip()
+
+            if _BARE_CURRENCY_SUFFIX_RE.search(current_text) and _NUMERIC_ONLY_LINE_RE.fullmatch(next_clean):
+                repaired_units.append((
+                    f"{current_text.strip()} {next_clean}".strip(),
+                    current_heading or next_heading,
+                ))
+                index += 2
+                continue
+
+            next_markers = factual_markers(next_clean)
+            if next_markers:
+                words = current_text.split()
+                tail_label = ""
+                for width in range(min(10, len(words)), 0, -1):
+                    candidate_tail = " ".join(words[-width:])
+                    if _looks_like_value_label(candidate_tail):
+                        tail_label = candidate_tail
+                        break
+                if tail_label:
+                    prefix = current_text[: current_text.rfind(tail_label)].rstrip()
+                    merged_text = f"{prefix} {tail_label} {next_clean}".strip() if prefix else f"{tail_label} {next_clean}"
+                    repaired_units.append((merged_text, current_heading or next_heading))
+                    index += 2
+                    continue
+
+        repaired_units.append((current_text, current_heading))
+        index += 1
+    raw_units = repaired_units
+
+    units: list[EvidenceUnit] = []
     units: list[EvidenceUnit] = []
     seen: set[str] = set()
     for position, (text, heading) in enumerate(raw_units):

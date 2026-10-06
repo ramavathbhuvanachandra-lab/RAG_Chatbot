@@ -1,11 +1,8 @@
-"""Reusable vector-store runtime adapter.
-
-The vector-store implementation is generic. Institution-specific storage
-location and collection name come from the active InstitutionProfile.
-Embedding configuration comes from the runtime embedding adapter.
-"""
+"""Standalone vector-store runtime for the reusable AI platform."""
 
 from __future__ import annotations
+
+from functools import lru_cache
 
 from langchain_chroma import Chroma
 
@@ -13,9 +10,9 @@ from ai_platform.runtime.config import RUNTIME
 from ai_platform.runtime.embedding import embeddings
 
 
+@lru_cache(maxsize=1)
 def get_vectorstore() -> Chroma:
-    """Create the vector store for the active institution deployment."""
-
+    """Return the active institution's Chroma collection."""
     profile = RUNTIME.institution
     profile.validate()
 
@@ -31,11 +28,9 @@ def get_vectorstore() -> Chroma:
     )
 
 
-# Backward-compatible runtime object for the migration period.
+# Lazily created through get_vectorstore(); kept as a platform-only convenience
+# for callers that explicitly want the active store object.
 vectorstore = get_vectorstore()
 
 
-__all__ = [
-    "get_vectorstore",
-    "vectorstore",
-]
+__all__ = ["get_vectorstore", "vectorstore"]

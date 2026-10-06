@@ -200,7 +200,7 @@ def _active_institution_id() -> str:
     if configured:
         return configured
     try:
-        module = importlib.import_module("backend.config")
+        module = importlib.import_module("ai_platform.runtime.config")
         configured = str(getattr(module, "INSTITUTION_ID", "") or "").strip().casefold()
     except Exception:
         configured = ""

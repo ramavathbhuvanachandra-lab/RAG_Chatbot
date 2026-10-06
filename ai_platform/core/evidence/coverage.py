@@ -35,7 +35,7 @@ import re
 from typing import Any, Iterable, Literal, Sequence
 
 from ai_platform.core.query.models import Query
-from ai_platform.core.retrieval_contracts import RetrievalCandidate
+from ai_platform.core.retrieval.contracts import RetrievalCandidate
 
 
 CoverageStatus = Literal["supported", "partial", "insufficient"]
@@ -542,6 +542,29 @@ def _is_requirement_request(query: Query) -> bool:
     """Use the query's semantic intent label, not document vocabulary."""
     intent = _primary_intent_name(query)
     return any(marker in intent for marker in ("eligib", "qualif", "require", "criteria"))
+
+
+_GENERIC_MONEY_CUES = frozenset({
+    "fee", "fees", "cost", "costs", "charge", "charges", "amount", "price",
+    "processing fee", "application fee", "hostel fee",
+    "फीस", "शुल्क",
+})
+
+
+def _is_monetary_request(query: Query) -> bool:
+    """Detect a request for a monetary fact without institution-specific vocabulary."""
+    values: list[str] = []
+    values.extend((
+        getattr(query, "original_query", ""),
+        getattr(query, "normalized_query", ""),
+        getattr(query, "search_query", ""),
+        getattr(query, "request_type", ""),
+    ))
+    values.extend(getattr(intent, "name", "") for intent in getattr(query, "intents", ()) or ())
+    values.extend(getattr(item, "name", "") for item in getattr(query, "qualifiers", ()) or ())
+    values.extend(getattr(item, "value", "") for item in getattr(query, "qualifiers", ()) or ())
+    haystack = _normalized(" ".join(str(value or "") for value in values))
+    return any(cue in haystack for cue in _GENERIC_MONEY_CUES)
 
 
 def _target_alignment(candidate: RetrievalCandidate) -> float:
@@ -1154,7 +1177,7 @@ def _question_type(query: Query) -> str:
         return "procedure"
     if _is_location_question(query):
         return "location"
-    if query.numeric_requirements:
+    if query.numeric_requirements or _is_monetary_request(query):
         return "quantitative"
     if query.temporal_constraints:
         return "temporal"
@@ -1168,6 +1191,8 @@ def _question_type(query: Query) -> str:
 def assess_coverage(
     query: Query,
     candidates: Sequence[RetrievalCandidate] | None,
+    *,
+    candidates_are_verified: bool = False,
 ) -> CoverageAssessment:
     """Assess semantic completeness of the surviving evidence."""
     if not isinstance(query, Query):
@@ -1192,10 +1217,17 @@ def assess_coverage(
     supports = [_support_score(candidate) for candidate in usable_candidates]
     strong_count = sum(score >= SUPPORTED_THRESHOLD for score in supports)
     partial_count = sum(score >= PARTIAL_THRESHOLD for score in supports)
-    relevant_candidates = [
-        candidate for candidate, score in zip(usable_candidates, supports)
-        if score >= FOCUSED_MIN_SUPPORT
-    ]
+
+    # Verification is the authoritative relevance/scope boundary. In verified
+    # mode, coverage must measure completeness/answerability only; it must not
+    # become a second target/intent/lexical verifier.
+    if candidates_are_verified:
+        relevant_candidates = list(usable_candidates)
+    else:
+        relevant_candidates = [
+            candidate for candidate, score in zip(usable_candidates, supports)
+            if score >= FOCUSED_MIN_SUPPORT
+        ]
     source_count = len(
         {
             _candidate_source(candidate)
@@ -1406,14 +1438,30 @@ def assess_coverage(
     # REQUIREMENTS
     # ---------------------------------------------------------
     if question_type == "requirements":
-        # A candidate must be both semantically aligned *and* expose local
-        # evidence connected to the query's own semantic anchors. This avoids
-        # treating an aligned deadline/overview paragraph as proof of an
-        # eligibility requirement without maintaining a hardcoded list of
-        # institution-specific requirement words.
+        if candidates_are_verified:
+            # Verification already established target/scope/relevance.
+            # Requirements coverage now asks only whether usable evidence
+            # exists for the requested requirement question.
+            best = max((_support_score(candidate) for candidate in relevant_candidates), default=0.0)
+            status: CoverageStatus = "supported" if relevant_candidates else "insufficient"
+            return CoverageAssessment(
+                status=status,
+                score=_clamp01(best if relevant_candidates else 0.0),
+                question_type=question_type,
+                strong_documents=strong_count,
+                partial_documents=partial_count,
+                relevant_documents=len(relevant_candidates),
+                unique_sources=source_count,
+                reasons=(
+                    "verified evidence is already relevance- and scope-qualified; requirement coverage checks answerability",
+                ) if relevant_candidates else (
+                    "no usable verified evidence remains",
+                ),
+            )
+
+        # Legacy/unverified path retains the stricter completeness safeguard.
         qualifying: list[RetrievalCandidate] = []
         query_anchors = _query_anchor_set(query)
-
         for candidate in relevant_candidates:
             target_ok = _target_alignment(candidate) >= UNIT_COVERAGE_THRESHOLD if query.target else True
             request_signal = max(
@@ -1423,9 +1471,6 @@ def assess_coverage(
                 candidate.alignment.semantic_match,
             )
             lexical_anchor = _query_anchor_coverage(query, candidate)
-            # If the query exposes semantic anchors, at least one meaningful
-            # query anchor must survive in the candidate. If the query has no
-            # anchors, fall back to upstream semantic alignment.
             anchor_gate = lexical_anchor >= 0.18 if query_anchors else request_signal >= UNIT_COVERAGE_THRESHOLD
             if target_ok and request_signal >= UNIT_COVERAGE_THRESHOLD and anchor_gate:
                 qualifying.append(candidate)
@@ -1433,22 +1478,12 @@ def assess_coverage(
         if not qualifying:
             status = "insufficient" if not relevant_candidates else "partial"
             score = max(supports, default=0.0)
-            reasons = (
-                "relevant evidence lacks direct query-linked support for the requested requirements",
-            )
+            reasons = ("relevant evidence lacks direct query-linked support for the requested requirements",)
         else:
-            best = max(
-                _clamp01(
-                    0.65 * _support_score(candidate)
-                    + 0.35 * _query_anchor_coverage(query, candidate)
-                )
-                for candidate in qualifying
-            )
+            best = max(_clamp01(0.65 * _support_score(candidate) + 0.35 * _query_anchor_coverage(query, candidate)) for candidate in qualifying)
             status = "supported" if best >= FOCUSED_MIN_SUPPORT else "partial"
             score = best
-            reasons = (
-                "retrieved evidence is semantically aligned and linked to the query's requested information anchors",
-            )
+            reasons = ("retrieved evidence is semantically aligned and linked to the query's requested information anchors",)
 
         return CoverageAssessment(
             status=status,
@@ -1616,6 +1651,21 @@ def assess_coverage(
                     for req in query.numeric_requirements
                 ):
                     matching.append(candidate)
+        elif _is_monetary_request(query):
+            money_terms = (
+                "fee", "fees", "cost", "costs", "charge", "charges",
+                "amount", "price", "processing", "application",
+                "फीस", "शुल्क",
+            )
+            matching = [
+                candidate
+                for candidate in relevant_candidates
+                if any(
+                    any(term in _normalized(window) for term in money_terms)
+                    for kind, window in _numeric_fact_windows(_content(candidate))
+                    if kind == "currency"
+                )
+            ]
         else:
             matching = [
                 candidate
@@ -1629,8 +1679,16 @@ def assess_coverage(
             score = max((_support_score(c) for c in relevant_candidates), default=0.0) * 0.7
         else:
             best = max(_support_score(candidate) for candidate in matching)
-            status = "supported" if best >= FOCUSED_MIN_SUPPORT else "partial"
-            reasons = ("requested quantitative/temporal evidence is explicitly supported",)
+            status = (
+                "supported"
+                if candidates_are_verified or best >= FOCUSED_MIN_SUPPORT
+                else "partial"
+            )
+            reasons = (
+                "verified quantitative/temporal evidence contains the requested fact"
+                if candidates_are_verified
+                else "requested quantitative/temporal evidence is explicitly supported",
+            )
             score = best
 
         return CoverageAssessment(
@@ -1647,6 +1705,24 @@ def assess_coverage(
     # ---------------------------------------------------------
     # DESCRIPTIVE / FOCUSED
     # ---------------------------------------------------------
+    if candidates_are_verified:
+        best = max((_support_score(candidate) for candidate in relevant_candidates), default=0.0)
+        status = "supported" if relevant_candidates else "insufficient"
+        return CoverageAssessment(
+            status=status,
+            score=_clamp01(best if relevant_candidates else 0.0),
+            question_type=question_type,
+            strong_documents=strong_count,
+            partial_documents=partial_count,
+            relevant_documents=len(relevant_candidates),
+            unique_sources=source_count,
+            reasons=(
+                "verified evidence is already relevance- and scope-qualified; focused coverage checks answerability",
+            ) if relevant_candidates else (
+                "no usable verified evidence remains",
+            ),
+        )
+
     units = _build_unit_assessment(query, usable_candidates)
     if any(not unit.covered for unit in units if unit.required):
         # An explicitly structured target/entity/constraint should never be

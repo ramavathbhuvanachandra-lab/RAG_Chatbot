@@ -1,0 +1,143 @@
+from __future__ import annotations
+
+import time
+
+from ai_platform.core.query.planner import (
+    build_query_plan,
+    should_stop_pipeline,
+)
+
+
+CASES = [
+    # 1. Short scalar
+    "What is the application fee for the PhD program?",
+
+    # 2. Short procedural
+    "How do I apply for M.Tech admission?",
+
+    # 3. Requested attribute
+    "What is the minimum percentage required for M.Tech admission?",
+
+    # 4. Documents
+    "What documents are required for registration?",
+
+    # 5. Long
+    """
+    I am currently in my final year of B.Tech and I want to apply for
+    M.Tech after graduation. I have a CGPA of 7.1 and I have qualified
+    GATE. Please tell me whether I am eligible and whether any work
+    experience is required.
+    """,
+
+    # 6. Multi-intent
+    """
+    What is the M.Tech eligibility, what documents do I need for the
+    application, and how much is the application fee?
+    """,
+
+    # 7. Multi-intent related
+    """
+    I want to apply for MBA. Can you tell me the admission process,
+    eligibility criteria, and important deadlines?
+    """,
+
+    # 8. Comparison
+    """
+    What is the difference between the M.Tech and MBA admission processes?
+    """,
+
+    # 9. Conditional
+    """
+    I qualified GATE, but my undergraduate percentage is below the usual
+    threshold. Can I still apply for M.Tech and are there any exceptions?
+    """,
+
+    # 10. Negation
+    "Is work experience not required for M.Tech admission?",
+
+    # 11. List
+    "What are the documents required for M.Tech admission?",
+
+    # 12. Conversationally resolved
+    "What about the application fee for that program?",
+
+    # 13. Unrelated factual
+    "Who won yesterday's cricket match?",
+
+    # 14. Unrelated educational
+    "Explain binary search with an example.",
+
+    # 15. Garbage/random
+    "asdf qwerty 987 hello banana xyz",
+]
+
+
+def main() -> None:
+    print("=" * 100)
+    print("REAL QUERY PLANNER V2 DIAGNOSTIC")
+    print("=" * 100)
+
+    for index, question in enumerate(CASES, start=1):
+        started = time.perf_counter()
+
+        plan = build_query_plan(
+            question,
+            conversation_mode=(
+                "follow_up"
+                if index == 12
+                else "standalone"
+            ),
+            active_topic=(
+                "M.Tech admission"
+                if index == 12
+                else ""
+            ),
+            active_entity=(
+                "M.Tech"
+                if index == 12
+                else ""
+            ),
+        )
+
+        elapsed = time.perf_counter() - started
+
+        print("\n" + "-" * 100)
+        print(f"CASE {index}")
+        print("QUESTION:", " ".join(question.split()))
+        print("TIME:", round(elapsed, 2), "s")
+        print("SCOPE:", plan.domain_decision)
+        print("SCOPE CONF:", round(plan.domain_confidence, 3))
+        print("SCOPE REASON:", plan.domain_reason)
+        print("LANGUAGE:", plan.language)
+        print("MULTI:", plan.is_multi_intent)
+        print("CONF:", round(plan.confidence, 3))
+        print("SHOULD STOP:", should_stop_pipeline(plan))
+        print("RESOLVED:", plan.resolved_query)
+
+        for intent_index, intent in enumerate(
+            plan.intents,
+            start=1,
+        ):
+            print(f"  INTENT {intent_index}")
+            print("    TYPE:", intent.request_type)
+            print("    TARGET:", intent.target)
+            print("    ATTRIBUTES:", intent.requested_attributes)
+            print("    QUALIFIERS:", intent.qualifiers)
+            print("    CONSTRAINTS:", intent.constraints)
+            print("    RELATIONS:", intent.relations)
+            print(
+                "    TEMPORAL:",
+                intent.temporal_constraints,
+            )
+            print(
+                "    RETRIEVAL:",
+                intent.retrieval_query,
+            )
+
+    print("\n" + "=" * 100)
+    print("DIAGNOSTIC COMPLETE")
+    print("=" * 100)
+
+
+if __name__ == "__main__":
+    main()

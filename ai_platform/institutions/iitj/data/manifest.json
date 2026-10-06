@@ -1,0 +1,15 @@
+{
+    "schema_version": 1,
+    "institution_id": "iitj",
+    "display_name": "IIT Jodhpur",
+    "configuration_files": [
+        "aliases.json",
+        "acronyms.json",
+        "phrases.json",
+        "semantic_terms.json",
+        "source_policy.json",
+        "scope_policy.json",
+        "navigation.json"
+    ],
+    "note": "Configuration only. Factual answers come from the institutional corpus."
+}

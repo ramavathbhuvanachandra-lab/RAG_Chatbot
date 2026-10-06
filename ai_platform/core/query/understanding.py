@@ -16,7 +16,7 @@ Migration boundary
 ------------------
 The legacy implementation exposed ``SemanticFrame``, ``QueryUnderstanding``
 and ``SemanticQueryFrame``-style data. The new public contract is ``Query``
-from ``backend.core.query.models``. A small compatibility helper
+from ``ai_platform.core.query.models``. A small compatibility helper
 ``understand_query_frame`` is retained so the migration can proceed without
 breaking downstream code prematurely.
 """
@@ -37,9 +37,11 @@ from ai_platform.core.query.models import (
     EntityMention,
     Intent,
     ListIntent,
+    NumericRequirement,
     Query,
     QueryFacet,
     Qualifier,
+    Relation,
     RetrievalRequirement,
     SemanticQueryFrame,
     Target,
@@ -503,7 +505,7 @@ def _apply_deterministic_backstop(
         relations=interpretation.relations,
         temporal_context=interpretation.temporal_context,
         comparison_targets=interpretation.comparison_targets,
-        preserved_terms=interpretation.preserved_terms,
+        preserved_terms=tuple(dedupe_text((*interpretation.preserved_terms, *_high_signal_literal_terms(original_query))))[:MAX_PRESERVED_TERMS],
         is_list_question=list_intent,
         is_comparison_question=bool(interpretation.is_comparison_question),
         is_multi_part=bool(interpretation.is_multi_part),
@@ -579,6 +581,7 @@ def build_semantic_query(frame: SemanticInterpretation) -> str:
     parts.extend(clean_item(item) for item in frame.relations[:MAX_LIST_ITEMS])
     parts.extend(clean_item(item) for item in frame.temporal_context[:MAX_LIST_ITEMS])
     parts.extend(clean_item(item) for item in frame.comparison_targets[:MAX_LIST_ITEMS])
+    parts.extend(clean_item(item) for item in getattr(frame, "preserved_terms", ())[:MAX_PRESERVED_TERMS])
 
     deduped = list(dedupe_text(parts))
     if not deduped:
@@ -1040,6 +1043,11 @@ def normalize_interpretation(
     is_list = bool(interpretation.is_list_question or detect_list_question(original_query))
     is_ambiguous = bool(interpretation.ambiguous or unknown_terms or interpretation.needs_clarification)
 
+    preserved_terms = dedupe_text(
+        (*preserved_terms, *_high_signal_literal_terms(original_query)),
+        MAX_PRESERVED_TERMS,
+    )
+
     return SemanticInterpretation(
         semantic_query=clean_item(interpretation.semantic_query),
         target=cleaned_target or None,
@@ -1235,6 +1243,48 @@ def run_safety_check(
     return True, reason or "semantic_frame_approved"
 
 
+
+
+def _high_signal_literal_terms(query: str) -> tuple[str, ...]:
+    text = normalize_text(query)
+    terms=[]
+    for token in re.findall(r"(?<![A-Za-z0-9])[A-Z]{2,}(?:[.-][A-Za-z0-9]+)*|(?<![A-Za-z0-9])[A-Z][A-Za-z]+[0-9]+|(?<![A-Za-z0-9])[A-Za-z]+[0-9]+", text):
+        if token.casefold() not in {"IN","OF","AND","OR","THE","FOR","TO","IS","ARE","DO","CAN","I"}:
+            terms.append(token)
+    return tuple(dedupe_text(terms))
+
+
+def _numeric_requirements_from_query(original_query: str, interpretation: SemanticInterpretation) -> tuple[NumericRequirement, ...]:
+    q=normalize_text(original_query).casefold()
+    asks_value=bool(re.search(r"\bhow\s+much\b|\bwhat(?:'s|\s+is)\b[^?!\n]{0,120}\b(?:fee|fees|cost|costs|charge|charges|amount|price|rent|tuition)\b|\b(?:fee|fees|cost|costs|charge|charges|amount|price|rent|tuition)\b[^?!\n]{0,40}\b(?:of|for)\b|\b(?:rs\.?|inr)\s*\d|₹\s*\d",q,re.I))
+    if not asks_value: return ()
+    fields=((r"\bprocessing\s+fee\b","processing fee"),(r"\bapplication\s+fee\b","application fee"),(r"\bhostel\s+(?:fee|fees|cost|costs|charge|charges)\b","hostel fee"),(r"\btuition\s+(?:fee|fees)\b|\btuition\b","tuition fee"),(r"\badmission\s+(?:fee|fees)\b","admission fee"),(r"\bsemester\s+(?:fee|fees)\b","semester fee"),(r"\b(?:fee|fees)\b","fee"),(r"\brent\b","rent"),(r"\b(?:cost|costs)\b","cost"),(r"\b(?:charge|charges)\b","charge"),(r"\b(?:amount|price)\b","amount"))
+    for pattern,name in fields:
+        if re.search(pattern,q,re.I):
+            return (NumericRequirement(name,1,unit="currency",confidence=max(.90,float(interpretation.confidence or 0.0))),)
+    return ()
+
+
+def _clean_relation_piece(value: str) -> str:
+    value=normalize_text(value).strip(" ,;:?-—–")
+    return re.sub(r"^(?:does\s+the\s+|the\s+|a\s+|an\s+)","",value,flags=re.I)
+
+
+def _deterministic_relations_from_query(original_query: str) -> tuple[Relation, ...]:
+    q=normalize_text(original_query)
+    patterns=((r"(?P<s>.+?)\s+(?:includes?|covers?|contains?)\s+(?P<o>.+?)(?=(?:\s*,?\s+or\b)|[?.!]|$)","includes"),(r"(?P<s>.+?)\s+(?:does\s+not\s+include|does\s+not\s+cover|excludes?)\s+(?P<o>.+?)(?=(?:\s*,?\s+or\b)|[?.!]|$)","excludes"))
+    for pattern,rel in patterns:
+        m=re.search(pattern,q,re.I)
+        if m:
+            s=_clean_relation_piece(m.group('s')); o=_clean_relation_piece(m.group('o'))
+            s=re.sub(r"^(?:does|do|did|will|can|should|is|are)\s+", "", s, flags=re.I)
+            s=re.sub(r"\s+(?:already|also)$", "", s, flags=re.I).strip()
+            o=re.split(r"\s*,\s*|\s+or\b", o, maxsplit=1, flags=re.I)[0].strip()
+            if s and o and len(s.split())<=8 and len(o.split())<=8:
+                return (Relation(rel,s,o,confidence=.96),)
+    return ()
+
+
 def interpretation_to_query(
     original_query: str,
     interpretation: SemanticInterpretation,
@@ -1300,6 +1350,8 @@ def interpretation_to_query(
     )
 
     retrieval_requirement = derive_retrieval_requirement(interpretation)
+    numeric_requirements = _numeric_requirements_from_query(original_query, interpretation)
+    relation_requirements = _deterministic_relations_from_query(original_query)
 
     return Query(
         original_query=original_query,
@@ -1310,11 +1362,11 @@ def interpretation_to_query(
         entities=entities,
         entity_mentions=mentions,
         concepts=(),
-        relations=(),
+        relations=relation_requirements,
         qualifiers=qualifiers,
         constraints=constraints,
         temporal_constraints=(),
-        numeric_requirements=(),
+        numeric_requirements=numeric_requirements,
         scope=None,
         request_type=interpretation.request_type,
         list_intent=ListIntent(is_list=interpretation.is_list_question),

@@ -1,0 +1,1130 @@
+[
+  {
+    "case_id": "mtech_regular_eligibility",
+    "question": "What are the eligibility requirements for regular M.Tech admission?",
+    "resolved_question": "What are the eligibility requirements for regular M.Tech admission?",
+    "semantic_query": "regular M.Tech admission eligibility eligibility requirements",
+    "retrieval_queries": [
+      "What are the eligibility requirements for regular M.Tech admission?",
+      "regular M.Tech admission mtech eligibility"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 72,
+    "verification_counts": {
+      "verified": 69,
+      "rejected": 3
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 15.713194769332896,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "IIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions 20.2.3 Admission to M Tech Program (Regular) * The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute."
+      },
+      {
+        "rank": 2,
+        "score": 13.884471913636238,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/physics/programs.docx",
+        "text": "Ques. 3 Is there an integrated M.Tech. program associated with the B.S. in Engineering Physics program? Ans. No. The B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree. Ques. 4 Can graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program? Ans. Yes. Graduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions. Ques. 5 Can students change their branch after enrolling in the B.S. in Engineering Physics program? Ans. No. Students admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment. Ques. 6 Is it possible to opt for the specialization in other domains? Ans."
+      },
+      {
+        "rank": 3,
+        "score": 12.479720040603086,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+        "text": "* An accelerated fashion (minimum in 12 months), OR Accumulates credits as per convenience and petitions a degree in a maximum of 6 years. The part-time or full-time mode by attending courses offered in synchronized remote contact mode and limited direct interaction Minimum residential requirement S.No. Program Minimum Duration of Residence (in semesters) 1 B. Tech. (including minor/department/interdisciplinary area specialization) 6 2 B. Tech. – M.Tech. 8 24. Financial Assistance [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.%20Financial%20Assistance) Financial assistantship/scholarship will be provided to the eligible students admitted under regular full-time program. The eligibility criteria are as per the following:"
+      },
+      {
+        "rank": 4,
+        "score": 12.162309222511755,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/mechanical_engineering/general_information.docx",
+        "text": "The department currently offers M.Tech in Mechanical Engineering with a specialization in Advanced Manufacturing & Design and Thermofluids Engineering. A wide range of specialization related courses is currently offered. There are four modes of admission in M.Tech Program: 1. Regular with fellowship 2. Industry-Sponsored 3. Self-Sponsored 4. Part-Time The salient features of specializations. (Download file : 380 KB) The details of eligibility can be accessed here. M.Tech students getting admission in regular mode are provided with an assistantship of Rs. 12400 per month as per the MHRD rules. Guidelines and Format for Submission of Project Report for M.Tech. Students (Download file 211 KB) Link for online Application for M.Tech"
+      },
+      {
+        "rank": 5,
+        "score": 12.15257945363645,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "18 17 6 16 4 61 M.Tech (Data and Computational Sciences) 20 15 6 16 4 61 21.6 Course Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. The DRC/ IRC must oversee that the student has not registered for a similar course during her/his Masters or Bachelors program. 3.4 Withdrawing from a Course"
+      },
+      {
+        "rank": 6,
+        "score": 12.13444224004722,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+        "text": "OSN1020: Performing Arts I OSN1010: Social Connect and Responsibilities – I 27.4 No case of Disciplinary Action [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top27.4%20No%20case%20of%20Disciplinary%20Action) The student shall not be considered to have completed the Academic Requirements if there is any case of indiscipline pending against her/him. 11.2.1 Eligibility Criteria for opting (a) Major/Department Specialization, Minor/Interdisciplinary Specialization A student should have earned minimum 100 credits with the CGPA more than or equal to 6.0 at the end on 6th semester to opt for capability linked opportunity. (b) B.Tech. + M.Tech. Dual Degree in chosen specialization"
+      },
+      {
+        "rank": 7,
+        "score": 11.805718428038729,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+        "text": "1. A regular Ph.D. student admitted to the Institute will be eligible for financial assistance as per the norms of SME IIT Jodhpur. A candidate having a B.Tech /B.S. (four-year program)/Master's degree with GATE/NET(JRF)/NBHM (or equivalent) can have financial assistance as per MHRD norms/or equivalent applicable for non-science departments. 2. The requirement of GATE is exempted for an applicant with an M.Tech or equivalent post-bachelor's degree 3. A student may be exempted from GATE as per MHRD guidelines"
+      },
+      {
+        "rank": 8,
+        "score": 11.707137891585289,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "Ph.D. and M.Tech.-Ph.D. dual degree (Regular and Part-time/External) – 14 registered semesters which may include maximum 6 semesters of Registration kept Alive (RKA) after completion of the two semesters. Tuition fee post RKA will be same as that of sponsored candidates. Students may request for RKA to Dean (Academics) through DRC. 11.5 Academic Performance Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.5%20Academic%20Performance%20Requirements) The minimum requirements on credits earned for continuation in a B. Tech. Programme at the end of the second registered semester is specified in the following table: 23.3 Semester Withdrawal"
+      }
+    ],
+    "final_context": "A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute. programs, subject to the admission requirements of the respective institutions. Tech. * The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top27.4%20No%20case%20of%20Disciplinary%20Action) The student shall not be considered to have completed the Academic Requirements if there is any case of indiscipline pending against her/him. 23.3 Semester Withdrawal Programme at the end of the second registered semester is specified in the following table: [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.5%20Academic%20Performance%20Requirements) The minimum requirements on credits earned for continuation in a B. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.%20Financial%20Assistance) Financial assistantship/scholarship will be provided to the eligible students admitted under regular full-time program. The requirement of GATE is exempted for an applicant with an M.Tech or equivalent post-bachelor's degree 3. M.Tech students getting admission in regular mode are provided with an assistantship of Rs. Accumulates credits as per convenience and petitions a degree in a maximum of 6 years. (Download file : 380 KB) The details of eligibility can be accessed here. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. (a) Major/Department Specialization, Minor/Interdisciplinary Specialization 11.2.1 Eligibility Criteria for opting A student should have earned minimum 100 credits with the CGPA more than or equal to 6.0 at the end on 6th semester to opt for capability linked opportunity. student admitted to the Institute will be eligible for financial assistance as per the norms of SME IIT Jodhpur.",
+    "context_chars": 2536,
+    "context_non_empty": true,
+    "elapsed_seconds": 29.146
+  },
+  {
+    "case_id": "mtech_percentage",
+    "question": "What is the minimum percentage required for M.Tech admission?",
+    "resolved_question": "What is the minimum percentage required for M.Tech admission?",
+    "semantic_query": "M.Tech admission admission",
+    "retrieval_queries": [
+      "What is the minimum percentage required for M.Tech admission?",
+      "M.Tech admission mtech admission"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 83,
+    "verification_counts": {
+      "verified": 70,
+      "rejected": 13
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 13.741575594592751,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. 20.2.2 Admission to M Sc – M Tech Dual Degree Program (Regular) The admission to the M. Sc.-M.Tech. Dual Degree Programs offered by the Institute will be through any one of the following two avenues * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur."
+      },
+      {
+        "rank": 2,
+        "score": 11.590661951723275,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "Programs Minimum Credits to be earned MC ME MO MP NG Total M.Tech-Ph.D Dual Degree (Sensors and Internet of Things) 19 17 6 16 4 62 M.Tech-Ph.D Dual Degree (Cyber Physical System) 18 18 6 16 4 62 M.Tech-Ph.D Dual Degree (Communication and Signal Processing) 17 17 6 16 4 60 M.Tech-Ph.D Dual Degree (Thermofluids Engineering) 17 17 6 16 4 60 M.Tech-Ph.D Dual Degree (Manufacturing Engineering) 17 17 6 16 4 60 M.Tech-Ph.D Dual Degree (Design Engineering) 17 17 6 16 4 60 M.Tech-Ph.D Dual Degree (Metallurgical and Materials Engineering) 16 18 6 16 4 60 M.Tech-Ph.D Dual Degree (Computer Science and Engineering) 18 18 6 16 4 62 M.Tech-Ph.D Dual Degree (Artificial Intelligence) 18 18 6 16 4 62"
+      },
+      {
+        "rank": 3,
+        "score": 10.089159977485407,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "* M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. M.Tech.: An M.Tech. student can register for maximum and minimum credits as per Table 21.1. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term M.Tech. student registered under different categories Maximum Credits Minimum Credits Regular Semester Executive (Accelerated) 24 10 Executive (Normal) 17 10 Executive (Slow-Paced) 12 3 Executive (Part-Time) 12 3 Full-time (Regular/Sponsored) 17 10 External 20 10 Part-time 12 3 Summer Term Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Regular) 9 5 Full-time (Sponsored) 9"
+      },
+      {
+        "rank": 4,
+        "score": 10.07490985349997,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Regular) 9 5 Full-time (Sponsored) 9 0 External 9 0 Part-time 6 0 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term[Insert TableTable 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term] * M.Tech.-Ph.D. dual degree/Direct Ph.D. (Joining after B.Tech.) – The maximum and minimum credits that an M.Tech.-Ph.D. dual degree student can register are equivalent to that of an M.Tech. (Regular/External/Part-time) student. Ph.D.: A Ph.D. student can register for maximum and minimum credits as per Table 21.2."
+      },
+      {
+        "rank": 5,
+        "score": 8.910768692593019,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "Ph.D. and M.Tech.-Ph.D. dual degree (Regular and Part-time/External) – 14 registered semesters which may include maximum 6 semesters of Registration kept Alive (RKA) after completion of the two semesters. Tuition fee post RKA will be same as that of sponsored candidates. Students may request for RKA to Dean (Academics) through DRC. 11.5 Academic Performance Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.5%20Academic%20Performance%20Requirements) The minimum requirements on credits earned for continuation in a B. Tech. Programme at the end of the second registered semester is specified in the following table: 23.3 Semester Withdrawal"
+      },
+      {
+        "rank": 6,
+        "score": 8.838316204970694,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+        "text": "* M.Tech.-Ph.D. dual degree students who have successfully completed all qualifier requirements, under exceptional conditions, as approved by SRC after 3 years can also convert into part-time/external Ph.D. student and exit with M.Tech degree if all conditions for part-time/external conversion are satisfied. The renewal of their registration for every semester however, will be considered only if SRC finds their progress to be satisfactory and recommends the continuance of registration. 19. Postgraduate Programmes [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top19.%20Postgraduate%20Programmes) The Indian Institute of Technology Jodhpur currently offers the following Postgraduate programmes. * Master of Science (M.Sc.)"
+      },
+      {
+        "rank": 7,
+        "score": 8.696551114115119,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "19 17 6 16 4 62 M.Tech (Cyber Physical System) 18 18 6 16 4 62 M.Tech (Thermofluids Engineering) 17 17 6 16 4 60 M.Tech (Advanced Manufacturing Engineering and Design) 19 15 6 16 4 60 M.Tech (Metallurgical and Materials Engineering) 16 18 6 16 4 60 M.Tech (Artificial Intelligence) 18 18 6 16 4 62 M.Tech (Computer Science and Engineering) 18 18 6 16 4 62 M.Tech (Bioscience and Bioengineering) 18 17 6 16 4 61 M.Tech (Data and Computational Sciences) 20 15 6 16 4 61 21.6 Course Registration"
+      },
+      {
+        "rank": 8,
+        "score": 8.52981859722392,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/academic_administration/registration.docx",
+        "text": "Summer course registration: A department may offer summer courses to enable the M.Tech students to clear their backlog courses and/or regular credit courses. A course will run during summer provided a faculty member(s) is available for running the course. The course is offered on approval of the Dean/ Associate Dean. Source Original source URLs preserved from the Command 5 knowledge source. https://docs.google.com/forms/d/e/1FAIpQLSeXPUjPBqot0WW_ea1404bjGplScAiw-xIiQKEZ2Pcu_m-cew/closedform https://oa.iitj.ac.in/ePay/ https://www.iitj.ac.in/bachelor-of-technology/en/registration-academic-session https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel https://www.iitj.ac.in/office-of-executive-education/en/registration Command 6 • Retrieval Representation •"
+      }
+    ],
+    "final_context": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.5%20Academic%20Performance%20Requirements) The minimum requirements on credits earned for continuation in a B. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term[Insert TableTable 21.1 Maximum and Minimum Credits an M.Tech. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. student can register for maximum and minimum credits as per Table 21.1. The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. Maximum and Minimum Credits an M.Tech. Minimum Credits to be earned Minimum Credits",
+    "context_chars": 855,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.665
+  },
+  {
+    "case_id": "mtech_gate",
+    "question": "Is there any GATE requirement for M.Tech admission?",
+    "resolved_question": "Is there any GATE requirement for M.Tech admission?",
+    "semantic_query": "GATE requirement eligibility M.Tech admission",
+    "retrieval_queries": [
+      "Is there any GATE requirement for M.Tech admission?",
+      "GATE requirement mtech eligibility"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 67,
+    "verification_counts": {
+      "verified": 64,
+      "rejected": 3
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 16.425107228944196,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "IIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions 20.2.3 Admission to M Tech Program (Regular) * The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute."
+      },
+      {
+        "rank": 2,
+        "score": 15.218986350368935,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/physics/programs.docx",
+        "text": "Ques. 3 Is there an integrated M.Tech. program associated with the B.S. in Engineering Physics program? Ans. No. The B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree. Ques. 4 Can graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program? Ans. Yes. Graduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions. Ques. 5 Can students change their branch after enrolling in the B.S. in Engineering Physics program? Ans. No. Students admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment. Ques. 6 Is it possible to opt for the specialization in other domains? Ans."
+      },
+      {
+        "rank": 3,
+        "score": 13.507091540008403,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "The applicants under the category (b) must have a minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category 4.4 for SC/ST) on a scale of 8) OR a first-class as specified by the university/institute. 20.2.4 Admission to MTech Program (Executive/Part-time/ External/Sponsored) * The applicant must have bachelor’s degree in engineering or science (4-year program) or a master’s degree in science, MCA, Pharmacy, Medical Science, Agricultural Science and Veterinary Science or in a related field."
+      },
+      {
+        "rank": 4,
+        "score": 12.867406396069867,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/mechanical_engineering/general_information.docx",
+        "text": "The department currently offers M.Tech in Mechanical Engineering with a specialization in Advanced Manufacturing & Design and Thermofluids Engineering. A wide range of specialization related courses is currently offered. There are four modes of admission in M.Tech Program: 1. Regular with fellowship 2. Industry-Sponsored 3. Self-Sponsored 4. Part-Time The salient features of specializations. (Download file : 380 KB) The details of eligibility can be accessed here. M.Tech students getting admission in regular mode are provided with an assistantship of Rs. 12400 per month as per the MHRD rules. Guidelines and Format for Submission of Project Report for M.Tech. Students (Download file 211 KB) Link for online Application for M.Tech"
+      },
+      {
+        "rank": 5,
+        "score": 10.818901090054899,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+        "text": "OSN1020: Performing Arts I OSN1010: Social Connect and Responsibilities – I 27.4 No case of Disciplinary Action [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top27.4%20No%20case%20of%20Disciplinary%20Action) The student shall not be considered to have completed the Academic Requirements if there is any case of indiscipline pending against her/him. 11.2.1 Eligibility Criteria for opting (a) Major/Department Specialization, Minor/Interdisciplinary Specialization A student should have earned minimum 100 credits with the CGPA more than or equal to 6.0 at the end on 6th semester to opt for capability linked opportunity. (b) B.Tech. + M.Tech. Dual Degree in chosen specialization"
+      },
+      {
+        "rank": 6,
+        "score": 10.563829627685223,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+        "text": "1. A regular Ph.D. student admitted to the Institute will be eligible for financial assistance as per the norms of SME IIT Jodhpur. A candidate having a B.Tech /B.S. (four-year program)/Master's degree with GATE/NET(JRF)/NBHM (or equivalent) can have financial assistance as per MHRD norms/or equivalent applicable for non-science departments. 2. The requirement of GATE is exempted for an applicant with an M.Tech or equivalent post-bachelor's degree 3. A student may be exempted from GATE as per MHRD guidelines"
+      },
+      {
+        "rank": 7,
+        "score": 10.523194455452947,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "18 17 6 16 4 61 M.Tech (Data and Computational Sciences) 20 15 6 16 4 61 21.6 Course Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. The DRC/ IRC must oversee that the student has not registered for a similar course during her/his Masters or Bachelors program. 3.4 Withdrawing from a Course"
+      },
+      {
+        "rank": 8,
+        "score": 10.498158728662988,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+        "text": "* An accelerated fashion (minimum in 12 months), OR Accumulates credits as per convenience and petitions a degree in a maximum of 6 years. The part-time or full-time mode by attending courses offered in synchronized remote contact mode and limited direct interaction Minimum residential requirement S.No. Program Minimum Duration of Residence (in semesters) 1 B. Tech. (including minor/department/interdisciplinary area specialization) 6 2 B. Tech. – M.Tech. 8 24. Financial Assistance [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.%20Financial%20Assistance) Financial assistantship/scholarship will be provided to the eligible students admitted under regular full-time program. The eligibility criteria are as per the following:"
+      }
+    ],
+    "final_context": "The requirement of GATE is exempted for an applicant with an M.Tech or equivalent post-bachelor's degree 3. (four-year program)/Master's degree with GATE/NET(JRF)/NBHM (or equivalent) can have financial assistance as per MHRD norms/or equivalent applicable for non-science departments. A student may be exempted from GATE as per MHRD guidelines A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute. * The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field M.Tech students getting admission in regular mode are provided with an assistantship of Rs. There are four modes of admission in M.Tech Program: 1. The applicants under the category (b) must have a minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10;",
+    "context_chars": 1371,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.205
+  },
+  {
+    "case_id": "mtech_qualification",
+    "question": "What qualification is required for M.Tech admission?",
+    "resolved_question": "What qualification is required for M.Tech admission?",
+    "semantic_query": "M.Tech admission eligibility",
+    "retrieval_queries": [
+      "What qualification is required for M.Tech admission?",
+      "M.Tech admission mtech eligibility"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 76,
+    "verification_counts": {
+      "verified": 68,
+      "rejected": 8
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 15.678777269021694,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "IIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions 20.2.3 Admission to M Tech Program (Regular) * The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute."
+      },
+      {
+        "rank": 2,
+        "score": 15.086314883755291,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "The applicants under the category (b) must have a minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category 4.4 for SC/ST) on a scale of 8) OR a first-class as specified by the university/institute. 20.2.4 Admission to MTech Program (Executive/Part-time/ External/Sponsored) * The applicant must have bachelor’s degree in engineering or science (4-year program) or a master’s degree in science, MCA, Pharmacy, Medical Science, Agricultural Science and Veterinary Science or in a related field."
+      },
+      {
+        "rank": 3,
+        "score": 13.729459028279786,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/physics/programs.docx",
+        "text": "Ques. 3 Is there an integrated M.Tech. program associated with the B.S. in Engineering Physics program? Ans. No. The B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree. Ques. 4 Can graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program? Ans. Yes. Graduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions. Ques. 5 Can students change their branch after enrolling in the B.S. in Engineering Physics program? Ans. No. Students admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment. Ques. 6 Is it possible to opt for the specialization in other domains? Ans."
+      },
+      {
+        "rank": 4,
+        "score": 12.383038876753897,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "18 17 6 16 4 61 M.Tech (Data and Computational Sciences) 20 15 6 16 4 61 21.6 Course Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. The DRC/ IRC must oversee that the student has not registered for a similar course during her/his Masters or Bachelors program. 3.4 Withdrawing from a Course"
+      },
+      {
+        "rank": 5,
+        "score": 12.02331647561905,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+        "text": "OSN1020: Performing Arts I OSN1010: Social Connect and Responsibilities – I 27.4 No case of Disciplinary Action [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top27.4%20No%20case%20of%20Disciplinary%20Action) The student shall not be considered to have completed the Academic Requirements if there is any case of indiscipline pending against her/him. 11.2.1 Eligibility Criteria for opting (a) Major/Department Specialization, Minor/Interdisciplinary Specialization A student should have earned minimum 100 credits with the CGPA more than or equal to 6.0 at the end on 6th semester to opt for capability linked opportunity. (b) B.Tech. + M.Tech. Dual Degree in chosen specialization"
+      },
+      {
+        "rank": 6,
+        "score": 12.021785021667268,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+        "text": "* An accelerated fashion (minimum in 12 months), OR Accumulates credits as per convenience and petitions a degree in a maximum of 6 years. The part-time or full-time mode by attending courses offered in synchronized remote contact mode and limited direct interaction Minimum residential requirement S.No. Program Minimum Duration of Residence (in semesters) 1 B. Tech. (including minor/department/interdisciplinary area specialization) 6 2 B. Tech. – M.Tech. 8 24. Financial Assistance [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.%20Financial%20Assistance) Financial assistantship/scholarship will be provided to the eligible students admitted under regular full-time program. The eligibility criteria are as per the following:"
+      },
+      {
+        "rank": 7,
+        "score": 11.95568772783022,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/artificial_intelligence_and_data_science/general_information.docx",
+        "text": ". It includes written tests, and students have two chances to pass​ How many credits are required for a Ph.D.? Ph.D. students must complete a minimum of 12 to 24 credits through coursework and 48 credits through thesis work, depending on their prior qualifications​ What is the comprehensive examination? The comprehensive exam tests the student’s general and specific knowledge in their research field. It includes written tests, and students have two chances to pass​ What is the primary focus of the M.Tech. programme in AR & VR? The M.Tech. programme in AR & VR focuses on providing students with interdisciplinary knowledge and practical skills required to design, implement, and evaluate Augmented Reality and Virtual Reality applications"
+      },
+      {
+        "rank": 8,
+        "score": 11.752411930579724,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/mechanical_engineering/general_information.docx",
+        "text": "The department currently offers M.Tech in Mechanical Engineering with a specialization in Advanced Manufacturing & Design and Thermofluids Engineering. A wide range of specialization related courses is currently offered. There are four modes of admission in M.Tech Program: 1. Regular with fellowship 2. Industry-Sponsored 3. Self-Sponsored 4. Part-Time The salient features of specializations. (Download file : 380 KB) The details of eligibility can be accessed here. M.Tech students getting admission in regular mode are provided with an assistantship of Rs. 12400 per month as per the MHRD rules. Guidelines and Format for Submission of Project Report for M.Tech. Students (Download file 211 KB) Link for online Application for M.Tech"
+      }
+    ],
+    "final_context": "* The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute. Accumulates credits as per convenience and petitions a degree in a maximum of 6 years. programs, subject to the admission requirements of the respective institutions. + M.Tech. M.Tech students getting admission in regular mode are provided with an assistantship of Rs. There are four modes of admission in M.Tech Program: 1. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. (a) Major/Department Specialization, Minor/Interdisciplinary Specialization 11.2.1 Eligibility Criteria for opting A student should have earned minimum 100 credits with the CGPA more than or equal to 6.0 at the end on 6th semester to opt for capability linked opportunity. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top27.4%20No%20case%20of%20Disciplinary%20Action) The student shall not be considered to have completed the Academic Requirements if there is any case of indiscipline pending against her/him. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.%20Financial%20Assistance) Financial assistantship/scholarship will be provided to the eligible students admitted under regular full-time program. students must complete a minimum of 12 to 24 credits through coursework and 48 credits through thesis work, depending on their prior qualifications​ What is the comprehensive examination? (Download file : 380 KB) The details of eligibility can be accessed here. programme in AR & VR focuses on providing students with interdisciplinary knowledge and practical skills required to design, implement, and evaluate Augmented Reality and Virtual Reality applications",
+    "context_chars": 2442,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.3
+  },
+  {
+    "case_id": "mtech_written_test",
+    "question": "Is a written test required for M.Tech admission?",
+    "resolved_question": "Is a written test required for M.Tech admission?",
+    "semantic_query": "written test admission M.Tech admission",
+    "retrieval_queries": [
+      "Is a written test required for M.Tech admission?",
+      "written test mtech admission"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 68,
+    "verification_counts": {
+      "verified": 57,
+      "rejected": 11
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 14.964213705374428,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. 20.2.2 Admission to M Sc – M Tech Dual Degree Program (Regular) The admission to the M. Sc.-M.Tech. Dual Degree Programs offered by the Institute will be through any one of the following two avenues * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur."
+      },
+      {
+        "rank": 2,
+        "score": 13.888922762267967,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "The applicant must have a minimum of two years of work experience (after qualifying degree) in industry/R&D laboratories/Academic Institutions at the time of registration to the program. However, the credit accumulation for the program may start immediately after the qualifying degree. Petitioning for the degree can happen only 1 year after registration. The applicant must qualify the written test and/or interview conducted by IIT Jodhpur. Source Original source URLs preserved from the Command 5 knowledge source. https://www.iitj.ac.in/materials-engineering/en/regulations Command 6 • Retrieval Representation •"
+      },
+      {
+        "rank": 3,
+        "score": 11.317945625574792,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+        "text": "A regular full-time student must register for M.Tech Project Part-1 in the summer semester following 2 nd semester. He must obtain a satisfactory grade to continue M.Tech project part-1 in the next semester. His performance in the summer semester will be evaluated by his supervisor. 23. Leave Rules [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top23.%20Leave%20Rules) Application for leave of absence should be addressed to the Convener DRC, and submitted with a medical certificate, if applicable. Usually, leave must not be availed of without prior approval of the DRC. 12.3 Exceptions to Regular Rules regarding Academic Load"
+      },
+      {
+        "rank": 4,
+        "score": 9.88985294014861,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "* M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. M.Tech.: An M.Tech. student can register for maximum and minimum credits as per Table 21.1. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term M.Tech. student registered under different categories Maximum Credits Minimum Credits Regular Semester Executive (Accelerated) 24 10 Executive (Normal) 17 10 Executive (Slow-Paced) 12 3 Executive (Part-Time) 12 3 Full-time (Regular/Sponsored) 17 10 External 20 10 Part-time 12 3 Summer Term Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Regular) 9 5 Full-time (Sponsored) 9"
+      },
+      {
+        "rank": 5,
+        "score": 9.838031362769856,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Regular) 9 5 Full-time (Sponsored) 9 0 External 9 0 Part-time 6 0 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term[Insert TableTable 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term] * M.Tech.-Ph.D. dual degree/Direct Ph.D. (Joining after B.Tech.) – The maximum and minimum credits that an M.Tech.-Ph.D. dual degree student can register are equivalent to that of an M.Tech. (Regular/External/Part-time) student. Ph.D.: A Ph.D. student can register for maximum and minimum credits as per Table 21.2."
+      },
+      {
+        "rank": 6,
+        "score": 9.816546306188927,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "18 17 6 16 4 61 M.Tech (Data and Computational Sciences) 20 15 6 16 4 61 21.6 Course Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. The DRC/ IRC must oversee that the student has not registered for a similar course during her/his Masters or Bachelors program. 3.4 Withdrawing from a Course"
+      },
+      {
+        "rank": 7,
+        "score": 8.690550090379386,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "Ph.D. and M.Tech.-Ph.D. dual degree (Regular and Part-time/External) – 14 registered semesters which may include maximum 6 semesters of Registration kept Alive (RKA) after completion of the two semesters. Tuition fee post RKA will be same as that of sponsored candidates. Students may request for RKA to Dean (Academics) through DRC. 11.5 Academic Performance Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.5%20Academic%20Performance%20Requirements) The minimum requirements on credits earned for continuation in a B. Tech. Programme at the end of the second registered semester is specified in the following table: 23.3 Semester Withdrawal"
+      },
+      {
+        "rank": 8,
+        "score": 8.682878632792582,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "17. Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top17.%20Requirements) A student is deemed to have completed the requirements for graduation if she/he has met the conditions laid down in the following Clauses 17.1 to 17.4 21.5 Maximum Duration of a Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.5%20Maximum%20Duration%20of%20a%20Program) * M.Sc. – 8 registered semester M.Tech. (Regular and Part-time/External/Executive) – 12 registered semesters which may include maximum 6 semesters of Registration kept Alive (RKA) after completion of the first semester. Tuition fee post RKA will be same as at of sponsored candidates."
+      }
+    ],
+    "final_context": "The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. The applicant must qualify the written test and/or interview conducted by IIT Jodhpur.",
+    "context_chars": 313,
+    "context_non_empty": true,
+    "elapsed_seconds": 8.835
+  },
+  {
+    "case_id": "mtech_work_experience",
+    "question": "Is work experience required for M.Tech admission?",
+    "resolved_question": "Is work experience required for M.Tech admission?",
+    "semantic_query": "M.Tech admission admission",
+    "retrieval_queries": [
+      "Is work experience required for M.Tech admission?",
+      "M.Tech admission mtech admission"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 80,
+    "verification_counts": {
+      "verified": 68,
+      "rejected": 12
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 13.74036018097883,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. 20.2.2 Admission to M Sc – M Tech Dual Degree Program (Regular) The admission to the M. Sc.-M.Tech. Dual Degree Programs offered by the Institute will be through any one of the following two avenues * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur."
+      },
+      {
+        "rank": 2,
+        "score": 13.703976739302394,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+        "text": "The applicant must have a minimum of two years of work experience (after qualifying degree) in industry/R&D laboratories/Academic Institutions at the time of registration to the program. However, the credit accumulation for the program may start immediately after the qualifying degree. Petitioning for the degree can happen only 1 year after registration. The applicant must qualify the written test and/or interview conducted by IIT Jodhpur. Source Original source URLs preserved from the Command 5 knowledge source. https://www.iitj.ac.in/materials-engineering/en/regulations Command 6 • Retrieval Representation •"
+      },
+      {
+        "rank": 3,
+        "score": 11.346384703551623,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "Programs Minimum Credits to be earned MC ME MO MP NG Total M.Tech-Ph.D Dual Degree (Sensors and Internet of Things) 19 17 6 16 4 62 M.Tech-Ph.D Dual Degree (Cyber Physical System) 18 18 6 16 4 62 M.Tech-Ph.D Dual Degree (Communication and Signal Processing) 17 17 6 16 4 60 M.Tech-Ph.D Dual Degree (Thermofluids Engineering) 17 17 6 16 4 60 M.Tech-Ph.D Dual Degree (Manufacturing Engineering) 17 17 6 16 4 60 M.Tech-Ph.D Dual Degree (Design Engineering) 17 17 6 16 4 60 M.Tech-Ph.D Dual Degree (Metallurgical and Materials Engineering) 16 18 6 16 4 60 M.Tech-Ph.D Dual Degree (Computer Science and Engineering) 18 18 6 16 4 62 M.Tech-Ph.D Dual Degree (Artificial Intelligence) 18 18 6 16 4 62"
+      },
+      {
+        "rank": 4,
+        "score": 11.153162695046396,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+        "text": "A regular full-time student must register for M.Tech Project Part-1 in the summer semester following 2 nd semester. He must obtain a satisfactory grade to continue M.Tech project part-1 in the next semester. His performance in the summer semester will be evaluated by his supervisor. 23. Leave Rules [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top23.%20Leave%20Rules) Application for leave of absence should be addressed to the Convener DRC, and submitted with a medical certificate, if applicable. Usually, leave must not be availed of without prior approval of the DRC. 12.3 Exceptions to Regular Rules regarding Academic Load"
+      },
+      {
+        "rank": 5,
+        "score": 10.104917970566836,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/programs/general_information.docx",
+        "text": "Industry Oriented Diploma Courses in Digital Health MBA in Digital Health M.Tech in Digital Health Innovation Directed MS(R) in Digital Health Preuniversity Outreach Program Preuniversity outreach programs for encouraging girls to take up careers in STEM fields ###### 1. Developing a comprehensive understanding of the learning process and how to design, deliver and enrich instruction that meets the needs of diverse learners 2. Enabling educators to adopt innovative teaching and assessment strategies that leverage technology and hands-on experience with edtech tools and resources 3. Providing educators an exposure to state-of-the-art and emerging trends in education Curriculum"
+      },
+      {
+        "rank": 6,
+        "score": 9.878159599534202,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "* M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. M.Tech.: An M.Tech. student can register for maximum and minimum credits as per Table 21.1. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term M.Tech. student registered under different categories Maximum Credits Minimum Credits Regular Semester Executive (Accelerated) 24 10 Executive (Normal) 17 10 Executive (Slow-Paced) 12 3 Executive (Part-Time) 12 3 Full-time (Regular/Sponsored) 17 10 External 20 10 Part-time 12 3 Summer Term Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Regular) 9 5 Full-time (Sponsored) 9"
+      },
+      {
+        "rank": 7,
+        "score": 9.87539853733786,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Regular) 9 5 Full-time (Sponsored) 9 0 External 9 0 Part-time 6 0 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term[Insert TableTable 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term] * M.Tech.-Ph.D. dual degree/Direct Ph.D. (Joining after B.Tech.) – The maximum and minimum credits that an M.Tech.-Ph.D. dual degree student can register are equivalent to that of an M.Tech. (Regular/External/Part-time) student. Ph.D.: A Ph.D. student can register for maximum and minimum credits as per Table 21.2."
+      },
+      {
+        "rank": 8,
+        "score": 8.857529379589458,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+        "text": "* M.Tech.-Ph.D. dual degree students who have successfully completed all qualifier requirements, under exceptional conditions, as approved by SRC after 3 years can also convert into part-time/external Ph.D. student and exit with M.Tech degree if all conditions for part-time/external conversion are satisfied. The renewal of their registration for every semester however, will be considered only if SRC finds their progress to be satisfactory and recommends the continuance of registration. 19. Postgraduate Programmes [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top19.%20Postgraduate%20Programmes) The Indian Institute of Technology Jodhpur currently offers the following Postgraduate programmes. * Master of Science (M.Sc.)"
+      }
+    ],
+    "final_context": "The applicant must have a minimum of two years of work experience (after qualifying degree) in industry/R&D laboratories/Academic Institutions at the time of registration to the program. Enabling educators to adopt innovative teaching and assessment strategies that leverage technology and hands-on experience with edtech tools and resources 3. Industry Oriented Diploma Courses in Digital Health",
+    "context_chars": 396,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.733
+  },
+  {
+    "case_id": "msc_eligibility",
+    "question": "What are the eligibility requirements for M.Sc admission?",
+    "resolved_question": "What are the eligibility requirements for M.Sc admission?",
+    "semantic_query": "M.Sc admission eligibility eligibility requirements",
+    "retrieval_queries": [
+      "What are the eligibility requirements for M.Sc admission?",
+      "M.Sc admission msc eligibility"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 76,
+    "verification_counts": {
+      "verified": 52,
+      "rejected": 24
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 13.831297272798638,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "The procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate. Admissions Please note that admissions to M.Sc. and Ph.D programs in Digital Humanities for AY 2021-2022 are now complete, and no further Waiting List may be operated. 20. Postgraduate admissions [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.%20Postgraduate%20admissions) The process of admission for all the programs offered by the Institute normally is underway during April-May for Semester 1 and during November-December for Semester 2. In addition, the department may process applications for admissions to PhD programs on a continuous basis and admit students as per the existing procedure. 10.5 Cancellation of Admission"
+      },
+      {
+        "rank": 2,
+        "score": 11.604936996124747,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "26.6. Candidacy for the Ph.D. Degree [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.6.%20Candidacy%20for%20the%20Ph.D.%20Degree) A student enrolled in the Ph.D. program is formally admitted to the candidacy for the Ph.D. degree after he/she has completed the qualifier requirements for the degree. Only such students who are admitted to the candidacy will be allowed to submit Ph.D. thesis. 22.8.1 Minimum performance for continuation and Graduation in a program The minimum CGPA requirement for continuation and graduation in a program is given in below Table 22.7. Table 22.7 Minimum CGPA requirements Sr. No. Program Continuation in Programme For graduation 1 M.Sc. (only graduation requirement) Refer 22.8.2 5 2 M.Tech. 5 5 3"
+      },
+      {
+        "rank": 3,
+        "score": 11.558006159999946,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "Programme Elective (ME) Open Elective (MO) Project works (MP) Non-graded (NG) 22.3 Academic Credit Requirements for M.Sc. Students [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.3%20Academic%20Credit%20Requirements%20for%20M.Sc.%20Students) Course categories and academic requirements for M.Sc. students are given below in Table 22.3. Table 22.3 Programs/ Credits to be earned for MSc students Programs Minimum Credits to be earned MC ME MO MP Total M.Sc. (Chemistry) 38 18 6 15 77 M.Sc. (Mathematics) 38 18 6 15 77 M.Sc. (Physics) 38 18 6 15 77 11.1 Academic Load & Calculation of Credits for a Course for UG Programmes"
+      },
+      {
+        "rank": 4,
+        "score": 11.53804930030109,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "4.1.4 List of Courses The list of courses to be offered in a Program is finalized before the beginning of the semester, by the Department hosting that Program. 22.5 Academic Credit Requirements for M.Sc. – M.Tech. Dual Degree [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.5%20Academic%20Credit%20Requirements%20for%20M.Sc.%20-%20M.Tech.%20Dual%20Degree) Minimum credit requirements for M.Sc. – M.Tech. Dual Degree is the cumulative sum of credit requirements for respective M.Sc. program and M.Tech. program as mentioned in Sections 22.3 and 22.4. 4.1.8 Auditing of Courses"
+      },
+      {
+        "rank": 5,
+        "score": 11.525834660510379,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "Sr. No. Program Continuation in Programme For graduation 1 M.Sc. (only graduation requirement) Refer 22.8.2 5 2 M.Tech. 5 5 3 Dual Degree (M.Sc. and M.Tech.) 5 5 4 Dual Degree (M.Tech. and Ph.D.) 7 7 5 Ph.D. 7 7.5 at completion of course work Credits Requirements"
+      },
+      {
+        "rank": 6,
+        "score": 11.51118760186205,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+        "text": "* M.Tech.-Ph.D. dual degree students who have successfully completed all qualifier requirements, under exceptional conditions, as approved by SRC after 3 years can also convert into part-time/external Ph.D. student and exit with M.Tech degree if all conditions for part-time/external conversion are satisfied. The renewal of their registration for every semester however, will be considered only if SRC finds their progress to be satisfactory and recommends the continuance of registration. 19. Postgraduate Programmes [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top19.%20Postgraduate%20Programmes) The Indian Institute of Technology Jodhpur currently offers the following Postgraduate programmes. * Master of Science (M.Sc.)"
+      },
+      {
+        "rank": 7,
+        "score": 6.70353221004187,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "20.3 Admission of Non-Degree Students A non-degree student is a student who is registered for a degree in a recognized institute or university in India or abroad, and who is officially sponsored by that institute or university to complete part of his/her academic requirements at IIT Jodhpur. For that purpose, the non-degree student may carry out research or take courses for credit or otherwise or may use other academic facilities. Any candidate can be admitted as a casual student for specific courses provided the candidate satisfies the minimum eligibility criteria specified in Section 20.2. The application must be routed through the office of Dean R&D. Students so admitted will be governed by all rules, regulations and discipline of the Institute. Application Process and Shortlist"
+      },
+      {
+        "rank": 8,
+        "score": 6.58484454833522,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/msc_admissions.docx",
+        "text": "IIT Jodhpur — Admissions — Msc Admissions IIT Jodhpur • Admissions • Msc Admissions 20.2.1 Admission to M. Sc. Program (Regular) The admission to the M.Sc. Programs offered by the Institute will be through any one of the following two avenues. * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur."
+      }
+    ],
+    "final_context": "A non-degree student is a student who is registered for a degree in a recognized institute or university in India or abroad, and who is officially sponsored by that institute or university to complete part of his/her academic requirements at IIT Jodhpur. 22.3 Academic Credit Requirements for M.Sc. Programs Students Table 22.3 Programs/ Credits to be earned for MSc students [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.3%20Academic%20Credit%20Requirements%20for%20M.Sc.%20Students) Course categories and academic requirements for M.Sc. students are given below in Table 22.3. Table 22.7 Minimum CGPA requirements degree after he/she has completed the qualifier requirements for the degree. Credits Requirements Any candidate can be admitted as a casual student for specific courses provided the candidate satisfies the minimum eligibility criteria specified in Section 20.2. The procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate. 20.3 Admission of Non-Degree Students A non-degree student is a student who is registered for a degree in a recognized institute or university in India or abroad, and who is officially sponsored by that institute or university to complete part of his/her academic requirements at IIT Jodhpur. For that purpose, the non-degree student may carry out research or take courses for credit or otherwise or may use other academic facilities. Students so admitted will be governed by all rules, regulations and discipline of the Institute. The application must be routed through the office of Dean R&D. * Master of Science (M.Sc.) The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur.",
+    "context_chars": 1836,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.478
+  },
+  {
+    "case_id": "msc_percentage",
+    "question": "What percentage is required for M.Sc admission?",
+    "resolved_question": "What percentage is required for M.Sc admission?",
+    "semantic_query": "M.Sc admission admission",
+    "retrieval_queries": [
+      "What percentage is required for M.Sc admission?",
+      "M.Sc admission msc admission"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 86,
+    "verification_counts": {
+      "verified": 58,
+      "rejected": 28
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 16.483112390130547,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "The procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate. Admissions Please note that admissions to M.Sc. and Ph.D programs in Digital Humanities for AY 2021-2022 are now complete, and no further Waiting List may be operated. 20. Postgraduate admissions [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.%20Postgraduate%20admissions) The process of admission for all the programs offered by the Institute normally is underway during April-May for Semester 1 and during November-December for Semester 2. In addition, the department may process applications for admissions to PhD programs on a continuous basis and admit students as per the existing procedure. 10.5 Cancellation of Admission"
+      },
+      {
+        "rank": 2,
+        "score": 10.279177289837943,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "3. Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top3.%20Registration) Students are required to register for prescribed credits as per the programme, on the dates specified in the Academic Calendar. If the student does not register by the date of registration, she/he can register by paying the fine and register before the date of late registration. 21.1 Limits on Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.1%20Limits%20on%20Registration) Maximum and minimum number of credits a student can register in different programs: * M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester."
+      },
+      {
+        "rank": 3,
+        "score": 9.772365173830211,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "* M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. M.Tech.: An M.Tech. student can register for maximum and minimum credits as per Table 21.1. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term M.Tech. student registered under different categories Maximum Credits Minimum Credits Regular Semester Executive (Accelerated) 24 10 Executive (Normal) 17 10 Executive (Slow-Paced) 12 3 Executive (Part-Time) 12 3 Full-time (Regular/Sponsored) 17 10 External 20 10 Part-time 12 3 Summer Term Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Regular) 9 5 Full-time (Sponsored) 9"
+      },
+      {
+        "rank": 4,
+        "score": 8.761716798361176,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+        "text": "* M.Tech.-Ph.D. dual degree students who have successfully completed all qualifier requirements, under exceptional conditions, as approved by SRC after 3 years can also convert into part-time/external Ph.D. student and exit with M.Tech degree if all conditions for part-time/external conversion are satisfied. The renewal of their registration for every semester however, will be considered only if SRC finds their progress to be satisfactory and recommends the continuance of registration. 19. Postgraduate Programmes [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top19.%20Postgraduate%20Programmes) The Indian Institute of Technology Jodhpur currently offers the following Postgraduate programmes. * Master of Science (M.Sc.)"
+      },
+      {
+        "rank": 5,
+        "score": 8.732591472642923,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "17. Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top17.%20Requirements) A student is deemed to have completed the requirements for graduation if she/he has met the conditions laid down in the following Clauses 17.1 to 17.4 21.5 Maximum Duration of a Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.5%20Maximum%20Duration%20of%20a%20Program) * M.Sc. – 8 registered semester M.Tech. (Regular and Part-time/External/Executive) – 12 registered semesters which may include maximum 6 semesters of Registration kept Alive (RKA) after completion of the first semester. Tuition fee post RKA will be same as at of sponsored candidates."
+      },
+      {
+        "rank": 6,
+        "score": 7.494187613938798,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/msc_admissions.docx",
+        "text": "IIT Jodhpur — Admissions — Msc Admissions IIT Jodhpur • Admissions • Msc Admissions 20.2.1 Admission to M. Sc. Program (Regular) The admission to the M.Sc. Programs offered by the Institute will be through any one of the following two avenues. * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur."
+      },
+      {
+        "rank": 7,
+        "score": 6.986996729437282,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "10.6 Fulfillment of Admission Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top10.6%20Fulfillment%20of%20Admission%20Requirements) Admission to any undergraduate Program requires that the applicant be eligible, go through the laid-down admission procedure, and pay the prescribed fees. The Senate should formally approve all admissions to the Undergraduate Programmes. Eligibility Criteria and Selection Process"
+      },
+      {
+        "rank": 8,
+        "score": 5.017723750075346,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/mathematics/overview.docx",
+        "text": ". We are excited to offer high-quality programs at undergraduate, postgraduate, research level for students who wish to apply mathematics to science or engineering such as a four year B.S. in Mathematics and Computing, B.Sc.–B.Ed. (ITEP) dual degree program, Minor in Mathematics and Computing, a two-year M.Sc. in Mathematics, a two year M.Tech program in Data and Computational Sciences. We also offer a Ph.D. Program in different areas of Mathematics to those who wish to earn a deeper understanding of pure and applied Mathematics and Computing. Image of Thrust Area Workshop on Advanced Methods in Integral Equations and Their Applications (WAMIEA-2026) M.Tech (Non MoE) Result AY 2026-27, Semester I-Data and Computational Sciences Ph.D. Admission Results Semester-I, AY 2026-27 B.S"
+      }
+    ],
+    "final_context": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.1%20Limits%20on%20Registration) Maximum and minimum number of credits a student can register in different programs: student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. student can register for maximum and minimum credits as per Table 21.1. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top3.%20Registration) Students are required to register for prescribed credits as per the programme, on the dates specified in the Academic Calendar. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.%20Postgraduate%20admissions) The process of admission for all the programs offered by the Institute normally is underway during April-May for Semester 1 and during November-December for Semester 2. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top10.6%20Fulfillment%20of%20Admission%20Requirements) Admission to any undergraduate Program requires that the applicant be eligible, go through the laid-down admission procedure, and pay the prescribed fees. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top17.%20Requirements) A student is deemed to have completed the requirements for graduation if she/he has met the conditions laid down in the following Clauses 17.1 to 17.4 [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.5%20Maximum%20Duration%20of%20a%20Program) Minimum Credits Eligibility Criteria and Selection Process The Senate should formally approve all admissions to the Undergraduate Programmes.",
+    "context_chars": 1737,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.221
+  },
+  {
+    "case_id": "msc_jam",
+    "question": "Is IIT JAM required for M.Sc admission?",
+    "resolved_question": "Is IIT JAM required for M.Sc admission?",
+    "semantic_query": "IIT JAM admission",
+    "retrieval_queries": [
+      "Is IIT JAM required for M.Sc admission?",
+      "IIT JAM msc admission"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 91,
+    "verification_counts": {
+      "verified": 44,
+      "rejected": 47
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 16.4051821260761,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "The procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate. Admissions Please note that admissions to M.Sc. and Ph.D programs in Digital Humanities for AY 2021-2022 are now complete, and no further Waiting List may be operated. 20. Postgraduate admissions [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.%20Postgraduate%20admissions) The process of admission for all the programs offered by the Institute normally is underway during April-May for Semester 1 and during November-December for Semester 2. In addition, the department may process applications for admissions to PhD programs on a continuous basis and admit students as per the existing procedure. 10.5 Cancellation of Admission"
+      },
+      {
+        "rank": 2,
+        "score": 9.26369691566626,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+        "text": "IIT Jodhpur — Office of Academics — Rules And Regulations IIT Jodhpur • Office of Academics • Rules And Regulations 15. Leave Rules [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top15.%20Leave%20Rules) Application for leave of absence should be addressed to the Convener DUGC, and submitted with a medical certificate, if applicable. Usually, leave must not be availed of without prior approval of the DUGC. 25. Rules and Regulations For M.Tech./M.Sc._Project [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top25.%20Rules%20and%20Regulations%20For%20M.Tech./M.Sc._Project) * Allotment of students to supervisors will be made based on the preferences of the students and supervisor(s)."
+      },
+      {
+        "rank": 3,
+        "score": 8.77744936909931,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+        "text": "* M.Tech.-Ph.D. dual degree students who have successfully completed all qualifier requirements, under exceptional conditions, as approved by SRC after 3 years can also convert into part-time/external Ph.D. student and exit with M.Tech degree if all conditions for part-time/external conversion are satisfied. The renewal of their registration for every semester however, will be considered only if SRC finds their progress to be satisfactory and recommends the continuance of registration. 19. Postgraduate Programmes [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top19.%20Postgraduate%20Programmes) The Indian Institute of Technology Jodhpur currently offers the following Postgraduate programmes. * Master of Science (M.Sc.)"
+      },
+      {
+        "rank": 4,
+        "score": 7.9615699660645385,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/msc_admissions.docx",
+        "text": "IIT Jodhpur — Admissions — Msc Admissions IIT Jodhpur • Admissions • Msc Admissions 20.2.1 Admission to M. Sc. Program (Regular) The admission to the M.Sc. Programs offered by the Institute will be through any one of the following two avenues. * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur."
+      },
+      {
+        "rank": 5,
+        "score": 6.913164804283077,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "10.6 Fulfillment of Admission Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top10.6%20Fulfillment%20of%20Admission%20Requirements) Admission to any undergraduate Program requires that the applicant be eligible, go through the laid-down admission procedure, and pay the prescribed fees. The Senate should formally approve all admissions to the Undergraduate Programmes. Eligibility Criteria and Selection Process"
+      },
+      {
+        "rank": 6,
+        "score": 4.935713764361294,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/mathematics/overview.docx",
+        "text": ". We are excited to offer high-quality programs at undergraduate, postgraduate, research level for students who wish to apply mathematics to science or engineering such as a four year B.S. in Mathematics and Computing, B.Sc.–B.Ed. (ITEP) dual degree program, Minor in Mathematics and Computing, a two-year M.Sc. in Mathematics, a two year M.Tech program in Data and Computational Sciences. We also offer a Ph.D. Program in different areas of Mathematics to those who wish to earn a deeper understanding of pure and applied Mathematics and Computing. Image of Thrust Area Workshop on Advanced Methods in Integral Equations and Their Applications (WAMIEA-2026) M.Tech (Non MoE) Result AY 2026-27, Semester I-Data and Computational Sciences Ph.D. Admission Results Semester-I, AY 2026-27 B.S"
+      },
+      {
+        "rank": 7,
+        "score": 4.665679833774839,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/physics/overview.docx",
+        "text": "The Department of Physics at the Indian Institute of Technology Jodhpur offers an academic program, Master of Science (M.Sc.) in Physics. This program is designed on the principle that deep theoretical understanding, mathematical rigor, computational proficiency, experimental observation, and empirical inquiry together form the foundation of scientific knowledge. It bridges undergraduate foundations with applied physics towards research and innovation in emerging technologies of national and global importance. Admissions: Through JAM Duration: 2 years Curriculum of MSc Program MSc new curriculum (2026 onwards) ( 1193 KB) NOTE: Before 2026, the Department of Physics at IIT Jodhpur offered the following two postgraduate programs. The curricula of these programs are outlined below"
+      },
+      {
+        "rank": 8,
+        "score": 4.177208047733582,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/liberal_arts/general_information.docx",
+        "text": "IIT Jodhpur — School of Liberal Arts — General Information IIT Jodhpur • School of Liberal Arts • General Information Patchikolla Prudhvi Research Interest: AI & ML, Digital trace Data Analytics, Social Network Analysis Email: m23la1017@iitj.ac.in Admission Year: 2023 Course: MSc. Computational Social Science Jayprakash Show Presented a paper on, “Narrative Self and Cultural Context,” at the Graduate Research Meet by Humanities and Social Sciences, Indian Institute of Technology Guwahati, on 7 January 2023. Mission"
+      }
+    ],
+    "final_context": "Admissions: Through JAM Duration: 2 years Curriculum of MSc Program MSc new curriculum (2026 onwards) ( 1193 KB) NOTE: Before 2026, the Department of Physics at IIT Jodhpur offered the following two postgraduate programs. * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. Sc. The admission to the M.Sc. 10.5 Cancellation of Admission The procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.%20Postgraduate%20admissions) The process of admission for all the programs offered by the Institute normally is underway during April-May for Semester 1 and during November-December for Semester 2. * Master of Science (M.Sc.) 20.2.1 Admission to M. Program (Regular) 10.6 Fulfillment of Admission Requirements Eligibility Criteria and Selection Process The Senate should formally approve all admissions to the Undergraduate Programmes. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top10.6%20Fulfillment%20of%20Admission%20Requirements) Admission to any undergraduate Program requires that the applicant be eligible, go through the laid-down admission procedure, and pay the prescribed fees. The Department of Physics at the Indian Institute of Technology Jodhpur offers an academic program, Master of Science (M.Sc.) in Physics. Research Interest: AI & ML, Digital trace Data Analytics, Social Network Analysis Email: m23la1017@iitj.ac.in Admission Year: 2023 Course: MSc.",
+    "context_chars": 1604,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.582
+  },
+  {
+    "case_id": "msc_bachelor_route",
+    "question": "What bachelor's degree is required for M.Sc admission?",
+    "resolved_question": "What bachelor's degree is required for M.Sc admission?",
+    "semantic_query": "bachelor's degree admission",
+    "retrieval_queries": [
+      "What bachelor's degree is required for M.Sc admission?",
+      "bachelor's degree msc admission"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 79,
+    "verification_counts": {
+      "verified": 53,
+      "rejected": 26
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 16.686844145365512,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "The procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate. Admissions Please note that admissions to M.Sc. and Ph.D programs in Digital Humanities for AY 2021-2022 are now complete, and no further Waiting List may be operated. 20. Postgraduate admissions [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.%20Postgraduate%20admissions) The process of admission for all the programs offered by the Institute normally is underway during April-May for Semester 1 and during November-December for Semester 2. In addition, the department may process applications for admissions to PhD programs on a continuous basis and admit students as per the existing procedure. 10.5 Cancellation of Admission"
+      },
+      {
+        "rank": 2,
+        "score": 14.864241644762403,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/msc_admissions.docx",
+        "text": "IIT Jodhpur — Admissions — Msc Admissions IIT Jodhpur • Admissions • Msc Admissions 20.2.1 Admission to M. Sc. Program (Regular) The admission to the M.Sc. Programs offered by the Institute will be through any one of the following two avenues. * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur."
+      },
+      {
+        "rank": 3,
+        "score": 12.155386907643921,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+        "text": "Masters and Ph.D. Dual Degree S.No. Academic Programs Starting Year 1 Medical Technologies Started from AY 2020-21 M.Sc. - M.Tech. Dual Degree S.No. Academic Programs Starting Year 1 Data and Computational Sciences Started in 2019, discontinued in Feb 2026 2 M.Sc. in Physics and M.Tech. in Materials Engineering Started from AY 2020-21, discontinued in Feb 2026 3 Chemistry and Materials Engineering Discontinued in Feb 2026 10.1 B.Tech. Programmes"
+      },
+      {
+        "rank": 4,
+        "score": 11.865013707729059,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/programs/msc/programs.docx",
+        "text": "IIT Jodhpur — M.Sc — Programs IIT Jodhpur • M.Sc • Programs Master of Science Programs M.Sc. (Chemistry) M.Sc. (Mathematics) M.Sc. (Physics) M.Sc. (Digital Humanities) M.Sc. (Computational Social Science) Source Original source URLs preserved from the Command 5 knowledge source. https://www.iitj.ac.in/admission-postgraduate-programs/en/Admission-to-Postgraduate-Programs https://www.iitj.ac.in/admission-postgraduate-programs/en/admission-to-postgraduate-programs Command 6 • Retrieval Representation •"
+      },
+      {
+        "rank": 5,
+        "score": 11.734218736953508,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/mathematics/overview.docx",
+        "text": ". We are excited to offer high-quality programs at undergraduate, postgraduate, research level for students who wish to apply mathematics to science or engineering such as a four year B.S. in Mathematics and Computing, B.Sc.–B.Ed. (ITEP) dual degree program, Minor in Mathematics and Computing, a two-year M.Sc. in Mathematics, a two year M.Tech program in Data and Computational Sciences. We also offer a Ph.D. Program in different areas of Mathematics to those who wish to earn a deeper understanding of pure and applied Mathematics and Computing. Image of Thrust Area Workshop on Advanced Methods in Integral Equations and Their Applications (WAMIEA-2026) M.Tech (Non MoE) Result AY 2026-27, Semester I-Data and Computational Sciences Ph.D. Admission Results Semester-I, AY 2026-27 B.S"
+      },
+      {
+        "rank": 6,
+        "score": 11.292663251963498,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "Programme Elective (ME) Open Elective (MO) Project works (MP) Non-graded (NG) 22.3 Academic Credit Requirements for M.Sc. Students [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.3%20Academic%20Credit%20Requirements%20for%20M.Sc.%20Students) Course categories and academic requirements for M.Sc. students are given below in Table 22.3. Table 22.3 Programs/ Credits to be earned for MSc students Programs Minimum Credits to be earned MC ME MO MP Total M.Sc. (Chemistry) 38 18 6 15 77 M.Sc. (Mathematics) 38 18 6 15 77 M.Sc. (Physics) 38 18 6 15 77 11.1 Academic Load & Calculation of Credits for a Course for UG Programmes"
+      },
+      {
+        "rank": 7,
+        "score": 11.258772963316881,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+        "text": "BSc-BEd Integrated Teacher Education Program (ITEP) S.No. Academic Programs Starting Year 1 with BSc Major in Physics, Chemistry, and Mathematics Starting in 2024-25 24.2 M.Sc.-M.Tech. Dual-Degree Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.2%20M.Sc.-M.Tech.%20Dual-Degree%20Program) A student having completed minimum credit requirements of an M.Sc. program at the end of the second year with * (a) CGPA>=8 OR (b) have qualified GATE can have financial support from MHRD or project fund. 4. M.Tech. Programs S. No. Programme View 1 Advanced Manufacturing Engineering View (Page opens in intranet only) 2 Artificial Intelligence 3 Augmented Reality and Virtual Reality (AR & VR) 4"
+      },
+      {
+        "rank": 8,
+        "score": 11.228314037632654,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/liberal_arts/general_information.docx",
+        "text": "Parnika Agarwal Presented a paper on, “Cine-buildings and the Question of Access: Interdisciplinary Interventions through ‘Space’” at the Graduate Research Meet by Humanities and Social Sciences, Indian Institute of Technology Guwahati on 6 January 2023. Philosophy | Courses | | History and Philosophy of Science | | Foundations of Sustainability | | Climate Change and Society | | Bioethics | | Aesthetics | | Consciousness | | Philosophy of Mind | | Language and Cognition | | Twentieth century Analytic Philosophy | | Ethical Theories and Moral Practices | Abhishek Meena Research Interest: Data Analysis, Computational Economics, Business analytics Email: m23la1002@iitj.ac.in Admission Year: 2023 Course: MSc. Computational Social Science Mayank Kunjiwar"
+      }
+    ],
+    "final_context": "The applicants having a bachelor’s degree in any relevant discipline (3- or 4-year program) may be admitted based on written test and/or interview conducted by IIT Jodhpur.",
+    "context_chars": 172,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.499
+  },
+  {
+    "case_id": "phd_eligibility",
+    "question": "What are the eligibility requirements for PhD admission?",
+    "resolved_question": "What are the eligibility requirements for PhD admission?",
+    "semantic_query": "PhD admission eligibility eligibility requirements",
+    "retrieval_queries": [
+      "What are the eligibility requirements for PhD admission?",
+      "PhD admission eligibility eligibility requirements",
+      "PhD admission phd eligibility"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 75,
+    "verification_counts": {
+      "verified": 62,
+      "rejected": 13
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 16.021407563921223,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "When can I apply for a particular program? Applications follow the academic cycle, with one round in May-June (for program start in August) and another in November-December (for program start in January). Please see the Admissions page under Join Us for more details. You can also visit advertisements page of IIT Jodhpur https://iitj.ac.in/academics/misc.php?id=advertisements What are the eligibility criteria, academic credentials, and minimal requirements for candidates applying for the Ph.D at School of AI and Data Science? The applicants must have a master’s degree in engineering, science, humanities, social sciences, or equivalent with at least 60% marks or a 6.0/10 CGPA"
+      },
+      {
+        "rank": 2,
+        "score": 14.713898022687031,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": ". Certain professional qualifications (e.g., MBBS with MD) are also accepted​ OR The applicant must have a bachelor’s degree of minimum four-year duration in engineering or science or medicine or pharmacy or agricultural science or veterinary science or design or architecture or equivalent with at least 70% marks or at least 7.0/10 CPI or CGPA for GEN/GEN-EWS/OBC (65% for SC/ST/PD). What is the difference between full-time and part-time Ph.D. programs? Full-time students dedicate all their time to research, while part-time students are working professionals, often employed by external organizations, and are required to attend the program with limited credits What is the application process for applying to the Ph.D"
+      },
+      {
+        "rank": 3,
+        "score": 14.049216959977427,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/programs/phd/general_information.docx",
+        "text": ". In case of any query with respect to online application, applicants may contact the Office of Automation (Academics) (oaautomation@iitj.ac.in). Other general queries may be directed to the PhD Program Coordinator, Dr. Deepak Saxena, at pgcconvener@cete.iitj.ac.in. Applicants shortlisted for the admission process will be required to bring the final submitted application form duly signed along with copies of all educational testimonials at the time of admission. C. Eligibility Criteria The eligibility criteria prescribed below are the absolute minimum for being considered. CETE may use higher performance criteria if the number of applications is high. The relaxation for SC/ST/PD candidates in the qualifying degree marks is as per Ministry of Education rules"
+      },
+      {
+        "rank": 4,
+        "score": 13.774115144570223,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/physics/programs.docx",
+        "text": "Ques. 3 Is there an integrated M.Tech. program associated with the B.S. in Engineering Physics program? Ans. No. The B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree. Ques. 4 Can graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program? Ans. Yes. Graduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions. Ques. 5 Can students change their branch after enrolling in the B.S. in Engineering Physics program? Ans. No. Students admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment. Ques. 6 Is it possible to opt for the specialization in other domains? Ans."
+      },
+      {
+        "rank": 5,
+        "score": 13.046326892109885,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/programs/phd/general_information.docx",
+        "text": "IIT Jodhpur — Ph.D — General Information IIT Jodhpur • Ph.D • General Information PhD in Happiness Studies: Doctoral Research for scholars working at the intersection of happiness, well-being, and their chosen disciplines. PhD Advertisement PhD Shortlist for SoP (Sem II 2025 Admissions) can be found here. 331 KB A. Research Areas Applications are invited from candidates who are interested in working in the following areas (These areas may be updated every semester based on requirements): Technology-enhanced learning Learning Analytics Multimodal data in video-based learning environment Educational Game Design and Development AI-enabled Education Education-Technology Entrepreneurship"
+      },
+      {
+        "rank": 6,
+        "score": 12.86786611252333,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+        "text": ". A student may be exempted from GATE as per MHRD guidelines. Additionally, exceptional regular full-time candidates with a valid UGC-NET or those with full time post graduate degree of two years or more from an Institute of National Importance (INI) may be considered as eligible for institute financial assistance Note: Eligibility for financial assistance does not guarantee financial assistance. Please refer to the page below for details on fee for various kinds of admission into the PhD program: Fee Structure"
+      },
+      {
+        "rank": 7,
+        "score": 12.383809988121945,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "26.5 Qualifier requirements of Ph.D. Student [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.5%20Qualifier%20requirements%20of%20Ph.D.%20Student) The following four components together will constitute qualifier (candidacy) requirements for a Ph. D. student and for a Ph. D. candidate to be eligible for the enhanced SRF fellowship. * 1. Completed course requirements with the minimum CGPA specified in Section 22.8.1 2. Cleared comprehensive examination 3. Successful presentation on state of the art of the chosen field of research 4. Successful presentation and defense of Research proposal"
+      },
+      {
+        "rank": 8,
+        "score": 12.383809988121945,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "4.1.9 Attendance Requirements A student should have full attendance in each course. Unless the student takes leave of absence for valid reasons, the student has to attend every lecture, tutorial, or lab session. The attendance records must be made available to the student after every lecture. Even if the student’s attendance falls below 75%, the student will be allowed to appear for the exams. Students not meeting the attendance criterion of 75% will be required to score at least C grade to pass a course. These students would be awarded F grade if their marks are lower than the cut-off for C grade in a course. 26.5 Qualifier requirements of Ph.D. Student"
+      }
+    ],
+    "final_context": "programs, subject to the admission requirements of the respective institutions. You can also visit advertisements page of IIT Jodhpur https://iitj.ac.in/academics/misc.php?id=advertisements What are the eligibility criteria, academic credentials, and minimal requirements for candidates applying for the Ph.D at School of AI and Data Science? Research Areas Applications are invited from candidates who are interested in working in the following areas (These areas may be updated every semester based on requirements): 26.5 Qualifier requirements of Ph.D. Completed course requirements with the minimum CGPA specified in Section 22.8.1 D. Student [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.5%20Qualifier%20requirements%20of%20Ph.D.%20Student) The following four components together will constitute qualifier (candidacy) requirements for a Ph. student and for a Ph. 4.1.9 Attendance Requirements A student should have full attendance in each course. Even if the student’s attendance falls below 75%, the student will be allowed to appear for the exams. Students not meeting the attendance criterion of 75% will be required to score at least C grade to pass a course. The attendance records must be made available to the student after every lecture. Unless the student takes leave of absence for valid reasons, the student has to attend every lecture, tutorial, or lab session. The applicants must have a master’s degree in engineering, science, humanities, social sciences, or equivalent with at least 60% marks or a 6.0/10 CGPA CETE may use higher performance criteria if the number of applications is high. Additionally, exceptional regular full-time candidates with a valid UGC-NET or those with full time post graduate degree of two years or more from an Institute of National Importance (INI) may be considered as eligible for institute financial assistance Note: Eligibility for financial assistance does not guarantee financial assistance.",
+    "context_chars": 1995,
+    "context_non_empty": true,
+    "elapsed_seconds": 9.524
+  },
+  {
+    "case_id": "phd_application_fee",
+    "question": "What is the PhD application fee?",
+    "resolved_question": "What is the PhD application fee?",
+    "semantic_query": "PhD application fee cost fee",
+    "retrieval_queries": [
+      "What is the PhD application fee?",
+      "PhD application fee cost fee",
+      "PhD application fee phd cost"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 76,
+    "verification_counts": {
+      "verified": 52,
+      "rejected": 24
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 16.993623116037192,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/finance/fees_and_finance.docx",
+        "text": "For exceeding 11 days but less than a month: Rs. 2175 (excluding GST) For duration exceeding a month, Rs. 2175 per month (excluding GST) Note: The above rates are also applicable to all visitors (with GST) and students/staff of IIT Jodhpur (without GST). The above rates will also be applicable to PhD students who, subsequent to thesis submission, wish to avail hostel accommodation for more than one month (without semester fee payment). Fee Structure (AY 2026-2027) S.No. Particulars (per semester) Amount (in Rs.) A. Tuition Fee* ₹50,000/- B. Admission Fee (one time during the Admission) ₹3,800/- C. Convocation Fee (One Time) ₹4,000/- D. Semester Fee ₹32,250/- E. Refundable Deposit (One Time) ₹8,000/- F. Experiential and Professional Development Fee ₹2,000/-"
+      },
+      {
+        "rank": 2,
+        "score": 13.962790579017126,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/programs/phd/general_information.docx",
+        "text": "Detailed information about the Faculty Members and their research areas can be obtained from the Center’s website at iitj.ac.in/cete. B. Application Procedure This is a rolling advertisement , and the Cut-off date/Application Deadline for the Fall Semester is 20 April and that for Spring Semester is 20 October. Applicants belonging to GEN-UR, GEN-EWS, and OBC categories are required to pay a processing fee of Rs. 300 online, while SC, ST, and PD applicants need to pay Rs.150 during the submission of their application forms. The application should be submitted ONLY via the online portal. Hardcopy of the application need not be sent. In case of any query with respect to online application, applicants may contact the Office of Automation (Academics) (oaautomation@iitj.ac.in)"
+      },
+      {
+        "rank": 3,
+        "score": 13.667374276813801,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": ". Certain professional qualifications (e.g., MBBS with MD) are also accepted​ OR The applicant must have a bachelor’s degree of minimum four-year duration in engineering or science or medicine or pharmacy or agricultural science or veterinary science or design or architecture or equivalent with at least 70% marks or at least 7.0/10 CPI or CGPA for GEN/GEN-EWS/OBC (65% for SC/ST/PD). What is the difference between full-time and part-time Ph.D. programs? Full-time students dedicate all their time to research, while part-time students are working professionals, often employed by external organizations, and are required to attend the program with limited credits What is the application process for applying to the Ph.D"
+      },
+      {
+        "rank": 4,
+        "score": 13.429380756645527,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "Ph.D. and M.Tech.-Ph.D. dual degree (Regular and Part-time/External) – 14 registered semesters which may include maximum 6 semesters of Registration kept Alive (RKA) after completion of the two semesters. Tuition fee post RKA will be same as that of sponsored candidates. Students may request for RKA to Dean (Academics) through DRC. 11.5 Academic Performance Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.5%20Academic%20Performance%20Requirements) The minimum requirements on credits earned for continuation in a B. Tech. Programme at the end of the second registered semester is specified in the following table: 23.3 Semester Withdrawal"
+      },
+      {
+        "rank": 5,
+        "score": 13.37766996550569,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "The procedures and criteria for admission of these candidates can be decided with the approval of Chairman, Senate. Admissions Please note that admissions to M.Sc. and Ph.D programs in Digital Humanities for AY 2021-2022 are now complete, and no further Waiting List may be operated. 20. Postgraduate admissions [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top20.%20Postgraduate%20admissions) The process of admission for all the programs offered by the Institute normally is underway during April-May for Semester 1 and during November-December for Semester 2. In addition, the department may process applications for admissions to PhD programs on a continuous basis and admit students as per the existing procedure. 10.5 Cancellation of Admission"
+      },
+      {
+        "rank": 6,
+        "score": 13.225088810559436,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+        "text": "PhD i) Eligibility Post-placement Process Once a company has made an offer as part of the campus placement process, a candidate is bound to accept/reject the offer within a stipulated time frame. When a candidate accepts/rejects an offer, he/she automatically opts out of the placement process and ceases to be part of the pool of candidates available to companies. The HR managers at the respective companies then take over to guide candidates through the induction and joining process. NOTE: No charges are levied on companies for participation in the placement process at SME, IIT Jodhpur. 4. Candidates Joining while Retaining Employment with their Current Employer"
+      },
+      {
+        "rank": 7,
+        "score": 12.756844729039868,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+        "text": ". A student may be exempted from GATE as per MHRD guidelines. Additionally, exceptional regular full-time candidates with a valid UGC-NET or those with full time post graduate degree of two years or more from an Institute of National Importance (INI) may be considered as eligible for institute financial assistance Note: Eligibility for financial assistance does not guarantee financial assistance. Please refer to the page below for details on fee for various kinds of admission into the PhD program: Fee Structure"
+      },
+      {
+        "rank": 8,
+        "score": 12.24584753010627,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "21.1.1 Registration Kept Alive (RKA) A student admitted to an M.Tech program who has at least completed minimum credit requirement of the first semester, can keep his studentship alive while he is pursuing any professional activity, by opting for RKA in subsequent semesters. The candidate must indicate his intent of RKA before the last date of late registration through DRC to Dean(academic). The candidate has to pay appropriate registration fees for RKA status. A student can maintain RKA status for a maximum of 6 semesters. 21.2 Change of Registration from M.Tech. Programme to M.Tech.-Ph.D. dual degree Programme"
+      }
+    ],
+    "final_context": "The above rates will also be applicable to PhD students who, subsequent to thesis submission, wish to avail hostel accommodation for more than one month (without semester fee payment). Please refer to the page below for details on fee for various kinds of admission into the PhD program: Fee Structure Amount (in Rs.) Applicants belonging to GEN-UR, GEN-EWS, and OBC categories are required to pay a processing fee of Rs. The candidate has to pay appropriate registration fees for RKA status. Admission Fee (one time during the Admission) Convocation Fee (One Time) Experiential and Professional Development Fee Fee Structure Semester Fee Tuition Fee* 300 online, while SC, ST, and PD applicants need to pay Rs.150 during the submission of their application forms. NOTE: No charges are levied on companies for participation in the placement process at SME, IIT Jodhpur. For exceeding 11 days but less than a month: Rs. A student can maintain RKA status for a maximum of 6 semesters. Application Procedure This is a rolling advertisement , and the Cut-off date/Application Deadline for the Fall Semester is 20 April and that for Spring Semester is 20 October. In addition, the department may process applications for admissions to PhD programs on a continuous basis and admit students as per the existing procedure.",
+    "context_chars": 1314,
+    "context_non_empty": true,
+    "elapsed_seconds": 8.83
+  },
+  {
+    "case_id": "mba_steps",
+    "question": "What are the steps for MBA admission?",
+    "resolved_question": "What are the steps for MBA admission?",
+    "semantic_query": "MBA admission admission",
+    "retrieval_queries": [
+      "What are the steps for MBA admission?",
+      "MBA admission admission",
+      "MBA admission mba admission"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 87,
+    "verification_counts": {
+      "verified": 58,
+      "rejected": 29
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 17.735127914573038,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "2. Admission Process The admission process for the MBA program will consist of two steps: initial shortlisting and final shortlisting. The criteria for each step are outlined below: A. Initial shortlisting An initial shortlist will be created based on the composite score, calculated using the following parameters and corresponding weights. Relaxations for all reserved categories will be applied in accordance with the norms of the Ministry of Education, Government of India, amended from time to time. CAT Overall Scaled Score Work Experience (Full Time) Gender Diversity"
+      },
+      {
+        "rank": 2,
+        "score": 15.880521940847098,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": "The admission into the flagship Master of Business Administration (MBA) program of the School of Management and Entrepreneurship (SME), leading to the MBA or the MBA- Technology degree, is based on the criteria and process as indicated below: Note 1: During the first year, students complete foundational courses across various disciplines. In the second year, they can select one of two tracks, leading to either an MBA or an MBA-Technology"
+      },
+      {
+        "rank": 3,
+        "score": 4.895102061432461,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+        "text": "Note: Incomplete application forms will not be considered for the MBA program. Financial Aid"
+      },
+      {
+        "rank": 4,
+        "score": 4.700168648110472,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+        "text": "Note: Students from SC, ST, and PwD categories are exempt from paying the tuition fee, as per government norms, amended from time to time. However, they are still required to pay all other charges mentioned above. * The components of the semester fee are subject to change from time to time. B. Student Intake The intake of the program is 80. Note: Norms of the Ministry of Education, Government of India, shall be adhered to for the category-wise breakup. Visit the Application Portal at: Click here. The non-refundable application fee is INR 1,200 for Unreserved/OBC-NCL/EWS categories, and INR 600 for SC/ST/PwD categories. Applicants may contact us using erp@iitj.ac.in email ID for technical issues. Note: Incomplete application forms will not be considered for the MBA program."
+      },
+      {
+        "rank": 5,
+        "score": 4.075055048204867,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "IIT Jodhpur — Office of Academics — Academic Progression IIT Jodhpur • Office of Academics • Academic Progression Credits Requirements for B.Tech.‌‌+‌‌M.Tech./MBA‌‌ Dual‌‌ Degree‌‌ in‌‌ the‌‌ chosen‌‌ specialisation‌"
+      },
+      {
+        "rank": 6,
+        "score": 4.075055048204867,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "‌It‌ ‌will‌ ‌include‌ ‌credits‌ ‌earned‌ ‌for‌‌ Major/Department‌‌or‌‌ or Minor/‌‌Interdisciplinary‌‌ area‌‌ Specialization,‌‌‌ excluding‌‌‌ the‌‌ project‌‌ credits.‌ Credits‌ ‌ ‌of‌ ‌Minor/Specialization‌ ‌done‌ ‌in‌‌ Semester‌‌ VI‌‌ and‌‌ Semester‌‌ VII‌‌ if‌ ‌not‌ ‌part‌ ‌of‌ ‌M.Tech./MBA‌ ‌Programme‌ ‌will‌ ‌be‌ ‌counted‌ ‌towards‌ ‌programme‌‌ electives.‌ ‌Students‌ ‌will‌ ‌be‌ ‌required‌ ‌to‌ ‌complete‌ ‌all‌ ‌core‌ ‌courses‌ ‌except‌ ‌for‌‌ preparatory‌ ‌and‌ ‌bridge‌ ‌courses.‌ ‌Students‌ ‌will‌ ‌be‌ ‌required‌ ‌to‌ ‌take‌ ‌additional‌‌ Credit‌‌ of‌‌ Programme‌‌ Elective‌‌ against‌‌ preparatory‌‌ courses"
+      },
+      {
+        "rank": 7,
+        "score": 3.24562794525136,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/training.docx",
+        "text": ". At the heart of SME IIT Jodhpur is a strong emphasis on interdisciplinary education, combining the best of both management and technology. The school offers a unique MBA Technology program that goes beyond traditional business education by incorporating a deep understanding of modern technologies such as artificial intelligence (AI), data science, blockchain, and digital transformation. This approach ensures that students are well-prepared to face the challenges of a business world increasingly shaped by technological disruptions. The MBA curriculum covers essential management subjects such as operations, marketing, strategy, finance, entrepreneurship, and human resources, while simultaneously introducing students to cutting-edge technological concepts and their applications in business"
+      },
+      {
+        "rank": 8,
+        "score": 3.2279247089751792,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/training.docx",
+        "text": "School of Management and Entrepreneurship S.No. Academic Programs Starting Year 1 MBA Started from AY 2020-21 Welcome to School of Management & Entrepreneurship"
+      }
+    ],
+    "final_context": "Admission Process CAT Overall Scaled Score Initial shortlisting An initial shortlist will be created based on the composite score, calculated using the following parameters and corresponding weights. Relaxations for all reserved categories will be applied in accordance with the norms of the Ministry of Education, Government of India, amended from time to time. The admission process for the MBA program will consist of two steps: initial shortlisting and final shortlisting. The criteria for each step are outlined below: A. The admission into the flagship Master of Business Administration (MBA) program of the School of Management and Entrepreneurship (SME), leading to the MBA or the MBA- Technology degree, is based on the criteria and process as indicated below: Note 1: During the first year, students complete foundational courses across various disciplines.",
+    "context_chars": 867,
+    "context_non_empty": true,
+    "elapsed_seconds": 8.733
+  },
+  {
+    "case_id": "registration_documents",
+    "question": "What documents are required for registration?",
+    "resolved_question": "What documents are required for registration?",
+    "semantic_query": "registration",
+    "retrieval_queries": [
+      "What documents are required for registration?",
+      "registration"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 64,
+    "verification_counts": {
+      "verified": 43,
+      "rejected": 21
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 14.173347501322953,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/academic_administration/registration.docx",
+        "text": "Registration & Academic Session What about registration? What items need to be brought and what are the procedures? Basically, you have to bring originals and copies of all the necessary certificates, JEE (Main & Advanced) Score cards, proof of address, identity proof, caste/domicile certificate (whichever is applicable), at least two passport size photographs. After admission into B.Tech. Program, can I change my branch? Registration Process Registration: Students are required to register for prescribed credits as per the programme, on the dates specified in the Academic Calendar. If the student does not register by the date of registration, she/he can register by paying the fine and register before the date of late registration."
+      },
+      {
+        "rank": 2,
+        "score": 9.85,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "3.1 Provisional Registration A fresh student joining the Institute, who is awaiting the final results of the qualifying examination, is allowed to register provisionally on submission of a certificate from her/his last Institute stating that she/he has appeared in the final examination of the qualifying degree. The student is required to submit documents of having passed the qualifying examination by the last date given in the Academic Calendar for the registration to be regularized. 21.4 Change of Registration from Full-Time to Part-Time/External Ph.D. Programme"
+      },
+      {
+        "rank": 3,
+        "score": 8.200746238941967,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_research_and_development/research.docx",
+        "text": ". The Office of R&D facilitates the following: (a) Management of Projects 1. Registration of Sponsored, Consulting and Institute Projects, raising Invoice/Grants-in-aid bill, receiving funds, prepare utilization certificates; 2. Appointment, extension and resignations of Project Staff Members; payment of salary; 3. Work related to Fellowships; 4. Project related purchases, imports and their payments; 5. Management of temporary advances to PIs and Project Staff Members, settlement of advances; 6. Payment for work assignments; and 7. Preparation of cheques, bank reconciliation, accounts preparation, management of investments. (b) Management of Office 1. Preparation and publishing of booklets (hard and soft copies) related to Office of R&D, newsletter; 2. Institute’s research magazine; 3"
+      },
+      {
+        "rank": 4,
+        "score": 8.014763127156064,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/general_admissions.docx",
+        "text": ". program at the School of AI and Data Science? Applicants are requested to use the following link to fill and submit the application form online: https://erponline.iitj.ac.in/Admission/index?admiss_ch=56 Applicants are required to pay the processing fee of Rs.300 for General, GEN-EWS, OBC and Rs.150 for SC, ST, and PD applicants online while submitting the application form. Applicants shortlisted for the written test and/or interview will be required to bring the final submitted application form duly signed along with a copy of all educational documents and GATE/NET(JRF)/CEED/NBHM (or equivalent) score card at the time of written test and/or interview."
+      },
+      {
+        "rank": 5,
+        "score": 7.706187479059644,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/academic_administration/registration.docx",
+        "text": "Late Registration: If the student does not register by the date of late registration as mentioned in the Academic Calendar, he/she will be deregistered. The appeal against deregistration may be made to Chairman, Senate through the Office of Executive Education which will be forwarded to the Dean of Academics Affairs for his recommendation. Adding and Dropping of Courses: A student may add or drop course(s) with approval of the Faculty advisor till the last date of registration."
+      },
+      {
+        "rank": 6,
+        "score": 7.250374552341958,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+        "text": "Masters of Design S.No. Academic Programs Starting Year 1 MDes Starting in 2025 2.1 Academic Calendar [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top2.1%20Academic%20Calendar) The academic calendar gives the exact dates of all important events during the Academic Session, such as orientation, registration, the commencement of classes, adding and dropping of courses, submission of documents, examinations, submission of grades, project evaluation, declaration of results, mid-semester recess, and vacation. This calendar is approved by the Senate. Group B2"
+      },
+      {
+        "rank": 7,
+        "score": 6.969244133221881,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "3. Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top3.%20Registration) Students are required to register for prescribed credits as per the programme, on the dates specified in the Academic Calendar. If the student does not register by the date of registration, she/he can register by paying the fine and register before the date of late registration. 21.1 Limits on Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.1%20Limits%20on%20Registration) Maximum and minimum number of credits a student can register in different programs: * M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester."
+      },
+      {
+        "rank": 8,
+        "score": 6.384769880256565,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "18 17 6 16 4 61 M.Tech (Data and Computational Sciences) 20 15 6 16 4 61 21.6 Course Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. The DRC/ IRC must oversee that the student has not registered for a similar course during her/his Masters or Bachelors program. 3.4 Withdrawing from a Course"
+      }
+    ],
+    "final_context": "A fresh student joining the Institute, who is awaiting the final results of the qualifying examination, is allowed to register provisionally on submission of a certificate from her/his last Institute stating that she/he has appeared in the final examination of the qualifying degree. The student is required to submit documents of having passed the qualifying examination by the last date given in the Academic Calendar for the registration to be regularized. Registration of Sponsored, Consulting and Institute Projects, raising Invoice/Grants-in-aid bill, receiving funds, prepare utilization certificates; 2. Basically, you have to bring originals and copies of all the necessary certificates, JEE (Main & Advanced) Score cards, proof of address, identity proof, caste/domicile certificate (whichever is applicable), at least two passport size photographs. Applicants shortlisted for the written test and/or interview will be required to bring the final submitted application form duly signed along with a copy of all educational documents and GATE/NET(JRF)/CEED/NBHM (or equivalent) score card at the time of written test and/or interview. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top2.1%20Academic%20Calendar) The academic calendar gives the exact dates of all important events during the Academic Session, such as orientation, registration, the commencement of classes, adding and dropping of courses, submission of documents, examinations, submission of grades, project evaluation, declaration of results, mid-semester recess, and vacation. Preparation and publishing of booklets (hard and soft copies) related to Office of R&D, newsletter; 2.",
+    "context_chars": 1696,
+    "context_non_empty": true,
+    "elapsed_seconds": 8.239
+  },
+  {
+    "case_id": "registration_provisional",
+    "question": "What are the rules for provisional registration?",
+    "resolved_question": "What are the rules for provisional registration?",
+    "semantic_query": "provisional registration registration",
+    "retrieval_queries": [
+      "What are the rules for provisional registration?",
+      "provisional registration registration"
+    ],
+    "intent_count": 1,
+    "is_multi_intent": false,
+    "dense_hits": 20,
+    "bm25_hits": 20,
+    "lexical_hits": 30,
+    "fused_candidates": 63,
+    "verification_counts": {
+      "verified": 40,
+      "rejected": 23
+    },
+    "ranked_candidates": 10,
+    "top_ranked": [
+      {
+        "rank": 1,
+        "score": 9.902444645964266,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/academic_administration/registration.docx",
+        "text": "Registration & Academic Session What about registration? What items need to be brought and what are the procedures? Basically, you have to bring originals and copies of all the necessary certificates, JEE (Main & Advanced) Score cards, proof of address, identity proof, caste/domicile certificate (whichever is applicable), at least two passport size photographs. After admission into B.Tech. Program, can I change my branch? Registration Process Registration: Students are required to register for prescribed credits as per the programme, on the dates specified in the Academic Calendar. If the student does not register by the date of registration, she/he can register by paying the fine and register before the date of late registration."
+      },
+      {
+        "rank": 2,
+        "score": 9.412810716028256,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "3.1 Provisional Registration A fresh student joining the Institute, who is awaiting the final results of the qualifying examination, is allowed to register provisionally on submission of a certificate from her/his last Institute stating that she/he has appeared in the final examination of the qualifying degree. The student is required to submit documents of having passed the qualifying examination by the last date given in the Academic Calendar for the registration to be regularized. 21.4 Change of Registration from Full-Time to Part-Time/External Ph.D. Programme"
+      },
+      {
+        "rank": 3,
+        "score": 9.070712341147422,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+        "text": "21.3 Change of Registration from Part-Time M.Tech. to Part-Time Ph.D. Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.3%20Change%20of%20Registration%20from%20Part-Time%20M.Tech.%20to%20Part-Time%20Ph.D.%20Program) A part-time M.Tech. student having CGPA 8 or more after completion of at least 24 credits may be allowed to change his/her registration to the Ph.D. program. The credits earned will be counted towards his/her Ph.D. course work requirements. 3. Registration"
+      },
+      {
+        "rank": 4,
+        "score": 8.610666886601967,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.1%20Summer%20Courses) Students can register for courses during summer up to a maximum of Eight Credits on payment of registration fee at prescribed rates. The summer term is not a regular semester and only academically deficient students (who have low CGPA and/or fewer credits than advised by the curriculum till that point in the programme), Major students, Minor students, and such students who are short of maximum Eight Credits to complete all graduation requirements may register during this period. For core courses, only students with failed backlog may be considered for summer registration"
+      },
+      {
+        "rank": 5,
+        "score": 8.551256987033485,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+        "text": "18 17 6 16 4 61 M.Tech (Data and Computational Sciences) 20 15 6 16 4 61 21.6 Course Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. The DRC/ IRC must oversee that the student has not registered for a similar course during her/his Masters or Bachelors program. 3.4 Withdrawing from a Course"
+      },
+      {
+        "rank": 6,
+        "score": 8.498940151198312,
+        "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.4%20Annual%20Progress%20Monitoring%20Meeting%20\\(APM\\)) The academic progress of all registered Ph.D. students will be reviewed once in a year by the SRC and peers in the institute. The review will be based upon (i) Annual Progress Report and (ii) A Poster Presentation open to all. SRC will award a Satisfactory/Non-Satisfactory grade based upon (i) and (ii). Two consecutive Non-satisfactory grades will lead to termination of registration. For implementational convenience, academic calendar must indicate two days in a year for conducting annual progress evaluation of research scholars. Following the groupings of students and scheduling guidelines are suggested"
+      },
+      {
+        "rank": 7,
+        "score": 8.369015015798057,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+        "text": "A regular full-time student must register for M.Tech Project Part-1 in the summer semester following 2 nd semester. He must obtain a satisfactory grade to continue M.Tech project part-1 in the next semester. His performance in the summer semester will be evaluated by his supervisor. 23. Leave Rules [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top23.%20Leave%20Rules) Application for leave of absence should be addressed to the Convener DRC, and submitted with a medical certificate, if applicable. Usually, leave must not be availed of without prior approval of the DRC. 12.3 Exceptions to Regular Rules regarding Academic Load"
+      },
+      {
+        "rank": 8,
+        "score": 8.264050465080507,
+        "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+        "text": "Criteria for continuation at the end of the second registered semester Description Minimum number of credits to be earned GEN/OBC/GEN-EWS SC/ST/PD Minimum for Continuation 18 14 If a student does not meet the criterion specified in Table 11.3, he/she may opt to restart the programme or else their registration will be terminated. The restart will be permitted only once. If a student chooses to restart after the first two registered semesters, then the credits earned and semesters registered till that point will not be counted towards the graduation requirements. The re-start will be indicated on the transcript. 27. Graduation Requirements"
+      }
+    ],
+    "final_context": "21.4 Change of Registration from Full-Time to Part-Time/External Ph.D. 3.1 Provisional Registration A fresh student joining the Institute, who is awaiting the final results of the qualifying examination, is allowed to register provisionally on submission of a certificate from her/his last Institute stating that she/he has appeared in the final examination of the qualifying degree. The student is required to submit documents of having passed the qualifying examination by the last date given in the Academic Calendar for the registration to be regularized. Basically, you have to bring originals and copies of all the necessary certificates, JEE (Main & Advanced) Score cards, proof of address, identity proof, caste/domicile certificate (whichever is applicable), at least two passport size photographs. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top23.%20Leave%20Rules) Application for leave of absence should be addressed to the Convener DRC, and submitted with a medical certificate, if applicable.",
+    "context_chars": 1049,
+    "context_non_empty": true,
+    "elapsed_seconds": 8.392
+  }
+]

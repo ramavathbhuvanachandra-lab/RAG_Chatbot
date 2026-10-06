@@ -1,12 +1,12 @@
-"""IIT Jodhpur institution adapter.
+"""IIT Jodhpur institution adapter for the reusable AI platform.
 
-This package contains IITJ-specific configuration and terminology only.
-Reusable retrieval, ranking, verification, evidence, and generation remain
-owned by the shared backend/core and backend/runtime layers.
+Only IITJ-specific configuration and terminology belong here. Retrieval,
+ranking, verification, evidence handling, grounding, and generation remain
+owned by :mod:`ai_platform.core`.
 """
 
 from .profile import PROFILE
-from .semantic_registry import SEMANTIC_REGISTRY, IITJ_SEMANTIC_REGISTRY
+from .semantic_registry import IITJ_SEMANTIC_REGISTRY, SEMANTIC_REGISTRY
 from .lexical import get_lexical_profile
 from .source_policy import SOURCE_POLICY
 from .scope_policy import SCOPE_POLICY

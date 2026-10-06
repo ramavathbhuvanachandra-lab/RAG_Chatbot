@@ -30,7 +30,7 @@ import math
 import re
 from typing import Any, Iterable, Mapping, Sequence
 
-from ai_platform.core.retrieval_contracts import RetrievalCandidate
+from ai_platform.core.retrieval.contracts import RetrievalCandidate
 
 
 # ---------------------------------------------------------------------------

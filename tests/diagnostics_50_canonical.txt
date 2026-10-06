@@ -1,0 +1,375 @@
+==============================================================================================================
+IIT JODHPUR — CANONICAL 50-QUESTION RAG DIAGNOSTIC
+==============================================================================================================
+TOTAL CASES: 50
+PASS (STRUCTURAL): 43
+CHECK:              7
+ENGINE ERROR:       0
+
+BOTTLENECK DISTRIBUTION
+--------------------------------------------------------------------------------------------------------------
+PASS_STRUCTURAL              43
+ANSWER_OR_GROUNDING          7
+
+==============================================================================================================
+CASE-BY-CASE
+==============================================================================================================
+
+[01/50] PASS     | PASS_STRUCTURAL          | 30.57s
+Q: What is a non-degree student at IIT Jodhpur?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=74 verified=29 ranked=10
+Evidence: status= coverage= context_chars=2901
+Answer: A non-degree student at IIT Jodhpur is a student who is registered for a degree in a recognized institute or university in India or abroad and is officially sponsored by that institute or university to complete part of their academic requirements at IIT Jodhpur.
+
+[02/50] PASS     | PASS_STRUCTURAL          | 23.84s
+Q: Who can be admitted as a casual student for specific courses?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=76 verified=67 ranked=10
+Evidence: status= coverage= context_chars=2569
+Answer: Any candidate can be admitted as a casual student for specific courses provided the candidate satisfies the minimum eligibility criteria specified in Section 20.2. In addition, students can explore their specific interests through program electives and open elective courses. A strong set of elective courses enables students to gain knowledge in emerging areas of electronics engineering and strengthen domain-specific expertise.
+
+[03/50] PASS     | PASS_STRUCTURAL          | 24.05s
+Q: What academic activities can a non-degree student undertake at IIT Jodhpur?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30] fused=68 verified=23 ranked=10
+Evidence: status= coverage= context_chars=2884
+Answer: A non-degree student at IIT Jodhpur can register at another academic institution with the expectation of credit transfer up to 20 credits per semester. They can also use other academic facilities, take courses for credit, or use facilities for research.
+
+[04/50] PASS     | PASS_STRUCTURAL          | 26.98s
+Q: How must a non-degree student's application be routed?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=83 verified=47 ranked=10
+Evidence: status= coverage= context_chars=2470
+Answer: For a non-degree student applying to IIT Jodhpur, their application would typically be routed through the Office of Academics. They would need to submit an official transcript of their grades from their previous academic institution, along with any other required documents. The application process involves ensuring they have completed all prescribed course credits for the previous semesters, including non-graded courses. They must also meet the minimum academic requirements specified for their d
+
+[05/50] PASS     | PASS_STRUCTURAL          | 23.93s
+Q: What rules apply to students admitted as non-degree students?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=82 verified=42 ranked=10
+Evidence: status= coverage= context_chars=2613
+Answer: According to the information provided, non-degree students admitted to IIT Jodhpur are those who are registered for a degree in a recognized institute or university in India or abroad and are officially sponsored to complete part of their academic requirements at IIT Jodhpur.
+
+[06/50] CHECK    | ANSWER_OR_GROUNDING      | 27.80s
+Q: When can I apply for a particular program at IIT Jodhpur according to the admissions FAQ?
+Diagnosis: System abstained despite non-insufficient evidence.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=79 verified=73 ranked=10
+Evidence: status= coverage= context_chars=1916
+Answer: I'm sorry, I don't know based on the available information.
+
+[07/50] PASS     | PASS_STRUCTURAL          | 24.35s
+Q: What are the two general application periods mentioned in the admissions FAQ?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=86 verified=42 ranked=10
+Evidence: status= coverage= context_chars=2456
+Answer: The two general application periods mentioned in the admissions FAQ are ~~12th February 2026~~ and Extended: 10th March 2026.
+
+[08/50] PASS     | PASS_STRUCTURAL          | 32.84s
+Q: What are the eligibility requirements mentioned for the Ph.D. at the School of AI and Data Science?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=84 verified=74 ranked=10
+Evidence: status= coverage= context_chars=2306
+Answer: For the Ph.D. at the School of AI and Data Science at IIT Jodhpur, candidates must have a bachelor’s degree of minimum four-year duration in engineering, science, medicine, or any related field with at least 70% marks or a CGPA of 7.0/10. For SC, ST, and PwD candidates, the qualifying degree requirements can be relaxed by 5% for marks and 0.5 on a 10-point scale. Additionally, candidates must not be registered in any other academic program in India or abroad and should not be a full-time or part
+
+[09/50] PASS     | PASS_STRUCTURAL          | 29.12s
+Q: What processing fee is required for the School of AI and Data Science Ph.D. application?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=84 verified=69 ranked=10
+Evidence: status= coverage= context_chars=2977
+Answer: For the School of AI and Data Science Ph.D. application, the processing fee required is Rs. 150 for SC, ST, and PD applicants. For other categories, the fee is Rs. 300.
+
+[10/50] PASS     | PASS_STRUCTURAL          | 26.05s
+Q: What documents must shortlisted School of AI and Data Science Ph.D. applicants bring?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=87 verified=68 ranked=10
+Evidence: status= coverage= context_chars=2228
+Answer: Shortlisted School of AI and Data Science Ph.D. applicants must bring their final submitted application form, signed along with a copy of all educational documents and their GATE/NET(JRF)/CEED/NBHM (or equivalent) score card, to the written test and/or interview.
+
+[11/50] PASS     | PASS_STRUCTURAL          | 26.22s
+Q: What are the categories of postgraduate admission at IIT Jodhpur?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=70 verified=47 ranked=10
+Evidence: status= coverage= context_chars=2022
+Answer: The postgraduate admission at IIT Jodhpur is available for General, OBC (Other Backward Classes), and EWS (Economically Weaker Sections) categories. Applicants must either have a valid GATE score or qualify through the Joint Admission Test for Master (JAM) organized by IITs.
+
+[12/50] PASS     | PASS_STRUCTURAL          | 26.97s
+Q: Are all postgraduate admission categories applicable to every PG program?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=74 verified=34 ranked=10
+Evidence: status= coverage= context_chars=2160
+Answer: No, not all postgraduate admission categories are applicable to every PG program at IIT Jodhpur. The specific eligibility criteria vary depending on the program and category of the applicant. For example, some programs may require a bachelor’s degree in engineering or science, while others might have different requirements. It's important to check the specific details for each program you're interested in.
+
+[13/50] PASS     | PASS_STRUCTURAL          | 24.10s
+Q: When is postgraduate admission normally underway for Semester 1?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=92 verified=55 ranked=10
+Evidence: status= coverage= context_chars=2376
+Answer: Admission for postgraduate programs is normally underway during April-May for Semester 1.
+
+[14/50] CHECK    | ANSWER_OR_GROUNDING      | 34.43s
+Q: What happens if an admitted student fails to submit required documents by the specified deadline?
+Diagnosis: System abstained despite non-insufficient evidence.
+Retrieval: channels=[] fused=0 verified=0 ranked=0
+Evidence: status= coverage= context_chars=3151
+Answer: I'm sorry, I don't know based on the available information.
+
+[15/50] PASS     | PASS_STRUCTURAL          | 26.50s
+Q: What does IIT Jodhpur require for admission to an undergraduate program?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=91 verified=52 ranked=10
+Evidence: status= coverage= context_chars=2174
+Answer: For admission to an undergraduate program at IIT Jodhpur, candidates must be eligible and go through the laid-down admission procedure. They are required to pay the prescribed fees, and the Senate must formally approve all admissions to the Undergraduate Programmes. Qualified candidates can apply through the Joint Admission Test for Master (JAM) organized by IITs. Additionally, graduates can apply directly for a Ph.D. program.
+
+[16/50] CHECK    | ANSWER_OR_GROUNDING      | 31.44s
+Q: How can I get admission to an M.Sc. program at IIT Jodhpur?
+Diagnosis: System abstained despite non-insufficient evidence.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=90 verified=43 ranked=10
+Evidence: status= coverage= context_chars=1331
+Answer: I'm sorry, I don't know based on the available information.
+
+[17/50] PASS     | PASS_STRUCTURAL          | 25.79s
+Q: What entrance examination is used for regular M.Sc. admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=81 verified=36 ranked=10
+Evidence: status= coverage= context_chars=1411
+Answer: The entrance examination used for regular M.Sc. admission at IIT Jodhpur is the Joint Admission Test for Master (JAM) organized by IITs.
+
+[18/50] PASS     | PASS_STRUCTURAL          | 25.62s
+Q: Can applicants with a bachelor's degree be admitted to the M.Sc. program?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=80 verified=44 ranked=10
+Evidence: status= coverage= context_chars=1649
+Answer: Yes, applicants with a bachelor's degree in any relevant discipline can be admitted based on a written test and/or interview conducted by IIT Jodhpur.
+
+[19/50] PASS     | PASS_STRUCTURAL          | 26.40s
+Q: What minimum bachelor's degree duration is mentioned for M.Sc. eligibility?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=85 verified=53 ranked=10
+Evidence: status= coverage= context_chars=1686
+Answer: The minimum bachelor's degree duration mentioned for M.Sc. eligibility is not directly provided in the given evidence.
+
+[20/50] PASS     | PASS_STRUCTURAL          | 25.66s
+Q: Can admission to the M.Sc. program be based on a written test or interview?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=82 verified=42 ranked=10
+Evidence: status= coverage= context_chars=2197
+Answer: Yes, admission to the M.Sc. program can be based on a written test and/or interview conducted by IIT Jodhpur.
+
+[21/50] CHECK    | ANSWER_OR_GROUNDING      | 12.18s
+Q: What minimum percentage is required for GEN/OBC candidates under the written-test/interview route?
+Diagnosis: System abstained despite non-insufficient evidence.
+Retrieval: channels=[] fused=0 verified=0 ranked=0
+Evidence: status= coverage= context_chars=0
+Answer: I'm sorry, I don't know based on the available information.
+
+[22/50] CHECK    | ANSWER_OR_GROUNDING      | 9.00s
+Q: What minimum percentage is required for SC/ST candidates under the written-test/interview route?
+Diagnosis: System abstained despite non-insufficient evidence.
+Retrieval: channels=[] fused=0 verified=0 ranked=0
+Evidence: status= coverage= context_chars=0
+Answer: I'm sorry, I don't know based on the available information.
+
+[23/50] PASS     | PASS_STRUCTURAL          | 23.67s
+Q: What minimum CGPA is required for GEN/OBC candidates under the M.Sc. eligibility criteria?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=80 verified=48 ranked=10
+Evidence: status= coverage= context_chars=2444
+Answer: For GEN/OBC candidates, the minimum CGPA required for M.Sc. eligibility is 6.0 on a scale of 10.
+
+[24/50] PASS     | PASS_STRUCTURAL          | 26.20s
+Q: What minimum CGPA is required for SC/ST candidates under the M.Sc. eligibility criteria?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=80 verified=52 ranked=10
+Evidence: status= coverage= context_chars=2085
+Answer: For SC/ST candidates under the M.Sc. eligibility criteria, a minimum CGPA of 5.5 is required on a scale of 10.
+
+[25/50] PASS     | PASS_STRUCTURAL          | 25.50s
+Q: Is a first-class qualification accepted for M.Sc. admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=86 verified=48 ranked=10
+Evidence: status= coverage= context_chars=2167
+Answer: No, based on the provided evidence, a first-class qualification is not explicitly accepted for M.Sc. admission at IIT Jodhpur. The evidence suggests that a minimum aggregate of 60% is required for General, OBC, and EWS categories, but does not mention first-class as a qualification for M.Sc. admission.
+
+[26/50] PASS     | PASS_STRUCTURAL          | 26.61s
+Q: What are the eligibility requirements for regular M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=71 verified=56 ranked=10
+Evidence: status= coverage= context_chars=2056
+Answer: For regular M.Tech admission at IIT Jodhpur, applicants must have a minimum of 60% marks in aggregate or a minimum CGPA of 6.0 for GEN/OBC (55% for SC/ST) category. Additionally, a qualifying degree can be relaxed by 5% for SC, ST, and PwD candidates. The eligibility criteria for financial assistance and course registration are also specified. Applicants must have a bachelor’s degree in engineering or a related field to apply.
+
+[27/50] PASS     | PASS_STRUCTURAL          | 25.17s
+Q: What bachelor's degree backgrounds are accepted for M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=69 verified=55 ranked=10
+Evidence: status= coverage= context_chars=1451
+Answer: For M.Tech admission, the accepted bachelor's degree backgrounds include engineering or science (4 year program), or a master's degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences, and Veterinary Sciences or in a related field.
+
+[28/50] PASS     | PASS_STRUCTURAL          | 24.36s
+Q: Can a master's degree in science be used for M.Tech eligibility?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=75 verified=61 ranked=10
+Evidence: status= coverage= context_chars=2445
+Answer: Yes, a master's degree in science can be used for M.Tech eligibility at IIT Jodhpur.
+
+[29/50] PASS     | PASS_STRUCTURAL          | 24.26s
+Q: What minimum percentage is required for GEN/OBC candidates for regular M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=68 verified=49 ranked=10
+Evidence: status= coverage= context_chars=2079
+Answer: The minimum percentage required for GEN/OBC candidates for regular M.Tech. admission is a minimum of 60% marks in aggregate, which should be equivalent to a first class in the university conversion rule.
+
+[30/50] PASS     | PASS_STRUCTURAL          | 23.18s
+Q: What minimum percentage is required for SC/ST candidates for regular M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=71 verified=47 ranked=10
+Evidence: status= coverage= context_chars=1751
+Answer: The provided evidence does not specify the minimum percentage required for SC/ST candidates for regular M.Tech. admission.
+
+[31/50] PASS     | PASS_STRUCTURAL          | 24.90s
+Q: What minimum CGPA is required for GEN/OBC candidates for regular M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=64 verified=44 ranked=10
+Evidence: status= coverage= context_chars=2131
+Answer: The minimum CGPA required for GEN/OBC candidates for regular M.Tech. admission is not specified in the provided evidence.
+
+[32/50] PASS     | PASS_STRUCTURAL          | 25.64s
+Q: What minimum CGPA is required for SC/ST candidates for regular M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=67 verified=47 ranked=10
+Evidence: status= coverage= context_chars=2152
+Answer: The minimum CGPA required for SC/ST candidates for regular M.Tech. admission at IIT Jodhpur is not specified in the provided evidence. The general requirement is a CGPA of 6 or more for switching to a B.Tech.-M. degree, and a CGPA of 8 or more for switching to a dual degree, but these do not differentiate between SC/ST candidates.
+
+[33/50] PASS     | PASS_STRUCTURAL          | 27.01s
+Q: Is a first-class qualification accepted for regular M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=73 verified=57 ranked=10
+Evidence: status= coverage= context_chars=2445
+Answer: No, a first-class qualification is not accepted for regular M.Tech admission based on the provided evidence. The minimum requirements for regular M.Tech admission are a minimum of 60% marks in aggregate or a minimum CGPA of 6.0 for GEN/OBC (55% and 5.5 respectively for SC/ST) categories.
+
+[34/50] PASS     | PASS_STRUCTURAL          | 22.55s
+Q: Is GATE required for regular M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=64 verified=48 ranked=10
+Evidence: status= coverage= context_chars=1923
+Answer: No, GATE is not required for regular M.Tech admission at IIT Jodhpur. The requirement of GATE is exempted for an applicant with M.Tech or equivalent post-bachelor’s degree.
+
+[35/50] PASS     | PASS_STRUCTURAL          | 23.79s
+Q: What alternatives to a valid GATE score are accepted for M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=63 verified=48 ranked=10
+Evidence: status= coverage= context_chars=2243
+Answer: For M.Tech admission at IIT Jodhpur, applicants can either have a valid GATE score or be exempted from GATE as per the MHRD circular. They can also qualify an equivalent national examination or pass the written test and/or interview conducted by IIT Jodhpur.
+
+[36/50] PASS     | PASS_STRUCTURAL          | 23.98s
+Q: What are the eligibility requirements for Executive, Part-time, External, or Sponsored M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=69 verified=57 ranked=10
+Evidence: status= coverage= context_chars=2315
+Answer: For Executive, Part-time, External, or Sponsored M.Tech admission, the eligibility requirements are not specified in the provided evidence. The available information only covers regular full-time admission criteria.
+
+[37/50] PASS     | PASS_STRUCTURAL          | 24.30s
+Q: How much work experience is required for Executive, Part-time, External, or Sponsored M.Tech admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=74 verified=59 ranked=10
+Evidence: status= coverage= context_chars=1809
+Answer: dual degree students who have successfully completed all qualifier requirements, under exceptional conditions, as approved by SRC after 3 years can also convert into part-time/external Ph.D. student and exit with M.Tech degree if all conditions for part-time/external conversion are satisfied. The applicant must have a minimum of two years of work experience (after qualifying degree) in industry/R&D laboratories/Academic Institutions at the time of registration to the program.
+
+[38/50] PASS     | PASS_STRUCTURAL          | 26.24s
+Q: What are the eligibility requirements for regular Ph.D. admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=79 verified=74 ranked=10
+Evidence: status= coverage= context_chars=2425
+Answer: For regular Ph.D. admission at IIT Jodhpur, candidates must have a bachelor’s degree of minimum four-year duration in engineering or science or medicine or pharmacy or agricultural science or veterinary science or equivalent with at least 70% marks or at least 7.0/10 CPI or CGPA. For SC, ST, and PwD candidates, the qualifying degree marks can be relaxed by 5% or 0.5 on a 10-point scale, depending on the source. Additionally, candidates must have a minimum of two years of work experience in indus
+
+[39/50] PASS     | PASS_STRUCTURAL          | 25.78s
+Q: What master's degree qualifications are accepted for regular Ph.D. admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=78 verified=75 ranked=10
+Evidence: status= coverage= context_chars=2532
+Answer: The master's degree qualifications accepted for regular Ph.D. admission at IIT Jodhpur School of AI and Data Science include a bachelor’s degree of minimum four-year duration in engineering, science, medicine, pharmacy, agricultural science, veterinary science, or design/architecture with at least 70% marks or at least 7.0/10 CPI or CGPA. For SC, ST, and PwD candidates, the qualifying degree marks may be relaxed by 5% or 0.5 on a 10-point scale, as per Ministry of Education rules.
+
+[40/50] CHECK    | ANSWER_OR_GROUNDING      | 11.99s
+Q: What minimum percentage is required for GEN/GEN-EWS/OBC candidates with a master's degree?
+Diagnosis: System abstained despite non-insufficient evidence.
+Retrieval: channels=[] fused=0 verified=0 ranked=0
+Evidence: status= coverage= context_chars=0
+Answer: I'm sorry, I don't know based on the available information.
+
+[41/50] CHECK    | ANSWER_OR_GROUNDING      | 6.33s
+Q: What minimum percentage is required for SC/ST candidates with a master's degree?
+Diagnosis: System abstained despite non-insufficient evidence.
+Retrieval: channels=[] fused=0 verified=0 ranked=0
+Evidence: status= coverage= context_chars=0
+Answer: I'm sorry, I don't know based on the available information.
+
+[42/50] PASS     | PASS_STRUCTURAL          | 23.04s
+Q: What professional qualifications are accepted for Ph.D. admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=83 verified=77 ranked=10
+Evidence: status= coverage= context_chars=2324
+Answer: Certain professional qualifications such as MBBS with MD are also accepted for Ph.D. admission at IIT Jodhpur School of AI and Data Science. Additionally, candidates must have a bachelor’s degree of minimum four-year duration in engineering, science, medicine, pharmacy, agricultural science, veterinary science, design, architecture, or equivalent with at least 70% marks or at least 7.0/10 CPI or CGPA. The relaxation for SC, ST, and PwD candidates is also considered based on the Ministry of Educa
+
+[43/50] PASS     | PASS_STRUCTURAL          | 24.73s
+Q: Can a four-year bachelor's degree qualify someone for Ph.D. admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=77 verified=76 ranked=10
+Evidence: status= coverage= context_chars=2265
+Answer: No, a four-year bachelor's degree alone does not qualify someone for Ph.D. admission. The evidence provided does not mention any specific eligibility for a Ph.D. program with just a bachelor's degree. However, candidates with a valid UGC-NET or those with a full-time post-graduate degree from an Institute of National Importance (INI) may be considered for financial assistance.
+
+[44/50] PASS     | PASS_STRUCTURAL          | 28.45s
+Q: What are the Ph.D. eligibility requirements for sponsored, external, or part-time admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=78 verified=59 ranked=10
+Evidence: status= coverage= context_chars=2390
+Answer: For sponsored, external, or part-time Ph.D. admission at IIT Jodhpur, candidates must have a bachelor’s degree of minimum four-year duration in engineering, science, or a related field with at least 70% marks or a 7.0/10 CGPA. For SC/ST/PwD candidates, the qualifying degree marks can be relaxed by 5% or 0.5 on a 10-point scale. The admission eligibility requirements may be relaxed for these candidates. Additionally, candidates must have a master’s degree in engineering, science, or a related fie
+
+[45/50] PASS     | PASS_STRUCTURAL          | 24.70s
+Q: How much work experience is required for sponsored, external, or part-time Ph.D. admission?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=79 verified=72 ranked=10
+Evidence: status= coverage= context_chars=2390
+Answer: According to the provided evidence, the applicant must have a minimum of two years of work experience (after qualifying degree) in industry, R&D laboratories, or Academic Institutions at the time of registration to the program. This requirement applies to sponsored, external, or part-time Ph.D. admission.
+
+[46/50] PASS     | PASS_STRUCTURAL          | 23.57s
+Q: What is the exact IIT Jodhpur B.Tech tuition fee per semester?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=86 verified=51 ranked=10
+Evidence: status= coverage= context_chars=2693
+Answer: The exact IIT Jodhpur B.Tech tuition fee per semester is INR 2,25,000/-.
+
+[47/50] PASS     | PASS_STRUCTURAL          | 22.49s
+Q: What are the hostel facilities for B.Tech students?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=83 verified=62 ranked=10
+Evidence: status= coverage= context_chars=1998
+Answer: For B.Tech students, the hostel provides basic facilities including a bed, basic furniture (subject to availability), air-conditioning, and optional bedding. Short-term bookings are available for up to 10 days.
+
+[48/50] PASS     | PASS_STRUCTURAL          | 22.87s
+Q: What research areas are available in Electrical Engineering?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=77 verified=59 ranked=10
+Evidence: status= coverage= context_chars=1835
+Answer: In the Department of Electrical Engineering at IIT Jodhpur, research areas can be broadly categorized into cutting-edge, interdisciplinary fields such as cellular and molecular neuroscience, novel drug development, bio-imaging, systems and synthetic biology, bioelectrochemical systems, bioenergy systems, biomaterials engineering, nanomedicine, protein engineering, chemical biology, microbiology, and structural biology.
+
+[49/50] PASS     | PASS_STRUCTURAL          | 22.18s
+Q: What are the mess facilities at IIT Jodhpur?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=79 verified=74 ranked=10
+Evidence: status= coverage= context_chars=1489
+Answer: At IIT Jodhpur, students have access to various mess facilities within the campus. The specific details about the mess facilities are not provided in the given evidence. However, you can find more information about Campus Life and Student Activities on the IITJ website.
+
+[50/50] PASS     | PASS_STRUCTURAL          | 22.76s
+Q: How many student hostels are there at IIT Jodhpur?
+Diagnosis: Retrieval, verification, evidence, and answer stages completed without structural failure.
+Retrieval: channels=[20, 20, 30, 20, 20, 0] fused=82 verified=73 ranked=10
+Evidence: status= coverage= context_chars=2227
+Answer: IIT Jodhpur has a total of 17 student hostels, comprising 5 girls' hostels and 12 boys' hostels, all located within the Institute campus.
+
+==============================================================================================================
+IMPORTANT
+==============================================================================================================
+This is a structural diagnostic, not a semantic correctness score.
+PASS means the pipeline structurally produced usable evidence and an answer.
+CHECK means we have identified a pipeline stage requiring investigation.
+The full per-case state is stored in diagnostics_50_canonical.json.
+==============================================================================================================

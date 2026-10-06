@@ -31,7 +31,7 @@ from dataclasses import dataclass, field
 from typing import Iterable, Literal, Sequence
 
 from ai_platform.core.query.models import Query, RetrievalRequirement
-from ai_platform.core.retrieval_contracts import RetrievalCandidate
+from ai_platform.core.retrieval.contracts import RetrievalCandidate
 
 
 EvidenceStatus = Literal[
@@ -102,6 +102,7 @@ class EvidenceAssessment:
     selected_candidate_ids: tuple[str, ...] = ()
     items: tuple[EvidenceItem, ...] = ()
     reasons: tuple[str, ...] = ()
+    qualification_mode: Literal["verified", "independent"] = "independent"
 
     def to_dict(self) -> dict[str, object]:
         return {
@@ -114,6 +115,7 @@ class EvidenceAssessment:
             "selected_candidate_ids": list(self.selected_candidate_ids),
             "items": [item.to_dict() for item in self.items],
             "reasons": list(self.reasons),
+            "qualification_mode": self.qualification_mode,
         }
 
 
@@ -148,6 +150,16 @@ def _quality_score(candidate: RetrievalCandidate) -> float:
         + (0.40 * quality.structural_quality)
         - (0.50 * quality.noise)
     )
+
+
+def _has_content(candidate: RetrievalCandidate) -> bool:
+    """Require actual source content before treating a candidate as evidence."""
+    document = candidate.document
+    if isinstance(document, dict):
+        value = document.get("page_content", "")
+    else:
+        value = getattr(document, "page_content", "")
+    return bool(str(value or "").strip())
 
 
 def _alignment_score(
@@ -254,6 +266,15 @@ def _item_for(
             reasons=("candidate content quality is not usable",),
         )
 
+    if not _has_content(candidate):
+        return EvidenceItem(
+            candidate_id=candidate.document_id,
+            source=candidate.source,
+            score=0.0,
+            status="insufficient",
+            reasons=("candidate contains no source content",),
+        )
+
     if candidate.alignment.conflicts:
         return EvidenceItem(
             candidate_id=candidate.document_id,
@@ -268,9 +289,17 @@ def _item_for(
 
     alignment_score = _alignment_score(candidate, requirement)
     quality_score = _quality_score(candidate)
-    support_score = _clamp01(
-        (0.78 * alignment_score) + (0.22 * quality_score)
-    )
+
+    # Verification owns target/entity/scope compatibility. Once that contract
+    # is explicitly asserted, evidence scoring must not be diluted by sparse
+    # alignment metadata on compact chunks. The score becomes intrinsic
+    # evidence quality; relevance has already been established upstream.
+    if candidates_are_verified:
+        support_score = quality_score
+    else:
+        support_score = _clamp01(
+            (0.78 * alignment_score) + (0.22 * quality_score)
+        )
 
     # Candidate verification is the authoritative qualification step in the
     # end-to-end pipeline. When the caller explicitly tells us candidates have
@@ -304,13 +333,20 @@ def _item_for(
         )
 
     if candidates_are_verified:
+        if support_score >= SUPPORTED_THRESHOLD:
+            verified_status: EvidenceStatus = "supported"
+        elif support_score >= PARTIAL_THRESHOLD and requirement.allow_partial_evidence:
+            verified_status = "partial"
+        else:
+            verified_status = "insufficient"
+
         return EvidenceItem(
             candidate_id=candidate.document_id,
             source=candidate.source,
             score=support_score,
-            status="supported",
+            status=verified_status,
             reasons=(
-                "candidate already passed upstream retrieval qualification",
+                "candidate passed upstream verification; evidence uses intrinsic content quality only",
             ),
         )
 
@@ -402,13 +438,19 @@ def assess_evidence(
 ) -> EvidenceAssessment:
     """Assess whether ranked candidates are sufficient for answering.
 
-    The input is expected to already be ordered by the retrieval/ranking
-    pipeline. This function therefore does *not* reorder candidates.
+    Pipeline contract:
+        retrieval -> verification -> evidence -> coverage -> packaging
 
-    Broad/list queries may be supported by multiple partial candidates or one
-    strong candidate. In the end-to-end graph, ``candidates_are_verified`` is
-    set by the node after candidate verification, so this stage measures
-    sufficiency rather than re-qualifying the same evidence a second time.
+    The input is expected to already be ordered by retrieval/ranking, so this
+    function never re-ranks. When ``candidates_are_verified`` is true, upstream
+    verification is authoritative for relevance and target/scope compatibility;
+    this stage only removes unusable/conflicted candidates and determines
+    whether at least one qualified evidence item is available.
+
+    When called without verification authority, the function remains conservative
+    and enforces the explicit retrieval requirement locally. This keeps the
+    public function safe for isolated tests and legacy callers without making
+    the production graph pay for duplicate qualification.
     """
     if max_documents <= 0:
         raise ValueError("max_documents must be positive")
@@ -427,6 +469,7 @@ def assess_evidence(
             partial_documents=0,
             conflicted_documents=0,
             reasons=("no retrieval candidates were provided",),
+            qualification_mode=("verified" if candidates_are_verified else "independent"),
         )
 
     items = tuple(
@@ -456,9 +499,28 @@ def assess_evidence(
 
     is_list = _is_list_question(query)
 
-    # Exact/focused modes are conservative: a strong count of irrelevant or
-    # partial documents cannot substitute for missing required alignment.
-    if requirement.mode == "exact":
+    # -------------------------------------------------------------------
+    # Contract boundary: verified candidates are already relevance-qualified.
+    # Evidence must not re-apply target/attribute/scope gates here. It only
+    # rejects unusable/conflicted evidence and decides whether any qualified
+    # evidence is available for the next layer. This is critical for compact
+    # chunks whose semantic alignment fields can be sparse even when the
+    # upstream verifier has already established the correct target/scope.
+    # -------------------------------------------------------------------
+    if candidates_are_verified:
+        if strong_items:
+            status: EvidenceStatus = "supported"
+        elif partial_items and requirement.allow_partial_evidence:
+            status = "partial"
+        elif conflicted_items and not supportive_scores:
+            status = "conflicted"
+        else:
+            status = "insufficient"
+
+    # Exact/focused modes are conservative for *unverified* callers: a strong
+    # count of irrelevant or partial documents cannot substitute for missing
+    # required alignment.
+    elif requirement.mode == "exact":
         if strong_items:
             status: EvidenceStatus = "supported"
         elif partial_items and requirement.allow_partial_evidence:
@@ -516,6 +578,31 @@ def assess_evidence(
         selected_candidate_ids=selected,
         items=items,
         reasons=tuple(reasons),
+        qualification_mode=("verified" if candidates_are_verified else "independent"),
+    )
+
+
+def assess_verified_evidence(
+    candidates: Sequence[RetrievalCandidate] | Iterable[RetrievalCandidate],
+    *,
+    query: Query | None = None,
+    requirement: RetrievalRequirement | None = None,
+    max_documents: int = DEFAULT_MAX_DOCUMENTS,
+    max_per_source: int = DEFAULT_MAX_PER_SOURCE,
+) -> EvidenceAssessment:
+    """Assess candidates after the verifier has established relevance.
+
+    This explicit entry point is preferred by orchestration and evaluation
+    code because it makes the verification/evidence boundary impossible to
+    miss at the call site.
+    """
+    return assess_evidence(
+        candidates,
+        query=query,
+        requirement=requirement,
+        max_documents=max_documents,
+        max_per_source=max_per_source,
+        candidates_are_verified=True,
     )
 
 
@@ -524,12 +611,20 @@ def is_evidence_sufficient(
     *,
     query: Query | None = None,
     requirement: RetrievalRequirement | None = None,
+    candidates_are_verified: bool = False,
 ) -> bool:
-    """Return True only when evidence status is ``supported``."""
+    """Return True only when evidence status is ``supported``.
+
+    ``candidates_are_verified`` must be set by the orchestration layer after
+    candidate verification. In that mode this function intentionally does not
+    re-run relevance gates; verification is the single source of truth for
+    target/scope compatibility.
+    """
     return assess_evidence(
         candidates,
         query=query,
         requirement=requirement,
+        candidates_are_verified=candidates_are_verified,
     ).status == "supported"
 
 
@@ -538,5 +633,6 @@ __all__ = [
     "EvidenceItem",
     "EvidenceStatus",
     "assess_evidence",
+    "assess_verified_evidence",
     "is_evidence_sufficient",
 ]

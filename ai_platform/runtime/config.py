@@ -1,116 +1,87 @@
-"""Reusable runtime configuration for the institutional RAG application.
+"""Standalone runtime configuration for the reusable AI platform.
 
-This module contains application-runtime settings only.
-
-Institution-specific identity and data locations come from the active
-InstitutionProfile. LLM, vector-store, database, and UI settings will be
-split into their own layers later; this file deliberately stays small.
+The runtime is the composition/infrastructure boundary for a deployment.
+It selects the active institution and exposes its deployment settings to
+platform modules. It does not import the legacy ``backend`` package.
 """
 
 from __future__ import annotations
 
-import os
 from dataclasses import dataclass
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
 
-from ai_platform.core.institution import InstitutionProfile
+from ai_platform.core.institution.profile import InstitutionProfile
 from ai_platform.institutions.loader import load_institution_profile
 
 
 load_dotenv()
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_INSTITUTION = "iitj"
 
 
-def _env_flag(name: str, default: bool = False) -> bool:
-    """Read a boolean environment variable safely."""
-
-    raw = os.getenv(name)
-
-    if raw is None:
-        return default
-
-    return raw.strip().lower() in {
-        "1",
-        "true",
-        "yes",
-        "on",
-    }
+def _env(name: str, default: str) -> str:
+    value = os.getenv(name, default)
+    return str(value).strip()
 
 
 @dataclass(frozen=True, slots=True)
 class RuntimeConfig:
-    """Runtime state shared by the application."""
+    """Validated runtime configuration for one institutional deployment."""
 
     project_root: Path
     institution: InstitutionProfile
     environment: str = "development"
-    debug: bool = False
 
     def validate(self) -> None:
-        """Validate the runtime contract."""
-
         if not self.project_root:
             raise ValueError("project_root cannot be empty")
-
         self.institution.validate()
-
         if not self.environment.strip():
             raise ValueError("environment cannot be empty")
 
-    @property
-    def institution_id(self) -> str:
-        """Active institution identifier."""
 
-        return self.institution.institution_id
+INSTITUTION_ID = (
+    _env("INSTITUTION_ID", DEFAULT_INSTITUTION).casefold()
+    or DEFAULT_INSTITUTION
+)
 
-    @property
-    def data_path(self) -> Path:
-        """Active institution knowledge/data root."""
+RUNTIME = RuntimeConfig(
+    project_root=PROJECT_ROOT,
+    institution=load_institution_profile(INSTITUTION_ID),
+    environment=_env("AI_PLATFORM_ENV", "development") or "development",
+)
+RUNTIME.validate()
 
-        return self.institution.data_path
-
-    @property
-    def vectorstore_path(self) -> Path:
-        """Active institution vector-store location."""
-
-        return self.institution.vectorstore_path
-
-    @property
-    def structured_data_path(self) -> Path | None:
-        """Optional active institution structured-data location."""
-
-        return self.institution.structured_data_path
-
-
-def load_runtime_config(
-    institution_id: str | None = None,
-) -> RuntimeConfig:
-    """Build the runtime configuration from environment + institution profile."""
-
-    institution = load_institution_profile(institution_id)
-
-    config = RuntimeConfig(
-        project_root=PROJECT_ROOT,
-        institution=institution,
-        environment=os.getenv("APP_ENV", "development").strip() or "development",
-        debug=_env_flag("DEBUG", default=False),
-    )
-
-    config.validate()
-
-    return config
-
-
-RUNTIME = load_runtime_config()
+# Platform-only convenience exports. These are intentionally owned by the
+# new runtime package and do not proxy through the legacy application.
+INSTITUTION = RUNTIME.institution
+DATA_PATH = INSTITUTION.data_path
+CHROMA_DB_PATH = INSTITUTION.vectorstore_path
+INSTITUTION_NAME = INSTITUTION.display_name
+SUPPORTED_LANGUAGES = INSTITUTION.supported_languages
+DEFAULT_LANGUAGE = INSTITUTION.default_language
+VECTORSTORE_COLLECTION = INSTITUTION.vectorstore_collection
+FALLBACK_MESSAGE = INSTITUTION.fallback_message
+ENVIRONMENT = RUNTIME.environment
 
 
 __all__ = [
     "PROJECT_ROOT",
+    "DEFAULT_INSTITUTION",
+    "INSTITUTION_ID",
     "RuntimeConfig",
-    "load_runtime_config",
     "RUNTIME",
+    "INSTITUTION",
+    "DATA_PATH",
+    "CHROMA_DB_PATH",
+    "INSTITUTION_NAME",
+    "SUPPORTED_LANGUAGES",
+    "DEFAULT_LANGUAGE",
+    "VECTORSTORE_COLLECTION",
+    "FALLBACK_MESSAGE",
+    "ENVIRONMENT",
 ]

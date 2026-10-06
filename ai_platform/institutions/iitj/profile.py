@@ -1,7 +1,7 @@
 """IIT Jodhpur deployment profile.
 
-Only deployment identity and institution-specific runtime metadata belong here.
-Factual answers must still come from the institution corpus.
+This module contains deployment identity and institution-specific runtime
+metadata only. Factual answers must come from the IITJ knowledge corpus.
 """
 
 from __future__ import annotations
@@ -13,18 +13,22 @@ from ai_platform.core.institution import InstitutionProfile
 
 INSTITUTION_ROOT = Path(__file__).resolve().parent
 INSTITUTIONS_ROOT = INSTITUTION_ROOT.parent
-BACKEND_ROOT = INSTITUTIONS_ROOT.parent
-PROJECT_ROOT = BACKEND_ROOT.parent
+PLATFORM_ROOT = INSTITUTIONS_ROOT.parent
+PROJECT_ROOT = PLATFORM_ROOT.parent
 
+# Small, versioned institution configuration lives beside the adapter code.
 DATA_ROOT = INSTITUTION_ROOT / "data"
+LEXICAL_DATA_ROOT = DATA_ROOT
 
+# Deployment identifiers.
 INSTITUTION_ID = "iitj"
 DISPLAY_NAME = "IIT Jodhpur"
 
-# Keep this aligned with the collection created by your current ingestion.
+# Existing Chroma collection created by the current IITJ ingestion pipeline.
 VECTORSTORE_COLLECTION = "iitj_v1"
 
-# These paths are deployment configuration, not answer knowledge.
+# The factual corpus is external to this package. These paths identify the
+# deployment's corpus and vector-store roots; they do not contain answer text.
 INSTITUTION_DATA_ROOT = PROJECT_ROOT / "data" / "data_iitj"
 VECTORSTORE_ROOT = PROJECT_ROOT / "chroma_db"
 
@@ -46,14 +50,15 @@ PROFILE = InstitutionProfile(
 PROFILE.validate()
 
 __all__ = [
+    "INSTITUTION_ROOT",
+    "INSTITUTIONS_ROOT",
+    "PLATFORM_ROOT",
+    "PROJECT_ROOT",
+    "DATA_ROOT",
+    "LEXICAL_DATA_ROOT",
     "INSTITUTION_ID",
     "DISPLAY_NAME",
     "VECTORSTORE_COLLECTION",
-    "INSTITUTION_ROOT",
-    "INSTITUTIONS_ROOT",
-    "BACKEND_ROOT",
-    "PROJECT_ROOT",
-    "DATA_ROOT",
     "INSTITUTION_DATA_ROOT",
     "VECTORSTORE_ROOT",
     "DEFAULT_LANGUAGE",

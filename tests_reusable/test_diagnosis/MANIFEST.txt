@@ -1,0 +1,4 @@
+AI Platform V1 diagnosis suite
+Scope: ai_platform/core only
+Backend imports allowed: NO
+Answer LLM default: OFF
