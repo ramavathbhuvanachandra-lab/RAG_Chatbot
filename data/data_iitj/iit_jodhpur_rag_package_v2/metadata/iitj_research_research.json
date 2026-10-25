@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_research_research",
+  "title": "Research Platforms and Focus Areas",
+  "category": "research",
+  "subcategory": "research",
+  "document_type": "research_profile",
+  "language": "en",
+  "markdown_path": "knowledge/research/research.md",
+  "docx_path": "documents/research/research.docx",
+  "knowledge_path": "knowledge/research/research.md",
+  "markdown_hash": "30c39b928f1883efc8f29c77e60afa8b41e01d46404abe23e257a9f0e5de56b7",
+  "docx_hash": "24bfe1aa61504025fb77b56af768cfa0f4f6df49053587c6776e21921a8ea425",
+  "source_urls": [
+    "https://www.iitj.ac.in/cete/en/blended-learning-and-flipped-classroom",
+    "https://www.iitj.ac.in/cete/en/game-based-learning-for-engineering-education",
+    "https://www.iitj.ac.in/cete/en/immersive-education",
+    "https://www.iitj.ac.in/cete/en/behavioral-studies",
+    "https://www.iitj.ac.in/cete/en/education-policy",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/cete/en/about-research",
+    "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/about-research"
+  ],
+  "unit_ids": [
+    "50c6e2fb089ba1e1",
+    "72692ccccb24dd66",
+    "338edcdb98c8c993",
+    "dce89a7173d4b49f",
+    "669433eedda65596",
+    "6c29328de67ff91c",
+    "926b041010290927",
+    "fa16edcb84a161a4"
+  ],
+  "aliases": [
+    "Research Platforms and Focus Areas",
+    "Research"
+  ],
+  "related_datasets": [
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

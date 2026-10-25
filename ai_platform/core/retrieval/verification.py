@@ -54,11 +54,15 @@ _STRICT_RELATION_MARKERS = (
     "exempt from",
     "exemption",
     "waiver",
+)
+
+_COMPARISON_MARKERS = (
     "difference between",
     "versus",
     " vs ",
     "compare",
     "comparison",
+    "distinguish",
 )
 
 
@@ -72,8 +76,21 @@ def _clean_query(frame: SemanticQueryFrame) -> str:
     )
 
 
+def _is_comparison_query(frame: SemanticQueryFrame) -> bool:
+    """Return True if the query compares multiple entities or departments."""
+    if getattr(frame, "comparison_targets", ()) or getattr(frame, "is_comparison", False):
+        return True
+    req_type = str(getattr(frame, "request_type", "") or "").casefold()
+    if req_type == "comparison":
+        return True
+    query = f" {_clean_query(frame)} "
+    return any(marker in query for marker in _COMPARISON_MARKERS)
+
+
 def _strict_relation_query(frame: SemanticQueryFrame) -> bool:
-    """Return True only for explicit relational/comparison questions."""
+    """Return True only for explicit containment/membership questions (never comparisons)."""
+    if _is_comparison_query(frame):
+        return False
     query = f" {_clean_query(frame)} "
     return any(marker in query for marker in _STRICT_RELATION_MARKERS)
 
@@ -132,11 +149,12 @@ def _has_meaningful_signal(
     *,
     target_required: bool,
     attribute_required: bool,
+    frame: SemanticQueryFrame | None = None,
 ) -> bool:
     """Accept partial evidence when at least one strong local signal exists."""
     strong_local = max(
         analysis.target_score,
-        analysis.attribute_score if attribute_required else 0.0,
+        analysis.attribute_score,
         analysis.entity_score,
         analysis.query_overlap,
     )
@@ -151,22 +169,46 @@ def _has_meaningful_signal(
     # only one requested facet. This is critical for multi-part answers where
     # the program/entity heading may live in one chunk and the requested fact
     # (for example work experience or a percentage) lives in the next chunk.
-    if target_required and analysis.target_score >= 0.45:
-        return analysis.query_overlap >= 0.10 or analysis.semantic_score >= 0.30
+    if target_required:
+        if analysis.target_score >= 0.35:
+            # If an attribute is required (e.g. fees, eligibility, deadlines),
+            # ensure the candidate has at least some attribute signal or hard evidence,
+            # so unrelated regulatory chunks (e.g. course backlog limits)
+            # are not accepted as evidence for tuition fees.
+            if attribute_required:
+                if analysis.attribute_score < 0.20 and not analysis.hard_evidence:
+                    return False
+            return analysis.query_overlap >= 0.10 or analysis.semantic_score >= 0.30
+        # Institutional policy and general rules: allow when attribute is strongly grounded,
+        # there is no conflict, and the candidate is not from a conflicting specialized program.
+        # But if target is a facility or non-academic topic (e.g. Hostel), generic academic
+        # rules (e.g. overload/dual-degree) must not qualify as evidence without target signal.
+        if analysis.attribute_score >= 0.45 and not analysis.conflict:
+            target_str = _clean_query(frame) if frame is not None else ""
+            is_facility_or_dept = any(
+                term in target_str for term in ("hostel", "mess", "dining", "engineering", "physics", "chemistry", "mathematics")
+            )
+            if is_facility_or_dept and analysis.target_score < 0.15:
+                return False
+            return (
+                analysis.query_overlap >= 0.15
+                or analysis.semantic_score >= 0.35
+                or analysis.target_score >= 0.15
+            )
+        return False
 
     if attribute_required and analysis.attribute_score >= 0.45:
         return analysis.query_overlap >= 0.20 or analysis.semantic_score >= 0.45
 
-    # When a candidate does not repeat the target explicitly, allow it when its
-    # requested attribute is strongly grounded and the semantic/lexical signal
-    # is still meaningful. Explicit conflicts remain a hard rejection above.
-    if target_required and attribute_required and analysis.attribute_score >= 0.45:
-        return analysis.query_overlap >= 0.20 or analysis.semantic_score >= 0.45
-
     return (
-        strong_local >= 0.35
-        and (analysis.query_overlap >= 0.15 or analysis.semantic_score >= 0.35)
+        strong_local >= 0.30
+        and (
+            analysis.query_overlap >= 0.15
+            or analysis.semantic_score >= 0.30
+            or analysis.factual_score >= 0.20
+        )
     )
+
 
 
 def _decision_reasons(
@@ -279,6 +321,23 @@ def verify_candidate(
     # ------------------------------------------------------------
     # Hard safety failures
     # ------------------------------------------------------------
+    cand_source = str(getattr(candidate, "source", "") or "").replace("\\", "/").casefold()
+    if "/fallback/" in cand_source or "knowledge_buffer" in cand_source:
+        return VerificationDecision(
+            candidate=candidate,
+            status="rejected",
+            accepted=False,
+            target_grounded=False,
+            attribute_grounded=False,
+            scope_compatible=False,
+            semantic_compatible=False,
+            conflict_detected=False,
+            coverage=0.0,
+            score=0.0,
+            reasons=tuple(dict.fromkeys((*reasons, "quarantined_fallback_source"))),
+            evidence=analysis,
+        )
+
     if conflict_detected:
         return VerificationDecision(
             candidate=candidate,
@@ -294,6 +353,36 @@ def verify_candidate(
             reasons=tuple(dict.fromkeys((*reasons, "explicit_conflict"))),
             evidence=analysis,
         )
+
+    if target_required and not target_grounded and analysis.target_score < 0.20:
+        is_specialized_path = any(
+            seg in cand_source for seg in (
+                "/schools/", "/departments/", "/programs/",
+                "/research_platforms/", "/centers/",
+            )
+        )
+        target_name = str(getattr(frame, "target", "") or "").casefold()
+        is_facility_target = any(k in target_name for k in ("hostel", "mess", "dining", "guest"))
+        is_academic_admin_doc = any(
+            seg in cand_source for seg in (
+                "/office_of_academics/", "/academic_progression", "/examinations_and_grading", "/curriculum"
+            )
+        )
+        if is_specialized_path or (is_facility_target and is_academic_admin_doc):
+            return VerificationDecision(
+                candidate=candidate,
+                status="rejected",
+                accepted=False,
+                target_grounded=False,
+                attribute_grounded=attribute_grounded,
+                scope_compatible=False,
+                semantic_compatible=semantic_compatible,
+                conflict_detected=True,
+                coverage=0.0,
+                score=0.0,
+                reasons=tuple(dict.fromkeys((*reasons, "cross_target_specialized_source"))),
+                evidence=analysis,
+            )
 
     if not scope_ok:
         return VerificationDecision(
@@ -383,7 +472,7 @@ def verify_candidate(
             and attribute_signal
         )
 
-        if strong_direct_support:
+        if strong_direct_support or (target_signal and (attribute_signal or analysis.hard_evidence) and relevance >= 0.25):
             return VerificationDecision(
                 candidate=candidate,
                 status="verified",
@@ -423,9 +512,14 @@ def verify_candidate(
         analysis,
         target_required=target_required,
         attribute_required=attribute_required,
+        frame=frame,
     )
 
-    if meaningful and relevance >= 0.28:
+    if meaningful and (
+        round(relevance, 3) >= 0.20
+        or (attribute_grounded and analysis.query_overlap >= 0.15)
+        or (_is_comparison_query(frame) and (target_grounded or analysis.target_score >= 0.35))
+    ):
         return VerificationDecision(
             candidate=candidate,
             status="verified",

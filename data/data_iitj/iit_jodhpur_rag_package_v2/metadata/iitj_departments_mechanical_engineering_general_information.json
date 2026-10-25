@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mechanical_engineering_general_information",
+  "title": "Mechanical Engineering \u2014 General Information",
+  "category": "departments/mechanical_engineering",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mechanical_engineering/general_information.md",
+  "docx_path": "documents/departments/mechanical_engineering/general_information.docx",
+  "knowledge_path": "knowledge/departments/mechanical_engineering/general_information.md",
+  "markdown_hash": "31913bc7a6015ab26bce2239fc032fa960f4ab37aa7f1ea374d0671398d2ee9a",
+  "docx_hash": "3bfb850db98db935fc1b061b4901c019cd342558180827b99677b291f29b28c4",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/Curriculum-of-the-MTech-before-2019-638772019194831520.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/PG-salient-features-of-specializations-638771976742762864.pdf",
+    "https://iitj.ac.in/admission-postgraduate-programs/en/advertisements",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/Guidelines-for-submission-of-Project-Report-for-MTech-Students-638771979333235810.pdf",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/advertisements",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/Brochure-for-MTech-program-Selfsponsored-in-Mechanical-Engineering-638771980623918395.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/mechanical-engineering/en/undergraduate-program",
+    "https://www.iitj.ac.in/mechanical-engineering/en/courses",
+    "https://www.iitj.ac.in/mechanical-engineering/en/postgraduate-program"
+  ],
+  "unit_ids": [
+    "062ffc2fdd4dba57",
+    "d4a4172a28ead033",
+    "bbb9f309201ddcd1",
+    "896e4a108233d30b",
+    "2e77cda3796b6c46",
+    "c73273b42a8a1c6a",
+    "09ddd3e5dd57aac3",
+    "8b1c72aa5f979748"
+  ],
+  "aliases": [
+    "Mechanical Engineering \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_energy_and_automotive_engineering_general_information",
+  "title": "Energy and Automotive Engineering \u2014 General Information",
+  "category": "departments/energy_and_automotive_engineering",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/energy_and_automotive_engineering/general_information.md",
+  "docx_path": "documents/departments/energy_and_automotive_engineering/general_information.docx",
+  "knowledge_path": "knowledge/departments/energy_and_automotive_engineering/general_information.md",
+  "markdown_hash": "c7e95668f4a84225c270a75886333bf8345f01b7b4ac045ac36711bfa027b872",
+  "docx_hash": "5710cb32b73b6ee31f6bd6055169b80731229081df6200ae4941875e50e1d258",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/enauto",
+    "https://www.iitj.ac.in/enauto/en/enauto",
+    "https://www.iitj.ac.in/enauto/en/mtech-in-energy-engineering"
+  ],
+  "unit_ids": [
+    "1f85652d6afda97c",
+    "cd945d1784a91aac",
+    "080168c770cc9264",
+    "ddc5a823aa13dc47",
+    "31f0f5b3bd530f7e",
+    "f87e9e096229ac37",
+    "6a6f5a6c4787c450",
+    "3cd43b39b4096e14"
+  ],
+  "aliases": [
+    "Energy and Automotive Engineering \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

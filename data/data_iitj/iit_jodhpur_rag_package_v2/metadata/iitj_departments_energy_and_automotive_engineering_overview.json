@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_energy_and_automotive_engineering_overview",
+  "title": "Energy and Automotive Engineering \u2014 Overview",
+  "category": "departments/energy_and_automotive_engineering",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/energy_and_automotive_engineering/overview.md",
+  "docx_path": "documents/departments/energy_and_automotive_engineering/overview.docx",
+  "knowledge_path": "knowledge/departments/energy_and_automotive_engineering/overview.md",
+  "markdown_hash": "53c3bb2431d77367823d03962cbc472199e15bcaa4cd53858141bc4cd896aecb",
+  "docx_hash": "7611b8ca10d190a1e4e1256d4dbdc11fb10101670b335cb86a96ea7a5c543e3d",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/enauto",
+    "https://www.iitj.ac.in/enauto/en/enauto"
+  ],
+  "unit_ids": [
+    "1f85652d6afda97c",
+    "cd945d1784a91aac",
+    "080168c770cc9264",
+    "ddc5a823aa13dc47",
+    "31f0f5b3bd530f7e",
+    "f87e9e096229ac37",
+    "6a6f5a6c4787c450",
+    "3cd43b39b4096e14"
+  ],
+  "aliases": [
+    "Energy and Automotive Engineering \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

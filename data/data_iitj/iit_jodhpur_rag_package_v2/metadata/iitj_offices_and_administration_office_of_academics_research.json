@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_academics_research",
+  "title": "Office of Academics \u2014 Research",
+  "category": "offices_and_administration/office_of_academics",
+  "subcategory": "research",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_academics/research.md",
+  "docx_path": "documents/offices_and_administration/office_of_academics/research.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_academics/research.md",
+  "markdown_hash": "b3f1f0511d4e8dcf487daf645c0bae6fc77211c6f0357672d0ee43179697f700",
+  "docx_hash": "459deca60c10de5c8e8ceb35866ac80dc0bb900bd2d1888dce831d79bedaf27f",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.2%20Change%20of%20Research%20Supervisor",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "Office of Academics \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "administrative_offices.json",
+    "research_facilities.json",
+    "research_platforms.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

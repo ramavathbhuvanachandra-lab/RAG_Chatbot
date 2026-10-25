@@ -8,8 +8,9 @@ the candidate evidence.
 
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass
+from functools import lru_cache
+import re
 from typing import Iterable, Sequence
 
 from ai_platform.core.query.models import SemanticQueryFrame
@@ -98,29 +99,34 @@ class EvidenceAnalysis:
         }
 
 
+@lru_cache(maxsize=4096)
 def normalize(text: str) -> str:
     value = str(text or "").casefold().replace("_", " ").replace("-", " ")
     value = re.sub(r"[^a-z0-9\u0900-\u097f\s]", " ", value)
     return re.sub(r"\s+", " ", value).strip()
 
 
+@lru_cache(maxsize=4096)
 def tokens(text: str) -> tuple[str, ...]:
     value = normalize(text)
     return tuple(value.split()) if value else ()
 
 
-def meaningful_tokens(text: str) -> set[str]:
-    return {t for t in tokens(text) if len(t) >= 2 and t not in STOP_WORDS}
+@lru_cache(maxsize=4096)
+def meaningful_tokens(text: str) -> frozenset[str]:
+    return frozenset(t for t in tokens(text) if len(t) >= 2 and t not in STOP_WORDS)
 
 
+@lru_cache(maxsize=4096)
 def compact(text: str) -> str:
     return re.sub(r"[^a-z0-9]", "", normalize(text))
 
 
-def _singular_forms(token: str) -> set[str]:
+@lru_cache(maxsize=4096)
+def _singular_forms(token: str) -> frozenset[str]:
     value = normalize(token)
     if not value:
-        return set()
+        return frozenset()
     forms = {value}
     if value.endswith("ies") and len(value) > 4:
         forms.add(value[:-3] + "y")
@@ -130,7 +136,31 @@ def _singular_forms(token: str) -> set[str]:
         forms.add(value[:-1])
     if not value.endswith("s") and len(value) > 2:
         forms.add(value + "s")
-    return forms
+    if value.endswith("ing") and len(value) > 5:
+        forms.add(value[:-3])
+        forms.add(value[:-3] + "e")
+    if value.endswith("ed") and len(value) > 4:
+        forms.add(value[:-2])
+        forms.add(value[:-1])
+    if value in {"exam", "exams", "examination", "examinations"}:
+        forms.update({"exam", "exams", "examination", "examinations"})
+    return frozenset(forms)
+
+
+@lru_cache(maxsize=4096)
+def _extract_target_str(target_val: Any) -> str:
+    if not target_val:
+        return ""
+    if hasattr(target_val, "text"):
+        return str(target_val.text or "").strip()
+    if hasattr(target_val, "name"):
+        return str(target_val.name or "").strip()
+    s = str(target_val).strip()
+    if s.startswith("Target(") and "text=" in s:
+        m = re.search(r"text=['\"]([^'\"]+)['\"]", s)
+        if m:
+            return m.group(1).strip()
+    return s
 
 
 def _token_ratio(query: str, text: str) -> float:
@@ -156,6 +186,14 @@ def _phrase_or_ratio(phrase: str, text: str) -> float:
     text_compact = compact(text_n)
     if phrase_compact and phrase_compact in text_compact:
         return 1.0
+    # Short degree acronyms and codes (<= 6 chars, e.g. btech, mtech, phd, msc, bsc)
+    # must match as full compact units or singular/plural variants, not via partial
+    # sub-token overlap (which causes b.tech to falsely match m.tech via "tech").
+    if phrase_compact and len(phrase_compact) <= 6:
+        forms = _singular_forms(phrase_compact)
+        if any(f in text_compact for f in forms):
+            return 1.0
+        return 0.0
     q = meaningful_tokens(phrase_n)
     if not q:
         return 0.0
@@ -197,11 +235,25 @@ def _candidate_text(candidate: RetrievalCandidate) -> str:
     return str(getattr(getattr(candidate, "document", None), "page_content", "") or "").strip()
 
 
+def _candidate_source(candidate: RetrievalCandidate) -> str:
+    src = str(getattr(candidate, "source", "") or "")
+    if not src:
+        doc = getattr(candidate, "document", None)
+        meta = getattr(doc, "metadata", {}) or {}
+        src = str(meta.get("source", "") or "")
+    return src
+
+
+@lru_cache(maxsize=128)
 def _target_aliases(frame: SemanticQueryFrame) -> tuple[str, ...]:
     values: list[str] = []
-    target = str(getattr(frame, "target", "") or "").strip()
+    target = _extract_target_str(getattr(frame, "target", ""))
     if target:
         values.append(target)
+    for ct in getattr(frame, "comparison_targets", ()) or ():
+        ct_str = _extract_target_str(ct)
+        if ct_str:
+            values.append(ct_str)
 
     entities = getattr(frame, "entities", ()) or ()
     for entity in entities:
@@ -227,11 +279,18 @@ def _target_aliases(frame: SemanticQueryFrame) -> tuple[str, ...]:
     return tuple(out)
 
 
+@lru_cache(maxsize=128)
 def _attribute_phrases(frame: SemanticQueryFrame) -> tuple[str, ...]:
     values: list[str] = []
+    target_str = _extract_target_str(getattr(frame, "target", ""))
+    target_norm = normalize(target_str) if target_str else ""
     for facet in getattr(frame, "facets", ()) or ():
+        if getattr(facet, "name", "") == "target":
+            continue
         value = str(getattr(facet, "value", "") or "").strip()
         if value:
+            if target_norm and normalize(value) == target_norm:
+                continue
             values.append(value)
     for value in getattr(frame, "qualifiers", ()) or ():
         if str(value).strip():
@@ -239,7 +298,7 @@ def _attribute_phrases(frame: SemanticQueryFrame) -> tuple[str, ...]:
     request_type = normalize(str(getattr(frame, "request_type", "") or ""))
     values.extend(REQUEST_TERMS.get(request_type, ()))
 
-    target_tokens = meaningful_tokens(str(getattr(frame, "target", "") or ""))
+    target_tokens = meaningful_tokens(_extract_target_str(getattr(frame, "target", "")))
     query_words = meaningful_tokens(
         " ".join(
             [
@@ -273,6 +332,7 @@ def _target_match(frame: SemanticQueryFrame, candidate: RetrievalCandidate, unit
         return 0.0
 
     text_score = max((_phrase_or_ratio(alias, _candidate_text(candidate)) for alias in aliases), default=0.0)
+    source_score = max((_phrase_or_ratio(alias, _candidate_source(candidate)) for alias in aliases), default=0.0)
     meaning_values = _meaning_values(candidate)
     meaning_score = max(
         (_phrase_or_ratio(alias, " ".join(meaning_values)) for alias in aliases),
@@ -282,7 +342,7 @@ def _target_match(frame: SemanticQueryFrame, candidate: RetrievalCandidate, unit
         (_phrase_or_ratio(alias, unit) for alias in aliases for unit in units),
         default=0.0,
     )
-    return max(text_score, unit_score, 0.95 * meaning_score)
+    return max(text_score, unit_score, source_score, 0.95 * meaning_score)
 
 
 def _attribute_match(frame: SemanticQueryFrame, candidate: RetrievalCandidate, units: Sequence[str]) -> float:
@@ -327,13 +387,15 @@ def _local_relation(frame: SemanticQueryFrame, candidate: RetrievalCandidate, un
         return 0.0, ()
 
     supporting: list[str] = []
+    source = _candidate_source(candidate)
+    source_target_match = max((_phrase_or_ratio(a, source) for a in aliases), default=0.0) >= 0.80
 
     # Strongest proof: the target and at least one requested facet occur in the
-    # same local evidence unit.
+    # same local evidence unit (or target is authoritative in candidate source).
     for unit in units:
         target_here = max((_phrase_or_ratio(a, unit) for a in aliases), default=0.0)
         attr_here = max((_phrase_or_ratio(p, unit) for p in attributes), default=0.0)
-        if target_here >= 0.80 and attr_here >= 0.70:
+        if (target_here >= 0.80 or source_target_match) and attr_here >= 0.70:
             supporting.append(unit)
     if supporting:
         return 1.0, tuple(supporting[:4])
@@ -454,7 +516,7 @@ def analyze_candidate(frame: SemanticQueryFrame, candidate: RetrievalCandidate) 
 
 
 def is_placeholder_target(frame: SemanticQueryFrame) -> bool:
-    return normalize(str(getattr(frame, "target", "") or "")) in PLACEHOLDER_TARGETS
+    return normalize(_extract_target_str(getattr(frame, "target", ""))) in PLACEHOLDER_TARGETS
 
 
 def requires_target(frame: SemanticQueryFrame) -> bool:

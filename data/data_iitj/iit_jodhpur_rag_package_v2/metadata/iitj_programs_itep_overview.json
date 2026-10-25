@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_programs_itep_overview",
+  "title": "Integrated Teacher Education Programme (ITEP)",
+  "category": "programs/itep",
+  "subcategory": "overview",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/programs/itep/overview.md",
+  "docx_path": "documents/programs/itep/overview.docx",
+  "knowledge_path": "knowledge/programs/itep/overview.md",
+  "markdown_hash": "67926d29395ef9cfb156e2032c5cf669ab8ed37d59b55eb54bd9145bbee14a19",
+  "docx_hash": "e362156c64974854b9aea342dd423d0b2132581ebeeceae0b4c670beba8eb7ff",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/itep",
+    "https://iitj.ac.in/itep/en/admissions"
+  ],
+  "unit_ids": [
+    "18392754dcb16c86",
+    "a46873469eda24b3",
+    "a22a59d0db03ec97",
+    "5abdea570464f8ca",
+    "3076ecf7f78709a1"
+  ],
+  "aliases": [
+    "Integrated Teacher Education Programme (ITEP)",
+    "Overview"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [
+    "claim_tuition_itep_2026",
+    "claim_itep_admission_route"
+  ],
+  "conflict_ids": [
+    "CONF-IITJ-001"
+  ],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "RECONCILED"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_management_and_entrepreneurship_research",
+  "title": "School of Management and Entrepreneurship \u2014 Research",
+  "category": "schools/management_and_entrepreneurship",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/management_and_entrepreneurship/research.md",
+  "docx_path": "documents/schools/management_and_entrepreneurship/research.docx",
+  "knowledge_path": "knowledge/schools/management_and_entrepreneurship/research.md",
+  "markdown_hash": "c420c6577359827222685ee932a7ca51780345f9484f342952d4337e7e5f595d",
+  "docx_hash": "4376a6112cadd9d4f3eacd124b64d9aae8fb5622d136e64e9d3974fec1c62f51",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/schools/en/phd-program"
+  ],
+  "unit_ids": [
+    "b709831e735bd8e8",
+    "40cdeeed284b5eb6",
+    "ada918af69eb8b58",
+    "00ad8cabd08c8507"
+  ],
+  "aliases": [
+    "School of Management and Entrepreneurship \u2014 Research",
+    "Research",
+    "SME",
+    "SME IIT Jodhpur",
+    "School of Management",
+    "Tech MBA"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "fees_and_scholarships.json",
+    "placements_and_careers.json",
+    "research_facilities.json",
+    "research_platforms.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

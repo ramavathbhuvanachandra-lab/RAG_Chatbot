@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_management_and_entrepreneurship_curriculum",
+  "title": "School of Management and Entrepreneurship \u2014 Curriculum",
+  "category": "schools/management_and_entrepreneurship",
+  "subcategory": "curriculum",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/schools/management_and_entrepreneurship/curriculum.md",
+  "docx_path": "documents/schools/management_and_entrepreneurship/curriculum.docx",
+  "knowledge_path": "knowledge/schools/management_and_entrepreneurship/curriculum.md",
+  "markdown_hash": "fdedfcc501e438bcd9a1864bc29fa54bbf17ff9909201307f3b4a9c6582c68e5",
+  "docx_hash": "4b78f274951c718d94e0209d9c9c334884576ece7982ec9b0042cba7cf2f753b",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/schools/en/phd-program"
+  ],
+  "unit_ids": [
+    "b709831e735bd8e8",
+    "40cdeeed284b5eb6",
+    "ada918af69eb8b58",
+    "00ad8cabd08c8507"
+  ],
+  "aliases": [
+    "School of Management and Entrepreneurship \u2014 Curriculum",
+    "Curriculum",
+    "SME",
+    "SME IIT Jodhpur",
+    "School of Management",
+    "Tech MBA"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "fees_and_scholarships.json",
+    "placements_and_careers.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

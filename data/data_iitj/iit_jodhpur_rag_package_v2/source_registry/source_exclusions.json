@@ -1,0 +1,4002 @@
+[
+  {
+    "unit_id": "fca68228d84db15f",
+    "source_url": "https://www.iitj.ac.in/cete/en/5-day-stem-teacher-training-program-for-jawahar-navodaya-vidyalaya",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "369ba7bd61a817f7",
+    "source_url": "https://www.iitj.ac.in/rcrice/en/About",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "9ac2cb56547d03fe",
+    "source_url": "https://www.iitj.ac.in/rcrice/en/About",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "4d1abccb1efe79db",
+    "source_url": "https://www.iitj.ac.in/rcrice/en/About",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "188a753f29e0a849",
+    "source_url": "https://www.iitj.ac.in/rcrice/en/About",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "71d21c0f584baffd",
+    "source_url": "https://www.iitj.ac.in/vtu/en/about",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "eee7bac6eb2408f7",
+    "source_url": "https://www.iitj.ac.in/m/Index/35000E2B-C785-46D0-96EA-894E3849B68A?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3c7f5ea113ae9b2d",
+    "source_url": "https://www.iitj.ac.in/tisc/en/about",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4b3318feb88b369b",
+    "source_url": "https://www.iitj.ac.in/suraj/en/about",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2773709927f1ef99",
+    "source_url": "https://www.iitj.ac.in/m/Index/6633D53A-430B-4307-98C1-4939C58BB1CB?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f4fd150e088e08c0",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/About-CoEs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f79e4365a919990d",
+    "source_url": "https://www.iitj.ac.in/office-of-director/en/about-director",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "fec1440994a19e5d",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/facilities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "79894999bc9ca48f",
+    "source_url": "https://www.iitj.ac.in/bachelor-of-technology/en/about-faqs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e2c2eafd19476e70",
+    "source_url": "https://www.iitj.ac.in/m/Index/A524D520-FFFB-4C8A-9327-ECD4E4A95FC1?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ef173efcce9159c7",
+    "source_url": "https://www.iitj.ac.in/unnat-bharat-abhiyan/en/about-pi",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "26fd4724724d23a4",
+    "source_url": "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/about-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f88d4897ad9788e0",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/about-recruitment",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "26d3779c5568b561",
+    "source_url": "https://www.iitj.ac.in/unnat-bharat-abhiyan/en/about-rci",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "33d6f1fd4f91abb6",
+    "source_url": "https://www.iitj.ac.in/aero/en/about-research",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3970d9593965de86",
+    "source_url": "https://www.iitj.ac.in/mechanical-engineering/en/about-research",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "08de81af90085ea7",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/about-research",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6ec68818806c0b5b",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/about-research",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "77e334e86f3eb103",
+    "source_url": "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/about-research",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8831a1b14c802a00",
+    "source_url": "https://www.iitj.ac.in/cete/en/about-research",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "60965d5176573f36",
+    "source_url": "https://www.iitj.ac.in/cete/en/about-research",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "b6c5e2378765057a",
+    "source_url": "https://www.iitj.ac.in/cete/en/about-research",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4b57d9076cb8e27d",
+    "source_url": "https://www.iitj.ac.in/dh/en/about-research-2",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "3f24a8815012accb",
+    "source_url": "https://www.iitj.ac.in/dh/en/about-research-2",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "852a5c72e7ab717c",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/about-rutag",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f7aa5a3ce888caae",
+    "source_url": "https://www.iitj.ac.in/m/Index/5DA28BD5-1E55-40F3-ACD5-53E0C401937D?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "bbcfeca71a878a8e",
+    "source_url": "https://www.iitj.ac.in/schools/en/about-sme",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "61f541c0a3dd6b99",
+    "source_url": "https://www.iitj.ac.in/m/Index/07CEE012-BA5E-48DE-BA93-2BEA7BE2941F?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "20132febfebdaa6b",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/about-sustainability-plan",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "d344c48846be18b2",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/about-sustainability-plan",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "e7a69ed35d29ef51",
+    "source_url": "https://www.iitj.ac.in/economics/en/about-the-department",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7e56815728c91af2",
+    "source_url": "https://www.iitj.ac.in/hi_iitj/en/about",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f8199904043d0ec2",
+    "source_url": "https://www.iitj.ac.in/m/Index/574fcf4a-d6fd-43a1-95de-6870fd2ea28b",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ad67b4522811b8a7",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-calendar",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "96f4e11b9f52b87e",
+    "source_url": "https://www.iitj.ac.in/m/Index/574FCF4A-D6FD-43A1-95DE-6870FD2EA28B?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f5b7dd9e97ed5eab",
+    "source_url": "https://www.iitj.ac.in/m/Index/D587AB8C-A8AF-4BC3-AE5B-A6C028978B93?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "869db2937b0b950e",
+    "source_url": "https://www.iitj.ac.in/m/Index/2CFE86BC-A9C7-4C7A-B6BE-E4BEBA51F3AC?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a5753465edc3a26a",
+    "source_url": "https://www.iitj.ac.in/m/Index/5F23D74C-3369-413E-A461-7142AC6BF0C2?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9b62b2a41d96f4f0",
+    "source_url": "https://www.iitj.ac.in/m/Index/DB433C38-319E-4BC0-95FC-1D221E05ADC6?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2ccb634d7de7f8e9",
+    "source_url": "https://www.iitj.ac.in/m/Index/949500AB-628C-40F2-A6DA-60C8A46311A7?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a5a574f39c56ee58",
+    "source_url": "https://www.iitj.ac.in/m/Index/932B23EC-78F4-4E47-89ED-C5C08FFEB5BC?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "be28de0fa456b730",
+    "source_url": "https://www.iitj.ac.in/m/Index/2E57775F-D68F-4B57-9458-127782BBC449?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ce4ff736107b57bd",
+    "source_url": "https://www.iitj.ac.in/m/Index/26A3CC74-FD24-46EA-A145-10BA45A6F33B?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "24509db3a5bb8ea8",
+    "source_url": "https://www.iitj.ac.in/m/Index/F8D2CAF7-45F1-4E8E-A2E7-3CC36E491BFE?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f0dc0ce20d36f5a4",
+    "source_url": "https://www.iitj.ac.in/m/Index/F3ED0D5B-461E-440A-8357-08BC37D5C956?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5622c26bc4a71024",
+    "source_url": "https://www.iitj.ac.in/m/Index/59711C87-B132-4084-BC4E-C36A9BD38407?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "fcb1e628a96387a8",
+    "source_url": "https://www.iitj.ac.in/m/Index/6207FCC1-6226-483D-B9A2-329F80C18D35?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "87b2be876064ad21",
+    "source_url": "https://www.iitj.ac.in/m/Index/66B9EE5C-AD7C-4FD3-A746-5FB7EE0318F7?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0e8ddc3c5cbf3b8b",
+    "source_url": "https://www.iitj.ac.in/m/Index/5D625E56-DD33-4145-A885-9CF0816E0678?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "42436f11b99dfe44",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/regulations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: nss"
+  },
+  {
+    "unit_id": "8f5fbc8ec1df02dc",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/regulations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: thesis"
+  },
+  {
+    "unit_id": "ade13982f7c63b6c",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/regulations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Primary identity is news/event/award/newsletter/volatile activity."
+  },
+  {
+    "unit_id": "ac5630e6e6d31f98",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/regulations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: thesis"
+  },
+  {
+    "unit_id": "cd8254ea1b4b25da",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/regulations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9a774aaff57762e8",
+    "source_url": "https://www.iitj.ac.in/bachelor-of-technology/en/academic-research-facilities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ee2f8f6b813d777d",
+    "source_url": "https://www.iitj.ac.in/crf/en/academic-users",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5ad1ea0128e96e8b",
+    "source_url": "https://www.iitj.ac.in/m/Index/3D1303DA-B189-4443-8E0E-4ABE2E50FFA1?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "78d4c2725cd7d7ff",
+    "source_url": "https://www.iitj.ac.in/m/Index/EE1BDF3D-AD2E-4F55-A9D2-EB34941906EC?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ffb2781113f721ff",
+    "source_url": "https://www.iitj.ac.in/m/Index/574BF489-88B6-4EB4-9831-4441A0E79981?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2e6cb711c352c975",
+    "source_url": "https://www.iitj.ac.in/m/Index/593F6114-9BA2-4092-BD0D-4C668E78C4CC?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ba065994a99f3074",
+    "source_url": "https://www.iitj.ac.in/m/Index/2CF70E01-2184-4D78-BB21-526FDCBE14C3?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "45f635d1ed56f19c",
+    "source_url": "https://www.iitj.ac.in/dora/en/activities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: fund raiser campaign"
+  },
+  {
+    "unit_id": "00c62852e683ba4c",
+    "source_url": "https://www.iitj.ac.in/main/en/acts-statutes",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "a380fa2e3be136e3",
+    "source_url": "https://www.iitj.ac.in/main/en/acts-statutes",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "eecb188fe76555ec",
+    "source_url": "https://www.iitj.ac.in/main/en/adjunct-faculty-members",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7762ca3dbc7ec6bd",
+    "source_url": "https://www.iitj.ac.in/m/Index/75AB8EFC-DBC4-4BE7-985B-50A3DC0CF2CD?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "bcb5f3916f662304",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/administration",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "052f1c2afefe8aff",
+    "source_url": "https://www.iitj.ac.in/main/en/administrative-contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "47eb881e5fe7c75b",
+    "source_url": "https://www.iitj.ac.in/main/en/administrative-contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "60a08d15a27adf02",
+    "source_url": "https://www.iitj.ac.in/main/en/administrative-contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "95188579d5429f68",
+    "source_url": "https://www.iitj.ac.in/m/Index/256212EA-2FC1-4712-BAC8-3B1FA9870CE3?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f16a5a3dc21b1926",
+    "source_url": "https://www.iitj.ac.in/m/Index/F200B044-4573-4C4A-A7FB-D3E86A060539?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d46bd14df81e650b",
+    "source_url": "https://www.iitj.ac.in/m/Index/D703241F-8F53-4F58-A749-C1DCF394E0A6?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8d3497f5b9b6e1d8",
+    "source_url": "https://www.iitj.ac.in/main/en/admission-links",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "10db2773cca17bbc",
+    "source_url": "https://www.iitj.ac.in/admission-postgraduate-programs/en/Admission-to-Postgraduate-Programs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6771c6c11f819e4e",
+    "source_url": "https://www.iitj.ac.in/admission-postgraduate-programs/en/admission-to-postgraduate-programs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "436881c3a81adf6e",
+    "source_url": "https://www.iitj.ac.in/m/Index/7B1B9D8D-C52B-4AF9-80FD-CBE275F8CBED?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "46fe96196216bbda",
+    "source_url": "https://www.iitj.ac.in/itep/en/admissions",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5aaf7e070a19b5a9",
+    "source_url": "https://www.iitj.ac.in/m/Index/50AC7B35-D6D7-43FA-9D38-4D1DC698C170?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "eac7515e95350ed5",
+    "source_url": "https://www.iitj.ac.in/m/Index/84EF8F1A-3FF6-4AF1-AD38-2913EC4FBA09?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "59e23c37f76685b5",
+    "source_url": "https://www.iitj.ac.in/dh/en/admissions",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "896e4a108233d30b",
+    "source_url": "https://www.iitj.ac.in/admission-postgraduate-programs/en/advertisements",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "817e6079fd681803",
+    "source_url": "https://www.iitj.ac.in/main/en/advisors",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "338359c20304d357",
+    "source_url": "https://www.iitj.ac.in/main/en/advisors",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "96ca74c7c103c5b7",
+    "source_url": "https://www.iitj.ac.in/aero",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f56a96771d495223",
+    "source_url": "https://www.iitj.ac.in/aero/en/aero",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1bf9c578e487e296",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/AI-and-Economics?ep=fw",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c75e494789cb004d",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/AI-and-Ethics?ep=fw",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "75165630a46f4121",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/AI-driven-Healthcare?ep=fw",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "78fab6a61291aaf8",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/ai-and-ds-ecosystem",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "02f836466f69645a",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/AI-for-Technology?ep=fw",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6d9e73ae17e4ad86",
+    "source_url": "https://www.iitj.ac.in/aiot-fab-facility/en/facilities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "75d497ee3d12166a",
+    "source_url": "https://www.iitj.ac.in/economics/en/all-featured-news",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "bc523cf70bede1e8",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/alumni",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9248225c6d38f82b",
+    "source_url": "https://www.iitj.ac.in/school-of-liberal-arts/en/alumni",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "099a843b3d9463bd",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/alumni",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "bf2b54464356adb4",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/alumni",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d1bc88c28d84ce24",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "94f8908611cbaf17",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "57bed80897119ac3",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "0ee260e92f082dc1",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "b1468f8c90ee0878",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "a6484c046d23d5ba",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "3b4fe8652941dea2",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "e2980e72c77b0095",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "6ade52cf089c012a",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "5b48c0f26da9670d",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "5b82e8727b36c4e9",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "41e3941b6fe4e8fe",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "c79ba730d85de732",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "87b2f50a6eba423e",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "255002d153b28233",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "6a9a62702ec40cf5",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "1ba778c13784fd69",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "2066d57107cb0212",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "ffdc698151885743",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "3c01251c5e8b6892",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "1785b4b2a8918b8f",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: alumni global presence"
+  },
+  {
+    "unit_id": "d89671b9b8af0370",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/alumni-global-presence",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a2b6e53f4e841f13",
+    "source_url": "https://www.iitj.ac.in/faculty-positions/en/applicant's-qualifications",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "87269ed5403788a4",
+    "source_url": "https://www.iitj.ac.in/dia-coe/en/atdw",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4e509bf6ac48f96c",
+    "source_url": "https://www.iitj.ac.in/bachelor-of-technology/en/apply-online",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7f4c3e54595ef354",
+    "source_url": "https://www.iitj.ac.in/office-of-establishment-nf/en/establishment-nf-recruitment",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "734ccfb714443526",
+    "source_url": "https://www.iitj.ac.in/winter-school/en/Archive",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "30796717cf370678",
+    "source_url": "https://www.iitj.ac.in/dia-coe/en/aiwt",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "332c58dd2f5d3d0b",
+    "source_url": "https://www.iitj.ac.in/aiot-fab-facility/en/aiot-fab-facility",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "b052ad24fd7045cd",
+    "source_url": "https://www.iitj.ac.in/centre-for-continuing-education/en/assets",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "afbbd4bc425bf219",
+    "source_url": "https://www.iitj.ac.in/dora/en/awards",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Primary identity is news/event/award/newsletter/volatile activity."
+  },
+  {
+    "unit_id": "3bd754820e3d5332",
+    "source_url": "https://www.iitj.ac.in/dora/en/awards",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "35bccb8ab51ef52c",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/bs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "21b016743370540a",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/b.tech.",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0a31abd7971e7523",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/btech-student",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Personal, student, alumni, roster, result, or project-record content."
+  },
+  {
+    "unit_id": "e80f531356d433d7",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/btech-student",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Personal, student, alumni, roster, result, or project-record content."
+  },
+  {
+    "unit_id": "84b4297e200d6922",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/btech-student",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Personal, student, alumni, roster, result, or project-record content."
+  },
+  {
+    "unit_id": "925a4be1c999e1bc",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/btech-student",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0030ea9836124c67",
+    "source_url": "https://www.iitj.ac.in/Bachelor-of-Technology/en/Bachelor-of-Technology",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "71d50688eab4a453",
+    "source_url": "https://www.iitj.ac.in/Bachelor-of-Technology/en/Bachelor-of-Technology",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "06b08a11162c5911",
+    "source_url": "https://www.iitj.ac.in/bachelor-of-technology/en/bachelor-of-technology",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "160d81c5cd7be7d3",
+    "source_url": "https://www.iitj.ac.in/bachelor-of-technology/en/bachelor-of-technology",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "993cf8926aada1f1",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Behavior,-Cognition-and-Brain?ep=fw",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "fa16edcb84a161a4",
+    "source_url": "https://www.iitj.ac.in/cete/en/behavioral-studies",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4c7f87be78ba3c89",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "04ec3bda464b3c5e",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9e1107ecd456083f",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/bioscience-bioengineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "935bac843968325f",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/bioscience-bioengineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "50c6e2fb089ba1e1",
+    "source_url": "https://www.iitj.ac.in/cete/en/blended-learning-and-flipped-classroom",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: ssr"
+  },
+  {
+    "unit_id": "72692ccccb24dd66",
+    "source_url": "https://www.iitj.ac.in/cete/en/blended-learning-and-flipped-classroom",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: ssr"
+  },
+  {
+    "unit_id": "338edcdb98c8c993",
+    "source_url": "https://www.iitj.ac.in/cete/en/blended-learning-and-flipped-classroom",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: ssr"
+  },
+  {
+    "unit_id": "dce89a7173d4b49f",
+    "source_url": "https://www.iitj.ac.in/cete/en/blended-learning-and-flipped-classroom",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c7ae73ee00e62863",
+    "source_url": "https://www.iitj.ac.in/m/Index/9da8544e-d5ab-45e2-9f65-ae73bf62b83f",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "fe35be1fff1bb3c5",
+    "source_url": "https://www.iitj.ac.in/m/Index/9DA8544E-D5AB-45E2-9F65-AE73BF62B83F?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d46dd835d36fb01f",
+    "source_url": "https://www.iitj.ac.in/aiot-fab-facility/en/usage-charges",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8de2bee0c0fe721b",
+    "source_url": "https://www.iitj.ac.in/crf/en/booking-for-external-sample",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f3a2302c1ec29474",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/Booking-for-External-Sample",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "6ec07cd519b86ef8",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/Booking-for-External-Sample",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "5b271b01727f8cb3",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/Booking-for-External-Sample",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "cef054ba199fa401",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/Booking-for-External-Sample",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c67b4c7778e2a43f",
+    "source_url": "https://www.iitj.ac.in/crf/en/booking-for-internal-sample",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e5656df0c4b48cbb",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/internal-sample",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1f168eef7a148754",
+    "source_url": "https://www.iitj.ac.in/m/Index/EA28625B-732A-4ABF-8B2E-619E73E61DC3?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c1bbd421aee33910",
+    "source_url": "https://www.iitj.ac.in/m/Index/F197AA9A-9131-42BA-B39C-BE6201DA42E3?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e4193b135d31da66",
+    "source_url": "https://www.iitj.ac.in/office-of-registrar/en/broad-functions-of-the-office-of-registrar",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f54e866a4c2bfb15",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/btech",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4ab9052ebc320010",
+    "source_url": "https://www.iitj.ac.in/main/en/building-works-committee",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "70279e0b8992276b",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/c-ganga",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "36f2ffc7d54d7fe1",
+    "source_url": "https://www.iitj.ac.in/electrical-engineering/en/calender",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ef6cb5912c9a3f32",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/campus",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ada5a107b8d455d8",
+    "source_url": "https://www.iitj.ac.in/main/en/campus-infrastructure",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6d27e21eede00f45",
+    "source_url": "https://www.iitj.ac.in/office-of-students/en/campus-life",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "719d3e48b7ff60ac",
+    "source_url": "https://www.iitj.ac.in/bachelor-of-technology/en/campus-life-@-iitj",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0e3ecd4a0683612b",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/campus-sustainability",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "9674d1c0e7a3e731",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/campus-sustainability",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "356546fa9c706e51",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/campus-sustainability",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6556cd356c919e9d",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/campus-sustainability-projects-with-oie",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "cb900e9a573c8dab",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/campus-sustainability-projects-with-oie",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "89cb75b35ccb65eb",
+    "source_url": "https://www.iitj.ac.in/manekshaw-centre/en/capacity-building",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c9d8394a45e51ef4",
+    "source_url": "https://www.iitj.ac.in/cdh/en/capacity-building",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "e4e69ebe8cb4907e",
+    "source_url": "https://www.iitj.ac.in/cdh/en/capacity-building",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8aa7ed245c34d6f4",
+    "source_url": "https://www.iitj.ac.in/schools/en/cat-cut-offs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "12be8420f029b6d7",
+    "source_url": "https://www.iitj.ac.in/iot",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "38e7d4e56cb2c3f7",
+    "source_url": "https://www.iitj.ac.in/iot",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "385a660fac69d143",
+    "source_url": "https://www.iitj.ac.in/iot/en/Internet-of-Things",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "fc11c8e8f89a3f72",
+    "source_url": "https://www.iitj.ac.in/iot/en/Internet-of-Things",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "791e34af8dc75fc8",
+    "source_url": "https://www.iitj.ac.in/cete/en/cete",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "2fb15f22fe60bed5",
+    "source_url": "https://www.iitj.ac.in/cete/en/cete",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e3e74c3f174e9eed",
+    "source_url": "https://www.iitj.ac.in/m/Index/main-centers?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "841b0ab67d90e999",
+    "source_url": "https://www.iitj.ac.in/m/Index/AB99D4DA-35B6-40F6-BCD5-B549C8B309C1?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7a15c3b89588d5ee",
+    "source_url": "https://www.iitj.ac.in/m/Index/ab99d4da-35b6-40f6-bcd5-b549c8b309c1",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "35e0ca0724bbd0f3",
+    "source_url": "https://www.iitj.ac.in/crf/en/crf",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "76dda6cd7206136f",
+    "source_url": "https://www.iitj.ac.in/centre-for-continuing-education/en/centre-for-continuing-education",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2dcb3baa9d755334",
+    "source_url": "https://www.iitj.ac.in/cdh",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "76d320d647c85042",
+    "source_url": "https://www.iitj.ac.in/cdh",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "861dc6e3779a1278",
+    "source_url": "https://www.iitj.ac.in/cdh",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "63f0bcd1f63ca08a",
+    "source_url": "https://www.iitj.ac.in/cdh/en/Centre-for-Digital-Health",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "5b93f384fc90a1b3",
+    "source_url": "https://www.iitj.ac.in/cdh/en/Centre-for-Digital-Health",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "940fdae85a0cf041",
+    "source_url": "https://www.iitj.ac.in/cdh/en/Centre-for-Digital-Health",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8a9412f3f3cf572d",
+    "source_url": "https://www.iitj.ac.in/Centre-of-Excellence-on-Arts-and-Digital-Immersion/en/Centre-of-Excellence-on-Arts-and-Digital-Immersion",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "86b8e3f7db5306b2",
+    "source_url": "https://www.iitj.ac.in/Centre-of-Excellence-on-Arts-and-Digital-Immersion/en/Centre-of-Excellence-on-Arts-and-Digital-Immersion",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "244a1988f873a3a8",
+    "source_url": "https://www.iitj.ac.in/Centre-of-Excellence-on-Arts-and-Digital-Immersion/en/Centre-of-Excellence-on-Arts-and-Digital-Immersion",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "dba56e6c3ad88ec4",
+    "source_url": "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/centre-of-excellence-on-arts-and-digital-immersion",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "b61a8666960e4c51",
+    "source_url": "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/centre-of-excellence-on-arts-and-digital-immersion",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "374af77be011ee3f",
+    "source_url": "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/centre-of-excellence-on-arts-and-digital-immersion",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3dc3b75a58f9e754",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/centre-offerings",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f334354124790e37",
+    "source_url": "https://www.iitj.ac.in/cete/en/cete-faculty-and-student-colloquium",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "302480420e8c263f",
+    "source_url": "https://www.iitj.ac.in/main/en/chairman",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8a35494eab659139",
+    "source_url": "https://www.iitj.ac.in/main/en/chairpersons-coordinators-of-committees",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1a154b803c4ed9f9",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: latest news"
+  },
+  {
+    "unit_id": "777702499843825f",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4b453f744acd0c57",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/chemical-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: latest news"
+  },
+  {
+    "unit_id": "3a6b72e537d86bb9",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/chemical-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9454cefbc8c8b6c8",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/chemistry",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7387c8ae5694ae14",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/chemmeet-2024",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "b2395f1d431b44be",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: newsletter"
+  },
+  {
+    "unit_id": "2dd6dc24ea037c68",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "852ab58f2fce0356",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/civil-and-infrastructure-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: newsletter"
+  },
+  {
+    "unit_id": "22f10091c8f46ff5",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/civil-and-infrastructure-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5177bcc3be12a484",
+    "source_url": "https://www.iitj.ac.in/m/Index/C61CB7A2-F0C1-4ABA-B101-18EBA058FBA9?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "533277e25142247e",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/collaborations",
+    "tier": "C",
+    "decision": "CONSOLIDATE",
+    "knowledge_family": "Other Institutional Information",
+    "reason": "Legitimate institutional material outside the 15 core families."
+  },
+  {
+    "unit_id": "b1f65e228ddb6ec1",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/collaborations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6a211a33844e2cd9",
+    "source_url": "https://www.iitj.ac.in/mechanical-engineering/en/collaborations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ba5fd1dc66b97914",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/collaborations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a06520af88ec6cec",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/collaborations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "bae18046418b654c",
+    "source_url": "https://www.iitj.ac.in/mathematics/en/collaborations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "82283c7c3cb43271",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/collaborations",
+    "tier": "C",
+    "decision": "CONSOLIDATE",
+    "knowledge_family": "Other Institutional Information",
+    "reason": "Legitimate institutional material outside the 15 core families."
+  },
+  {
+    "unit_id": "55aa7c17645edbc9",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/collaborations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6f04c68894b7f660",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/collaborations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "be5bbc0525c2993e",
+    "source_url": "https://www.iitj.ac.in/physics/en/collaborations",
+    "tier": "C",
+    "decision": "CONSOLIDATE",
+    "knowledge_family": "Other Institutional Information",
+    "reason": "Legitimate institutional material outside the 15 core families."
+  },
+  {
+    "unit_id": "62d6d8c90ccf0370",
+    "source_url": "https://www.iitj.ac.in/physics/en/collaborations",
+    "tier": "C",
+    "decision": "CONSOLIDATE",
+    "knowledge_family": "Other Institutional Information",
+    "reason": "Legitimate institutional material outside the 15 core families."
+  },
+  {
+    "unit_id": "44319c7b46e7abc8",
+    "source_url": "https://www.iitj.ac.in/physics/en/collaborations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7c00e499633f72d9",
+    "source_url": "https://www.iitj.ac.in/m/Index/1CC1B4C4-3416-4879-9351-4EEA6E15FD6F?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "cfe223453d97019e",
+    "source_url": "https://www.iitj.ac.in/winter-school/en/Committee",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "b4c59da8b905fa2b",
+    "source_url": "https://www.iitj.ac.in/office-of-students/en/committees",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9a7d66ee06a2b77e",
+    "source_url": "https://www.iitj.ac.in/m/Index/company-oversight?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1fc32318ea6f8d1d",
+    "source_url": "https://www.iitj.ac.in/m/Index/3fedc1fd-0382-4b45-a383-e0f4f628faf3",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8793dfbf050d4699",
+    "source_url": "https://www.iitj.ac.in/m/Index/3FEDC1FD-0382-4B45-A383-E0F4F628FAF3?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8ff30477b6e0ca6b",
+    "source_url": "https://www.iitj.ac.in/lf/en/complaint",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d267020a6c19fb23",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/completed-projects",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "cd8575cfb556bcb2",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/completed-projects",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ce442bf62ca21ede",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/completed-projects",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9a3bf03b163f0f83",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/completed-projects",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d49c3a5ca6bb0c7a",
+    "source_url": "https://www.iitj.ac.in/mathematics/en/completed-projects",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "237cccbb188b8103",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/completed-projects",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0ec8b15a97e93071",
+    "source_url": "https://www.iitj.ac.in/physics/en/completed-projects",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8f9268c2714669cd",
+    "source_url": "https://www.iitj.ac.in/mechanical-engineering/en/completed-projects",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2215674ab351423a",
+    "source_url": "https://www.iitj.ac.in/rm/en/completed-projects-2",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4af36c0a1706e050",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Computational-Economics-Lab",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "aa2fabdc4dd05238",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Computational-Intelligence-Lab",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e4cfdfd308147d0f",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/computational-laboratory",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f91a3595a52d195c",
+    "source_url": "https://www.iitj.ac.in/computer-science-engineering/en/compute-resources",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ff60e0e428411841",
+    "source_url": "https://www.iitj.ac.in/computer-science-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: news & events"
+  },
+  {
+    "unit_id": "3b345fcfe42bbc9c",
+    "source_url": "https://www.iitj.ac.in/computer-science-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3895df28567c7e59",
+    "source_url": "https://www.iitj.ac.in/computer-science-engineering/en/computer-science-and-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: news & events"
+  },
+  {
+    "unit_id": "25cd5819e2ba34ee",
+    "source_url": "https://www.iitj.ac.in/computer-science-engineering/en/computer-science-and-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8c4455c0937446a9",
+    "source_url": "https://www.iitj.ac.in/main/en/constitution-of-bog",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e17e64b294177d19",
+    "source_url": "https://www.iitj.ac.in/main/en/constitution-of-senate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e93c82a52218414e",
+    "source_url": "https://www.iitj.ac.in/office-of-research-development/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5d0e73f34fb01bf1",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "59898072258853cf",
+    "source_url": "https://www.iitj.ac.in/itep/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "791229125af31e67",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "fbb72dc415931549",
+    "source_url": "https://www.iitj.ac.in/gian/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0f34a72103ce4ae9",
+    "source_url": "https://www.iitj.ac.in/health-center/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5a7b37cd2522d7f7",
+    "source_url": "https://www.iitj.ac.in/crf/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a5f54198d279ce4f",
+    "source_url": "https://www.iitj.ac.in/vtu/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f7519d2f38ea5639",
+    "source_url": "https://www.iitj.ac.in/hindi-cell/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "78823c8e6d121ad0",
+    "source_url": "https://www.iitj.ac.in/ishaan-vikaas-program/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2ec96893e890a5bc",
+    "source_url": "https://www.iitj.ac.in/aero/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "fceb1328d0aae84d",
+    "source_url": "https://www.iitj.ac.in/dh/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2b5dcd83d51eeaaf",
+    "source_url": "https://www.iitj.ac.in/lecture-series/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4fc1f0321439fddf",
+    "source_url": "https://www.iitj.ac.in/ek-bharat-shreshtha-bharat/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "219b63a6edb9ee7a",
+    "source_url": "https://www.iitj.ac.in/economics/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0316e750c9e46a18",
+    "source_url": "https://www.iitj.ac.in/school-of-liberal-arts/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3e1a6fc126901e33",
+    "source_url": "https://www.iitj.ac.in/iot/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4998cd33e8f10dd8",
+    "source_url": "https://www.iitj.ac.in/office-of-establishment-nf/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1cc2d0443c452456",
+    "source_url": "https://www.iitj.ac.in/grad-cohort-workshop/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d658ca9757108e3d",
+    "source_url": "https://www.iitj.ac.in/winter-school/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6e49952256af6fe8",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "b7e42502ca287cd9",
+    "source_url": "https://www.iitj.ac.in/dia-coe/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "08d4e9008f234b0a",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "07e6b990a5b2e827",
+    "source_url": "https://www.iitj.ac.in/es/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "58f6040086d6c9bb",
+    "source_url": "https://www.iitj.ac.in/cete/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "27beb36e5aeaa878",
+    "source_url": "https://www.iitj.ac.in/cete/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "948f7e0334af39c6",
+    "source_url": "https://www.iitj.ac.in/cete/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Primary identity is news/event/award/newsletter/volatile activity."
+  },
+  {
+    "unit_id": "94056d95d47dd0fb",
+    "source_url": "https://www.iitj.ac.in/cete/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "7b8b19cf33141de1",
+    "source_url": "https://www.iitj.ac.in/cete/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: ssr"
+  },
+  {
+    "unit_id": "7f13ea408dbafe8c",
+    "source_url": "https://www.iitj.ac.in/cete/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1daa87aa381c49d7",
+    "source_url": "https://www.iitj.ac.in/office-of-establishment-e-I/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0f99ea903ed259c3",
+    "source_url": "https://www.iitj.ac.in/centre-for-continuing-education/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "55602d0b2d5569c3",
+    "source_url": "https://www.iitj.ac.in/physics/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d724ab7e46d21342",
+    "source_url": "https://www.iitj.ac.in/enauto/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e57619e0a4538388",
+    "source_url": "https://www.iitj.ac.in/office-of-international-relations/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ac043bac1ab31ddf",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3e3cca106bade108",
+    "source_url": "https://www.iitj.ac.in/office-of-stores-purchase/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "13bce9744c2b4998",
+    "source_url": "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "057dea0cd5c4ac4f",
+    "source_url": "https://www.iitj.ac.in/legal-cell/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "387bed25f37c8455",
+    "source_url": "https://www.iitj.ac.in/doctor-of-philosophy/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "84722fa59893df87",
+    "source_url": "https://www.iitj.ac.in/office-of-accounts/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "975e9c572ad18ce4",
+    "source_url": "https://www.iitj.ac.in/office-of-security-transports/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8e407e782f6ba3f1",
+    "source_url": "https://www.iitj.ac.in/manekshaw-centre/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "721523da53ff803d",
+    "source_url": "https://www.iitj.ac.in/mathematics/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7244aefcba6a70e4",
+    "source_url": "https://www.iitj.ac.in/schools/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "45621e6871fe8273",
+    "source_url": "https://www.iitj.ac.in/rcrice/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d775d9cc9cd7d040",
+    "source_url": "https://www.iitj.ac.in/bachelor-of-technology/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2387561fe3e087d1",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7c25675e8eade797",
+    "source_url": "https://www.iitj.ac.in/imprint-india/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "77ea72dfb64f2a3a",
+    "source_url": "https://www.iitj.ac.in/master-of-science/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "55ec446f0f5f84d7",
+    "source_url": "https://www.iitj.ac.in/aiot-fab-facility/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2f9654ccbf3a9962",
+    "source_url": "https://www.iitj.ac.in/green-cell/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "be1984483a7b4226",
+    "source_url": "https://www.iitj.ac.in/office-of-training-and-placement/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1fdff6b5d318d239",
+    "source_url": "https://www.iitj.ac.in/transit-accommodation-guest-house/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a802063463499c46",
+    "source_url": "https://www.iitj.ac.in/unnat-bharat-abhiyan/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "50d13adc66d20183",
+    "source_url": "https://www.iitj.ac.in/cdh/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "df365f8a4897bd01",
+    "source_url": "https://www.iitj.ac.in/cdh/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1fb58da979b9747a",
+    "source_url": "https://www.iitj.ac.in/office-of-students/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3136a39b71da287d",
+    "source_url": "https://www.iitj.ac.in/master-of-technology/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "581815e28977b982",
+    "source_url": "https://www.iitj.ac.in/office-of-alumni-affairs/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0aae5703b034962b",
+    "source_url": "https://www.iitj.ac.in/tisc/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3ba30888f2f1d3af",
+    "source_url": "https://www.iitj.ac.in/qic/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f6f24c34b71b16c0",
+    "source_url": "https://www.iitj.ac.in/office-of-registrar/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4a65e0cdafd20415",
+    "source_url": "https://www.iitj.ac.in/ece/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c7599f7681d02616",
+    "source_url": "https://www.iitj.ac.in/m.tech.-ph.d.-dual-degree/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "767d482fa92fd45f",
+    "source_url": "https://www.iitj.ac.in/office-of-executive-education/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0f631ca0596d7df9",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ec862213bb03b3a5",
+    "source_url": "https://www.iitj.ac.in/mechanical-engineering/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "dad3a09dc657ffdd",
+    "source_url": "https://www.iitj.ac.in/vigyan-jyoti-program/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5a720a44a834dcfa",
+    "source_url": "https://www.iitj.ac.in/rm/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0441df3fddd94e16",
+    "source_url": "https://www.iitj.ac.in/dia/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c7d73b59f66ea04c",
+    "source_url": "https://www.iitj.ac.in/medical-technologies/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "084b347f2508568a",
+    "source_url": "https://www.iitj.ac.in/office-of-administration/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e2cb434b165b7166",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8f8dc6f98e99a787",
+    "source_url": "https://www.iitj.ac.in/office-of-estate/en/Contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "86d2b3bb8e2f840e",
+    "source_url": "https://www.iitj.ac.in/lf/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ae6eb7fbf94d3d61",
+    "source_url": "https://www.iitj.ac.in/school-of-design/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "08f7fae691abbcf6",
+    "source_url": "https://www.iitj.ac.in/office-of-iitj-connect-pro/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "b32dbf5b046f4896",
+    "source_url": "https://www.iitj.ac.in/dora/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d3331c1274ab1af5",
+    "source_url": "https://www.iitj.ac.in/office-of-deputy-director/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8f6af510d4d8274f",
+    "source_url": "https://www.iitj.ac.in/hi_iitj/en/contact",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "296807fce01c11dc",
+    "source_url": "https://www.iitj.ac.in/suraj/en/contacts",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7188479f0fd29d6b",
+    "source_url": "https://www.iitj.ac.in/crf/en/coordination-committee",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0fd05c820aa68d2a",
+    "source_url": "https://www.iitj.ac.in/m/Index/1093AAF6-0931-41DB-8454-F0027337E5C0?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2cace13e052c1bcf",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/corporate-relations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c783027826e6ed17",
+    "source_url": "https://www.iitj.ac.in/gian/en/courses",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "90d9ce983a50db29",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/courses",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "b68e794b4830f401",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/courses",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4a726f5eea28f320",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/courses",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4bae130628a9dd1f",
+    "source_url": "https://www.iitj.ac.in/mathematics/en/courses",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "dc64923f2ad09238",
+    "source_url": "https://www.iitj.ac.in/mechanical-engineering/en/courses",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "20552f9b1e21d42f",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/courses",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9e1ff7904fe08abb",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/courses",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9b9932d5ab87b897",
+    "source_url": "https://www.iitj.ac.in/office-of-students/en/courses-(social-connect-responsibility)",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "08cdfe0285c69e21",
+    "source_url": "https://www.iitj.ac.in/gian/en/current-activities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "17cc19f6c7476486",
+    "source_url": "https://www.iitj.ac.in/rashtriya-avishkar-abhiyan/en/current-activities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7b72e584023f8561",
+    "source_url": "https://www.iitj.ac.in/imprint-india/en/current-activities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "711c8b2f37aba6ff",
+    "source_url": "https://www.iitj.ac.in/vigyan-jyoti-program/en/current-activities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: current activities"
+  },
+  {
+    "unit_id": "27fb84343a563d39",
+    "source_url": "https://www.iitj.ac.in/vigyan-jyoti-program/en/current-activities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d79839529ba8a3a6",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/curriculum",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1837eb1c843b781c",
+    "source_url": "https://www.iitj.ac.in/m/Index/70C07DEA-45DE-46EB-AF21-FABCE29BBA12?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6f31db1b4a75d78c",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/curriculum",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e1958062d6da2002",
+    "source_url": "https://www.iitj.ac.in/itep/en/curriculum",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "75e8cbca3fdf39a2",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/curriculum",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "418455e8d9f675db",
+    "source_url": "https://www.iitj.ac.in/mechanical-engineering/en/curriculum",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3b2a772d75a60ad1",
+    "source_url": "https://www.iitj.ac.in/mathematics/en/curriculum",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d82b0d5543f1be72",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/curriculum",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "af7829f3aa203ce2",
+    "source_url": "https://www.iitj.ac.in/physics/en/curriculum",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4b11817318297b59",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/curriculum-for-programs-from-2019-to-2025",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "58a9cf32e4569e50",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberawareness",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5d80e899883f0782",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cybersecurity",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "cf3b74a27afe8328",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cybersecurity",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8fe4cfc4b8cb97cd",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "b17bca7debf31926",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "7ce4a19e3058f914",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "09762792de699b61",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "89dc31e1c606bf90",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "4b26152ffef21a12",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "b96b0ab2833b5d0a",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "76ea02f1866ace7b",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "6e6f92ee2f99e0c1",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "0b4ec5d941f88ec1",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "88c78a4d255ff17d",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "2fd5f1e31f685b71",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "a875def804a742f0",
+    "source_url": "https://www.iitj.ac.in/cybersecurity/en/cyberthreat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c2a39ab235a6f00e",
+    "source_url": "https://www.iitj.ac.in/unnat-bharat-abhiyan/en/dci-list",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d209bb0649c7230a",
+    "source_url": "https://www.iitj.ac.in/main/en/deans-associate-deans",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "359e4ba413f2fedf",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Deep-Learning-and-Computer-Vision-Lab",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7c92b07a22f987ce",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/department-data",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6950eacbf67e3feb",
+    "source_url": "https://www.iitj.ac.in/economics/en/department-highlights",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f4b41c91e48e5aa7",
+    "source_url": "https://www.iitj.ac.in/mechanical-engineering/en/departmental-facilities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f52fa5342c7c2f56",
+    "source_url": "https://www.iitj.ac.in/m/Index/main-departments?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "299601d88ba77be7",
+    "source_url": "https://www.iitj.ac.in/m/Index/e1ec016d-ad3e-4a5a-bfbe-831afdd32b38",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8bd60a092e4396cf",
+    "source_url": "https://www.iitj.ac.in/main/en/deputy-director",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "bf1c0ad6b9cdc632",
+    "source_url": "https://www.iitj.ac.in/m/Index/94900F3A-19B3-4DDB-8A47-1D50E357D23F?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2109f0976af1f4a0",
+    "source_url": "https://www.iitj.ac.in/dh",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "ef88382cdd31b00d",
+    "source_url": "https://www.iitj.ac.in/dh",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Primary identity is news/event/award/newsletter/volatile activity."
+  },
+  {
+    "unit_id": "bc90d0f461cfd42b",
+    "source_url": "https://www.iitj.ac.in/dh",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8550918359790ece",
+    "source_url": "https://www.iitj.ac.in/dh/en/Digital-Humanities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "91e16f188a6f833c",
+    "source_url": "https://www.iitj.ac.in/dh/en/Digital-Humanities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Primary identity is news/event/award/newsletter/volatile activity."
+  },
+  {
+    "unit_id": "83365d8e427d7508",
+    "source_url": "https://www.iitj.ac.in/dh/en/Digital-Humanities",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "44b01fa6a59d0b26",
+    "source_url": "https://www.iitj.ac.in/dia/en/dia",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d27d56a5c4e57e02",
+    "source_url": "https://www.iitj.ac.in/school-of-liberal-arts/en/digital-language-laboratory",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "0feb097c34b122ea",
+    "source_url": "https://www.iitj.ac.in/office-of-students/en/dining-services",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a7a541ea01658d3b",
+    "source_url": "https://www.iitj.ac.in/main/en/director",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "cbd8b2c2d8012b10",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/directory",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5d266b3fb6887463",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/discontinued-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f0b7210799cda34f",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/dissertations",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7f06e24a6fa4a463",
+    "source_url": "https://www.iitj.ac.in/lecture-series/en/distinguished-lectures",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "9cea7419733cda35",
+    "source_url": "https://www.iitj.ac.in/lecture-series/en/distinguished-lectures",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "30980ebcb5f8ba2b",
+    "source_url": "https://www.iitj.ac.in/Doctor-of-Philosophy/en/Doctor-of-Philosophy",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2f4b2ae297d694d8",
+    "source_url": "https://www.iitj.ac.in/doctor-of-philosophy/en/doctor-of-philosophy",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a49c55284779466e",
+    "source_url": "https://www.iitj.ac.in/chemical-engineering/en/doctoral-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ae5e883d000c43b8",
+    "source_url": "https://www.iitj.ac.in/physics/en/doctoral-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7091bd155bb1d21e",
+    "source_url": "https://www.iitj.ac.in/school-of-liberal-arts/en/doctoral-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "495abc053f735b71",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/doctoral-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e49184ab13756503",
+    "source_url": "https://www.iitj.ac.in/mathematics/en/doctoral-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a3b7fa5f367d2500",
+    "source_url": "https://www.iitj.ac.in/qic/en/doctoral-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f848d9a35328df0e",
+    "source_url": "https://www.iitj.ac.in/iot/en/doctoral-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "351dffcb90a9e196",
+    "source_url": "https://www.iitj.ac.in/ece/en/phd",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "aacea92a3035dab7",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/doctoral-programs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4628e67261ea87b1",
+    "source_url": "https://www.iitj.ac.in/bioscience-bioengineering/en/doctorial-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "f864481c038624b6",
+    "source_url": "https://www.iitj.ac.in/mechanical-engineering/en/doctorial-program",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e410f045ed6031ee",
+    "source_url": "https://www.iitj.ac.in/health-center/en/doctors-schedule",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "b15495837ad2bc13",
+    "source_url": "https://www.iitj.ac.in/suraj/en/documents-required",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "950317170f2fcc04",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "c91826112857623d",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "7af9ac8132881ee9",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "d66734f25f4d593a",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "d8275392544d452a",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "b43280e9f2fd079b",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "ddf22b6cecd4d8a4",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "66d8bb5373b9a9ad",
+    "source_url": "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e4c78188b9aba70c",
+    "source_url": "https://www.iitj.ac.in/dia-coe/en/download",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3e3a03007146f190",
+    "source_url": "https://www.iitj.ac.in/dia-coe",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7e31035d665261d0",
+    "source_url": "https://www.iitj.ac.in/m/Index/8f3b82bc-432d-4d2e-931b-cae11f867a6d",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "81e3f285d59bb713",
+    "source_url": "https://www.iitj.ac.in/m/Index/8F3B82BC-432D-4D2E-931B-CAE11F867A6D?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1ba6fa689c67d1cf",
+    "source_url": "https://www.iitj.ac.in/schools/en/dual-degree",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "960a3e8803808c86",
+    "source_url": "https://www.iitj.ac.in/cete/en/elearning-studio",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "e6d976e2c75a9170",
+    "source_url": "https://www.iitj.ac.in/cete/en/elearning-studio",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "426bfc6c835f9573",
+    "source_url": "https://www.iitj.ac.in/cete/en/elearning-studio",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "b7b1e4b30efc8743",
+    "source_url": "https://www.iitj.ac.in/cete/en/elearning-studio",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "fed3530d63fc8635",
+    "source_url": "https://www.iitj.ac.in/economics",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Primary identity is news/event/award/newsletter/volatile activity."
+  },
+  {
+    "unit_id": "2ec4163def1bd586",
+    "source_url": "https://www.iitj.ac.in/economics",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ddab122dee439c5b",
+    "source_url": "https://www.iitj.ac.in/economics/en/economics",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Primary identity is news/event/award/newsletter/volatile activity."
+  },
+  {
+    "unit_id": "458e4796156dc233",
+    "source_url": "https://www.iitj.ac.in/economics/en/economics",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ec95c13e6a9b93e2",
+    "source_url": "https://www.iitj.ac.in/cete/en/edtech-lab",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "8c8978cbf7bb67ad",
+    "source_url": "https://www.iitj.ac.in/cete/en/edtech-talk",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "0daad1d09c047d96",
+    "source_url": "https://www.iitj.ac.in/cete/en/edtech-talk",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e2a1356a7de21930",
+    "source_url": "https://www.iitj.ac.in/cete/en/education-policy",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "97bb4afc48151941",
+    "source_url": "https://www.iitj.ac.in/ek-bharat-shreshtha-bharat/en/ek-bharat-shreshtha-bharat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "a7320ace77626c87",
+    "source_url": "https://www.iitj.ac.in/ek-bharat-shreshtha-bharat/en/ek-bharat-shreshtha-bharat",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5ef4225c995d297c",
+    "source_url": "https://www.iitj.ac.in/electrical-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: latest news"
+  },
+  {
+    "unit_id": "807c87ceb1a39979",
+    "source_url": "https://www.iitj.ac.in/electrical-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "43227bd4864d2f71",
+    "source_url": "https://www.iitj.ac.in/electrical-engineering/en/electrical-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Excluded document genre: latest news"
+  },
+  {
+    "unit_id": "1b90c10303304f32",
+    "source_url": "https://www.iitj.ac.in/electrical-engineering/en/electrical-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "50a42a02bf0032bd",
+    "source_url": "https://www.iitj.ac.in/ece",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "e39aae6ace1a6b1f",
+    "source_url": "https://www.iitj.ac.in/ece/en/ece",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "cabcbb9d7689c547",
+    "source_url": "https://www.iitj.ac.in/bachelor-of-technology/en/eligibility",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ff12099a2d2488f2",
+    "source_url": "https://www.iitj.ac.in/suraj/en/eligibility",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "386d9dd8c6f4b6a5",
+    "source_url": "https://www.iitj.ac.in/schools/en/eligibility-criteria-and-selection-process",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2505c46db9995ae4",
+    "source_url": "https://www.iitj.ac.in/health-center/en/empanelled-hospitals",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ddc5a823aa13dc47",
+    "source_url": "https://www.iitj.ac.in/enauto",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "3cd43b39b4096e14",
+    "source_url": "https://www.iitj.ac.in/enauto/en/enauto",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "163c25a4359de7b3",
+    "source_url": "https://www.iitj.ac.in/m/Index/788D71D4-B830-474C-A5EA-FBADFC21E786?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "be8fd4738e2f3001",
+    "source_url": "https://www.iitj.ac.in/es/en/engineering-science",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "ea0dda1f9254961c",
+    "source_url": "https://www.iitj.ac.in/cetsd",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "ad5dbb2c5caf74d3",
+    "source_url": "https://www.iitj.ac.in/cetsd",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "2120625452f6bd48",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/cetsd",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "a1c7af22e661dfd8",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/cetsd",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "49ae3e57df82742f",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/environmental-engineering",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "81458022ef0394e5",
+    "source_url": "https://www.iitj.ac.in/ek-bharat-shreshtha-bharat/en/events",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "287da0e13960a58a",
+    "source_url": "https://www.iitj.ac.in/m/Index/4D6E11A3-1738-4D5E-8AB4-1A6E09F9EE4C?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5ca0d2db9d62dc04",
+    "source_url": "https://www.iitj.ac.in/m/Index/40A73971-F1AB-4C9E-9DEB-0E58441D4A50?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c7601ee732c2bae3",
+    "source_url": "https://www.iitj.ac.in/m/Index/6AD6A62C-2445-4F3A-B828-BC8C68F3A61E?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5c9c9d29a25ba5ab",
+    "source_url": "https://www.iitj.ac.in/m/Index/BB303622-66DA-4440-A2E2-C079EC8F4E4B?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7bd55c54e10e7d93",
+    "source_url": "https://www.iitj.ac.in/office-of-executive-education/en/executive-alumni-network-lifelong-learning",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "1a1e070532368f9e",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/executive-programs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "4147156f9895bf53",
+    "source_url": "https://www.iitj.ac.in/schools/en/executive-programs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "7b053f88964af3e5",
+    "source_url": "https://www.iitj.ac.in/schools/en/executive-programs-1",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "01a5b055933fc792",
+    "source_url": "https://www.iitj.ac.in/cetsd/en/experimental-plot",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "d7ef104b8c3a2ae0",
+    "source_url": "https://www.iitj.ac.in/m/Index/AD116520-F30E-4DAD-8421-4532CD7341DA?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "485b6ab53f2b26aa",
+    "source_url": "https://www.iitj.ac.in/lecture-series/en/extra-mural-lectures",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Does not fit the stable college-assistant knowledge scope."
+  },
+  {
+    "unit_id": "61ee729c648ba619",
+    "source_url": "https://www.iitj.ac.in/m/Index/9A61D426-D479-4879-BBDD-065A9BE018AD?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "683fd273b7884928",
+    "source_url": "https://www.iitj.ac.in/m/Index/8B36B991-F02F-463A-8302-18BD2966B8EF?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "5e242c792268c182",
+    "source_url": "https://www.iitj.ac.in/m/Index/47B464B6-0FCA-4A14-8F8A-FA97909BD18F?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "36937a4bb50262d7",
+    "source_url": "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/facilities-labs",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a364ebd08d4028e3",
+    "source_url": "https://www.iitj.ac.in/tisc/en/facilities-resources",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Primary identity is news/event/award/newsletter/volatile activity."
+  },
+  {
+    "unit_id": "a20ed098b3fab290",
+    "source_url": "https://www.iitj.ac.in/tisc/en/facilities-resources",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "a9a3cadfdfd6e478",
+    "source_url": "https://www.iitj.ac.in/dia/en/facility",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6c75b06ee8084af2",
+    "source_url": "https://www.iitj.ac.in/m/Index/37B5E15F-A653-4C72-8604-DE296A2114C1?lg=en",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "eb2df80835144d60",
+    "source_url": "https://www.iitj.ac.in/itep/en/faculty",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "02a9b73378f887a1",
+    "source_url": "https://www.iitj.ac.in/computer-science-engineering/en/faculty-achievements",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "b778af3ed5107d30",
+    "source_url": "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "6d88ef5677bfbacf",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/faculty-list",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "45e15e09359b155f",
+    "source_url": "https://www.iitj.ac.in/main/en/faculty-members",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "9ed8b31f9c4bd4ae",
+    "source_url": "https://www.iitj.ac.in/physics/en/faculty-members",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c374dc2cb48fb37f",
+    "source_url": "https://www.iitj.ac.in/aero/en/faculty-members",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "c23aad46626db981",
+    "source_url": "https://www.iitj.ac.in/chemistry/en/faculty-members",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  },
+  {
+    "unit_id": "19658c775cbf03b8",
+    "source_url": "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/faculty-members",
+    "tier": "D",
+    "decision": "EXCLUDE",
+    "knowledge_family": "D / Excluded",
+    "reason": "Navigation/UI feedback content."
+  }
+]

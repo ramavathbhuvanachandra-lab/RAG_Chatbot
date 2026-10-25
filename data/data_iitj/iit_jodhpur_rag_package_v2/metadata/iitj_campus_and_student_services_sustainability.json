@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_campus_and_student_services_sustainability",
+  "title": "Sustainability",
+  "category": "campus_and_student_services",
+  "subcategory": "sustainability",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/campus_and_student_services/sustainability.md",
+  "docx_path": "documents/campus_and_student_services/sustainability.docx",
+  "knowledge_path": "knowledge/campus_and_student_services/sustainability.md",
+  "markdown_hash": "7bb00b9aca9fc917a484d2d41fdb99e0b77ff39ee860c3e1e057a2ac389c2989",
+  "docx_hash": "87b9a33254e0f67b36d78dab75d1ba3eef00d853767071666197833f2df6038c",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/main/en/sustainability-policy"
+  ],
+  "unit_ids": [
+    "b0351bfe9d51bad9",
+    "6ccd60632dce6dc2",
+    "4f25217a8e34fe1a",
+    "06ab3cb1cb2a8202",
+    "e9aef097c42bb72c",
+    "607f462838be3818",
+    "75f4a6598574317d"
+  ],
+  "aliases": [
+    "Sustainability"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "student_services.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

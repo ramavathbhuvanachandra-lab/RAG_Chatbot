@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_liberal_arts_general_information",
+  "title": "School of Liberal Arts \u2014 General Information",
+  "category": "schools/liberal_arts",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/liberal_arts/general_information.md",
+  "docx_path": "documents/schools/liberal_arts/general_information.docx",
+  "knowledge_path": "knowledge/schools/liberal_arts/general_information.md",
+  "markdown_hash": "f5ba71459a9ce3262601661f8767847053f831e3148bc7b45dc9a7c316027e55",
+  "docx_hash": "c4c8bf66402009e60343e85bf00fac7774ec03952c587d61c7e6be182d47b974",
+  "source_urls": [
+    "https://www.iitj.ac.in/school-of-liberal-arts/en/Vision-and-Mission",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-liberal-arts/en/msc-students",
+    "https://www.iitj.ac.in/school-of-liberal-arts/en/student-achievements-archive",
+    "https://www.iitj.ac.in/school-of-liberal-arts/en/school-of-liberal-arts",
+    "https://www.iitj.ac.in/school-of-liberal-arts",
+    "https://www.iitj.ac.in/school-of-liberal-arts/en/doctoral-program",
+    "https://www.iitj.ac.in/school-of-liberal-arts/en/postgraduate-program-computational-social-science-(msc)"
+  ],
+  "unit_ids": [
+    "7ea85960f720c895",
+    "6863af62520c7625",
+    "e28b39d89220c701",
+    "d8cdee6f140b470c",
+    "56257879cc64dfcd",
+    "ac187b269e9396b6",
+    "75dc0266b45149d3",
+    "cd332239f66c759a"
+  ],
+  "aliases": [
+    "School of Liberal Arts \u2014 General Information",
+    "General Information",
+    "SOLA",
+    "SOLA IIT Jodhpur",
+    "Computational Social Science"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "institution_profile.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

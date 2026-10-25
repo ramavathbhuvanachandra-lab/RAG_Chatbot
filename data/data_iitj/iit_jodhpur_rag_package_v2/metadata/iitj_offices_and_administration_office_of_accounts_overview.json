@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_accounts_overview",
+  "title": "Office of Accounts \u2014 Overview",
+  "category": "offices_and_administration/office_of_accounts",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_accounts/overview.md",
+  "docx_path": "documents/offices_and_administration/office_of_accounts/overview.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_accounts/overview.md",
+  "markdown_hash": "3d1ef75fb6d96cd03a2f7b99eddde0702f4ceb14f69b7022d7509121aae51b52",
+  "docx_hash": "e08327b381801794be462f5d605591300a5ce5c9e887847b155e58c522b8e405",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-accounts/en/Accounts-Home"
+  ],
+  "unit_ids": [
+    "f722f270b453dedb",
+    "6f82ecdec2609fd8"
+  ],
+  "aliases": [
+    "Office of Accounts \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

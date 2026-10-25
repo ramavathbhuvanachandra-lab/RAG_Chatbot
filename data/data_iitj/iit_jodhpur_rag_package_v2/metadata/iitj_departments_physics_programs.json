@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_physics_programs",
+  "title": "Physics \u2014 Programs",
+  "category": "departments/physics",
+  "subcategory": "programs",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/physics/programs.md",
+  "docx_path": "documents/departments/physics/programs.docx",
+  "knowledge_path": "knowledge/departments/physics/programs.md",
+  "markdown_hash": "52d4d42a4393c3dd4a6b922fa41f2c1413cea6847e817946bbd98c1fe163a1a1",
+  "docx_hash": "b924ec42fd55b11740b134b6abdc185365b226b3be1d46dac828a1ca1b00373b",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/physics/en/undergraduate-program"
+  ],
+  "unit_ids": [
+    "0a4867d13fb7bcb1",
+    "4b955b3cad2082bc",
+    "2bcc6ce255f0b8dd"
+  ],
+  "aliases": [
+    "Physics \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

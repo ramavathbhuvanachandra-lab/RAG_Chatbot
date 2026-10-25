@@ -132,6 +132,7 @@ def _boundary_replace(text: str, variant: str, replacement: str) -> str:
     return re.sub(pattern, replacement, text, flags=re.IGNORECASE)
 
 
+@lru_cache(maxsize=4096)
 def _normalize_for_matching(text: Any) -> str:
     value = _norm(text)
     if not value:
@@ -195,6 +196,7 @@ def _canonicalization_pairs(profile: LexicalProfile) -> tuple[tuple[str, str], .
     return tuple(sorted((p for p in pairs if p[0]), key=lambda x: len(x[0]), reverse=True))
 
 
+@lru_cache(maxsize=4096)
 def normalize_for_institution(text: str) -> str:
     result = _normalize_for_matching(text)
     if not result:
@@ -205,6 +207,7 @@ def normalize_for_institution(text: str) -> str:
     return re.sub(r"\s+", " ", result).strip()
 
 
+@lru_cache(maxsize=4096)
 def canonical_terms(text: str) -> tuple[str, ...]:
     normalized = normalize_for_institution(text)
     if not normalized:
@@ -223,29 +226,43 @@ def canonical_terms(text: str) -> tuple[str, ...]:
     return tuple(dict.fromkeys(found))
 
 
-def matched_phrases(query: str, document: str) -> tuple[str, ...]:
-    profile = get_lexical_profile()
+@lru_cache(maxsize=256)
+def _query_active_phrases(query: str) -> tuple[tuple[str, str], ...]:
     q = _normalize_for_matching(query)
-    d = _normalize_for_matching(document)
-    if not q or not d:
+    if not q:
         return ()
-
-    matches = []
+    profile = get_lexical_profile()
+    active: list[tuple[str, str]] = []
     for phrases in profile.phrases.values():
         for phrase in phrases:
             p = _normalize_for_matching(phrase)
-            if p and re.search(rf"(?<![a-z0-9]){re.escape(p)}(?![a-z0-9])", q, re.I) and re.search(
-                rf"(?<![a-z0-9]){re.escape(p)}(?![a-z0-9])", d, re.I
-            ):
-                matches.append(phrase)
+            if p and re.search(rf"(?<![a-z0-9]){re.escape(p)}(?![a-z0-9])", q, re.I):
+                active.append((phrase, p))
+    return tuple(active)
+
+
+def matched_phrases(query: str, document: str) -> tuple[str, ...]:
+    active = _query_active_phrases(query)
+    if not active:
+        return ()
+    d = _normalize_for_matching(document)
+    if not d:
+        return ()
+
+    matches = []
+    for phrase, p in active:
+        if re.search(rf"(?<![a-z0-9]){re.escape(p)}(?![a-z0-9])", d, re.I):
+            matches.append(phrase)
     return tuple(dict.fromkeys(matches))
 
 
+@lru_cache(maxsize=4096)
 def _tokens(text: str) -> tuple[str, ...]:
     normalized = normalize_for_institution(text)
     return tuple(token for token in normalized.split() if len(token) > 1)
 
 
+@lru_cache(maxsize=4096)
 def _interesting_tokens(text: str) -> tuple[str, ...]:
     stopwords = {
         "the", "a", "an", "is", "are", "was", "were", "what", "which",
@@ -294,7 +311,7 @@ def expand_query(query: str) -> tuple[str, ...]:
         values.append(normalized)
 
     terms = canonical_terms(original)
-    if terms:
+    if len(terms) >= 2:
         concept_query = " ".join(terms)
         if concept_query and all(concept_query.casefold() != x.casefold() for x in values):
             values.append(concept_query)

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_electrical_engineering_facilities",
+  "title": "Electrical Engineering \u2014 Facilities",
+  "category": "departments/electrical_engineering",
+  "subcategory": "facilities",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/electrical_engineering/facilities.md",
+  "docx_path": "documents/departments/electrical_engineering/facilities.docx",
+  "knowledge_path": "knowledge/departments/electrical_engineering/facilities.md",
+  "markdown_hash": "d1732566b2f66c9e882a95a267a62e13ce7c6377e0d46f18446ea79ec6dae8e6",
+  "docx_hash": "89ccaa8efae97e2bd15729c528426648b245685db8b8c772c649cc134971181d",
+  "source_urls": [
+    "https://www.iitj.ac.in/Electrical-Engineering/en/Smart-Grid-Laboratory",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/electrical-engineering/en/research-overview"
+  ],
+  "unit_ids": [
+    "e45acb4034e2cdc1",
+    "a22eca23d01396d3",
+    "2b473719628b9738",
+    "9faed1d4ab21052f",
+    "ab19ad6586b57c36",
+    "bae38f4012501100",
+    "5136bbe9e99129b0",
+    "a99f92ec5482ed3c"
+  ],
+  "aliases": [
+    "Electrical Engineering \u2014 Facilities",
+    "Facilities"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

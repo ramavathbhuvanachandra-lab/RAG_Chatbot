@@ -11,6 +11,13 @@ from .lexical import get_lexical_profile
 from .source_policy import SOURCE_POLICY
 from .scope_policy import SCOPE_POLICY
 from .navigation import NAVIGATION_MODEL
+from .campus_navigation import find_location
+from .emergency import find_emergency
+
+STRUCTURED_HANDLERS = {
+    "navigation": find_location,
+    "emergency": find_emergency,
+}
 
 __all__ = [
     "PROFILE",
@@ -20,4 +27,7 @@ __all__ = [
     "SOURCE_POLICY",
     "SCOPE_POLICY",
     "NAVIGATION_MODEL",
+    "find_location",
+    "find_emergency",
+    "STRUCTURED_HANDLERS",
 ]

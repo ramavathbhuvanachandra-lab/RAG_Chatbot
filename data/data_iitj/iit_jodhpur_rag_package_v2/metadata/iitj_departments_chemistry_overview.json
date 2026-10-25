@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_chemistry_overview",
+  "title": "Chemistry \u2014 Overview",
+  "category": "departments/chemistry",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/chemistry/overview.md",
+  "docx_path": "documents/departments/chemistry/overview.docx",
+  "knowledge_path": "knowledge/departments/chemistry/overview.md",
+  "markdown_hash": "231ebe61de82a851f71c60c9d761c3cc47be9522056dc8173547b85a19149ffb",
+  "docx_hash": "a52a25b7aafab75fa82fa563eae862cde9d817aeb94d9890770b2add49642696",
+  "source_urls": [
+    "https://iitj.ac.in/admission-postgraduate-programs/en/advertisements",
+    "https://www.iitj.ac.in/People/List?dept=Chemistry&c=1c8346b0-07a4-401e-bce0-7f571bb4fabd",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/chemistry/en/doctoral-program",
+    "https://www.iitj.ac.in/chemistry/en/chemistry"
+  ],
+  "unit_ids": [
+    "55492a8e75c844d1",
+    "495abc053f735b71",
+    "c8dc9ee0e86b407f",
+    "9454cefbc8c8b6c8"
+  ],
+  "aliases": [
+    "Chemistry \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

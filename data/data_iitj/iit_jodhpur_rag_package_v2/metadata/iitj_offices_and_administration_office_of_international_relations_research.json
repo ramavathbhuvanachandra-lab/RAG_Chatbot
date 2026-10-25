@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_international_relations_research",
+  "title": "Office of International Relations \u2014 Research",
+  "category": "offices_and_administration/office_of_international_relations",
+  "subcategory": "research",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_international_relations/research.md",
+  "docx_path": "documents/offices_and_administration/office_of_international_relations/research.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_international_relations/research.md",
+  "markdown_hash": "f10d9e39210723b930056551ccea4868d40b6718e2aa41b91225a93af85b7893",
+  "docx_hash": "e5ef595912672dc51fb53268534e9c22da36d6d1ba519ab21fd31e228cc522e8",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-international-relations/en/faculty-visit"
+  ],
+  "unit_ids": [
+    "bb9bad806295196a",
+    "c3314c26b66de7d1"
+  ],
+  "aliases": [
+    "Office of International Relations \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "administrative_offices.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

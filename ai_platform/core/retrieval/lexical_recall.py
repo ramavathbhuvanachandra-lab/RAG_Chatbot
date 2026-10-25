@@ -170,6 +170,19 @@ def _text(document: Any) -> str:
         metadata.get("section"),
         metadata.get("name"),
     ]
+    if metadata.get("source"):
+        from pathlib import Path
+        src_path = Path(str(metadata["source"]))
+        stem = src_path.stem.replace("_", " ").title()
+        stem = re.sub(r"\bPhd\b", "PhD", stem, flags=re.I)
+        stem = re.sub(r"\bMtech\b", "M.Tech", stem, flags=re.I)
+        stem = re.sub(r"\bMsc\b", "M.Sc.", stem, flags=re.I)
+        stem = re.sub(r"\bBtech\b", "B.Tech", stem, flags=re.I)
+        parent = src_path.parent.name.replace("_", " ").title()
+        if parent and parent.lower() not in ("data", "production", "docs", "general", "admissions", "programs"):
+            structural.extend([parent, stem])
+        else:
+            structural.append(stem)
     labels = [str(value).strip() for value in structural if str(value or "").strip()]
     return " ".join((*labels, content)).strip()
 
@@ -253,16 +266,32 @@ def _adapter_queries(adapter: Any | None, query: str) -> tuple[str, ...]:
     return values[:3]
 
 
+_DOCUMENT_TEXT_CACHE: dict[int, tuple[str, set[str]]] = {}
+
+
+def _get_document_info(document: Any) -> tuple[str, set[str]]:
+    doc_id = id(document)
+    cached = _DOCUMENT_TEXT_CACHE.get(doc_id)
+    if cached is not None:
+        return cached
+    text = _text(document)
+    norm = _normalize(text)
+    toks = set(_tokens(norm))
+    val = (norm, toks)
+    # Keep cache bounded to active chunk size
+    if len(_DOCUMENT_TEXT_CACHE) < 5000:
+        _DOCUMENT_TEXT_CACHE[doc_id] = val
+    return val
+
+
 def _score_generic(
     query: str,
     document: Any,
     *,
     query_frame: Any | None = None,
 ) -> tuple[float, float, float, float, bool, tuple[str, ...]]:
-    text = _text(document)
+    normalized_text, document_tokens = _get_document_info(document)
     normalized_query = _normalize(query)
-    normalized_text = _normalize(text)
-    document_tokens = set(_tokens(normalized_text))
 
     query_tokens = _interesting_query_tokens(query)
     query_overlap, query_matches = _overlap(query_tokens, document_tokens)

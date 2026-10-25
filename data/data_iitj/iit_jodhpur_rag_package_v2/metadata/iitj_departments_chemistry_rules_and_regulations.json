@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_chemistry_rules_and_regulations",
+  "title": "Chemistry \u2014 Rules and Regulations",
+  "category": "departments/chemistry",
+  "subcategory": "rules_and_regulations",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/chemistry/rules_and_regulations.md",
+  "docx_path": "documents/departments/chemistry/rules_and_regulations.docx",
+  "knowledge_path": "knowledge/departments/chemistry/rules_and_regulations.md",
+  "markdown_hash": "25e2bb3c2cc9a5d151ef9f69bfeefe6b7fb395a7141938da6e37a2bad7b5c01f",
+  "docx_hash": "80eb6c1b439866b44dcfa78a88c3dbb049ec27fc6e8ba9c88d280c0da41fefe1",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/chemistry/en/Booking-for-External-Sample"
+  ],
+  "unit_ids": [
+    "84a6036f35452632",
+    "f3a2302c1ec29474",
+    "4ce9771ec6e76fa0",
+    "5dabf12b1385b3a4",
+    "72c07ae9efa706ec",
+    "6ec07cd519b86ef8",
+    "5b271b01727f8cb3",
+    "24131c076bbd846a"
+  ],
+  "aliases": [
+    "Chemistry \u2014 Rules and Regulations",
+    "Rules And Regulations"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "departments.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

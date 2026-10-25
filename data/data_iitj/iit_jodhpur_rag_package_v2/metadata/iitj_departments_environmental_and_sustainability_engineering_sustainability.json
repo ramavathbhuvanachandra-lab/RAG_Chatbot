@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_environmental_and_sustainability_engineering_sustainability",
+  "title": "Environmental and Sustainability Engineering \u2014 Sustainability",
+  "category": "departments/environmental_and_sustainability_engineering",
+  "subcategory": "sustainability",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/environmental_and_sustainability_engineering/sustainability.md",
+  "docx_path": "documents/departments/environmental_and_sustainability_engineering/sustainability.docx",
+  "knowledge_path": "knowledge/departments/environmental_and_sustainability_engineering/sustainability.md",
+  "markdown_hash": "b60ff5e84e37116b0007ece58954a21854d6f64bd491c33bbffeed45b7988b39",
+  "docx_hash": "530d747cc762682ada140ae79e851c335e78b88914255516a3812cd9c9bebd6d",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/cetsd/en/sustainability-plan-policy"
+  ],
+  "unit_ids": [
+    "e75e183e2e18ca09",
+    "7dd36b72ae7ff0f8",
+    "5cc3531da9ed3b54",
+    "4f0d5c83b1d8b33d"
+  ],
+  "aliases": [
+    "Environmental and Sustainability Engineering \u2014 Sustainability",
+    "Sustainability"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -14,12 +14,51 @@ migrate incrementally without replacing working behavior all at once.
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field, is_dataclass
+from enum import Enum
 from math import isfinite
 from typing import Any, TypeAlias
 
 ScalarValue: TypeAlias = str | int | float | bool
 ResolutionState: TypeAlias = str
 VerificationState: TypeAlias = str
+
+
+class QueryRoute(str, Enum):
+    """Principled routing taxonomy for student institutional questions."""
+
+    SIMPLE_SINGLE_INTENT = "simple_single_intent"
+    SINGLE_INTENT_WITH_CONSTRAINTS = "single_intent_with_constraints"
+    MULTI_SOURCE_SINGLE_INTENT = "multi_source_single_intent"
+    COMPARISON = "comparison"
+    MULTI_INTENT = "multi_intent"
+    CONVERSATIONAL_FOLLOW_UP = "conversational_follow_up"
+    AMBIGUOUS_NEEDS_CLARIFICATION = "ambiguous_needs_clarification"
+    OUT_OF_SCOPE = "out_of_scope"
+    UNCERTAIN_SCOPE = "uncertain_scope"
+
+
+class GuardDecision(str, Enum):
+    """Explicit decision contract for input-level scope and security evaluation."""
+
+    IN_SCOPE = "IN_SCOPE"
+    MIXED_SCOPE_WITH_INJECTION = "MIXED_SCOPE_WITH_INJECTION"
+    OUT_OF_SCOPE = "OUT_OF_SCOPE"
+    SENSITIVE_REDIRECT = "SENSITIVE_REDIRECT"
+    AMBIGUOUS = "AMBIGUOUS"
+
+
+@dataclass(frozen=True)
+class GuardResult:
+    """Typed result of input-level scope and security evaluation."""
+
+    decision: GuardDecision
+    original_query: str
+    sanitized_query: str
+    reason: str
+    flags: tuple[str, ...] = ()
+    confidence: float = 1.0
+    safe_response: str | None = None
+
 
 
 def _text(value: object | None) -> str:
@@ -565,10 +604,113 @@ class SemanticQueryFrame(_Contract):
         )
 
 
+@dataclass(frozen=True, slots=True)
+class SemanticCondition(_Contract):
+    """Atomic constraint or condition with logical relationship (AND/OR/NOT)."""
+
+    name: str
+    value: str
+    operator: str = "eq"
+    logical_relation: str = "AND"
+    required: bool = True
+    unit: str | None = None
+
+    def __post_init__(self) -> None:
+        name = _text(self.name)
+        value = _text(self.value)
+        if not name or not value:
+            raise ValueError("SemanticCondition name and value are required.")
+        object.__setattr__(self, "name", name)
+        object.__setattr__(self, "value", value)
+        object.__setattr__(self, "operator", _text(self.operator) or "eq")
+        object.__setattr__(self, "logical_relation", _text(self.logical_relation).upper() or "AND")
+        object.__setattr__(self, "unit", _optional_text(self.unit))
+
+
+@dataclass(frozen=True, slots=True)
+class AtomicIntentBinding(_Contract):
+    """Lossless representation of a single atomic query intent."""
+
+    intent_id: str
+    question: str
+    request_type: str | None = None
+    program: str | None = None
+    degree: str | None = None
+    target: str | None = None
+    attributes: tuple[str, ...] = ()
+    categories: tuple[str, ...] = ()
+    numeric_constraints: tuple[NumericRequirement, ...] = ()
+    qualifications: tuple[str, ...] = ()
+    conditions: tuple[SemanticCondition, ...] = ()
+    negated: bool = False
+    retrieval_query: str = ""
+    retrieval_queries: tuple[str, ...] = ()
+
+    def __post_init__(self) -> None:
+        object.__setattr__(self, "intent_id", _text(self.intent_id))
+        object.__setattr__(self, "question", _text(self.question))
+        object.__setattr__(self, "request_type", _optional_text(self.request_type))
+        object.__setattr__(self, "program", _optional_text(self.program))
+        object.__setattr__(self, "degree", _optional_text(self.degree))
+        object.__setattr__(self, "target", _optional_text(self.target))
+        object.__setattr__(self, "attributes", _texts(self.attributes))
+        object.__setattr__(self, "categories", _texts(self.categories))
+        object.__setattr__(self, "numeric_constraints", tuple(self.numeric_constraints))
+        object.__setattr__(self, "qualifications", _texts(self.qualifications))
+        object.__setattr__(self, "conditions", tuple(self.conditions))
+        object.__setattr__(self, "retrieval_query", _text(self.retrieval_query))
+        object.__setattr__(self, "retrieval_queries", _texts(self.retrieval_queries))
+
+
+@dataclass(frozen=True, slots=True)
+class LosslessSemanticQuery(_Contract):
+    """Phase 2 Lossless Semantic Query Contract (LSQC).
+
+    Ensures zero loss of user question semantics, atomic intents, program/degree
+    bindings, applicant categories, numerical constraints, qualification routes,
+    negation, and condition relationships between understanding and retrieval.
+    """
+
+    original_query: str
+    resolved_query: str = ""
+    institution_id: str | None = None
+    program_binding: str | None = None
+    degree_binding: str | None = None
+    applicant_categories: tuple[str, ...] = ()
+    numeric_constraints: tuple[NumericRequirement, ...] = ()
+    qualifications: tuple[str, ...] = ()
+    negation: bool = False
+    time_limits: tuple[str, ...] = ()
+    condition_relationships: tuple[SemanticCondition, ...] = ()
+    intents: tuple[AtomicIntentBinding, ...] = ()
+    is_multi_intent: bool = False
+    preserved_terms: tuple[str, ...] = ()
+    query_route: str = "simple_single_intent"
+
+    def __post_init__(self) -> None:
+        orig = _text(self.original_query)
+        if not orig:
+            raise ValueError("LosslessSemanticQuery.original_query cannot be empty.")
+        object.__setattr__(self, "original_query", orig)
+        object.__setattr__(self, "resolved_query", _text(self.resolved_query) or orig)
+        object.__setattr__(self, "institution_id", _optional_text(self.institution_id))
+        object.__setattr__(self, "program_binding", _optional_text(self.program_binding))
+        object.__setattr__(self, "degree_binding", _optional_text(self.degree_binding))
+        object.__setattr__(self, "applicant_categories", _texts(self.applicant_categories))
+        object.__setattr__(self, "numeric_constraints", tuple(self.numeric_constraints))
+        object.__setattr__(self, "qualifications", _texts(self.qualifications))
+        object.__setattr__(self, "time_limits", _texts(self.time_limits))
+        object.__setattr__(self, "condition_relationships", tuple(self.condition_relationships))
+        object.__setattr__(self, "intents", tuple(self.intents))
+        object.__setattr__(self, "preserved_terms", _texts(self.preserved_terms))
+        object.__setattr__(self, "query_route", _text(self.query_route) or "simple_single_intent")
+
+
 __all__ = [
     "ScalarValue",
     "ResolutionState",
     "VerificationState",
+    "QueryRoute",
     "Intent",
     "Target",
     "Entity",
@@ -587,4 +729,7 @@ __all__ = [
     "QueryFacet",
     "Query",
     "SemanticQueryFrame",
+    "SemanticCondition",
+    "AtomicIntentBinding",
+    "LosslessSemanticQuery",
 ]

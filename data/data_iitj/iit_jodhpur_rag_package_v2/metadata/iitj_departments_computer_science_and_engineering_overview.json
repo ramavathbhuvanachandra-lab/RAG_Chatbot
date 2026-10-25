@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_computer_science_and_engineering_overview",
+  "title": "Computer Science and Engineering \u2014 Overview",
+  "category": "departments/computer_science_and_engineering",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/computer_science_and_engineering/overview.md",
+  "docx_path": "documents/departments/computer_science_and_engineering/overview.docx",
+  "knowledge_path": "knowledge/departments/computer_science_and_engineering/overview.md",
+  "markdown_hash": "0f5bcd98e683c8e3b1c6e496ffc27e0e36eb67deabfbd8b3db3f789156c03fba",
+  "docx_hash": "fd68e8d41ceeb10c10434e6dab607cbce7cd294bcc610b7bb3a7b461d51d87a7",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/computer-science-engineering/en/computer-science-and-engineering",
+    "https://www.iitj.ac.in/computer-science-engineering"
+  ],
+  "unit_ids": [
+    "6c5c82c70cb98a14",
+    "68ef519f1c2326f8",
+    "8f71cb91980224ca",
+    "3895df28567c7e59",
+    "25cd5819e2ba34ee",
+    "7f74d442604df2dc",
+    "762f5e24cf59bec0",
+    "647dd988e793530d"
+  ],
+  "aliases": [
+    "Computer Science and Engineering \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [
+    "claim_btech_duration"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

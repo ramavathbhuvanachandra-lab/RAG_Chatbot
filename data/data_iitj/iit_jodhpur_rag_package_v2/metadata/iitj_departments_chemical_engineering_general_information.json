@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_chemical_engineering_general_information",
+  "title": "Chemical Engineering \u2014 General Information",
+  "category": "departments/chemical_engineering",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/chemical_engineering/general_information.md",
+  "docx_path": "documents/departments/chemical_engineering/general_information.docx",
+  "knowledge_path": "knowledge/departments/chemical_engineering/general_information.md",
+  "markdown_hash": "cfbb7404f441322db66ef872075ee6c28780f5bc8ac81269cf60aee002a8fbbb",
+  "docx_hash": "4f40fc5300f0b10f253945520dee8489a612b274c4b599e4856e1c1b8a2a3377",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/chemical-engineering/en/chemical-engineering",
+    "https://www.iitj.ac.in/chemical-engineering"
+  ],
+  "unit_ids": [
+    "6088ad8f5cf1443a",
+    "4b453f744acd0c57",
+    "3a6b72e537d86bb9",
+    "d043f7d1c06f3b58",
+    "1a154b803c4ed9f9",
+    "777702499843825f"
+  ],
+  "aliases": [
+    "Chemical Engineering \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

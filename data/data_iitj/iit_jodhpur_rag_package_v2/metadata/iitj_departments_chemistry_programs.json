@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_chemistry_programs",
+  "title": "Chemistry \u2014 Programs",
+  "category": "departments/chemistry",
+  "subcategory": "programs",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/chemistry/programs.md",
+  "docx_path": "documents/departments/chemistry/programs.docx",
+  "knowledge_path": "knowledge/departments/chemistry/programs.md",
+  "markdown_hash": "11e30df328eef27f14b2c775f70034c598f10fd298485c7f366cfdf751e2ab90",
+  "docx_hash": "0409b6548e8f913d3a1deb4cc7910c307a3cc64a5e119024159b3c7c651fb112",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Course-Contents-offered-by-Chemistry-Department-for-PhDs--638760759764128647.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/chemistry/en/post-graduate-program",
+    "https://www.iitj.ac.in/chemistry/en/courses"
+  ],
+  "unit_ids": [
+    "9eee0d9f60ad7a86",
+    "d0ec362bd7bfb7d8",
+    "f9ddf3ef8834cfa6",
+    "d2a313f8608c50ed",
+    "6a335eaa72592eb3",
+    "90d9ce983a50db29"
+  ],
+  "aliases": [
+    "Chemistry \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

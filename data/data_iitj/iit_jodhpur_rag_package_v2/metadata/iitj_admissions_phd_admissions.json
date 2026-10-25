@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_admissions_phd_admissions",
+  "title": "Ph.D. Admissions and Regulations",
+  "category": "admissions",
+  "subcategory": "phd_admissions",
+  "document_type": "admission_regulations",
+  "language": "en",
+  "markdown_path": "knowledge/admissions/phd_admissions.md",
+  "docx_path": "documents/admissions/phd_admissions.docx",
+  "knowledge_path": "knowledge/admissions/phd_admissions.md",
+  "markdown_hash": "155aae830396475bd36778f42167f989252e8b6014b66d45392014f2767cfcfb",
+  "docx_hash": "94b5d881bcb33d633c17fb74c568ec9c8c2eb3701555039e4c8e4a5b1eab6938",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/rolling-advertisement-for-admission-to-interdisciplinary-and-ph.d.-programmes",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "Ph.D. Admissions and Regulations",
+    "Phd Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "admission_routes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [
+    "claim_phd_duration"
+  ],
+  "conflict_ids": [
+    "CONF-IITJ-007"
+  ],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "RECONCILED"
+  }
+}

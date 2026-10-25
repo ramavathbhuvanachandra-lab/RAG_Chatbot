@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_civil_and_infrastructure_engineering_overview",
+  "title": "Civil and Infrastructure Engineering \u2014 Overview",
+  "category": "departments/civil_and_infrastructure_engineering",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/civil_and_infrastructure_engineering/overview.md",
+  "docx_path": "documents/departments/civil_and_infrastructure_engineering/overview.docx",
+  "knowledge_path": "knowledge/departments/civil_and_infrastructure_engineering/overview.md",
+  "markdown_hash": "61a0ef3b928f6f0fb7057dc94c77e7efb7f2f6de1afcfe7c6810274df7a371df",
+  "docx_hash": "dbfa4ce9f360c1a39e07d85db420622cb411636e23798c69082a3da563ab1827",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/civil-and-infrastructure-engineering",
+    "https://www.iitj.ac.in/civil-and-infrastructure-engineering"
+  ],
+  "unit_ids": [
+    "27ca27a3053362fe",
+    "852ab58f2fce0356",
+    "22f10091c8f46ff5",
+    "a23029c411083cad",
+    "b2395f1d431b44be",
+    "2dd6dc24ea037c68"
+  ],
+  "aliases": [
+    "Civil and Infrastructure Engineering \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

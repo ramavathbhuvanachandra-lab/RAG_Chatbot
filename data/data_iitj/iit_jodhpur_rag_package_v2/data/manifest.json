@@ -1,0 +1,11 @@
+{
+  "package_name": "iit_jodhpur_rag_package_v2",
+  "version": "2.0.0",
+  "release_timestamp": "2026-10-24T04:00:00+00:00",
+  "total_datasets": 26,
+  "format_support": [
+    "Markdown (canonical)",
+    "DOCX (consumer)",
+    "JSON (sidecars & datasets)"
+  ]
+}

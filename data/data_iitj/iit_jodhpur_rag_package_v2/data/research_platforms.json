@@ -1,0 +1,44 @@
+[
+  {
+    "id": "digital_humanities",
+    "name": "Center for Digital Humanities",
+    "focus": "Computational linguistics, cultural heritage digitisation, digital folklore",
+    "scope": "Interdisciplinary"
+  },
+  {
+    "id": "space_science_and_technology",
+    "name": "Platform for Space Science and Technology",
+    "focus": "Satellite propulsion, remote sensing, space payload instrumentation",
+    "scope": "Aerospace & Physics"
+  },
+  {
+    "id": "internet_of_things_and_applications",
+    "name": "Center for AIoT and Applications (AIoT Platform)",
+    "focus": "Smart edge devices, IoT sensor nodes, intelligent communications",
+    "scope": "Electrical & CSE"
+  },
+  {
+    "id": "autonomous_unmanned_vehicles",
+    "name": "Platform for Autonomous Unmanned Vehicles (AUV)",
+    "focus": "Unmanned aerial vehicles (drones), robotic swarms, obstacle avoidance",
+    "scope": "Mechanical & AI"
+  },
+  {
+    "id": "quantum_information_and_computation",
+    "name": "Center for Quantum Information and Computation",
+    "focus": "Quantum cryptography, qubit algorithms, quantum materials",
+    "scope": "Physics & Mathematics"
+  },
+  {
+    "id": "cognitive_science",
+    "name": "Platform for Cognitive Science",
+    "focus": "Neural cognition, eye-tracking paradigms, behavioral experiments",
+    "scope": "BSBE & Design"
+  },
+  {
+    "id": "smart_healthcare",
+    "name": "Platform for Smart Healthcare",
+    "focus": "Biomedical sensors, point-of-care diagnostics, AI in radiology",
+    "scope": "BSBE & AIDE"
+  }
+]

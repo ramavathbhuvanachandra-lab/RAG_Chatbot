@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_faculty_faculty",
+  "title": "Faculty",
+  "category": "faculty",
+  "subcategory": "faculty",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/faculty/faculty.md",
+  "docx_path": "documents/faculty/faculty.docx",
+  "knowledge_path": "knowledge/faculty/faculty.md",
+  "markdown_hash": "f87b44452d8a6ca847f630223e8d67dd5177080a2295606235e3432f677b9241",
+  "docx_hash": "53872700cfca94df136b927cc4b72c6e79849d5942e1cdf5639bc5dfd01f14ae",
+  "source_urls": [
+    "https://iitj.ac.in/main/en/director",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_wsa",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_po",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_lo",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_btc",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_rp",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_reg",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_psd",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_id",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel#fdp_co",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/main/en/visiting-faculty-members",
+    "https://www.iitj.ac.in/faculty-positions/en/scale-of-pay",
+    "https://www.iitj.ac.in/rcrice/en/About",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel",
+    "https://www.iitj.ac.in/cete/en/cete-faculty-and-student-colloquium",
+    "https://www.iitj.ac.in/main/en/faculty-members",
+    "https://www.iitj.ac.in/dia-coe/en/photo-gallery",
+    "https://www.iitj.ac.in/main/en/adjunct-faculty-members",
+    "https://www.iitj.ac.in/RTI/Index?type=44adc1ac-6022-4208-838a-c5c8cc83019c",
+    "https://www.iitj.ac.in/faculty-positions/en/faculty-positions",
+    "https://www.iitj.ac.in/office-of-establishment-e-I/en/Office-of-Establishment-(E-I)"
+  ],
+  "unit_ids": [
+    "0cfd6837187f077f",
+    "be856e561947b406",
+    "235ab5155e89f63d",
+    "a0e8dfca5a7c06d3",
+    "14443e75ade300d4",
+    "758ca186a896a532",
+    "20796008f798187f",
+    "7df7684a4ca5a344"
+  ],
+  "aliases": [
+    "Faculty"
+  ],
+  "related_datasets": [
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

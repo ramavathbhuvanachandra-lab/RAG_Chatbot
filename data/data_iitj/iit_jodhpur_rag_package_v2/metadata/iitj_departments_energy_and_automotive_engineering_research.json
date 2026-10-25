@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_energy_and_automotive_engineering_research",
+  "title": "Energy and Automotive Engineering \u2014 Research",
+  "category": "departments/energy_and_automotive_engineering",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/energy_and_automotive_engineering/research.md",
+  "docx_path": "documents/departments/energy_and_automotive_engineering/research.docx",
+  "knowledge_path": "knowledge/departments/energy_and_automotive_engineering/research.md",
+  "markdown_hash": "0de542646c3aecd371a387818e5f1a1f1807f678b3b7a25fec54b16b08e14348",
+  "docx_hash": "54f8eaa45a696351c03e55eb41f5680582c2860a28ec2967b72e548f3467a6e6",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/enauto/en/mtech-in-energy-engineering",
+    "https://www.iitj.ac.in/enauto/en/PhD-in-energy"
+  ],
+  "unit_ids": [
+    "73b9de1123731782",
+    "9d5bca8278f900a8",
+    "b1a4c99160fb0f66",
+    "62ad945b39c11445",
+    "9fac657a99df8ca3",
+    "968972e60a659787",
+    "c25eb3059cf3e751",
+    "c92f07c09a8d9647"
+  ],
+  "aliases": [
+    "Energy and Automotive Engineering \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "departments.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

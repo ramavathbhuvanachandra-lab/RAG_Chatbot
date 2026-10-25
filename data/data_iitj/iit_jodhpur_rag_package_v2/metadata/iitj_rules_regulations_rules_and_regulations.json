@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_rules_regulations_rules_and_regulations",
+  "title": "Rules and Regulations",
+  "category": "rules_regulations",
+  "subcategory": "rules_and_regulations",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/rules_regulations/rules_and_regulations.md",
+  "docx_path": "documents/rules_regulations/rules_and_regulations.docx",
+  "knowledge_path": "knowledge/rules_regulations/rules_and_regulations.md",
+  "markdown_hash": "865a270ebc0f291cf8d4b5b5903144652daac01964a176e4d3dc4918da0c4c45",
+  "docx_hash": "e9af57095a51908a6763b22dd1dd7e8dfc5ad4dbd63408ee4b47b83c59add4e0",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-security-transports/en/security",
+    "https://www.iitj.ac.in/cete/en/education-policy"
+  ],
+  "unit_ids": [
+    "d71a94aa98525970",
+    "6f0a6a9658b3e9ea",
+    "66fa67806edba293",
+    "247df8ff0206be4c",
+    "27b734791c166f4d",
+    "0390f2ab100d2e1d",
+    "f1be7a4917c086f1",
+    "b080e2b8717ce896"
+  ],
+  "aliases": [
+    "Rules and Regulations"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

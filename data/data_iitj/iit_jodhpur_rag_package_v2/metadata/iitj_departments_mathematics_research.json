@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mathematics_research",
+  "title": "Mathematics \u2014 Research",
+  "category": "departments/mathematics",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mathematics/research.md",
+  "docx_path": "documents/departments/mathematics/research.docx",
+  "knowledge_path": "knowledge/departments/mathematics/research.md",
+  "markdown_hash": "6c21ad936b36bceaacc50b57d63c26f823b51a1dc12b8b91fc919c1ac2eb4ea6",
+  "docx_hash": "7b9ead6f38e8c37fabce11cfa4525b72f71969b877ba33461c811160bca48d61",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/mathematics/en/undergraduate-programs"
+  ],
+  "unit_ids": [
+    "663354d25453115b",
+    "6eb43888f72b91ed",
+    "cb671c50c0dce379",
+    "85e71d002eed48e4",
+    "bb036cd9e8435f2a",
+    "211040104a6da0ea",
+    "a89cc68bc6c8b27d",
+    "0f934fed5b2b89c4"
+  ],
+  "aliases": [
+    "Mathematics \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "departments.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

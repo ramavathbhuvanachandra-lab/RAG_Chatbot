@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_admissions_general_admission_regulations",
+  "title": "General Academic Admission Regulations and Categories",
+  "category": "admissions",
+  "subcategory": "general_admission_regulations",
+  "document_type": "admission_regulations",
+  "language": "en",
+  "markdown_path": "knowledge/admissions/general_admission_regulations.md",
+  "docx_path": "documents/admissions/general_admission_regulations.docx",
+  "knowledge_path": "knowledge/admissions/general_admission_regulations.md",
+  "markdown_hash": "a2ae4bf4defb2d9ba5b18d4303f1287709740b1dd780682a9f7f23c9501c4559",
+  "docx_hash": "26b5507e27e98844bea91c6e7f0cf00273e1a7f2d130ab1bbd36aacc24033547",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations"
+  ],
+  "unit_ids": [],
+  "aliases": [
+    "General Academic Admission Regulations and Categories",
+    "General Admission Regulations",
+    "Admission Regulations",
+    "Categories of Admission",
+    "Ordinances"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "admission_routes.json",
+    "degrees.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [
+    "claim_btech_admission_route",
+    "claim_attendance_requirement",
+    "claim_branch_change_cgpa",
+    "claim_academic_probation"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mechanical_engineering_overview",
+  "title": "Mechanical Engineering \u2014 Overview",
+  "category": "departments/mechanical_engineering",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mechanical_engineering/overview.md",
+  "docx_path": "documents/departments/mechanical_engineering/overview.docx",
+  "knowledge_path": "knowledge/departments/mechanical_engineering/overview.md",
+  "markdown_hash": "8d5cac39c8c787587a3270dfff6a4cb7f2d5263813f8b18a0a16bee591e7f33f",
+  "docx_hash": "e0a7dbd1892b13834e833c7e0bb392734ba4f8e606bc02cb57d30019dab32802",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/mechanical-engineering",
+    "https://www.iitj.ac.in/mechanical-engineering/en/mechanical-engineering"
+  ],
+  "unit_ids": [
+    "660226c63847bdaf",
+    "8fdc11cd0aa20096",
+    "e397665a838dc933",
+    "aed171d89dbb3ca5",
+    "cf1d30c9cd846910"
+  ],
+  "aliases": [
+    "Mechanical Engineering \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

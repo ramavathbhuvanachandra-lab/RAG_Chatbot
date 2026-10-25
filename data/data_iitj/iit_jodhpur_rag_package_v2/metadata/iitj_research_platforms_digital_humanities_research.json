@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_research_platforms_digital_humanities_research",
+  "title": "Digital Humanities \u2014 Research",
+  "category": "research_platforms/digital_humanities",
+  "subcategory": "research",
+  "document_type": "research_profile",
+  "language": "en",
+  "markdown_path": "knowledge/research_platforms/digital_humanities/research.md",
+  "docx_path": "documents/research_platforms/digital_humanities/research.docx",
+  "knowledge_path": "knowledge/research_platforms/digital_humanities/research.md",
+  "markdown_hash": "d3bea5b7f213f3535dd707735ad4571c23779870c26fcc9de3f8f3e7c4866049",
+  "docx_hash": "7899d855ad8db340de387287f131c23eb75115280ffd32585dd740991431c19c",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/dh/en/msc-digital-humanities"
+  ],
+  "unit_ids": [
+    "b32303a846bb7a0d",
+    "62b726985dd266e5",
+    "45880f221a45b156",
+    "56eae4832e6f32f1"
+  ],
+  "aliases": [
+    "Digital Humanities \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

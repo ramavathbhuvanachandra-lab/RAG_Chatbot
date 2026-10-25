@@ -131,7 +131,7 @@ QUERY_UNDERSTANDING_CONTEXT = _env_int(
 
 QUERY_UNDERSTANDING_MAX_OUTPUT = _env_int(
     "QUERY_UNDERSTANDING_MAX_OUTPUT",
-    256,
+    1024,
 )
 
 QUERY_UNDERSTANDING_TIMEOUT = _env_int(
@@ -169,11 +169,11 @@ ANSWER_LLM_KEEP_ALIVE = _env(
     "5m",
 )
 
-# Answers should remain concise. This also prevents unnecessary generation
-# time on the laptop during the architecture-quality milestone.
+# Answers should remain concise while providing enough budget for multi-part
+# and complex institutional questions without mid-sentence truncation.
 ANSWER_LLM_MAX_OUTPUT = _env_int(
     "ANSWER_LLM_MAX_OUTPUT",
-    256,
+    512,
 )
 
 ANSWER_LLM_THINKING = _env_bool(

@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_hostel_accommodation_general_information",
+  "title": "Hostel Accommodation \u2014 General Information",
+  "category": "hostel_accommodation",
+  "subcategory": "general_information",
+  "document_type": "housing_facility",
+  "language": "en",
+  "markdown_path": "knowledge/hostel_accommodation/general_information.md",
+  "docx_path": "documents/hostel_accommodation/general_information.docx",
+  "knowledge_path": "knowledge/hostel_accommodation/general_information.md",
+  "markdown_hash": "e92041ada95042163fa16fef605e8dedf1b0cb06715d2e2ded1b1dc82abfff5a",
+  "docx_hash": "de92542deb6919783eb8b3e65310305eacd234222094c5393cf5447cc7aad9e1",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-students/en/hostels",
+    "https://www.iitj.ac.in/office-of-students/en/hostel-booking"
+  ],
+  "unit_ids": [
+    "7da527b472969cc5",
+    "bb44df9f9ae3dece",
+    "002a14562f045a63",
+    "784c17216cd4e5ad",
+    "17d1bbf16eab74ac",
+    "cb68724a8501db02",
+    "0946e0cc05132c25",
+    "a24a055dc9c6f4f1"
+  ],
+  "aliases": [
+    "Hostel Accommodation \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "hostel_facilities.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

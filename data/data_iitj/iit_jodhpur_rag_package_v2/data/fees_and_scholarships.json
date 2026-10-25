@@ -1,0 +1,58 @@
+{
+  "institution_id": "iitj",
+  "academic_fee_structures": [
+    {
+      "programme": "B.Tech & B.S. Programmes",
+      "tuition_fee_per_semester": 100000,
+      "currency": "INR",
+      "academic_year": "AY 2026-2027",
+      "authority": "Ministry of Education (MoE) IIT Council National Directive",
+      "waiver_and_remission_policy": {
+        "sc_st_pwd": "100% Tuition Fee Exemption (Zero Tuition Fee)",
+        "family_income_below_1_lpa": "100% Tuition Fee Remission for economically backward students",
+        "family_income_1_to_5_lpa": "2/3rd Tuition Fee Remission (Student pays Rs. 33,333 per semester)",
+        "education_loan": "Interest-free loans available under Government of India Vidyalaxmi scheme"
+      }
+    },
+    {
+      "programme": "ITEP (4-Year B.Sc. B.Ed.) Programme",
+      "tuition_fee_per_semester": 50000,
+      "currency": "INR",
+      "academic_year": "AY 2026-2027",
+      "authority": "IIT Jodhpur ITEP Approved Fee Matrix",
+      "other_semester_charges": {
+        "admission_fee_one_time": 3800,
+        "convocation_fee_one_time": 4000,
+        "semester_fee": 32250,
+        "refundable_deposit_one_time": 8000,
+        "experiential_development_fee": 2000
+      },
+      "notes": [
+        "SC, ST, and PwD students are exempted from paying the Tuition Fees.",
+        "The semester fee includes hostel room rent.",
+        "Mess advance is paid separately each semester."
+      ]
+    },
+    {
+      "programme": "MBA & Tech MBA Programme (School of Management & Entrepreneurship)",
+      "tuition_fee_per_semester": 225000,
+      "currency": "INR",
+      "academic_year": "Batch 2026-2028",
+      "authority": "SME Fee Structure & Student Intake Committee",
+      "international_multipliers": {
+        "saarc_countries": "1.5 times the Indian tuition fee",
+        "non_saarc_countries": "2.0 times the Indian tuition fee"
+      },
+      "notes": [
+        "SC, ST, and PwD students are exempt from paying tuition fees per Government of India norms.",
+        "Semester fee, admission fee, convocation fee, dining fee, and refundable deposit apply separately."
+      ]
+    }
+  ],
+  "scholarships_and_fellowships": {
+    "mtech_teaching_assistantship": "Rs. 12,400 per month for GATE-qualified candidates under MoE norms.",
+    "phd_fellowship": "Rs. 37,000 per month (Junior Research Fellow - JRF, Years 1-2) and Rs. 42,000 per month (Senior Research Fellow - SRF, Years 3-5) as per MoE guidelines.",
+    "merit_cum_means_scholarship": "Full tuition waiver and basic pocket allowance for undergraduate students whose parental income is below the prescribed MoE ceiling.",
+    "central_sector_scholarship_sc_st": "Full tuition fee waiver, living allowance, books and computer grant for top-ranking SC/ST students."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_programs_general_information",
+  "title": "General Information",
+  "category": "programs",
+  "subcategory": "general_information",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/programs/general_information.md",
+  "docx_path": "documents/programs/general_information.docx",
+  "knowledge_path": "knowledge/programs/general_information.md",
+  "markdown_hash": "d30656082a29c2c7b4abbd5a2b524b913f50dd84c6854a58f294cd6218e8f17d",
+  "docx_hash": "ec7465d1f0c934c971d835340a64aaff7968ec4ef19162ff1867fb78ed70e6c7",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/Admission-to-Postgraduate-Programs",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel",
+    "https://www.iitj.ac.in/tisc/en/programs",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/admission-to-postgraduate-programs",
+    "https://www.iitj.ac.in/itep/en/Integrated-Teacher-Education-Programme",
+    "https://www.iitj.ac.in/itep",
+    "https://www.iitj.ac.in/cdh/en/capacity-building",
+    "https://www.iitj.ac.in/cete/en/contact",
+    "https://www.iitj.ac.in/itep/en/curriculum",
+    "https://www.iitj.ac.in/itep/en/integrated-teacher-education-programme"
+  ],
+  "unit_ids": [
+    "04ac57757ca1a028",
+    "5609825737a4e6e3",
+    "a5bd267a8d927033",
+    "192f127d3d57c70d",
+    "10db2773cca17bbc",
+    "716ac16afff9374d",
+    "73016a5d9850f60d",
+    "c189c34c91d9fde2"
+  ],
+  "aliases": [
+    "General Information"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "degrees.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

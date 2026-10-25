@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_artificial_intelligence_and_data_science_overview",
+  "title": "School of Artificial Intelligence and Data Science \u2014 Overview",
+  "category": "schools/artificial_intelligence_and_data_science",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/overview.md",
+  "docx_path": "documents/schools/artificial_intelligence_and_data_science/overview.docx",
+  "knowledge_path": "knowledge/schools/artificial_intelligence_and_data_science/overview.md",
+  "markdown_hash": "625662c98e1f811271c70b0e294678b0966d16bd395b2135f7e86fe3f0e9d4c7",
+  "docx_hash": "beae48ea537f79dcaea7c1f30b5b5168482bd10f9abe5d2b69825dfb934c9b45",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/AI-for-Technology?ep=fw",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Smart-Cities-Infrastructure-and-Environment?ep=fw",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Behavior,-Cognition-and-Brain?ep=fw",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/AI-driven-Healthcare?ep=fw",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Robotics-and-Intelligent-Machines?ep=fw",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/AI-and-Ethics?ep=fw",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Social-Engineering?ep=fw",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Theoretical-AI?ep=fw"
+  ],
+  "unit_ids": [
+    "014045ad46d4c786",
+    "02f836466f69645a",
+    "16c76dc227e705bd",
+    "22ede7ca069aafb6",
+    "28df21d2b2ab47b6",
+    "993cf8926aada1f1",
+    "4a35e8f4082e1c3f",
+    "75165630a46f4121"
+  ],
+  "aliases": [
+    "School of Artificial Intelligence and Data Science \u2014 Overview",
+    "Overview",
+    "SAIDE",
+    "AIDE IIT Jodhpur",
+    "School of AI"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

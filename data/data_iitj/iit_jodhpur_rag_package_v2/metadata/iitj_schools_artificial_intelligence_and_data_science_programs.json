@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_artificial_intelligence_and_data_science_programs",
+  "title": "School of Artificial Intelligence and Data Science \u2014 Programs",
+  "category": "schools/artificial_intelligence_and_data_science",
+  "subcategory": "programs",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/programs.md",
+  "docx_path": "documents/schools/artificial_intelligence_and_data_science/programs.docx",
+  "knowledge_path": "knowledge/schools/artificial_intelligence_and_data_science/programs.md",
+  "markdown_hash": "b961ac7c1dfa92d254cd35797bef0f59801efc2a77406d8f58fb24a9fae52150",
+  "docx_hash": "607d61afb7115bfb434ce27902c5a44f7644baa07d19886a930c25ebb3f24139",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/internship-irograms",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/ms-program",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/phd",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/executive-programs",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/btech",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/mtech"
+  ],
+  "unit_ids": [
+    "2d16e62bda2d6e8d",
+    "8eac27c5860f3388",
+    "45c51a32775eee18",
+    "4f28a154a5e8ec4c",
+    "b08f20fe5031a473",
+    "2eed52dc996e1e97",
+    "31b3965479059796",
+    "8b70e6d4eced89c3"
+  ],
+  "aliases": [
+    "School of Artificial Intelligence and Data Science \u2014 Programs",
+    "Programs",
+    "SAIDE",
+    "AIDE IIT Jodhpur",
+    "School of AI"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

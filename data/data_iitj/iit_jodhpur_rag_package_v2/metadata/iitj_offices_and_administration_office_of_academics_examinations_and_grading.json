@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_academics_examinations_and_grading",
+  "title": "Office of Academics \u2014 Examinations and Grading",
+  "category": "offices_and_administration/office_of_academics",
+  "subcategory": "examinations_and_grading",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_academics/examinations_and_grading.md",
+  "docx_path": "documents/offices_and_administration/office_of_academics/examinations_and_grading.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_academics/examinations_and_grading.md",
+  "markdown_hash": "3480e189f9633d140dfd48b35d725faf02da6b4be5346b164654a3003f795b34",
+  "docx_hash": "c271bb08c68245d3d010fb6607fbf7e4e0f3d068f42bd87da97f2f95a4b32b20",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top6.%20Grade%20Card%20and%20Transcript",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top5.2%20Procedure%20for%20declaration%20of%20results",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top8.%20Make-up%20Examinations",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top13.4%20Design%20Project%20Evaluation",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top13.1%20B.Tech.%20Project%20Evaluation",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top13.5%20Conduct%20and%20Evaluation%20of%20B.Tech.%20-M.%20Tech%20Dual%20Degree%20Project",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top4.2%20Evaluation",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "Office of Academics \u2014 Examinations and Grading",
+    "Examinations And Grading"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "administrative_offices.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

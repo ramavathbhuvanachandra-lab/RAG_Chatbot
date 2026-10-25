@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_management_and_entrepreneurship_training",
+  "title": "School of Management and Entrepreneurship \u2014 Training and Upskilling",
+  "category": "schools/management_and_entrepreneurship",
+  "subcategory": "training",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/management_and_entrepreneurship/training.md",
+  "docx_path": "documents/schools/management_and_entrepreneurship/training.docx",
+  "knowledge_path": "knowledge/schools/management_and_entrepreneurship/training.md",
+  "markdown_hash": "c4119baee14abd80666255a0166d377f503e215df9b36d860f152b2d34253ce5",
+  "docx_hash": "6f62bd8715aebfe59198342b62b1ddcb118c5c24a142f9ebfc09fafc7d01f9e8",
+  "source_urls": [
+    "https://intranet.iitj.ac.in/acad_website/intra/2025_onwords/SecondYearMBAcurriculamreview_SME.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/schools/en/executive-programs-1",
+    "https://www.iitj.ac.in/schools/en/Minor-Programs",
+    "https://www.iitj.ac.in/office-of-academics/en/list-of-academic-programs",
+    "https://www.iitj.ac.in/schools",
+    "https://www.iitj.ac.in/schools/en/School-of-Management-&-Entrepreneurship",
+    "https://www.iitj.ac.in/materials-engineering/en/curriculum",
+    "https://onlinedegree.iitj.ac.in/program/iit-jodhpur/bs-management-technology"
+  ],
+  "unit_ids": [
+    "024ab1d8aa7a00a6",
+    "7b053f88964af3e5",
+    "ab605ba9eb1250bd",
+    "49dee5404af55184",
+    "6cec4db4ee7e10af",
+    "fc1f1b4c35107682",
+    "16d93358f7598340",
+    "af65395ec808d291"
+  ],
+  "aliases": [
+    "School of Management and Entrepreneurship \u2014 Training and Upskilling",
+    "Training",
+    "SME",
+    "SME IIT Jodhpur",
+    "School of Management",
+    "Tech MBA",
+    "VTU",
+    "Vocational Training Centre",
+    "Skill Development"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "fees_and_scholarships.json",
+    "placements_and_careers.json",
+    "schools.json",
+    "student_services.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

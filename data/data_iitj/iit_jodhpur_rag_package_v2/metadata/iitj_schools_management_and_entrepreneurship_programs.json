@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_management_and_entrepreneurship_programs",
+  "title": "School of Management and Entrepreneurship \u2014 Programs",
+  "category": "schools/management_and_entrepreneurship",
+  "subcategory": "programs",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/management_and_entrepreneurship/programs.md",
+  "docx_path": "documents/schools/management_and_entrepreneurship/programs.docx",
+  "knowledge_path": "knowledge/schools/management_and_entrepreneurship/programs.md",
+  "markdown_hash": "a677952f1404bc2b0e35140874523e05c29b469b5c9c5b23c1a2b10684bc94cf",
+  "docx_hash": "8d6ab2ba6ebe47701044f8d8f90b7b83ae2304f3b483cb72c104960e891fce0d",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/schools/en/Minor-Programs"
+  ],
+  "unit_ids": [
+    "ab605ba9eb1250bd",
+    "49dee5404af55184",
+    "6cec4db4ee7e10af"
+  ],
+  "aliases": [
+    "School of Management and Entrepreneurship \u2014 Programs",
+    "Programs",
+    "SME",
+    "SME IIT Jodhpur",
+    "School of Management",
+    "Tech MBA"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "fees_and_scholarships.json",
+    "placements_and_careers.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

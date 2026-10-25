@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_programs_btech_curriculum",
+  "title": "B.Tech \u2014 Curriculum",
+  "category": "programs/btech",
+  "subcategory": "curriculum",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/programs/btech/curriculum.md",
+  "docx_path": "documents/programs/btech/curriculum.docx",
+  "knowledge_path": "knowledge/programs/btech/curriculum.md",
+  "markdown_hash": "45b5dc856bf4bf7faa245a1142929b37293928a1886008b0acfb8f2ca99e6c9f",
+  "docx_hash": "959043e88697b602b27fc947fc6d70e394a5c1a3051bb2e6cc869ee6b93cefe5",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/Bachelor-of-Technology/en/Bachelor-of-Technology",
+    "https://www.iitj.ac.in/bachelor-of-technology/en/bachelor-of-technology"
+  ],
+  "unit_ids": [
+    "35e005c518690e53",
+    "5ba63b3467990a80",
+    "0030ea9836124c67",
+    "71d50688eab4a453",
+    "a320518bb6c9f4f8",
+    "67ce0d01d57000c1",
+    "06b08a11162c5911",
+    "160d81c5cd7be7d3"
+  ],
+  "aliases": [
+    "B.Tech \u2014 Curriculum",
+    "Curriculum"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

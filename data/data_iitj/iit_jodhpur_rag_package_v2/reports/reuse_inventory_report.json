@@ -1,0 +1,22 @@
+{
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "inventory_timestamp": "2026-10-23T22:37:04.774836+00:00",
+  "source_crawl_locations": {
+    "crawled_pages_output": "storage/output/www.iitj.ac.in",
+    "structured_knowledge_records": "storage/structured_knowledge/www.iitj.ac.in",
+    "downloaded_official_documents": "storage/documents/www.iitj.ac.in",
+    "baseline_knowledge_units": "storage/test6_iitj_knowledge_units.json"
+  },
+  "inventory_metrics": {
+    "total_crawled_pages": 1096,
+    "unique_crawled_urls": 1093,
+    "total_structured_knowledge_files": 1046,
+    "total_raw_pdfs": 19,
+    "total_extracted_knowledge_units": 2641,
+    "pages_with_usable_content": 1096,
+    "empty_pages": 0,
+    "reused_sources_proportion": 1.0,
+    "full_recrawl_initiated": false
+  }
+}

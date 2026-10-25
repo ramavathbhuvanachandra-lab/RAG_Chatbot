@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_physics_overview",
+  "title": "Physics \u2014 Overview",
+  "category": "departments/physics",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/physics/overview.md",
+  "docx_path": "documents/departments/physics/overview.docx",
+  "knowledge_path": "knowledge/departments/physics/overview.md",
+  "markdown_hash": "db6ac828368c6b1bcf8509e141e27f6566e8b7c92b6649cad3469f0582243519",
+  "docx_hash": "4ddb80847d79ec270f04dd5051a3c59cbed6beed3187ef9ae86099d163d9bb6f",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/07-2026/Curriculum-of-MSc-in-Physics-2026-639208557752166058.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Curriculum2-638755740940904530.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Curriculum3-638755770502183063.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/physics/en/postgraduate-program",
+    "https://www.iitj.ac.in/physics/en/physics",
+    "https://www.iitj.ac.in/physics"
+  ],
+  "unit_ids": [
+    "41ba61bb1d78fe0a",
+    "5b24e01083138319",
+    "18df817439aee56a",
+    "76e5d9a7e238ed2c",
+    "ac68f0cd2917e6d9",
+    "7c5d44e1efb9a32a",
+    "b8b1516539a00239",
+    "46e70ca70a516bf3"
+  ],
+  "aliases": [
+    "Physics \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

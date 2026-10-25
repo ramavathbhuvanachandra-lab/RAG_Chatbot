@@ -398,10 +398,16 @@ def _split_units(text: str) -> list[str]:
     if not raw:
         return []
 
-    paragraphs = [p.strip() for p in re.split(r"\n\s*\n|\n", raw) if p.strip()]
+    paragraphs = [p.strip() for p in re.split(r"\n\s*\n", raw) if p.strip()]
     units: list[str] = []
+    sentence_split = re.compile(r"(?<=[.!?।])\s+")
     for paragraph in paragraphs:
-        pieces = [x.strip() for x in _SENTENCE_SPLIT.split(paragraph) if x.strip()]
+        # Preserve structured bullet lists together as a cohesive unit
+        # rather than shredding them into isolated, ungrounded single-line fragments.
+        if any(line.strip().startswith(("-", "*", "•")) for line in paragraph.split("\n")) and len(paragraph) <= 650:
+            units.append(paragraph)
+            continue
+        pieces = [x.strip() for x in sentence_split.split(paragraph) if x.strip()]
         if not pieces:
             pieces = [paragraph]
         for piece in pieces:

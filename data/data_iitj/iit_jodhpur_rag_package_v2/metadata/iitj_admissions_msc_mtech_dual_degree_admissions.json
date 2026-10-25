@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_admissions_msc_mtech_dual_degree_admissions",
+  "title": "Admission to M.Sc. \u2013 M.Tech. Dual Degree Programme",
+  "category": "admissions",
+  "subcategory": "msc_mtech_dual_degree_admissions",
+  "document_type": "admission_regulations",
+  "language": "en",
+  "markdown_path": "knowledge/admissions/msc_mtech_dual_degree_admissions.md",
+  "docx_path": "documents/admissions/msc_mtech_dual_degree_admissions.docx",
+  "knowledge_path": "knowledge/admissions/msc_mtech_dual_degree_admissions.md",
+  "markdown_hash": "d7e1481176d1f19444e670c869ef7bd2c2a8d228a1e4c2799c9a787a41733f12",
+  "docx_hash": "c0b1b5902c6f1e1efa2336b86aff596515e9032447b30bf874a2bb6cd874407d",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "Admission to M.Sc. \u2013 M.Tech. Dual Degree Programme",
+    "Msc Mtech Dual Degree Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "admission_routes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [
+    "CONF-IITJ-004"
+  ],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "RECONCILED"
+  }
+}

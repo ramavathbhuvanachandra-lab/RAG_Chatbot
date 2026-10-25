@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_admissions_mtech_admissions",
+  "title": "M.Tech Admissions and Regulations",
+  "category": "admissions",
+  "subcategory": "mtech_admissions",
+  "document_type": "admission_regulations",
+  "language": "en",
+  "markdown_path": "knowledge/admissions/mtech_admissions.md",
+  "docx_path": "documents/admissions/mtech_admissions.docx",
+  "knowledge_path": "knowledge/admissions/mtech_admissions.md",
+  "markdown_hash": "f57d7fdf378c6ac6bc1fbba6ef06495e844b178c21fe33ff001f8dc694445301",
+  "docx_hash": "0546510cb80e4077d42ca943309b6d8d5ec2a293831678128a7cda141ed31804",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "M.Tech Admissions and Regulations",
+    "Mtech Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "admission_routes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [
+    "claim_mtech_duration",
+    "claim_mtech_admission_route"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

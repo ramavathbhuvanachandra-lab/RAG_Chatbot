@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_management_and_entrepreneurship_faculty",
+  "title": "School of Management and Entrepreneurship \u2014 Faculty",
+  "category": "schools/management_and_entrepreneurship",
+  "subcategory": "faculty",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/management_and_entrepreneurship/faculty.md",
+  "docx_path": "documents/schools/management_and_entrepreneurship/faculty.docx",
+  "knowledge_path": "knowledge/schools/management_and_entrepreneurship/faculty.md",
+  "markdown_hash": "ad1faa3d817a9b1ffb054bb26dc0f457bde40dddc63a8ab974cd66d13054a409",
+  "docx_hash": "ed3a9434571acc6062aa25668926ef00e0511b79ef0a7c46eef070527dca5076",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/cete/en/people"
+  ],
+  "unit_ids": [
+    "83864a23931f679f",
+    "5344ccc9fd445964",
+    "155cdf1006880d05",
+    "aa76f5a42216ccc4",
+    "0bd88c81eea4b18a",
+    "f631050e4685c6b5",
+    "4422e2202c10e8fd",
+    "d1af8e9ca10eed78"
+  ],
+  "aliases": [
+    "School of Management and Entrepreneurship \u2014 Faculty",
+    "Faculty",
+    "SME",
+    "SME IIT Jodhpur",
+    "School of Management",
+    "Tech MBA"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "fees_and_scholarships.json",
+    "placements_and_careers.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

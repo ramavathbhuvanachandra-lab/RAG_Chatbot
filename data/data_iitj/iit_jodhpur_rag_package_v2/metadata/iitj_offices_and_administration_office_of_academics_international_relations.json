@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_academics_international_relations",
+  "title": "Office of Academics \u2014 International Relations",
+  "category": "offices_and_administration/office_of_academics",
+  "subcategory": "international_relations",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_academics/international_relations.md",
+  "docx_path": "documents/offices_and_administration/office_of_academics/international_relations.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_academics/international_relations.md",
+  "markdown_hash": "3ff1c3ba6c4a357b88abaebfec89c92123026569dd97f0dab383a3d1259c77e8",
+  "docx_hash": "aed0412caf6769ac01685da8a8ac901ed2559bbe9d52a196561d282f369dd3e4",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top10.3%20Student%20Exchange%20Programme",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "Office of Academics \u2014 International Relations",
+    "International Relations"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "administrative_offices.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

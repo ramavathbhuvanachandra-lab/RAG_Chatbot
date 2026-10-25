@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_placements_and_careers_placements",
+  "title": "Placements and Careers",
+  "category": "placements_and_careers",
+  "subcategory": "placements",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/placements_and_careers/placements.md",
+  "docx_path": "documents/placements_and_careers/placements.docx",
+  "knowledge_path": "knowledge/placements_and_careers/placements.md",
+  "markdown_hash": "af5fa8e7f56925c9bd71b243e2a83a8c64cbbb238d28143c7239b46f344c0438",
+  "docx_hash": "38132d59550e17332970aa3191e66851cb778636288b83b63ca48f1b8978e2bf",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2026/Data-for-Placement-TP-Portal-2021-B-Tech-and-M-Tech-updated-639093538036203222.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2026/Data-for-Placement-TP-Portal-2022-B-Tech-and-M-Tech-updated-639093538294796337.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2026/Data-for-Placement-TP-Portal-2023-B-Tech-and-M-Tech-updated-639093538514251688.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2026/Data-for-Placement-TP-Portal-2024-B-Tech-and-M-Tech-updated-639093538738710021.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2026/Data-for-Placement-TP-Portal-2025-B-Tech-and-M-Tech-updated-639093538974190978.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/07-2026/Data-for-Placement-TP-Portal-2026-B-Tech-and-M-Tech-639186739192248631.pdf",
+    "https://old.iitj.ac.in/staff/recruitment/recruitment_archive.php",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/rrp-638780091350702133.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/recruit2-638780091943444175.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-training-and-placement/en/Office-of-Training-and-Placement",
+    "https://www.iitj.ac.in/office-of-training-and-placement/en/office-of-training-and-placement",
+    "https://www.iitj.ac.in/office-of-recruitment-nf/en/non-teaching-staff-recruitment"
+  ],
+  "unit_ids": [
+    "5d444d0dc9bb0d42",
+    "03219699754e02af",
+    "98a7ce3b3d21405d",
+    "119a74b015409f50",
+    "dc050135eec1b7ce",
+    "1fd3aaca4774891f",
+    "d2ff93c55bba14f1",
+    "f6ae1e28791451bf"
+  ],
+  "aliases": [
+    "Placements and Careers",
+    "Placements",
+    "SPC",
+    "Student Placement Committee",
+    "Training and Placement Cell",
+    "T&P Cell"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "placements_and_careers.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

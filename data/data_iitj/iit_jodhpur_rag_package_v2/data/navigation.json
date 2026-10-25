@@ -1,0 +1,58 @@
+[
+  {
+    "category": "Academics & Admissions",
+    "links": [
+      {
+        "label": "B.Tech Admissions",
+        "path": "admissions/general_admission_regulations.md"
+      },
+      {
+        "label": "Academic Fee Structure",
+        "path": "finance/academic_fees_and_scholarships.md"
+      },
+      {
+        "label": "ITEP Admissions",
+        "path": "programs/itep/overview.md"
+      }
+    ]
+  },
+  {
+    "category": "Campus Living",
+    "links": [
+      {
+        "label": "Student Hostels",
+        "path": "hostels_and_housing/hostel_rules_and_facilities.md"
+      },
+      {
+        "label": "Visitor Accommodation",
+        "path": "hostels_and_housing/visitor_hostel_accommodation_and_charges.md"
+      },
+      {
+        "label": "Mess & Dining",
+        "path": "hostels_and_housing/mess_and_dining_facilities.md"
+      }
+    ]
+  },
+  {
+    "category": "Health & Emergency",
+    "links": [
+      {
+        "label": "Primary Health Centre",
+        "path": "campus_and_student_services/primary_health_centre.md"
+      },
+      {
+        "label": "Campus Security",
+        "path": "campus_and_student_services/campus_security_and_safety.md"
+      }
+    ]
+  },
+  {
+    "category": "Placement & Career",
+    "links": [
+      {
+        "label": "Placement Procedures",
+        "path": "campus_and_student_services/career_and_placement_cell.md"
+      }
+    ]
+  }
+]

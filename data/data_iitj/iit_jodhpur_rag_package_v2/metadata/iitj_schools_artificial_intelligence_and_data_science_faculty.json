@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_artificial_intelligence_and_data_science_faculty",
+  "title": "School of Artificial Intelligence and Data Science \u2014 Faculty",
+  "category": "schools/artificial_intelligence_and_data_science",
+  "subcategory": "faculty",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/faculty.md",
+  "docx_path": "documents/schools/artificial_intelligence_and_data_science/faculty.docx",
+  "knowledge_path": "knowledge/schools/artificial_intelligence_and_data_science/faculty.md",
+  "markdown_hash": "775b8466a777a42019a6e3c350b71f59b6013248e247f19dd859324b08487d14",
+  "docx_hash": "bc74b511f6a42446b822a6c8f50f7e0c017efb3c07359eb48074e96faa17c326",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/faculty-positions"
+  ],
+  "unit_ids": [
+    "87e7e4a535fc7951"
+  ],
+  "aliases": [
+    "School of Artificial Intelligence and Data Science \u2014 Faculty",
+    "Faculty",
+    "SAIDE",
+    "AIDE IIT Jodhpur",
+    "School of AI"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

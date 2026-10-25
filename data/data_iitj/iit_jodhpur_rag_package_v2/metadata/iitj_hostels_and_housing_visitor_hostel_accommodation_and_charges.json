@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_hostels_and_housing_visitor_hostel_accommodation_and_charges",
+  "title": "Visitor Hostel Accommodation and Booking Charges",
+  "category": "hostels_and_housing",
+  "subcategory": "visitor_hostel_accommodation_and_charges",
+  "document_type": "housing_facility",
+  "language": "en",
+  "markdown_path": "knowledge/hostels_and_housing/visitor_hostel_accommodation_and_charges.md",
+  "docx_path": "documents/hostels_and_housing/visitor_hostel_accommodation_and_charges.docx",
+  "knowledge_path": "knowledge/hostels_and_housing/visitor_hostel_accommodation_and_charges.md",
+  "markdown_hash": "75572fde04c6a84f6434a6f0ad96349a3f3afdde9254c96a5a769b515a5d75cb",
+  "docx_hash": "591c9caf729e9497ec6a9b2c04f0b693eaf4c0157effab310e421edaa6eecba7",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-students/en/hostel-booking"
+  ],
+  "unit_ids": [
+    "784c17216cd4e5ad",
+    "17d1bbf16eab74ac",
+    "cb68724a8501db02",
+    "0946e0cc05132c25",
+    "a24a055dc9c6f4f1"
+  ],
+  "aliases": [
+    "Visitor Hostel Accommodation and Booking Charges",
+    "Visitor Hostel Accommodation And Charges",
+    "Guest House Charges",
+    "Visitor Hostel Rates",
+    "Hostel Booking"
+  ],
+  "related_datasets": [
+    "visitor_accommodation.json"
+  ],
+  "claim_ids": [
+    "claim_visitor_hostel_charges"
+  ],
+  "conflict_ids": [
+    "CONF-IITJ-002"
+  ],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "RECONCILED"
+  }
+}

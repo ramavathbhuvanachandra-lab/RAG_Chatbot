@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_materials_engineering_programs",
+  "title": "Materials Engineering \u2014 Programs",
+  "category": "departments/materials_engineering",
+  "subcategory": "programs",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/materials_engineering/programs.md",
+  "docx_path": "documents/departments/materials_engineering/programs.docx",
+  "knowledge_path": "knowledge/departments/materials_engineering/programs.md",
+  "markdown_hash": "9bdcab0f496a8c3238acb74efeee8d655079957a9c251ced9883fd5f27fcca5e",
+  "docx_hash": "2569b168163a1cbacba8ac094417e94f48aafc1a195db97fa9f213491c827b3c",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/materials-engineering/en/undergraduate-program",
+    "https://www.iitj.ac.in/materials-engineering/en/program-structure",
+    "https://www.iitj.ac.in/materials-engineering/en/doctoral-programs"
+  ],
+  "unit_ids": [
+    "44b1b713d2293937",
+    "cbd080e24fe671f1",
+    "27d7ac3032a6e270",
+    "18c786f7f536adab",
+    "4b34f54bb15eafc0",
+    "f49e2619916ed299",
+    "91828e588e006172",
+    "e1541db684de9062"
+  ],
+  "aliases": [
+    "Materials Engineering \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

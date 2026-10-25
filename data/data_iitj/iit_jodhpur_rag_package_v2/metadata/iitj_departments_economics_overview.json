@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_economics_overview",
+  "title": "Economics \u2014 Overview",
+  "category": "departments/economics",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/economics/overview.md",
+  "docx_path": "documents/departments/economics/overview.docx",
+  "knowledge_path": "knowledge/departments/economics/overview.md",
+  "markdown_hash": "3e9ac8ef6b220b00a6161f7d0c5e706d3b122e5b02c40a03e584a39d5fce06b6",
+  "docx_hash": "2c4dbc6f97e8333a1b13b43fa47075514db86ada7b9925cd16fccd70a19bc7e5",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/economics/en/economics",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/AI-and-Economics?ep=fw",
+    "https://www.iitj.ac.in/economics/en/about-the-department",
+    "https://www.iitj.ac.in/economics"
+  ],
+  "unit_ids": [
+    "227d99bddfcce663",
+    "ddab122dee439c5b",
+    "458e4796156dc233",
+    "7b763faa9e24bbb3",
+    "1bf9c578e487e296",
+    "cc7785a4a165ba08",
+    "e7a69ed35d29ef51",
+    "de92f8fde7699bb1"
+  ],
+  "aliases": [
+    "Economics \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

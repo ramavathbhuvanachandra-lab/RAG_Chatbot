@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_environmental_and_sustainability_engineering_general_information",
+  "title": "Environmental and Sustainability Engineering \u2014 General Information",
+  "category": "departments/environmental_and_sustainability_engineering",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/environmental_and_sustainability_engineering/general_information.md",
+  "docx_path": "documents/departments/environmental_and_sustainability_engineering/general_information.docx",
+  "knowledge_path": "knowledge/departments/environmental_and_sustainability_engineering/general_information.md",
+  "markdown_hash": "ed8587220ce86eb7bfd525137b200eeb2eeffc01d9258e7a6efe7bb2881024fc",
+  "docx_hash": "4a910974c1608e8b3745f628d0f547a3d1c0918ba52f8c5c06b3945558105f2b",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/cetsd/en/sustainability-plan-policy",
+    "https://www.iitj.ac.in/cetsd",
+    "https://www.iitj.ac.in/cetsd/en/cetsd"
+  ],
+  "unit_ids": [
+    "e75e183e2e18ca09",
+    "7dd36b72ae7ff0f8",
+    "5cc3531da9ed3b54",
+    "4f0d5c83b1d8b33d",
+    "ea0dda1f9254961c",
+    "c99868acb9f81070",
+    "ad5dbb2c5caf74d3",
+    "2120625452f6bd48"
+  ],
+  "aliases": [
+    "Environmental and Sustainability Engineering \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

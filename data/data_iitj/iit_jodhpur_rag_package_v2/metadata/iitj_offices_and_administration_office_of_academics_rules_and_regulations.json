@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_academics_rules_and_regulations",
+  "title": "Office of Academics \u2014 Rules and Regulations",
+  "category": "offices_and_administration/office_of_academics",
+  "subcategory": "rules_and_regulations",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_academics/rules_and_regulations.md",
+  "docx_path": "documents/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_academics/rules_and_regulations.md",
+  "markdown_hash": "401171656c1468650ca63671e7ea29393bd4247d1fff3267dddf9ecc3de0d1eb",
+  "docx_hash": "8e5f6cc444a35174d8aa50e9c36021625ac02c1be22e08441664b70f1ab48dbb",
+  "source_urls": [
+    "https://www.iitj.ac.in/Office-of-Academics/en/Old-Regulations",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/1_Academic_Regulations_Final_03_09_2019.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/2_Academic_Regulations_Final_03_09_2019.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/2.1_notification_26102020.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/3_Academic_Regulations_Final_03_09_2019.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/3.1_notification_26102020.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/4_Regulation_PG_2022-onwards_20022023.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/5_Circular_IITJ_OA_C_2021-22_21_122_20.01.2022.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/6_2024-04-17-661f605b54457-1713332315.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/7.1_Circular_51Circular-No.-IITJOAACircular2024-2551682-dated-08-July-2024.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/7.2_Circular_52Circular-No.-IITJOAACircular2024-2552683-dated-08-July-2024.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/03-2025/amend_notification_26102020.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top15.%20Leave%20Rules",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top25.%20Rules%20and%20Regulations%20For%20M.Tech./M.Sc._Project",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top23.%20Leave%20Rules",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.3%20Exceptions%20to%20Regular%20Rules%20regarding%20Academic%20Load",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top18.%20Amendments",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top10.2%20Reservation%20Policy",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "Office of Academics \u2014 Rules and Regulations",
+    "Rules And Regulations"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "administrative_offices.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_physics_research",
+  "title": "Physics \u2014 Research",
+  "category": "departments/physics",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/physics/research.md",
+  "docx_path": "documents/departments/physics/research.docx",
+  "knowledge_path": "knowledge/departments/physics/research.md",
+  "markdown_hash": "7bf9cbb9d45f56963c6db0608f47bba80c4519e2762a4afc4c5010b9def0bfb4",
+  "docx_hash": "ef65e1798edbfd3d9d69e6dd251ca96a25a0702f7809a814930de9cd4f21ee37",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Basic-Physics-Lab-638756660167478804.pdf",
+    "http://home.iitj.ac.in/~reetanjali/",
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Electronics-Laboratory-638756660436406152.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Condensed-Matter-Physics-638756660644993267.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Atomic-and-Nuclear-Physics-Laboratory-638756660898850679.pdf",
+    "http://home.iitj.ac.in/~vnara/",
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Optics-and-Laser-Laboratory-638756661210834627.pdf",
+    "http://home.iitj.ac.in/~bmkrishna/",
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Computational-Physics-Laboratory-638756661453247704.pdf",
+    "https://www.iitj.ac.in/People/List?dept=Physics&c=1c8346b0-07a4-401e-bce0-7f571bb4fabd",
+    "https://iitj.ac.in/admission-postgraduate-programs/en/advertisements",
+    "https://www.iitj.ac.in/Physics/en/Quantum-Physics",
+    "https://www.iitj.ac.in/Physics/en/Optics-and-Photonics",
+    "https://www.iitj.ac.in/Physics/en/High-Energy-Physics-and-Astrophysics",
+    "https://www.iitj.ac.in/Physics/en/Condensed-Matter-and-Plasma-Physics",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/physics/en/laboratories",
+    "https://www.iitj.ac.in/physics/en/physics",
+    "https://www.iitj.ac.in/physics/en/research-groups",
+    "https://www.iitj.ac.in/physics"
+  ],
+  "unit_ids": [
+    "e149528c383d244a",
+    "4f44dabacc182df8",
+    "7cb9d88a978e78d2",
+    "ac68f0cd2917e6d9",
+    "7c5d44e1efb9a32a",
+    "b8b1516539a00239",
+    "46e70ca70a516bf3",
+    "589e2ac634f0ca6d"
+  ],
+  "aliases": [
+    "Physics \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "departments.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

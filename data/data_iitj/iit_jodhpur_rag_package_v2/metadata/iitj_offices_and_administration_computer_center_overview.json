@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_computer_center_overview",
+  "title": "Digital Infrastructure & Automation (DIA) / Computer Center",
+  "category": "offices_and_administration/computer_center",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/computer_center/overview.md",
+  "docx_path": "documents/offices_and_administration/computer_center/overview.docx",
+  "knowledge_path": "knowledge/offices_and_administration/computer_center/overview.md",
+  "markdown_hash": "c08cf26d2afceebcd275fba66df55401ad52b9803b429169f0de04b2066f1c4a",
+  "docx_hash": "22af24cbac00f03c1df5637625d5d890ba465c4900d1fe1cc5346726024e4dc8",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/dia/en/dia"
+  ],
+  "unit_ids": [
+    "2fce5a2b8dc29c95",
+    "44b01fa6a59d0b26"
+  ],
+  "aliases": [
+    "Digital Infrastructure & Automation (DIA) / Computer Center",
+    "Overview"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

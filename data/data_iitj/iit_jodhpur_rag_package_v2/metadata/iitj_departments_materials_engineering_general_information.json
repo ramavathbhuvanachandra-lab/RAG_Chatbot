@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_materials_engineering_general_information",
+  "title": "Materials Engineering \u2014 General Information",
+  "category": "departments/materials_engineering",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/materials_engineering/general_information.md",
+  "docx_path": "documents/departments/materials_engineering/general_information.docx",
+  "knowledge_path": "knowledge/departments/materials_engineering/general_information.md",
+  "markdown_hash": "62bdf5f3b2a62e19fae12cfe4838e5317938601f9c82350ddfab366e850774c9",
+  "docx_hash": "4f30e685efb57dd8ec4640724c379bd095deacd6ab69ba7a315ed46b58c2d828",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/MTech-Materials-Engineering-638756574687419685.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/MTech-Functional-Materials-Specialization-638756575096858702.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/materials-engineering/en/undergraduate-program",
+    "https://www.iitj.ac.in/materials-engineering/en/courses",
+    "https://www.iitj.ac.in/materials-engineering/en/materials-engineering",
+    "https://www.iitj.ac.in/materials-engineering/en/doctoral-programs"
+  ],
+  "unit_ids": [
+    "44b1b713d2293937",
+    "cbd080e24fe671f1",
+    "27d7ac3032a6e270",
+    "18c786f7f536adab",
+    "4b34f54bb15eafc0",
+    "f49e2619916ed299",
+    "91828e588e006172",
+    "5fae3d7349e76791"
+  ],
+  "aliases": [
+    "Materials Engineering \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

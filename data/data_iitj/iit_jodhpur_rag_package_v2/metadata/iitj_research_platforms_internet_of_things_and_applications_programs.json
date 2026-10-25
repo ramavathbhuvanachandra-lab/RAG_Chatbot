@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_research_platforms_internet_of_things_and_applications_programs",
+  "title": "Internet of Things and Applications \u2014 Programs",
+  "category": "research_platforms/internet_of_things_and_applications",
+  "subcategory": "programs",
+  "document_type": "research_profile",
+  "language": "en",
+  "markdown_path": "knowledge/research_platforms/internet_of_things_and_applications/programs.md",
+  "docx_path": "documents/research_platforms/internet_of_things_and_applications/programs.docx",
+  "knowledge_path": "knowledge/research_platforms/internet_of_things_and_applications/programs.md",
+  "markdown_hash": "24e2b2e03f18ff942fb652bdb78f040742cb6ade8b0a3eaa07f6d9133d16ccf9",
+  "docx_hash": "6cde92e775b643ddb5cac958d90b99a45542db9597ff8eaa5d8d9603d0fd2b6c",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/iot/en/doctoral-program"
+  ],
+  "unit_ids": [
+    "260fe23473383ea8",
+    "f848d9a35328df0e"
+  ],
+  "aliases": [
+    "Internet of Things and Applications \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

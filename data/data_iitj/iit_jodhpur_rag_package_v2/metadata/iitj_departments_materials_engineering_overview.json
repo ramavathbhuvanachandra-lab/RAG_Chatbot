@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_materials_engineering_overview",
+  "title": "Materials Engineering \u2014 Overview",
+  "category": "departments/materials_engineering",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/materials_engineering/overview.md",
+  "docx_path": "documents/departments/materials_engineering/overview.docx",
+  "knowledge_path": "knowledge/departments/materials_engineering/overview.md",
+  "markdown_hash": "56a95336b9947691b4c0b147ded9923877ebf84e190ecc7db8af1d8946b7f2bc",
+  "docx_hash": "af86c33f1b02d8828c4fa862f8646ade5fc1ea2a39066a01080466c3ba20d805",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/materials-engineering/en/materials-engineering",
+    "https://www.iitj.ac.in/materials-engineering/en/doctoral-programs"
+  ],
+  "unit_ids": [
+    "0740bb5ef77f619b",
+    "75187bb4c7d6158f",
+    "8827199532884eda",
+    "8a1c00ace67b1d43",
+    "2eeaee1a6fee61db",
+    "b4be0db186e3b4ba",
+    "fedef22f9eda023d",
+    "aacea92a3035dab7"
+  ],
+  "aliases": [
+    "Materials Engineering \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

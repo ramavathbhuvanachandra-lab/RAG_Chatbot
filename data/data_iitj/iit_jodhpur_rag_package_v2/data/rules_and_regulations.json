@@ -1,0 +1,21 @@
+{
+  "grading_system": {
+    "scale": "10-point letter grading scale",
+    "grades": [
+      "A* (Outstanding)",
+      "A (Excellent)",
+      "A- (Very Good)",
+      "B (Good)",
+      "B- (Above Average)",
+      "C (Average)",
+      "C- (Below Average)",
+      "D (Marginal Pass)",
+      "E (Re-examination)",
+      "F (Fail)"
+    ],
+    "minimum_pass_cgpa": 5.0
+  },
+  "attendance_policy": "Minimum 75% attendance mandatory in lectures and laboratory sessions to appear in end-semester examinations.",
+  "anti_ragging": "Zero-tolerance policy towards ragging. Mandatory anti-ragging affidavits submitted annually. Strict disciplinary actions including expulsion and FIR under national anti-ragging laws.",
+  "academic_probation": "Students securing CGPA < 5.0 are placed on academic probation with reduced credit registration and faculty advisor monitoring."
+}

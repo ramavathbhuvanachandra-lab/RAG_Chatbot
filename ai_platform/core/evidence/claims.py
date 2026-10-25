@@ -57,7 +57,7 @@ _DURATION_RE = re.compile(
 _BULLET_RE = re.compile(r"^\s*(?:[-*•▪◦]|\d+[.)])\s+(.+?)\s*$")
 _HASH_HEADING_RE = re.compile(r"^\s*#{1,6}\s+(.+?)\s*$")
 _COLON_HEADING_RE = re.compile(r"^\s*([^.!?\n]{2,100}):\s*$")
-_SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+|\n+")
+_SENTENCE_SPLIT_RE = re.compile(r"(?<!\b[A-Za-z]\.)(?<!\b[A-Za-z]{2}\.)(?<!\b[A-Za-z]{3}\.)(?<!\b[A-Za-z]{4}\.)(?<=[.!?])\s+|\n+")
 _TOKEN_RE = re.compile(r"[\w₹%]+", re.UNICODE)
 _SCOPE_TOKEN_RE = re.compile(r"[a-z0-9]+(?:[.-][a-z0-9]+)+|[a-z0-9]{2,}", re.I)
 
@@ -68,6 +68,9 @@ _STOPWORDS = {
     "should", "that", "the", "their", "there", "this", "those", "to", "was",
     "were", "what", "when", "where", "which", "who", "why", "will", "with", "would",
     "you", "your", "tell", "give", "get", "about", "into", "than",
+    "hai", "hain", "ho", "hoga", "hogi", "hoge", "tha", "thi", "the",
+    "kya", "kyun", "kyon", "kaise", "kaha", "kahan", "kab", "kaun", "kaunsa", "kaunsi",
+    "kitna", "kitni", "kitne", "batao", "bataye", "bataiye", "mein", "par", "se", "ko", "ka", "ki", "ke",
 }
 
 
@@ -80,28 +83,85 @@ def normalize_text(text: Any) -> str:
     return value.strip()
 
 
+def _compact_token(value: Any) -> str:
+    cleaned = re.sub(r"[^a-z0-9]", "", str(value or "").casefold())
+    return cleaned if 2 <= len(cleaned) <= 8 and cleaned not in _STOPWORDS else ""
+
+
 def _tokens(text: str) -> set[str]:
-    return {
+    norm = normalize_text(text)
+    tokens = {
         token
-        for token in _TOKEN_RE.findall(normalize_text(text))
-        if len(token) > 2 and token not in _STOPWORDS
+        for token in _TOKEN_RE.findall(norm)
+        if len(token) >= 2 and token not in _STOPWORDS
     }
+    for word in re.split(r"[\s/]+", str(text or "")):
+        comp = _compact_token(word)
+        if comp and comp not in _STOPWORDS:
+            tokens.add(comp)
+    for word in str(text or "").split():
+        comp = _compact_token(word)
+        if comp and comp not in _STOPWORDS:
+            tokens.add(comp)
+    return tokens
 
 
 def _scope_tokens(text: str) -> set[str]:
     """Tokenize local scope while preserving dotted/hyphenated identifiers."""
-    return {
+    tokens = {
         token.casefold()
         for token in _SCOPE_TOKEN_RE.findall(normalize_text(text))
         if len(token) > 2 and token.casefold() not in _STOPWORDS
     }
+    for word in re.split(r"[\s/]+", str(text or "")):
+        comp = _compact_token(word)
+        if comp and comp not in _STOPWORDS:
+            tokens.add(comp)
+    for t in list(tokens):
+        if "." in t or "-" in t:
+            compact_t = re.sub(r"[.-]", "", t)
+            if len(compact_t) >= 2 and compact_t not in _STOPWORDS:
+                tokens.add(compact_t)
+    return tokens
+
+
+_ACADEMIC_SYNONYMS = {
+    "held": {"conducted", "held", "conduct", "scheduled"},
+    "conducted": {"conducted", "held", "conduct", "scheduled"},
+    "admitted": {"admitted", "admit", "admission", "joining", "joined", "enrolled"},
+    "joining": {"admitted", "admit", "admission", "joining", "joined", "enrolled"},
+    "scholars": {"scholars", "scholar", "students", "student", "doctoral", "phd"},
+    "scholar": {"scholars", "scholar", "students", "student", "doctoral", "phd"},
+    "meetings": {"meeting", "meetings", "session", "evaluation", "monitoring"},
+    "meeting": {"meeting", "meetings", "session", "evaluation", "monitoring"},
+    "missed": {"missing", "missed", "absence", "absent", "not appeared"},
+    "proofs": {"certificate", "proof", "proofs"},
+    "hospitalization": {"hospital", "medical", "illness"},
+    "emergency": {"medical", "urgent", "special"},
+    "reexam": {"examination", "exam", "re-exam", "re-examination"},
+    "reexamination": {"examination", "exam", "re-exam", "re-examination"},
+}
 
 
 def _overlap(left: Iterable[str], right: Iterable[str]) -> float:
     a, b = set(left), set(right)
     if not a:
         return 0.0
-    return len(a & b) / len(a)
+    matched = 0
+    for token in a:
+        if token in b:
+            matched += 1
+            continue
+        syns = _ACADEMIC_SYNONYMS.get(token)
+        if syns and (syns & b):
+            matched += 1
+            continue
+        if len(token) >= 4 and any(
+            len(other) >= 4 and (token.startswith(other) or other.startswith(token) or (len(token) >= 5 and token[:5] == other[:5]))
+            for other in b
+        ):
+            matched += 1
+    return matched / len(a)
 
 
 def _clamp01(value: float) -> float:
@@ -208,7 +268,7 @@ class EvidenceUnit:
     evidence_id: str
     text: str
     source: str
-    position: int
+    position: int = 0
     heading: str | None = None
     factual_markers: tuple[str, ...] = field(default_factory=tuple)
     token_set: frozenset[str] = field(default_factory=frozenset)
@@ -271,6 +331,25 @@ class ClaimAudit:
         required = {claim.claim_id for claim in self.claims if claim.required}
         supported = set(self.supported_claim_ids)
         partial = set(self.partial_claim_ids)
+        unsupported_numeric = any(
+            (claim.kind == "numeric" or (claim.kind == "constraint" and any("%" in a for a in (claim.name, str(claim.value)))))
+            and claim.claim_id not in (supported | partial)
+            for claim in self.claims if claim.required
+        )
+        if unsupported_numeric:
+            return "insufficient"
+        specific_required = {
+            claim.claim_id for claim in self.claims
+            if claim.required and claim.kind in {"constraint", "qualifier", "relation", "numeric", "temporal"}
+        }
+        if specific_required and not (specific_required & (supported | partial)):
+            return "insufficient"
+        if any(
+            claim.required and claim.claim_id in self.unsupported_claim_ids
+            for claim in self.claims
+            if claim.kind in {"constraint", "qualifier", "relation", "numeric", "temporal"}
+        ):
+            return "insufficient"
         if required and required <= supported:
             return "supported"
         if required & (supported | partial):
@@ -391,6 +470,20 @@ def extract_claims(query: Query) -> tuple[Claim, ...]:
         ordinal += 1
 
     for constraint in query.constraints:
+        is_applicant_premise = False
+        val_str = str(constraint.value or "")
+        orig_q = str(query.original_query or "")
+        if re.search(
+            r"\b(?:i\s+(?:missed|secured|scored|got|have|had|completed|hold|passed|am|belong|was|could\s+not)|"
+            r"my\s+(?:qualifying|final|undergraduate|degree|marks|score|percentage|major|illness|hospitalization)|"
+            r"(?:with|scored|secured|having)\s+\d+(?:\.\d+)?\s*%\s*(?:marks|in\s+my|in\s+the\s+qualifying)|"
+            r"as\s+an?\s+(?:\w+\s+){0,3}applicant|as\s+a\s+candidate)\b",
+            orig_q,
+            re.I,
+        ):
+            if constraint.name == "condition" or re.search(r"^\d+(?:\.\d+)?\s*%", val_str):
+                is_applicant_premise = True
+        claim_required = False if is_applicant_premise else constraint.required
         claims.append(Claim(
             claim_id=_claim_id("constraint", constraint.name, ordinal),
             text=f"{constraint.name} {constraint.operator} {constraint.value}",
@@ -398,7 +491,7 @@ def extract_claims(query: Query) -> tuple[Claim, ...]:
             name=constraint.name,
             value=constraint.value,
             operator=constraint.operator,
-            required=constraint.required,
+            required=claim_required,
             importance=constraint.importance,
             anchors=(constraint.name, str(constraint.value), *anchors),
         ))
@@ -428,7 +521,7 @@ def extract_claims(query: Query) -> tuple[Claim, ...]:
 
     # A plain question still has a structured request-level claim. This avoids
     # treating a query with only request_type/target information as empty.
-    if not claims:
+    if not any(c.kind == "request" for c in claims):
         # Keep the structured request type authoritative. The raw question is
         # retained as claim text for traceability, but is intentionally not
         # added as an all-or-nothing anchor: doing so makes a valid evidence
@@ -493,14 +586,19 @@ def _split_text_lines(text: str) -> list[tuple[str, str | None]]:
 
 
 def _split_paragraph(paragraph: str, heading: str | None) -> list[tuple[str, str | None]]:
-    lines = [part for part in _split_text_lines(paragraph)]
-    if len(lines) > 1:
-        return lines
+    lines_with_meta = _split_text_lines(paragraph)
+    has_structure = any(
+        _BULLET_RE.match(line) or _HASH_HEADING_RE.fullmatch(line) or _COLON_HEADING_RE.fullmatch(line)
+        for line, _ in lines_with_meta
+    )
+    if has_structure:
+        return lines_with_meta
+
     text = " ".join(paragraph.split())
     if not text:
         return []
     sentences = [part.strip() for part in _SENTENCE_SPLIT_RE.split(text) if part.strip()]
-    if len(sentences) <= 1:
+    if len(sentences) <= 1 or (len(sentences) <= 4 and len(text) <= 600):
         return [(text, heading)]
     return [(sentence, heading) for sentence in sentences]
 
@@ -562,6 +660,20 @@ def split_evidence_units(candidate: RetrievalCandidate) -> tuple[EvidenceUnit, .
 
     metadata = getattr(candidate.document, "metadata", {}) or {}
     metadata_heading = metadata.get("heading") or metadata.get("section") or metadata.get("title")
+    if not metadata_heading and metadata.get("source"):
+        src = str(metadata["source"])
+        from pathlib import Path
+        p = Path(src)
+        parent = p.parent.name.replace("_", " ").title()
+        stem = p.stem.replace("_", " ").title()
+        stem = re.sub(r"\bPhd\b", "PhD", stem, flags=re.I)
+        stem = re.sub(r"\bMtech\b", "M.Tech", stem, flags=re.I)
+        stem = re.sub(r"\bMsc\b", "M.Sc.", stem, flags=re.I)
+        stem = re.sub(r"\bBtech\b", "B.Tech", stem, flags=re.I)
+        if parent and parent.lower() not in ("admissions", "programs", "departments", "schools", "general", "docs", "production"):
+            metadata_heading = f"{parent} - {stem}"
+        else:
+            metadata_heading = stem
     metadata_heading = str(metadata_heading).strip() if metadata_heading else None
 
     paragraphs = [part.strip() for part in re.split(r"\n\s*\n+", content) if part.strip()]
@@ -570,6 +682,10 @@ def split_evidence_units(candidate: RetrievalCandidate) -> tuple[EvidenceUnit, .
         for paragraph in paragraphs:
             units = _split_paragraph(paragraph, metadata_heading)
             raw_units.extend(units)
+        clean_chunk = re.split(r"\n\s*Source\b", content, flags=re.I)[0].strip()
+        if 50 < len(clean_chunk) <= 2500 and "\n" in clean_chunk:
+            clean_chunk_text = "\n".join(line.strip() for line in clean_chunk.splitlines() if line.strip())
+            raw_units.insert(0, (clean_chunk_text, metadata_heading))
     else:
         raw_units = [(content, metadata_heading)]
 
@@ -618,24 +734,25 @@ def split_evidence_units(candidate: RetrievalCandidate) -> tuple[EvidenceUnit, .
     raw_units = repaired_units
 
     units: list[EvidenceUnit] = []
-    units: list[EvidenceUnit] = []
     seen: set[str] = set()
     for position, (text, heading) in enumerate(raw_units):
         cleaned = " ".join(str(text).split())
+        cleaned = re.sub(r"\[\s*\[?\s*back\s+to\s+index\s*\]?\s*\](?:\([^)]*\))?", "", cleaned, flags=re.I).strip()
         if len(cleaned) < 3:
             continue
-        key = normalize_text(cleaned)
+        unit_text = f"[{heading}] {cleaned}" if (heading and heading.casefold() not in cleaned.casefold()) else cleaned
+        key = normalize_text(unit_text)
         if key in seen:
             continue
         seen.add(key)
         units.append(EvidenceUnit(
             evidence_id=f"{candidate.document_id}:{position}",
-            text=cleaned,
+            text=unit_text,
             source=candidate.source,
             position=position,
             heading=heading,
-            factual_markers=extract_factual_markers(cleaned),
-            token_set=frozenset(_tokens(cleaned)),
+            factual_markers=extract_factual_markers(unit_text),
+            token_set=frozenset(_tokens(unit_text)),
         ))
     return tuple(units)
 
@@ -699,7 +816,7 @@ def _field_tokens(claim: Claim) -> set[str]:
 
 
 _NUMERIC_FIELD_ALIASES = {
-    "currency": {"fee", "fees", "charge", "charges", "cost", "costs", "rent", "amount", "price", "rate"},
+    "currency": {"fee", "fees", "charge", "charges", "cost", "costs", "rent", "amount", "price", "rate", "deposit", "deposits", "advance", "advances", "stipend", "stipends", "scholarship", "scholarships", "fellowship", "fellowships", "allowance", "allowances", "assistance", "remuneration"},
     "percent": {"percent", "percentage", "marks", "score", "aggregate"},
     "ratio": {"score", "cgpa", "cpi", "ratio", "scale"},
     "duration": {"duration", "days", "weeks", "months", "years", "semesters", "stay", "period"},
@@ -875,29 +992,36 @@ def _token_family_overlap(left: Iterable[str], right: Iterable[str], prefix_size
 
 _REQUEST_FAMILY_CUES = {
     # Generic language families only; no institution/program vocabulary.
-    "eligibility": {"eligible", "eligibility", "qualification", "qualifications", "criteria"},
-    "fee": {"fee", "fees", "charge", "charges", "cost", "costs", "amount", "price", "rent"},
-    "admission": {"admission", "admissions", "admit", "apply", "application", "enroll", "enrollment"},
-    "registration": {"registration", "register", "registering"},
-    "deadline": {"deadline", "closing", "due"},
-    "process": {"process", "procedure", "steps"},
+    "eligibility": {"eligible", "eligibility", "qualification", "qualifications", "criteria", "requirement", "requirements", "minimum", "admitted", "admit", "admission", "admissions", "degree", "bachelor", "bachelors", "master", "masters", "qualify", "qualifies", "require", "required", "experience", "prerequisite", "prerequisites", "condition", "conditions"},
+    "fee": {"fee", "fees", "charge", "charges", "cost", "costs", "amount", "price", "rent", "tuition", "deposit", "deposits"},
+    "admission": {"admission", "admissions", "admit", "apply", "application", "enroll", "enrollment", "avenue", "avenues", "entrance", "selection", "mode", "modes", "route", "routes"},
+    "registration": {"registration", "register", "registering", "enroll", "enrollment"},
+    "deadline": {"deadline", "closing", "due", "dates", "date", "schedule"},
+    "process": {"process", "procedure", "steps", "admission", "admissions", "admit", "application", "apply", "avenue", "avenues", "selection", "entrance", "mode", "modes", "route", "routes"},
+    "documents": {"documents", "document", "certificates", "certificate", "paperwork", "scorecard", "proof", "copies"},
+    "contact": {"contact", "email", "phone", "telephone", "helpline", "coordinator", "office"},
+    "fellowship": {"fellowship", "fellowships", "financial", "assistance", "scholarship", "scholarships", "stipend", "assistantship", "mhrd", "norm", "norms"},
+    "scholarship": {"fellowship", "fellowships", "financial", "assistance", "scholarship", "scholarships", "stipend", "assistantship", "mhrd", "norm", "norms"},
 }
 
 _REQUIREMENT_CUES = {
     "must", "required", "requirement", "requirements", "minimum",
     "qualifying", "qualification", "qualifications", "criteria",
+    "admitted", "admit", "admission", "degree", "bachelor", "bachelors",
+    "master", "masters", "qualify", "qualifies",
 }
 _APPLICANT_CUES = {"applicant", "applicants", "candidate", "candidates"}
 
 
 _FINANCIAL_REQUEST_NAMES = frozenset({
     "cost", "fee", "fees", "tuition", "amount", "price", "charges", "charge", "rent",
+    "fellowship", "scholarship", "stipend",
 })
 
 _FINANCIAL_GENERIC_TOKENS = frozenset({
     "cost", "costs", "fee", "fees", "amount", "amounts",
     "price", "prices", "charge", "charges", "rent", "rate", "rates",
-    "rs", "inr",
+    "rs", "inr", "stipend", "stipends", "fellowship", "fellowships", "scholarship", "scholarships",
 })
 
 
@@ -1103,8 +1227,115 @@ def _request_match(claim: Claim, evidence: EvidenceUnit) -> tuple[float, tuple[s
     combined_text = " ".join(part for part in (evidence.heading or "", evidence.text) if part)
     evidence_tokens = _tokens(combined_text)
     heading_tokens = _tokens(evidence.heading or "")
+    source_tokens = _tokens(evidence.source or "")
+    ev_all_tokens = evidence_tokens | source_tokens | heading_tokens
 
-    request_tokens = _tokens(claim.name or "")
+    # Verify explicit target anchors when present so generic rules for an
+    # unoffered/unrelated program do not falsely satisfy the request.
+    generic_anchor_terms = {
+        "program", "programme", "degree", "department", "discipline", "faculty",
+        "institute", "institution", "college", "university", "campus", "school",
+        "year", "years", "month", "months", "day", "days", "time", "times",
+        "annual", "every", "all", "case", "option", "special", "regular", "overall",
+        "iit", "nit", "iiit", "iim", "aiims", "bits",
+    }
+    try:
+        from ai_platform.institutions.loader import load_institution_profile
+        _prof = load_institution_profile()
+        generic_anchor_terms.add(_prof.institution_id.casefold())
+        generic_anchor_terms.update(t.casefold() for t in _prof.display_name.split() if len(t) > 1)
+    except Exception:
+        pass
+
+    target_terms = set()
+    for a in getattr(claim, "anchors", ()) or ():
+        if a and str(a).casefold() != str(claim.name or "").casefold():
+            target_terms.update(
+                t for t in _tokens(str(a))
+                if t not in _STOPWORDS and t not in generic_anchor_terms
+            )
+    if target_terms and not (target_terms & ev_all_tokens):
+        return 0.30, ("generic request type matches but requested target is absent",)
+
+    # Conservative grounding gate: do not accept evidence solely because generic
+    # words like student, campus, fee, or degree overlap when the query has specific
+    # informative topic terms (e.g. corporate sponsorship, dry cleaning, shuttle bus).
+    GENERIC_QUERY_TOPIC_TERMS = {
+        "student", "students", "candidate", "candidates", "applicant", "applicants",
+        "program", "programme", "programs", "programmes", "degree", "degrees",
+        "department", "discipline", "faculty", "institute", "institution", "college",
+        "university", "campus", "school", "year", "years", "month", "months", "day", "days",
+        "time", "times", "annual", "every", "all", "case", "option", "special", "regular",
+        "overall", "details", "information", "rule", "rules", "policy", "policies",
+        "criteria", "criterion", "requirement", "requirements", "process", "procedure",
+        "iit", "nit", "iiit", "iim", "aiims", "bits", "exact", "specific",
+        "rupee", "rupees", "rs", "inr", "fee", "fees", "cost", "costs", "amount", "amounts",
+        "deposit", "deposits", "caution", "refundable", "charge", "charges", "payment", "payments", "dues",
+        "admission", "admissions", "eligibility", "eligible", "stipend", "stipends",
+        "fellowship", "fellowships", "scholarship", "scholarships",
+        "general", "none", "what", "which", "when", "where", "how", "tell", "give",
+        "mtech", "btech", "msc", "phd", "mba", "mdes", "bdes", "m.tech", "b.tech", "m.sc", "ph.d",
+        "tech", "hostel", "hostels", "mess", "service", "services", "monthly", "joining",
+        "under", "within", "between", "during", "before", "after", "through", "across",
+        "paid", "taking", "taken", "pay", "paying",
+        "kitni", "kitna", "kitne", "kya", "kaun", "kab", "kaha", "kahan", "kaise", "kyun", "kyon",
+        "hai", "hain", "ho", "tha", "thi", "the", "batao", "bataye", "bataiye", "mein", "par", "se", "ko", "ka", "ki", "ke",
+    }
+    GENERIC_QUERY_TOPIC_TERMS.update(generic_anchor_terms)
+    claim_text_tokens = _tokens(claim.text)
+    salient_topic_tokens = {
+        t for t in claim_text_tokens
+        if t not in GENERIC_QUERY_TOPIC_TERMS and t not in _STOPWORDS and len(t) > 2
+    }
+    if len(salient_topic_tokens) >= 2 and not (salient_topic_tokens & ev_all_tokens):
+        if _token_family_overlap(salient_topic_tokens, ev_all_tokens) == 0.0:
+            return 0.25, ("generic request type matches but specific query topic is absent",)
+
+    request_name = normalize_text(claim.name or "")
+    if request_name in {"general", "", "none"}:
+        claim_text_norm = normalize_text(claim.text)
+        for fam_name in ("eligibility", "process", "admission", "fee", "deadline", "contact", "documents", "fellowship", "scholarship"):
+            cues = _REQUEST_FAMILY_CUES.get(fam_name, set())
+            if fam_name in claim_text_norm or any(cue in claim_text_norm.split() for cue in cues if cue not in {"proof", "proofs", "due", "dates"}):
+                request_name = fam_name
+                break
+
+    # Fellowship / scholarship / stipend requests must have stipend or assistance cues.
+    # Unrelated tables or general academic passages lacking monetary or stipend facts
+    # cannot satisfy a fellowship/stipend information request.
+    is_stipend_req = (
+        request_name in {"fellowship", "scholarship", "stipend"}
+        or bool(re.search(r"\b(?:stipend|stipends|fellowship|fellowships|scholarship|scholarships)\b", claim.text, re.I))
+    )
+    if is_stipend_req:
+        has_stipend_marker = bool(
+            re.search(
+                r"\b(?:stipend|stipends|fellowship|fellowships|scholarship|scholarships|financial\s+assistance|assistantship)\b",
+                combined_text,
+                re.I,
+            )
+        )
+        if not has_stipend_marker:
+            return 0.25, ("request is for fellowship/stipend but evidence has no fellowship or assistance terms",)
+
+    # Financial / fee requests must have monetary markers or fee terms
+    is_fee_req = (
+        request_name in _FINANCIAL_REQUEST_NAMES
+        or bool(re.search(r"\b(?:rupees?|inr|fees?|cost|tuition|charges?)\b", claim.text, re.I))
+    )
+    if not is_stipend_req and is_fee_req:
+        has_fee_marker = (
+            bool(factual_markers(combined_text)["money"])
+            or bool(re.search(r"\b(?:fee|fees|cost|tuition|charge|charges|rent|rate|amount|price)\b", combined_text, re.I))
+        )
+        if not has_fee_marker:
+            return 0.25, ("request is financial/fee but evidence has no financial markers or fee terms",)
+
+        financial_scope = _financial_scope_tokens(claim)
+        if financial_scope and not (financial_scope & ev_all_tokens):
+            return 0.30, ("generic financial wording matches but requested financial scope is absent",)
+
+    request_tokens = _tokens(claim.name or "") - {"general", "none", "overall", "details", "information"}
 
     if request_tokens:
         request_overlap = _token_family_overlap(request_tokens, evidence_tokens)
@@ -1117,16 +1348,6 @@ def _request_match(claim: Claim, evidence: EvidenceUnit) -> tuple[float, tuple[s
                     "request type appears in evidence heading" if heading_overlap > 0 else "",
                 ) if part
             )
-
-        request_name = normalize_text(claim.name or "")
-
-        # Financial requests can be scoped by a target/anchor such as
-        # "tuition", "hostel", "admission", or a program/category. A generic
-        # "fee" mention alone must not satisfy a specifically scoped fee ask.
-        if request_name in _FINANCIAL_REQUEST_NAMES:
-            financial_scope = _financial_scope_tokens(claim)
-            if financial_scope and not (financial_scope & evidence_tokens):
-                return 0.30, ("generic financial wording matches but requested financial scope is absent",)
 
         family = _REQUEST_FAMILY_CUES.get(request_name, set())
         if family and _has_prefix_or_exact(evidence_tokens, family):
@@ -1141,13 +1362,18 @@ def _request_match(claim: Claim, evidence: EvidenceUnit) -> tuple[float, tuple[s
             if has_requirement and has_applicant:
                 return 0.78, ("eligibility is expressed through applicant/requirement language",)
 
-    # Fallback for a request with no structured request type: use the raw query
-    # as a partial lexical signal, rather than inventing a domain interpretation.
+    # Fallback for a request with no structured request type: use core query tokens
+    # rather than raw unfiltered string to measure lexical alignment.
     query_tokens = _tokens(claim.text)
-    lexical = _overlap(query_tokens, evidence_tokens)
-    heading_bonus = 0.10 if evidence.heading and _overlap(query_tokens, heading_tokens) > 0 else 0.0
-    score = _clamp01(0.78 * lexical + heading_bonus)
-    if score >= 0.62:
+    core_query_tokens = {
+        t for t in query_tokens
+        if t not in _STOPWORDS and t not in {"tell", "give", "please", "can", "what", "which", "how", "when", "where"}
+    }
+    lexical = _overlap(core_query_tokens, evidence_tokens) if core_query_tokens else _overlap(query_tokens, evidence_tokens)
+    heading_bonus = 0.12 if evidence.heading and _overlap(query_tokens, heading_tokens) > 0 else 0.0
+    target_bonus = 0.15 if target_terms and (target_terms & ev_all_tokens) else 0.0
+    score = _clamp01(0.82 * lexical + heading_bonus + target_bonus)
+    if score >= 0.55:
         return score, ("request text has strong lexical alignment",)
     if score >= 0.35:
         return score, ("request text has partial lexical alignment",)
@@ -1191,6 +1417,25 @@ def match_claim_to_evidence(claim: Claim, evidence: EvidenceUnit) -> ClaimEviden
         score, reasons = _request_match(claim, evidence)
         status = "supported" if score >= 0.62 else "partial" if score >= 0.35 else "unsupported"
         return ClaimEvidenceMatch(claim.claim_id, evidence.evidence_id, score, status, reasons)
+
+    if claim.kind == "constraint":
+        val_str = str(claim.value or "")
+        val_tokens = _tokens(val_str)
+        ev_all_tokens = evidence.token_set | _tokens(evidence.source) | _tokens(evidence.heading or "")
+        if "%" in val_str and "%" not in evidence.text and not any("%" in t for t in ev_all_tokens):
+            return ClaimEvidenceMatch(claim.claim_id, evidence.evidence_id, 0.0, "unsupported", ("percentage not found in evidence",))
+        content_tokens = {
+            t for t in val_tokens
+            if t not in _STOPWORDS and t not in {"condition", "eq", "all", "case", "study", "cost", "year", "years", "option", "degree", "program"}
+        }
+        if val_tokens and val_tokens.issubset(ev_all_tokens):
+            return ClaimEvidenceMatch(claim.claim_id, evidence.evidence_id, 0.88, "supported", ("constraint value satisfied in evidence",))
+        elif content_tokens and content_tokens.issubset(ev_all_tokens):
+            return ClaimEvidenceMatch(claim.claim_id, evidence.evidence_id, 0.82, "supported", ("constraint core concept satisfied in evidence",))
+        elif content_tokens and len(content_tokens & ev_all_tokens) / len(content_tokens) >= 0.5:
+            return ClaimEvidenceMatch(claim.claim_id, evidence.evidence_id, 0.60, "partial", ("partial constraint match in evidence",))
+        else:
+            return ClaimEvidenceMatch(claim.claim_id, evidence.evidence_id, 0.0, "unsupported", ("constraint value not found in evidence",))
 
     score, reasons = _generic_match(claim, evidence)
     status = "supported" if score >= 0.62 else "partial" if score >= 0.35 else "unsupported"

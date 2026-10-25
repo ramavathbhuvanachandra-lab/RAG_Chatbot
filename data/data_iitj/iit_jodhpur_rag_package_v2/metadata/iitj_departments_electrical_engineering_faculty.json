@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_electrical_engineering_faculty",
+  "title": "Electrical Engineering \u2014 Faculty",
+  "category": "departments/electrical_engineering",
+  "subcategory": "faculty",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/electrical_engineering/faculty.md",
+  "docx_path": "documents/departments/electrical_engineering/faculty.docx",
+  "knowledge_path": "knowledge/departments/electrical_engineering/faculty.md",
+  "markdown_hash": "1cc513bcb87c0c48d3f1e2bc1f87b84f611a4af318f0a29059a2004f1e5bc707",
+  "docx_hash": "ecad978a0359df5660f1cf2a1009d7769c92d33cc9fd6c77afc7fb463c29177d",
+  "source_urls": [
+    "http://home.iitj.ac.in/~aashishmathur/",
+    "http://home.iitj.ac.in/~saadgafoor/",
+    "http://home.iitj.ac.in/~amitb/",
+    "http://home.iitj.ac.in/~akt/",
+    "http://home.iitj.ac.in/~singhak/",
+    "http://home.iitj.ac.in/~jai/",
+    "http://home.iitj.ac.in/~kjrangra/",
+    "http://home.iitj.ac.in/~mkumar/",
+    "http://home.iitj.ac.in/~niladri/",
+    "http://home.iitj.ac.in/~nishantkumar/",
+    "http://home.iitj.ac.in/~nitin/",
+    "http://home.iitj.ac.in/~rn/",
+    "http://home.iitj.ac.in/~sy/",
+    "http://home.iitj.ac.in/~sptiwari/",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/electrical-engineering/en/research-overview"
+  ],
+  "unit_ids": [
+    "e45acb4034e2cdc1",
+    "a22eca23d01396d3",
+    "2b473719628b9738",
+    "9faed1d4ab21052f",
+    "ab19ad6586b57c36",
+    "bae38f4012501100",
+    "5136bbe9e99129b0",
+    "a99f92ec5482ed3c"
+  ],
+  "aliases": [
+    "Electrical Engineering \u2014 Faculty",
+    "Faculty"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

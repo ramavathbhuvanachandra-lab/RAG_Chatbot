@@ -1,0 +1,27 @@
+[
+  {
+    "phrase": "How do I apply for B.Tech at IIT Jodhpur?",
+    "intent": "admissions_btech",
+    "canonical_document": "admissions/general_admission_regulations.md"
+  },
+  {
+    "phrase": "What is the B.Tech tuition fee at IIT Jodhpur?",
+    "intent": "fees_btech",
+    "canonical_document": "finance/academic_fees_and_scholarships.md"
+  },
+  {
+    "phrase": "What is the ITEP tuition fee?",
+    "intent": "fees_itep",
+    "canonical_document": "finance/academic_fees_and_scholarships.md"
+  },
+  {
+    "phrase": "What are the visitor hostel room charges?",
+    "intent": "fees_visitor_hostel",
+    "canonical_document": "hostels_and_housing/visitor_hostel_accommodation_and_charges.md"
+  },
+  {
+    "phrase": "What are the emergency hospital contact numbers?",
+    "intent": "emergency_medical",
+    "canonical_document": "campus_and_student_services/primary_health_centre.md"
+  }
+]

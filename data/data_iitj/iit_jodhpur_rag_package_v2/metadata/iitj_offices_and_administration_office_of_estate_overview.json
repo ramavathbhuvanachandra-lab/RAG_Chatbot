@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_estate_overview",
+  "title": "Office of Estate \u2014 Overview",
+  "category": "offices_and_administration/office_of_estate",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_estate/overview.md",
+  "docx_path": "documents/offices_and_administration/office_of_estate/overview.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_estate/overview.md",
+  "markdown_hash": "d6b20c6d7c76fbb2a078aec806f32c66f2cf0a8eb32e35e340f22be003521e34",
+  "docx_hash": "13370a0df62790918ec174fbca7df67a44c996e07250b6be0c0f52f487c0cafb",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-estate/en/Office-of-Estate"
+  ],
+  "unit_ids": [
+    "dc1f7b60b63260a9",
+    "38f76c3b1792939c"
+  ],
+  "aliases": [
+    "Office of Estate \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [
+    "claim_estate_emergency"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -13,6 +13,7 @@ class RAGState(TypedDict, total=False):
     conversation_mode: str
     active_topic: str
     active_entity: str
+    unanchored_reference: bool
 
     # Canonical query-planner outputs.
     query_plan: Any
@@ -21,11 +22,13 @@ class RAGState(TypedDict, total=False):
     query_scope_reason: str
     pipeline_stop: bool
     stop_reason: str
+    safe_response: str
 
     is_multi_intent: bool
     intent_count: int
     intent_units: Sequence[Any]
     intent_questions: Sequence[str]
+    intent_results: Sequence[Any]
 
     query: Any
     query_frame: Any
@@ -70,6 +73,18 @@ class RAGState(TypedDict, total=False):
     model_calls: int
     context: str
     error: str
+
+    # Diagnostic & Provenance Traces
+    retrieval_channels: Sequence[str]
+    retrieval_list_queries: Sequence[str]
+    dense_retrieval_records: Sequence[Any]
+    bm25_retrieval_records: Sequence[Any]
+    retrieval_trace: Sequence[Any]
+    verification_trace: Sequence[Any]
+    stage_timings: dict[str, Any]
+    prompt_messages: Sequence[Any]
+    warnings: Sequence[str]
+    errors: Sequence[str]
 
 
 __all__ = ["RAGState"]

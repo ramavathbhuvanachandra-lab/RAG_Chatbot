@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IITJ_Document_Metadata_V2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "institution_id",
+    "document_id",
+    "title",
+    "markdown_path",
+    "docx_path",
+    "markdown_hash",
+    "docx_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "2.0"
+      ]
+    },
+    "institution_id": {
+      "type": "string",
+      "enum": [
+        "iitj"
+      ]
+    },
+    "document_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "document_type": {
+      "type": "string"
+    },
+    "markdown_path": {
+      "type": "string"
+    },
+    "docx_path": {
+      "type": "string"
+    },
+    "knowledge_path": {
+      "type": "string"
+    },
+    "markdown_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "docx_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unit_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_datasets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conflict_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "validation_status": {
+      "type": "object"
+    }
+  }
+}

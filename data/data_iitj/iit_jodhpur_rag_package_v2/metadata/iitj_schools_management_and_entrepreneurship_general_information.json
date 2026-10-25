@@ -1,0 +1,65 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_management_and_entrepreneurship_general_information",
+  "title": "School of Management and Entrepreneurship \u2014 General Information",
+  "category": "schools/management_and_entrepreneurship",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/management_and_entrepreneurship/general_information.md",
+  "docx_path": "documents/schools/management_and_entrepreneurship/general_information.docx",
+  "knowledge_path": "knowledge/schools/management_and_entrepreneurship/general_information.md",
+  "markdown_hash": "339af46a28bec5bf551e2c38f577cc93ff71c491f6ee553055d36f2cc7abb665",
+  "docx_hash": "9acb18b791a618490215cfea82956e9cdc736bb8fe394f9718e9ce17dda6578f",
+  "source_urls": [
+    "https://erponline.iitj.ac.in/Admission/index?admiss_ch=67",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/schools/en/mission-vision",
+    "https://www.iitj.ac.in/schools/en/industry-interaction",
+    "https://www.iitj.ac.in/schools/en/final-placement",
+    "https://www.iitj.ac.in/schools/en/eligibility-criteria-and-selection-process",
+    "https://www.iitj.ac.in/schools/en/phd",
+    "https://www.iitj.ac.in/schools/en/fee-structure-student-intake",
+    "https://www.iitj.ac.in/schools/en/how-to-apply",
+    "https://www.iitj.ac.in/schools/en/phd-program",
+    "https://www.iitj.ac.in/schools/en/placement-process"
+  ],
+  "unit_ids": [
+    "addefca80cbb3dce",
+    "0accc4d2fc0646a0",
+    "c93a02f3bb692b3f",
+    "3839988f2cbb1e21",
+    "f59f2914e6a7ebca",
+    "42ab2d45182b5ea1",
+    "ec302b890486eccb",
+    "2ebcdc2b3c32b53f"
+  ],
+  "aliases": [
+    "School of Management and Entrepreneurship \u2014 General Information",
+    "General Information",
+    "SME",
+    "SME IIT Jodhpur",
+    "School of Management",
+    "Tech MBA"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "fees_and_scholarships.json",
+    "institution_profile.json",
+    "placements_and_careers.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

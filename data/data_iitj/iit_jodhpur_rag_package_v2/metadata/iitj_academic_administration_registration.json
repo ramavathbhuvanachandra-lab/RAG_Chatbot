@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_academic_administration_registration",
+  "title": "Registration",
+  "category": "academic_administration",
+  "subcategory": "registration",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/academic_administration/registration.md",
+  "docx_path": "documents/academic_administration/registration.docx",
+  "knowledge_path": "knowledge/academic_administration/registration.md",
+  "markdown_hash": "0c86f713c571db3639911f6b39e36d2a7a7cd06784d1c3fe48966d6f56f90851",
+  "docx_hash": "0071e0013e8ef42b90a4915dd6ed4466774f2a7d3fecdbec1bac4a5f1b342250",
+  "source_urls": [
+    "https://oa.iitj.ac.in/ePay/",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/cete/en/fdp-on-pedagogy-and-tel",
+    "https://www.iitj.ac.in/bachelor-of-technology/en/registration-academic-session",
+    "https://www.iitj.ac.in/office-of-executive-education/en/registration"
+  ],
+  "unit_ids": [
+    "716ac16afff9374d",
+    "73016a5d9850f60d",
+    "c189c34c91d9fde2",
+    "ca88e7e5a0c76d5c",
+    "43b088df33076208",
+    "27e12244d8ebab23",
+    "3c4f0b807778f207",
+    "5b29be940f79c391"
+  ],
+  "aliases": [
+    "Registration"
+  ],
+  "related_datasets": [
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "institution_id": "iitj",
+  "total_conflicts_logged": 7,
+  "conflicts": [
+    {
+      "conflict_id": "conflict_btech_vs_itep_tuition_discrepancy",
+      "entity": "Tuition Fee per Semester (\u20b91,00,000 vs \u20b950,000)",
+      "source_1": {
+        "url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+        "stated_value": "\u20b91,00,000/- per semester (B.Tech national IIT norm)"
+      },
+      "source_2": {
+        "url": "https://www.iitj.ac.in/itep/en/admissions",
+        "stated_value": "\u20b950,000/- per semester (ITEP B.Sc. B.Ed. approved fee matrix)"
+      },
+      "disposition": "RESOLVED_BY_PROGRAMME_DISENTANGLEMENT",
+      "explanation": "Disentangled B.Tech tuition fee (\u20b91,00,000/sem) from ITEP tuition fee (\u20b950,000/sem). Both figures are correct for their respective academic programmes."
+    },
+    {
+      "conflict_id": "conflict_visitor_accommodation_vs_semester_fee",
+      "entity": "Hostel Room Charges (Daily/Monthly Commercial Rate vs Consolidated Semester Fee)",
+      "source_1": {
+        "url": "https://www.iitj.ac.in/office-of-students/en/hostel-booking",
+        "stated_value": "\u20b9450\u2013\u20b9750/day short-term; \u20b92,175/month long-term visitor hostel rate"
+      },
+      "source_2": {
+        "url": "https://www.iitj.ac.in/itep/en/admissions",
+        "stated_value": "\u20b932,250/- semester fee (inclusive of residential student hostel room rent)"
+      },
+      "disposition": "RESOLVED_BY_AUDIENCE_DISENTANGLEMENT",
+      "explanation": "Visitor accommodation is billed on a per-day / monthly commercial basis for guests and executive students; regular degree students pay a consolidated semester fee that includes room rent."
+    },
+    {
+      "conflict_id": "conflict_cse_intake_variance",
+      "entity": "B.Tech Computer Science and Engineering Sanctioned Intake",
+      "source_1": {
+        "url": "https://www.iitj.ac.in/cse/overview",
+        "stated_value": "80 seats"
+      },
+      "source_2": {
+        "url": "https://josaa.nic.in / Seat Matrix",
+        "stated_value": "90 seats (including supernumerary)"
+      },
+      "disposition": "PRESERVED_SOURCE_VARIANCE",
+      "explanation": "80 represents core sanctioned intake; 90 includes female supernumerary seat allocations under JoSAA."
+    },
+    {
+      "conflict_id": "conflict_bsbe_department_nomenclature",
+      "entity": "Bioscience and Bioengineering Department Nomenclature",
+      "source_1": {
+        "url": "https://www.iitj.ac.in/bsbe",
+        "stated_value": "Department of Bioscience and Bioengineering"
+      },
+      "source_2": {
+        "url": "https://www.iitj.ac.in/academics/programs",
+        "stated_value": "B.Tech in Bioengineering"
+      },
+      "disposition": "RESOLVED_BY_CANONICAL_TAXONOMY",
+      "explanation": "BSBE is the official department name, while Bioengineering is the specific degree title awarded."
+    },
+    {
+      "conflict_id": "conflict_hostel_occupancy_transition",
+      "entity": "First-Year Hostel Occupancy",
+      "source_1": {
+        "url": "https://www.iitj.ac.in/hostel",
+        "stated_value": "Single-room individual accommodation"
+      },
+      "source_2": {
+        "url": "https://www.iitj.ac.in/admissions/faq",
+        "stated_value": "Shared twin-occupancy in Year 1 during peak intake"
+      },
+      "disposition": "PRESERVED_SOURCE_VARIANCE",
+      "explanation": "Students transition to single rooms after Year 1 orientation based on residential wing readiness."
+    },
+    {
+      "conflict_id": "conflict_itep_admission_portal",
+      "entity": "ITEP Admission Channel",
+      "source_1": {
+        "url": "https://ncet.samarth.ac.in",
+        "stated_value": "NTA NCET Centralized Examination"
+      },
+      "source_2": {
+        "url": "https://www.iitj.ac.in/itep",
+        "stated_value": "IIT Jodhpur Institutional Counselling Registration"
+      },
+      "disposition": "RESOLVED_SEQUENCE",
+      "explanation": "Candidates must first qualify NTA NCET and subsequently register on IIT Jodhpur portal for seat allotment."
+    },
+    {
+      "conflict_id": "conflict_fee_waiver_threshold",
+      "entity": "MCM Fee Waiver Parental Income Ceiling",
+      "source_1": {
+        "url": "https://www.iitj.ac.in/finance",
+        "stated_value": "Parental income up to Rs. 4.5 LPA"
+      },
+      "source_2": {
+        "url": "https://www.iitj.ac.in/academics/scholarships",
+        "stated_value": "Parental income up to Rs. 5.0 LPA as per revised MoE circular"
+      },
+      "disposition": "PRESERVED_SOURCE_VARIANCE",
+      "explanation": "Earlier institute brochure stated 4.5 LPA, updated MoE national guidelines revised ceiling to 5.0 LPA."
+    }
+  ]
+}

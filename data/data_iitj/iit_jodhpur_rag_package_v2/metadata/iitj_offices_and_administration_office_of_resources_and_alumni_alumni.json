@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_resources_and_alumni_alumni",
+  "title": "Office of Resources and Alumni \u2014 Alumni and Engagement",
+  "category": "offices_and_administration/office_of_resources_and_alumni",
+  "subcategory": "alumni",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_resources_and_alumni/alumni.md",
+  "docx_path": "documents/offices_and_administration/office_of_resources_and_alumni/alumni.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_resources_and_alumni/alumni.md",
+  "markdown_hash": "3e0a4c07e009ce969c2ed6bb8f2c55b32b8c3b619342085935330bffb4110e06",
+  "docx_hash": "c342a6a00d37137dbaa6cf1abc67cfd5adec50297e75433ab28aaf2da05b40ed",
+  "source_urls": [
+    "https://www.iitj.ac.in/cete/en/blended-learning-and-flipped-classroom",
+    "https://www.iitj.ac.in/cete/en/game-based-learning-for-engineering-education",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/dora/en/dora",
+    "https://www.iitj.ac.in/dora/en/activities"
+  ],
+  "unit_ids": [
+    "50c6e2fb089ba1e1",
+    "72692ccccb24dd66",
+    "338edcdb98c8c993",
+    "dce89a7173d4b49f",
+    "669433eedda65596",
+    "0dfed59bfe8a7da2",
+    "9fdac63416df582c",
+    "060b9eb119c772a2"
+  ],
+  "aliases": [
+    "Office of Resources and Alumni \u2014 Alumni and Engagement",
+    "Alumni"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

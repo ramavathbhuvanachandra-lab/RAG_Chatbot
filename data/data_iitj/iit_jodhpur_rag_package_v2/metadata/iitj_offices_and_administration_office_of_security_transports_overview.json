@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_security_transports_overview",
+  "title": "Office of Security & Transports \u2014 Overview",
+  "category": "offices_and_administration/office_of_security_transports",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_security_transports/overview.md",
+  "docx_path": "documents/offices_and_administration/office_of_security_transports/overview.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_security_transports/overview.md",
+  "markdown_hash": "4ae92556a618989edf4c51f70bd988920eba69e4e49ced7ae462c9edbc064e80",
+  "docx_hash": "2e9060ff148d51a434cca3f8053fb610801c6fcb34978ca5a11c7fbdf2ab5371",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-security-transports/en/office-of-security-transports"
+  ],
+  "unit_ids": [
+    "cbd4409c066bbb11",
+    "ace68e00ce536d04"
+  ],
+  "aliases": [
+    "Office of Security & Transports \u2014 Overview",
+    "Overview",
+    "Security Control Room",
+    "Campus Security Headquarters",
+    "Main Gate Security"
+  ],
+  "related_datasets": [
+    "administrative_offices.json",
+    "campus_locations.json",
+    "emergency_contacts.json",
+    "student_services.json"
+  ],
+  "claim_ids": [
+    "claim_security_control_telephone",
+    "claim_main_gate_security"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

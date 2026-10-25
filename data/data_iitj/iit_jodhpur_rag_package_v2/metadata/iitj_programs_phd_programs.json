@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_programs_phd_programs",
+  "title": "Ph.D \u2014 Programs",
+  "category": "programs/phd",
+  "subcategory": "programs",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/programs/phd/programs.md",
+  "docx_path": "documents/programs/phd/programs.docx",
+  "knowledge_path": "knowledge/programs/phd/programs.md",
+  "markdown_hash": "176e84cd07e934cc847ade20c4477c79d7f48fdb1971e81c525dec87cc6300a2",
+  "docx_hash": "910ee65863b0af6c2d946cb8e6b66dcdb70d45b7405e508057ed65219761b4d1",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/rm/en/phd-programs"
+  ],
+  "unit_ids": [
+    "b578ed96712d3ce3",
+    "ca4580970fd42103"
+  ],
+  "aliases": [
+    "Ph.D \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

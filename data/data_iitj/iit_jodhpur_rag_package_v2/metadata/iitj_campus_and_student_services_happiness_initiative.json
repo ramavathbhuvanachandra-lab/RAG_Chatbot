@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_campus_and_student_services_happiness_initiative",
+  "title": "The Happiness Initiative",
+  "category": "campus_and_student_services",
+  "subcategory": "happiness_initiative",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/campus_and_student_services/happiness_initiative.md",
+  "docx_path": "documents/campus_and_student_services/happiness_initiative.docx",
+  "knowledge_path": "knowledge/campus_and_student_services/happiness_initiative.md",
+  "markdown_hash": "2e3de5f6fbdf0262d816b32e9d7aa2a1ea324071c902553d3ff2f2e8db9811db",
+  "docx_hash": "e9a46f186bd49f2c3bef0630cbbea0aa3e4bbbc26fea6853591b12fbf80a2ef4",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/hi_iitj/en/about"
+  ],
+  "unit_ids": [
+    "8e2b806707a3bb7b",
+    "7e56815728c91af2"
+  ],
+  "aliases": [
+    "The Happiness Initiative",
+    "Happiness Initiative"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "student_services.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

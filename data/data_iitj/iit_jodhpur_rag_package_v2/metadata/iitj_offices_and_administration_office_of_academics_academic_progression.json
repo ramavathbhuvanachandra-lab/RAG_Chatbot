@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_academics_academic_progression",
+  "title": "Office of Academics \u2014 Academic Progression",
+  "category": "offices_and_administration/office_of_academics",
+  "subcategory": "academic_progression",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_academics/academic_progression.md",
+  "docx_path": "documents/offices_and_administration/office_of_academics/academic_progression.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_academics/academic_progression.md",
+  "markdown_hash": "4d9e147d033a10f991094794f11afefdca7f0c8aeaa4145d21483b789a5225cd",
+  "docx_hash": "7406a9b7b650b1d7701c09b3fe8c952ebab0d32fa665820697eb585a5fe5fb45",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/Office-of-Academics/en/Specialization-Minor-Dual-Degree#top2_Dual_DegreeCredits%20Requirements%20for%20B.Tech.%E2%80%8C%E2%80%8C+%E2%80%8C%E2%80%8CM.Tech./MBA%E2%80%8C%E2%80%8C%20Dual%E2%80%8C%E2%80%8C%20Degree%E2%80%8C%E2%80%8C%20in%E2%80%8C%E2%80%8C%20the%E2%80%8C%E2%80%8C%20chosen%E2%80%8C%E2%80%8C%20specialisation%E2%80%8C",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top14.2%20Appeal%20against%20Termination",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top27.%20Graduation%20Requirements",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.4%20Maximum%20Duration%20of%20the%20Program",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.5%20Qualifier%20requirements%20of%20Ph.D.%20Student",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top17.%20Requirements",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.5%20Maximum%20Duration%20of%20a%20Program",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.5%20Academic%20Performance%20Requirements",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top23.3%20Semester%20Withdrawal",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.6.%20Candidacy%20for%20the%20Ph.D.%20Degree",
+    "https://www.iitj.ac.in/Office-of-Academics/en/Specialization-Minor-Dual-Degree#top1_Specializations_MinorsCredits%20Requirements",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top15.3%20Semester%20Withdrawal",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top7.%20Waiver%20of%20Requirements%20in%20Special%20Cases",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top16.%20Branch%20Change",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top14.1%20Termination%20from%20B.Tech.%20Program",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.4%20Annual%20Progress%20Monitoring%20Meeting%20(APM)",
+    "https://www.iitj.ac.in/office-of-academics/en/specialization-minor-dual-degree",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "11f24c4d33ceb08a",
+    "a57129c0d0a2ee7e",
+    "23b0d5ace996e2db",
+    "f9ab7a62932be584",
+    "a3ec7877c2f4efbf",
+    "9561636b0f0c8388",
+    "6f32d0230ee9eefb",
+    "f6d3b8ba09c687e8"
+  ],
+  "aliases": [
+    "Office of Academics \u2014 Academic Progression",
+    "Academic Progression"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "administrative_offices.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

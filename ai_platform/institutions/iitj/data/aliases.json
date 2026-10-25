@@ -89,6 +89,46 @@
             "Electronics Engineering Department",
             "Electronics and ICT"
         ],
+        "computer_science": [
+            "Computer Science and Engineering",
+            "Computer Science",
+            "Department of Computer Science and Engineering",
+            "CSE"
+        ],
+        "mechanical_engineering": [
+            "Mechanical Engineering",
+            "Mechanical Engineering Department",
+            "Department of Mechanical Engineering"
+        ],
+        "chemical_engineering": [
+            "Chemical Engineering",
+            "Chemical Engineering Department",
+            "Department of Chemical Engineering"
+        ],
+        "civil_engineering": [
+            "Civil and Infrastructure Engineering",
+            "Civil Engineering",
+            "Department of Civil and Infrastructure Engineering"
+        ],
+        "materials_engineering": [
+            "Materials Engineering",
+            "Materials Engineering Department",
+            "Department of Materials Engineering",
+            "Metallurgical and Materials Engineering"
+        ],
+        "bioscience_and_bioengineering": [
+            "Bioscience and Bioengineering",
+            "Department of Bioscience and Bioengineering",
+            "BSBE"
+        ],
+        "chemistry": [
+            "Chemistry Department",
+            "Department of Chemistry"
+        ],
+        "mathematics": [
+            "Mathematics Department",
+            "Department of Mathematics"
+        ],
         "physics": [
             "Physics Department",
             "Department of Physics"
@@ -281,6 +321,26 @@
             "guidance",
             "mentorship",
             "student guide"
+        ],
+        "progression": [
+            "academic progression",
+            "annual progress meeting",
+            "apm",
+            "apm meetings",
+            "apm meeting"
+        ],
+        "scholar": [
+            "scholar",
+            "scholars",
+            "research scholar",
+            "student",
+            "students"
+        ],
+        "admitted": [
+            "admitted",
+            "admission",
+            "joining",
+            "joined"
         ]
     }
 }

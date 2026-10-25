@@ -190,6 +190,19 @@ def _numeric_signature(value: str) -> str:
     )
 
 
+def _academic_year_signature(value: str) -> str:
+    m = re.search(r"\b((?:19|20)\d{2})\s*[-/]\s*((?:19|20)?\d{2})\b", value)
+    if not m:
+        return _numeric_signature(value)
+    start_str, end_str = m.group(1), m.group(2)
+    start_year = int(start_str)
+    if len(end_str) == 2:
+        end_year = (start_year // 100) * 100 + int(end_str)
+    else:
+        end_year = int(end_str)
+    return f"{start_year}_{end_year}"
+
+
 def _unsupported_numeric_markers(
     answer: str,
     evidence: str,
@@ -253,16 +266,25 @@ def _unsupported_numeric_markers(
         evidence_exact = set(
             evidence_markers[category]
         )
-        evidence_numeric = {
-            _numeric_signature(value)
-            for value in evidence_exact
-        }
+        if category == "academic_years":
+            evidence_numeric = {
+                _academic_year_signature(value)
+                for value in evidence_exact
+            }
+        else:
+            evidence_numeric = {
+                _numeric_signature(value)
+                for value in evidence_exact
+            }
 
         for value in answer_markers[category]:
             if value in evidence_exact:
                 continue
 
-            signature = _numeric_signature(value)
+            if category == "academic_years":
+                signature = _academic_year_signature(value)
+            else:
+                signature = _numeric_signature(value)
 
             if signature and signature in evidence_numeric:
                 continue
@@ -447,6 +469,161 @@ _EXEMPTION_EVIDENCE_PATTERN = re.compile(
     r"\b(?:exempt|exempted|exemption)\b",
     re.I,
 )
+
+_ROUTE_CANDIDATES = (
+    re.compile(r"\bfirst[- ]class\b", re.I),
+    re.compile(r"\b(?:four|4)[- ]year(?:\s+duration)?(?:\s+bachelor(?:'s)?(?:\s+degree)?)?\b", re.I),
+    re.compile(r"\bbachelor(?:'s)?\s+degree\s+(?:of\s+minimum\s+)?(?:four|4)[- ]year\b", re.I),
+    re.compile(r"\bbachelor(?:'s)?\s+degree\b", re.I),
+    re.compile(r"\bmaster(?:'s)?\s+degree\b", re.I),
+    re.compile(r"\bdiploma\b", re.I),
+    re.compile(r"\bgate(?:\s+score)?\b", re.I),
+)
+
+_QUALIFIER_DENIAL_PATTERNS = (
+    re.compile(r"\b(?:is|are)\s+not\s+(?:explicitly\s+)?(?:accepted|eligible|qualif\w+|permitted|recogni\w+|considered)\b", re.I),
+    re.compile(r"\bnot\s+(?:explicitly\s+)?(?:accepted|eligible|qualif\w+|permitted|recogni\w+|considered)\b", re.I),
+    re.compile(r"\b(?:does|do|can)\s+not\s+(?:qualify|count|satisfy|meet|apply|suffice)\b", re.I),
+    re.compile(r"\balone\s+does\s+not\s+qualify\b", re.I),
+    re.compile(r"\b(?:does|do)\s+not\s+(?:mention|list|include|state)\b.*?\b(?:as\s+(?:a\s+)?qualif\w+|as\s+(?:an?\s+)?accept\w+|requirement|eligib\w+)", re.I),
+    re.compile(r"\bnot\s+(?:an?\s+)?(?:accepted\s+qualification|eligible\s+qualification|qualifying\s+degree)\b", re.I),
+)
+
+_EVIDENCE_POSITIVE_QUALIFIER_INDICATORS = re.compile(
+    r"\b(?:or\s+(?:a\s+)?|qualif\w+|eligib\w+|accept\w+|admiss\w+|minimum\s+requirement)\b",
+    re.I,
+)
+
+_EVIDENCE_NEGATIVE_QUALIFIER_INDICATORS = re.compile(
+    r"\b(?:not\s+accept\w*|not\s+eligib\w*|ineligib\w*|disqualif\w*|does\s+not|cannot)\b",
+    re.I,
+)
+
+
+def _check_polarity_inversion_of_qualifier(
+    sentence: str,
+    evidence: str,
+) -> list[GroundingIssue]:
+    if not any(pattern.search(sentence) for pattern in _QUALIFIER_DENIAL_PATTERNS):
+        return []
+
+    issues: list[GroundingIssue] = []
+    for route_pattern in _ROUTE_CANDIDATES:
+        match_sent = route_pattern.search(sentence)
+        if not match_sent:
+            continue
+        route_text = match_sent.group(0)
+
+        for match_ev in route_pattern.finditer(evidence):
+            start = max(0, match_ev.start() - 120)
+            end = min(len(evidence), match_ev.end() + 120)
+            window = evidence[start:end]
+
+            if _EVIDENCE_NEGATIVE_QUALIFIER_INDICATORS.search(window):
+                continue
+            if _EVIDENCE_POSITIVE_QUALIFIER_INDICATORS.search(window):
+                issues.append(
+                    GroundingIssue(
+                        "polarity_inversion_of_qualifier",
+                        sentence,
+                        evidence,
+                        (
+                            f"The answer denies that '{route_text}' qualifies or is accepted, "
+                            "but the evidence explicitly provides it as an eligible route or condition."
+                        ),
+                    )
+                )
+                break
+
+    return issues
+
+
+def _check_scale_misattribution(
+    sentence: str,
+    evidence: str,
+) -> list[GroundingIssue]:
+    """Flag when a 10-scale score is wrongly attributed to a different grading scale."""
+    scale_match = re.search(r"\b(?:scale\s+of\s+|on\s+an?\s+)(\d+)(?:-point|\s+scale)?\b", sentence, re.IGNORECASE)
+    if not scale_match:
+        return []
+    scale_val = scale_match.group(1)
+    if scale_val == "10":
+        return []
+    ev_scale_match = re.search(rf"\b([0-9.]+)\b.*?\bon a scale of {scale_val}\b", evidence, re.IGNORECASE)
+    if ev_scale_match:
+        expected_score = ev_scale_match.group(1)
+        if expected_score not in sentence and ("6.0" in sentence or "5.5" in sentence):
+            return [
+                GroundingIssue(
+                    "scale_misattribution",
+                    sentence,
+                    evidence,
+                    f"The answer quotes a 10-point scale threshold for a scale of {scale_val}, but the evidence specifies {expected_score}.",
+                )
+            ]
+    return []
+
+
+def _check_non_degree_award_inversion(
+    sentence: str,
+    evidence: str,
+) -> list[GroundingIssue]:
+    """Flag when casual/non-degree students are incorrectly stated to earn a degree."""
+    sent_low = sentence.lower()
+    if ("casual student" in sent_low or "non-degree student" in sent_low) and any(p in sent_low for p in ("can earn a degree", "awards a degree", "eligible for a degree", "earn a degree")):
+        if "non-degree" in evidence.lower() or "not lead to a degree" in evidence.lower():
+            return [
+                GroundingIssue(
+                    "non_degree_award_inversion",
+                    sentence,
+                    evidence,
+                    "The answer states that a casual student can earn an institute degree, but the evidence classifies them as non-degree.",
+                )
+            ]
+    return []
+
+
+def _check_category_threshold_misattribution(
+    sentence: str,
+    evidence: str,
+) -> list[GroundingIssue]:
+    """Flag when a category-specific threshold is misattributed to another category.
+
+    Only fires when:
+    - The sentence mentions SC/ST (without explicit GEN/OBC labelling), AND
+    - The sentence contains 60% (the GEN/OBC threshold) but NOT the correct 55%
+      SC/ST threshold, AND
+    - The evidence confirms that 55% is the correct SC/ST threshold.
+
+    This prevents false positives on correct dual-threshold statements such as
+    "60% marks (55% for SC/ST)" where both values are faithfully cited.
+    """
+    sent_low = sentence.lower()
+    is_sc_st = bool(re.search(r"\b(?:sc|st|sc/st|sc and st)\b", sent_low))
+    is_gen_obc = bool(re.search(r"\b(?:gen|general|obc)\b", sent_low))
+
+    if not is_sc_st or is_gen_obc:
+        # No cross-category risk if SC/ST is not mentioned or GEN/OBC is also named.
+        return []
+
+    has_60 = "60%" in sentence or "6.0" in sentence
+    has_55_for_sc_st = bool(re.search(r"(?:55%|5\.5)\s*(?:for|[\(])\s*(?:sc|st)", sent_low))
+
+    # If both thresholds appear in the sentence it is a correct dual-threshold
+    # statement — not a misattribution.
+    if has_60 and has_55_for_sc_st:
+        return []
+
+    if has_60 and re.search(r"\b55%\s*(?:for|\()\s*(?:sc|st)", evidence, re.IGNORECASE):
+        return [
+            GroundingIssue(
+                "category_threshold_misattribution",
+                sentence,
+                evidence,
+                "The answer attributes a 60% requirement to SC/ST applicants, but the evidence specifies 55% for SC/ST.",
+            )
+        ]
+    return []
 
 
 def _supported_daily_arithmetic(
@@ -724,6 +901,31 @@ def _check_sentence(
                     ),
                 )
             )
+
+    issues.extend(
+        _check_polarity_inversion_of_qualifier(
+            sentence,
+            evidence,
+        )
+    )
+    issues.extend(
+        _check_scale_misattribution(
+            sentence,
+            evidence,
+        )
+    )
+    issues.extend(
+        _check_non_degree_award_inversion(
+            sentence,
+            evidence,
+        )
+    )
+    issues.extend(
+        _check_category_threshold_misattribution(
+            sentence,
+            evidence,
+        )
+    )
 
     return issues
 

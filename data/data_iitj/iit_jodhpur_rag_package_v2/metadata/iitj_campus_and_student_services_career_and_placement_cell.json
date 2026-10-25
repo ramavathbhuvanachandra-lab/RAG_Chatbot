@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_campus_and_student_services_career_and_placement_cell",
+  "title": "Career Development and Placement Procedures",
+  "category": "campus_and_student_services",
+  "subcategory": "career_and_placement_cell",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/campus_and_student_services/career_and_placement_cell.md",
+  "docx_path": "documents/campus_and_student_services/career_and_placement_cell.docx",
+  "knowledge_path": "knowledge/campus_and_student_services/career_and_placement_cell.md",
+  "markdown_hash": "af60e877a672ad09eb01859cc6c309b86671dbd5c1c837c089b3275d919f08e6",
+  "docx_hash": "9068473b4109eb4776f141adb973b4c1414938eb5e038bc545d4d4948c18ebe4",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://spc.iitj.ac.in/",
+    "https://www.iitj.ac.in/schools/en/final-placement"
+  ],
+  "unit_ids": [
+    "42ab2d45182b5ea1",
+    "ec302b890486eccb",
+    "2ebcdc2b3c32b53f",
+    "771df40bfa8e33e5",
+    "d31e10f0bac0f546"
+  ],
+  "aliases": [
+    "Career Development and Placement Procedures",
+    "Career And Placement Cell",
+    "SPC",
+    "Student Placement Committee",
+    "Training and Placement Cell",
+    "T&P Cell"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "placements_and_careers.json",
+    "student_services.json"
+  ],
+  "claim_ids": [
+    "claim_placement_recruiter_amex",
+    "claim_placement_recruiter_ey",
+    "claim_placement_recruiter_cognizant"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

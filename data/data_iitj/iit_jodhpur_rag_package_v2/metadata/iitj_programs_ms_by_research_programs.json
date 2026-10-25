@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_programs_ms_by_research_programs",
+  "title": "M.S. by Research \u2014 Programs",
+  "category": "programs/ms_by_research",
+  "subcategory": "programs",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/programs/ms_by_research/programs.md",
+  "docx_path": "documents/programs/ms_by_research/programs.docx",
+  "knowledge_path": "knowledge/programs/ms_by_research/programs.md",
+  "markdown_hash": "52b2af8d166641e2aed8001fcd6b065d9cfb442ad1a984a7d8144609c4fbaef6",
+  "docx_hash": "120c7a64154157da514eb189eb8c1f6f1d1268ea7ba572c1c3112d94a5c2def1",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/m.s.-by-research-program"
+  ],
+  "unit_ids": [
+    "da423d385f532cbe",
+    "b0df096448e873ee",
+    "13daf2a9fe9d961f",
+    "bd532a79132ad4f0",
+    "3a5ca052eb9e6ecc",
+    "1acc8842abd6740d",
+    "1e6b778d64496b94"
+  ],
+  "aliases": [
+    "M.S. by Research \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_artificial_intelligence_and_data_science_facilities",
+  "title": "School of Artificial Intelligence and Data Science \u2014 Facilities",
+  "category": "schools/artificial_intelligence_and_data_science",
+  "subcategory": "facilities",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/facilities.md",
+  "docx_path": "documents/schools/artificial_intelligence_and_data_science/facilities.docx",
+  "knowledge_path": "knowledge/schools/artificial_intelligence_and_data_science/facilities.md",
+  "markdown_hash": "2508ebcaf1e69496b952acec45958bbe736eb844556b2e616eb11469dd42825f",
+  "docx_hash": "4220a23678d9c706c1982fd863f4810e1a0992a8d3dc496ec2bcadf80cae04b3",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Deep-Learning-and-Computer-Vision-Lab",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Neuro-Robotics-Lab",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Natural-Language-Processing-Lab",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Computational-Intelligence-Lab",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Cognitive-Engineering-Lab",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Network-Cognitive-Neuroscience-Lab"
+  ],
+  "unit_ids": [
+    "386c3e507f98625f",
+    "359e4ba413f2fedf",
+    "39fa141c5e229cce",
+    "205db6a32ee2821e",
+    "9d316be27eeadcc2",
+    "ed9fe6bfed36d652",
+    "b0f9b12c6e75d77a",
+    "aa2fabdc4dd05238"
+  ],
+  "aliases": [
+    "School of Artificial Intelligence and Data Science \u2014 Facilities",
+    "Facilities",
+    "SAIDE",
+    "AIDE IIT Jodhpur",
+    "School of AI"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

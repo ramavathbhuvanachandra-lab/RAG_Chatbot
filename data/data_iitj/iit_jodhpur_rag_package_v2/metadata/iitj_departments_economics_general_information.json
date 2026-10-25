@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_economics_general_information",
+  "title": "Economics \u2014 General Information",
+  "category": "departments/economics",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/economics/general_information.md",
+  "docx_path": "documents/departments/economics/general_information.docx",
+  "knowledge_path": "knowledge/departments/economics/general_information.md",
+  "markdown_hash": "92f73a08d41b3b2ca302f20c1468d9edebd7d406cc46279b60f1d31a0bc9a2f7",
+  "docx_hash": "e4454ff1f018fe7f5681d7805e63def3ff5d28d93bade038692defabad4e7e72",
+  "source_urls": [
+    "https://www.iitj.ac.in/economics/en/phd-student#",
+    "https://www.iitj.ac.in/people/profile/6675ebc1-734e-450f-9405-90442b909d47",
+    "https://www.iitj.ac.in/people/profile/4fb56892-ba9f-4c24-b406-b68b8928934b",
+    "https://www.iitj.ac.in/people/profile/c0d3b98c-8544-4cdb-88df-88095a1872a0",
+    "https://www.iitj.ac.in/people/profile/ac494218-1cff-41d4-9860-1ba32681ca90",
+    "https://www.iitj.ac.in/people/profile/14a82fad-acff-4955-940e-2c03d1f33585",
+    "https://www.iitj.ac.in/people/profile/14207b73-32e7-4fd9-80ae-9acdf6893079",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/economics/en/phd-student",
+    "https://www.iitj.ac.in/economics/en/our-research",
+    "https://www.iitj.ac.in/school-of-liberal-arts/en/doctoral-program"
+  ],
+  "unit_ids": [
+    "b6d0c244eb8f529c",
+    "ddd39cccdc03b7f7",
+    "1291e2007503a3a0",
+    "448e65e3020bf71d",
+    "6b34595c8094cbd8",
+    "c315d3441f42bca8",
+    "3e8c8cfabb60f026",
+    "dfaa1094dc6d8137"
+  ],
+  "aliases": [
+    "Economics \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

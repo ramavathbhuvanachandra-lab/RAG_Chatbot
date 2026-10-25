@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mathematics_general_information",
+  "title": "Mathematics \u2014 General Information",
+  "category": "departments/mathematics",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mathematics/general_information.md",
+  "docx_path": "documents/departments/mathematics/general_information.docx",
+  "knowledge_path": "knowledge/departments/mathematics/general_information.md",
+  "markdown_hash": "cd72e3c291bf4f7747991f02d4dd07210f7069ed2eb2d66392b60533208360fb",
+  "docx_hash": "8ed8b61f613ed7eee99cef2bc41f1c8b655361ac62deac02cca7eae41674c8e4",
+  "source_urls": [
+    "https://www.iitj.ac.in/mathematics/en/hod-message",
+    "https://www.iitj.ac.in/PageImages/Gallery/06-2026/MSc-Mathematics-Curriculum-July-2026-639179844535408322.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/mathematics/en/undergraduate-programs",
+    "https://www.iitj.ac.in/mathematics/en/mathematics",
+    "https://www.iitj.ac.in/mathematics/en/postgraduate-programs",
+    "https://www.iitj.ac.in/mathematics"
+  ],
+  "unit_ids": [
+    "663354d25453115b",
+    "6eb43888f72b91ed",
+    "cb671c50c0dce379",
+    "85e71d002eed48e4",
+    "bb036cd9e8435f2a",
+    "211040104a6da0ea",
+    "a89cc68bc6c8b27d",
+    "0f934fed5b2b89c4"
+  ],
+  "aliases": [
+    "Mathematics \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

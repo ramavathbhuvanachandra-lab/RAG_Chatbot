@@ -1,0 +1,136 @@
+{
+  "institution_id": "iitj",
+  "total_datasets": 26,
+  "datasets_audited": [
+    {
+      "filename": "institution_profile.json",
+      "record_count": 17,
+      "valid_json": true
+    },
+    {
+      "filename": "departments.json",
+      "record_count": 15,
+      "valid_json": true
+    },
+    {
+      "filename": "schools.json",
+      "record_count": 4,
+      "valid_json": true
+    },
+    {
+      "filename": "academic_programmes.json",
+      "record_count": 21,
+      "valid_json": true
+    },
+    {
+      "filename": "degrees.json",
+      "record_count": 9,
+      "valid_json": true
+    },
+    {
+      "filename": "admission_routes.json",
+      "record_count": 6,
+      "valid_json": true
+    },
+    {
+      "filename": "hostel_facilities.json",
+      "record_count": 5,
+      "valid_json": true
+    },
+    {
+      "filename": "campus_locations.json",
+      "record_count": 6,
+      "valid_json": true
+    },
+    {
+      "filename": "emergency_contacts.json",
+      "record_count": 6,
+      "valid_json": true
+    },
+    {
+      "filename": "administrative_offices.json",
+      "record_count": 16,
+      "valid_json": true
+    },
+    {
+      "filename": "research_platforms.json",
+      "record_count": 7,
+      "valid_json": true
+    },
+    {
+      "filename": "research_facilities.json",
+      "record_count": 4,
+      "valid_json": true
+    },
+    {
+      "filename": "fees_and_scholarships.json",
+      "record_count": 3,
+      "valid_json": true
+    },
+    {
+      "filename": "visitor_accommodation.json",
+      "record_count": 5,
+      "valid_json": true
+    },
+    {
+      "filename": "student_services.json",
+      "record_count": 5,
+      "valid_json": true
+    },
+    {
+      "filename": "placements_and_careers.json",
+      "record_count": 4,
+      "valid_json": true
+    },
+    {
+      "filename": "rules_and_regulations.json",
+      "record_count": 4,
+      "valid_json": true
+    },
+    {
+      "filename": "acronyms.json",
+      "record_count": 22,
+      "valid_json": true
+    },
+    {
+      "filename": "aliases.json",
+      "record_count": 20,
+      "valid_json": true
+    },
+    {
+      "filename": "navigation.json",
+      "record_count": 4,
+      "valid_json": true
+    },
+    {
+      "filename": "phrases.json",
+      "record_count": 5,
+      "valid_json": true
+    },
+    {
+      "filename": "scope_policy.json",
+      "record_count": 3,
+      "valid_json": true
+    },
+    {
+      "filename": "semantic_terms.json",
+      "record_count": 4,
+      "valid_json": true
+    },
+    {
+      "filename": "source_policy.json",
+      "record_count": 3,
+      "valid_json": true
+    },
+    {
+      "filename": "manifest.json",
+      "record_count": 5,
+      "valid_json": true
+    },
+    {
+      "filename": "ingestion_config.json",
+      "record_count": 8,
+      "valid_json": true
+    }
+  ]
+}

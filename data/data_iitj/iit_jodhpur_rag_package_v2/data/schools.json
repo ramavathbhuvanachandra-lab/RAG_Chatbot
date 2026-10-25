@@ -1,0 +1,44 @@
+[
+  {
+    "id": "artificial_intelligence_and_data_science",
+    "name": "School of Artificial Intelligence and Data Science (AIDE)",
+    "acronym": "SAIDE",
+    "focus": "Artificial Intelligence, Data Engineering, Machine Learning, Brain-Computer Interfaces",
+    "degrees_offered": [
+      "B.Tech in AI & Data Engineering",
+      "M.Tech in AI",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "design",
+    "name": "School of Design",
+    "acronym": "SOD",
+    "focus": "Industrial Design, Interaction Design, Visual Communication, Experience Design",
+    "degrees_offered": [
+      "M.Des",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "liberal_arts",
+    "name": "School of Liberal Arts",
+    "acronym": "SOLA",
+    "focus": "Computational Social Science, Digital Humanities, Ethics of Technology, Cultural Studies",
+    "degrees_offered": [
+      "M.Sc in Computational Social Science",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "management_and_entrepreneurship",
+    "name": "School of Management and Entrepreneurship",
+    "acronym": "SME",
+    "focus": "Tech MBA, General Management, Technology Entrepreneurship, Supply Chain Analytics",
+    "degrees_offered": [
+      "MBA",
+      "Tech MBA",
+      "Ph.D"
+    ]
+  }
+]

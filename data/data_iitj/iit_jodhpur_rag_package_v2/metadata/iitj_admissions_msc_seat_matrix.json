@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_admissions_msc_seat_matrix",
+  "title": "M.Sc. Sanctioned Seat Matrix (AY 2026-27)",
+  "category": "admissions",
+  "subcategory": "msc_seat_matrix",
+  "document_type": "admission_regulations",
+  "language": "en",
+  "markdown_path": "knowledge/admissions/msc_seat_matrix.md",
+  "docx_path": "documents/admissions/msc_seat_matrix.docx",
+  "knowledge_path": "knowledge/admissions/msc_seat_matrix.md",
+  "markdown_hash": "3019e405c8988adfcf2ee94c48d80bffb6fbb67095581cf5800c177395e69c73",
+  "docx_hash": "9e7c5293d7540d3c89978d8036874597b0e7176b4c67cc23703417288e44e660",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://iitj.ac.in/academics/misc.php?id=advertisements"
+  ],
+  "unit_ids": [],
+  "aliases": [
+    "M.Sc. Sanctioned Seat Matrix (AY 2026-27)",
+    "Msc Seat Matrix"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "admission_routes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [
+    "claim_msc_admission_route"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

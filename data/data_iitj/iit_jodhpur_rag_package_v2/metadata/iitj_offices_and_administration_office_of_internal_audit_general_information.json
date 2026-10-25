@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_internal_audit_general_information",
+  "title": "Office of Internal Audit \u2014 General Information",
+  "category": "offices_and_administration/office_of_internal_audit",
+  "subcategory": "general_information",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_internal_audit/general_information.md",
+  "docx_path": "documents/offices_and_administration/office_of_internal_audit/general_information.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_internal_audit/general_information.md",
+  "markdown_hash": "28d79b4ed9c572abc17782541af98b130de4d80581cd74dd7d2bc191b3630245",
+  "docx_hash": "1045d1108a23dff9808de841d84424d91fbf850cc06b9d60d4966d723d5b22fd",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-internal-audit/en/Office-of-Internal-Audit"
+  ],
+  "unit_ids": [
+    "2aa2ea97e5ea8d7c",
+    "388cfcb63fbbc67c",
+    "596e160e0526b668",
+    "13a8cda697fa99c1"
+  ],
+  "aliases": [
+    "Office of Internal Audit \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "administrative_offices.json",
+    "campus_locations.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

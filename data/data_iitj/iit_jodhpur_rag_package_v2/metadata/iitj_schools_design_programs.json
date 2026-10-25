@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_design_programs",
+  "title": "School of Design \u2014 Programs",
+  "category": "schools/design",
+  "subcategory": "programs",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/design/programs.md",
+  "docx_path": "documents/schools/design/programs.docx",
+  "knowledge_path": "knowledge/schools/design/programs.md",
+  "markdown_hash": "3cd5de0c7cde8971edd0a6d992bb95099bbcafe98a32044029d3a28d78d9dc26",
+  "docx_hash": "5954f415dcd2dcbf6c481d284bdfa4acd6c5c051cf8dd0366bb53c93e32a9417",
+  "source_urls": [
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/list-of-provisionally-selected-candidates",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/list-of-shortlisted-candidates",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/Rolling-advertisement-for-Admission-to-Interdisciplinary-and-Ph.D.-Programmes?ep=fw",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-design/en/admission-phd-program-in-design",
+    "https://www.iitj.ac.in/school-of-design",
+    "https://www.iitj.ac.in/school-of-design/en/school-of-design",
+    "https://www.iitj.ac.in/school-of-design/en/mdes-in-smart-product-design",
+    "https://www.iitj.ac.in/school-of-design/en/mdes-xr-design"
+  ],
+  "unit_ids": [
+    "475ab979a152e0b0",
+    "88622025eb0dbe96",
+    "0a49affaf4af6b30",
+    "42c44e0002c9154b",
+    "f03809b5fc983c42",
+    "6e85a573d5fae1a3",
+    "549620aec8b7f6ca",
+    "96ad439a88e752ef"
+  ],
+  "aliases": [
+    "School of Design \u2014 Programs",
+    "Programs",
+    "SOD",
+    "SOD IIT Jodhpur",
+    "Design School",
+    "M.Des Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

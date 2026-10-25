@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_electronics_engineering_overview",
+  "title": "Electronics Engineering \u2014 Overview",
+  "category": "departments/electronics_engineering",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/electronics_engineering/overview.md",
+  "docx_path": "documents/departments/electronics_engineering/overview.docx",
+  "knowledge_path": "knowledge/departments/electronics_engineering/overview.md",
+  "markdown_hash": "0a1ee93dd48ff701f3a1bd17d9a2f83c13021d1ed11b1358031c52cc7bee57ff",
+  "docx_hash": "8d880decaf62eff850ba68d4225d58e322eea9b7dac2b1ee522b4b816a74e2d9",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/ece/en/ug",
+    "https://www.iitj.ac.in/ece/en/ece",
+    "https://www.iitj.ac.in/ece"
+  ],
+  "unit_ids": [
+    "581123a1b5a996cf",
+    "2fef2a6aefa8ccca",
+    "71946c619158a663",
+    "568e3e9c8378870a",
+    "6d0074954a91b16b",
+    "e39aae6ace1a6b1f",
+    "d178e5cff4167dca",
+    "50a42a02bf0032bd"
+  ],
+  "aliases": [
+    "Electronics Engineering \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

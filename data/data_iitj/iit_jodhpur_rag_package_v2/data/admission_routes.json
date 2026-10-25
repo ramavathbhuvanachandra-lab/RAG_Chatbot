@@ -1,0 +1,50 @@
+[
+  {
+    "route_id": "ug_btech_josaa",
+    "programme": "B.Tech (All Branches) & B.S. (Mathematics & Computing)",
+    "qualifying_examination": "JEE (Advanced)",
+    "eligibility": "Class 12 pass with Physics, Chemistry, and Mathematics (top 20 percentile or minimum 75% aggregate, 65% for SC/ST/PwD)",
+    "portal": "https://josaa.nic.in / https://csab.nic.in",
+    "selection_mode": "National rank-based centralized counseling"
+  },
+  {
+    "route_id": "ug_itep_ncet",
+    "programme": "ITEP B.Sc. B.Ed.",
+    "qualifying_examination": "National Common Entrance Test (NCET)",
+    "eligibility": "Class 12 pass in Science stream (Mathematics / Biology) from a recognized board",
+    "portal": "https://ncet.samarth.ac.in / https://www.iitj.ac.in",
+    "selection_mode": "NCET score followed by IIT Jodhpur institutional counselling"
+  },
+  {
+    "route_id": "pg_mtech_coap",
+    "programme": "M.Tech (Regular)",
+    "qualifying_examination": "GATE in relevant discipline",
+    "eligibility": "B.Tech/B.E. or M.Sc. with minimum 60% marks or 6.0 CGPA on 10-point scale (55% or 5.5 CGPA for SC/ST/PwD)",
+    "portal": "https://coap.iitd.ac.in and IITJ Admissions Portal",
+    "selection_mode": "GATE score merit through Common Offer Acceptance Portal (COAP)"
+  },
+  {
+    "route_id": "pg_msc_jam",
+    "programme": "M.Sc (Chemistry, Mathematics, Physics)",
+    "qualifying_examination": "IIT JAM (Joint Admission Test for Masters)",
+    "eligibility": "Bachelor's degree with relevant subject as a major for at least 2 years/4 semesters with 55% aggregate (50% for SC/ST)",
+    "portal": "https://jam.iitm.ac.in and IITJ Portal",
+    "selection_mode": "Centralized JAM admission merit lists"
+  },
+  {
+    "route_id": "pg_mba_sme",
+    "programme": "MBA and Tech MBA",
+    "qualifying_examination": "Common Admission Test (CAT)",
+    "eligibility": "Bachelor's degree in Engineering, Science, Commerce or Economics with valid CAT score",
+    "portal": "https://www.iitj.ac.in/sme",
+    "selection_mode": "Composite score (CAT percentile + full-time work experience + gender diversity) followed by virtual Personal Interview"
+  },
+  {
+    "route_id": "doctoral_phd",
+    "programme": "Ph.D (All Departments and Schools)",
+    "qualifying_examination": "GATE / UGC-NET (JRF) / CSIR-NET / NBHM / CEED or equivalent",
+    "eligibility": "Master's degree in engineering/science/humanities with minimum 60% or 6.0 CGPA, or exceptional 4-year B.Tech with CGPA >= 7.0 (70% marks, 65% for SC/ST)",
+    "portal": "https://oa.iitj.ac.in/OA_PHD",
+    "selection_mode": "Shortlisting followed by departmental written test and/or interview"
+  }
+]

@@ -92,27 +92,45 @@ def _contains(text: str, term: str) -> bool:
 class IITJSemanticRegistry(SemanticRegistry):
     """IITJ implementation of the shared SemanticRegistry contract."""
 
-    __slots__ = ("_data",)
+    __slots__ = ("_data", "_compiled_rules")
 
     def __init__(self) -> None:
         aliases = _load_json(ALIASES_PATH)
         semantic = _load_json(SEMANTIC_TERMS_PATH)
         scopes = _load_json(SCOPE_POLICY_PATH)
 
-        object.__setattr__(
-            self,
-            "_data",
-            {
-                "institution_id": INSTITUTION_ID,
-                "institution": _mapping(aliases.get("institution", {})),
-                "programs": _mapping(aliases.get("programs", {})),
-                "topics": _mapping(semantic.get("topics", {})),
-                "entities": _mapping(semantic.get("entities", {})),
-                "attributes": _mapping(semantic.get("attributes", {})),
-                "qualifiers": _mapping(semantic.get("qualifiers", {})),
-                "scopes": _mapping(scopes.get("dimensions", {})),
-            },
-        )
+        data = {
+            "institution_id": INSTITUTION_ID,
+            "institution": _mapping(aliases.get("institution", {})),
+            "programs": _mapping(aliases.get("programs", {})),
+            "topics": _mapping(semantic.get("topics", {})),
+            "entities": _mapping(semantic.get("entities", {})),
+            "attributes": _mapping(semantic.get("attributes", {})),
+            "qualifiers": _mapping(semantic.get("qualifiers", {})),
+            "scopes": _mapping(scopes.get("dimensions", {})),
+        }
+        object.__setattr__(self, "_data", data)
+
+        compiled: dict[str, tuple[tuple[str, re.Pattern], ...]] = {}
+        for section in ("institution", "programs", "topics", "entities", "attributes", "qualifiers"):
+            mapping = data[section]
+            rules: list[tuple[str, re.Pattern]] = []
+            for canonical, variants in mapping.items():
+                all_terms = [canonical, *variants]
+                unique_terms: list[str] = []
+                seen: set[str] = set()
+                for term in all_terms:
+                    cleaned = _norm(term)
+                    if cleaned and cleaned not in seen:
+                        seen.add(cleaned)
+                        unique_terms.append(cleaned)
+                unique_terms.sort(key=len, reverse=True)
+                if unique_terms:
+                    pattern_str = rf"(?<![a-z0-9])(?:{'|'.join(re.escape(t) for t in unique_terms)})(?![a-z0-9])"
+                    rules.append((canonical, re.compile(pattern_str, flags=re.IGNORECASE)))
+            compiled[section] = tuple(rules)
+        object.__setattr__(self, "_compiled_rules", compiled)
+
         self.validate()
 
     @property
@@ -143,6 +161,19 @@ class IITJSemanticRegistry(SemanticRegistry):
     def scope_terms(self) -> Mapping[str, tuple[str, ...]]:
         return self._data["scopes"]
 
+    def _detect_fast(self, text: str, section: str, mapping: Mapping[str, tuple[str, ...]]) -> set[str]:
+        rules = self._compiled_rules.get(section)
+        if rules is not None:
+            text_n = _norm(text)
+            if not text_n:
+                return set()
+            found: set[str] = set()
+            for canonical, pattern in rules:
+                if pattern.search(text_n):
+                    found.add(canonical)
+            return found
+        return self._detect(text, mapping)
+
     @staticmethod
     def _detect(text: str, mapping: Mapping[str, tuple[str, ...]]) -> set[str]:
         found: set[str] = set()
@@ -152,22 +183,22 @@ class IITJSemanticRegistry(SemanticRegistry):
         return found
 
     def detect_programs(self, text: str) -> set[str]:
-        return self._detect(text, self.program_terms)
+        return self._detect_fast(text, "programs", self.program_terms)
 
     def detect_topics(self, text: str) -> set[str]:
-        return self._detect(text, self.topic_terms)
+        return self._detect_fast(text, "topics", self.topic_terms)
 
     def detect_entities(self, text: str) -> set[str]:
-        return self._detect(text, self.entity_terms)
+        return self._detect_fast(text, "entities", self.entity_terms)
 
     def detect_attributes(self, text: str) -> set[str]:
-        return self._detect(text, self.attribute_terms)
+        return self._detect_fast(text, "attributes", self.attribute_terms)
 
     def detect_qualifiers(self, text: str) -> set[str]:
-        return self._detect(text, self.qualifier_terms)
+        return self._detect_fast(text, "qualifiers", self.qualifier_terms)
 
     def detect_institution(self, text: str) -> set[str]:
-        return self._detect(text, self._data["institution"])
+        return self._detect_fast(text, "institution", self._data["institution"])
 
     def detect_scopes(self, text: str) -> dict[str, set[str]]:
         return {

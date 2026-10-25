@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_economics_research",
+  "title": "Economics \u2014 Research",
+  "category": "departments/economics",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/economics/research.md",
+  "docx_path": "documents/departments/economics/research.docx",
+  "knowledge_path": "knowledge/departments/economics/research.md",
+  "markdown_hash": "8f71fe1349a143601bb6fca389292020e66eec6c8881fb95536668ec4a5aea7c",
+  "docx_hash": "aa19251d6b20e41fd2bba76c0dca4c1c2747a7d48ea185db51da19a51755ff12",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/economics/en/our-research"
+  ],
+  "unit_ids": [
+    "eca4c3f11e57be6a",
+    "dc80ddabd1ac7c7d",
+    "631ac13fc1fa7fb0",
+    "47731734c4a616b0"
+  ],
+  "aliases": [
+    "Economics \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "departments.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

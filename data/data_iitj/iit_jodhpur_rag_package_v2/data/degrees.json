@@ -1,0 +1,110 @@
+[
+  {
+    "degree": "B.Tech",
+    "full_title": "Bachelor of Technology",
+    "level": "Undergraduate",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "credits_required": 150
+  },
+  {
+    "degree": "B.S.",
+    "full_title": "Bachelor of Science",
+    "level": "Undergraduate",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "credits_required": 140
+  },
+  {
+    "degree": "ITEP (B.Sc. B.Ed.)",
+    "full_title": "Integrated Teacher Education Programme",
+    "level": "Undergraduate Dual Degree",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "credits_required": 160
+  },
+  {
+    "degree": "M.Tech",
+    "full_title": "Master of Technology",
+    "level": "Postgraduate",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 4,
+      "unit": "years"
+    },
+    "credits_required": 64
+  },
+  {
+    "degree": "M.Sc",
+    "full_title": "Master of Science",
+    "level": "Postgraduate",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "credits_required": 64
+  },
+  {
+    "degree": "M.S. by Research",
+    "full_title": "Master of Science by Research",
+    "level": "Postgraduate Research",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "credits_required": 48
+  },
+  {
+    "degree": "M.Des",
+    "full_title": "Master of Design",
+    "level": "Postgraduate",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "credits_required": 64
+  },
+  {
+    "degree": "MBA",
+    "full_title": "Master of Business Administration",
+    "level": "Postgraduate Management",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "credits_required": 72
+  },
+  {
+    "degree": "Ph.D",
+    "full_title": "Doctor of Philosophy",
+    "level": "Doctoral",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 3,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "credits_required": 16
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_corporate_relations_faculty",
+  "title": "Office of Corporate Relations \u2014 Faculty",
+  "category": "offices_and_administration/office_of_corporate_relations",
+  "subcategory": "faculty",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_corporate_relations/faculty.md",
+  "docx_path": "documents/offices_and_administration/office_of_corporate_relations/faculty.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_corporate_relations/faculty.md",
+  "markdown_hash": "4d9c76619756d12da8607d9bb04cb78bdb93106936971b22097b6412d29e7e20",
+  "docx_hash": "cad0b6e4e578473f29f3b63530b3b6a39d18b15afc2e34e9e364dc484ff8252e",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-corporate-relations/en/happening-now",
+    "https://www.iitj.ac.in/office-of-corporate-relations/en/office-of-corporate-relations"
+  ],
+  "unit_ids": [
+    "6ae21b82040a8e52",
+    "4645a6f68b56c484",
+    "1e00e142d6970cdb",
+    "7477d813b5bf2dde",
+    "5715c3254f0ac151",
+    "e7edcb3dde901e50",
+    "ae255996078bd036",
+    "9e744a94c1fefc40"
+  ],
+  "aliases": [
+    "Office of Corporate Relations \u2014 Faculty",
+    "Faculty"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

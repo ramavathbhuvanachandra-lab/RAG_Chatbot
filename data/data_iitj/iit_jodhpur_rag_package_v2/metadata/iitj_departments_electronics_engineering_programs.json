@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_electronics_engineering_programs",
+  "title": "Electronics Engineering \u2014 Programs",
+  "category": "departments/electronics_engineering",
+  "subcategory": "programs",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/electronics_engineering/programs.md",
+  "docx_path": "documents/departments/electronics_engineering/programs.docx",
+  "knowledge_path": "knowledge/departments/electronics_engineering/programs.md",
+  "markdown_hash": "18253a6f2cebca89abe3693bffbadaeed42f10363d1e383d1a4d452f71c90b86",
+  "docx_hash": "e778ee53597a64285696f642d3520793a766dfd5f0b8f78d57bd0f0602106789",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/ece/en/ug"
+  ],
+  "unit_ids": [
+    "581123a1b5a996cf",
+    "2fef2a6aefa8ccca",
+    "71946c619158a663",
+    "568e3e9c8378870a"
+  ],
+  "aliases": [
+    "Electronics Engineering \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

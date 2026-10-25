@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_physics_facilities",
+  "title": "Physics \u2014 Facilities",
+  "category": "departments/physics",
+  "subcategory": "facilities",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/physics/facilities.md",
+  "docx_path": "documents/departments/physics/facilities.docx",
+  "knowledge_path": "knowledge/departments/physics/facilities.md",
+  "markdown_hash": "e470d889ffd73c37ed165e89f26cd63d4f1bc607da720d821dfd0adc87df5951",
+  "docx_hash": "29412108d91879705eeefd621ce04c8fb3ddbce8320ecaff132a46be9e418e1b",
+  "source_urls": [
+    "https://www.iitj.ac.in/Physics/en/Quantum-Physics",
+    "https://www.iitj.ac.in/Physics/en/Optics-and-Photonics",
+    "https://www.iitj.ac.in/Physics/en/High-Energy-Physics-and-Astrophysics",
+    "https://www.iitj.ac.in/Physics/en/Condensed-Matter-and-Plasma-Physics",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/physics/en/laboratories"
+  ],
+  "unit_ids": [
+    "e149528c383d244a",
+    "4f44dabacc182df8",
+    "7cb9d88a978e78d2"
+  ],
+  "aliases": [
+    "Physics \u2014 Facilities",
+    "Facilities"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

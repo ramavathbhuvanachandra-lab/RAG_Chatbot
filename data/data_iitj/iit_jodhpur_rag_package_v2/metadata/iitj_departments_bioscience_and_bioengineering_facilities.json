@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_bioscience_and_bioengineering_facilities",
+  "title": "Bioscience and Bioengineering \u2014 Facilities",
+  "category": "departments/bioscience_and_bioengineering",
+  "subcategory": "facilities",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/bioscience_and_bioengineering/facilities.md",
+  "docx_path": "documents/departments/bioscience_and_bioengineering/facilities.docx",
+  "knowledge_path": "knowledge/departments/bioscience_and_bioengineering/facilities.md",
+  "markdown_hash": "a82db51041bde3193634bca63a18f4d006a90cb49ae08796c0460e752a43399b",
+  "docx_hash": "3b9610320685de5db018b2e81245f0a7fefe3db5ba59e22cb0acb6b564f167fa",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/laboratories"
+  ],
+  "unit_ids": [
+    "1003e863fe212cb0",
+    "b2cf4b1d5eb43871",
+    "31865158be4d2d42",
+    "e3876e05ef2d0b03"
+  ],
+  "aliases": [
+    "Bioscience and Bioengineering \u2014 Facilities",
+    "Facilities"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

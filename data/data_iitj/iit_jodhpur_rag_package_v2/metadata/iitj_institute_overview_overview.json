@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_institute_overview_overview",
+  "title": "Indian Institute of Technology Jodhpur \u2014 Overview",
+  "category": "institute_overview",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/institute_overview/overview.md",
+  "docx_path": "documents/institute_overview/overview.docx",
+  "knowledge_path": "knowledge/institute_overview/overview.md",
+  "markdown_hash": "b537978fecc7ade1b373eef86bed8f8040824f68e33e6c87a23ef985168425b0",
+  "docx_hash": "34695da916334f3a04ece561b9d405e32d69bbf121a7343991384daa459fd806",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/"
+  ],
+  "unit_ids": [
+    "0b063609fcf2cae8",
+    "162741d094eb4be6",
+    "2ced7790bb186f25",
+    "a52778713c79d977",
+    "47024e06c0d3636d",
+    "ae3a3015a2d530d1",
+    "956ae1df291bd7f4"
+  ],
+  "aliases": [
+    "Indian Institute of Technology Jodhpur \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [
+    "claim_campus_land_area",
+    "claim_establishment_year"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

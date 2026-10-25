@@ -1,0 +1,571 @@
+[
+  {
+    "programme_id": "btech_cse",
+    "name": "Computer Science and Engineering",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "computer_science_and_engineering",
+    "parent_unit_name": "Department of Computer Science and Engineering",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular",
+      "Preparatory"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_computer_science_and_engineering_overview",
+    "aliases": [
+      "CSE",
+      "Computer Science",
+      "B.Tech CSE"
+    ]
+  },
+  {
+    "programme_id": "btech_ai_de",
+    "name": "Artificial Intelligence and Data Engineering",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "school",
+    "parent_unit_id": "artificial_intelligence_and_data_science",
+    "parent_unit_name": "School of Artificial Intelligence and Data Science",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_schools_artificial_intelligence_and_data_science_overview",
+    "aliases": [
+      "AIDE",
+      "AI & DE",
+      "B.Tech AI"
+    ]
+  },
+  {
+    "programme_id": "btech_ee",
+    "name": "Electrical Engineering",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "electrical_engineering",
+    "parent_unit_name": "Department of Electrical Engineering",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_electrical_engineering_overview",
+    "aliases": [
+      "EE",
+      "Electrical",
+      "B.Tech EE"
+    ]
+  },
+  {
+    "programme_id": "btech_me",
+    "name": "Mechanical Engineering",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "mechanical_engineering",
+    "parent_unit_name": "Department of Mechanical Engineering",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_mechanical_engineering_overview",
+    "aliases": [
+      "ME",
+      "Mechanical",
+      "B.Tech ME"
+    ]
+  },
+  {
+    "programme_id": "btech_cie",
+    "name": "Civil and Infrastructure Engineering",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "civil_and_infrastructure_engineering",
+    "parent_unit_name": "Department of Civil and Infrastructure Engineering",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_civil_and_infrastructure_engineering_overview",
+    "aliases": [
+      "CIE",
+      "Civil Engineering",
+      "B.Tech Civil"
+    ]
+  },
+  {
+    "programme_id": "btech_che",
+    "name": "Chemical Engineering",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "chemical_engineering",
+    "parent_unit_name": "Department of Chemical Engineering",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_chemical_engineering_overview",
+    "aliases": [
+      "CHE",
+      "Chemical",
+      "B.Tech Chem"
+    ]
+  },
+  {
+    "programme_id": "btech_bsbe",
+    "name": "Bioengineering",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "bioscience_and_bioengineering",
+    "parent_unit_name": "Department of Bioscience and Bioengineering",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_bioscience_and_bioengineering_overview",
+    "aliases": [
+      "BSBE",
+      "Bioengineering",
+      "B.Tech Bioeng"
+    ]
+  },
+  {
+    "programme_id": "btech_mt",
+    "name": "Materials Engineering",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "materials_engineering",
+    "parent_unit_name": "Department of Materials Engineering",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_materials_engineering_overview",
+    "aliases": [
+      "MT",
+      "Materials",
+      "B.Tech Materials"
+    ]
+  },
+  {
+    "programme_id": "btech_ep",
+    "name": "Engineering Physics",
+    "degree_type": "B.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "physics",
+    "parent_unit_name": "Department of Physics",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_physics_overview",
+    "aliases": [
+      "EP",
+      "Engineering Physics",
+      "B.Tech EP"
+    ]
+  },
+  {
+    "programme_id": "bs_math_computing",
+    "name": "B.S. in Mathematics and Computing",
+    "degree_type": "B.S.",
+    "parent_unit_type": "department",
+    "parent_unit_id": "mathematics",
+    "parent_unit_name": "Department of Mathematics",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "JEE (Advanced)",
+    "entrance_examination": "JEE (Advanced)",
+    "counselling_authority": "JoSAA / CSAB",
+    "admission_categories": [
+      "Regular"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_mathematics_bs_mathematics_and_computing",
+    "aliases": [
+      "BS Math",
+      "BS Mathematics & Computing",
+      "BS MnC"
+    ]
+  },
+  {
+    "programme_id": "itep_bsc_bed",
+    "name": "Integrated Teacher Education Programme (Dual Major in Physics/Chemistry/Mathematics)",
+    "degree_type": "ITEP (B.Sc. B.Ed.)",
+    "parent_unit_type": "centre",
+    "parent_unit_id": "itep",
+    "parent_unit_name": "ITEP Cell / Interdisciplinary Centre",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 4,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "National Common Entrance Test (NCET)",
+    "entrance_examination": "NCET (conducted by NTA)",
+    "counselling_authority": "NCTE / IIT Jodhpur Portal",
+    "admission_categories": [
+      "Regular Full-Time"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_programs_itep_overview",
+    "aliases": [
+      "ITEP",
+      "B.Sc. B.Ed.",
+      "Teacher Education"
+    ]
+  },
+  {
+    "programme_id": "mtech_ai",
+    "name": "Artificial Intelligence",
+    "degree_type": "M.Tech",
+    "parent_unit_type": "school",
+    "parent_unit_id": "artificial_intelligence_and_data_science",
+    "parent_unit_name": "School of Artificial Intelligence and Data Science",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 4,
+      "unit": "years"
+    },
+    "admission_route": "GATE",
+    "entrance_examination": "GATE (CS / DA / EC / EE / IN / MA / ST)",
+    "counselling_authority": "COAP / IITJ Admissions Portal",
+    "admission_categories": [
+      "Regular Full-Time",
+      "Sponsored",
+      "Part-Time"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_schools_artificial_intelligence_and_data_science_overview",
+    "aliases": [
+      "M.Tech AI",
+      "MTech Artificial Intelligence"
+    ]
+  },
+  {
+    "programme_id": "mtech_cse",
+    "name": "Computer Science and Engineering",
+    "degree_type": "M.Tech",
+    "parent_unit_type": "department",
+    "parent_unit_id": "computer_science_and_engineering",
+    "parent_unit_name": "Department of Computer Science and Engineering",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 4,
+      "unit": "years"
+    },
+    "admission_route": "GATE",
+    "entrance_examination": "GATE (CS)",
+    "counselling_authority": "COAP / IITJ Admissions Portal",
+    "admission_categories": [
+      "Regular Full-Time",
+      "Sponsored"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_computer_science_and_engineering_overview",
+    "aliases": [
+      "M.Tech CSE",
+      "MTech Computer Science"
+    ]
+  },
+  {
+    "programme_id": "msc_chem",
+    "name": "Chemistry",
+    "degree_type": "M.Sc",
+    "parent_unit_type": "department",
+    "parent_unit_id": "chemistry",
+    "parent_unit_name": "Department of Chemistry",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "admission_route": "IIT JAM",
+    "entrance_examination": "Joint Admission Test for Masters (JAM CY)",
+    "counselling_authority": "Centralized JAM Counseling",
+    "admission_categories": [
+      "Regular Full-Time"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_chemistry_overview",
+    "aliases": [
+      "M.Sc Chemistry",
+      "MSc Chem"
+    ]
+  },
+  {
+    "programme_id": "msc_math",
+    "name": "Mathematics",
+    "degree_type": "M.Sc",
+    "parent_unit_type": "department",
+    "parent_unit_id": "mathematics",
+    "parent_unit_name": "Department of Mathematics",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "admission_route": "IIT JAM",
+    "entrance_examination": "Joint Admission Test for Masters (JAM MA)",
+    "counselling_authority": "Centralized JAM Counseling",
+    "admission_categories": [
+      "Regular Full-Time"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_mathematics_msc_mathematics",
+    "aliases": [
+      "M.Sc Mathematics",
+      "MSc Maths"
+    ]
+  },
+  {
+    "programme_id": "msc_phys",
+    "name": "Physics",
+    "degree_type": "M.Sc",
+    "parent_unit_type": "department",
+    "parent_unit_id": "physics",
+    "parent_unit_name": "Department of Physics",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "admission_route": "IIT JAM",
+    "entrance_examination": "Joint Admission Test for Masters (JAM PH)",
+    "counselling_authority": "Centralized JAM Counseling",
+    "admission_categories": [
+      "Regular Full-Time"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_departments_physics_overview",
+    "aliases": [
+      "M.Sc Physics",
+      "MSc Physics"
+    ]
+  },
+  {
+    "programme_id": "msc_css",
+    "name": "Computational Social Science",
+    "degree_type": "M.Sc",
+    "parent_unit_type": "school",
+    "parent_unit_id": "liberal_arts",
+    "parent_unit_name": "School of Liberal Arts",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "admission_route": "JAM / Written Test + Interview",
+    "entrance_examination": "IIT JAM or IIT Jodhpur Institutional Entrance Test",
+    "counselling_authority": "IITJ Admissions Portal",
+    "admission_categories": [
+      "Regular Full-Time"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_schools_liberal_arts_overview",
+    "aliases": [
+      "M.Sc CSS",
+      "Computational Social Science"
+    ]
+  },
+  {
+    "programme_id": "mdes",
+    "name": "Master of Design",
+    "degree_type": "M.Des",
+    "parent_unit_type": "school",
+    "parent_unit_id": "design",
+    "parent_unit_name": "School of Design",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "admission_route": "CEED",
+    "entrance_examination": "Common Entrance Examination for Design (CEED) / Design Aptitude Test + Portfolio/Interview",
+    "counselling_authority": "IITJ Design Portal",
+    "admission_categories": [
+      "Regular Full-Time",
+      "Sponsored"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_schools_design_overview",
+    "aliases": [
+      "M.Des",
+      "Master of Design"
+    ]
+  },
+  {
+    "programme_id": "mba",
+    "name": "Master of Business Administration (Tech MBA)",
+    "degree_type": "MBA",
+    "parent_unit_type": "school",
+    "parent_unit_id": "management_and_entrepreneurship",
+    "parent_unit_name": "School of Management and Entrepreneurship",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "admission_route": "CAT",
+    "entrance_examination": "Common Admission Test (CAT)",
+    "counselling_authority": "SME Admission Portal (Composite Score + Virtual Interview)",
+    "admission_categories": [
+      "Indian Candidates",
+      "International Candidates (SAARC & Non-SAARC)"
+    ],
+    "effective_period": "Current (Batch 2026-2028)",
+    "canonical_document_id": "iitj_admissions_mba_admissions",
+    "aliases": [
+      "MBA",
+      "Tech MBA",
+      "SME MBA"
+    ]
+  },
+  {
+    "programme_id": "ms_research_digital_arts",
+    "name": "Arts and Digital Immersion",
+    "degree_type": "M.S. by Research",
+    "parent_unit_type": "centre",
+    "parent_unit_id": "arts_and_digital_immersion",
+    "parent_unit_name": "Centre of Excellence on Arts and Digital Immersion (ADI)",
+    "duration": {
+      "standard_years": 2,
+      "min_years": 2,
+      "max_years": 3,
+      "unit": "years"
+    },
+    "admission_route": "GATE / Written Test + Interview",
+    "entrance_examination": "GATE or Institutional Written Test",
+    "counselling_authority": "IITJ Research Portal",
+    "admission_categories": [
+      "Regular Full-Time"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_programs_ms_by_research_arts_and_digital_immersion",
+    "aliases": [
+      "MS Research ADI",
+      "MS Digital Arts"
+    ]
+  },
+  {
+    "programme_id": "phd_regular",
+    "name": "Doctor of Philosophy (All Departments & Schools)",
+    "degree_type": "Ph.D",
+    "parent_unit_type": "institutional",
+    "parent_unit_id": "all_departments_and_schools",
+    "parent_unit_name": "All Academic Departments and Schools",
+    "duration": {
+      "standard_years": 4,
+      "min_years": 3,
+      "max_years": 6,
+      "unit": "years"
+    },
+    "admission_route": "National Examination / Written Test + Interview",
+    "entrance_examination": "GATE / UGC-NET (JRF) / CSIR-NET / NBHM / CEED or equivalent",
+    "counselling_authority": "IITJ Research Portal",
+    "admission_categories": [
+      "Regular Full-Time",
+      "Full-time Sponsored",
+      "Part-Time",
+      "External",
+      "Executive"
+    ],
+    "effective_period": "Current (AY 2026-27)",
+    "canonical_document_id": "iitj_admissions_phd_admissions",
+    "aliases": [
+      "Ph.D",
+      "PhD",
+      "Doctoral Program"
+    ]
+  }
+]

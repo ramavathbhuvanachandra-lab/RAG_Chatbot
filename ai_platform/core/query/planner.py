@@ -39,7 +39,7 @@ from __future__ import annotations
 
 
 import json
-
+import os
 import re
 
 from typing import Any, Literal, Mapping, Protocol, Sequence
@@ -51,25 +51,16 @@ from pydantic import BaseModel, ConfigDict, Field
 
 
 from ai_platform.core.query.models import (
-
     Ambiguity,
-
     Constraint,
-
     ListIntent,
-
     Query,
-
     QueryFacet,
-
     Qualifier,
-
+    QueryRoute,
     RetrievalRequirement,
-
     SemanticQueryFrame,
-
     Target,
-
 )
 
 
@@ -98,11 +89,9 @@ INSTITUTIONAL_MARKERS = (
 
     "fee", "fees", "scholarship", "registration", "enrollment",
 
-    "course", "courses", "curriculum", "semester", "exam", "examination",
-
-    "hostel", "mess", "accommodation", "library", "lab", "laboratory",
-
-    "faculty", "professor", "student", "students", "office", "form",
+    "course", "courses", "curriculum", "semester", "exam", "examination", "examinations",
+    "hostel", "mess", "accommodation", "library", "lab", "laboratory", "hours", "timings",
+    "faculty", "professor", "student", "students", "office", "form", "probation", "overload", "credits", "credit",
 
     "documents", "deadline", "last date", "contact", "phone", "email",
 
@@ -110,28 +99,97 @@ INSTITUTIONAL_MARKERS = (
 
     "ug", "pg", "gate", "cat", "jee", "net",
 
+    "candidate", "candidates", "applicant", "applicants",
+
+    "percentage", "percent", "cgpa", "gpa", "marks", "score", "cutoff", "cut-off",
+
+    "degree", "degrees", "award", "awarded", "convocation", "master", "masters", "master's", "bachelor", "bachelors", "bachelor's",
+
+    "qualification", "qualifying", "criteria", "requirement", "requirements",
+
+    "written-test", "written test", "interview",
+
+    "category", "gen/obc", "sc/st", "gen-ews", "ews", "obc", "sc", "st", "pwd",
+
+    "fee", "fees", "rules", "policy", "consequence", "cancel", "cancellation",
+    "disciplinary", "administrative", "senate", "prescribed", "penalty", "penalties",
+    "action", "actions", "waiver", "waive", "extension", "attendance", "leave",
+    "regulation", "regulations", "procedure", "procedures", "guidelines",
+    "submission", "submit", "submitted", "fails to submit", "ordinance", "ordinances",
+    "health centre", "health center", "ambulance", "registrar", "transcript",
+    "internal complaints committee", "icc", "gymkhana", "sports complex", "gym",
+    "bus", "shuttle", "placement cell", "anti-ragging", "ragging", "preference",
+    "seat allotment", "counseling",
+    "training", "trainings", "upskilling", "vocational", "skilling", "skill hub", "pmkvy", "gem", "gfr", "vtu",
+    "job role", "job roles", "certification", "certified", "enrolled", "enrolment", "enrolments",
+    "workshop", "workshops", "participants", "hands-on", "procurement", "course code", "course codes", "code", "codes", "elective", "electives",
+
     "फीस", "शुल्क", "आवेदन", "दाखिला", "दाखिले", "प्रवेश", "पात्रता",
 
     "योग्य", "दस्तावेज", "डॉक्यूमेंट", "आखिरी तारीख", "अंतिम तारीख",
 
     "पंजीकरण", "छात्र", "छात्रावास", "विभाग", "महाविद्यालय", "विश्वविद्यालय",
 
+    "उम्मीदवार", "अंक", "प्रतिशत", "डिग्री",
+
     "ke liye", "ki fee", "ki fees", "kaise apply", "zaroori", "अनिवार्य",
 
 )
+
+_GENERIC_INSTITUTION_EXCLUSIONS = {
+    "institute",
+    "the institute",
+    "institution",
+    "the institution",
+    "college",
+    "the college",
+    "university",
+    "the university",
+    "campus",
+    "the campus",
+    "school",
+    "the school",
+    "iit",
+    "nit",
+    "iiit",
+    "iim",
+    "aiims",
+    "bits",
+}
+
+
+def _is_institution_name_or_generic(term: str, profile: Any = None) -> bool:
+    """Check if a term refers to an institution identity rather than a specialized academic subject."""
+    cleaned = (term or "").strip().casefold()
+    if not cleaned or cleaned in _GENERIC_INSTITUTION_EXCLUSIONS:
+        return True
+
+    active_profile = profile
+    if active_profile is None:
+        try:
+            from ai_platform.institutions.loader import load_institution_profile
+            active_profile = load_institution_profile()
+        except Exception:
+            active_profile = None
+
+    if active_profile is not None:
+        inst_tokens = {active_profile.institution_id.casefold(), active_profile.display_name.casefold()}
+        inst_tokens.update(t.casefold() for t in active_profile.display_name.split() if len(t) > 1)
+        if cleaned in inst_tokens:
+            return True
+
+    return False
+
 
 
 
 OBVIOUS_OOS_MARKERS = (
 
     "cricket", "football", "fifa", "ipl", "movie", "song", "recipe",
-
     "joke", "weather", "stock price", "bitcoin", "forex", "binary search",
-
     "leetcode", "python program", "c++ code", "javascript", "sql query",
-
-    "how to code", "क्रिकेट", "फुटबॉल", "फिल्म", "गाना", "रेसिपी", "मौसम",
-
+    "how to code", "flight", "flight ticket", "hotel booking", "airline", "train ticket",
+    "क्रिकेट", "फुटबॉल", "फिल्म", "गाना", "रेसिपी", "मौसम",
     "मजाक",
 
 )
@@ -140,11 +198,14 @@ OBVIOUS_OOS_MARKERS = (
 
 NEGATION_PATTERNS = (
     r"\bnot required\b", r"\bnot need(?:ed)?\b", r"\bno need(?: for)?\b",
-    r"\bwithout\b", r"\bdon't need\b", r"\bdo not need\b",
+    r"\bdon't need\b", r"\bdo not need\b",
     r"\bdoesn't require\b", r"\bdoes not require\b",
     r"\bisn't required\b", r"\bis not required\b",
     r"\bare not required\b", r"\bnot mandatory\b",
     r"\bnot compulsory\b", r"\bnot necessary\b", r"\bnot needed\b",
+    r"\bwithout\s+(?:having\s+)?(?:a\s+|an\s+)?(?:gate|cat|jee|net|ceed|nbhm|degree|master|bachelor|written|interview|test|experience)\b",
+    r"\bexempt(?:ed|ion)?\s+from\b", r"\bwaiver\s+of\b",
+    r"\bnot\s+on\s+academic\s+probation\b",
     r"\bmandatory\s+nahin\b", r"\bcompulsory\s+nahin\b",
     r"जरूरी नहीं", r"ज़रूरी नहीं", r"अनिवार्य नहीं", r"आवश्यक नहीं",
 )
@@ -154,9 +215,13 @@ NEGATION_PATTERNS = (
 # so target extraction does not drift across helpers.
 DEGREE_PATTERN = (
     r"(?:M\.?\s*Tech|MTech|M\.?\s*Sc\.?|MSc|"
+    r"M\.?\s*Des\.?|MDes|"
     r"M\.?\s*B\.?\s*A\.?|MBA|B\.?\s*Tech|BTech|"
     r"Ph\.?\s*D\.?|PhD|एम\.?टेक|एमटेक|एम\.?एस\.?सी|एमएससी|"
-    r"एम\.?बी\.?ए|एमबीए|बी\.?टेक|बीटेक|पी\.?एच\.?डी|पीएचडी)"
+    r"एम\.?बी\.?ए|एमबीए|बी\.?टेक|बीटेक|पी\.?एच\.?डी|पीएचडी|"
+    r"M\.?\s*B\.?\s*B\.?\s*S\.?|MBBS|B\.?\s*D\.?\s*S\.?|BDS|"
+    r"B\.?\s*Arch|BArch|M\.?\s*Pharm|MPharm|B\.?\s*Pharm|BPharm|"
+    r"Diploma|डिप्लोमा)"
 )
 
 
@@ -236,6 +301,8 @@ class QueryPlan(BaseModel):
     clarification_reason: str = ""
 
     confidence: float = Field(default=0.0, ge=0.0, le=1.0)
+
+    route: str = "simple_single_intent"
 
 
 
@@ -331,9 +398,9 @@ RULES
 
 SCOPE
 
-in_scope = clearly institutional.
+in_scope = clearly institutional (academics, admissions, fees, courses, curriculum, course codes, degree programs, departments, research, institutional vocational upskilling, procurement training/workshops, campus facilities, campus rules).
 
-out_of_scope = clearly unrelated.
+out_of_scope = clearly unrelated to the institution (movies, dating, recipes, personal advice, external commercial bookings, jokes).
 
 uncertain = plausible institutional but underspecified.
 
@@ -578,10 +645,17 @@ def _canonical_degree(value: str) -> str | None:
     low = _cf(value)
     aliases = (
         (r"\bm\.?\s*tech\b|\bmtech\b|एम\.?टेक|एमटेक", "M.Tech"),
-        (r"\bm\.?\s*sc\.?\b|\bmsc\b|एम\.?एस\.?सी|एमएससी", "M.Sc"),
+        (r"\bm\.?\s*sc\.?\b|\bmsc\b|एम\.?एस\.?सी|एमएससी", "M.Sc."),
+        (r"\bm\.?\s*des\.?\b|\bmdes\b|एम\.?डेस", "M.Des"),
         (r"\bm\.?\s*b\.?\s*a\.?\b|\bmba\b|एम\.?बी\.?ए|एमबीए", "MBA"),
         (r"\bb\.?\s*tech\b|\bbtech\b|बी\.?टेक|बीटेक", "B.Tech"),
-        (r"\bph\.?\s*d\.?\b|\bphd\b|पी\.?एच\.?डी|पीएचडी", "PhD"),
+        (r"\bph\.?\s*d\.?\b|\bphd\b|पी\.?एच\.?डी|पीएचडी", "Ph.D."),
+        (r"\bm\.?\s*b\.?\s*b\.?\s*s\.?\b|\bmbbs\b", "MBBS"),
+        (r"\bb\.?\s*d\.?\s*s\.?\b|\bbds\b", "BDS"),
+        (r"\bb\.?\s*arch\b|\bbarch\b", "B.Arch"),
+        (r"\bm\.?\s*pharm\b|\bmpharm\b", "M.Pharm"),
+        (r"\bb\.?\s*pharm\b|\bbpharm\b", "B.Pharm"),
+        (r"\bdiploma\b|डिप्लोमा", "Diploma"),
     )
     for pattern, canonical in aliases:
         if re.search(pattern, low, re.I):
@@ -595,13 +669,9 @@ def _degree_mentions(text: str) -> list[re.Match[str]]:
 
 
 def _strip_target(value: str) -> str | None:
-
     s = _clean(value)
-
-    if not s:
-
+    if not s or s.lower() in {"null", "none", "n/a", "na", "unknown", "nil", "undefined", "not applicable", "the institution", "institution"}:
         return None
-
     s = re.sub(r"^the\s+", "", s, flags=re.I)
 
     # Remove only generic suffixes. Never strip domain words such as "library".
@@ -628,16 +698,44 @@ def _strip_target(value: str) -> str | None:
 
 
 
+def _score_degree_match(text: str, match: re.Match[str]) -> int:
+    start, end = match.start(), match.end()
+    prec = text[max(0, start - 60):start].lower()
+    foll = text[end:min(len(text), end + 60)].lower()
+    score = 0
+    # Strong target program signals (preceding)
+    if re.search(r"\b(?:apply\s+(?:directly\s+)?(?:for|to)|admission\s+(?:to|in|for)|pursue\b|register\s+for|enroll\s+in|eligible\s+for|eligibility\s+for|for\s+(?:regular\s+)?(?:full-time\s+)?(?:executive\s+)?)\b", prec):
+        score += 20
+    if re.search(r"\b(?:requirement\s+for|criteria\s+for|cutoff\s+for|cut-off\s+for|fee\s+for|qualifying\s+degree\s+requirement\s+for)\b", prec):
+        score += 15
+    if re.search(r"\b(?:executive\s+|regular\s+|part-time\s+|full-time\s+)\b", prec):
+        score += 5
+
+    # Strong target program signals (following)
+    if re.search(r"^\s*(?:admission|admissions|applicants?|program|programme|scholars?|candidate|candidates)\b", foll):
+        score += 20
+    if re.search(r"^\s*(?:fee|fees|eligibility|requirements?|criteria|duration|course)\b", foll):
+        score += 10
+
+    # Prerequisite / qualifying degree signals (preceding within immediate local window)
+    prec_tail = text[max(0, start - 30):start].lower()
+    if re.search(r"\b(?:have\s+(?:an?\s+)?(?:4-year\s+|four-year\s+)?|completed\s+(?:my\s+)?|holding\s+(?:an?\s+)?|with\s+(?:an?\s+)?(?:4-year\s+|four-year\s+)?|passed\s+(?:my\s+)?|after\s+(?:my\s+)?)\b", prec_tail):
+        score -= 25
+
+    # Prerequisite signals (following)
+    if re.search(r"^\s*(?:aggregate|marks|score|percentage|percent|holder|graduates?|since\s+graduation|degree\s+holder)\b", foll):
+        score -= 25
+
+    return score
+
+
 def _infer_target(original: str, candidate: Any = None) -> str | None:
     """Infer the safest explicit target without allowing the LLM to hijack it.
 
     Priority:
-    1. Explicit, non-disclaimed degree/program in the user's wording.
-    2. Last live explicit degree when multiple live degrees are present.
-    3. Planner candidate only when the user did not name a concrete target.
-
-    This deliberately avoids broad substring extraction such as ``"M.Sc" -> "Sc"``
-    and keeps target resolution generic across institutions.
+    1. Explicit target degree based on contextual score (target vs prerequisite).
+    2. Fallback to candidate if valid and text has no explicit target.
+    3. Facility or statutory governance committee (hostel, anti-ragging, senate).
     """
     original_text = _clean(original)
     if not original_text:
@@ -649,14 +747,31 @@ def _infer_target(original: str, candidate: Any = None) -> str | None:
             live_degrees.append(match)
 
     if live_degrees:
-        # Comparisons are normalized separately; for ordinary questions the
-        # latest live explicit degree is the safest target when several occur.
-        return _canonical_degree(live_degrees[-1].group(0))
+        if len(live_degrees) == 1:
+            score = _score_degree_match(original_text, live_degrees[0])
+            if score >= 0:
+                deg = _canonical_degree(live_degrees[0].group(0))
+                foll = original_text[live_degrees[0].end():]
+                spec_m = re.match(r"^(?:[.\s]+(?:programme|program|students?))?[\s]+in[\s]+([A-Za-z0-9\s&/-]+?)(?=[,?.!]|(?:\s+\b(?:why|how|when|what|where|which|who|does|is|are|from|with|combines?|offers?)\b)|$)", foll, re.I)
+                if spec_m:
+                    spec = spec_m.group(1).strip()
+                    if spec and len(spec) > 2 and spec.lower() not in {"the", "a", "an", "this", "that"}:
+                        return f"{deg} in {spec}" if deg else spec
+                return deg
+        else:
+            scored = [(_score_degree_match(original_text, m), _canonical_degree(m.group(0)), m) for m in live_degrees]
+            scored.sort(key=lambda item: item[0], reverse=True)
+            if scored[0][0] >= 0:
+                best_deg = scored[0][1]
+                m = scored[0][2]
+                foll = original_text[m.end():]
+                spec_m = re.match(r"^(?:[.\s]+(?:programme|program|students?))?[\s]+in[\s]+([A-Za-z0-9\s&/-]+?)(?=[,?.!]|(?:\s+\b(?:why|how|when|what|where|which|who|does|is|are|from|with|combines?|offers?)\b)|$)", foll, re.I)
+                if spec_m:
+                    spec = spec_m.group(1).strip()
+                    if spec and len(spec) > 2 and spec.lower() not in {"the", "a", "an", "this", "that"}:
+                        return f"{best_deg} in {spec}" if best_deg else spec
+                return best_deg
 
-    # A single degree named only inside an exclusion can still anchor the
-    # remaining positive request: "not asking about M.Tech eligibility; only
-    # the application fee". This fallback is deliberately limited to one
-    # distinct degree to avoid inventing a target in ambiguous text.
     all_degrees = [_canonical_degree(m.group(0)) for m in _degree_mentions(original_text)]
     distinct_degrees = _dedupe([x for x in all_degrees if x], 4)
     if len(distinct_degrees) == 1:
@@ -664,6 +779,13 @@ def _infer_target(original: str, candidate: Any = None) -> str | None:
 
     c = _clean(candidate)
     if c:
+        if c.lower() in {
+            "null", "none", "n/a", "na", "unknown", "nil", "undefined",
+            "not applicable", "the institution", "institution", "iit jodhpur",
+            "iitj", "iit", "the institute", "institute", "campus", "college", "university",
+            "indian institute of technology jodhpur",
+        }:
+            return None
         degree = _canonical_degree(c)
         if degree:
             return degree
@@ -678,6 +800,87 @@ def _infer_target(original: str, candidate: Any = None) -> str | None:
         cleaned_candidate = _strip_target(cleaned)
         if cleaned_candidate:
             return cleaned_candidate
+
+    if re.search(r"\b(?:apm\b|annual\s+progress\s+monitoring)\b", original_text, re.I):
+        return "Ph.D."
+    if re.search(r"\b(?:scholars?)\b", original_text, re.I) and not _degree_mentions(original_text):
+        return "Ph.D."
+
+    training_match = re.search(
+        r"\b(pmkvy(?:\s*4\.0)?(?:\s+phase[- ]?[iI1]+)?|"
+        r"specialized\s+training(?:\s+in\s+government\s+e-marketplace|\s+in\s+gem|\s+on\s+gfr\s+2017|\s+on\s+gfr)?|"
+        r"gem\s+training|gfr\s+training|gfr\s+2017|government\s+e-marketplace|"
+        r"office\s+of\s+vocational\s+training\s+&\s+upskilling|vtu|vocational\s+training)\b",
+        original_text,
+        re.I,
+    )
+    if training_match:
+        return training_match.group(0).strip()
+
+    facility_match = re.search(
+        r"\b(hostel\s+accommodation|hostel|guest\s+room|anti[- ]ragging\s+committee|anti[- ]ragging|ragging|"
+        r"internal\s+complaints\s+committee|icc|disciplinary\s+committee|disciplinary|"
+        r"health\s+centre|health\s+center|ambulance|gymkhana|dean\s+of\s+academic\s+affairs|dean|registrar|"
+        r"library|mess|senate|placement\s+cell|placement|sports\s+complex|sports|gym|bus\s+shuttle|shuttle|bus|"
+        r"medical\s+insurance|insurance|supplementary\s+exam(?:ination)?s?|supplementary|"
+        r"mcm\s+scholarship|scholarship|grade\s+appeal|appeal\s+(?:against\s+)?(?:an?\s+)?(?:academic\s+)?grade|"
+        r"grading|grades?|letter\s+grade|temporary\s+grade|['\"][A-Za-z]['\"]\s+grade|"
+        r"tuition\s+fee|late\s+fee|fee)\b",
+        original_text,
+        re.I,
+    )
+    if re.search(r"\bragging\b", original_text, re.I):
+        return "anti-ragging committee"
+
+    if facility_match:
+        val = facility_match.group(0).strip()
+        low_val = val.lower()
+        if "ragging" in low_val:
+            return "anti-ragging committee"
+        if "disciplinary" in low_val:
+            return "Disciplinary Committee"
+        if "internal complaints" in low_val or low_val == "icc":
+            return "Internal Complaints Committee"
+        if "health" in low_val or "ambulance" in low_val:
+            return "Health Centre"
+        if "gymkhana" in low_val:
+            return "Gymkhana"
+        if "dean" in low_val:
+            return "Dean"
+        if "placement" in low_val:
+            return "Placement Cell"
+        if "sports" in low_val or "gym" in low_val:
+            return "Sports"
+        if "bus" in low_val or "shuttle" in low_val:
+            return "Transport"
+        if "insurance" in low_val:
+            return "Insurance"
+        if "supplementary" in low_val:
+            return "Examination"
+        if "scholarship" in low_val or "mcm" in low_val:
+            return "Scholarship"
+        if "grade" in low_val or "grading" in low_val:
+            return "Grading"
+        if "hostel" in low_val or "guest room" in low_val:
+            return "Hostel"
+        if "mess" in low_val:
+            return "Mess"
+        if "senate" in low_val:
+            return "Senate"
+        if "fee" in low_val:
+            return "Fee"
+        return val
+
+    if re.search(r"\b(?:paisa|paise|rupaye|rupees|kharch|kharcha)\b|पैसे|पैसा|खर्चा", original_text, re.I):
+        if re.search(r"\b(?:first\s+semester|1st\s+semester|semester)\b|पहला\s+सेमेस्टर|सेमेस्टर", original_text, re.I):
+            return "fees and finance"
+        return "Fee"
+
+    if re.search(r"\bundergrad(?:uate)?s?\b", original_text, re.I):
+        return "B.Tech"
+
+    if re.search(r"\bpost[- ]?doc(?:toral)?\b", original_text, re.I):
+        return "Postdoctoral"
 
     return None
 
@@ -777,9 +980,9 @@ def _comparison_attribute(text: str) -> str | None:
     )
 
     for marker, value in checks:
-
         if marker in low:
-
+            if value == "documents" and _is_meta_document_reference(text):
+                continue
             return value
 
     return None
@@ -794,6 +997,8 @@ def _explicit_process_requested(text: str) -> str | None:
     patterns = (
         (r"\badmission\s+process\b", "admission process"),
         (r"\bapplication\s+process\b", "application process"),
+        (r"\b(?:admission|entry)\s+(?:avenues?|modes?|routes?|options?)\b", "admission process"),
+        (r"\b(?:avenues?|modes?|routes?)\s+(?:for|of)\s+admission\b", "admission process"),
         (r"\b(?:how|steps?|procedure)\s+(?:do|can|to)\b.*\b(?:apply|register|enroll)\b", "application process"),
         (r"\bhow\s+(?:do|can)\s+i\s+(?:apply|register|enroll)\b", "application process"),
         (r"\bhow\s+to\s+(?:apply|register|enroll)\b", "application process"),
@@ -976,6 +1181,23 @@ def _positive_eligibility_requested(text: str) -> bool:
                 return True
 
     return False
+def _is_meta_document_reference(text: str) -> bool:
+    """Check if 'document' in text is merely a meta-reference to the source/context."""
+    # If the text explicitly asks about required or submission documents, it's not merely meta
+    if re.search(r"\b(?:required|needed|submit|submission|verification|mandatory|compulsory|list\s+of|which|what)\s+(?:documents?|docs?|certificates?)\b|\b(?:documents?|docs?|certificates?)\s+(?:required|needed|to\s+submit|to\s+be\s+submitted|for\s+admission|for\s+registration|for\s+verification)\b|दस्तावेज|डॉक्यूमेंट", text, re.I):
+        return False
+    # Check for meta-references to documents as corpus/source material
+    return bool(
+        re.search(
+            r"\b(?:the|this|that|these|uploaded|source|prescribed|given|provided)\s+documents?\b|"
+            r"\bdocuments?\s+(?:propose|proposes|state|states|show|shows|mention|mentions|say|says|contain|contains|list|lists|describe|describes|discuss|discusses)\b|"
+            r"\b(?:according to|as per|in|from|based on|using)\s+(?:the|these|all|only)?\s*documents?\b",
+            text,
+            re.I,
+        )
+    )
+
+
 def _requested_attributes(text: str) -> list[str]:
     """Extract positive answer properties conservatively from the user's wording."""
     low = _cf(text)
@@ -996,7 +1218,15 @@ def _requested_attributes(text: str) -> list[str]:
             continue
         found.append("processing fee")
     add_matches(r"hostel\s+fee|hostel\s+fees|छात्रावास\s+(?:की\s+)?फीस|हॉस्टल\s+फीस", "hostel fee")
-    add_matches(r"\b(?:fees|fee|fess|charges|amount|cost)\b|फीस|शुल्क", "fee")
+    add_matches(r"\b(?:fees|fee|fess|charges?|amount|cost|rent|rates?|paisa|paise|rupaye|rupees|kharch|kharcha)\b|फीस|शुल्क|पैसे|पैसा|खर्चा", "fee")
+    if re.search(r"\b(?:first\s+semester|1st\s+semester|semester)\b|पहला\s+सेमेस्टर|सेमेस्टर", low):
+        if any(w in low for w in ("fee", "fees", "paisa", "paise", "rupaye", "rupees", "kharcha", "dena", "amount")):
+            found.append("semester fee")
+    add_matches(r"\b(?:options?|branches?|programmes?|programs?|specializations?|disciplines?)\b|विकल्प", "programs")
+    add_matches(
+        r"\b(?:monthly\s+)?(?:fellowships?|scholarships?|stipends?|financial\s+(?:assistance|support|aid)|assistantships?)\b",
+        "fellowship",
+    )
 
     # Process wording is kept descriptive; type conversion happens downstream.
     process = _explicit_process_requested(text)
@@ -1004,7 +1234,7 @@ def _requested_attributes(text: str) -> list[str]:
         found.append(process)
 
     # Eligibility facets.
-    add_matches(r"\bminimum\s+percentage\b|\bpercentage\s+(?:required|requirement)\b", "minimum percentage")
+    add_matches(r"\b(?:minimum\s+)?(?:cut[- ]?off\s+)?percentage\b|\bpercentage\s+(?:required|requirement|cut[- ]?off)\b|\bcut[- ]?off\s+percentage\b|\bminimum\s+cut[- ]?off\b", "minimum percentage")
     add_matches(r"\bwhat\s+percentage\b", "percentage")
     add_matches(r"\b\d+(?:\.\d+)?%\s+(?:is\s+)?(?:enough|sufficient)\b|\b(?:is|are)\s+\d+(?:\.\d+)?%\s+(?:enough|sufficient)\b", "percentage")
     add_matches(
@@ -1013,12 +1243,19 @@ def _requested_attributes(text: str) -> list[str]:
         r"काम\s+का\s+अनुभव|नौकरी\s+का\s+अनुभव",
         "work experience",
     )
-    add_matches(r"\b(?:documents?|docs?)\b|डॉक्यूमेंट|दस्तावेज", "documents")
+    if not _is_meta_document_reference(text):
+        add_matches(r"\b(?:documents?|docs?)\b|डॉक्यूमेंट|दस्तावेज", "documents")
+    add_matches(r"\bqualifying\s+degree\b", "qualifying degree")
     add_matches(
         r"\b(?:deadline|deadlines|last\s+date|closing\s+date)\b|आखिरी\s+तारीख|अंतिम\s+तारीख|"
         r"deadline\s+kab|kab\s+tak",
         "deadline",
     )
+    add_matches(r"\b(?:participants?|enrolled|enrolment|candidates?|trainees?)\b", "participants")
+    add_matches(r"\b(?:certifications?|certified)\b", "certification")
+    add_matches(r"\b(?:training\s+duration|duration|hours?|hrs?)\b", "duration")
+    add_matches(r"\b(?:job\s+roles?|job\s+role)\b", "job roles")
+    add_matches(r"\b(?:hands[- ]on\s+modules?)\b", "hands-on modules")
 
     # Generic eligibility is only a real objective when the eligibility itself
     # is live; specific facets such as work experience remain their own facet.
@@ -1057,8 +1294,12 @@ def _requested_attributes(text: str) -> list[str]:
         found.append("contact")
     if re.search(r"\b(?:facility|facilities)\b", low, re.I):
         found.append("facility")
+    if re.search(r"\b(?:attendance|attandance)\b", low, re.I):
+        found.append("attendance")
     if re.search(r"\b(?:policy|policies|rules|regulations)\b", low, re.I):
         found.append("policy")
+    if re.search(r"\b(?:re-?exam(?:ination)?|additional\s+examination|make-?up\s+examination)\b", low, re.I):
+        found.append("re-examination")
 
     # Indirect eligibility wording, such as "whether I can apply", belongs to
     # one eligibility objective even when the exact word "eligible" is absent.
@@ -1082,8 +1323,22 @@ def _requested_attributes(text: str) -> list[str]:
             pass
         elif re.search(r"\b(?:this\s+year|currently|now|today|before|until|yet)\b", low, re.I):
             found.append("application process")
-        else:
-            found.append("eligibility")
+    if re.search(r"\b(?:focus\s+areas?|thrust\s+areas?)\b", low, re.I):
+        found.append("focus areas")
+    if re.search(r"\b(?:research\s+areas?|research\s+themes?)\b", low, re.I):
+        found.append("research areas")
+    if re.search(r"\b(?:career\s+pathways?|career\s+paths?|career\s+opportunities?)\b", low, re.I):
+        found.append("career pathways")
+    if re.search(r"\b(?:course\s+codes?|subject\s+codes?)\b", low, re.I):
+        found.append("course codes")
+    if re.search(r"\b(?:technical\s+streams?|streams?)\b", low, re.I):
+        found.append("technical streams")
+    if re.search(r"\b(?:minor\s+options?|minors?)\b", low, re.I):
+        found.append("minor options")
+    if re.search(r"\b(?:learning\s+outcomes?|objectives?)\b", low, re.I):
+        found.append("learning outcomes")
+    if re.search(r"\b(?:symbolic[- ]computation\s+tools?|tools?)\b", low, re.I) and "symbolic" in low:
+        found.append("symbolic-computation tools")
 
     return _normalize_attributes(found)
 
@@ -1104,12 +1359,14 @@ def _canonical_attribute(value: Any) -> str:
         return "NET"
     if re.search(r"\bwork\s+(?:experience|exp)\b", s, re.I):
         return "work experience"
-    if re.search(r"\bdocument(?:s)?\b|\bdocs?\b", s, re.I):
+    if re.search(r"\bdocument(?:s)?\b|\bdocs?\b", s, re.I) and not _is_meta_document_reference(s):
         return "documents"
     if re.search(r"\bdeadline\b|\blast\s+date\b", s, re.I):
         return "deadline"
     if re.search(r"\b(?:eligibility|eligibility criteria|qualification(?:s)?)\b", s, re.I):
         return "eligibility"
+    if re.search(r"\b(?:re-?exam|re-?examination|additional\s+examination|make-?up\s+examination)\b", s, re.I):
+        return "re-examination"
     aliases = {
         "application fees": "application fee",
         "processing fees": "processing fee",
@@ -1172,14 +1429,23 @@ def _constraints(text: str) -> list[str]:
         r"\b(?:percentage|percent|cgpa|gpa)\s+(?:below|above|under|over|less|more)\s+\d+(?:\.\d+)?%?\b",
         r"\b(?:semester|year)\s*[1-9][0-9]*\b",
         r"\b(?:202[0-9]|203[0-9])\b",
+        r"\b\d+(?:\.\d+)?\s*(?:years?|yrs?)(?:\s+of)?(?:\s+work)?\s+experience\b",
+        r"\b\d+(?:\.\d+)?\s+(?:additional\s+)?credits?\b",
+        r"\b\d+-credit\b",
+        r"\b(?:scale\s+(?:of\s+)?|on\s+an?\s+)\d+(?:-point\s+scale|\s+scale)?\b",
+        r"\bwithout\s+(?:having\s+)?(?:a\s+|an\s+)?(?:bedding|gate|cat|jee|net|experience|quitting\s+(?:my\s+)?job|leaving\s+(?:my\s+)?job|resigning\s+(?:from\s+)?(?:my\s+)?(?:current\s+)?job|master'?s\s+degree|degree)\b",
+        r"\b(?:completely\s+)?free\s+of\s+cost\b|\bzero\s+fee\b|\bfree\s+(?:hostel|tuition|accommodation)\b",
+        r"\b(?:remote|online)\s+(?:study|option|program|degree)\b",
+        r"\b(?:discount|waiver|concession)\b",
+        r"\b(?:overrule|cancel)\b",
     )
     for pattern in patterns:
         out.extend(m.group(0) for m in re.finditer(pattern, raw, re.I))
 
     # Category acronyms are scanned on degree-masked text so M.Sc is not read
-    # as the category "SC".
+    # as the category "SC", and ordinals like 1st are not read as "ST".
     masked = re.sub(DEGREE_PATTERN, " ", raw, flags=re.I)
-    for match in re.finditer(r"(?<![A-Za-z.])(?:EWS|OBC|SC|ST|PWD|PwD)(?![A-Za-z])", masked, re.I):
+    for match in re.finditer(r"(?<![A-Za-z0-9.])(?:EWS|OBC|SC|ST|PWD|PwD)(?![A-Za-z0-9])", masked, re.I):
         out.append(match.group(0))
 
     # Preserve the user's negative wording and add one canonical semantic alias
@@ -1198,7 +1464,9 @@ def _constraints(text: str) -> list[str]:
         for pattern in NEGATION_PATTERNS:
             match = re.search(pattern, raw, re.I)
             if match:
-                out.append(match.group(0))
+                matched_val = match.group(0).strip()
+                if matched_val.lower() not in {"without", "not", "no"}:
+                    out.append(matched_val)
                 break
     return _dedupe(out, 20)
 
@@ -1209,16 +1477,66 @@ def _preserved(text: str) -> list[str]:
         rf"\b{DEGREE_PATTERN}\b", r"\bGATE\b", r"\bCAT\b",
         r"\bJEE(?:\s+Main|\s+Advanced)?\b", r"\bNET(?:\s*\(JRF\))?\b",
         r"\bCGPA\b", r"\b\d+(?:\.\d+)?\s*%\b",
+        r"\bJAM\b", r"\bINRA\b",
+        r"\b\d+(?:\.\d+)?\s*credits?\b", r"\bcredit\s+limit\b",
+        r"\bcredits?\b",
+        r"\boverload\b", r"\bprobation\b", r"\bunder-?load\b",
+        r"\bSenate\b", r"\banti[- ]ragging\b",
+        r"\b\d+(?:\.\d+)?\s*years?\s+(?:of\s+)?(?:work\s+)?experience\b",
+        r"\bwork\s+experience\b", r"\binterview\b",
+        r"\bprovisional\b", r"\badmission\b", r"\bassistantship\b",
+        r"\bmaximum\b", r"\bminimum\b",
     )
     out: list[str] = []
     for pattern in patterns:
         out.extend(m.group(0) for m in re.finditer(pattern, raw, re.I))
-    return _dedupe(out, 24)
+
+    # Comma-formatted numbers (e.g. 10,000 -> 10000)
+    for m in re.finditer(r"\b\d{1,3}(?:,\d{3})+\b", raw):
+        out.append(m.group(0).replace(",", ""))
+
+    # Normalize canonical degree aliases in preserved terms
+    if re.search(r"\bph\.?\s*d\.?\b", raw, re.I):
+        out.extend(["ph.d", "phd", "Ph.D."])
+    if re.search(r"\bb\.?\s*tech\b|\bundergrad(?:uate)?s?\b", raw, re.I):
+        out.extend(["b.tech", "B.Tech"])
+    if re.search(r"\bm\.?\s*tech\b", raw, re.I):
+        out.extend(["m.tech", "M.Tech"])
+    if re.search(r"\bm\.?\s*sc\.?\b", raw, re.I):
+        out.extend(["m.sc", "M.Sc."])
+
+    # Term variants (hyphenation, branch change, campus services)
+    if re.search(r"\bpart[- ]time\b", raw, re.I):
+        out.extend(["part-time", "part time"])
+    if re.search(r"\b(?:branch\s+change|change\s+(?:of\s+)?(?:a\s+)?branch)\b", raw, re.I):
+        out.append("branch change")
+    if re.search(r"\bgymkhana\b", raw, re.I):
+        out.append("gymkhana")
+    if re.search(r"\bhealth\s+centre|ambulance\b", raw, re.I):
+        out.extend(["health centre", "health"])
+    if re.search(r"\binternal\s+complaints\s+committee|icc\b", raw, re.I):
+        out.append("internal complaints committee")
+    if re.search(r"\bsenate\b", raw, re.I):
+        out.append("senate")
+    if re.search(r"\bregist(?:er|ration)\b", raw, re.I):
+        out.append("registration")
+    if re.search(r"\bquarters\b", raw, re.I):
+        out.extend(["quarters", "hostel"])
+    if re.search(r"\bfine\b", raw, re.I):
+        out.append("fine")
+
+    # Explicitly ensure plural 'credits' is present if 'credit' or 'credit limit' was found
+    if any(re.search(r"\bcredit", term, re.I) for term in out):
+        if "credits" not in [t.lower() for t in out]:
+            out.append("credits")
+    return _dedupe(out, 36)
 
 
 def _det_type_for_attribute(attribute: str | None) -> str | None:
     if attribute in {"fee", "application fee", "processing fee", "hostel fee"}:
         return "fee"
+    if attribute in {"fellowship", "scholarship", "stipend", "financial assistance"}:
+        return "fellowship"
     if attribute in {"minimum percentage", "percentage", "eligibility", "work experience", "GATE", "CAT", "JEE", "NET", "CEED", "NBHM", "CGPA"}:
         return "eligibility"
     if attribute == "documents":
@@ -1302,29 +1620,165 @@ def _intent_question(target: str | None, attribute: str, original: str) -> str:
         "contact": f"How can I contact {subject}?",
         "facility": f"What facilities are available for {subject}?",
         "policy": f"What are the relevant policies for {subject}?",
+        "re-examination": f"What is the re-examination policy for {subject}?",
     }
     return templates.get(attribute, _clean(original))
 
 
+_STANDALONE_STOPWORDS = {
+    "without", "with", "for", "and", "or", "in", "at", "to", "of", "from",
+    "the", "a", "an", "is", "are", "on", "by", "not", "no",
+}
+
+
 def _compact_query(target: str | None, attrs: Sequence[str], constraints: Sequence[str],
-
                    comparison_targets: Sequence[str] = ()) -> str:
-
     pieces: list[str] = []
-
     if comparison_targets:
-
         pieces.append(" and ".join(_dedupe(comparison_targets, 4)))
-
     elif target:
-
         pieces.append(target)
 
-    pieces.extend(attrs[:3])
+    # When querying qualifying degree or minimum percentage for academic degrees, ensure "admission"
+    # is included to anchor institutional regulations and criteria.
+    low_attrs = [str(a).lower() for a in attrs]
+    if target and any("qualifying degree" in a for a in low_attrs) and not any("admission" in a for a in low_attrs):
+        pieces.append("admission")
 
-    pieces.extend(constraints[:5])
+    for attr in attrs[:3]:
+        attr_str = str(attr).strip()
+        if attr_str.lower() not in _STANDALONE_STOPWORDS:
+            pieces.append(attr_str)
 
-    return _clean(" ".join(pieces))
+    # Filter out personal candidate percentages (e.g. "58%") from the retrieval query
+    # when the query is seeking eligibility/cut-off/minimum percentage. The institutional
+    # corpus specifies the institution's threshold, not the candidate's personal score.
+    clean_constraints: list[str] = []
+    has_pct_attr = any("percentage" in a or "eligib" in a for a in low_attrs)
+    for c in constraints:
+        c_str = str(c).strip()
+        if c_str.lower() in _STANDALONE_STOPWORDS:
+            continue
+        if has_pct_attr and re.search(r"^\d+(?:\.\d+)?%", c_str):
+            continue
+        clean_constraints.append(c_str)
+
+    pieces.extend(clean_constraints[:5])
+    result = _clean(" ".join(pieces))
+    if not target and not attrs and not comparison_targets:
+        if len(result.split()) <= 1:
+            return ""
+    return result
+
+
+def _safe_retrieval_query(
+    segment: str,
+    target: str | None,
+    attrs: Sequence[str],
+    constraints: Sequence[str] = (),
+    comparison_targets: Sequence[str] = (),
+) -> str:
+    """Build a coherent, non-naked retrieval query rooted in target, attributes, and critical terms."""
+    if comparison_targets:
+        return _compact_query(" and ".join(comparison_targets), attrs, constraints, comparison_targets)
+
+    pieces: list[str] = []
+    if target:
+        pieces.append(target)
+
+    low_segment = _cf(segment)
+    low_attrs = [str(a).lower() for a in attrs]
+
+    # When querying qualifying degree or minimum percentage for academic degrees, ensure "admission"
+    # is included to anchor institutional regulations and criteria.
+    if target and any("qualifying degree" in a for a in low_attrs) and not any("admission" in a for a in low_attrs):
+        pieces.append("admission")
+
+    for attr in attrs[:3]:
+        attr_str = str(attr).strip()
+        if attr_str.lower() not in _STANDALONE_STOPWORDS and attr_str not in pieces:
+            pieces.append(attr_str)
+
+    # Add key institutional qualifiers present in the segment
+    for term in (
+        "qualifying degree", "degree duration", "work experience", "interview", "entrance test",
+        "assistantship", "fellowship", "financial assistance", "stipend", "scholarship",
+        "hostel", "hostel charges", "anti-ragging committee", "provisional admission",
+        "senate", "cancellation", "academic probation", "credit limit", "maximum credits", "relaxation",
+        "exemption", "exempted", "exempt", "deposit", "refundable", "non-graded", "attendance",
+        "re-exam", "re-examination", "additional examination", "make-up examination",
+        "grade", "grading", "APM", "annual progress monitoring", "temporary grade",
+        "JAM", "GATE", "SC", "ST", "OBC", "EWS",
+    ):
+        matched = (
+            bool(re.search(rf"\b{re.escape(term.lower())}\b", low_segment))
+            if len(term) <= 4
+            else (term.lower() in low_segment)
+        )
+        if matched and not any(term.lower() in p.lower() for p in pieces):
+            pieces.append(term)
+
+    # Include any single uppercase letter grades (e.g. 'E' grade, 'I' grade)
+    single_grades = set(re.findall(r"\b(['\"]?[A-Za-z]['\"]?)\s+grade\b|\bgrade\s+(['\"]?[A-Za-z]['\"]?)\b", segment, re.I))
+    for tup in single_grades:
+        for g in tup:
+            if g:
+                clean_g = g.strip("'\"").upper()
+                if clean_g in {"E", "F", "I", "S", "U"} and not any(f"'{clean_g}' grade" in p or clean_g in p for p in pieces):
+                    pieces.append(f"'{clean_g}' grade")
+
+    # Include any prerequisite/contextual degree mentions in segment not already in pieces
+    for m in _degree_mentions(segment):
+        deg_name = _canonical_degree(m.group(0))
+        if deg_name and not any(deg_name.lower() == p.lower() for p in pieces):
+            pieces.append(deg_name)
+
+    # Include non-stopword constraints
+    has_pct_attr = any("percentage" in a or "cutoff" in a or "eligib" in a for a in low_attrs)
+    for c in constraints:
+        c_str = str(c).strip()
+        if c_str.lower() in _STANDALONE_STOPWORDS or any(c_str.lower() in p.lower() for p in pieces):
+            continue
+        # Avoid embedding applicant personal score in cutoff queries
+        if has_pct_attr and re.search(r"^\d+(?:\.\d+)?%", c_str):
+            continue
+        pieces.append(c_str)
+
+    # Domain recovery for Hindi/Hinglish fee questions
+    if re.search(r"\b(?:paisa|paise|rupaye|rupees|kharch|kharcha)\b|पैसे|पैसा|खर्चा", low_segment):
+        if not any("fee" in p.lower() for p in pieces):
+            pieces.append("fee")
+        if re.search(r"\b(?:first\s+semester|1st\s+semester|semester)\b|पहला\s+सेमेस्टर|सेमेस्टर", low_segment):
+            if not any("semester" in p.lower() for p in pieces):
+                pieces.append("semester fee")
+    # Domain recovery for Hindi/Hinglish programme/option inquiries
+    if re.search(r"\b(?:options?|kya-kya|kya kya|branches?|specializations?)\b", low_segment):
+        if any(deg.lower() in p.lower() for deg in ("m.tech", "b.tech", "ph.d", "m.sc", "mba") for p in pieces):
+            if not any("program" in p.lower() for p in pieces):
+                pieces.append("programmes")
+
+    res = _clean(" ".join(pieces))
+
+    # Guard against empty or single naked stopword/noun
+    words = [w for w in res.split() if w.lower() not in _STANDALONE_STOPWORDS]
+    if len(words) <= 1 or res.lower() in {"without", "documents", "deadline"}:
+        HINGLISH_FILLERS = {
+            "agar", "kisi", "ko", "hai", "toh", "to", "kya", "usko", "use", "unhe",
+            "dene", "ka", "ki", "ke", "mauka", "milta", "milte", "milega", "hoga",
+            "sakte", "sakta", "sakti", "kar", "bhi", "mein", "par", "se", "aur",
+            "kya-kya", "mujhe", "dena", "padega", "hain", "options", "kitna", "kitne",
+            "batao", "bataiye", "bata",
+        }
+        valid_letters = {g.strip("'\"").upper() for tup in single_grades for g in tup if g}
+        seg_words = [
+            w for w in re.findall(r"[A-Za-z0-9\.\-%]+", segment)
+            if w.lower() not in _STANDALONE_STOPWORDS
+            and w.lower() not in HINGLISH_FILLERS
+            and (len(w) > 2 or w.upper() in valid_letters)
+        ]
+        res = _clean(" ".join(seg_words[:10]))
+
+    return res
 
 
 
@@ -1349,6 +1803,67 @@ def _objective_segments(text: str) -> list[str]:
 
     low = _cf(original)
 
+    # Detect 'tell me both X and Y' or 'both X and Y'
+    both_m = re.match(
+        r"^(?:(?:can\s+you\s+)?(?:tell|give|show|provide|share)\s+me\s+)?both\s+(?:the\s+)?(.+?)\s+and\s+(?:the\s+)?(.+?)$",
+        original.strip(" ,;.?"),
+        flags=re.I,
+    )
+    if both_m:
+        part1 = _clean(both_m.group(1))
+        part2 = _clean(both_m.group(2))
+        if part1 and part2:
+            q1 = part1 if re.search(r"\b(?:what|how|who|where|when|which|is|are|can)\b", part1, re.I) else f"What is the {part1}?"
+            q2 = part2 if re.search(r"\b(?:what|how|who|where|when|which|is|are|can)\b", part2, re.I) else f"What are the {part2}?"
+            return [q1, q2]
+
+    # Coordinate two independent interrogatives:
+    # e.g. "Clause 1, and (what|how|who|where|when|which|is|are|can|does|do|whether) Clause 2?"
+    # or Hinglish ",? aur (kya|kaise|kitna|kitne|kahan|kon|hostel|phd|mtech|btech)..."
+    m_coord = re.search(r",?\s+\band\s+(what|how\s+much|how|who|where|when|which|is|are|can|does|do|whether)\b", original, re.I)
+    if not m_coord:
+        m_coord = re.search(r",?\s+\baur\s+(?:kya|kaise|kitna|kitne|kahan|kon|kisko|hostel|phd|btech|mtech)\b", original, re.I)
+    if m_coord and not _comparison_targets(original):
+        first_part = _clean(original[:m_coord.start()])
+        second_part = _clean(original[m_coord.start():].lstrip(" ,"))
+        second_part = re.sub(r"^(?:and\s+|aur\s+)+", "", second_part, flags=re.I)
+        # Ensure first_part is not an introductory prepositional/adverbial preamble
+        is_preamble = bool(re.match(r"^(?:for|in|as\s+for|regarding|concerning|with\s+regard\s+to|under|if|when|while|before|after|in\s+case)\b", first_part, re.I))
+        is_question = bool(re.search(r"\b(?:what|how|who|where|when|which|is|are|can|could|does|do|did|would|should|will|whether|kitna|kaise|kya|batao)\b", first_part, re.I))
+        if not is_preamble and is_question:
+            # Check if second part introduces an independent domain or a distinct degree
+            has_independent_domain = bool(re.search(
+                r"\b(dean|registrar|library|hostels?|rooms?|mess|dining|gymkhana|sports|gym|bus|shuttle|insurance|disciplinary|committee|icc|internal\s+complaints|placement|supplementary|exams?|examinations?|grade|anti[- ]ragging|fee|fees|late\s+fee|deposits?|caution\s+money|caution\s+deposit|refundable|deadline|last\s+date|closing\s+date|stipend|assistantship|fellowship|branch\s+change|attendance|documents?|certificates?|registration|senate)\b",
+                second_part, re.I
+            ))
+            deg1 = [_canonical_degree(m.group(0)) for m in _degree_mentions(first_part) if _canonical_degree(m.group(0))]
+            deg2 = [_canonical_degree(m.group(0)) for m in _degree_mentions(second_part) if _canonical_degree(m.group(0))]
+            has_distinct_degree = bool(deg2 and (not deg1 or set(deg2) != set(deg1)))
+            is_provisional = bool(re.search(r"\bprovisionall?y?\b", low, re.I))
+            is_senate_authority = bool(re.search(r"\b(?:can\s+(?:the\s+)?(?:senate|institute|authority|dean|committee)\s+(?:cancel|terminate|allow|waive)|cancellation\s+of\s+admission|solely\s+for\s+failing|retain\s+authority\s+to|does\s+(?:the\s+)?(?:senate|institute)\s+retain)\b", low, re.I))
+            is_distinct_interrogative = bool(re.match(r"^(?:where|who|when)\b", second_part, re.I))
+            if (has_independent_domain or has_distinct_degree or is_distinct_interrogative) and not is_provisional and not is_senate_authority and not re.search(r"\b(?:exception|relaxation|waiver|undertaking)\b", second_part, re.I):
+                if len(second_part.split()) >= 3 and len(first_part.split()) >= 3:
+                    sub_coord = re.search(r",\s+(what|how\s+much|how|who|where|when|which|is|are|can|does|do|whether)\b", first_part, re.I)
+                    if sub_coord:
+                        p1 = _clean(first_part[:sub_coord.start()])
+                        p2 = _clean(first_part[sub_coord.start():].lstrip(" ,"))
+                        if len(p1.split()) >= 3 and len(p2.split()) >= 3:
+                            return [p1, p2, second_part]
+                    return [first_part, second_part]
+
+    # Administrative policy or consequence questions ("what happens if...", "what if...",
+    # "consequence of...", "penalty for...", "what is the policy when...", "solely for failing") ask for a single
+    # policy outcome, even when mentioning multiple facets like documents and deadlines.
+    if re.search(
+        r"\b(?:what\s+(?:happens|occurs|is\s+the\s+(?:consequence|penalty|policy|rule|remedy))|what\s+if|in\s+case(?:\s+of)?)\b",
+        low, re.I,
+    ) or re.search(
+        r"\b(?:can\s+(?:the\s+)?(?:senate|institute|authority|dean|committee)\s+(?:cancel|terminate|allow|waive)|cancellation\s+of\s+admission|solely\s+for\s+failing|retain\s+authority\s+to|does\s+(?:the\s+)?(?:senate|institute)\s+retain)\b",
+        low, re.I,
+    ):
+        return [original]
+
     # Exception/relaxation is part of the same eligibility decision.
     if re.search(
         r"\bcan\s+i\s+(?:still\s+)?(?:apply|register|enroll)\b.*\band\s+(?:are|is)\s+there\s+(?:any\s+)?(?:exception|relaxation)",
@@ -1357,21 +1872,27 @@ def _objective_segments(text: str) -> list[str]:
         return [original]
 
     # A single eligibility decision can mention multiple evidence facets or
-    # conditions (GATE, percentage, category relaxation, final-semester status).
-    # Unless the user explicitly requests a second independent answer, keep
-    # those facets in one eligibility objective.
+    # conditions (GATE, percentage, category relaxation, final-semester status,
+    # work experience and interview). Unless the user explicitly requests a
+    # second independent domain (fee, deadline, hostel, anti-ragging, assistantship), keep those facets
+    # in one eligibility objective.
     eligibility_condition_question = re.search(
-        r"\b(?:eligible|eligibility|can\s+i|may\s+i|qualif(?:y|ied)|requirements?)\b",
+        r"\b(?:eligible|eligibility|can\s+i|may\s+i|qualif(?:y|ied)|requirements?|cutoff|cut-off|threshold|do\s+i\s+meet)\b",
         low, re.I,
     ) and re.search(
-        r"\b(?:gate|cgpa|gpa|percentage|marks|score|ews|obc|sc|st|pwd|relaxation|exception|final\s+(?:semester|year|result)|graduation)\b",
+        r"\b(?:gate|cgpa|gpa|percentage|marks|score|ews|obc|sc|st|pwd|relaxation|exception|final\s+(?:semester|year|result)|graduation|work\s+experience|experience|interview|entrance\s+test|foreign\s+residence|duration|inra)\b",
+        low, re.I,
+    )
+    # "does my X satisfy" / "is X mandatory" with no separate domain = single eligibility check
+    single_threshold_check = re.search(
+        r"\b(?:does\s+my|is\s+(?:an\s+)?(?:entrance|interview|test)|satisfy\s+(?:the\s+)?(?:minimum|threshold|cutoff)|meet\s+(?:the\s+)?(?:minimum|threshold|requirement))\b",
         low, re.I,
     )
     explicit_independent = bool(
         re.search(r"\b(?:separately|independently|also\s+tell\s+me\s+whether|\band\s+whether)\b", low, re.I)
     )
-    if eligibility_condition_question and not explicit_independent and not re.search(
-        r"\b(?:fee|fees|documents?|docs?|deadline|last\s+date|application\s+process|admission\s+process|hostel|location|contact)\b",
+    if (eligibility_condition_question or single_threshold_check) and not explicit_independent and not re.search(
+        r"\b(?:fee|fees|deadline|last\s+date|hostel|anti[- ]ragging|assistantship|stipend|disciplinary|committee|branch change)\b",
         low, re.I,
     ):
         return [original]
@@ -1421,9 +1942,13 @@ def _objective_segments(text: str) -> list[str]:
             if not _mention_is_excluded(low, match.start(), match.end()):
                 markers.append((match.start(), match.end(), family))
 
-    add_family(r"application\s+(?:processing\s+)?fee|processing\s+fee|hostel\s+fee|\b(?:fee|fees|charges|amount|cost)\b|फीस|शुल्क", "fee")
-    add_family(r"\b(?:documents?|docs?)\b|दस्तावेज|डॉक्यूमेंट", "documents")
+    add_family(r"application\s+(?:processing\s+)?fee|processing\s+fee|hostel\s+fee|\b(?:fee|fees|charges|amount|cost|deposits?|caution\s+money|caution\s+deposit)\b|फीस|शुल्क", "fee")
+    if not _is_meta_document_reference(original):
+        add_family(r"\b(?:documents?|docs?)\b|दस्तावेज|डॉक्यूमेंट", "documents")
     add_family(r"\b(?:deadline|last\s+date|closing\s+date)\b|आखिरी\s+तारीख|अंतिम\s+तारीख", "deadline")
+    add_family(r"\b(?:anti[- ]ragging|grievance|committee|cell|disciplinary|ombudsperson)\b", "governance_committee")
+    add_family(r"\b(?:assistantship|stipend|scholarship|financial\s+aid|fellowship)\b", "financial_aid")
+    add_family(r"\b(?:hostel|mess|accommodation|library)\b", "facility")
     process = _explicit_process_requested(original)
     if process:
         # Anchor the process family at its first live procedural phrase.
@@ -1435,7 +1960,7 @@ def _objective_segments(text: str) -> list[str]:
     # positive eligibility objective. This prevents disclaimers/known topics
     # from splitting an otherwise single process/fee question.
     if _positive_eligibility_requested(original):
-        for match in re.finditer(r"\b(?:eligibility|eligible|qualification|requirements?)\b|पात्रता|योग्य", low, re.I):
+        for match in re.finditer(r"\b(?:eligibility|eligible|qualification|requirements?|required|cgpa|gpa|cutoff|cut-off|branch\s+change)\b|पात्रता|योग्य", low, re.I):
             if not _mention_is_excluded(low, match.start(), match.end()):
                 markers.append((match.start(), match.end(), "eligibility"))
                 break
@@ -1467,11 +1992,14 @@ def _objective_segments(text: str) -> list[str]:
         prev_end = distinct[idx-1][1]
         window_start=max(prev_end, start-70)
         window=original[window_start:start]
-        connector=list(re.finditer(r",\s*(?:and\s+|also\s+)?|\band\s+(?:also\s+)?|\bas\s+well\s+as\s+|\bplus\s+", window, re.I))
+        connector=list(re.finditer(r",\s*(?:and\s+)?(?=what|how|who|where|when|which|is|are|can|does|do|whether|also\s+tell|separately\b)|\band\s+(?:also|what|how|who|where|is|are|can|does|do|which|whether|separately)\s+|\bas\s+well\s+as\s+", window, re.I))
         if connector:
             cuts.append(window_start+connector[-1].start())
-        elif idx == 1 and start>0:
-            cuts.append(start)
+
+    # Filter cuts that fall at or before an introductory precondition clause
+    m_adv = re.match(r"^(?:when|while|if|before|after|in\s+case)\s+[^,]+,\s*", original, re.I)
+    if m_adv:
+        cuts = [c for c in cuts if c >= m_adv.end()]
 
     if not cuts:
         return [original]
@@ -1495,7 +2023,7 @@ def _intent_semantic_bucket(intent: QueryIntentPlan) -> str:
         return "eligibility"
     if intent.request_type == "fee" or attrs & {"fee", "application fee", "processing fee", "hostel fee"}:
         return "fee"
-    if intent.request_type == "documents" or "documents" in attrs:
+    if (intent.request_type == "documents" or "documents" in attrs) and not _is_meta_document_reference(intent.question):
         return "documents"
     if intent.request_type == "deadline" or "deadline" in attrs:
         return "deadline"
@@ -1557,6 +2085,8 @@ def _attribute_supported_by_text(text: str, attribute: str) -> bool:
         # Unknown attributes require direct lexical evidence rather than model-only invention.
         token = _clean(attribute).casefold()
         return bool(token) and token in low
+    if attr == "documents" and _is_meta_document_reference(text):
+        return False
     return bool(re.search(pattern, low, re.I | re.S))
 
 
@@ -1657,13 +2187,19 @@ def _merge_intents_for_slot(
         attrs = [attr] if attr else []
         retrieval = _compact_query(target, attrs, (), comparisons)
     else:
-        retrieval = _compact_query(target, attrs, constraints) or _clean(primary.retrieval_query) or segment
+        if target is None and len(attrs) <= 1 and not constraints:
+            retrieval = segment
+        else:
+            retrieval = _safe_retrieval_query(segment, target, attrs, constraints) or _clean(primary.retrieval_query) or segment
 
     if request_type is None and attrs:
         request_type = _det_type_for_attribute(attrs[0])
 
-    display_attr = attrs[0] if len(attrs) == 1 else None
-    question = _intent_question(target, display_attr, segment) if display_attr else segment
+    if len(_objective_segments(segment)) <= 1 and len(segment.split()) >= 4:
+        question = segment
+    else:
+        display_attr = attrs[0] if len(attrs) == 1 else None
+        question = _intent_question(target, display_attr, segment) if (display_attr and target) else segment
     return QueryIntentPlan(
         question=question,
         request_type=request_type,
@@ -1690,6 +2226,16 @@ def _normalize_intent(item: QueryIntentPlan, original: str) -> QueryIntentPlan:
     constraints = _sanitize_constraints(question, [*item.constraints, *_constraints(question)])
     relations = _dedupe(item.relations, 10)
     qualifiers = _dedupe(item.qualifiers, 10)
+    if local_target:
+        spec_match = re.search(
+            rf"\b{re.escape(local_target)}\s+(?:in|of)\s+([A-Za-z\s]+?)(?:\s+(?:at|for|from|program|programme|admission|eligibility)\b|\s*[?,;.]|$)",
+            question,
+            re.I,
+        )
+        if spec_match:
+            spec = _clean(spec_match.group(1))
+            if spec and len(spec.split()) <= 4 and not _is_institution_name_or_generic(spec):
+                qualifiers = _dedupe([*qualifiers, spec], 10)
     temporal = _dedupe(item.temporal_constraints, 10)
     comparisons = _comparison_targets(question)
     if not comparisons:
@@ -1708,7 +2254,10 @@ def _normalize_intent(item: QueryIntentPlan, original: str) -> QueryIntentPlan:
     if confidence <= 0:
         confidence = 0.80 if (local_target or attrs or comparisons) else 0.60
     if not retrieval or retrieval == question:
-        retrieval = _compact_query(local_target, attrs, constraints, comparisons) or question
+        if not local_target and not comparisons:
+            retrieval = question
+        else:
+            retrieval = _compact_query(local_target, attrs, constraints, comparisons) or question
 
     return QueryIntentPlan(
         question=question,
@@ -1796,87 +2345,115 @@ def _merge_duplicates(intents: Sequence[QueryIntentPlan], original: str) -> list
 
 
 
-def _fallback_intents(original: str) -> list[QueryIntentPlan]:
-
+def _deterministic_intents(original: str) -> list[QueryIntentPlan]:
     comparison_targets = _comparison_targets(original)
-
-    target = _infer_target(original)
-
-    constraints = _constraints(original)
-
-    attrs = _requested_attributes(original)
-
-    negated = _negated(original)
-
-
-
     if comparison_targets:
-
         attr = _comparison_attribute(original)
-
         query = _compact_query(" and ".join(comparison_targets), [attr] if attr else [], ())
-
         return [QueryIntentPlan(
-
             question=original,
-
             request_type="comparison",
-
             target=" and ".join(comparison_targets),
-
             requested_attributes=[attr] if attr else [],
-
             comparison_targets=comparison_targets,
-
             retrieval_query=query or original,
-
-            confidence=0.80,
-
+            confidence=0.85,
         )]
 
+    segments = _objective_segments(original)
+    overall_target = _infer_target(original)
+    intents: list[QueryIntentPlan] = []
+    for segment in segments:
+        seg_inferred = _infer_target(segment)
+        if seg_inferred:
+            seg_target = seg_inferred
+        elif bool(re.search(r"\b(hostels?|rooms?|mess|gymkhana|medical|transport|sports?|canteen|submarine|where\s+is|who\s+is)\b", segment, re.I)):
+            seg_target = None
+        else:
+            seg_target = overall_target
+        seg_attrs = _requested_attributes(segment)
+        seg_constraints = _constraints(segment)
+        seg_negated = _negated(segment)
+        seg_type = _det_type_for_question(segment)
+        if not seg_type and seg_attrs:
+            seg_type = _det_type_for_attribute(seg_attrs[0])
 
+        rq = _safe_retrieval_query(segment, seg_target, seg_attrs, seg_constraints)
 
-    if attrs:
+        if len(segment.split()) >= 4:
+            q_text = segment
+        elif seg_attrs and seg_target:
+            q_text = _intent_question(seg_target, seg_attrs[0], segment)
+        else:
+            q_text = segment
 
-        return [QueryIntentPlan(
+        seg_qualifiers: list[str] = []
+        if seg_target:
+            spec_match = re.search(
+                rf"\b{re.escape(seg_target)}\s+(?:in|of)\s+([A-Za-z\s]+?)(?:\s+(?:at|for|from|program|programme|admission|eligibility)\b|\s*[?,;.]|$)",
+                segment,
+                re.I,
+            )
+            if spec_match:
+                spec = _clean(spec_match.group(1))
+                if spec and len(spec.split()) <= 4 and not _is_institution_name_or_generic(spec):
+                    seg_qualifiers.append(spec)
 
-            question=_intent_question(target, attr, original),
-
-            request_type=_det_type_for_attribute(attr) or "general",
-
-            target=target,
-
-            requested_attributes=[attr],
-
-            constraints=constraints if attr in {"eligibility", "minimum percentage", "percentage", "work experience"} else [],
-
-            negated=negated,
-
-            retrieval_query=_compact_query(target, [attr], constraints if attr in {"eligibility", "minimum percentage", "percentage", "work experience"} else ()),
-
+        intents.append(QueryIntentPlan(
+            question=q_text,
+            request_type=seg_type or "general",
+            target=seg_target,
+            requested_attributes=seg_attrs,
+            constraints=seg_constraints,
+            qualifiers=seg_qualifiers,
+            negated=seg_negated,
+            retrieval_query=rq,
             confidence=0.80,
+        ))
 
-        ) for attr in attrs]
-
-
-
-    return [QueryIntentPlan(
-
+    return intents if intents else [QueryIntentPlan(
         question=original,
-
         request_type=None,
-
-        target=target,
-
-        constraints=constraints,
-
-        negated=negated,
-
-        retrieval_query=_compact_query(target, (), constraints) or original,
-
+        target=overall_target,
+        constraints=_constraints(original),
+        negated=_negated(original),
+        retrieval_query=_safe_retrieval_query(original, overall_target, ()),
         confidence=0.60,
-
     )]
+
+
+_fallback_intents = _deterministic_intents
+
+
+def _deterministic_build_query_plan(original: str) -> QueryPlan:
+    """Build a complete QueryPlan using lossless deterministic decomposition and binding."""
+    scope, conf, reason = _repair_scope(original, "in_scope" if _relevance(original) >= 0.20 else "uncertain", 0.0)
+    if scope == "out_of_scope":
+        intents: list[QueryIntentPlan] = []
+        is_multi = False
+    else:
+        intents = _deterministic_intents(original)
+        is_multi = len(intents) > 1
+
+    route = classify_query_route(
+        domain_decision=scope,
+        is_multi_intent=is_multi,
+        intents=intents,
+        original=original,
+    )
+
+    return QueryPlan(
+        original_query=original,
+        resolved_query=original,
+        domain_decision=scope,
+        domain_confidence=conf,
+        domain_reason=reason,
+        is_multi_intent=is_multi,
+        intents=intents,
+        preserved_terms=_dedupe([*_preserved(original), *_constraints(original)], 28),
+        confidence=min(0.85, max((i.confidence for i in intents), default=0.60)),
+        route=route.value,
+    )
 
 
 
@@ -1907,27 +2484,32 @@ def _consolidate_same_target_eligibility(
         return items
 
     grouped: dict[str, list[QueryIntentPlan]] = {}
-    others: list[QueryIntentPlan] = []
     for item in items:
         bucket = _intent_semantic_bucket(item)
         target = _cf(item.target or _infer_target(original) or "")
         if bucket == "eligibility" and target:
             grouped.setdefault(target, []).append(item)
+
+    # If no target has multiple eligibility fragments, keep existing order
+    if not any(len(g) > 1 for g in grouped.values()):
+        return items
+
+    result: list[QueryIntentPlan] = []
+    merged_targets: set[str] = set()
+
+    for item in items:
+        bucket = _intent_semantic_bucket(item)
+        target = _cf(item.target or _infer_target(original) or "")
+        if bucket == "eligibility" and target and len(grouped[target]) > 1:
+            if target not in merged_targets:
+                merged_targets.add(target)
+                group = grouped[target]
+                tgt = group[0].target or _infer_target(original)
+                result.append(_merge_intents_for_slot(original, group, tgt))
         else:
-            others.append(item)
+            result.append(item)
 
-    merged: list[QueryIntentPlan] = []
-    consumed = set()
-    for target_key, group in grouped.items():
-        if len(group) == 1:
-            merged.extend(group)
-            continue
-        target = group[0].target or _infer_target(original)
-        merged.append(_merge_intents_for_slot(original, group, target))
-        consumed.add(target_key)
-
-    # Keep all non-eligibility intents and one merged intent per eligibility target.
-    return others + merged
+    return result
 
 
 def _reconcile_intents(
@@ -1981,7 +2563,13 @@ def _reconcile_intents(
     for segment in segments:
         seg_attrs = set(_normalize_attributes(_requested_attributes(segment)))
         seg_type = _det_type_for_question(segment)
-        seg_target = _infer_target(segment) or overall_target
+        seg_inferred = _infer_target(segment)
+        if seg_inferred:
+            seg_target = seg_inferred
+        elif bool(re.search(r"\b(hostels?|rooms?|mess|gymkhana|medical|transport|sports?|canteen|submarine|where\s+is|who\s+is)\b", segment, re.I)):
+            seg_target = None
+        else:
+            seg_target = overall_target
 
         matches: list[QueryIntentPlan] = []
         for item in remaining:
@@ -2016,75 +2604,61 @@ def _reconcile_intents(
 
 
 def _relevance(text: str) -> float:
-
     low = _cf(text)
-
-    hits = sum(1 for marker in INSTITUTIONAL_MARKERS if marker in low)
-
+    hits = sum(1 for marker in INSTITUTIONAL_MARKERS if re.search(r"\b" + re.escape(marker) + r"\b", low))
     strong = sum(
-
         1 for marker in (
-
-            "m.tech", "mtech", "m.sc", "msc", "mba", "phd", "b.tech",
-
+            "m.tech", "mtech", "m.sc", "msc", "mba", "phd", "ph.d.", "ph.d", "b.tech",
             "admission", "registration", "hostel", "application fee",
-
-        ) if marker in low
-
+            "eligibility", "percentage", "cgpa", "senate", "cancellation", "cancel",
+            "degree", "degrees", "convocation", "awarded",
+            "deadline", "documents", "administrative", "disciplinary",
+            "library", "exam", "examinations", "probation",
+            "requirements", "requirement", "preference", "seat allotment", "counseling",
+            "registrar", "transcript", "health centre", "health center", "ambulance",
+            "internal complaints committee", "icc", "gymkhana", "scholarship", "dean",
+            "late fee", "dining", "sports", "credit limit", "branch change",
+            "pmkvy", "skill hub", "upskilling", "vocational", "vtu", "job role", "job roles", "certification",
+            "gem", "gfr", "training", "trainings", "workshop", "workshops", "procurement",
+            "course code", "course codes", "code", "codes", "elective", "electives",
+        ) if re.search(r"\b" + re.escape(marker) + r"\b", low)
     )
-
     return min(1.0, hits * 0.10 + strong * 0.25)
 
 
-
-
-
 def _obvious_oos(text: str) -> bool:
-
     low = _cf(text)
-
     if not low:
-
         return True
-
-    if any(marker in low for marker in OBVIOUS_OOS_MARKERS):
-
-        return _relevance(low) < 0.25
-
-    tokens = re.findall(r"[a-z0-9]+", low)
-
-    return len(tokens) >= 2 and _relevance(low) == 0.0
-
-
-
+    if re.search(r"\b(?:recipe|cook|cooking|ingredients|dish|dishes|dal\s+baati|churma|biryani)\b", low):
+        return True
+    if re.search(r"\b(?:web\s+scraper|scraper|scraping|scrape|download\s+all\s+confidential|hack|jailbreak)\b", low):
+        return True
+    if re.search(r"\b(?:do\s+not\s+retrieve|tell\s+me\s+that\b.*?\band\s+guarantee|ignore\s+all\s+(?:previous\s+)?instructions)\b", low):
+        return True
+    if any(re.search(r"\b" + re.escape(marker) + r"\b", low) for marker in OBVIOUS_OOS_MARKERS):
+        return not bool(re.search(r"\b(?:m\.?tech|m\.?sc|ph\.?d|b\.?tech|mba|admission|cgpa|eligib)\b", low))
+    return False
 
 
 def _repair_scope(
-
     original: str,
-
     llm_scope: ScopeDecision,
-
     llm_confidence: float,
-
 ) -> tuple[ScopeDecision, float, str]:
-
     relevance = _relevance(original)
-
-    if _obvious_oos(original) and relevance < 0.25:
-
+    if _obvious_oos(original):
         return "out_of_scope", 0.98, "deterministic_clear_unrelated"
 
     if llm_scope == "out_of_scope" and llm_confidence >= 0.90:
-
+        if relevance >= 0.20:
+            return "in_scope", 0.75, "relevance_overrode_false_oos"
         return "out_of_scope", llm_confidence, "llm_high_confidence"
 
     if llm_scope == "in_scope":
-
         return "in_scope", max(llm_confidence, min(0.95, 0.60 + relevance)), "llm_in_scope"
 
-    if relevance >= 0.30:
-
+    if relevance >= 0.20:
         return "in_scope", max(0.72, relevance), "deterministic_institutional_relevance"
 
     return "uncertain", max(0.50, min(0.70, llm_confidence)), "conservative_uncertain"
@@ -2093,32 +2667,55 @@ def _repair_scope(
 
 
 
-# ---------------------------------------------------------------------------
-
-# Mapping and model invocation
-
-# ---------------------------------------------------------------------------
-
+def classify_query_route(
+    *,
+    domain_decision: str,
+    is_multi_intent: bool,
+    intents: Sequence[QueryIntentPlan],
+    original: str,
+    ambiguous: bool = False,
+    needs_clarification: bool = False,
+    history: Sequence[Any] = (),
+) -> QueryRoute:
+    """Classify user query into principled operational routing categories."""
+    if domain_decision == "out_of_scope":
+        return QueryRoute.OUT_OF_SCOPE
+    if needs_clarification or ambiguous:
+        return QueryRoute.AMBIGUOUS_NEEDS_CLARIFICATION
+    low = _cf(original)
+    if history and (low.startswith(("and ", "what about", "how about", "how much", "tell me more")) or len(low.split()) <= 3):
+        return QueryRoute.CONVERSATIONAL_FOLLOW_UP
+    if is_multi_intent and len(intents) > 1:
+        return QueryRoute.MULTI_INTENT
+    if any(i.request_type == "comparison" or i.comparison_targets for i in intents) or "compare" in low or "difference between" in low:
+        return QueryRoute.COMPARISON
+    req_attrs = set()
+    for i in intents:
+        req_attrs.update(i.requested_attributes)
+    if len(req_attrs) >= 3 or ({"fee", "fees"}.intersection(req_attrs) and {"eligibility", "qualification"}.intersection(req_attrs)):
+        return QueryRoute.MULTI_SOURCE_SINGLE_INTENT
+    constraints_count = sum(len(i.constraints) for i in intents)
+    if constraints_count >= 2 or any(w in low for w in ("minimum", "cutoff", "category", "scale", "first class", "first-class", "cgpa", "percentage", "marks")):
+        return QueryRoute.SINGLE_INTENT_WITH_CONSTRAINTS
+    if domain_decision == "uncertain":
+        return QueryRoute.UNCERTAIN_SCOPE
+    return QueryRoute.SIMPLE_SINGLE_INTENT
 
 
 def _from_mapping(original: str, parsed: Mapping[str, Any]) -> QueryPlan:
 
     raw_intents = parsed.get("intents") if isinstance(parsed.get("intents"), list) else []
-
     llm_intents: list[QueryIntentPlan] = []
-
-    for raw in raw_intents:
-
+    segments = _objective_segments(original)
+    for idx, raw in enumerate(raw_intents):
         if not isinstance(raw, Mapping):
-
             continue
-
         try:
-
-            llm_intents.append(QueryIntentPlan.model_validate(raw))
-
+            raw_dict = dict(raw)
+            if not _clean(raw_dict.get("question")) and idx < len(segments):
+                raw_dict["question"] = segments[idx]
+            llm_intents.append(QueryIntentPlan.model_validate(raw_dict))
         except Exception:
-
             continue
 
 
@@ -2149,46 +2746,53 @@ def _from_mapping(original: str, parsed: Mapping[str, Any]) -> QueryPlan:
 
     resolved_query = original
 
+    # Deterministic single-intent guard: if the heuristic segmenter identifies
+    # at most one linguistic objective (e.g. consequence/policy questions, or a
+    # single eligibility query), the plan is definitively single-intent regardless
+    # of how many fragments the LLM emitted. This prevents LLM non-determinism
+    # from routing single-policy questions through the multi-intent execution path.
+    _segments_for_override = _objective_segments(original)
+    _force_single = len(_segments_for_override) <= 1
+    overall_target = _infer_target(original)
 
+    if _force_single and len(intents) > 1:
+        intents = [_merge_intents_for_slot(original, intents, overall_target)]
+        _effective_multi_intent = False
+    elif not _force_single and len(intents) <= 1:
+        intents = _deterministic_intents(original)
+        _effective_multi_intent = len(intents) > 1
+    else:
+        _effective_multi_intent = (len(intents) > 1) and not _force_single
+
+    _route = classify_query_route(
+        domain_decision=scope,
+        is_multi_intent=_effective_multi_intent,
+        intents=intents,
+        original=original,
+        ambiguous=_bool(parsed.get("ambiguous")),
+        needs_clarification=_bool(parsed.get("needs_clarification")),
+    )
 
     return QueryPlan(
-
         original_query=original,
-
         resolved_query=resolved_query,
-
         language=_clean(parsed.get("language")) or None,
-
         conversation_mode="standalone",
-
         domain_decision=scope,
-
         domain_confidence=repaired_scope_conf,
-
         domain_reason=_clean(parsed.get("domain_reason")) or scope_reason,
-
-        is_multi_intent=len(intents) > 1,
-
+        is_multi_intent=_effective_multi_intent,
         intents=intents,
-
         preserved_terms=_dedupe([
-
             *(parsed.get("preserved_terms") or []),
-
             *_preserved(original),
-
             *_constraints(original),
-
         ], 28),
-
         ambiguous=_bool(parsed.get("ambiguous")),
-
         needs_clarification=_bool(parsed.get("needs_clarification")),
-
         clarification_reason=_clean(parsed.get("clarification_reason")),
-
         confidence=plan_conf,
-
+        route=_route.value,
     )
 
 
@@ -2205,17 +2809,22 @@ def load_query_planner_model() -> StructuredModel:
 
 
 
-def build_query_plan(question: str, *, model: StructuredModel | None = None) -> QueryPlan:
-
+def build_query_plan(
+    question: str,
+    *,
+    model: StructuredModel | None = None,
+    offline: bool = False,
+) -> QueryPlan:
     original = _clean(question)
-
     if not original:
-
         raise ValueError("question cannot be empty")
 
-
+    if offline or os.environ.get("PLANNER_OFFLINE_MODE", "").lower() in ("1", "true", "yes"):
+        return _deterministic_build_query_plan(original)
 
     active = model or load_query_planner_model()
+    if active is None:
+        return _deterministic_build_query_plan(original)
 
     schema = r'''RETURN ONE JSON OBJECT:
 
@@ -2319,31 +2928,7 @@ def build_query_plan(question: str, *, model: StructuredModel | None = None) -> 
 
 
 
-    scope, conf, reason = _repair_scope(original, "uncertain", 0.0)
-
-    intents = [] if scope == "out_of_scope" else _fallback_intents(original)
-
-    return QueryPlan(
-
-        original_query=original,
-
-        resolved_query=original,
-
-        domain_decision=scope,
-
-        domain_confidence=conf,
-
-        domain_reason=reason,
-
-        is_multi_intent=len(intents) > 1,
-
-        intents=intents,
-
-        preserved_terms=_dedupe([*_preserved(original), *_constraints(original)], 28),
-
-        confidence=min(0.80, max((i.confidence for i in intents), default=0.0)),
-
-    )
+    return _deterministic_build_query_plan(original)
 
 
 
@@ -2435,9 +3020,17 @@ def plan_to_frame(plan: QueryPlan, *, intent_index: int = 0) -> SemanticQueryFra
 
     facets = []
 
-    if intent.target:
+    target_clean = intent.target
+    if target_clean and _cf(target_clean) in {
+        "null", "none", "n/a", "na", "unknown", "nil", "undefined",
+        "not applicable", "the institution", "institution", "iit jodhpur",
+        "iitj", "iit", "the institute", "institute", "campus", "college", "university",
+        "indian institute of technology jodhpur",
+    }:
+        target_clean = None
 
-        facets.append(QueryFacet("target", intent.target, required=True, importance=1.0))
+    if target_clean:
+        facets.append(QueryFacet("target", target_clean, required=True, importance=1.0))
 
     facets.extend(QueryFacet("attribute", attr, required=True, importance=1.0) for attr in intent.requested_attributes)
 
@@ -2450,8 +3043,6 @@ def plan_to_frame(plan: QueryPlan, *, intent_index: int = 0) -> SemanticQueryFra
         if _cf(term) and _cf(term) in intent_text
 
     ]
-
-
 
     # Always retain explicit constraints in the frame even if they were not
 
@@ -2467,13 +3058,14 @@ def plan_to_frame(plan: QueryPlan, *, intent_index: int = 0) -> SemanticQueryFra
 
         semantic_query=intent.retrieval_query,
 
-        target=intent.target,
+        target=target_clean,
 
         request_type=intent.request_type,
 
         facets=tuple(facets),
 
-        qualifiers=tuple(Qualifier("qualifier", q) for q in intent.qualifiers),
+        qualifiers=tuple(str(q.value if hasattr(q, "value") else q) for q in intent.qualifiers),
+        structured_qualifiers=tuple(Qualifier("qualifier", str(q.value if hasattr(q, "value") else q)) for q in intent.qualifiers),
 
         conditions=tuple(local_conditions),
 
@@ -2517,7 +3109,7 @@ def plan_to_query(plan: QueryPlan, *, intent_index: int = 0) -> Query:
 
 
 
-def retrieval_queries_from_plan(plan: QueryPlan, *, limit: int = 3) -> tuple[str, ...]:
+def retrieval_queries_from_plan(plan: QueryPlan, *, limit: int = 5) -> tuple[str, ...]:
 
     out = [plan.resolved_query or plan.original_query]
 
@@ -2530,6 +3122,41 @@ def retrieval_queries_from_plan(plan: QueryPlan, *, limit: int = 3) -> tuple[str
         if intent.retrieval_query:
 
             out.append(intent.retrieval_query)
+
+    # For multi-part queries or queries with multiple distinct preserved facets,
+    # include specific topic/facet terms to ensure each asked part can retrieve evidence.
+    primary_target = getattr(plan, "target", None) or (plan.intents[0].target if plan.intents else None)
+    target_str = str(primary_target).strip() if primary_target else ""
+    orig_cf = (plan.resolved_query or plan.original_query or "").casefold()
+
+    for term in getattr(plan, "preserved_terms", ()) or ():
+        t_clean = str(term).strip()
+        words = t_clean.split()
+        if 2 <= len(words) <= 6 and t_clean.casefold() not in {"iit jodhpur", orig_cf}:
+            if target_str and target_str.casefold() not in {"iit jodhpur"} and target_str.casefold() not in t_clean.casefold():
+                facet_q = f"{target_str} {t_clean}"
+            else:
+                facet_q = t_clean
+            out.append(facet_q)
+
+    # Recover institutional policy formulations for domain-wide entities (fees, dining, housing)
+    # where individual programme queries otherwise displace general policy documents.
+    if any(k in orig_cf for k in ("hostel", "mess", "dining")):
+        if "mess" in orig_cf and "hostel" in orig_cf:
+            out.append("semester fee hostel mess charges")
+        elif "mess" in orig_cf or "dining" in orig_cf:
+            out.append("campus mess dining meal charges")
+    elif any(k in orig_cf for k in ("fee", "tuition", "semester fee", "paisa", "paise", "rupaye", "rupees", "kharch", "kharcha")):
+        out.append("tuition fee semester fee structure")
+        if any(s in orig_cf for s in ("first semester", "1st semester", "semester", "dena padega")):
+            out.append("first semester fee structure finance")
+
+    if any(k in orig_cf for k in ("mtech", "m.tech")) and any(k in orig_cf for k in ("option", "kya-kya", "kya kya", "programme", "program", "branch", "list", "offer")):
+        out.append("Postgraduate M.Tech programs")
+        out.append("M.Tech programmes list")
+    elif any(k in orig_cf for k in ("btech", "b.tech")) and any(k in orig_cf for k in ("option", "kya-kya", "kya kya", "programme", "program", "branch", "list", "offer")):
+        out.append("Undergraduate B.Tech programs")
+        out.append("B.Tech programmes list")
 
     return tuple(_dedupe(out, limit))
 
@@ -2585,7 +3212,15 @@ def intent_units_from_plan(plan: QueryPlan, *, limit: int = 8) -> tuple[dict[str
 
             "retrieval_query": intent.retrieval_query,
 
-            "retrieval_queries": tuple(_dedupe([intent.retrieval_query, question], 2)),
+            "retrieval_queries": tuple(_dedupe(
+                [
+                    intent.retrieval_query,
+                    question,
+                    *((f"{intent.target} financial assistance",) if (intent.target and "fellowship" in question.casefold() and "financial assistance" not in question.casefold()) else ()),
+                    *((f"{intent.target} fellowship",) if (intent.target and "financial assistance" in question.casefold() and "fellowship" not in question.casefold()) else ()),
+                ],
+                3,
+            )),
 
             "query": query,
 
@@ -2600,13 +3235,10 @@ def intent_units_from_plan(plan: QueryPlan, *, limit: int = 8) -> tuple[dict[str
 
 
 __all__ = [
-
     "ScopeDecision", "QueryIntentPlan", "QueryPlan", "DEFAULT_INSTITUTION_SCOPE",
-
     "QUERY_PLANNER_SYSTEM_PROMPT", "build_query_plan", "load_query_planner_model",
-
     "should_stop_pipeline", "plan_to_frame", "plan_to_query",
-
     "retrieval_queries_from_plan", "intent_units_from_plan",
-
+    "QueryRoute", "classify_query_route",
+    "_deterministic_build_query_plan", "_deterministic_intents",
 ]

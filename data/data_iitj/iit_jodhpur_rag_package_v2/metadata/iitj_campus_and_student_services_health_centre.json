@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_campus_and_student_services_health_centre",
+  "title": "Primary Health Centre (PHC) & Medical Services",
+  "category": "campus_and_student_services",
+  "subcategory": "health_centre",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/campus_and_student_services/health_centre.md",
+  "docx_path": "documents/campus_and_student_services/health_centre.docx",
+  "knowledge_path": "knowledge/campus_and_student_services/health_centre.md",
+  "markdown_hash": "1060fbfc6322a0bb2d822cd815085c74092000f67ca71993ac01c4a9b0d7bda9",
+  "docx_hash": "7b630f64ec0452999a19fd9382a2347dad1f627dbd4c31be7caba77d4db214f7",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/health-center/en/health-center",
+    "https://www.iitj.ac.in/health-center/en/contact",
+    "https://www.iitj.ac.in/health-center/en/empanelled-hospitals"
+  ],
+  "unit_ids": [
+    "4735757f789487e5",
+    "8d044f046739cf49",
+    "6ae0cbd2e87ae85e",
+    "f4daeb68c68e4cd7",
+    "5f3b7d78b55379c9",
+    "e72ddf65a2d6ddb4",
+    "0f34a72103ce4ae9",
+    "2505c46db9995ae4"
+  ],
+  "aliases": [
+    "Primary Health Centre (PHC) & Medical Services",
+    "Health Centre",
+    "PHC",
+    "Campus Health Centre",
+    "IIT Jodhpur Hospital",
+    "Campus Clinic"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "emergency_contacts.json",
+    "student_services.json"
+  ],
+  "claim_ids": [
+    "claim_phc_telephone"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

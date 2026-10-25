@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_chemistry_curriculum",
+  "title": "Chemistry \u2014 Curriculum",
+  "category": "departments/chemistry",
+  "subcategory": "curriculum",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/departments/chemistry/curriculum.md",
+  "docx_path": "documents/departments/chemistry/curriculum.docx",
+  "knowledge_path": "knowledge/departments/chemistry/curriculum.md",
+  "markdown_hash": "fad16e622bafc021f8c34007e6b382fb0546b4504cc051975f91003916204634",
+  "docx_hash": "f953f480ae5f52a87eca2046300ba866da776fc18555025ad259d1fa9c2f32ed",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/2-yr-MSc-Chemistry-curriculum-638760103884361118.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/chemistry/en/curriculum"
+  ],
+  "unit_ids": [
+    "ea001ba0aaa52ad3",
+    "2c4425b35de329fc",
+    "9528a58ed5c6169f",
+    "8589d4aae8541294",
+    "f4889512fe9e7da0",
+    "75e8cbca3fdf39a2"
+  ],
+  "aliases": [
+    "Chemistry \u2014 Curriculum",
+    "Curriculum"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

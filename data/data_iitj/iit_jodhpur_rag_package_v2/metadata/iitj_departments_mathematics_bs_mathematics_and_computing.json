@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mathematics_bs_mathematics_and_computing",
+  "title": "B.S. in Mathematics and Computing",
+  "category": "departments/mathematics",
+  "subcategory": "bs_mathematics_and_computing",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mathematics/bs_mathematics_and_computing.md",
+  "docx_path": "documents/departments/mathematics/bs_mathematics_and_computing.docx",
+  "knowledge_path": "knowledge/departments/mathematics/bs_mathematics_and_computing.md",
+  "markdown_hash": "e73e2db6a65942e3ac2e1f433e185365eb69e58cdb569bd265683d30da4260f7",
+  "docx_hash": "c0bcc5320b077ac0adbd0c8bbc2c1bedbdc6ea15ddb6132c3b601bf09f4d825f",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/PageImages/Gallery/06-2026/Concept-Note-BS-Mathematics-Computing-639161752393828689.pdf",
+    "https://www.iitj.ac.in/mathematics/en/undergraduate-programs"
+  ],
+  "unit_ids": [
+    "663354d25453115b",
+    "6eb43888f72b91ed",
+    "cb671c50c0dce379",
+    "85e71d002eed48e4",
+    "bb036cd9e8435f2a",
+    "211040104a6da0ea",
+    "a89cc68bc6c8b27d",
+    "0f934fed5b2b89c4"
+  ],
+  "aliases": [
+    "B.S. in Mathematics and Computing",
+    "Bs Mathematics And Computing",
+    "BS Math and Computing",
+    "BS-M&C",
+    "Mathematics and Computing B.S."
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [
+    "claim_bs_math_credits"
+  ],
+  "conflict_ids": [
+    "CONF-IITJ-003"
+  ],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "RECONCILED"
+  }
+}

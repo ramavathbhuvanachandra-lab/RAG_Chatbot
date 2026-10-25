@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_aerospace_engineering_general_information",
+  "title": "Aerospace Engineering \u2014 General Information",
+  "category": "departments/aerospace_engineering",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/aerospace_engineering/general_information.md",
+  "docx_path": "documents/departments/aerospace_engineering/general_information.docx",
+  "knowledge_path": "knowledge/departments/aerospace_engineering/general_information.md",
+  "markdown_hash": "c0f409aa8016dd24bf7b2d5188a997736ec5171c15b2db3272f536cf3b5e6d67",
+  "docx_hash": "8da9ca0f5753d150a1b5b376cecc7670d6b99947a0b59f396908f6246cb7dff2",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/aero/en/pg",
+    "https://www.iitj.ac.in/aero/en/ug"
+  ],
+  "unit_ids": [
+    "4768b02b5e37bc34",
+    "5d1fe6cc9d4e7620",
+    "7254ef39f8671169",
+    "497cda6fa789a36c",
+    "483afa9dfa460776",
+    "555987721157d216",
+    "a08680bc37b48998",
+    "72a2290949ea37f8"
+  ],
+  "aliases": [
+    "Aerospace Engineering \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

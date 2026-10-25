@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_academics_registration",
+  "title": "Office of Academics \u2014 Registration",
+  "category": "offices_and_administration/office_of_academics",
+  "subcategory": "registration",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_academics/registration.md",
+  "docx_path": "documents/offices_and_administration/office_of_academics/registration.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_academics/registration.md",
+  "markdown_hash": "6ae790217e3efa94ac5f18d2e7eb1a86d5b5b90edb07a497bd8cddca33884759",
+  "docx_hash": "426f478203d431526a3423e06201a70dfbad1191ff939dd84045098ef8f6876b",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.2%20Limits%20on%20Registration",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.4%20Change%20of%20Registration%20from%20B.%20Tech.%20Programme%20to%20B.Tech.-%20M.%20Tech.%20dual%20degree%20Programme",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.4%20Change%20of%20Registration%20from%20Full-Time%20to%20Part-Time/External%20Ph.D.%20Programme",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.3%20Change%20of%20Registration%20from%20Part-Time%20M.Tech.%20to%20Part-Time%20Ph.D.%20Program",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top3.%20Registration",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.1%20Limits%20on%20Registration",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top26.8%20Cancellation%20of%20Registration",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.2%20Change%20of%20Registration%20from%20M.Tech.%20Programme%20to%20M.Tech.-Ph.D.%20dual%20degree%20Programme",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "Office of Academics \u2014 Registration",
+    "Registration"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "administrative_offices.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

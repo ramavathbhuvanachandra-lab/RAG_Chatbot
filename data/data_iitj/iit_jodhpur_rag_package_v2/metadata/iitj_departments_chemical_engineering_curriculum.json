@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_chemical_engineering_curriculum",
+  "title": "Chemical Engineering \u2014 Curriculum",
+  "category": "departments/chemical_engineering",
+  "subcategory": "curriculum",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/departments/chemical_engineering/curriculum.md",
+  "docx_path": "documents/departments/chemical_engineering/curriculum.docx",
+  "knowledge_path": "knowledge/departments/chemical_engineering/curriculum.md",
+  "markdown_hash": "cd75bfb6a1a2659dec1fac3f1dca5b7041be43cb949e508ed7069018e53ab2b4",
+  "docx_hash": "fe83a11110eb643c382f9e34dc64ef54aa6e08370c49711b6934f2c27751c4b7",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/02-2025/Post-Graduate-Time-Table-Semester-1-AY-202223-CE-638755646269961713.pdf",
+    "https://www.iitj.ac.in/Chemical-Engineering/en/Curriculum",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/chemical-engineering/en/program-structure",
+    "https://www.iitj.ac.in/chemical-engineering/en/courses"
+  ],
+  "unit_ids": [
+    "994c4e5e4d900d6c",
+    "d67ae80b262bef10",
+    "cbee78c341bcaea4",
+    "4a726f5eea28f320"
+  ],
+  "aliases": [
+    "Chemical Engineering \u2014 Curriculum",
+    "Curriculum"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

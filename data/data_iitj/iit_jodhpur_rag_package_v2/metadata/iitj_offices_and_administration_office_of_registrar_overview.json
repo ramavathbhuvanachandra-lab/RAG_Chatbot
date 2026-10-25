@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_registrar_overview",
+  "title": "Office of Registrar \u2014 Overview",
+  "category": "offices_and_administration/office_of_registrar",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_registrar/overview.md",
+  "docx_path": "documents/offices_and_administration/office_of_registrar/overview.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_registrar/overview.md",
+  "markdown_hash": "357a2fe296cb9ff5fa0d601a36f56530313629eb4c2a7fdc7315435f758fb91f",
+  "docx_hash": "99089c52ed23fafcea7a0711e03fb43800ac855098ec3ba2f4a6f9cc4638c4dc",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-registrar/en/office-of-registrar",
+    "https://www.iitj.ac.in/office-of-registrar/en/Office-of-Registrar"
+  ],
+  "unit_ids": [
+    "4ad420b0214c12ef",
+    "ce72ace3076a556b",
+    "ad8ba12526904284",
+    "2964cedbc3428990"
+  ],
+  "aliases": [
+    "Office of Registrar \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_design_general_information",
+  "title": "School of Design \u2014 General Information",
+  "category": "schools/design",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/design/general_information.md",
+  "docx_path": "documents/schools/design/general_information.docx",
+  "knowledge_path": "knowledge/schools/design/general_information.md",
+  "markdown_hash": "a62f54964be47a470194d78aa015b23714f6179f237f6376d5bd9c9804a17b62",
+  "docx_hash": "8b9148d3f9feeaa66a88d7a8837d786d0073e78a81aea9bc2df6fc910f1ddb03",
+  "source_urls": [
+    "https://alpha.iitj.ac.in/school-of-design/en/2023-2025",
+    "https://www.iitj.ac.in/PageImages/Gallery/07-2026/MDes-Smart-Product-Design-Admission-Spot-Round-Results-2026-27-639201619206658505.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/07-2026/MDes-XR-Design-Admission-Spot-Round-Results-2026-27-639201619667753079.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/07-2026/Notification-for-Spot-Round-MDes-639198201633913540.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/07-2026/Status-of-vacant-seats-for-the-Spot-Round-of-MDes-in-Smart-Product-Design-639198200978352972.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/07-2026/Status-of-vacant-seats-for-the-Spot-Round-of-MDes-in-XR-Design-639198201349040833.pdf",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/list-of-provisionally-selected-candidates",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/schedule-for-written-test-interview",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/list-of-shortlisted-candidates",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/mdes-xr-design-26-27",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/mdes-smart-product-design-26-27%20%20",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-design/en/xrd-2025-2027",
+    "https://www.iitj.ac.in/school-of-design/en/spd-2025-2027",
+    "https://www.iitj.ac.in/school-of-design/en/2023-2025",
+    "https://www.iitj.ac.in/school-of-design/en/2024-2026",
+    "https://www.iitj.ac.in/school-of-design/en/masters-of-design-(mdes)",
+    "https://www.iitj.ac.in/school-of-design/en/phd-in-design"
+  ],
+  "unit_ids": [
+    "475ab979a152e0b0",
+    "a82d09a53c8ca3ee",
+    "88622025eb0dbe96",
+    "97cea58eb0318041",
+    "80dae45ff91dab20",
+    "3cdc4956d29ce301",
+    "472dbfdcd33ad63f",
+    "7e3cffd10bd8e0a5"
+  ],
+  "aliases": [
+    "School of Design \u2014 General Information",
+    "General Information",
+    "SOD",
+    "SOD IIT Jodhpur",
+    "Design School",
+    "M.Des Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "institution_profile.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

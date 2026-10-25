@@ -1,0 +1,27 @@
+{
+  "residential_policy": "Compulsory residential campus for all full-time undergraduate and postgraduate scholars.",
+  "room_amenities": [
+    "Individual single air-cooled room for students with private balcony and natural lighting.",
+    "Furnished with bed, study table, ergonomic study chair, bookshelf, and integrated wardrobe.",
+    "High-speed Gigabit Ethernet LAN port and campus-wide Wi-Fi connectivity in every room.",
+    "24/7 power backup through central diesel generator substations."
+  ],
+  "common_facilities": [
+    "Common rooms with LED televisions, table tennis, indoor board games, and daily newspapers.",
+    "Modern fully equipped gymnasium inside the residential hostel zone.",
+    "High-capacity automated commercial washing machines and laundry service points.",
+    "Reverse osmosis (RO) purified drinking water dispensers on every residential floor."
+  ],
+  "dining_and_mess": [
+    "Centrally air-conditioned dining halls (New Mess & Old Mess) serving vegetarian and non-vegetarian food.",
+    "Four daily meals: Breakfast, Lunch, Evening Snacks with Tea/Coffee, and Dinner.",
+    "Student Mess Committees oversee menu planning, raw ingredient quality, and kitchen hygiene.",
+    "Night canteen facilities operating until 2:00 AM during examination periods."
+  ],
+  "wardens_and_governance": {
+    "chief_warden": "Office of Chief Warden, Student Welfare",
+    "hostel_wardens": "Assigned faculty wardens and resident wardens residing in faculty housing nearby.",
+    "caretakers": "24/7 resident caretakers stationed in each hostel entrance block.",
+    "security": "Biometric entry system and round-the-clock security guards at every wing."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_research_and_technology_facilities_facilities",
+  "title": "Facilities",
+  "category": "research_and_technology_facilities",
+  "subcategory": "facilities",
+  "document_type": "research_profile",
+  "language": "en",
+  "markdown_path": "knowledge/research_and_technology_facilities/facilities.md",
+  "docx_path": "documents/research_and_technology_facilities/facilities.docx",
+  "knowledge_path": "knowledge/research_and_technology_facilities/facilities.md",
+  "markdown_hash": "a2a9be3ca2fe2691c96291f623f913258e07db54c11aee59b10fe6019f93e091",
+  "docx_hash": "228ee9f46a643b6eb8401cea1870bd2a834e1038c872f95c6e5f305ceb0bc275",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/01-2025/Booking-for-Internal-Sample-638727044829473292.pdf",
+    "https://www.iitj.ac.in/PageImages/Tenders/08-2026/Miscellaneous-Civil-Works-at-RIG-SRIG-Lab-W-17-Berm-CRF-and-BSBE-Department-IIT-Jodhpur.-639215182449482912.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/aiot-fab-facility/en/aiot-fab-facility",
+    "https://www.iitj.ac.in/tisc/en/facilities-resources",
+    "https://www.iitj.ac.in/health-center/en/health-center",
+    "https://www.iitj.ac.in/crf/en/booking-for-internal-sample",
+    "https://www.iitj.ac.in/crf/en/crf",
+    "https://www.iitj.ac.in/main/en/campus-infrastructure",
+    "https://www.iitj.ac.in/office-of-students/en/hostels",
+    "https://www.iitj.ac.in/centre-of-excellence-on-arts-and-digital-immersion/en/iitjxpati-artist-in-residency",
+    "https://www.iitj.ac.in/Tenders"
+  ],
+  "unit_ids": [
+    "0953b3f67602f5e1",
+    "37b1cfa2a53e066a",
+    "e4b3843e6ed31740",
+    "332c58dd2f5d3d0b",
+    "fe3b3f7cdfc7a8cf",
+    "a364ebd08d4028e3",
+    "14d704c9cb35c74b",
+    "abff12892a2b5c37"
+  ],
+  "aliases": [
+    "Facilities"
+  ],
+  "related_datasets": [
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [
+    "claim_cif_instruments",
+    "claim_cleanroom_standards"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

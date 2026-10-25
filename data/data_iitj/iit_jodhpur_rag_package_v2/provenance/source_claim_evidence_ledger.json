@@ -1,0 +1,426 @@
+[
+  {
+    "claim_id": "claim_tuition_btech_moe",
+    "domain": "academic_fees_and_scholarships",
+    "entity": "B.Tech Tuition Fee",
+    "claim_value": "\u20b91,00,000 per semester",
+    "conditions": "100% waiver for SC/ST/PwD; 100% remission for income <1L; 2/3rd remission for income 1-5L",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_finance_academic_fees_and_scholarships"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_tuition_itep_2026",
+    "domain": "academic_fees_and_scholarships",
+    "entity": "ITEP Tuition Fee",
+    "claim_value": "\u20b950,000 per semester",
+    "conditions": "AY 2026-2027 approved fee matrix; SC/ST/PwD exempted",
+    "source_url": "https://www.iitj.ac.in/itep/en/admissions",
+    "verified_in_documents": [
+      "iitj_finance_academic_fees_and_scholarships",
+      "iitj_programs_itep_overview"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_tuition_mba_sme",
+    "domain": "academic_fees_and_scholarships",
+    "entity": "MBA Tuition Fee",
+    "claim_value": "\u20b92,25,000 per semester",
+    "conditions": "Batch 2026-2028; 1.5x SAARC / 2.0x Non-SAARC; SC/ST/PwD exempted",
+    "source_url": "https://www.iitj.ac.in/schools/en/eligibility-criteria-and-selection-process",
+    "verified_in_documents": [
+      "iitj_finance_academic_fees_and_scholarships",
+      "iitj_admissions_mba_admissions"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_one_time_admission_fee",
+    "domain": "academic_fees_and_scholarships",
+    "entity": "One-Time Admission Fee",
+    "claim_value": "\u20b93,800 one-time",
+    "conditions": "Applicable at initial admission across all degree programmes",
+    "source_url": "https://www.iitj.ac.in/itep/en/admissions",
+    "verified_in_documents": [
+      "iitj_finance_academic_fees_and_scholarships"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_one_time_refundable_deposit",
+    "domain": "academic_fees_and_scholarships",
+    "entity": "Refundable Caution Deposit",
+    "claim_value": "\u20b98,000 one-time",
+    "conditions": "Refundable upon graduation or formal withdrawal after no-dues clearance",
+    "source_url": "https://www.iitj.ac.in/itep/en/admissions",
+    "verified_in_documents": [
+      "iitj_finance_academic_fees_and_scholarships"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_tuition_waiver_sc_st_pwd",
+    "domain": "academic_fees_and_scholarships",
+    "entity": "SC/ST/PwD Tuition Waiver",
+    "claim_value": "100% Tuition Fee Exemption",
+    "conditions": "Mandated national policy across all IIT undergraduate programmes",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_finance_academic_fees_and_scholarships"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_tuition_remission_income_lt_1lpa",
+    "domain": "academic_fees_and_scholarships",
+    "entity": "Low-Income Full Remission",
+    "claim_value": "100% Tuition Fee Remission",
+    "conditions": "Family gross annual income below \u20b91,00,000",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_finance_academic_fees_and_scholarships"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_tuition_remission_income_1_to_5lpa",
+    "domain": "academic_fees_and_scholarships",
+    "entity": "Partial Income Remission",
+    "claim_value": "2/3rd Tuition Remission",
+    "conditions": "Family gross annual income between \u20b91,00,000 and \u20b95,00,000 (Student pays \u20b933,333/sem)",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_finance_academic_fees_and_scholarships"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_visitor_hostel_charges",
+    "domain": "hostels_and_housing",
+    "entity": "Visitor Hostel Room Rent",
+    "claim_value": "\u20b9450/day (double, without bedding), \u20b9750/day (single), \u20b92,175/month for long stay",
+    "conditions": "Excluding GST for external visitors; without GST for IITJ members; applies to PhD post-thesis",
+    "source_url": "https://www.iitj.ac.in/office-of-students/en/hostel-booking",
+    "verified_in_documents": [
+      "iitj_hostels_and_housing_visitor_hostel_accommodation_and_charges"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_phc_telephone",
+    "domain": "emergency_contacts",
+    "entity": "Primary Health Centre Emergency Number",
+    "claim_value": "0291-280-1190",
+    "conditions": "24/7 round-the-clock emergency medical desk",
+    "source_url": "https://www.iitj.ac.in/campus-life/en/health-care",
+    "verified_in_documents": [
+      "iitj_campus_and_student_services_health_centre"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_security_control_telephone",
+    "domain": "emergency_contacts",
+    "entity": "Campus Security Headquarters",
+    "claim_value": "0291-280-1591",
+    "conditions": "24/7 security dispatch and control desk",
+    "source_url": "https://www.iitj.ac.in/campus-life/en/security",
+    "verified_in_documents": [
+      "iitj_offices_and_administration_office_of_security_transports_overview"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_main_gate_security",
+    "domain": "emergency_contacts",
+    "entity": "Main Gate Visitor Checkpost",
+    "claim_value": "0291-280-1961",
+    "conditions": "24/7 NH-62 Main Entrance Gate",
+    "source_url": "https://www.iitj.ac.in/campus-life/en/security",
+    "verified_in_documents": [
+      "iitj_offices_and_administration_office_of_security_transports_overview"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_estate_emergency",
+    "domain": "emergency_contacts",
+    "entity": "Office of Estate Electrical Emergency",
+    "claim_value": "0291-280-1600",
+    "conditions": "Power and water emergency maintenance response",
+    "source_url": "https://www.iitj.ac.in/campus-life/en/security",
+    "verified_in_documents": [
+      "iitj_offices_and_administration_office_of_estate_overview"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_bs_math_credits",
+    "domain": "curriculum_credits",
+    "entity": "B.S. in Mathematics and Computing Total Credits",
+    "claim_value": "74 credits",
+    "conditions": "42 Core + 12 Elective + 6 Open + 2 Internship + 12 Thesis",
+    "source_url": "https://www.iitj.ac.in/PageImages/Gallery/06-2026/Concept-Note-BS-Mathematics-Computing-639161752393828689.pdf",
+    "verified_in_documents": [
+      "iitj_departments_mathematics_bs_mathematics_and_computing"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_minor_math_credits",
+    "domain": "curriculum_credits",
+    "entity": "Minor in Mathematics and Computing Total Credits",
+    "claim_value": "19 credits",
+    "conditions": "7 prescribed courses (Statistical Computation, Linear Algebra, Modern Algebra, Cryptography, etc.)",
+    "source_url": "https://www.iitj.ac.in/mathematics/en/undergraduate-programs",
+    "verified_in_documents": [
+      "iitj_departments_mathematics_minor_mathematics_and_computing"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_btech_duration",
+    "domain": "academic_programmes",
+    "entity": "B.Tech Programme Duration",
+    "claim_value": "4 standard years",
+    "conditions": "Minimum 4 years, maximum allowable duration 6 years",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_departments_computer_science_and_engineering_overview"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_mtech_duration",
+    "domain": "academic_programmes",
+    "entity": "M.Tech Programme Duration",
+    "claim_value": "2 standard years",
+    "conditions": "Minimum 2 years, maximum allowable duration 4 years",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_admissions_mtech_admissions"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_msc_duration",
+    "domain": "academic_programmes",
+    "entity": "M.Sc Programme Duration",
+    "claim_value": "2 standard years",
+    "conditions": "Minimum 2 years, maximum allowable duration 3 years",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_admissions_msc_admissions",
+      "iitj_departments_mathematics_msc_mathematics"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_mba_duration",
+    "domain": "academic_programmes",
+    "entity": "MBA Programme Duration",
+    "claim_value": "2 standard years",
+    "conditions": "Minimum 2 years, maximum allowable duration 3 years",
+    "source_url": "https://www.iitj.ac.in/schools/en/eligibility-criteria-and-selection-process",
+    "verified_in_documents": [
+      "iitj_admissions_mba_admissions"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_phd_duration",
+    "domain": "academic_programmes",
+    "entity": "Ph.D Programme Duration",
+    "claim_value": "4 standard years",
+    "conditions": "Minimum 3 years, maximum allowable duration 6 years",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_admissions_phd_admissions"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_btech_admission_route",
+    "domain": "admissions",
+    "entity": "B.Tech Admission Authority",
+    "claim_value": "JEE (Advanced) via JoSAA / CSAB",
+    "conditions": "Top 2.5 lakh qualifiers in JEE (Main) eligible for JEE (Advanced)",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_admissions_general_admission_regulations"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_mtech_admission_route",
+    "domain": "admissions",
+    "entity": "M.Tech Admission Authority",
+    "claim_value": "GATE qualification via COAP Portal",
+    "conditions": "Minimum 60% marks or 6.0/10 CGPA in qualifying bachelor's degree (55% or 5.5 for SC/ST/PwD)",
+    "source_url": "https://www.iitj.ac.in/materials-engineering/en/regulations",
+    "verified_in_documents": [
+      "iitj_admissions_mtech_admissions"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_msc_admission_route",
+    "domain": "admissions",
+    "entity": "M.Sc Admission Authority",
+    "claim_value": "IIT JAM via Centralized Counseling (JOAPS)",
+    "conditions": "Minimum 55% aggregate or 5.5/10 CGPA (50% or 5.0 for SC/ST/PwD)",
+    "source_url": "https://iitj.ac.in/academics/misc.php?id=advertisements",
+    "verified_in_documents": [
+      "iitj_admissions_msc_admissions",
+      "iitj_admissions_msc_seat_matrix"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_mba_admission_route",
+    "domain": "admissions",
+    "entity": "MBA Selection Mechanism",
+    "claim_value": "Common Admission Test (CAT) + Virtual Interview",
+    "conditions": "Composite score weighting: CAT score, academic profile, gender diversity, work experience",
+    "source_url": "https://www.iitj.ac.in/schools/en/eligibility-criteria-and-selection-process",
+    "verified_in_documents": [
+      "iitj_admissions_mba_admissions"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_itep_admission_route",
+    "domain": "admissions",
+    "entity": "ITEP Admission Route",
+    "claim_value": "National Common Entrance Test (NCET) conducted by NTA",
+    "conditions": "Merit list counseling through NCTE / IIT Jodhpur portal",
+    "source_url": "https://www.iitj.ac.in/itep/en/admissions",
+    "verified_in_documents": [
+      "iitj_programs_itep_overview"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_attendance_requirement",
+    "domain": "academic_regulations",
+    "entity": "Minimum Attendance Threshold",
+    "claim_value": "75% of scheduled sessions",
+    "conditions": "Attendance below 75% results in grade award restriction or 'W' withdrawal grade",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_admissions_general_admission_regulations"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_branch_change_cgpa",
+    "domain": "academic_regulations",
+    "entity": "Discipline Change CGPA Threshold",
+    "claim_value": "Minimum 8.0 CGPA",
+    "conditions": "At the conclusion of the second semester without any backlog course",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_admissions_general_admission_regulations"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_academic_probation",
+    "domain": "academic_regulations",
+    "entity": "Academic Probation Trigger",
+    "claim_value": "SGPA or CGPA < 5.0",
+    "conditions": "Student placed on academic probation with restricted credit registration",
+    "source_url": "https://www.iitj.ac.in/office-of-academics/en/academic-regulations",
+    "verified_in_documents": [
+      "iitj_admissions_general_admission_regulations"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_campus_land_area",
+    "domain": "institutional_identity",
+    "entity": "Campus Land Area",
+    "claim_value": "852 acres",
+    "conditions": "Located at Karwar, Nagaur Road, Jodhpur",
+    "source_url": "https://iitj.ac.in/",
+    "verified_in_documents": [
+      "iitj_institute_overview_overview"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_establishment_year",
+    "domain": "institutional_identity",
+    "entity": "Establishment Year",
+    "claim_value": "2008",
+    "conditions": "Established by Government of India Ministry of Human Resource Development",
+    "source_url": "https://iitj.ac.in/",
+    "verified_in_documents": [
+      "iitj_institute_overview_overview"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_placement_recruiter_amex",
+    "domain": "placements_and_careers",
+    "entity": "American Express Corporate Placement",
+    "claim_value": "Pre-Placement Talk & Hiring Session Verified",
+    "conditions": "Recruitment drive conducted for B.Tech & M.Tech graduates",
+    "source_url": "https://spc.iitj.ac.in/",
+    "verified_in_documents": [
+      "iitj_campus_and_student_services_career_and_placement_cell"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_placement_recruiter_ey",
+    "domain": "placements_and_careers",
+    "entity": "EY Corporate Placement",
+    "claim_value": "Pre-Placement Talk & Hiring Session Verified",
+    "conditions": "Recruitment drive conducted for undergraduate and postgraduate cohorts",
+    "source_url": "https://spc.iitj.ac.in/",
+    "verified_in_documents": [
+      "iitj_campus_and_student_services_career_and_placement_cell"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_placement_recruiter_cognizant",
+    "domain": "placements_and_careers",
+    "entity": "Cognizant Corporate Placement",
+    "claim_value": "Technology Hiring Session Verified",
+    "conditions": "Recruitment drive conducted through Career & Placement Cell",
+    "source_url": "https://spc.iitj.ac.in/",
+    "verified_in_documents": [
+      "iitj_campus_and_student_services_career_and_placement_cell"
+    ],
+    "verification_status": "VERIFIED_GROUND_TRUTH"
+  },
+  {
+    "claim_id": "claim_cif_instruments",
+    "domain": "research_facilities",
+    "entity": "Central Instrumentation Facility Key Equipment",
+    "claim_value": "HRTEM, FESEM, XRD, and 500 MHz NMR",
+    "conditions": "Open to internal researchers and external academic/industrial users",
+    "source_url": "https://www.iitj.ac.in/research/en/central-instrumentation-facility",
+    "verified_in_documents": [
+      "iitj_research_and_technology_facilities_facilities"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  },
+  {
+    "claim_id": "claim_cleanroom_standards",
+    "domain": "research_facilities",
+    "entity": "Nanofabrication Cleanroom Standards",
+    "claim_value": "ISO Class 5 (Class 1,000) & ISO Class 7 (Class 10,000)",
+    "conditions": "Dedicated semiconductor lithography and thin-film sensor deposition",
+    "source_url": "https://www.iitj.ac.in/research/en/cleanroom-and-nanofabrication",
+    "verified_in_documents": [
+      "iitj_research_and_technology_facilities_facilities"
+    ],
+    "verification_status": "VERIFIED_OFFICIAL_DIRECTIVE"
+  }
+]

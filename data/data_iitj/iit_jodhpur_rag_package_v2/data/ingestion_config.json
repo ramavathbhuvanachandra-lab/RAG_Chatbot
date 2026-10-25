@@ -1,0 +1,10 @@
+{
+  "consumer_target": "React RAG Chatbot Ingestion Pipeline",
+  "docx_glob_pattern": "documents/**/*.docx",
+  "metadata_sidecar_pattern": "metadata/*.json",
+  "structured_data_dir": "data/",
+  "isolated_documents_dir": "documents/",
+  "canonical_knowledge_dir": "knowledge/",
+  "double_indexing_protection": true,
+  "supported_loader": "DirectoryLoader(..., glob='**/*.docx', loader_cls=Docx2txtLoader)"
+}

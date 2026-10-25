@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mathematics_minor_mathematics_and_computing",
+  "title": "Minor in Mathematics and Computing",
+  "category": "departments/mathematics",
+  "subcategory": "minor_mathematics_and_computing",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mathematics/minor_mathematics_and_computing.md",
+  "docx_path": "documents/departments/mathematics/minor_mathematics_and_computing.docx",
+  "knowledge_path": "knowledge/departments/mathematics/minor_mathematics_and_computing.md",
+  "markdown_hash": "e3fc971edbe0ca7d217025fe798e9e04e048d04a7d31edab40db7ba8ebf5b7aa",
+  "docx_hash": "46cd65ff9fa0cfdbec3d6db4c08dc1af8455b3433e15e0199e9f799cc09c7547",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/mathematics/en/undergraduate-programs"
+  ],
+  "unit_ids": [
+    "663354d25453115b",
+    "6eb43888f72b91ed",
+    "cb671c50c0dce379",
+    "85e71d002eed48e4",
+    "bb036cd9e8435f2a",
+    "211040104a6da0ea",
+    "a89cc68bc6c8b27d",
+    "0f934fed5b2b89c4"
+  ],
+  "aliases": [
+    "Minor in Mathematics and Computing",
+    "Minor Mathematics And Computing",
+    "Minor in Math"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [
+    "claim_minor_math_credits"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

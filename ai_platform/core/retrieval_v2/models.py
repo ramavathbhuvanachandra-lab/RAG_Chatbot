@@ -114,7 +114,7 @@ class QuerySpec:
 @dataclass(frozen=True)
 class RetrievedDocument:
     """
-    A document returned by a retrieval backend.
+    A document returned by a retrieval engine.
 
     Dense and lexical scores are preserved independently so later ranking
     layers can combine them without losing provenance.

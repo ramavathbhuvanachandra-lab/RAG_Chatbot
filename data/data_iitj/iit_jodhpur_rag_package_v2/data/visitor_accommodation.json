@@ -1,0 +1,41 @@
+{
+  "institution_id": "iitj",
+  "coordinating_office": "Office of Students / Hostel Administration",
+  "short_term_rates_01_to_10_days": [
+    {
+      "category": "Visitors and Executive Students",
+      "room_type": "Hostel Room Rent (without bedding)",
+      "double_occupancy_per_day": 450,
+      "single_occupancy_per_day": 750,
+      "tax": "Excluding GST"
+    },
+    {
+      "category": "Visitors and Executive Students",
+      "room_type": "Hostel Room Rent (with 1 bedding set)",
+      "double_occupancy_per_day": 600,
+      "single_occupancy_per_day": 900,
+      "tax": "Excluding GST"
+    },
+    {
+      "category": "Students, Staff, and Faculty of IIT Jodhpur",
+      "room_type": "Hostel Room Rent (without bedding)",
+      "double_occupancy_per_day": 300,
+      "single_occupancy_per_day": 500,
+      "tax": "Excluding GST (exempt)"
+    },
+    {
+      "category": "Students, Staff, and Faculty of IIT Jodhpur",
+      "room_type": "Hostel Room Rent (with 1 bedding set)",
+      "double_occupancy_per_day": 400,
+      "single_occupancy_per_day": 600,
+      "tax": "Excluding GST (exempt)"
+    }
+  ],
+  "long_term_bookings_11_days_to_6_months": {
+    "rate_per_month": 2175,
+    "rate_under_one_month": 2175,
+    "tax": "Plus GST for visitors; without GST for IIT Jodhpur students and staff",
+    "phd_post_thesis_policy": "Applicable to PhD students wishing to avail hostel accommodation for >1 month following thesis submission without paying semester fee."
+  },
+  "booking_procedure": "Online application routed through the Office of Students hostel booking portal."
+}

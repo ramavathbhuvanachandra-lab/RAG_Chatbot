@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_design_curriculum",
+  "title": "School of Design \u2014 Curriculum",
+  "category": "schools/design",
+  "subcategory": "curriculum",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/schools/design/curriculum.md",
+  "docx_path": "documents/schools/design/curriculum.docx",
+  "knowledge_path": "knowledge/schools/design/curriculum.md",
+  "markdown_hash": "88ee0547a7a0415a222047395b0b9626515223ec9257974a0745cc4f39a78828",
+  "docx_hash": "ec9bfd446023090c7cc02f655bc734aabfa2ff872818ee131b099d69d228b18c",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-design/en/mdes-xr-design",
+    "https://www.iitj.ac.in/school-of-design/en/phd-in-design"
+  ],
+  "unit_ids": [
+    "93a0a3d394f8b831",
+    "e0c2b4136a51c691",
+    "d5986fe4e7372cb1",
+    "997b88cd9bb59609",
+    "b065b40b5f0a7cc7",
+    "8b89b7a94ce90f99"
+  ],
+  "aliases": [
+    "School of Design \u2014 Curriculum",
+    "Curriculum",
+    "SOD",
+    "SOD IIT Jodhpur",
+    "Design School",
+    "M.Des Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

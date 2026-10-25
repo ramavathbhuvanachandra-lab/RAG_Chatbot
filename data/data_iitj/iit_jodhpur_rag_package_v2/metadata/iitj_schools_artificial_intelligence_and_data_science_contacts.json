@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_artificial_intelligence_and_data_science_contacts",
+  "title": "School of Artificial Intelligence and Data Science \u2014 Contacts",
+  "category": "schools/artificial_intelligence_and_data_science",
+  "subcategory": "contacts",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/contacts.md",
+  "docx_path": "documents/schools/artificial_intelligence_and_data_science/contacts.docx",
+  "knowledge_path": "knowledge/schools/artificial_intelligence_and_data_science/contacts.md",
+  "markdown_hash": "6f4f12beb4ee6b0aaae7f78e3a9e9a825c3392ecafd95ddf8e6cd9daaa03ae22",
+  "docx_hash": "2cc11ebeff147b450787f6c00848926f0e08cb33ac5988ee6945077bef383f0d",
+  "source_urls": [
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Projects",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Project-Positions",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/projects",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/project-positions"
+  ],
+  "unit_ids": [
+    "0d2918946b702a25",
+    "fb85b66c8006f0f7",
+    "26b83c793575e4d1",
+    "fc5bc304c5451156",
+    "c7cd01dba3636f36",
+    "7a54cd2dfdede24d",
+    "0728e2d7566aacff",
+    "10ddbcf2282fcf73"
+  ],
+  "aliases": [
+    "School of Artificial Intelligence and Data Science \u2014 Contacts",
+    "Contacts",
+    "SAIDE",
+    "AIDE IIT Jodhpur",
+    "School of AI"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_finance_academic_fees_and_scholarships",
+  "title": "Academic Fees, Tuition Waivers, and Scholarships",
+  "category": "finance",
+  "subcategory": "academic_fees_and_scholarships",
+  "document_type": "fee_structure",
+  "language": "en",
+  "markdown_path": "knowledge/finance/academic_fees_and_scholarships.md",
+  "docx_path": "documents/finance/academic_fees_and_scholarships.docx",
+  "knowledge_path": "knowledge/finance/academic_fees_and_scholarships.md",
+  "markdown_hash": "2408a5f5f9da5735e76bd3644da63d2f27245ac077c418fac05e25861eccb29f",
+  "docx_hash": "42101ffc27ac067077a2cd4e43f780ecdd6295d5253a6bc3229266d4eb52e6e8",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/itep/en/admissions",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations"
+  ],
+  "unit_ids": [
+    "d68f1a1e9927eadf",
+    "401a77b60bb3ded1",
+    "3bf1250a86639f8e",
+    "7beef34b8ce9f4aa",
+    "e3e1809193123332",
+    "46fe96196216bbda"
+  ],
+  "aliases": [
+    "Academic Fees, Tuition Waivers, and Scholarships",
+    "Academic Fees And Scholarships",
+    "Tuition Fees",
+    "IIT Jodhpur Fee Structure",
+    "Fee Waivers and Remissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "fees_and_scholarships.json"
+  ],
+  "claim_ids": [
+    "claim_tuition_btech_moe",
+    "claim_tuition_itep_2026",
+    "claim_tuition_mba_sme",
+    "claim_one_time_admission_fee",
+    "claim_one_time_refundable_deposit",
+    "claim_tuition_waiver_sc_st_pwd",
+    "claim_tuition_remission_income_lt_1lpa",
+    "claim_tuition_remission_income_1_to_5lpa"
+  ],
+  "conflict_ids": [
+    "CONF-IITJ-001",
+    "CONF-IITJ-002"
+  ],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "RECONCILED"
+  }
+}

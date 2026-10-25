@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_bioscience_and_bioengineering_research",
+  "title": "Bioscience and Bioengineering \u2014 Research",
+  "category": "departments/bioscience_and_bioengineering",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/bioscience_and_bioengineering/research.md",
+  "docx_path": "documents/departments/bioscience_and_bioengineering/research.docx",
+  "knowledge_path": "knowledge/departments/bioscience_and_bioengineering/research.md",
+  "markdown_hash": "b67fe6be050d71c0084c7d1040c39f20af357b7b7288ea754f418396fab674f9",
+  "docx_hash": "e8a0370095988375ddbb32fb528a9fd372220f6f95b8631bbaa1656c02936129",
+  "source_urls": [
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Cell-Molecular-Physiology-Laboratory",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Environmental-Biotechnology",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Biomaterials-Tissue-Engineering",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Chemical-Biology-Drug-Design?ep=fw",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Molecular-Microbiology-Microbial-Genomics?ep=fw",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Biophysics",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Computational-Biology-Bioinformatics",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Molecular-Motors-Cell-Motility",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/Neuroscience-Neuro-Engineering",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/laboratories"
+  ],
+  "unit_ids": [
+    "1003e863fe212cb0",
+    "b2cf4b1d5eb43871",
+    "31865158be4d2d42",
+    "e3876e05ef2d0b03"
+  ],
+  "aliases": [
+    "Bioscience and Bioengineering \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "departments.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

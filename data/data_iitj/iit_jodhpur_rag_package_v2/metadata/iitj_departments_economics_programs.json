@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_economics_programs",
+  "title": "Economics \u2014 Programs",
+  "category": "departments/economics",
+  "subcategory": "programs",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/economics/programs.md",
+  "docx_path": "documents/departments/economics/programs.docx",
+  "knowledge_path": "knowledge/departments/economics/programs.md",
+  "markdown_hash": "c29627156fa74d6548b6f65c287752e987957c778897d0ef41c145c722c4b8b4",
+  "docx_hash": "1c81ac340cc264a03512701fa0f340e6a1a56734fa21d573f51152f98a0c7cb0",
+  "source_urls": [
+    "https://www.iitj.ac.in/People/List?dept=economics&c=1c8346b0-07a4-401e-bce0-7f571bb4fabd&ln=en",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/economics/en/phd-program"
+  ],
+  "unit_ids": [
+    "d293be86cdec8ac8",
+    "6a3d300b272c5100"
+  ],
+  "aliases": [
+    "Economics \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_deputy_director_overview",
+  "title": "Office of Deputy Director \u2014 Overview",
+  "category": "offices_and_administration/office_of_deputy_director",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_deputy_director/overview.md",
+  "docx_path": "documents/offices_and_administration/office_of_deputy_director/overview.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_deputy_director/overview.md",
+  "markdown_hash": "95c003dade92e3537f5cb5b6e53658bd076ec8bef33e1432c0726dd695c2ce14",
+  "docx_hash": "b70d4042134ce0275892a6d2492f391f02cb987410bbe7abfaea96020a2a7aac",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/Office-of-Deputy-Director/en/Office-of-Deputy-Director",
+    "https://www.iitj.ac.in/office-of-deputy-director/en/office-of-deputy-director"
+  ],
+  "unit_ids": [
+    "15599777f5122585",
+    "9bfea903134755b7",
+    "3ecfb1f22ca0a642",
+    "cb5640ed188258c0"
+  ],
+  "aliases": [
+    "Office of Deputy Director \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

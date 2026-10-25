@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_programs_mtech_general_information",
+  "title": "M.Tech \u2014 General Information",
+  "category": "programs/mtech",
+  "subcategory": "general_information",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/programs/mtech/general_information.md",
+  "docx_path": "documents/programs/mtech/general_information.docx",
+  "knowledge_path": "knowledge/programs/mtech/general_information.md",
+  "markdown_hash": "b0649f69942adce5653fdc39b66759fe0da579f3093ce3c0d5c359a6ef186b0c",
+  "docx_hash": "5b2d77305035fc680e8a69d14aafb51e30fd8d296eb6cdb0bc99f51a341ee38b",
+  "source_urls": [
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/admission-to-mtech-degree-programmes",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/executive-m.tech.-in-intelligent-vlsi-systems-ivs-july-2025-session",
+    "https://www.iitj.ac.in/PageImages/Gallery/07-2026/Round-wise-cutoff-COAP-2026-639211098634005083.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/advertisements"
+  ],
+  "unit_ids": [
+    "062ffc2fdd4dba57",
+    "d4a4172a28ead033",
+    "bbb9f309201ddcd1",
+    "896e4a108233d30b"
+  ],
+  "aliases": [
+    "M.Tech \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "degrees.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

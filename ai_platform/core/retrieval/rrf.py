@@ -103,13 +103,23 @@ def _channel_names(
     if count == 2:
         return DEFAULT_CHANNEL_NAMES
 
+    if count > 0 and count % 3 == 0:
+        # Standard 3-channel layout per query: (dense, bm25, lexical)
+        names: list[str] = []
+        for _ in range(count // 3):
+            names.extend(["dense", "bm25", "lexical"])
+        return tuple(names)
+
     return tuple(f"channel_{index + 1}" for index in range(count))
 
 
 def _coerce_candidate(item: Any) -> RetrievalCandidate:
     if isinstance(item, RetrievalCandidate):
         return item
-
+    if isinstance(item, tuple) and len(item) == 2 and hasattr(item[0], "page_content"):
+        # (Document, score) pair
+        doc, _ = item
+        return RetrievalCandidate.from_document(doc)
     return RetrievalCandidate.from_document(item)
 
 
@@ -120,23 +130,26 @@ def _candidate_signal(
     rank: int,
     weight: float,
     query: str | None,
+    score: float | None = None,
 ) -> RetrievalSignal:
     """Create a canonical signal without assuming a document type."""
-    score: float | None = None
+    resolved_score: float | None = score
 
     # Preserve a score already attached to the candidate for the matching
     # conventional channel where available. We do not infer scores from
     # arbitrary document metadata.
-    provenance = candidate.provenance
-    if channel.casefold() == "dense":
-        score = provenance.dense_score
-    elif channel.casefold() == "bm25":
-        score = provenance.bm25_score
+    if resolved_score is None:
+        provenance = candidate.provenance
+        chan_lower = channel.casefold()
+        if chan_lower == "dense" or chan_lower.startswith("dense"):
+            resolved_score = provenance.dense_score
+        elif chan_lower == "bm25" or chan_lower.startswith("bm25"):
+            resolved_score = provenance.bm25_score
 
     return RetrievalSignal(
         channel=channel,
         rank=rank,
-        score=score,
+        score=resolved_score,
         weight=weight,
         query=query,
     )
@@ -159,14 +172,17 @@ def _merge_provenance(
     bm25_score: float | None = None
 
     for signal in signals:
-        if signal.channel.casefold() == "dense":
-            if dense_rank is None:
+        chan_lower = signal.channel.casefold()
+        if chan_lower == "dense" or chan_lower.startswith("dense"):
+            if dense_rank is None or signal.rank < dense_rank:
                 dense_rank = signal.rank
-                dense_score = signal.score
-        elif signal.channel.casefold() == "bm25":
-            if bm25_rank is None:
+                if signal.score is not None:
+                    dense_score = signal.score
+        elif chan_lower == "bm25" or chan_lower.startswith("bm25"):
+            if bm25_rank is None or signal.rank < bm25_rank:
                 bm25_rank = signal.rank
-                bm25_score = signal.score
+                if signal.score is not None:
+                    bm25_score = signal.score
 
     prior = candidate.provenance
     prior_signals = tuple(prior.signals)
@@ -213,6 +229,7 @@ def fuse_ranked_lists(
     channels: Sequence[str] | None = None,
     primary_query: str = "",
     retrieval_queries: Sequence[str] | None = None,
+    list_queries: Sequence[str] | None = None,
 ) -> tuple[RetrievalCandidate, ...]:
     """
     Fuse ranked retrieval lists into RetrievalCandidate objects.
@@ -234,6 +251,8 @@ def fuse_ranked_lists(
         Optional authoritative user query retained for provenance.
     retrieval_queries:
         Optional bounded query set retained for provenance.
+    list_queries:
+        Optional explicit per-list query associations.
 
     Returns
     -------
@@ -256,6 +275,23 @@ def fuse_ranked_lists(
         if str(query).strip()
     )
 
+    if list_queries is not None:
+        effective_list_queries = tuple(
+            str(q).strip() if q else None for q in list_queries
+        )
+    elif queries and len(lists) % len(queries) == 0:
+        l_per_q = len(lists) // len(queries)
+        effective_list_queries = tuple(
+            queries[i // l_per_q] for i in range(len(lists))
+        )
+    elif queries and len(lists) == len(queries):
+        effective_list_queries = tuple(queries)
+    else:
+        effective_list_queries = tuple(
+            (queries[i] if i < len(queries) else None)
+            for i in range(len(lists))
+        )
+
     scores: dict[str, float] = {}
     candidates: dict[str, RetrievalCandidate] = {}
     signals: dict[str, list[RetrievalSignal]] = {}
@@ -265,10 +301,24 @@ def fuse_ranked_lists(
     for list_index, ranked_items in enumerate(lists):
         weight = normalized_weights[list_index]
         channel = normalized_channels[list_index]
+        query_val = (
+            effective_list_queries[list_index]
+            if list_index < len(effective_list_queries)
+            else None
+        )
         seen_in_list: set[str] = set()
 
         for rank, item in enumerate(ranked_items, start=1):
-            candidate = _coerce_candidate(item)
+            item_score = None
+            if isinstance(item, tuple) and len(item) == 2 and hasattr(item[0], "page_content"):
+                candidate = _coerce_candidate(item[0])
+                try:
+                    item_score = float(item[1])
+                except (ValueError, TypeError):
+                    item_score = None
+            else:
+                candidate = _coerce_candidate(item)
+
             document_id = candidate.document_id
 
             if document_id in seen_in_list:
@@ -289,7 +339,8 @@ def fuse_ranked_lists(
                     channel=channel,
                     rank=rank,
                     weight=weight,
-                    query=(queries[list_index] if list_index < len(queries) else None),
+                    query=query_val,
+                    score=item_score,
                 )
             )
 

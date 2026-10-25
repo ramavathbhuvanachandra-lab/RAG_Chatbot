@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_admissions_non_degree_admissions",
+  "title": "Admission of Non-Degree and Casual Students",
+  "category": "admissions",
+  "subcategory": "non_degree_admissions",
+  "document_type": "admission_regulations",
+  "language": "en",
+  "markdown_path": "knowledge/admissions/non_degree_admissions.md",
+  "docx_path": "documents/admissions/non_degree_admissions.docx",
+  "knowledge_path": "knowledge/admissions/non_degree_admissions.md",
+  "markdown_hash": "faa6972bfc50528fa056fe1b91470303cdd869d58c8fe90bc6fe5da6dfe372e2",
+  "docx_hash": "98138a5107b627911f7d92e80b1cae26acc9c34babe30ff42f7fa9632af67d44",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations"
+  ],
+  "unit_ids": [],
+  "aliases": [
+    "Admission of Non-Degree and Casual Students",
+    "Non Degree Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "admission_routes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

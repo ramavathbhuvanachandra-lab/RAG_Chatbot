@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_bioscience_and_bioengineering_faculty",
+  "title": "Bioscience and Bioengineering \u2014 Faculty",
+  "category": "departments/bioscience_and_bioengineering",
+  "subcategory": "faculty",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/bioscience_and_bioengineering/faculty.md",
+  "docx_path": "documents/departments/bioscience_and_bioengineering/faculty.docx",
+  "knowledge_path": "knowledge/departments/bioscience_and_bioengineering/faculty.md",
+  "markdown_hash": "a7a19742ef45376911987ed407468da059f9f0fe18da4495539c1498fd432da0",
+  "docx_hash": "025219c140c4d99c038cb05231c96afd43cab94ce2cb79e040cb11eebb3a28f2",
+  "source_urls": [
+    "https://www.iitj.ac.in/m/Index/8009454c-7333-408e-8e1d-27c822a929e6?lg=en",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/faculty-members"
+  ],
+  "unit_ids": [
+    "c5d7d84678aad37b",
+    "7f7a8b59482565e8"
+  ],
+  "aliases": [
+    "Bioscience and Bioengineering \u2014 Faculty",
+    "Faculty"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

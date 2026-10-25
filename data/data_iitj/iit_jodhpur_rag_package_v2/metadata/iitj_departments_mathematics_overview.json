@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mathematics_overview",
+  "title": "Mathematics \u2014 Overview",
+  "category": "departments/mathematics",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mathematics/overview.md",
+  "docx_path": "documents/departments/mathematics/overview.docx",
+  "knowledge_path": "knowledge/departments/mathematics/overview.md",
+  "markdown_hash": "a078693581fca8abcf7d22880f2f33c45d0d2ddb7da118b8f32ff2d2c89ebc78",
+  "docx_hash": "59037aaa8eab5391b0f32f78da586c0ef7b95f63f70532481128cb6a6436fad7",
+  "source_urls": [
+    "https://www.iitj.ac.in/mathematics/en/latest-news?dsl=2&dslID=7c332bfe-4310-408d-a43f-477ef72b5bae",
+    "https://www.iitj.ac.in/PageImages/Gallery/06-2026/PROVISIONALLY-SHORTLISTED-CANDIDATES-FOR-MTECH-DCS-ADMISSION-IN-FULL-TIME-REGULAR-WITHOUT-FELLOWSHIP-CATAGORY-IN-MATHEMATICS-SEMESTER-I-AY-2026-27-639179181959456963.pdf",
+    "https://iitj.ac.in/PageImages/Gallery/06-2026/THE-MERIT-LIST-OF-PROVISIONALLY-SHORTLISTED-CANDIDATES-FOR-PhD-ADMISSIONS-IN-MATHEMATICS-SEMESTERI-AY-2026-27--639176393651039196.pdf",
+    "https://www.iitj.ac.in/PageImages/Gallery/06-2026/Concept-Note-BS-Mathematics-Computing-639161752393828689.pdf",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/mathematics/en/postgraduate-programs",
+    "https://www.iitj.ac.in/mathematics/en/mathematics",
+    "https://www.iitj.ac.in/mathematics/en/undergraduate-programs",
+    "https://www.iitj.ac.in/mathematics"
+  ],
+  "unit_ids": [
+    "d0674344f6e016a3",
+    "856becb473973337",
+    "13d5ea271cea7626",
+    "abef0be8d54f05ae",
+    "fb24b8142f7c4cec",
+    "36ba46bb1675c47b",
+    "ab3461a4394d0385",
+    "9e87506c03d56854"
+  ],
+  "aliases": [
+    "Mathematics \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

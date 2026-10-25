@@ -1,0 +1,16 @@
+{
+  "institution_scope": "Indian Institute of Technology Jodhpur (IITJ)",
+  "inclusions": [
+    "Official undergraduate, postgraduate, and doctoral degree regulations.",
+    "Verified fee structures, tuition remission policies, and fellowships.",
+    "Hostel accommodation, dining facilities, and visitor guest rates.",
+    "Campus health services, ambulance, and 24/7 security dispatch.",
+    "Academic departments, schools, and research centres."
+  ],
+  "exclusions": [
+    "Scraped navigation fragments, cookie consent notices, and broken tags.",
+    "Raw unparsed URLs and unparsed markdown links.",
+    "Commercial third-party advertising or unsubstantiated recruiter rankings.",
+    "Historical expired notices presented as active opportunities."
+  ]
+}

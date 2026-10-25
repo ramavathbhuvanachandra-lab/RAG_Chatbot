@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mathematics_msc_mathematics",
+  "title": "M.Sc. in Mathematics and Postgraduate Programmes",
+  "category": "departments/mathematics",
+  "subcategory": "msc_mathematics",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mathematics/msc_mathematics.md",
+  "docx_path": "documents/departments/mathematics/msc_mathematics.docx",
+  "knowledge_path": "knowledge/departments/mathematics/msc_mathematics.md",
+  "markdown_hash": "a9ccf21202eabc75a3fb3266d0fc3b1985a10db4b55b109c43d00a07ede89210",
+  "docx_hash": "1daf2b9d1b5030ec3841342bc9c9614a794adeabff15e9253ed65826c353ee2f",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/mathematics/en/m.sc",
+    "https://www.iitj.ac.in/mathematics/en/postgraduate-programs"
+  ],
+  "unit_ids": [
+    "d0674344f6e016a3",
+    "856becb473973337",
+    "13d5ea271cea7626",
+    "abef0be8d54f05ae",
+    "fb24b8142f7c4cec",
+    "36ba46bb1675c47b",
+    "ab3461a4394d0385",
+    "9e87506c03d56854"
+  ],
+  "aliases": [
+    "M.Sc. in Mathematics and Postgraduate Programmes",
+    "Msc Mathematics"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [
+    "claim_msc_duration"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

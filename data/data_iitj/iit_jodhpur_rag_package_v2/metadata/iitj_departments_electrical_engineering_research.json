@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_electrical_engineering_research",
+  "title": "Electrical Engineering \u2014 Research",
+  "category": "departments/electrical_engineering",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/electrical_engineering/research.md",
+  "docx_path": "documents/departments/electrical_engineering/research.docx",
+  "knowledge_path": "knowledge/departments/electrical_engineering/research.md",
+  "markdown_hash": "17806762dbcef882b63f22b0a9a4ffc2e27a415086399ba2ea1b4a23f7cc89e5",
+  "docx_hash": "afcc48fb7d469bcf2b4ff95c5f8a0cf4c40de6b0533ec9cdf52b49541814b35c",
+  "source_urls": [
+    "https://www.iitj.ac.in/Electrical-Engineering/en/Microelectronics-and-VLSI",
+    "http://home.iitj.ac.in/~singhak/wirelesscom/research.html#RFH",
+    "https://www.iitj.ac.in/Electrical-Engineering/en/Communication-Engineering",
+    "https://www.iitj.ac.in/Electrical-Engineering/en/RF,-Microwaves-and-Photonics",
+    "https://www.iitj.ac.in/Electrical-Engineering/en/Signal-Processing",
+    "https://www.iitj.ac.in/Electrical-Engineering/en/Control-Systems",
+    "https://www.iitj.ac.in/Electrical-Engineering/en/Power-Engineering",
+    "https://www.iitj.ac.in/Electrical-Engineering/en/Computing-Systems",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/electrical-engineering/en/research-overview"
+  ],
+  "unit_ids": [
+    "e45acb4034e2cdc1",
+    "a22eca23d01396d3",
+    "2b473719628b9738",
+    "9faed1d4ab21052f",
+    "ab19ad6586b57c36",
+    "bae38f4012501100",
+    "5136bbe9e99129b0",
+    "a99f92ec5482ed3c"
+  ],
+  "aliases": [
+    "Electrical Engineering \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "departments.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

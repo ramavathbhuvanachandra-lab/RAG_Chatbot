@@ -63,35 +63,33 @@ def find_location(query: str) -> dict[str, Any] | None:
     if not normalized_query:
         return None
 
+    best_match = None
+    best_match_len = 0
+
     for location in load_locations():
-
-        name = str(
-            location.get("name", "")
-        ).strip().lower()
-
+        name = str(location.get("name", "")).strip().lower()
         if name:
             pattern = r"\b" + re.escape(name) + r"\b"
-
             if re.search(pattern, normalized_query):
-                return location
+                match_len = len(name)
+                if match_len > best_match_len:
+                    best_match = location
+                    best_match_len = match_len
 
         aliases = location.get("aliases", [])
-
         if not isinstance(aliases, list):
             continue
 
         for alias in aliases:
-
-            alias_text = str(
-                alias or ""
-            ).strip().lower()
-
+            alias_text = str(alias or "").strip().lower()
             if not alias_text:
                 continue
 
             pattern = r"\b" + re.escape(alias_text) + r"\b"
-
             if re.search(pattern, normalized_query):
-                return location
+                match_len = len(alias_text)
+                if match_len > best_match_len:
+                    best_match = location
+                    best_match_len = match_len
 
-    return None
+    return best_match

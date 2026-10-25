@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_director_overview",
+  "title": "Office of Director \u2014 Overview",
+  "category": "offices_and_administration/office_of_director",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_director/overview.md",
+  "docx_path": "documents/offices_and_administration/office_of_director/overview.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_director/overview.md",
+  "markdown_hash": "65079d95f47728b35c685c80fefb1e0d5e57031c608746ab35b40d9f6d3c9449",
+  "docx_hash": "36f979a660d6e58ecb9cbe8c2e214d639d4089b8ca7662d628208babc179d76e",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-director/en/Office-of-Director",
+    "https://www.iitj.ac.in/office-of-director/en/office-of-director"
+  ],
+  "unit_ids": [
+    "936be479d2222df2",
+    "854fa274e8ed6d8a",
+    "9c23ab2b6b224d31",
+    "dd77c4feff548b13"
+  ],
+  "aliases": [
+    "Office of Director \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

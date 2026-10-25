@@ -1,0 +1,1298 @@
+[
+  {
+    "document_id": "iitj_academic_administration_registration",
+    "docx_file": "registration.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_general_admission_regulations",
+    "docx_file": "general_admission_regulations.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_mba_admissions",
+    "docx_file": "mba_admissions.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_msc_admissions",
+    "docx_file": "msc_admissions.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_msc_mtech_dual_degree_admissions",
+    "docx_file": "msc_mtech_dual_degree_admissions.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_msc_seat_matrix",
+    "docx_file": "msc_seat_matrix.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_mtech_admissions",
+    "docx_file": "mtech_admissions.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_mtech_phd_dual_degree_admissions",
+    "docx_file": "mtech_phd_dual_degree_admissions.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_non_degree_admissions",
+    "docx_file": "non_degree_admissions.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_admissions_phd_admissions",
+    "docx_file": "phd_admissions.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_campus_and_student_services_career_and_placement_cell",
+    "docx_file": "career_and_placement_cell.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_campus_and_student_services_happiness_initiative",
+    "docx_file": "happiness_initiative.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_campus_and_student_services_health_centre",
+    "docx_file": "health_centre.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_campus_and_student_services_sustainability",
+    "docx_file": "sustainability.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_aerospace_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_aerospace_engineering_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_facilities",
+    "docx_file": "facilities.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemical_engineering_curriculum",
+    "docx_file": "curriculum.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemical_engineering_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemical_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemical_engineering_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_curriculum",
+    "docx_file": "curriculum.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_facilities",
+    "docx_file": "facilities.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_rules_and_regulations",
+    "docx_file": "rules_and_regulations.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_civil_and_infrastructure_engineering_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_civil_and_infrastructure_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_civil_and_infrastructure_engineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_computer_science_and_engineering_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_computer_science_and_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_computer_science_and_engineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_economics_facilities",
+    "docx_file": "facilities.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_economics_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_economics_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_economics_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_economics_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_facilities",
+    "docx_file": "facilities.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_electronics_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_electronics_engineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_electronics_engineering_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_energy_and_automotive_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_energy_and_automotive_engineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_energy_and_automotive_engineering_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_environmental_and_sustainability_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_environmental_and_sustainability_engineering_sustainability",
+    "docx_file": "sustainability.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_materials_engineering_facilities",
+    "docx_file": "facilities.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_materials_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_materials_engineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_materials_engineering_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_bs_mathematics_and_computing",
+    "docx_file": "bs_mathematics_and_computing.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_curriculum",
+    "docx_file": "curriculum.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_minor_mathematics_and_computing",
+    "docx_file": "minor_mathematics_and_computing.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_msc_mathematics",
+    "docx_file": "msc_mathematics.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mechanical_engineering_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mechanical_engineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_mechanical_engineering_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_physics_facilities",
+    "docx_file": "facilities.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_physics_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_physics_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_physics_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_departments_physics_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_faculty_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_fallback_knowledge_buffer_general",
+    "docx_file": "knowledge_buffer_general.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_finance_academic_fees_and_scholarships",
+    "docx_file": "academic_fees_and_scholarships.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_hostel_accommodation_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_hostels_and_housing_visitor_hostel_accommodation_and_charges",
+    "docx_file": "visitor_hostel_accommodation_and_charges.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_institute_overview_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_2019_2025",
+    "docx_file": "2019_2025.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_academic_calendar",
+    "docx_file": "academic_calendar.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_academic_programs",
+    "docx_file": "academic_programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_director",
+    "docx_file": "director.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_information_regarding_accommodation_for_",
+    "docx_file": "information_regarding_accommodation_for_.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_why_pursue_a_career_iit_jodhpur",
+    "docx_file": "why_pursue_a_career_iit_jodhpur.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_computer_center_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_academic_progression",
+    "docx_file": "academic_progression.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_curriculum",
+    "docx_file": "curriculum.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_examinations_and_grading",
+    "docx_file": "examinations_and_grading.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_international_relations",
+    "docx_file": "international_relations.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_registration",
+    "docx_file": "registration.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_rules_and_regulations",
+    "docx_file": "rules_and_regulations.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_accounts_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_alumni_affairs_alumni",
+    "docx_file": "alumni.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_corporate_relations_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_corporate_relations_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_corporate_relations_registration",
+    "docx_file": "registration.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_deputy_director_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_deputy_director_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_director_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_estate_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_infrastructure_engineering_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_internal_audit_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_international_relations_international_relations",
+    "docx_file": "international_relations.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_international_relations_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_registrar_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_research_and_development_contacts",
+    "docx_file": "contacts.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_research_and_development_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_research_and_development_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_resources_and_alumni_alumni",
+    "docx_file": "alumni.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_security_transports_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_stores_and_purchase_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_placements_and_careers_placements",
+    "docx_file": "placements.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_btech_academic_progression",
+    "docx_file": "academic_progression.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_btech_curriculum",
+    "docx_file": "curriculum.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_btech_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_itep_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_ms_by_research_arts_and_digital_immersion",
+    "docx_file": "arts_and_digital_immersion.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_ms_by_research_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_ms_by_research_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_msc_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_mtech_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_mtech_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_phd_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_programs_phd_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_research_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_research_and_technology_facilities_facilities",
+    "docx_file": "facilities.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_research_platforms_digital_humanities_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_research_platforms_internet_of_things_and_applications_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_research_platforms_internet_of_things_and_applications_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_research_platforms_quantum_information_and_computation_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_rules_regulations_rules_and_regulations",
+    "docx_file": "rules_and_regulations.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_contacts",
+    "docx_file": "contacts.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_facilities",
+    "docx_file": "facilities.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_design_curriculum",
+    "docx_file": "curriculum.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_design_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_design_overview",
+    "docx_file": "overview.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_design_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_liberal_arts_curriculum",
+    "docx_file": "curriculum.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_liberal_arts_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_curriculum",
+    "docx_file": "curriculum.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_faculty",
+    "docx_file": "faculty.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_general_information",
+    "docx_file": "general_information.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_international_relations",
+    "docx_file": "international_relations.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_programs",
+    "docx_file": "programs.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_research",
+    "docx_file": "research.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_training",
+    "docx_file": "training.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  },
+  {
+    "document_id": "iitj_training_and_upskilling_training",
+    "docx_file": "training.docx",
+    "headings_match": true,
+    "tables_match": true,
+    "syntax_clean": true,
+    "parity_status": "PASS"
+  }
+]

@@ -56,6 +56,18 @@ def _split_coordinated(value: str) -> list[str]:
     if _protected_single_phrase(value):
         return []
     normalized = _clean(value)
+    both_match = re.match(
+        r"^(?:(?:can\s+you\s+)?(?:tell|give|show|provide|share)\s+me\s+)?both\s+(?:the\s+)?(.+?)\s+and\s+(?:the\s+)?(.+?)$",
+        normalized.strip(" ,;.?"),
+        flags=re.I,
+    )
+    if both_match:
+        part1 = _clean(both_match.group(1))
+        part2 = _clean(both_match.group(2))
+        if part1 and part2:
+            q1 = part1 if _starts_as_question(part1) else f"What is the {part1}"
+            q2 = part2 if _starts_as_question(part2) else f"What are the {part2}"
+            return [_ensure_question(q1), _ensure_question(q2)]
     matches = list(re.finditer(r"\s+(?:and|also)\s+", normalized, flags=re.I))
     for match in matches:
         left = _clean(normalized[:match.start()])

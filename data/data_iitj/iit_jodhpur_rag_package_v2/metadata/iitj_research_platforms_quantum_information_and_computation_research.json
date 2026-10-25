@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_research_platforms_quantum_information_and_computation_research",
+  "title": "Quantum Information and Computation \u2014 Research",
+  "category": "research_platforms/quantum_information_and_computation",
+  "subcategory": "research",
+  "document_type": "research_profile",
+  "language": "en",
+  "markdown_path": "knowledge/research_platforms/quantum_information_and_computation/research.md",
+  "docx_path": "documents/research_platforms/quantum_information_and_computation/research.docx",
+  "knowledge_path": "knowledge/research_platforms/quantum_information_and_computation/research.md",
+  "markdown_hash": "e6ab6f54ae4e9b96142d12711cf3558661c769cc1277f82de7e1f2ce30f3fc8c",
+  "docx_hash": "7b6930668b23563afeeed26c941bcacd487aec348fcedf47b285d03956d6c0db",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/qic/en/research-area",
+    "https://www.iitj.ac.in/qic/en/m.tech"
+  ],
+  "unit_ids": [
+    "3cdb976e20476e14",
+    "8544ad2c057de9da",
+    "390af0ee7508a0a1",
+    "73cfec9ceee54ed2"
+  ],
+  "aliases": [
+    "Quantum Information and Computation \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

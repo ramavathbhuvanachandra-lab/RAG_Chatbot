@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_stores_and_purchase_overview",
+  "title": "Office of Stores and Purchase \u2014 Overview",
+  "category": "offices_and_administration/office_of_stores_and_purchase",
+  "subcategory": "overview",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_stores_and_purchase/overview.md",
+  "docx_path": "documents/offices_and_administration/office_of_stores_and_purchase/overview.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_stores_and_purchase/overview.md",
+  "markdown_hash": "4ded1bb1980efa74d002646b257a0a25fb77f6e331f2e51584c5087a188ddc57",
+  "docx_hash": "f18b643a51f8995666e339f27535974fce7d5827a9fa382ba6d1cbed4f046263",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-stores-purchase/en/office-of-stores-and-purchase"
+  ],
+  "unit_ids": [
+    "ac93fc6abf71a967",
+    "3695188c83c95403"
+  ],
+  "aliases": [
+    "Office of Stores and Purchase \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_economics_facilities",
+  "title": "Economics \u2014 Facilities",
+  "category": "departments/economics",
+  "subcategory": "facilities",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/economics/facilities.md",
+  "docx_path": "documents/departments/economics/facilities.docx",
+  "knowledge_path": "knowledge/departments/economics/facilities.md",
+  "markdown_hash": "26408bff8939264804cc9f9afc2e1324ffbd4b17757e4d8785ea9b028561fbee",
+  "docx_hash": "7753f03fec71c50eacfc585330b1ed9717de47b989e59e47dcb1e83710a62fa3",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Computational-Economics-Lab"
+  ],
+  "unit_ids": [
+    "02e6f657c7f07115",
+    "4af36c0a1706e050"
+  ],
+  "aliases": [
+    "Economics \u2014 Facilities",
+    "Facilities"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

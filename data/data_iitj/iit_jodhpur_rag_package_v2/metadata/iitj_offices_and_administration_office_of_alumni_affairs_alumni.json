@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_alumni_affairs_alumni",
+  "title": "Office of Alumni Affairs \u2014 Alumni and Engagement",
+  "category": "offices_and_administration/office_of_alumni_affairs",
+  "subcategory": "alumni",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_alumni_affairs/alumni.md",
+  "docx_path": "documents/offices_and_administration/office_of_alumni_affairs/alumni.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_alumni_affairs/alumni.md",
+  "markdown_hash": "119cf995ac8ecbe0533cd40035e45ba84f82a907cab19c07f2fddc114b489bdc",
+  "docx_hash": "6f278e03f21b3814e007d0e5b207ed0a3250917853dfa160870bc63db3e3096c",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-alumni-affairs/en/Office-of-Alumni-Affairs"
+  ],
+  "unit_ids": [
+    "612d6484ade90af7",
+    "204227e1dc0386c7"
+  ],
+  "aliases": [
+    "Office of Alumni Affairs \u2014 Alumni and Engagement",
+    "Alumni"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

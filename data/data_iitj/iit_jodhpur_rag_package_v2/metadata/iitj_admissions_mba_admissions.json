@@ -1,0 +1,59 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_admissions_mba_admissions",
+  "title": "MBA Admission and Selection Process",
+  "category": "admissions",
+  "subcategory": "mba_admissions",
+  "document_type": "admission_regulations",
+  "language": "en",
+  "markdown_path": "knowledge/admissions/mba_admissions.md",
+  "docx_path": "documents/admissions/mba_admissions.docx",
+  "knowledge_path": "knowledge/admissions/mba_admissions.md",
+  "markdown_hash": "31ac3222ca14a2d5bda6955be6b232077e4d45084316ca243f66c5d0e7c09ae9",
+  "docx_hash": "cdc3ee0f85b374449878f63e10d8fc957ab63ab8a19e3b488b2f4e0695df59fe",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/schools/en/eligibility-criteria-and-selection-process"
+  ],
+  "unit_ids": [
+    "d1ed047993983189",
+    "434f1892a344d856",
+    "45b357f75173c39c",
+    "5acd96a84c15ea15",
+    "7aca3ed07c1f1762",
+    "386d9dd8c6f4b6a5"
+  ],
+  "aliases": [
+    "MBA Admission and Selection Process",
+    "Mba Admissions",
+    "SME",
+    "SME IIT Jodhpur",
+    "School of Management",
+    "Tech MBA"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "admission_routes.json",
+    "degrees.json",
+    "fees_and_scholarships.json",
+    "schools.json"
+  ],
+  "claim_ids": [
+    "claim_tuition_mba_sme",
+    "claim_mba_duration",
+    "claim_mba_admission_route"
+  ],
+  "conflict_ids": [
+    "CONF-IITJ-005"
+  ],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "RECONCILED"
+  }
+}

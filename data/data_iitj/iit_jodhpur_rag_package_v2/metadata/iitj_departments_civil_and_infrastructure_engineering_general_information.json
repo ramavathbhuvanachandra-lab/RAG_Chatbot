@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_civil_and_infrastructure_engineering_general_information",
+  "title": "Civil and Infrastructure Engineering \u2014 General Information",
+  "category": "departments/civil_and_infrastructure_engineering",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/civil_and_infrastructure_engineering/general_information.md",
+  "docx_path": "documents/departments/civil_and_infrastructure_engineering/general_information.docx",
+  "knowledge_path": "knowledge/departments/civil_and_infrastructure_engineering/general_information.md",
+  "markdown_hash": "c85cc0409764c01ac3e6f6063a1677c268566bb4b384702d409ed63a4def38a1",
+  "docx_hash": "cc9af273af25423b1712a2160e389ef57d03afed359c36fbc472707875ef7642",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/structural-engineering",
+    "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/geotechnical-engineering",
+    "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/geological-engineering",
+    "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/environmental-engineering",
+    "https://www.iitj.ac.in/civil-and-infrastructure-engineering/en/transportation-engineering"
+  ],
+  "unit_ids": [
+    "86e23ab6fa42f7ef",
+    "319543c97d71622b",
+    "be866ff57bceb5a8",
+    "d8beb6ead7766796",
+    "37eb67a91d21b0bc",
+    "9290aaf4cc0be90a",
+    "5d8351c60969b35b",
+    "95f20204a1462dc3"
+  ],
+  "aliases": [
+    "Civil and Infrastructure Engineering \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "departments.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

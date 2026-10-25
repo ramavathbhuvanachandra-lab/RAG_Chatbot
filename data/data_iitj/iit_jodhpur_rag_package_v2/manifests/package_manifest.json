@@ -1,0 +1,14 @@
+{
+  "package_name": "iit_jodhpur_rag_package_v2",
+  "version": "2.0.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "release_timestamp": "2026-10-23T22:37:11.974001+00:00",
+  "total_canonical_documents": 162,
+  "total_markdown_files": 162,
+  "total_docx_files": 162,
+  "total_metadata_sidecars": 162,
+  "total_structured_datasets": 26,
+  "zero_recrawl_verified": true,
+  "parity_guarantee": "100.0% Cryptographic and Semantic Equivalence"
+}

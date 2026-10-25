@@ -1,0 +1,27 @@
+[
+  {
+    "id": "student_wellbeing",
+    "name": "The Happiness Initiative & Counseling Cell",
+    "description": "Professional psychological counselors, student peer mentors, workshops on stress management and academic balance."
+  },
+  {
+    "id": "student_senate",
+    "name": "Student Senate",
+    "description": "Democratically elected student legislative body representing students across institute policy, academic, and hostel committees."
+  },
+  {
+    "id": "board_of_sports",
+    "name": "Board of Sports Activities (BSA)",
+    "description": "Organizes inter-hostel tournaments, annual sports meet (Varchas), and maintains campus athletic infrastructure."
+  },
+  {
+    "id": "cultural_and_tech_clubs",
+    "name": "Student Activity Centre (SAC) Clubs",
+    "description": "Music (Rhythm), Dance (Tadka), Drama (Thespians), Robotics, Programming Club (P-Club), and Astronomy Club."
+  },
+  {
+    "id": "grievance_redressal",
+    "name": "Student Grievance Redressal Committee",
+    "description": "Statutory body addressing academic, administrative, and hostel grievances in a time-bound confidential manner."
+  }
+]

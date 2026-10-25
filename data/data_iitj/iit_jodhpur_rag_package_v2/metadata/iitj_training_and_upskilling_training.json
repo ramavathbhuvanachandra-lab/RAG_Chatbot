@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_training_and_upskilling_training",
+  "title": "Office of Vocational Training and Upskilling (VTU)",
+  "category": "training_and_upskilling",
+  "subcategory": "training",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/training_and_upskilling/training.md",
+  "docx_path": "documents/training_and_upskilling/training.docx",
+  "knowledge_path": "knowledge/training_and_upskilling/training.md",
+  "markdown_hash": "a68fc32de00902445876adf1ff6e26db715856f6d29e43246bfa29c7f95a11e9",
+  "docx_hash": "4d8374ca7f7550a46b1340c214048965d9a58b8b92606f11a7eb996a8ab73280",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/vtu/en/about",
+    "https://www.iitj.ac.in/vtu/en/past-programmes"
+  ],
+  "unit_ids": [
+    "979091e2688042be",
+    "ae35ed84fdd08076",
+    "d55a95bac2310135",
+    "71d21c0f584baffd",
+    "d7a3bb9da2f9227f",
+    "900af01a9b190653",
+    "d315c678849bea11",
+    "2a30c71a6a1ff6bf"
+  ],
+  "aliases": [
+    "Office of Vocational Training and Upskilling (VTU)",
+    "Training",
+    "VTU",
+    "Vocational Training Centre",
+    "Skill Development"
+  ],
+  "related_datasets": [
+    "campus_locations.json",
+    "student_services.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

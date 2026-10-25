@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_programs_mtech_programs",
+  "title": "M.Tech \u2014 Programs",
+  "category": "programs/mtech",
+  "subcategory": "programs",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/programs/mtech/programs.md",
+  "docx_path": "documents/programs/mtech/programs.docx",
+  "knowledge_path": "knowledge/programs/mtech/programs.md",
+  "markdown_hash": "a777ef9d6d501885e6c18d974a284fa5e46d81f4584d9d3ea78ac0f763084ac1",
+  "docx_hash": "20e895e2e346aa808de2df6e2e1f8f3213bb4cf7993b06f415e0f73168234ce3",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/Admission-to-Postgraduate-Programs",
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/admission-to-postgraduate-programs"
+  ],
+  "unit_ids": [
+    "04ac57757ca1a028",
+    "5609825737a4e6e3",
+    "a5bd267a8d927033",
+    "192f127d3d57c70d",
+    "10db2773cca17bbc",
+    "66d030755e1539b0",
+    "aa220817eb3528a7",
+    "ff82a21857aa9615"
+  ],
+  "aliases": [
+    "M.Tech \u2014 Programs",
+    "Programs"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

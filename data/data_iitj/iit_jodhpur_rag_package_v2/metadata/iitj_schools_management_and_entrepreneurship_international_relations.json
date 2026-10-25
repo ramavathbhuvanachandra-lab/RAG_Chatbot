@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_management_and_entrepreneurship_international_relations",
+  "title": "School of Management and Entrepreneurship \u2014 International Relations",
+  "category": "schools/management_and_entrepreneurship",
+  "subcategory": "international_relations",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/management_and_entrepreneurship/international_relations.md",
+  "docx_path": "documents/schools/management_and_entrepreneurship/international_relations.docx",
+  "knowledge_path": "knowledge/schools/management_and_entrepreneurship/international_relations.md",
+  "markdown_hash": "b4f75e8f39172cab9424bfef3f0338c544f4acd8959dc47522aa54b76b4c5b2c",
+  "docx_hash": "498c2f7df9c57efd23ad2a87a1f8ee0066ea0352a9fec520262d3e6fb0dd3fe3",
+  "source_urls": [
+    "https://www.iitj.ac.in/office-of-international-relations/en/for-international-students",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/schools/en/eligibility-criteria-and-selection-process",
+    "https://www.iitj.ac.in/schools/en/how-to-apply"
+  ],
+  "unit_ids": [
+    "edeb6d1bae8fc1a8",
+    "d1ed047993983189",
+    "434f1892a344d856",
+    "45b357f75173c39c",
+    "5acd96a84c15ea15",
+    "7aca3ed07c1f1762",
+    "386d9dd8c6f4b6a5",
+    "a6cfa8b7f3f9a334"
+  ],
+  "aliases": [
+    "School of Management and Entrepreneurship \u2014 International Relations",
+    "International Relations",
+    "SME",
+    "SME IIT Jodhpur",
+    "School of Management",
+    "Tech MBA"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "fees_and_scholarships.json",
+    "placements_and_careers.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

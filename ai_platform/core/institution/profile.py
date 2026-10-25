@@ -30,7 +30,7 @@ class InstitutionProfile:
     answer_verbosity: str = "moderate"
 
     fallback_message: str = (
-        "I'm sorry, I don't know based on the available information."
+        "Sorry, I couldn't find reliable information about that in the available documents."
     )
 
     enable_semantic_query_understanding: bool = True

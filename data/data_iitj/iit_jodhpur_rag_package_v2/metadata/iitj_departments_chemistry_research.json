@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_chemistry_research",
+  "title": "Chemistry \u2014 Research",
+  "category": "departments/chemistry",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/chemistry/research.md",
+  "docx_path": "documents/departments/chemistry/research.docx",
+  "knowledge_path": "knowledge/departments/chemistry/research.md",
+  "markdown_hash": "a0bd5b2504da35aca2487766d9538e013dc077aedb3938dd89159fff4d9ff14a",
+  "docx_hash": "ac672f2429bb6bc3df1972c78a6f3020bc9462a04115370fa0e1fb6dfe92b16c",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/chemistry/en/about-research"
+  ],
+  "unit_ids": [
+    "4d134287831e127c",
+    "8936a22a722d3213"
+  ],
+  "aliases": [
+    "Chemistry \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "departments.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

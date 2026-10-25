@@ -1,0 +1,14 @@
+{
+  "institution_id": "iitj",
+  "classification_version": "2.0_deterministic",
+  "total_units_evaluated": 2641,
+  "tier_summary": {
+    "tier_a_core_retained": 837,
+    "tier_b_supporting_retained": 6,
+    "tier_review_buffered": 12,
+    "tier_c_low_priority_excluded": 12,
+    "tier_d_unusable_excluded": 1774,
+    "eligible_student_facing_retained": 843,
+    "excluded_from_primary_corpus": 1786
+  }
+}

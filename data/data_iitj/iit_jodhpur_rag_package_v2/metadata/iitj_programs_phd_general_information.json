@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_programs_phd_general_information",
+  "title": "Ph.D \u2014 General Information",
+  "category": "programs/phd",
+  "subcategory": "general_information",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/programs/phd/general_information.md",
+  "docx_path": "documents/programs/phd/general_information.docx",
+  "knowledge_path": "knowledge/programs/phd/general_information.md",
+  "markdown_hash": "37a1ddee6c1ee0c5948b90df4a6ff294acc4d5d9293f91eeca709be1993c1129",
+  "docx_hash": "e1fab6314bea203916ef6dac7c7ac6ac2ff21a75cbc291b4d1e1dcc44e67dbd6",
+  "source_urls": [
+    "https://www.iitj.ac.in/PageImages/Gallery/10-2025/PhD-CET-Shortlisted-Candidates-AY-202526-SEMESTERII-638975281897492078.pdf",
+    "http://iitj.ac.in/cete",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/hi_iitj/en/study-options",
+    "https://www.iitj.ac.in/cete/en/phd-program"
+  ],
+  "unit_ids": [
+    "fe55384319d90d49",
+    "1ca20db9ae585799",
+    "2f32e2a391db1f40",
+    "2624bad95f3629f9",
+    "d0298d63d2434d25",
+    "6efffb2624b0111c"
+  ],
+  "aliases": [
+    "Ph.D \u2014 General Information",
+    "General Information"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "degrees.json",
+    "institution_profile.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

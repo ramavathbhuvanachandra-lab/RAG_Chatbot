@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_research_and_development_contacts",
+  "title": "Office of Research and Development \u2014 Contacts",
+  "category": "offices_and_administration/office_of_research_and_development",
+  "subcategory": "contacts",
+  "document_type": "research_profile",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_research_and_development/contacts.md",
+  "docx_path": "documents/offices_and_administration/office_of_research_and_development/contacts.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_research_and_development/contacts.md",
+  "markdown_hash": "9fcb33499333f4e3dff9ce6df6c7d2b948597290a29c575740dd19c1c1655afa",
+  "docx_hash": "fe14f67d1ed79c777055a954e0fc637d927b020d99fa4d6b5d618d4395a38be7",
+  "source_urls": [
+    "http://ipr_rnd@iitj.ac.in/ravipandey@iitj.ac.in",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-research-development/en/ipr"
+  ],
+  "unit_ids": [
+    "32b1bc31f860be90",
+    "e2c561391fa9f9dd"
+  ],
+  "aliases": [
+    "Office of Research and Development \u2014 Contacts",
+    "Contacts"
+  ],
+  "related_datasets": [
+    "administrative_offices.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

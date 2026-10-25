@@ -45,6 +45,7 @@ PROFILE = InstitutionProfile(
     supported_languages=SUPPORTED_LANGUAGES,
     answer_tone="student_friendly",
     answer_verbosity="moderate",
+    fallback_message="Sorry, I couldn't find reliable information about that in the available IIT Jodhpur documents.",
 )
 
 PROFILE.validate()

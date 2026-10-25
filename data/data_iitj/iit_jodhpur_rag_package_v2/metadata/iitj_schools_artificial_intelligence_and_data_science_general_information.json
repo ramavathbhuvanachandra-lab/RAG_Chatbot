@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_artificial_intelligence_and_data_science_general_information",
+  "title": "School of Artificial Intelligence and Data Science \u2014 General Information",
+  "category": "schools/artificial_intelligence_and_data_science",
+  "subcategory": "general_information",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/general_information.md",
+  "docx_path": "documents/schools/artificial_intelligence_and_data_science/general_information.docx",
+  "knowledge_path": "knowledge/schools/artificial_intelligence_and_data_science/general_information.md",
+  "markdown_hash": "819c5e1c4eb5653ce859366930f36f09fbe085acef4a27aaedfc0b8c90d87cde",
+  "docx_hash": "6038a7f3b0a4a4955a3917ff71a4276a49ad405d0658054242ea0be236266227",
+  "source_urls": [
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Projects",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/Project-Positions",
+    "https://iitj.ac.in/",
+    "https://aide.iitj.ac.in/faculty/",
+    "https://aide.iitj.ac.in/labs/",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/ai-and-ds-ecosystem",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/projects",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/phd",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/faqs",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/mission-and-vision",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/campus"
+  ],
+  "unit_ids": [
+    "1cddcc941988139b",
+    "b26274fcbaa88cd2",
+    "0a72a9920afd44a4",
+    "78fab6a61291aaf8",
+    "0d2918946b702a25",
+    "fb85b66c8006f0f7",
+    "26b83c793575e4d1",
+    "fc5bc304c5451156"
+  ],
+  "aliases": [
+    "School of Artificial Intelligence and Data Science \u2014 General Information",
+    "General Information",
+    "SAIDE",
+    "AIDE IIT Jodhpur",
+    "School of AI"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "campus_locations.json",
+    "institution_profile.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

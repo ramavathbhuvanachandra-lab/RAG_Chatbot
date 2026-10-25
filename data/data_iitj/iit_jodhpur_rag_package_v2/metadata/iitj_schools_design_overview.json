@@ -1,0 +1,57 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_design_overview",
+  "title": "School of Design \u2014 Overview",
+  "category": "schools/design",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/design/overview.md",
+  "docx_path": "documents/schools/design/overview.docx",
+  "knowledge_path": "knowledge/schools/design/overview.md",
+  "markdown_hash": "d6b17aab95ae9848b93afc8ae03f47c0531b147c8fbc9b795c0405103a0c1a79",
+  "docx_hash": "358c0f3415c60946c7c576158d7d14baf6ad9a45eef726349df708707e8ac63f",
+  "source_urls": [
+    "https://www.iitj.ac.in/admission-postgraduate-programs/en/Rolling-advertisement-for-Admission-to-Interdisciplinary-and-Ph.D.-Programmes?ep=fw",
+    "https://www.iitj.ac.in/school-of-design/en/masters-of-design-(mdes)",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-design/en/admission-phd-program-in-design",
+    "https://www.iitj.ac.in/school-of-design",
+    "https://www.iitj.ac.in/school-of-design/en/mdes-in-smart-product-design",
+    "https://www.iitj.ac.in/school-of-design/en/school-of-design"
+  ],
+  "unit_ids": [
+    "3eb55d783ce04019",
+    "21c07c8c95a7821a",
+    "b5ab3a84d22d7e9c",
+    "ce438f092251f56d",
+    "ca994862415145c1",
+    "0a49affaf4af6b30",
+    "42c44e0002c9154b",
+    "f03809b5fc983c42"
+  ],
+  "aliases": [
+    "School of Design \u2014 Overview",
+    "Overview",
+    "SOD",
+    "SOD IIT Jodhpur",
+    "Design School",
+    "M.Des Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

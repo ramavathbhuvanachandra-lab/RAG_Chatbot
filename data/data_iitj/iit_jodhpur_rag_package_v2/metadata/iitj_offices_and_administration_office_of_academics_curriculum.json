@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_academics_curriculum",
+  "title": "Office of Academics \u2014 Curriculum",
+  "category": "offices_and_administration/office_of_academics",
+  "subcategory": "curriculum",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_academics/curriculum.md",
+  "docx_path": "documents/offices_and_administration/office_of_academics/curriculum.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_academics/curriculum.md",
+  "markdown_hash": "c13afe3e9b38d5045fcb8e80bd73cb07b3948f4cd76a0aa0fa2566733cca52ce",
+  "docx_hash": "27fde1f17869a078c8521e6202a0b792ad9df8319d65ec8da8440c082fb13b05",
+  "source_urls": [
+    "https://www.iitj.ac.in/office-of-academics/en/curriculum-for-programs-from-2019-to-2025",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.1%20Summer%20Courses",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.5%20Academic%20Credit%20Requirements%20for%20M.Sc.%20-%20M.Tech.%20Dual%20Degree",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.3%20Course%20Categories%20and%20Academic%20requirements%20for%20various%20programmes",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.7%20Academic%20Credit%20Requirements%20for%20Ph.D.%20Students",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.1%20Academic%20Load%20&%20Calculation%20of%20Credits%20for%20a%20Course%20for%20PG%20Programmes",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.2%20Course%20categories%20for%20Masters%E2%80%99%20programmes",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.3%20Academic%20Credit%20Requirements%20for%20M.Sc.%20Students",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.1%20Academic%20Load%20&%20Calculation%20of%20Credits%20for%20a%20Course%20for%20UG%20Programmes",
+    "https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.6%20Academic%20Credit%20Requirements%20for%20M.Tech.%20-%20Ph.D.%20Dual%20Degree",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations",
+    "https://www.iitj.ac.in/materials-engineering/en/curriculum"
+  ],
+  "unit_ids": [
+    "79d7a1f6a329a0bc",
+    "4b11817318297b59",
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0"
+  ],
+  "aliases": [
+    "Office of Academics \u2014 Curriculum",
+    "Curriculum"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "administrative_offices.json",
+    "degrees.json",
+    "rules_and_regulations.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_research_and_development_research",
+  "title": "Office of Research and Development \u2014 Research",
+  "category": "offices_and_administration/office_of_research_and_development",
+  "subcategory": "research",
+  "document_type": "research_profile",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_research_and_development/research.md",
+  "docx_path": "documents/offices_and_administration/office_of_research_and_development/research.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_research_and_development/research.md",
+  "markdown_hash": "7a7aacf4057f347afcbb1687f0a2d63240b8e23b250f5cb3e1d22f8085059bf0",
+  "docx_hash": "d6007e43eed674c65ba9737d611bfca2ca4017440ef7aa5ea6803fb4d31eaa2e",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-research-development/en/office-of-research-and-development"
+  ],
+  "unit_ids": [
+    "ae528c7c48f3c1bf",
+    "007db536f1e73767",
+    "11fc1622703fdf13",
+    "15d43b4acc79b967",
+    "772bfb39c7c50b29",
+    "dcb03c566521c6c6"
+  ],
+  "aliases": [
+    "Office of Research and Development \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "administrative_offices.json",
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

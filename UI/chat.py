@@ -42,6 +42,11 @@ from typing import Any
 
 import streamlit as st
 
+from ai_platform.service.assistant_service import (
+    handle_chat_turn,
+    ChatTurnRequest,
+)
+
 from backend.assistant_router import (
     assistant_router,
 )
@@ -683,20 +688,18 @@ def _render_structured_response(
 
 def get_response(
     question: str,
-    graph,
+    graph=None,
 ):
     """
-    Generate an answer for the currently active application chat.
+    Generate an answer for the currently active application chat through
+    the canonical assistant service.
 
-    Critical Phase-7 contract:
-
+    Critical session contract:
         session
             -> structured previous history
-            -> graph
-            -> conversation resolver
-            -> resolved question
-            -> retrieval
-            -> answer
+            -> canonical assistant service
+            -> structured navigation / emergency / RAG
+            -> grounded answer
     """
 
     try:
@@ -725,67 +728,26 @@ def get_response(
             )
         )
 
+        user_id = _get_current_user_id()
+
         # -------------------------------------------------
-        # Structured history is intentionally passed directly.
-        #
-        # DO NOT convert this into a string.
+        # Delegate turn handling to canonical service
         # -------------------------------------------------
 
-        route = assistant_router(
-            question
+        turn_request = ChatTurnRequest(
+            question=question,
+            chat_history=previous_history,
+            user_id=user_id,
+            session_id=session_id,
         )
 
-        final_response = (
-            _render_structured_response(
-                route
-            )
+        turn_response = handle_chat_turn(
+            turn_request
         )
-
-        total_time = 0.0
-
-        # -------------------------------------------------
-        # Existing RAG graph.
-        # -------------------------------------------------
-
-        if route.get(
-            "need_rag",
-            True,
-        ):
-
-            started = time.perf_counter()
-
-            result = graph.invoke(
-                {
-                    "question": question,
-                    "chat_history": previous_history,
-                }
-            )
-
-            total_time = (
-                time.perf_counter()
-                - started
-            )
-
-            answer = str(
-                result.get(
-                    "answer",
-                    "",
-                )
-            ).strip()
-
-            if final_response:
-
-                final_response += (
-                    "\n\n---\n\n"
-                )
-
-            final_response += (
-                answer
-            )
 
         return (
-            final_response.strip(),
-            total_time,
+            turn_response.formatted_response,
+            turn_response.latency_seconds,
         )
 
     except Exception as exc:
@@ -796,6 +758,7 @@ def get_response(
             f"❌ Error:\n\n{exc}",
             0.0,
         )
+
 
 
 # =========================================================

@@ -1,0 +1,1298 @@
+[
+  {
+    "document_id": "iitj_academic_administration_registration",
+    "title": "Registration",
+    "category": "academic_administration",
+    "docx_path": "documents/academic_administration/registration.docx",
+    "markdown_path": "knowledge/academic_administration/registration.md",
+    "metadata_path": "metadata/iitj_academic_administration_registration.json"
+  },
+  {
+    "document_id": "iitj_admissions_general_admission_regulations",
+    "title": "General Academic Admission Regulations and Categories",
+    "category": "admissions",
+    "docx_path": "documents/admissions/general_admission_regulations.docx",
+    "markdown_path": "knowledge/admissions/general_admission_regulations.md",
+    "metadata_path": "metadata/iitj_admissions_general_admission_regulations.json"
+  },
+  {
+    "document_id": "iitj_admissions_mba_admissions",
+    "title": "MBA Admission and Selection Process",
+    "category": "admissions",
+    "docx_path": "documents/admissions/mba_admissions.docx",
+    "markdown_path": "knowledge/admissions/mba_admissions.md",
+    "metadata_path": "metadata/iitj_admissions_mba_admissions.json"
+  },
+  {
+    "document_id": "iitj_admissions_msc_admissions",
+    "title": "Msc Admissions",
+    "category": "admissions",
+    "docx_path": "documents/admissions/msc_admissions.docx",
+    "markdown_path": "knowledge/admissions/msc_admissions.md",
+    "metadata_path": "metadata/iitj_admissions_msc_admissions.json"
+  },
+  {
+    "document_id": "iitj_admissions_msc_mtech_dual_degree_admissions",
+    "title": "Admission to M.Sc. \u2013 M.Tech. Dual Degree Programme",
+    "category": "admissions",
+    "docx_path": "documents/admissions/msc_mtech_dual_degree_admissions.docx",
+    "markdown_path": "knowledge/admissions/msc_mtech_dual_degree_admissions.md",
+    "metadata_path": "metadata/iitj_admissions_msc_mtech_dual_degree_admissions.json"
+  },
+  {
+    "document_id": "iitj_admissions_msc_seat_matrix",
+    "title": "M.Sc. Sanctioned Seat Matrix (AY 2026-27)",
+    "category": "admissions",
+    "docx_path": "documents/admissions/msc_seat_matrix.docx",
+    "markdown_path": "knowledge/admissions/msc_seat_matrix.md",
+    "metadata_path": "metadata/iitj_admissions_msc_seat_matrix.json"
+  },
+  {
+    "document_id": "iitj_admissions_mtech_admissions",
+    "title": "M.Tech Admissions and Regulations",
+    "category": "admissions",
+    "docx_path": "documents/admissions/mtech_admissions.docx",
+    "markdown_path": "knowledge/admissions/mtech_admissions.md",
+    "metadata_path": "metadata/iitj_admissions_mtech_admissions.json"
+  },
+  {
+    "document_id": "iitj_admissions_mtech_phd_dual_degree_admissions",
+    "title": "Admission to M.Tech. \u2013 Ph.D. Dual Degree Programme",
+    "category": "admissions",
+    "docx_path": "documents/admissions/mtech_phd_dual_degree_admissions.docx",
+    "markdown_path": "knowledge/admissions/mtech_phd_dual_degree_admissions.md",
+    "metadata_path": "metadata/iitj_admissions_mtech_phd_dual_degree_admissions.json"
+  },
+  {
+    "document_id": "iitj_admissions_non_degree_admissions",
+    "title": "Admission of Non-Degree and Casual Students",
+    "category": "admissions",
+    "docx_path": "documents/admissions/non_degree_admissions.docx",
+    "markdown_path": "knowledge/admissions/non_degree_admissions.md",
+    "metadata_path": "metadata/iitj_admissions_non_degree_admissions.json"
+  },
+  {
+    "document_id": "iitj_admissions_phd_admissions",
+    "title": "Ph.D. Admissions and Regulations",
+    "category": "admissions",
+    "docx_path": "documents/admissions/phd_admissions.docx",
+    "markdown_path": "knowledge/admissions/phd_admissions.md",
+    "metadata_path": "metadata/iitj_admissions_phd_admissions.json"
+  },
+  {
+    "document_id": "iitj_campus_and_student_services_career_and_placement_cell",
+    "title": "Career Development and Placement Procedures",
+    "category": "campus_and_student_services",
+    "docx_path": "documents/campus_and_student_services/career_and_placement_cell.docx",
+    "markdown_path": "knowledge/campus_and_student_services/career_and_placement_cell.md",
+    "metadata_path": "metadata/iitj_campus_and_student_services_career_and_placement_cell.json"
+  },
+  {
+    "document_id": "iitj_campus_and_student_services_happiness_initiative",
+    "title": "The Happiness Initiative",
+    "category": "campus_and_student_services",
+    "docx_path": "documents/campus_and_student_services/happiness_initiative.docx",
+    "markdown_path": "knowledge/campus_and_student_services/happiness_initiative.md",
+    "metadata_path": "metadata/iitj_campus_and_student_services_happiness_initiative.json"
+  },
+  {
+    "document_id": "iitj_campus_and_student_services_health_centre",
+    "title": "Primary Health Centre (PHC) & Medical Services",
+    "category": "campus_and_student_services",
+    "docx_path": "documents/campus_and_student_services/health_centre.docx",
+    "markdown_path": "knowledge/campus_and_student_services/health_centre.md",
+    "metadata_path": "metadata/iitj_campus_and_student_services_health_centre.json"
+  },
+  {
+    "document_id": "iitj_campus_and_student_services_sustainability",
+    "title": "Sustainability",
+    "category": "campus_and_student_services",
+    "docx_path": "documents/campus_and_student_services/sustainability.docx",
+    "markdown_path": "knowledge/campus_and_student_services/sustainability.md",
+    "metadata_path": "metadata/iitj_campus_and_student_services_sustainability.json"
+  },
+  {
+    "document_id": "iitj_departments_aerospace_engineering_general_information",
+    "title": "Aerospace Engineering \u2014 General Information",
+    "category": "departments/aerospace_engineering",
+    "docx_path": "documents/departments/aerospace_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/aerospace_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_aerospace_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_aerospace_engineering_programs",
+    "title": "Aerospace Engineering \u2014 Programs",
+    "category": "departments/aerospace_engineering",
+    "docx_path": "documents/departments/aerospace_engineering/programs.docx",
+    "markdown_path": "knowledge/departments/aerospace_engineering/programs.md",
+    "metadata_path": "metadata/iitj_departments_aerospace_engineering_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_facilities",
+    "title": "Bioscience and Bioengineering \u2014 Facilities",
+    "category": "departments/bioscience_and_bioengineering",
+    "docx_path": "documents/departments/bioscience_and_bioengineering/facilities.docx",
+    "markdown_path": "knowledge/departments/bioscience_and_bioengineering/facilities.md",
+    "metadata_path": "metadata/iitj_departments_bioscience_and_bioengineering_facilities.json"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_faculty",
+    "title": "Bioscience and Bioengineering \u2014 Faculty",
+    "category": "departments/bioscience_and_bioengineering",
+    "docx_path": "documents/departments/bioscience_and_bioengineering/faculty.docx",
+    "markdown_path": "knowledge/departments/bioscience_and_bioengineering/faculty.md",
+    "metadata_path": "metadata/iitj_departments_bioscience_and_bioengineering_faculty.json"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_general_information",
+    "title": "Bioscience and Bioengineering \u2014 General Information",
+    "category": "departments/bioscience_and_bioengineering",
+    "docx_path": "documents/departments/bioscience_and_bioengineering/general_information.docx",
+    "markdown_path": "knowledge/departments/bioscience_and_bioengineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_bioscience_and_bioengineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_overview",
+    "title": "Bioscience and Bioengineering \u2014 Overview",
+    "category": "departments/bioscience_and_bioengineering",
+    "docx_path": "documents/departments/bioscience_and_bioengineering/overview.docx",
+    "markdown_path": "knowledge/departments/bioscience_and_bioengineering/overview.md",
+    "metadata_path": "metadata/iitj_departments_bioscience_and_bioengineering_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_programs",
+    "title": "Bioscience and Bioengineering \u2014 Programs",
+    "category": "departments/bioscience_and_bioengineering",
+    "docx_path": "documents/departments/bioscience_and_bioengineering/programs.docx",
+    "markdown_path": "knowledge/departments/bioscience_and_bioengineering/programs.md",
+    "metadata_path": "metadata/iitj_departments_bioscience_and_bioengineering_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_bioscience_and_bioengineering_research",
+    "title": "Bioscience and Bioengineering \u2014 Research",
+    "category": "departments/bioscience_and_bioengineering",
+    "docx_path": "documents/departments/bioscience_and_bioengineering/research.docx",
+    "markdown_path": "knowledge/departments/bioscience_and_bioengineering/research.md",
+    "metadata_path": "metadata/iitj_departments_bioscience_and_bioengineering_research.json"
+  },
+  {
+    "document_id": "iitj_departments_chemical_engineering_curriculum",
+    "title": "Chemical Engineering \u2014 Curriculum",
+    "category": "departments/chemical_engineering",
+    "docx_path": "documents/departments/chemical_engineering/curriculum.docx",
+    "markdown_path": "knowledge/departments/chemical_engineering/curriculum.md",
+    "metadata_path": "metadata/iitj_departments_chemical_engineering_curriculum.json"
+  },
+  {
+    "document_id": "iitj_departments_chemical_engineering_faculty",
+    "title": "Chemical Engineering \u2014 Faculty",
+    "category": "departments/chemical_engineering",
+    "docx_path": "documents/departments/chemical_engineering/faculty.docx",
+    "markdown_path": "knowledge/departments/chemical_engineering/faculty.md",
+    "metadata_path": "metadata/iitj_departments_chemical_engineering_faculty.json"
+  },
+  {
+    "document_id": "iitj_departments_chemical_engineering_general_information",
+    "title": "Chemical Engineering \u2014 General Information",
+    "category": "departments/chemical_engineering",
+    "docx_path": "documents/departments/chemical_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/chemical_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_chemical_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_chemical_engineering_programs",
+    "title": "Chemical Engineering \u2014 Programs",
+    "category": "departments/chemical_engineering",
+    "docx_path": "documents/departments/chemical_engineering/programs.docx",
+    "markdown_path": "knowledge/departments/chemical_engineering/programs.md",
+    "metadata_path": "metadata/iitj_departments_chemical_engineering_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_curriculum",
+    "title": "Chemistry \u2014 Curriculum",
+    "category": "departments/chemistry",
+    "docx_path": "documents/departments/chemistry/curriculum.docx",
+    "markdown_path": "knowledge/departments/chemistry/curriculum.md",
+    "metadata_path": "metadata/iitj_departments_chemistry_curriculum.json"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_facilities",
+    "title": "Chemistry \u2014 Facilities",
+    "category": "departments/chemistry",
+    "docx_path": "documents/departments/chemistry/facilities.docx",
+    "markdown_path": "knowledge/departments/chemistry/facilities.md",
+    "metadata_path": "metadata/iitj_departments_chemistry_facilities.json"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_general_information",
+    "title": "Chemistry \u2014 General Information",
+    "category": "departments/chemistry",
+    "docx_path": "documents/departments/chemistry/general_information.docx",
+    "markdown_path": "knowledge/departments/chemistry/general_information.md",
+    "metadata_path": "metadata/iitj_departments_chemistry_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_overview",
+    "title": "Chemistry \u2014 Overview",
+    "category": "departments/chemistry",
+    "docx_path": "documents/departments/chemistry/overview.docx",
+    "markdown_path": "knowledge/departments/chemistry/overview.md",
+    "metadata_path": "metadata/iitj_departments_chemistry_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_programs",
+    "title": "Chemistry \u2014 Programs",
+    "category": "departments/chemistry",
+    "docx_path": "documents/departments/chemistry/programs.docx",
+    "markdown_path": "knowledge/departments/chemistry/programs.md",
+    "metadata_path": "metadata/iitj_departments_chemistry_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_research",
+    "title": "Chemistry \u2014 Research",
+    "category": "departments/chemistry",
+    "docx_path": "documents/departments/chemistry/research.docx",
+    "markdown_path": "knowledge/departments/chemistry/research.md",
+    "metadata_path": "metadata/iitj_departments_chemistry_research.json"
+  },
+  {
+    "document_id": "iitj_departments_chemistry_rules_and_regulations",
+    "title": "Chemistry \u2014 Rules and Regulations",
+    "category": "departments/chemistry",
+    "docx_path": "documents/departments/chemistry/rules_and_regulations.docx",
+    "markdown_path": "knowledge/departments/chemistry/rules_and_regulations.md",
+    "metadata_path": "metadata/iitj_departments_chemistry_rules_and_regulations.json"
+  },
+  {
+    "document_id": "iitj_departments_civil_and_infrastructure_engineering_faculty",
+    "title": "Civil and Infrastructure Engineering \u2014 Faculty",
+    "category": "departments/civil_and_infrastructure_engineering",
+    "docx_path": "documents/departments/civil_and_infrastructure_engineering/faculty.docx",
+    "markdown_path": "knowledge/departments/civil_and_infrastructure_engineering/faculty.md",
+    "metadata_path": "metadata/iitj_departments_civil_and_infrastructure_engineering_faculty.json"
+  },
+  {
+    "document_id": "iitj_departments_civil_and_infrastructure_engineering_general_information",
+    "title": "Civil and Infrastructure Engineering \u2014 General Information",
+    "category": "departments/civil_and_infrastructure_engineering",
+    "docx_path": "documents/departments/civil_and_infrastructure_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/civil_and_infrastructure_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_civil_and_infrastructure_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_civil_and_infrastructure_engineering_overview",
+    "title": "Civil and Infrastructure Engineering \u2014 Overview",
+    "category": "departments/civil_and_infrastructure_engineering",
+    "docx_path": "documents/departments/civil_and_infrastructure_engineering/overview.docx",
+    "markdown_path": "knowledge/departments/civil_and_infrastructure_engineering/overview.md",
+    "metadata_path": "metadata/iitj_departments_civil_and_infrastructure_engineering_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_computer_science_and_engineering_faculty",
+    "title": "Computer Science and Engineering \u2014 Faculty",
+    "category": "departments/computer_science_and_engineering",
+    "docx_path": "documents/departments/computer_science_and_engineering/faculty.docx",
+    "markdown_path": "knowledge/departments/computer_science_and_engineering/faculty.md",
+    "metadata_path": "metadata/iitj_departments_computer_science_and_engineering_faculty.json"
+  },
+  {
+    "document_id": "iitj_departments_computer_science_and_engineering_general_information",
+    "title": "Computer Science and Engineering \u2014 General Information",
+    "category": "departments/computer_science_and_engineering",
+    "docx_path": "documents/departments/computer_science_and_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/computer_science_and_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_computer_science_and_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_computer_science_and_engineering_overview",
+    "title": "Computer Science and Engineering \u2014 Overview",
+    "category": "departments/computer_science_and_engineering",
+    "docx_path": "documents/departments/computer_science_and_engineering/overview.docx",
+    "markdown_path": "knowledge/departments/computer_science_and_engineering/overview.md",
+    "metadata_path": "metadata/iitj_departments_computer_science_and_engineering_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_economics_facilities",
+    "title": "Economics \u2014 Facilities",
+    "category": "departments/economics",
+    "docx_path": "documents/departments/economics/facilities.docx",
+    "markdown_path": "knowledge/departments/economics/facilities.md",
+    "metadata_path": "metadata/iitj_departments_economics_facilities.json"
+  },
+  {
+    "document_id": "iitj_departments_economics_general_information",
+    "title": "Economics \u2014 General Information",
+    "category": "departments/economics",
+    "docx_path": "documents/departments/economics/general_information.docx",
+    "markdown_path": "knowledge/departments/economics/general_information.md",
+    "metadata_path": "metadata/iitj_departments_economics_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_economics_overview",
+    "title": "Economics \u2014 Overview",
+    "category": "departments/economics",
+    "docx_path": "documents/departments/economics/overview.docx",
+    "markdown_path": "knowledge/departments/economics/overview.md",
+    "metadata_path": "metadata/iitj_departments_economics_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_economics_programs",
+    "title": "Economics \u2014 Programs",
+    "category": "departments/economics",
+    "docx_path": "documents/departments/economics/programs.docx",
+    "markdown_path": "knowledge/departments/economics/programs.md",
+    "metadata_path": "metadata/iitj_departments_economics_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_economics_research",
+    "title": "Economics \u2014 Research",
+    "category": "departments/economics",
+    "docx_path": "documents/departments/economics/research.docx",
+    "markdown_path": "knowledge/departments/economics/research.md",
+    "metadata_path": "metadata/iitj_departments_economics_research.json"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_facilities",
+    "title": "Electrical Engineering \u2014 Facilities",
+    "category": "departments/electrical_engineering",
+    "docx_path": "documents/departments/electrical_engineering/facilities.docx",
+    "markdown_path": "knowledge/departments/electrical_engineering/facilities.md",
+    "metadata_path": "metadata/iitj_departments_electrical_engineering_facilities.json"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_faculty",
+    "title": "Electrical Engineering \u2014 Faculty",
+    "category": "departments/electrical_engineering",
+    "docx_path": "documents/departments/electrical_engineering/faculty.docx",
+    "markdown_path": "knowledge/departments/electrical_engineering/faculty.md",
+    "metadata_path": "metadata/iitj_departments_electrical_engineering_faculty.json"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_general_information",
+    "title": "Electrical Engineering \u2014 General Information",
+    "category": "departments/electrical_engineering",
+    "docx_path": "documents/departments/electrical_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/electrical_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_electrical_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_overview",
+    "title": "Electrical Engineering \u2014 Overview",
+    "category": "departments/electrical_engineering",
+    "docx_path": "documents/departments/electrical_engineering/overview.docx",
+    "markdown_path": "knowledge/departments/electrical_engineering/overview.md",
+    "metadata_path": "metadata/iitj_departments_electrical_engineering_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_electrical_engineering_research",
+    "title": "Electrical Engineering \u2014 Research",
+    "category": "departments/electrical_engineering",
+    "docx_path": "documents/departments/electrical_engineering/research.docx",
+    "markdown_path": "knowledge/departments/electrical_engineering/research.md",
+    "metadata_path": "metadata/iitj_departments_electrical_engineering_research.json"
+  },
+  {
+    "document_id": "iitj_departments_electronics_engineering_general_information",
+    "title": "Electronics Engineering \u2014 General Information",
+    "category": "departments/electronics_engineering",
+    "docx_path": "documents/departments/electronics_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/electronics_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_electronics_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_electronics_engineering_overview",
+    "title": "Electronics Engineering \u2014 Overview",
+    "category": "departments/electronics_engineering",
+    "docx_path": "documents/departments/electronics_engineering/overview.docx",
+    "markdown_path": "knowledge/departments/electronics_engineering/overview.md",
+    "metadata_path": "metadata/iitj_departments_electronics_engineering_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_electronics_engineering_programs",
+    "title": "Electronics Engineering \u2014 Programs",
+    "category": "departments/electronics_engineering",
+    "docx_path": "documents/departments/electronics_engineering/programs.docx",
+    "markdown_path": "knowledge/departments/electronics_engineering/programs.md",
+    "metadata_path": "metadata/iitj_departments_electronics_engineering_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_energy_and_automotive_engineering_general_information",
+    "title": "Energy and Automotive Engineering \u2014 General Information",
+    "category": "departments/energy_and_automotive_engineering",
+    "docx_path": "documents/departments/energy_and_automotive_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/energy_and_automotive_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_energy_and_automotive_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_energy_and_automotive_engineering_overview",
+    "title": "Energy and Automotive Engineering \u2014 Overview",
+    "category": "departments/energy_and_automotive_engineering",
+    "docx_path": "documents/departments/energy_and_automotive_engineering/overview.docx",
+    "markdown_path": "knowledge/departments/energy_and_automotive_engineering/overview.md",
+    "metadata_path": "metadata/iitj_departments_energy_and_automotive_engineering_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_energy_and_automotive_engineering_research",
+    "title": "Energy and Automotive Engineering \u2014 Research",
+    "category": "departments/energy_and_automotive_engineering",
+    "docx_path": "documents/departments/energy_and_automotive_engineering/research.docx",
+    "markdown_path": "knowledge/departments/energy_and_automotive_engineering/research.md",
+    "metadata_path": "metadata/iitj_departments_energy_and_automotive_engineering_research.json"
+  },
+  {
+    "document_id": "iitj_departments_environmental_and_sustainability_engineering_general_information",
+    "title": "Environmental and Sustainability Engineering \u2014 General Information",
+    "category": "departments/environmental_and_sustainability_engineering",
+    "docx_path": "documents/departments/environmental_and_sustainability_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/environmental_and_sustainability_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_environmental_and_sustainability_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_environmental_and_sustainability_engineering_sustainability",
+    "title": "Environmental and Sustainability Engineering \u2014 Sustainability",
+    "category": "departments/environmental_and_sustainability_engineering",
+    "docx_path": "documents/departments/environmental_and_sustainability_engineering/sustainability.docx",
+    "markdown_path": "knowledge/departments/environmental_and_sustainability_engineering/sustainability.md",
+    "metadata_path": "metadata/iitj_departments_environmental_and_sustainability_engineering_sustainability.json"
+  },
+  {
+    "document_id": "iitj_departments_materials_engineering_facilities",
+    "title": "Materials Engineering \u2014 Facilities",
+    "category": "departments/materials_engineering",
+    "docx_path": "documents/departments/materials_engineering/facilities.docx",
+    "markdown_path": "knowledge/departments/materials_engineering/facilities.md",
+    "metadata_path": "metadata/iitj_departments_materials_engineering_facilities.json"
+  },
+  {
+    "document_id": "iitj_departments_materials_engineering_general_information",
+    "title": "Materials Engineering \u2014 General Information",
+    "category": "departments/materials_engineering",
+    "docx_path": "documents/departments/materials_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/materials_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_materials_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_materials_engineering_overview",
+    "title": "Materials Engineering \u2014 Overview",
+    "category": "departments/materials_engineering",
+    "docx_path": "documents/departments/materials_engineering/overview.docx",
+    "markdown_path": "knowledge/departments/materials_engineering/overview.md",
+    "metadata_path": "metadata/iitj_departments_materials_engineering_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_materials_engineering_programs",
+    "title": "Materials Engineering \u2014 Programs",
+    "category": "departments/materials_engineering",
+    "docx_path": "documents/departments/materials_engineering/programs.docx",
+    "markdown_path": "knowledge/departments/materials_engineering/programs.md",
+    "metadata_path": "metadata/iitj_departments_materials_engineering_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_bs_mathematics_and_computing",
+    "title": "B.S. in Mathematics and Computing",
+    "category": "departments/mathematics",
+    "docx_path": "documents/departments/mathematics/bs_mathematics_and_computing.docx",
+    "markdown_path": "knowledge/departments/mathematics/bs_mathematics_and_computing.md",
+    "metadata_path": "metadata/iitj_departments_mathematics_bs_mathematics_and_computing.json"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_curriculum",
+    "title": "Mathematics \u2014 Curriculum",
+    "category": "departments/mathematics",
+    "docx_path": "documents/departments/mathematics/curriculum.docx",
+    "markdown_path": "knowledge/departments/mathematics/curriculum.md",
+    "metadata_path": "metadata/iitj_departments_mathematics_curriculum.json"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_general_information",
+    "title": "Mathematics \u2014 General Information",
+    "category": "departments/mathematics",
+    "docx_path": "documents/departments/mathematics/general_information.docx",
+    "markdown_path": "knowledge/departments/mathematics/general_information.md",
+    "metadata_path": "metadata/iitj_departments_mathematics_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_minor_mathematics_and_computing",
+    "title": "Minor in Mathematics and Computing",
+    "category": "departments/mathematics",
+    "docx_path": "documents/departments/mathematics/minor_mathematics_and_computing.docx",
+    "markdown_path": "knowledge/departments/mathematics/minor_mathematics_and_computing.md",
+    "metadata_path": "metadata/iitj_departments_mathematics_minor_mathematics_and_computing.json"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_msc_mathematics",
+    "title": "M.Sc. in Mathematics and Postgraduate Programmes",
+    "category": "departments/mathematics",
+    "docx_path": "documents/departments/mathematics/msc_mathematics.docx",
+    "markdown_path": "knowledge/departments/mathematics/msc_mathematics.md",
+    "metadata_path": "metadata/iitj_departments_mathematics_msc_mathematics.json"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_overview",
+    "title": "Mathematics \u2014 Overview",
+    "category": "departments/mathematics",
+    "docx_path": "documents/departments/mathematics/overview.docx",
+    "markdown_path": "knowledge/departments/mathematics/overview.md",
+    "metadata_path": "metadata/iitj_departments_mathematics_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_programs",
+    "title": "Mathematics \u2014 Departmental Programmes Directory",
+    "category": "departments/mathematics",
+    "docx_path": "documents/departments/mathematics/programs.docx",
+    "markdown_path": "knowledge/departments/mathematics/programs.md",
+    "metadata_path": "metadata/iitj_departments_mathematics_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_mathematics_research",
+    "title": "Mathematics \u2014 Research",
+    "category": "departments/mathematics",
+    "docx_path": "documents/departments/mathematics/research.docx",
+    "markdown_path": "knowledge/departments/mathematics/research.md",
+    "metadata_path": "metadata/iitj_departments_mathematics_research.json"
+  },
+  {
+    "document_id": "iitj_departments_mechanical_engineering_general_information",
+    "title": "Mechanical Engineering \u2014 General Information",
+    "category": "departments/mechanical_engineering",
+    "docx_path": "documents/departments/mechanical_engineering/general_information.docx",
+    "markdown_path": "knowledge/departments/mechanical_engineering/general_information.md",
+    "metadata_path": "metadata/iitj_departments_mechanical_engineering_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_mechanical_engineering_overview",
+    "title": "Mechanical Engineering \u2014 Overview",
+    "category": "departments/mechanical_engineering",
+    "docx_path": "documents/departments/mechanical_engineering/overview.docx",
+    "markdown_path": "knowledge/departments/mechanical_engineering/overview.md",
+    "metadata_path": "metadata/iitj_departments_mechanical_engineering_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_mechanical_engineering_programs",
+    "title": "Mechanical Engineering \u2014 Programs",
+    "category": "departments/mechanical_engineering",
+    "docx_path": "documents/departments/mechanical_engineering/programs.docx",
+    "markdown_path": "knowledge/departments/mechanical_engineering/programs.md",
+    "metadata_path": "metadata/iitj_departments_mechanical_engineering_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_physics_facilities",
+    "title": "Physics \u2014 Facilities",
+    "category": "departments/physics",
+    "docx_path": "documents/departments/physics/facilities.docx",
+    "markdown_path": "knowledge/departments/physics/facilities.md",
+    "metadata_path": "metadata/iitj_departments_physics_facilities.json"
+  },
+  {
+    "document_id": "iitj_departments_physics_general_information",
+    "title": "Physics \u2014 General Information",
+    "category": "departments/physics",
+    "docx_path": "documents/departments/physics/general_information.docx",
+    "markdown_path": "knowledge/departments/physics/general_information.md",
+    "metadata_path": "metadata/iitj_departments_physics_general_information.json"
+  },
+  {
+    "document_id": "iitj_departments_physics_overview",
+    "title": "Physics \u2014 Overview",
+    "category": "departments/physics",
+    "docx_path": "documents/departments/physics/overview.docx",
+    "markdown_path": "knowledge/departments/physics/overview.md",
+    "metadata_path": "metadata/iitj_departments_physics_overview.json"
+  },
+  {
+    "document_id": "iitj_departments_physics_programs",
+    "title": "Physics \u2014 Programs",
+    "category": "departments/physics",
+    "docx_path": "documents/departments/physics/programs.docx",
+    "markdown_path": "knowledge/departments/physics/programs.md",
+    "metadata_path": "metadata/iitj_departments_physics_programs.json"
+  },
+  {
+    "document_id": "iitj_departments_physics_research",
+    "title": "Physics \u2014 Research",
+    "category": "departments/physics",
+    "docx_path": "documents/departments/physics/research.docx",
+    "markdown_path": "knowledge/departments/physics/research.md",
+    "metadata_path": "metadata/iitj_departments_physics_research.json"
+  },
+  {
+    "document_id": "iitj_faculty_faculty",
+    "title": "Faculty",
+    "category": "faculty",
+    "docx_path": "documents/faculty/faculty.docx",
+    "markdown_path": "knowledge/faculty/faculty.md",
+    "metadata_path": "metadata/iitj_faculty_faculty.json"
+  },
+  {
+    "document_id": "iitj_fallback_knowledge_buffer_general",
+    "title": "Knowledge Buffer General",
+    "category": "fallback",
+    "docx_path": "documents/fallback/knowledge_buffer_general.docx",
+    "markdown_path": "knowledge/fallback/knowledge_buffer_general.md",
+    "metadata_path": "metadata/iitj_fallback_knowledge_buffer_general.json"
+  },
+  {
+    "document_id": "iitj_finance_academic_fees_and_scholarships",
+    "title": "Academic Fees, Tuition Waivers, and Scholarships",
+    "category": "finance",
+    "docx_path": "documents/finance/academic_fees_and_scholarships.docx",
+    "markdown_path": "knowledge/finance/academic_fees_and_scholarships.md",
+    "metadata_path": "metadata/iitj_finance_academic_fees_and_scholarships.json"
+  },
+  {
+    "document_id": "iitj_hostel_accommodation_general_information",
+    "title": "Hostel Accommodation \u2014 General Information",
+    "category": "hostel_accommodation",
+    "docx_path": "documents/hostel_accommodation/general_information.docx",
+    "markdown_path": "knowledge/hostel_accommodation/general_information.md",
+    "metadata_path": "metadata/iitj_hostel_accommodation_general_information.json"
+  },
+  {
+    "document_id": "iitj_hostels_and_housing_visitor_hostel_accommodation_and_charges",
+    "title": "Visitor Hostel Accommodation and Booking Charges",
+    "category": "hostels_and_housing",
+    "docx_path": "documents/hostels_and_housing/visitor_hostel_accommodation_and_charges.docx",
+    "markdown_path": "knowledge/hostels_and_housing/visitor_hostel_accommodation_and_charges.md",
+    "metadata_path": "metadata/iitj_hostels_and_housing_visitor_hostel_accommodation_and_charges.json"
+  },
+  {
+    "document_id": "iitj_institute_overview_overview",
+    "title": "Indian Institute of Technology Jodhpur \u2014 Overview",
+    "category": "institute_overview",
+    "docx_path": "documents/institute_overview/overview.docx",
+    "markdown_path": "knowledge/institute_overview/overview.md",
+    "metadata_path": "metadata/iitj_institute_overview_overview.json"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_2019_2025",
+    "title": "2019 \u0938\u0947 2025 \u0924\u0915 \u0915\u0947 \u092a\u094d\u0930\u094b\u0917\u094d\u0930\u093e\u092e \u0915\u0947 \u0932\u093f\u090f \u0915\u0930\u093f\u0915\u0941\u0932\u092e | \u0936\u0948\u0915\u094d\u0937\u0923\u093f\u0915 \u092e\u093e\u092e\u0932\u094b\u0902 \u0915\u093e \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f",
+    "category": "multilingual/hindi",
+    "docx_path": "documents/multilingual/hindi/2019_2025.docx",
+    "markdown_path": "knowledge/multilingual/hindi/2019_2025.md",
+    "metadata_path": "metadata/iitj_multilingual_hindi_2019_2025.json"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_academic_calendar",
+    "title": "\u0936\u0948\u0915\u094d\u0937\u0923\u093f\u0915 \u0915\u0948\u0932\u0947\u0902\u0921\u0930 | \u0936\u0948\u0915\u094d\u0937\u0923\u093f\u0915 \u092e\u093e\u092e\u0932\u094b\u0902 \u0915\u093e \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f",
+    "category": "multilingual/hindi",
+    "docx_path": "documents/multilingual/hindi/academic_calendar.docx",
+    "markdown_path": "knowledge/multilingual/hindi/academic_calendar.md",
+    "metadata_path": "metadata/iitj_multilingual_hindi_academic_calendar.json"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_academic_programs",
+    "title": "\u0936\u0948\u0915\u094d\u0937\u0923\u093f\u0915 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e | \u0936\u0948\u0915\u094d\u0937\u0923\u093f\u0915 \u092e\u093e\u092e\u0932\u094b\u0902 \u0915\u093e \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f",
+    "category": "multilingual/hindi",
+    "docx_path": "documents/multilingual/hindi/academic_programs.docx",
+    "markdown_path": "knowledge/multilingual/hindi/academic_programs.md",
+    "metadata_path": "metadata/iitj_multilingual_hindi_academic_programs.json"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_director",
+    "title": "\u0928\u093f\u0926\u0947\u0936\u0915 | \u092d\u093e\u0930\u0924\u0940\u092f \u092a\u094d\u0930\u094c\u0926\u094d\u092f\u094b\u0917\u093f\u0915\u0940 \u0938\u0902\u0938\u094d\u0925\u093e\u0928 \u091c\u094b\u0927\u092a\u0941\u0930",
+    "category": "multilingual/hindi",
+    "docx_path": "documents/multilingual/hindi/director.docx",
+    "markdown_path": "knowledge/multilingual/hindi/director.md",
+    "metadata_path": "metadata/iitj_multilingual_hindi_director.json"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_information_regarding_accommodation_for_",
+    "title": "\u0905\u092d\u094d\u092f\u0930\u094d\u0925\u093f\u092f\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0906\u0935\u093e\u0938 \u0938\u0902\u092c\u0902\u0927\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 | \u0938\u094d\u0928\u093e\u0924\u0915\u094b\u0924\u094d\u0924\u0930 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e\u094b\u0902 \u092e\u0947\u0902 \u092a\u094d\u0930\u0935\u0947\u0936",
+    "category": "multilingual/hindi",
+    "docx_path": "documents/multilingual/hindi/information_regarding_accommodation_for_.docx",
+    "markdown_path": "knowledge/multilingual/hindi/information_regarding_accommodation_for_.md",
+    "metadata_path": "metadata/iitj_multilingual_hindi_information_regarding_accommodation_for_.json"
+  },
+  {
+    "document_id": "iitj_multilingual_hindi_why_pursue_a_career_iit_jodhpur",
+    "title": "\u0935\u094d\u092f\u0935\u0938\u093e\u092f \u0939\u0947\u0924\u0941 \u092d\u093e. \u092a\u094d\u0930\u094c. \u0938\u0902. \u091c\u094b\u0927\u092a\u0941\u0930 \u0915\u094d\u092f\u094b\u0902 \u091a\u0941\u0928\u0947 ? | \u092d\u093e\u0930\u0924\u0940\u092f \u092a\u094d\u0930\u094c\u0926\u094d\u092f\u094b\u0917\u093f\u0915\u0940 \u0938\u0902\u0938\u094d\u0925\u093e\u0928 \u091c\u094b\u0927\u092a\u0941\u0930",
+    "category": "multilingual/hindi",
+    "docx_path": "documents/multilingual/hindi/why_pursue_a_career_iit_jodhpur.docx",
+    "markdown_path": "knowledge/multilingual/hindi/why_pursue_a_career_iit_jodhpur.md",
+    "metadata_path": "metadata/iitj_multilingual_hindi_why_pursue_a_career_iit_jodhpur.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_computer_center_overview",
+    "title": "Digital Infrastructure & Automation (DIA) / Computer Center",
+    "category": "offices_and_administration/computer_center",
+    "docx_path": "documents/offices_and_administration/computer_center/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/computer_center/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_computer_center_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_academic_progression",
+    "title": "Office of Academics \u2014 Academic Progression",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/academic_progression.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/academic_progression.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_academic_progression.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_curriculum",
+    "title": "Office of Academics \u2014 Curriculum",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/curriculum.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/curriculum.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_curriculum.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_examinations_and_grading",
+    "title": "Office of Academics \u2014 Examinations and Grading",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/examinations_and_grading.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/examinations_and_grading.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_examinations_and_grading.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_general_information",
+    "title": "Office of Academics \u2014 General Information",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/general_information.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/general_information.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_general_information.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_international_relations",
+    "title": "Office of Academics \u2014 International Relations",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/international_relations.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/international_relations.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_international_relations.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_overview",
+    "title": "Office of Academics \u2014 Overview",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_programs",
+    "title": "Office of Academics \u2014 Programs",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/programs.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/programs.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_programs.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_registration",
+    "title": "Office of Academics \u2014 Registration",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/registration.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/registration.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_registration.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_research",
+    "title": "Office of Academics \u2014 Research",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/research.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/research.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_research.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_academics_rules_and_regulations",
+    "title": "Office of Academics \u2014 Rules and Regulations",
+    "category": "offices_and_administration/office_of_academics",
+    "docx_path": "documents/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_academics/rules_and_regulations.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_academics_rules_and_regulations.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_accounts_overview",
+    "title": "Office of Accounts \u2014 Overview",
+    "category": "offices_and_administration/office_of_accounts",
+    "docx_path": "documents/offices_and_administration/office_of_accounts/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_accounts/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_accounts_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_alumni_affairs_alumni",
+    "title": "Office of Alumni Affairs \u2014 Alumni and Engagement",
+    "category": "offices_and_administration/office_of_alumni_affairs",
+    "docx_path": "documents/offices_and_administration/office_of_alumni_affairs/alumni.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_alumni_affairs/alumni.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_alumni_affairs_alumni.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_corporate_relations_faculty",
+    "title": "Office of Corporate Relations \u2014 Faculty",
+    "category": "offices_and_administration/office_of_corporate_relations",
+    "docx_path": "documents/offices_and_administration/office_of_corporate_relations/faculty.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_corporate_relations/faculty.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_corporate_relations_faculty.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_corporate_relations_general_information",
+    "title": "Office of Corporate Relations \u2014 General Information",
+    "category": "offices_and_administration/office_of_corporate_relations",
+    "docx_path": "documents/offices_and_administration/office_of_corporate_relations/general_information.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_corporate_relations/general_information.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_corporate_relations_general_information.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_corporate_relations_registration",
+    "title": "Office of Corporate Relations \u2014 Registration",
+    "category": "offices_and_administration/office_of_corporate_relations",
+    "docx_path": "documents/offices_and_administration/office_of_corporate_relations/registration.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_corporate_relations/registration.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_corporate_relations_registration.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_deputy_director_general_information",
+    "title": "Office of Deputy Director \u2014 General Information",
+    "category": "offices_and_administration/office_of_deputy_director",
+    "docx_path": "documents/offices_and_administration/office_of_deputy_director/general_information.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_deputy_director/general_information.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_deputy_director_general_information.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_deputy_director_overview",
+    "title": "Office of Deputy Director \u2014 Overview",
+    "category": "offices_and_administration/office_of_deputy_director",
+    "docx_path": "documents/offices_and_administration/office_of_deputy_director/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_deputy_director/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_deputy_director_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_director_overview",
+    "title": "Office of Director \u2014 Overview",
+    "category": "offices_and_administration/office_of_director",
+    "docx_path": "documents/offices_and_administration/office_of_director/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_director/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_director_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_estate_overview",
+    "title": "Office of Estate \u2014 Overview",
+    "category": "offices_and_administration/office_of_estate",
+    "docx_path": "documents/offices_and_administration/office_of_estate/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_estate/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_estate_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_infrastructure_engineering_overview",
+    "title": "Office of Infrastructure Engineering (OIE) \u2014 Overview",
+    "category": "offices_and_administration/office_of_infrastructure_engineering",
+    "docx_path": "documents/offices_and_administration/office_of_infrastructure_engineering/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_infrastructure_engineering/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_infrastructure_engineering_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_internal_audit_general_information",
+    "title": "Office of Internal Audit \u2014 General Information",
+    "category": "offices_and_administration/office_of_internal_audit",
+    "docx_path": "documents/offices_and_administration/office_of_internal_audit/general_information.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_internal_audit/general_information.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_internal_audit_general_information.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_international_relations_international_relations",
+    "title": "Office of International Relations \u2014 International Relations",
+    "category": "offices_and_administration/office_of_international_relations",
+    "docx_path": "documents/offices_and_administration/office_of_international_relations/international_relations.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_international_relations/international_relations.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_international_relations_international_relations.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_international_relations_research",
+    "title": "Office of International Relations \u2014 Research",
+    "category": "offices_and_administration/office_of_international_relations",
+    "docx_path": "documents/offices_and_administration/office_of_international_relations/research.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_international_relations/research.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_international_relations_research.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_registrar_overview",
+    "title": "Office of Registrar \u2014 Overview",
+    "category": "offices_and_administration/office_of_registrar",
+    "docx_path": "documents/offices_and_administration/office_of_registrar/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_registrar/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_registrar_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_research_and_development_contacts",
+    "title": "Office of Research and Development \u2014 Contacts",
+    "category": "offices_and_administration/office_of_research_and_development",
+    "docx_path": "documents/offices_and_administration/office_of_research_and_development/contacts.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_research_and_development/contacts.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_research_and_development_contacts.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_research_and_development_general_information",
+    "title": "Office of Research and Development \u2014 General Information",
+    "category": "offices_and_administration/office_of_research_and_development",
+    "docx_path": "documents/offices_and_administration/office_of_research_and_development/general_information.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_research_and_development/general_information.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_research_and_development_general_information.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_research_and_development_research",
+    "title": "Office of Research and Development \u2014 Research",
+    "category": "offices_and_administration/office_of_research_and_development",
+    "docx_path": "documents/offices_and_administration/office_of_research_and_development/research.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_research_and_development/research.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_research_and_development_research.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_resources_and_alumni_alumni",
+    "title": "Office of Resources and Alumni \u2014 Alumni and Engagement",
+    "category": "offices_and_administration/office_of_resources_and_alumni",
+    "docx_path": "documents/offices_and_administration/office_of_resources_and_alumni/alumni.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_resources_and_alumni/alumni.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_resources_and_alumni_alumni.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_security_transports_overview",
+    "title": "Office of Security & Transports \u2014 Overview",
+    "category": "offices_and_administration/office_of_security_transports",
+    "docx_path": "documents/offices_and_administration/office_of_security_transports/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_security_transports/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_security_transports_overview.json"
+  },
+  {
+    "document_id": "iitj_offices_and_administration_office_of_stores_and_purchase_overview",
+    "title": "Office of Stores and Purchase \u2014 Overview",
+    "category": "offices_and_administration/office_of_stores_and_purchase",
+    "docx_path": "documents/offices_and_administration/office_of_stores_and_purchase/overview.docx",
+    "markdown_path": "knowledge/offices_and_administration/office_of_stores_and_purchase/overview.md",
+    "metadata_path": "metadata/iitj_offices_and_administration_office_of_stores_and_purchase_overview.json"
+  },
+  {
+    "document_id": "iitj_placements_and_careers_placements",
+    "title": "Placements and Careers",
+    "category": "placements_and_careers",
+    "docx_path": "documents/placements_and_careers/placements.docx",
+    "markdown_path": "knowledge/placements_and_careers/placements.md",
+    "metadata_path": "metadata/iitj_placements_and_careers_placements.json"
+  },
+  {
+    "document_id": "iitj_programs_btech_academic_progression",
+    "title": "B.Tech \u2014 Academic Progression",
+    "category": "programs/btech",
+    "docx_path": "documents/programs/btech/academic_progression.docx",
+    "markdown_path": "knowledge/programs/btech/academic_progression.md",
+    "metadata_path": "metadata/iitj_programs_btech_academic_progression.json"
+  },
+  {
+    "document_id": "iitj_programs_btech_curriculum",
+    "title": "B.Tech \u2014 Curriculum",
+    "category": "programs/btech",
+    "docx_path": "documents/programs/btech/curriculum.docx",
+    "markdown_path": "knowledge/programs/btech/curriculum.md",
+    "metadata_path": "metadata/iitj_programs_btech_curriculum.json"
+  },
+  {
+    "document_id": "iitj_programs_btech_overview",
+    "title": "B.Tech \u2014 Overview",
+    "category": "programs/btech",
+    "docx_path": "documents/programs/btech/overview.docx",
+    "markdown_path": "knowledge/programs/btech/overview.md",
+    "metadata_path": "metadata/iitj_programs_btech_overview.json"
+  },
+  {
+    "document_id": "iitj_programs_general_information",
+    "title": "General Information",
+    "category": "programs",
+    "docx_path": "documents/programs/general_information.docx",
+    "markdown_path": "knowledge/programs/general_information.md",
+    "metadata_path": "metadata/iitj_programs_general_information.json"
+  },
+  {
+    "document_id": "iitj_programs_itep_overview",
+    "title": "Integrated Teacher Education Programme (ITEP)",
+    "category": "programs/itep",
+    "docx_path": "documents/programs/itep/overview.docx",
+    "markdown_path": "knowledge/programs/itep/overview.md",
+    "metadata_path": "metadata/iitj_programs_itep_overview.json"
+  },
+  {
+    "document_id": "iitj_programs_ms_by_research_arts_and_digital_immersion",
+    "title": "M.S. by Research in Arts and Digital Immersion",
+    "category": "programs/ms_by_research",
+    "docx_path": "documents/programs/ms_by_research/arts_and_digital_immersion.docx",
+    "markdown_path": "knowledge/programs/ms_by_research/arts_and_digital_immersion.md",
+    "metadata_path": "metadata/iitj_programs_ms_by_research_arts_and_digital_immersion.json"
+  },
+  {
+    "document_id": "iitj_programs_ms_by_research_programs",
+    "title": "M.S. by Research \u2014 Programs",
+    "category": "programs/ms_by_research",
+    "docx_path": "documents/programs/ms_by_research/programs.docx",
+    "markdown_path": "knowledge/programs/ms_by_research/programs.md",
+    "metadata_path": "metadata/iitj_programs_ms_by_research_programs.json"
+  },
+  {
+    "document_id": "iitj_programs_ms_by_research_research",
+    "title": "M.S. by Research \u2014 Research",
+    "category": "programs/ms_by_research",
+    "docx_path": "documents/programs/ms_by_research/research.docx",
+    "markdown_path": "knowledge/programs/ms_by_research/research.md",
+    "metadata_path": "metadata/iitj_programs_ms_by_research_research.json"
+  },
+  {
+    "document_id": "iitj_programs_msc_programs",
+    "title": "M.Sc \u2014 Programs",
+    "category": "programs/msc",
+    "docx_path": "documents/programs/msc/programs.docx",
+    "markdown_path": "knowledge/programs/msc/programs.md",
+    "metadata_path": "metadata/iitj_programs_msc_programs.json"
+  },
+  {
+    "document_id": "iitj_programs_mtech_general_information",
+    "title": "M.Tech \u2014 General Information",
+    "category": "programs/mtech",
+    "docx_path": "documents/programs/mtech/general_information.docx",
+    "markdown_path": "knowledge/programs/mtech/general_information.md",
+    "metadata_path": "metadata/iitj_programs_mtech_general_information.json"
+  },
+  {
+    "document_id": "iitj_programs_mtech_programs",
+    "title": "M.Tech \u2014 Programs",
+    "category": "programs/mtech",
+    "docx_path": "documents/programs/mtech/programs.docx",
+    "markdown_path": "knowledge/programs/mtech/programs.md",
+    "metadata_path": "metadata/iitj_programs_mtech_programs.json"
+  },
+  {
+    "document_id": "iitj_programs_phd_general_information",
+    "title": "Ph.D \u2014 General Information",
+    "category": "programs/phd",
+    "docx_path": "documents/programs/phd/general_information.docx",
+    "markdown_path": "knowledge/programs/phd/general_information.md",
+    "metadata_path": "metadata/iitj_programs_phd_general_information.json"
+  },
+  {
+    "document_id": "iitj_programs_phd_programs",
+    "title": "Ph.D \u2014 Programs",
+    "category": "programs/phd",
+    "docx_path": "documents/programs/phd/programs.docx",
+    "markdown_path": "knowledge/programs/phd/programs.md",
+    "metadata_path": "metadata/iitj_programs_phd_programs.json"
+  },
+  {
+    "document_id": "iitj_research_research",
+    "title": "Research Platforms and Focus Areas",
+    "category": "research",
+    "docx_path": "documents/research/research.docx",
+    "markdown_path": "knowledge/research/research.md",
+    "metadata_path": "metadata/iitj_research_research.json"
+  },
+  {
+    "document_id": "iitj_research_and_technology_facilities_facilities",
+    "title": "Facilities",
+    "category": "research_and_technology_facilities",
+    "docx_path": "documents/research_and_technology_facilities/facilities.docx",
+    "markdown_path": "knowledge/research_and_technology_facilities/facilities.md",
+    "metadata_path": "metadata/iitj_research_and_technology_facilities_facilities.json"
+  },
+  {
+    "document_id": "iitj_research_platforms_digital_humanities_research",
+    "title": "Digital Humanities \u2014 Research",
+    "category": "research_platforms/digital_humanities",
+    "docx_path": "documents/research_platforms/digital_humanities/research.docx",
+    "markdown_path": "knowledge/research_platforms/digital_humanities/research.md",
+    "metadata_path": "metadata/iitj_research_platforms_digital_humanities_research.json"
+  },
+  {
+    "document_id": "iitj_research_platforms_internet_of_things_and_applications_programs",
+    "title": "Internet of Things and Applications \u2014 Programs",
+    "category": "research_platforms/internet_of_things_and_applications",
+    "docx_path": "documents/research_platforms/internet_of_things_and_applications/programs.docx",
+    "markdown_path": "knowledge/research_platforms/internet_of_things_and_applications/programs.md",
+    "metadata_path": "metadata/iitj_research_platforms_internet_of_things_and_applications_programs.json"
+  },
+  {
+    "document_id": "iitj_research_platforms_internet_of_things_and_applications_research",
+    "title": "Internet of Things and Applications \u2014 Research",
+    "category": "research_platforms/internet_of_things_and_applications",
+    "docx_path": "documents/research_platforms/internet_of_things_and_applications/research.docx",
+    "markdown_path": "knowledge/research_platforms/internet_of_things_and_applications/research.md",
+    "metadata_path": "metadata/iitj_research_platforms_internet_of_things_and_applications_research.json"
+  },
+  {
+    "document_id": "iitj_research_platforms_quantum_information_and_computation_research",
+    "title": "Quantum Information and Computation \u2014 Research",
+    "category": "research_platforms/quantum_information_and_computation",
+    "docx_path": "documents/research_platforms/quantum_information_and_computation/research.docx",
+    "markdown_path": "knowledge/research_platforms/quantum_information_and_computation/research.md",
+    "metadata_path": "metadata/iitj_research_platforms_quantum_information_and_computation_research.json"
+  },
+  {
+    "document_id": "iitj_rules_regulations_rules_and_regulations",
+    "title": "Rules and Regulations",
+    "category": "rules_regulations",
+    "docx_path": "documents/rules_regulations/rules_and_regulations.docx",
+    "markdown_path": "knowledge/rules_regulations/rules_and_regulations.md",
+    "metadata_path": "metadata/iitj_rules_regulations_rules_and_regulations.json"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_contacts",
+    "title": "School of Artificial Intelligence and Data Science \u2014 Contacts",
+    "category": "schools/artificial_intelligence_and_data_science",
+    "docx_path": "documents/schools/artificial_intelligence_and_data_science/contacts.docx",
+    "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/contacts.md",
+    "metadata_path": "metadata/iitj_schools_artificial_intelligence_and_data_science_contacts.json"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_facilities",
+    "title": "School of Artificial Intelligence and Data Science \u2014 Facilities",
+    "category": "schools/artificial_intelligence_and_data_science",
+    "docx_path": "documents/schools/artificial_intelligence_and_data_science/facilities.docx",
+    "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/facilities.md",
+    "metadata_path": "metadata/iitj_schools_artificial_intelligence_and_data_science_facilities.json"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_faculty",
+    "title": "School of Artificial Intelligence and Data Science \u2014 Faculty",
+    "category": "schools/artificial_intelligence_and_data_science",
+    "docx_path": "documents/schools/artificial_intelligence_and_data_science/faculty.docx",
+    "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/faculty.md",
+    "metadata_path": "metadata/iitj_schools_artificial_intelligence_and_data_science_faculty.json"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_general_information",
+    "title": "School of Artificial Intelligence and Data Science \u2014 General Information",
+    "category": "schools/artificial_intelligence_and_data_science",
+    "docx_path": "documents/schools/artificial_intelligence_and_data_science/general_information.docx",
+    "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/general_information.md",
+    "metadata_path": "metadata/iitj_schools_artificial_intelligence_and_data_science_general_information.json"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_overview",
+    "title": "School of Artificial Intelligence and Data Science \u2014 Overview",
+    "category": "schools/artificial_intelligence_and_data_science",
+    "docx_path": "documents/schools/artificial_intelligence_and_data_science/overview.docx",
+    "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/overview.md",
+    "metadata_path": "metadata/iitj_schools_artificial_intelligence_and_data_science_overview.json"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_programs",
+    "title": "School of Artificial Intelligence and Data Science \u2014 Programs",
+    "category": "schools/artificial_intelligence_and_data_science",
+    "docx_path": "documents/schools/artificial_intelligence_and_data_science/programs.docx",
+    "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/programs.md",
+    "metadata_path": "metadata/iitj_schools_artificial_intelligence_and_data_science_programs.json"
+  },
+  {
+    "document_id": "iitj_schools_artificial_intelligence_and_data_science_research",
+    "title": "School of Artificial Intelligence and Data Science \u2014 Research",
+    "category": "schools/artificial_intelligence_and_data_science",
+    "docx_path": "documents/schools/artificial_intelligence_and_data_science/research.docx",
+    "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/research.md",
+    "metadata_path": "metadata/iitj_schools_artificial_intelligence_and_data_science_research.json"
+  },
+  {
+    "document_id": "iitj_schools_design_curriculum",
+    "title": "School of Design \u2014 Curriculum",
+    "category": "schools/design",
+    "docx_path": "documents/schools/design/curriculum.docx",
+    "markdown_path": "knowledge/schools/design/curriculum.md",
+    "metadata_path": "metadata/iitj_schools_design_curriculum.json"
+  },
+  {
+    "document_id": "iitj_schools_design_general_information",
+    "title": "School of Design \u2014 General Information",
+    "category": "schools/design",
+    "docx_path": "documents/schools/design/general_information.docx",
+    "markdown_path": "knowledge/schools/design/general_information.md",
+    "metadata_path": "metadata/iitj_schools_design_general_information.json"
+  },
+  {
+    "document_id": "iitj_schools_design_overview",
+    "title": "School of Design \u2014 Overview",
+    "category": "schools/design",
+    "docx_path": "documents/schools/design/overview.docx",
+    "markdown_path": "knowledge/schools/design/overview.md",
+    "metadata_path": "metadata/iitj_schools_design_overview.json"
+  },
+  {
+    "document_id": "iitj_schools_design_programs",
+    "title": "School of Design \u2014 Programs",
+    "category": "schools/design",
+    "docx_path": "documents/schools/design/programs.docx",
+    "markdown_path": "knowledge/schools/design/programs.md",
+    "metadata_path": "metadata/iitj_schools_design_programs.json"
+  },
+  {
+    "document_id": "iitj_schools_liberal_arts_curriculum",
+    "title": "School of Liberal Arts \u2014 Curriculum",
+    "category": "schools/liberal_arts",
+    "docx_path": "documents/schools/liberal_arts/curriculum.docx",
+    "markdown_path": "knowledge/schools/liberal_arts/curriculum.md",
+    "metadata_path": "metadata/iitj_schools_liberal_arts_curriculum.json"
+  },
+  {
+    "document_id": "iitj_schools_liberal_arts_general_information",
+    "title": "School of Liberal Arts \u2014 General Information",
+    "category": "schools/liberal_arts",
+    "docx_path": "documents/schools/liberal_arts/general_information.docx",
+    "markdown_path": "knowledge/schools/liberal_arts/general_information.md",
+    "metadata_path": "metadata/iitj_schools_liberal_arts_general_information.json"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_curriculum",
+    "title": "School of Management and Entrepreneurship \u2014 Curriculum",
+    "category": "schools/management_and_entrepreneurship",
+    "docx_path": "documents/schools/management_and_entrepreneurship/curriculum.docx",
+    "markdown_path": "knowledge/schools/management_and_entrepreneurship/curriculum.md",
+    "metadata_path": "metadata/iitj_schools_management_and_entrepreneurship_curriculum.json"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_faculty",
+    "title": "School of Management and Entrepreneurship \u2014 Faculty",
+    "category": "schools/management_and_entrepreneurship",
+    "docx_path": "documents/schools/management_and_entrepreneurship/faculty.docx",
+    "markdown_path": "knowledge/schools/management_and_entrepreneurship/faculty.md",
+    "metadata_path": "metadata/iitj_schools_management_and_entrepreneurship_faculty.json"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_general_information",
+    "title": "School of Management and Entrepreneurship \u2014 General Information",
+    "category": "schools/management_and_entrepreneurship",
+    "docx_path": "documents/schools/management_and_entrepreneurship/general_information.docx",
+    "markdown_path": "knowledge/schools/management_and_entrepreneurship/general_information.md",
+    "metadata_path": "metadata/iitj_schools_management_and_entrepreneurship_general_information.json"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_international_relations",
+    "title": "School of Management and Entrepreneurship \u2014 International Relations",
+    "category": "schools/management_and_entrepreneurship",
+    "docx_path": "documents/schools/management_and_entrepreneurship/international_relations.docx",
+    "markdown_path": "knowledge/schools/management_and_entrepreneurship/international_relations.md",
+    "metadata_path": "metadata/iitj_schools_management_and_entrepreneurship_international_relations.json"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_programs",
+    "title": "School of Management and Entrepreneurship \u2014 Programs",
+    "category": "schools/management_and_entrepreneurship",
+    "docx_path": "documents/schools/management_and_entrepreneurship/programs.docx",
+    "markdown_path": "knowledge/schools/management_and_entrepreneurship/programs.md",
+    "metadata_path": "metadata/iitj_schools_management_and_entrepreneurship_programs.json"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_research",
+    "title": "School of Management and Entrepreneurship \u2014 Research",
+    "category": "schools/management_and_entrepreneurship",
+    "docx_path": "documents/schools/management_and_entrepreneurship/research.docx",
+    "markdown_path": "knowledge/schools/management_and_entrepreneurship/research.md",
+    "metadata_path": "metadata/iitj_schools_management_and_entrepreneurship_research.json"
+  },
+  {
+    "document_id": "iitj_schools_management_and_entrepreneurship_training",
+    "title": "School of Management and Entrepreneurship \u2014 Training and Upskilling",
+    "category": "schools/management_and_entrepreneurship",
+    "docx_path": "documents/schools/management_and_entrepreneurship/training.docx",
+    "markdown_path": "knowledge/schools/management_and_entrepreneurship/training.md",
+    "metadata_path": "metadata/iitj_schools_management_and_entrepreneurship_training.json"
+  },
+  {
+    "document_id": "iitj_training_and_upskilling_training",
+    "title": "Office of Vocational Training and Upskilling (VTU)",
+    "category": "training_and_upskilling",
+    "docx_path": "documents/training_and_upskilling/training.docx",
+    "markdown_path": "knowledge/training_and_upskilling/training.md",
+    "metadata_path": "metadata/iitj_training_and_upskilling_training.json"
+  }
+]

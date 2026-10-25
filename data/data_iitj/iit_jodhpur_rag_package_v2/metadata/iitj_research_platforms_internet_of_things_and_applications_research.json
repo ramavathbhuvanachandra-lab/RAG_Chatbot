@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_research_platforms_internet_of_things_and_applications_research",
+  "title": "Internet of Things and Applications \u2014 Research",
+  "category": "research_platforms/internet_of_things_and_applications",
+  "subcategory": "research",
+  "document_type": "research_profile",
+  "language": "en",
+  "markdown_path": "knowledge/research_platforms/internet_of_things_and_applications/research.md",
+  "docx_path": "documents/research_platforms/internet_of_things_and_applications/research.docx",
+  "knowledge_path": "knowledge/research_platforms/internet_of_things_and_applications/research.md",
+  "markdown_hash": "46a54fedc3ff95d5c67b2c5c998189ed83a6e0af9186f997ace18d858584d7b0",
+  "docx_hash": "e6833ec71b6dafc3535f7b65342078eb2a5c64b1045e28f64ddcc2008ab5cfa2",
+  "source_urls": [
+    "http://home.iitj.ac.in/~nitin/",
+    "http://home.iitj.ac.in/~rn/",
+    "http://home.iitj.ac.in/~amitb/",
+    "http://home.iitj.ac.in/~dbhattu/",
+    "http://home.iitj.ac.in/~arpitkhandelwal/",
+    "http://home.iitj.ac.in/~saakshi",
+    "http://home.iitj.ac.in/~sptiwari/",
+    "http://home.iitj.ac.in/~mkumar/",
+    "http://home.iitj.ac.in/~sumitk/",
+    "http://home.iitj.ac.in/~amandeepkaur/",
+    "http://home.iitj.ac.in/~kjrangra/",
+    "http://home.iitj.ac.in/~meenuchhabra",
+    "http://home.iitj.ac.in/~barun",
+    "http://home.iitj.ac.in/~soumava",
+    "http://home.iitj.ac.in/~singhak/",
+    "http://home.iitj.ac.in/~aashishmathur/",
+    "http://home.iitj.ac.in/~rbhandari/",
+    "http://home.iitj.ac.in/~df",
+    "http://home.iitj.ac.in/~debasis/",
+    "http://home.iitj.ac.in/~sy",
+    "http://home.iitj.ac.in/~rn",
+    "http://home.iitj.ac.in/~narwaria",
+    "http://home.iitj.ac.in/~hkumar",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/iot/en/research-areas"
+  ],
+  "unit_ids": [
+    "a0ca3d1af923444c",
+    "57e8ebeb3f65fcea",
+    "bbdc36af54f9ff8c",
+    "a00666658a629280",
+    "e7b67a2250db9934",
+    "4b316791c923790a",
+    "a05c35145dccb133",
+    "fe26ca1cee865b25"
+  ],
+  "aliases": [
+    "Internet of Things and Applications \u2014 Research",
+    "Research"
+  ],
+  "related_datasets": [
+    "research_facilities.json",
+    "research_platforms.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

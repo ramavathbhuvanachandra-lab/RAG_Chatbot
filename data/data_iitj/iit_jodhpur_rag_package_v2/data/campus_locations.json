@@ -1,0 +1,50 @@
+[
+  {
+    "id": "lecture_hall_complex",
+    "name": "Lecture Hall Complex (LHC)",
+    "category": "Academic",
+    "description": "Primary academic complex housing large tiered lecture theatres, smart classrooms, and central photocopying facility.",
+    "google_maps": "https://maps.app.goo.gl/f17EDGE344LJCyMa6",
+    "directions": "Central Academic Zone, adjacent to Academic Block 1."
+  },
+  {
+    "id": "central_library",
+    "name": "Central Library",
+    "category": "Academic / Research",
+    "description": "State-of-the-art automated library housing 50,000+ volumes, digital databases, e-journals, and 24/7 reading rooms.",
+    "google_maps": "https://maps.app.goo.gl/f17EDGE344LJCyMa6",
+    "directions": "Opposite Administrative Building, North Campus Avenue."
+  },
+  {
+    "id": "administrative_building",
+    "name": "Administrative Complex",
+    "category": "Administration",
+    "description": "Houses Director's Office, Deputy Director, Registrar, Office of Academics, Accounts, and R&D Administration.",
+    "google_maps": "https://maps.app.goo.gl/f17EDGE344LJCyMa6",
+    "directions": "Main entry boulevard from NH-62 Main Gate."
+  },
+  {
+    "id": "primary_health_centre",
+    "name": "Primary Health Centre (PHC)",
+    "category": "Medical / Health",
+    "description": "24/7 medical hospital unit with resident medical officers, emergency beds, pharmacy, and ambulance bay.",
+    "google_maps": "https://maps.app.goo.gl/ugRtcBLtbyFvvn966",
+    "directions": "Located near the residential hostel cluster."
+  },
+  {
+    "id": "sports_complex",
+    "name": "Campus Sports Complex",
+    "category": "Sports & Recreation",
+    "description": "Cricket ground with turf pitch, floodlit football field, synthetic basketball & tennis courts, indoor badminton halls, and athletic track.",
+    "google_maps": "https://maps.app.goo.gl/ugRtcBLtbyFvvn966",
+    "directions": "South-West campus sector near student hostels."
+  },
+  {
+    "id": "main_gate",
+    "name": "Main Entrance Gate (NH-62)",
+    "category": "Navigation",
+    "description": "Primary campus checkpoint on National Highway 62, Nagaur Road, Karwar, equipped with 24/7 security control desk.",
+    "google_maps": "https://maps.app.goo.gl/f17EDGE344LJCyMa6",
+    "directions": "24 km north of Jodhpur Railway Station and Airport."
+  }
+]

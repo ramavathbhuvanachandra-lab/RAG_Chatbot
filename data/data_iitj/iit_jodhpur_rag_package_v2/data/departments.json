@@ -1,0 +1,163 @@
+[
+  {
+    "id": "aerospace_engineering",
+    "name": "Aerospace Engineering",
+    "code": "AE",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "bioscience_and_bioengineering",
+    "name": "Bioscience and Bioengineering",
+    "code": "BSBE",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech (Bioengineering)",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "chemical_engineering",
+    "name": "Chemical Engineering",
+    "code": "CH",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "chemistry",
+    "name": "Chemistry",
+    "code": "CY",
+    "type": "academic_department",
+    "degrees_offered": [
+      "M.Sc",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "civil_and_infrastructure_engineering",
+    "name": "Civil and Infrastructure Engineering",
+    "code": "CIE",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "computer_science_and_engineering",
+    "name": "Computer Science and Engineering",
+    "code": "CSE",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "economics",
+    "name": "Economics",
+    "code": "ECON",
+    "type": "academic_department",
+    "degrees_offered": [
+      "M.Sc",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "electrical_engineering",
+    "name": "Electrical Engineering",
+    "code": "EE",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "electronics_engineering",
+    "name": "Electronics Engineering",
+    "code": "ECE",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "energy_and_automotive_engineering",
+    "name": "Energy and Automotive Engineering",
+    "code": "EAE",
+    "type": "academic_department",
+    "degrees_offered": [
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "environmental_and_sustainability_engineering",
+    "name": "Environmental and Sustainability Engineering",
+    "code": "ESE",
+    "type": "academic_department",
+    "degrees_offered": [
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "materials_engineering",
+    "name": "Materials Engineering",
+    "code": "MT",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "code": "MA",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.S. (Mathematics & Computing)",
+      "M.Sc",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "mechanical_engineering",
+    "name": "Mechanical Engineering",
+    "code": "ME",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech",
+      "M.Tech",
+      "Ph.D"
+    ]
+  },
+  {
+    "id": "physics",
+    "name": "Physics",
+    "code": "PH",
+    "type": "academic_department",
+    "degrees_offered": [
+      "B.Tech (Engineering Physics)",
+      "M.Sc",
+      "Ph.D"
+    ]
+  }
+]

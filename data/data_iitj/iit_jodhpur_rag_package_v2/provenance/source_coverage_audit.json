@@ -1,0 +1,16 @@
+{
+  "institution_id": "iitj",
+  "total_canonical_documents": 162,
+  "total_provenance_urls_linked": 1251,
+  "coverage_percentage": 100.0,
+  "high_impact_facts_verified": {
+    "emergency_contacts": true,
+    "btech_tuition_fee": true,
+    "itep_tuition_fee": true,
+    "mba_tuition_fee": true,
+    "visitor_hostel_rates": true,
+    "bs_mathematics_curriculum": true,
+    "minor_mathematics_courses": true,
+    "msc_seat_matrix": true
+  }
+}

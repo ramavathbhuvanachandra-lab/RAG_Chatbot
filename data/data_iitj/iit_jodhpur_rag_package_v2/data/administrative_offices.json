@@ -1,0 +1,114 @@
+[
+  {
+    "id": "office_of_director",
+    "name": "Office of the Director",
+    "head": "Director",
+    "scope": "Chief Executive & Academic Officer",
+    "contact": "director@iitj.ac.in"
+  },
+  {
+    "id": "office_of_deputy_director",
+    "name": "Office of the Deputy Director",
+    "head": "Deputy Director",
+    "scope": "Administrative coordination and strategic initiatives",
+    "contact": "dd@iitj.ac.in"
+  },
+  {
+    "id": "office_of_registrar",
+    "name": "Office of the Registrar",
+    "head": "Registrar",
+    "scope": "Institute administration, legal compliance, custodian of records",
+    "contact": "registrar@iitj.ac.in"
+  },
+  {
+    "id": "office_of_academics",
+    "name": "Office of Academics",
+    "head": "Dean of Academic Affairs (DOAA)",
+    "scope": "Curriculum, course registration, grading, Senate compliance",
+    "contact": "doaa@iitj.ac.in"
+  },
+  {
+    "id": "office_of_research_and_development",
+    "name": "Office of Research and Development (R&D)",
+    "head": "Dean (R&D)",
+    "scope": "Sponsored research, industrial consultancies, grant management",
+    "contact": "do_rnd@iitj.ac.in"
+  },
+  {
+    "id": "office_of_corporate_relations",
+    "name": "Office of Corporate Relations (OCR)",
+    "head": "Dean (Corporate Relations)",
+    "scope": "Industry partnerships, MoUs, corporate CSR funding",
+    "contact": "ocr@iitj.ac.in"
+  },
+  {
+    "id": "office_of_international_relations",
+    "name": "Office of International Relations (OIR)",
+    "head": "Dean (International Relations)",
+    "scope": "Global academic exchange, joint degrees, international students",
+    "contact": "oir@iitj.ac.in"
+  },
+  {
+    "id": "office_of_students",
+    "name": "Office of Student Affairs",
+    "head": "Dean of Students (DOS)",
+    "scope": "Hostels, student welfare, cultural & technical festivals, counseling",
+    "contact": "dos@iitj.ac.in"
+  },
+  {
+    "id": "office_of_stores_and_purchase",
+    "name": "Office of Stores and Purchase",
+    "head": "Officer In-charge",
+    "scope": "Procurement, tenders, inventory management",
+    "contact": "purchase@iitj.ac.in"
+  },
+  {
+    "id": "office_of_estate",
+    "name": "Office of Estate",
+    "head": "Executive Engineer",
+    "scope": "Campus civil infrastructure, electrical distribution, green campus",
+    "contact": "estate@iitj.ac.in"
+  },
+  {
+    "id": "office_of_accounts",
+    "name": "Office of Accounts",
+    "head": "Finance Officer",
+    "scope": "Student fee processing, payroll, institutional financial audits",
+    "contact": "accounts@iitj.ac.in"
+  },
+  {
+    "id": "office_of_internal_audit",
+    "name": "Office of Internal Audit",
+    "head": "Audit Officer",
+    "scope": "Statutory auditing, compliance reviews, financial accounting",
+    "contact": "audit@iitj.ac.in"
+  },
+  {
+    "id": "office_of_resources_and_alumni",
+    "name": "Office of Resources and Alumni Affairs",
+    "head": "Dean (Alumni Affairs)",
+    "scope": "Alumni relations, alumni endowment, alumni chapters",
+    "contact": "alumni@iitj.ac.in"
+  },
+  {
+    "id": "office_of_infrastructure_engineering",
+    "name": "Office of Infrastructure Engineering (OIE)",
+    "head": "Superintending Engineer",
+    "scope": "Major capital construction, campus physical master plan",
+    "contact": "oie@iitj.ac.in"
+  },
+  {
+    "id": "office_of_security_transports",
+    "name": "Office of Security & Transports",
+    "head": "Security Officer",
+    "scope": "Campus access control, transport fleet, security personnel",
+    "contact": "security@iitj.ac.in"
+  },
+  {
+    "id": "computer_center_dia",
+    "name": "Digital Infrastructure & Automation (DIA) / Computer Center",
+    "head": "Head, DIA",
+    "scope": "Campus network backbone, HPC clusters, ERP automation",
+    "contact": "dia@iitj.ac.in"
+  }
+]

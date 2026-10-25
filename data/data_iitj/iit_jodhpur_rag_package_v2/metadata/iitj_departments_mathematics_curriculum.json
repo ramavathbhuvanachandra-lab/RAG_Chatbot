@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_mathematics_curriculum",
+  "title": "Mathematics \u2014 Curriculum",
+  "category": "departments/mathematics",
+  "subcategory": "curriculum",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/departments/mathematics/curriculum.md",
+  "docx_path": "documents/departments/mathematics/curriculum.docx",
+  "knowledge_path": "knowledge/departments/mathematics/curriculum.md",
+  "markdown_hash": "c482b5572ece4ec7a8f6e50e058ddc9d797d4a763e49451169d500ea4b60b7fc",
+  "docx_hash": "0c753fa4145162f15677aec5670fdd458f037f5f361792067172704308f60ef7",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/mathematics/en/undergraduate-programs",
+    "https://www.iitj.ac.in/mathematics/en/postgraduate-programs"
+  ],
+  "unit_ids": [
+    "663354d25453115b",
+    "6eb43888f72b91ed",
+    "cb671c50c0dce379",
+    "85e71d002eed48e4",
+    "bb036cd9e8435f2a",
+    "211040104a6da0ea",
+    "a89cc68bc6c8b27d",
+    "0f934fed5b2b89c4"
+  ],
+  "aliases": [
+    "Mathematics \u2014 Curriculum",
+    "Curriculum"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_international_relations_international_relations",
+  "title": "Office of International Relations \u2014 International Relations",
+  "category": "offices_and_administration/office_of_international_relations",
+  "subcategory": "international_relations",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_international_relations/international_relations.md",
+  "docx_path": "documents/offices_and_administration/office_of_international_relations/international_relations.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_international_relations/international_relations.md",
+  "markdown_hash": "0739f8f5daa26d805e60b30add9922270173a77f17d39243c748c09a07dee146",
+  "docx_hash": "201ce126e11694f598a9d0dbffd676e26d4c592dd6b3d153b28b3c493b01c33d",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-international-relations/en/office-of-international-relations"
+  ],
+  "unit_ids": [
+    "bd0095c225a75eec",
+    "4149c3753dbb8692",
+    "84cd82c1eb74158e",
+    "ec5eb04d8e769ba2",
+    "2c427daeab935e0f"
+  ],
+  "aliases": [
+    "Office of International Relations \u2014 International Relations",
+    "International Relations"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

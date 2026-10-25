@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_bioscience_and_bioengineering_overview",
+  "title": "Bioscience and Bioengineering \u2014 Overview",
+  "category": "departments/bioscience_and_bioengineering",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/bioscience_and_bioengineering/overview.md",
+  "docx_path": "documents/departments/bioscience_and_bioengineering/overview.docx",
+  "knowledge_path": "knowledge/departments/bioscience_and_bioengineering/overview.md",
+  "markdown_hash": "4f428359b6b9878843b7d12d367f6b0864fe8a2c458e62465fa95aad9a00bc09",
+  "docx_hash": "9ddf2a870a214b309a98026effc217bd89c33420f9dbef05a71d31f0f89ed132",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/bioscience-bioengineering",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/undergraduate-program",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/bioscience-bioengineering",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/postgraduate-program",
+    "https://www.iitj.ac.in/bioscience-bioengineering/en/doctorial-program"
+  ],
+  "unit_ids": [
+    "20f5f384db9bef12",
+    "35fcea63e4043c7e",
+    "4c7f87be78ba3c89",
+    "04ec3bda464b3c5e",
+    "2f52c5a982e1a919",
+    "3cd979c1c263440f",
+    "6b16ba367f42d56f",
+    "489a579e8c1a2dde"
+  ],
+  "aliases": [
+    "Bioscience and Bioengineering \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_materials_engineering_facilities",
+  "title": "Materials Engineering \u2014 Facilities",
+  "category": "departments/materials_engineering",
+  "subcategory": "facilities",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/materials_engineering/facilities.md",
+  "docx_path": "documents/departments/materials_engineering/facilities.docx",
+  "knowledge_path": "knowledge/departments/materials_engineering/facilities.md",
+  "markdown_hash": "4ec61bc8fe137d7205b275f3d5336fb0cbaa5ada05826c731b4c173301c61c36",
+  "docx_hash": "92b4df54e5480a5c43020a269d5a146959b098932ef7cbbd9f0871d260da4d65",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/materials-engineering/en/laboratories"
+  ],
+  "unit_ids": [
+    "a9f7af3cdee3d07f",
+    "20f74833c8784ec9",
+    "7b254dd850ac876a",
+    "c2cf97e9786e5f6f"
+  ],
+  "aliases": [
+    "Materials Engineering \u2014 Facilities",
+    "Facilities"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

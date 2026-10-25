@@ -92,5 +92,46 @@
         "financial assistance and scholarship",
         "financial support",
         "research fellowship"
+    ],
+    "examination": [
+        "examination",
+        "examinations",
+        "exam",
+        "exams",
+        "major examination",
+        "end-term examination",
+        "additional examination",
+        "re-exam",
+        "re-examination",
+        "reexam",
+        "reexamination",
+        "re-test",
+        "makeup exam",
+        "make-up examination",
+        "temporary grade",
+        "incomplete grade",
+        "I grade",
+        "E grade",
+        "emergency hospitalization",
+        "medical proofs",
+        "medical grounds"
+    ],
+    "progression": [
+        "academic progression",
+        "progression",
+        "annual progress meeting",
+        "apm",
+        "apm meeting",
+        "apm meetings"
+    ],
+    "grading": [
+        "grading",
+        "letter grade",
+        "audit course",
+        "audit courses",
+        "audit grade",
+        "s grade",
+        "u grade",
+        "non-graded"
     ]
 }

@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_offices_and_administration_office_of_corporate_relations_registration",
+  "title": "Office of Corporate Relations \u2014 Registration",
+  "category": "offices_and_administration/office_of_corporate_relations",
+  "subcategory": "registration",
+  "document_type": "institutional_policy",
+  "language": "en",
+  "markdown_path": "knowledge/offices_and_administration/office_of_corporate_relations/registration.md",
+  "docx_path": "documents/offices_and_administration/office_of_corporate_relations/registration.docx",
+  "knowledge_path": "knowledge/offices_and_administration/office_of_corporate_relations/registration.md",
+  "markdown_hash": "2a9a5ef518d7b87d60879f11b95f5fcc50a45dd5563538f9135b2674d1f69d1d",
+  "docx_hash": "0703182914ec692dc4b20d5bc9552f6b031e35f50f3f6d2a18ec55fc790a28f5",
+  "source_urls": [
+    "https://www.iitj.ac.in/office-of-corporate-relations/en/donate",
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/office-of-corporate-relations/en/office-of-corporate-relations"
+  ],
+  "unit_ids": [
+    "950317170f2fcc04",
+    "c91826112857623d",
+    "7af9ac8132881ee9",
+    "d66734f25f4d593a",
+    "d8275392544d452a",
+    "b43280e9f2fd079b",
+    "ddf22b6cecd4d8a4",
+    "66d8bb5373b9a9ad"
+  ],
+  "aliases": [
+    "Office of Corporate Relations \u2014 Registration",
+    "Registration"
+  ],
+  "related_datasets": [
+    "administrative_offices.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

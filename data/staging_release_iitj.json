@@ -1,0 +1,17 @@
+{
+  "institution_id": "iitj",
+  "release_id": "iit_jodhpur_rag_package_v2",
+  "package_root": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iit_jodhpur_rag_package_v2",
+  "vectorstore_collection": "iitj_iit_jodhpur_rag_package_v2_staging",
+  "vectorstore_path": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/chroma_db",
+  "lexical_cache_path": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/.canonical_chunks_cache_iit_jodhpur_rag_package_v2_staging.json",
+  "staged_at": "2026-10-24T05:17:58.591926+00:00",
+  "evaluation_passed": false,
+  "status": "staged",
+  "evaluation_report": {
+    "pass_rate": 72.72727272727273,
+    "total": 11,
+    "passed": 8
+  },
+  "evaluated_at": "2026-10-25T08:22:59.478322+00:00"
+}

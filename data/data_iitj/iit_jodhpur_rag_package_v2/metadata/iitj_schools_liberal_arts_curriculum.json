@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_liberal_arts_curriculum",
+  "title": "School of Liberal Arts \u2014 Curriculum",
+  "category": "schools/liberal_arts",
+  "subcategory": "curriculum",
+  "document_type": "academic_curriculum",
+  "language": "en",
+  "markdown_path": "knowledge/schools/liberal_arts/curriculum.md",
+  "docx_path": "documents/schools/liberal_arts/curriculum.docx",
+  "knowledge_path": "knowledge/schools/liberal_arts/curriculum.md",
+  "markdown_hash": "8f2c31863aedc67de75f80a4cb8127402a46e70ad2cf19580cf9675b2ac244b5",
+  "docx_hash": "1d308feededb29108154f09a9bbe37a357c4c080c1306a0153b2ffe3d5993ee1",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-liberal-arts/en/undergraduate-courses"
+  ],
+  "unit_ids": [
+    "e186c1f74f733fc2",
+    "f3904c9887882924",
+    "4359ebb0cc0a405d",
+    "4957b20a714ee0dc"
+  ],
+  "aliases": [
+    "School of Liberal Arts \u2014 Curriculum",
+    "Curriculum",
+    "SOLA",
+    "SOLA IIT Jodhpur",
+    "Computational Social Science"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "degrees.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

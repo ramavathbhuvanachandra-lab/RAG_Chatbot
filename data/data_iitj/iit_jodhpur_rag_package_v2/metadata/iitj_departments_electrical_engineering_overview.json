@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_departments_electrical_engineering_overview",
+  "title": "Electrical Engineering \u2014 Overview",
+  "category": "departments/electrical_engineering",
+  "subcategory": "overview",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/departments/electrical_engineering/overview.md",
+  "docx_path": "documents/departments/electrical_engineering/overview.docx",
+  "knowledge_path": "knowledge/departments/electrical_engineering/overview.md",
+  "markdown_hash": "a374efdd18ed7a3ef3fcfce472231beafa68073a3ab8aff78073e7ad9177d4fc",
+  "docx_hash": "89cb76110adc3dfdcb71319483447798bd68ed9027e429aafe2ec9a0fd2a0750",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/electrical-engineering/en/electrical-engineering",
+    "https://www.iitj.ac.in/electrical-engineering"
+  ],
+  "unit_ids": [
+    "5ff56f865041b142",
+    "43227bd4864d2f71",
+    "1b90c10303304f32",
+    "858ca2cd3dd33801",
+    "5ef4225c995d297c",
+    "807c87ceb1a39979"
+  ],
+  "aliases": [
+    "Electrical Engineering \u2014 Overview",
+    "Overview"
+  ],
+  "related_datasets": [
+    "departments.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

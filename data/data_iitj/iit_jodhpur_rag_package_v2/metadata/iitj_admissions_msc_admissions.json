@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_admissions_msc_admissions",
+  "title": "Msc Admissions",
+  "category": "admissions",
+  "subcategory": "msc_admissions",
+  "document_type": "admission_regulations",
+  "language": "en",
+  "markdown_path": "knowledge/admissions/msc_admissions.md",
+  "docx_path": "documents/admissions/msc_admissions.docx",
+  "knowledge_path": "knowledge/admissions/msc_admissions.md",
+  "markdown_hash": "d32b2c560a0c154fcb50d0950d3f3c7c6cc9487901f69ff1409b5b78b64154a1",
+  "docx_hash": "c509e86abf4612401dc492f1d41d50dc299746a89a1cb571cfc0525659b73306",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/materials-engineering/en/regulations"
+  ],
+  "unit_ids": [
+    "d2dcf860ab193f33",
+    "2ee711841650817b",
+    "86fb5108ce67b0a3",
+    "e2263f158b8d1e1e",
+    "74600a004f262d04",
+    "58e7a0dcb26b9fb0",
+    "540efdcb5f351a0e",
+    "7f1df30a20966851"
+  ],
+  "aliases": [
+    "Msc Admissions"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "admission_routes.json",
+    "degrees.json"
+  ],
+  "claim_ids": [
+    "claim_msc_duration",
+    "claim_msc_admission_route"
+  ],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}

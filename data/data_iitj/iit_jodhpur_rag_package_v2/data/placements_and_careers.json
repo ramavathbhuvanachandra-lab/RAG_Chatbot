@@ -1,0 +1,53 @@
+{
+  "coordinating_bodies": [
+    {
+      "body_name": "Student Placements Committee (SPC)",
+      "scope": "Central institute-level placement committee for undergraduate, postgraduate, and doctoral students across all engineering and science departments.",
+      "portal": "https://spc.iitj.ac.in/",
+      "faculty_in_charge": "Professor-in-Charge, Training & Placement"
+    },
+    {
+      "body_name": "SME Corporate Relations Team & Placement Committee",
+      "scope": "School of Management and Entrepreneurship student & faculty committee coordinating MBA recruitment and corporate relations.",
+      "contact_email": "placement_sme@iitj.ac.in"
+    }
+  ],
+  "placement_schedules": {
+    "two_year_mba_summer_internships": "Pre-Placement Presentations in September - November; interviews in October - December.",
+    "two_year_mba_final_placements": "Pre-Placement Presentations in October - December; lateral & final hiring through Spring semester.",
+    "btech_and_mtech_placements": "Campus hiring season commences in August with pre-placement talks and written tests; formal interview drives begin 1 December."
+  },
+  "verified_campus_corporate_interactions": [
+    {
+      "company": "American Express",
+      "type": "Pre-Placement Talk (PPT)",
+      "verified_status": "Documented in Institutional Records"
+    },
+    {
+      "company": "EY (Ernst & Young)",
+      "type": "Pre-Placement Talk (PPT) & Leadership Session",
+      "verified_status": "Documented in Institutional Records"
+    },
+    {
+      "company": "Cognizant",
+      "type": "Pre-Placement Talk (PPT)",
+      "verified_status": "Documented in Institutional Records"
+    },
+    {
+      "company": "Accenture",
+      "type": "Pre-Placement Talk (PPT)",
+      "verified_status": "Documented in Institutional Records"
+    },
+    {
+      "company": "Sutherland",
+      "type": "Pre-Placement Talk (PPT)",
+      "verified_status": "Documented in Institutional Records"
+    }
+  ],
+  "industry_sectors_participating": [
+    "Software & Information Technology",
+    "Artificial Intelligence & Analytics",
+    "Core Engineering & Manufacturing",
+    "Consulting & Financial Services"
+  ]
+}

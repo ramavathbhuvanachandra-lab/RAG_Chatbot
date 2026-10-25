@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "institution_id": "iitj",
+  "institution_name": "Indian Institute of Technology Jodhpur",
+  "document_id": "iitj_schools_artificial_intelligence_and_data_science_research",
+  "title": "School of Artificial Intelligence and Data Science \u2014 Research",
+  "category": "schools/artificial_intelligence_and_data_science",
+  "subcategory": "research",
+  "document_type": "academic_unit_overview",
+  "language": "en",
+  "markdown_path": "knowledge/schools/artificial_intelligence_and_data_science/research.md",
+  "docx_path": "documents/schools/artificial_intelligence_and_data_science/research.docx",
+  "knowledge_path": "knowledge/schools/artificial_intelligence_and_data_science/research.md",
+  "markdown_hash": "b4403b4b2d87176701db46eaa8d2997120ba715774ac1e3dee5a07fbd4b6b431",
+  "docx_hash": "2aa7a83e02abae2a40b208d3cfc984c3bc7fd9c9140a717d2fcdf7f7271b0c90",
+  "source_urls": [
+    "https://iitj.ac.in/",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/project-positions",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/phd",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/about-research",
+    "https://www.iitj.ac.in/school-of-artificial-intelligence-data-science/en/postdoc-positions"
+  ],
+  "unit_ids": [
+    "10ddbcf2282fcf73",
+    "fdb48af1c3a889c0",
+    "457594ce0da89c4d",
+    "b08f20fe5031a473",
+    "2eed52dc996e1e97",
+    "31b3965479059796",
+    "8b70e6d4eced89c3",
+    "758387ea97c0dbbb"
+  ],
+  "aliases": [
+    "School of Artificial Intelligence and Data Science \u2014 Research",
+    "Research",
+    "SAIDE",
+    "AIDE IIT Jodhpur",
+    "School of AI"
+  ],
+  "related_datasets": [
+    "academic_programmes.json",
+    "research_facilities.json",
+    "research_platforms.json",
+    "schools.json"
+  ],
+  "claim_ids": [],
+  "conflict_ids": [],
+  "validation_status": {
+    "schema_valid": "PASS",
+    "docx_parity": "PASS",
+    "url_cleanliness": "PASS",
+    "hash_integrity": "PASS",
+    "claim_verification": "NOT_CHECKED",
+    "conflict_status": "NOT_APPLICABLE"
+  }
+}
