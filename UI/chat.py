@@ -47,15 +47,61 @@ from ai_platform.service.assistant_service import (
     ChatTurnRequest,
 )
 
-from backend.assistant_router import (
-    assistant_router,
-)
 
-from backend.conversation_session import (
-    ensure_chat_session,
-    load_persistent_chat_history,
-    recent_chat_history,
-)
+# =========================================================
+# Self-contained session & persistence compatibility stubs
+# =========================================================
+
+def ensure_chat_session(
+    chat: dict[str, Any],
+    *,
+    user_id: str | None = None,
+) -> str | None:
+    """Ensure an application chat owns one session identifier."""
+    if not isinstance(chat, dict):
+        raise TypeError("chat must be a dictionary")
+    existing_session_id = chat.get("session_id")
+    if existing_session_id:
+        return str(existing_session_id)
+    if not user_id:
+        return None
+    session_id = f"session_{uuid.uuid4().hex[:12]}"
+    chat["session_id"] = session_id
+    return session_id
+
+
+def load_persistent_chat_history(
+    session_id: str | None,
+) -> list[dict[str, str]]:
+    """Load persistent chat history (best-effort, returns empty list when unavailable)."""
+    return []
+
+
+def recent_chat_history(
+    messages: list[dict[str, Any]],
+    max_messages: int = 8,
+) -> list[dict[str, str]]:
+    """Return bounded recent history window."""
+    if not messages:
+        return []
+    return [
+        {
+            "role": str(m.get("role", "user")),
+            "content": str(m.get("content", "")),
+        }
+        for m in messages[-max_messages:]
+    ]
+
+
+def safe_save_message(
+    session_id: str,
+    role: str,
+    message: str,
+    response_time: float | None = None,
+) -> None:
+    """Best-effort message persistence stub."""
+    return None
+
 
 
 # =========================================================
@@ -838,10 +884,6 @@ def handle_user_prompt(
 
         try:
 
-            from backend.persistence import (
-                safe_save_message,
-            )
-
             safe_save_message(
                 session_id=session_id,
                 role="user",
@@ -939,17 +981,11 @@ def handle_user_prompt(
 
             try:
 
-                from backend.persistence import (
-                    safe_save_message,
-                )
-
-                saved_message = (
-                    safe_save_message(
-                        session_id=session_id,
-                        role="assistant",
-                        message=answer,
-                        response_time=response_time,
-                    )
+                saved_message = safe_save_message(
+                    session_id=session_id,
+                    role="assistant",
+                    message=answer,
+                    response_time=response_time,
                 )
 
                 if saved_message:

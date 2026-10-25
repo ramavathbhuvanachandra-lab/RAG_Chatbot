@@ -5,9 +5,6 @@ Institution-specific implementation:
 - IITJ campus locations
 - IITJ location aliases
 - IITJ location data source
-
-The application-facing backend/campus_navigation.py remains a
-compatibility wrapper so existing imports do not need to change yet.
 """
 
 from __future__ import annotations

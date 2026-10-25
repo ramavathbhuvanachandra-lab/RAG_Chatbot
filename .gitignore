@@ -23,6 +23,9 @@ test_outputs/
 test_debug/
 test_deubug/
 .pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 *.log
 
 # Generated reports / probes
