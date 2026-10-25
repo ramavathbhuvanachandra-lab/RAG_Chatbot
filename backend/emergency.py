@@ -10,7 +10,7 @@ Existing application imports can continue using:
     from backend.emergency import find_emergency
 """
 
-from backend.institutions.iitj.emergency import (
+from ai_platform.institutions.iitj.emergency import (
     find_emergency,
     load_emergency_contacts,
 )

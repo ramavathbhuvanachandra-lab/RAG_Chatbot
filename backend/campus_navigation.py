@@ -10,7 +10,7 @@ Existing application imports can continue using:
     from backend.campus_navigation import find_location
 """
 
-from backend.institutions.iitj.campus_navigation import (
+from ai_platform.institutions.iitj.campus_navigation import (
     find_location,
     load_locations,
 )

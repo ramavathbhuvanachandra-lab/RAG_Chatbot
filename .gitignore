@@ -22,6 +22,7 @@ chroma_db/
 test_outputs/
 test_debug/
 test_deubug/
+.pytest_cache/
 *.log
 
 # Generated reports / probes
@@ -35,7 +36,12 @@ retrieval_probe_output.txt
 tests_reusable/.simrepo/
 tests_reusable/**/reports/
 
-# Local backup snapshots
+# Local backup snapshots & file artifacts
 backend_snapshot/
+*.bak
+*.backup*
 
 .docker/
+.*_cache*.json
+*.canonical_chunks_cache*.json
+.canonical_chunks_cache.json

@@ -40,6 +40,7 @@ logger = logging.getLogger(__name__)
 
 NAVIGATION_KEYWORDS = (
     "where is",
+    "where are",
     "location",
     "locate",
     "map",
@@ -50,9 +51,45 @@ NAVIGATION_KEYWORDS = (
     "directions",
     "how do i reach",
     "how to reach",
+    "how do i get",
+    "how to get",
     "take me to",
     "route to",
     "way to",
+    "where can i buy",
+    "where can i get",
+    "where can i find",
+    "where do i get",
+    "where to find",
+    "where should i go",
+    "where do i go",
+    "where to go",
+    "where to buy",
+    "where to eat",
+    "where can i eat",
+    "places to eat",
+    "is there a shop",
+    "shop nearby",
+    "nearby shop",
+    "nearby store",
+    "food joints",
+    "food spots",
+    "food places",
+    "kaha milega",
+    "kahan milega",
+    "kidhar milega",
+    "kaha milegi",
+    "kidhar milegi",
+    "kaha hai",
+    "kahan hai",
+    "kidhar hai",
+    "kaha pe",
+    "kahan pe",
+    "kaise jau",
+    "kaise jaye",
+    "kaise pahunche",
+    "kaise pahuchen",
+    "rasta",
 )
 
 
@@ -139,65 +176,43 @@ def _load_service(
 
     institution_id = _active_institution_id()
 
-    module_path = (
-        f"backend.institutions."
-        f"{institution_id}."
-        f"{module_name}"
-    )
+    # Try canonical ai_platform.institutions path first, then legacy fallback
+    for prefix in ("ai_platform.institutions.", "backend.institutions."):
+        module_path = f"{prefix}{institution_id}.{module_name}"
+        try:
+            module = importlib.import_module(module_path)
+            service = getattr(module, function_name, None)
+            if callable(service):
+                return service
+        except ModuleNotFoundError as exc:
+            if exc.name == module_path:
+                continue
+            logger.exception(
+                "Failed to load institution service %s.%s",
+                module_path,
+                function_name,
+            )
+        except Exception:
+            logger.exception(
+                "Failed to load institution service %s.%s",
+                module_path,
+                function_name,
+            )
 
-    try:
-        module = importlib.import_module(
-            module_path
-        )
-
-    except ModuleNotFoundError as exc:
-
-        # Only treat the requested institution module itself as optional.
-        # Unexpected missing dependencies should remain visible.
-        if exc.name == module_path:
-            return None
-
-        logger.exception(
-            "Failed to load institution service %s.%s",
-            module_path,
-            function_name,
-        )
-
-        return None
-
-    except Exception:
-
-        logger.exception(
-            "Failed to load institution service %s.%s",
-            module_path,
-            function_name,
-        )
-
-        return None
-
-    service = getattr(
-        module,
-        function_name,
-        None,
-    )
-
-    if not callable(service):
-
-        logger.warning(
-            "Institution service %s.%s is unavailable.",
-            module_path,
-            function_name,
-        )
-
-        return None
-
-    return service
+    return None
 
 
 def _get_navigation_service() -> (
     Callable[[str], Any] | None
 ):
     """Return the active institution navigation lookup."""
+    try:
+        from ai_platform.institutions.loader import get_institution_handler
+        handler = get_institution_handler(_active_institution_id(), "navigation")
+        if callable(handler):
+            return handler
+    except Exception:
+        pass
 
     return _load_service(
         "campus_navigation",
@@ -209,6 +224,13 @@ def _get_emergency_service() -> (
     Callable[[str], Any] | None
 ):
     """Return the active institution emergency lookup."""
+    try:
+        from ai_platform.institutions.loader import get_institution_handler
+        handler = get_institution_handler(_active_institution_id(), "emergency")
+        if callable(handler):
+            return handler
+    except Exception:
+        pass
 
     return _load_service(
         "emergency",
