@@ -1,5 +1,10 @@
 # AI Platform V1 — Production Diagnosis Suite
 
+> [!NOTE]
+> **Historical Test Suite Record**: This diagnosis runner was used during early platform stage-wise diagnosis.
+> For the primary engineering test suite, see [tests_reusable/rag_quality/README.md](file:///Users/bhuvanachandra/Desktop/RAG_Chatbot/tests_reusable/rag_quality/README.md).
+> For canonical platform status, see [AI_PLATFORM_MASTER_HANDOFF.md](file:///Users/bhuvanachandra/Desktop/RAG_Chatbot/AI_PLATFORM_MASTER_HANDOFF.md).
+
 This suite tests **only `ai_platform/core`**. It does not import, execute, or modify `backend/`.
 
 ## Diagnostic path

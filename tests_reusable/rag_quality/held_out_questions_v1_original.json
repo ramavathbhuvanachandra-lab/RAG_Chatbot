@@ -1,0 +1,303 @@
+[
+  {
+    "id": "ho_01_msc_cutoff_sc_st",
+    "type": "numerical_threshold",
+    "program": "M.Sc.",
+    "question": "What is the minimum percentage required for SC and ST candidates applying for M.Sc. admission?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "55%",
+      "SC",
+      "ST"
+    ],
+    "forbidden_inversions": [
+      "60% for SC",
+      "not eligible"
+    ],
+    "authoritative_source": "msc_admissions.docx Section 20.2.1"
+  },
+  {
+    "id": "ho_02_msc_cgpa_scale_8",
+    "type": "numerical_scale",
+    "program": "M.Sc.",
+    "question": "If a university grades on a scale of 8, what minimum score is needed for GEN/OBC candidates applying for M.Sc.?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "4.8"
+    ],
+    "forbidden_inversions": [
+      "6.0 on scale of 8"
+    ],
+    "authoritative_source": "msc_admissions.docx Section 20.2.1"
+  },
+  {
+    "id": "ho_03_msc_first_class_alt",
+    "type": "alternative_pathway",
+    "program": "M.Sc.",
+    "question": "If my percentage is below 60% but my university awarded me first class distinction, can I be eligible for M.Sc.?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "first-class",
+      "first class"
+    ],
+    "forbidden_inversions": [
+      "not accepted",
+      "not eligible",
+      "does not qualify"
+    ],
+    "authoritative_source": "msc_admissions.docx Section 20.2.1(b)"
+  },
+  {
+    "id": "ho_04_mtech_first_class_paraphrase",
+    "type": "paraphrase_alternative",
+    "program": "M.Tech",
+    "question": "Does IIT Jodhpur allow applicants with a first-class degree from their institute into M.Tech even without meeting the percentage cutoff?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "first-class",
+      "first class"
+    ],
+    "forbidden_inversions": [
+      "cannot apply",
+      "not permitted",
+      "not accepted"
+    ],
+    "authoritative_source": "mtech_admissions.docx Section 20.2.1"
+  },
+  {
+    "id": "ho_05_phd_four_year_degree",
+    "type": "alternative_pathway",
+    "program": "Ph.D.",
+    "question": "Is someone holding a four-year bachelor's degree in engineering eligible to apply for Ph.D.?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "four-year",
+      "bachelor",
+      "eligible"
+    ],
+    "forbidden_inversions": [
+      "does not qualify",
+      "alone does not qualify",
+      "not eligible"
+    ],
+    "authoritative_source": "phd_admissions.docx Section A"
+  },
+  {
+    "id": "ho_06_document_deadline_penalty",
+    "type": "policy_lookup",
+    "program": "general",
+    "question": "What disciplinary or administrative action can the Senate take if a student does not submit prescribed documents on time?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "cancel",
+      "admission",
+      "Senate"
+    ],
+    "forbidden_inversions": [
+      "no penalty",
+      "not mentioned"
+    ],
+    "authoritative_source": "general_admissions.docx Section 10.5"
+  },
+  {
+    "id": "ho_07_casual_student_activities",
+    "type": "policy_lookup",
+    "program": "general",
+    "question": "Can a casual student admitted for specific courses earn a degree from IIT Jodhpur?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "specific courses",
+      "not",
+      "non-degree"
+    ],
+    "forbidden_inversions": [
+      "awards a degree"
+    ],
+    "authoritative_source": "general_admissions.docx"
+  },
+  {
+    "id": "ho_08_multi_intent_mtech_fees_and_req",
+    "type": "multi_intent",
+    "program": "M.Tech",
+    "question": "What is the M.Tech eligibility requirement and what is the application fee?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "eligibility",
+      "fee"
+    ],
+    "forbidden_inversions": [
+      "insufficient evidence for both"
+    ],
+    "authoritative_source": "mtech_admissions.docx"
+  },
+  {
+    "id": "ho_09_multi_intent_msc_and_phd",
+    "type": "multi_intent",
+    "program": "M.Sc. / Ph.D.",
+    "question": "What is the qualifying degree requirement for M.Sc. and what degree duration is required for Ph.D. applicants with a bachelor's?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "bachelor",
+      "four-year"
+    ],
+    "forbidden_inversions": [],
+    "authoritative_source": "msc_admissions.docx & phd_admissions.docx"
+  },
+  {
+    "id": "ho_10_unanswerable_autumn_2035_fee",
+    "type": "unanswerable_absent",
+    "program": "general",
+    "question": "What is the hostel electricity fee for the autumn semester of the year 2035?",
+    "expected_behavior": "abstain",
+    "expected_key_facts": [],
+    "forbidden_inversions": [
+      "The fee for autumn 2035 is"
+    ],
+    "authoritative_source": "corpus absent"
+  },
+  {
+    "id": "ho_11_unanswerable_nonexistent_program",
+    "type": "unanswerable_absent",
+    "program": "general",
+    "question": "What is the curriculum structure for the Master of Veterinary Surgery degree at IIT Jodhpur?",
+    "expected_behavior": "abstain",
+    "expected_key_facts": [],
+    "forbidden_inversions": [
+      "The curriculum structure includes"
+    ],
+    "authoritative_source": "corpus absent"
+  },
+  {
+    "id": "ho_12_out_of_scope_cooking",
+    "type": "out_of_scope",
+    "program": "none",
+    "question": "How do I make chocolate chip cookies from scratch?",
+    "expected_behavior": "abstain",
+    "expected_key_facts": [],
+    "forbidden_inversions": [
+      "preheat the oven",
+      "flour"
+    ],
+    "authoritative_source": "out of scope"
+  },
+  {
+    "id": "ho_13_out_of_scope_coding",
+    "type": "out_of_scope",
+    "program": "none",
+    "question": "Write a Python script to perform quicksort on an array of integers.",
+    "expected_behavior": "abstain",
+    "expected_key_facts": [],
+    "forbidden_inversions": [
+      "def quicksort"
+    ],
+    "authoritative_source": "out of scope"
+  },
+  {
+    "id": "ho_14_msc_paraphrase_unfamiliar",
+    "type": "paraphrase_unfamiliar",
+    "program": "M.Sc.",
+    "question": "I scored 58% in my B.Sc. as an OBC candidate. Do I meet the minimum cut-off percentage for M.Sc.?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "60%",
+      "OBC",
+      "not",
+      "below"
+    ],
+    "forbidden_inversions": [
+      "58% is sufficient for OBC"
+    ],
+    "authoritative_source": "msc_admissions.docx Section 20.2.1"
+  },
+  {
+    "id": "ho_15_phd_part_time_sponsorship",
+    "type": "direct_lookup",
+    "program": "Ph.D.",
+    "question": "Are candidates employed in industry or R&D organizations eligible for Ph.D. under external or part-time categories?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "external",
+      "part-time",
+      "sponsorship",
+      "employed"
+    ],
+    "forbidden_inversions": [
+      "only full time is allowed"
+    ],
+    "authoritative_source": "phd_admissions.docx"
+  },
+  {
+    "id": "ho_16_mtech_cgpa_cutoff_gen",
+    "type": "numerical_threshold",
+    "program": "M.Tech",
+    "question": "What is the minimum CGPA on a 10-point scale required for General category applicants in M.Tech?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "6.0",
+      "10"
+    ],
+    "forbidden_inversions": [
+      "5.5 for General"
+    ],
+    "authoritative_source": "mtech_admissions.docx"
+  },
+  {
+    "id": "ho_17_mtech_cgpa_cutoff_sc_st",
+    "type": "numerical_threshold",
+    "program": "M.Tech",
+    "question": "What is the qualifying CGPA on a 10-point scale for SC/ST applicants seeking M.Tech admission?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "5.5",
+      "SC",
+      "ST"
+    ],
+    "forbidden_inversions": [
+      "6.0 for SC/ST"
+    ],
+    "authoritative_source": "mtech_admissions.docx"
+  },
+  {
+    "id": "ho_18_partial_evidence_special_waiver",
+    "type": "partial_evidence",
+    "program": "general",
+    "question": "Can the Director waive application fees for international exchange students?",
+    "expected_behavior": "abstain",
+    "expected_key_facts": [],
+    "forbidden_inversions": [
+      "Director can waive",
+      "Director cannot waive"
+    ],
+    "authoritative_source": "not in corpus"
+  },
+  {
+    "id": "ho_19_msc_qualifying_degree_categories",
+    "type": "direct_lookup",
+    "program": "M.Sc.",
+    "question": "What qualifying degree is required for M.Sc. in Chemistry or Physics?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "Bachelor",
+      "degree"
+    ],
+    "forbidden_inversions": [],
+    "authoritative_source": "msc_admissions.docx"
+  },
+  {
+    "id": "ho_20_financial_assistantship_phd",
+    "type": "policy_lookup",
+    "program": "Ph.D.",
+    "question": "What assistantship or financial support is available for regular full-time Ph.D. scholars at IIT Jodhpur?",
+    "expected_behavior": "answer",
+    "expected_key_facts": [
+      "assistantship",
+      "fellowship",
+      "MoE",
+      "MHRD"
+    ],
+    "forbidden_inversions": [
+      "no financial assistance"
+    ],
+    "authoritative_source": "phd_admissions.docx"
+  }
+]

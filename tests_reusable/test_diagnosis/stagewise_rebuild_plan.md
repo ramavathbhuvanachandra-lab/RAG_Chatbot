@@ -1,5 +1,10 @@
-V1 Retrieval Architecture — Stagewise Rebuild Plan
-Current decision
+# V1 Retrieval Architecture — Stagewise Rebuild Plan
+
+> [!NOTE]
+> **Historical Planning Record**: This document reflects historical diagnostic analysis from early stage rebuild work.
+> For current active engineering roadmap and verified pipeline architecture, see [AI_PLATFORM_MASTER_HANDOFF.md](file:///Users/bhuvanachandra/Desktop/RAG_Chatbot/AI_PLATFORM_MASTER_HANDOFF.md).
+
+## Current decision
 Do not rebuild the whole pipeline at once.
 The current 15-case run gives enough evidence to freeze the healthy parts and isolate the destructive gate:
 Stage	Current signal	Decision

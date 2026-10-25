@@ -1,0 +1,491 @@
+[
+  {
+    "id": "scen_01_leave_approval",
+    "class": "Straightforward single-intent questions",
+    "question": "To whom must an undergraduate student address an application for leave of absence?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["leave"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_02_btech_programs_list",
+    "class": "Straightforward single-intent questions",
+    "question": "What B.Tech branches and programs are offered at IIT Jodhpur?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "B.Tech",
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["B.Tech"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_03_msc_jam_avenue",
+    "class": "Straightforward single-intent questions",
+    "question": "Is admission to regular M.Sc. programs conducted through the JAM examination?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "M.Sc.",
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["M.Sc.", "JAM"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_04_story_exec_mtech_working_engineer",
+    "class": "Long story-style questions with multiple personal facts",
+    "question": "I completed my four-year B.Tech in Electrical Engineering three years ago and I have been working in an automotive R&D lab since graduation. I want to pursue the Executive M.Tech program at IIT Jodhpur without quitting my job. Do I meet the minimum work experience requirement to register, and is an entrance test or interview mandatory?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "M.Tech",
+      "categories": [],
+      "numerics": ["4", "3"],
+      "preserved_terms": ["M.Tech", "work experience", "interview"],
+      "forbidden_queries": ["without", "M.Tech work experience without", "M.Tech eligibility without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_05_story_provisional_admission_delay",
+    "class": "Long story-style questions with multiple personal facts",
+    "question": "A student who was admitted provisionally in the autumn semester missed the academic calendar deadline to submit their final degree certificates and marks sheets because their previous university delayed graduation results. Can the Senate cancel their admission solely for failing to submit these documents by the specified deadline, and does the Senate retain authority to cancel admission later if documents contain false information?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["Senate", "admission", "provisional"],
+      "forbidden_queries": ["documents", "deadline", "without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_06_story_phd_direct_from_btech_sc",
+    "class": "Long story-style questions with multiple personal facts",
+    "question": "I am an SC category student with a 4-year B.Tech degree holding a 66% aggregate score. I want to apply directly for regular Ph.D. admission at IIT Jodhpur without having a Master's degree. Given the 70% requirement for General candidates with a 4-year bachelor's degree, what is the relaxed percentage cutoff for SC/ST candidates, and does my 66% score satisfy that minimum threshold?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "Ph.D.",
+      "categories": ["SC", "ST", "GEN"],
+      "numerics": ["66", "70", "4"],
+      "preserved_terms": ["Ph.D.", "SC", "70%", "66%"],
+      "forbidden_queries": ["without", "PhD minimum percentage SC ST without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_07_story_foreign_inra_applicant",
+    "class": "Long story-style questions with multiple personal facts",
+    "question": "I am an Indian national who has been residing abroad continuously in Germany for the last eighteen months working as a software developer. I want to apply for a postgraduate degree at IIT Jodhpur under the INRA quota. Do I meet the minimum continuous foreign residence duration requirement, and to whom must the department's recommendation be sent?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["INRA"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_08_story_overload_final_year",
+    "class": "Long story-style questions with multiple personal facts",
+    "question": "I am a seventh-semester B.Tech student who is not on academic probation and I have maintained a cumulative GPA of 7.8. I need only 45 additional credits to complete all requirements for graduation. Am I permitted to take an academic overload beyond the standard semester credit limit?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "B.Tech",
+      "categories": [],
+      "numerics": ["7.8", "45"],
+      "preserved_terms": ["B.Tech", "overload", "probation"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_09_multi_mtech_fees_and_eligibility",
+    "class": "Genuine multi-intent questions",
+    "question": "What is the eligibility requirement for regular M.Tech admission and what is the application processing fee for General category applicants?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": true,
+      "target": "M.Tech",
+      "categories": ["GEN"],
+      "numerics": [],
+      "preserved_terms": ["M.Tech", "eligibility", "fee"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_10_multi_msc_jam_and_phd_duration",
+    "class": "Genuine multi-intent questions",
+    "question": "What is the qualifying degree requirement for M.Sc. and what degree duration is required for Ph.D. applicants holding a bachelor's degree?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": true,
+      "target": "M.Sc.",
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["M.Sc.", "Ph.D."],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_11_multi_hostel_charges_and_anti_ragging",
+    "class": "Genuine multi-intent questions",
+    "question": "What are the short-term hostel room charges per day for students, and who serves as the chairperson of the Institute Anti-Ragging Committee?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": true,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["hostel", "Anti-Ragging"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_12_multi_part_time_mtech_exp_and_phd_assistantship",
+    "class": "Genuine multi-intent questions",
+    "question": "How many years of work experience are required for Executive M.Tech admission, and what assistantship is available for regular full-time Ph.D. scholars?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": true,
+      "target": "M.Tech",
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["M.Tech", "work experience", "Ph.D.", "assistantship"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_13_msc_cutoff_sc_st",
+    "class": "Numerical, category and eligibility constraints",
+    "question": "What is the minimum percentage required for SC and ST candidates applying for regular M.Sc. admission?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "M.Sc.",
+      "categories": ["SC", "ST"],
+      "numerics": [],
+      "preserved_terms": ["M.Sc.", "SC", "ST", "percentage"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_14_mtech_cgpa_cutoff_gen_10point",
+    "class": "Numerical, category and eligibility constraints",
+    "question": "What is the qualifying CGPA on a 10-point scale for General category applicants in regular M.Tech?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "M.Tech",
+      "categories": ["GEN"],
+      "numerics": ["10"],
+      "preserved_terms": ["M.Tech", "CGPA", "10"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_15_probation_max_credits",
+    "class": "Numerical, category and eligibility constraints",
+    "question": "What is the maximum credit limit per semester under the under-load rule for a student placed on academic probation?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["probation", "credits"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_16_phd_regular_master_cutoff_gen",
+    "class": "Numerical, category and eligibility constraints",
+    "question": "What is the minimum percentage or CPI on a 10-point scale required for GEN/OBC applicants with a Master's degree applying for regular Ph.D.?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "Ph.D.",
+      "categories": ["GEN", "OBC"],
+      "numerics": ["10"],
+      "preserved_terms": ["Ph.D.", "GEN", "OBC", "10"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_17_without_bedding_hostel_rate",
+    "class": "Negation, exceptions and contextual uses of \"without\"",
+    "question": "What is the daily room rent charge for an enrolled student staying in a double-occupancy hostel room without bedding?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["hostel", "without bedding"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_18_without_gate_direct_bachelor_phd",
+    "class": "Negation, exceptions and contextual uses of \"without\"",
+    "question": "Can a candidate apply for Ph.D. admission without a GATE score if they are exempted under central government circulars?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "Ph.D.",
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["Ph.D.", "GATE"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_19_non_probation_student_exception",
+    "class": "Negation, exceptions and contextual uses of \"without\"",
+    "question": "Is a student who is not on academic probation subject to the 16-credit under-load restriction?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": ["16"],
+      "preserved_terms": ["probation", "16"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_20_without_quitting_employment_part_time",
+    "class": "Negation, exceptions and contextual uses of \"without\"",
+    "question": "Can an applicant register for the sponsored or part-time Ph.D. program without resigning from their current job in an R&D laboratory?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "Ph.D.",
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["Ph.D.", "part-time"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_21_scale8_comparison_msc_mtech",
+    "class": "Comparisons and AND/OR relationships",
+    "question": "What is the minimum qualifying score on a scale of 8 for OBC applicants in M.Sc. compared to M.Tech?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "M.Sc. and M.Tech",
+      "categories": ["OBC"],
+      "numerics": ["8"],
+      "preserved_terms": ["scale of 8", "OBC", "M.Sc.", "M.Tech"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_22_or_clause_first_class_alternative",
+    "class": "Comparisons and AND/OR relationships",
+    "question": "If an M.Sc. applicant scored 58% in aggregate but obtained a first-class distinction from their university, do they qualify under the alternative OR clause?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "M.Sc.",
+      "categories": [],
+      "numerics": ["58"],
+      "preserved_terms": ["M.Sc.", "first-class"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_23_and_clause_phd_four_year_duration_and_percentage",
+    "class": "Comparisons and AND/OR relationships",
+    "question": "Does a Ph.D. applicant with a bachelor's degree need both a four-year degree duration AND at least 70% marks for General category?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "Ph.D.",
+      "categories": ["GEN"],
+      "numerics": ["4", "70"],
+      "preserved_terms": ["Ph.D.", "70%"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_24_followup_what_about_sc_st",
+    "class": "Conversational follow-up questions using prior history",
+    "question": "What about for SC/ST candidates?",
+    "chat_history": [
+      {"role": "user", "content": "What is the minimum CGPA required for General category applicants in regular M.Tech?"},
+      {"role": "assistant", "content": "A minimum CGPA of 6.0 on a 10-point scale is required for General category applicants in regular M.Tech."}
+    ],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "M.Tech",
+      "categories": ["SC", "ST"],
+      "numerics": [],
+      "preserved_terms": ["M.Tech", "SC", "ST"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_25_followup_and_for_phd",
+    "class": "Conversational follow-up questions using prior history",
+    "question": "And what is the fee for Ph.D.?",
+    "chat_history": [
+      {"role": "user", "content": "What is the application processing fee for General category in M.Tech?"},
+      {"role": "assistant", "content": "The application fee for General category applicants in M.Tech is Rs. 300."}
+    ],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "Ph.D.",
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["Ph.D.", "fee"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_26_followup_how_much_without_bedding",
+    "class": "Conversational follow-up questions using prior history",
+    "question": "How much is it without bedding?",
+    "chat_history": [
+      {"role": "user", "content": "What are the hostel room rent charges for students in double occupancy with bedding?"},
+      {"role": "assistant", "content": "The hostel room rent for students in double occupancy with 1 bedding set is Rs. 400 per day."}
+    ],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["hostel", "without bedding"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_27_hinglish_mtech_eligibility",
+    "class": "Hindi/Hinglish student wording",
+    "question": "M.Tech regular admission ke liye minimum kitne percentage chahiye General category ke liye?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": "M.Tech",
+      "categories": ["GEN"],
+      "numerics": [],
+      "preserved_terms": ["M.Tech", "General"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_28_hindi_hostel_leave_application",
+    "class": "Hindi/Hinglish student wording",
+    "question": "छात्र को छुट्टी (leave of absence) के लिए आवेदन किसको देना होता है?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": ["leave"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_29_unsupported_cgpa_discount_adversarial",
+    "class": "Ambiguity, unsupported assumptions and scope-boundary cases",
+    "question": "Does IIT Jodhpur grant an automatic 50% discount on mess and hostel fees for students who score a 9.5 CGPA in 2026?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "in_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": ["50", "9.5", "2026"],
+      "preserved_terms": ["hostel", "50%"],
+      "forbidden_queries": ["without"],
+      "pipeline_stop": false
+    }
+  },
+  {
+    "id": "scen_30_out_of_scope_cooking",
+    "class": "Ambiguity, unsupported assumptions and scope-boundary cases",
+    "question": "Can you give me the step-by-step recipe to bake a chocolate fudge cake at home?",
+    "chat_history": [],
+    "expected": {
+      "domain_decision": "out_of_scope",
+      "is_multi_intent": false,
+      "target": null,
+      "categories": [],
+      "numerics": [],
+      "preserved_terms": [],
+      "forbidden_queries": [],
+      "pipeline_stop": true
+    }
+  }
+]

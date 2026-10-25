@@ -1,0 +1,1106 @@
+{
+  "cases": [
+    {
+      "id": "R01",
+      "case": {
+        "level": "exact-targeted",
+        "question": "What are the M.Tech eligibility requirements?",
+        "targets": [
+          "M.Tech"
+        ],
+        "facets": [
+          "eligibility",
+          "requirements"
+        ],
+        "forbid": [],
+        "purpose": "Exact target + attribute; tests target/attribute/relation integrity."
+      },
+      "stages": {
+        "understand_query": {
+          "ok": true
+        },
+        "hybrid_retrieve": {
+          "ok": true
+        },
+        "fuse": {
+          "ok": true
+        },
+        "verify_and_rank": {
+          "ok": true
+        },
+        "assess_evidence": {
+          "ok": true
+        },
+        "assess_coverage": {
+          "ok": true
+        },
+        "evidence_context": {
+          "ok": true
+        },
+        "audit_claims": {
+          "ok": true
+        },
+        "package": {
+          "ok": true
+        },
+        "answer": {
+          "ok": true
+        }
+      },
+      "plan": {
+        "elapsed_ms": 11342.2,
+        "semantic_query": "M.Tech eligibility",
+        "retrieval_queries": [
+          "What are the M.Tech eligibility requirements?",
+          "M.Tech eligibility"
+        ],
+        "query_confidence": 0.85,
+        "query_resolution_state": "accepted",
+        "frame": {
+          "target": "M.Tech",
+          "request_type": "eligibility",
+          "requirement_mode": "focused",
+          "require_target": true,
+          "require_attribute": true,
+          "require_scope": false,
+          "facets": [
+            "QueryFacet(name='target', value='M.Tech', required=True, importance=1.0)",
+            "QueryFacet(name='attribute', value='eligibility', required=True, importance=1.0)"
+          ],
+          "qualifiers": []
+        }
+      },
+      "retrieval": {
+        "elapsed_ms": 8108.9,
+        "queries": [
+          "What are the M.Tech eligibility requirements?",
+          "M.Tech eligibility"
+        ],
+        "dense_counts": [
+          20,
+          30,
+          20
+        ],
+        "bm25_counts": [
+          20,
+          20,
+          0
+        ],
+        "lexical_recall_count": 30,
+        "fused_count": 75,
+        "fused_top": [
+          {
+            "rank": 1,
+            "id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "score": 0.0,
+            "rrf_score": 0.01992652329749104,
+            "rrf_rank": null,
+            "semantic_match": 0.0,
+            "coverage": 0.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "IIT Jodhpur — Office of Academics — Curriculum IIT Jodhpur • Office of Academics • Curriculum 22.4 Academic Credit Requirements for M.Tech. Students/ Executive M.Tech. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech. students are given below in Table 22.4. Table 22.4 Minimum Credits to be earned For MTech students Programs Minimum Credits to be earned MC ME MO MP NG Total M.Tech (Sensors and Internet of Things) 19 17 6 16 4 62 M.Tech (Cyber Physical System) 18 18 6 16 4 62 M.Tech (Thermofluids Engineering) "
+          },
+          {
+            "rank": 2,
+            "id": "64ed59a1407e384621ea6a193c0d2f3747993760848b8be75e6ff85990c9156d",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/research_platforms/quantum_information_and_computation/research.docx",
+            "score": 0.0,
+            "rrf_score": 0.01487704918032787,
+            "rrf_rank": null,
+            "semantic_match": 0.0,
+            "coverage": 0.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "M.Tech."
+          },
+          {
+            "rank": 3,
+            "id": "c28b0f105ce81d9610575e5659017ff5b95ee9b8ad0322c55f70f690ace5f117",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "score": 0.0,
+            "rrf_score": 0.014496287762416796,
+            "rrf_rank": null,
+            "semantic_match": 0.0,
+            "coverage": 0.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "* Master of Science (M.Sc.) Dual degree: M.Sc.-M.Tech Master of Technology (M.Tech.) Dual degree: M.Tech.-PhD. Doctor of Philosophy (Ph.D.) BS Programs [ Mathematics and Computing](https://www.iitj.ac.in/mathematics/en/undergraduate-programs) Engineering Chemistry](https://www.iitj.ac.in/office-of-academics/en/bs-\\(chemistry\\)-with-specialization) Engineering Physics](https://www.iitj.ac.in/office-of-academics/en/bs-physics-with-specialization) 24.3 M.Tech. Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.3%20M.Tech.%20Program) A regular M.Tech. student with GATE can have financial support from MHRD or project fund. A student may be exempte"
+          },
+          {
+            "rank": 4,
+            "id": "d7655a4c30148ea882f4c9ee881e65a3ee635cb4ed5d4112318c84a6308af5a1",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "score": 0.0,
+            "rrf_score": 0.014093750000000002,
+            "rrf_rank": null,
+            "semantic_match": 0.0,
+            "coverage": 0.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Regular) 9 5 Full-time (Sponsored) 9 0 External 9 0 Part-time 6 0 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term[Insert TableTable 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term] * M.Tech.-Ph.D. dual degree/Direct Ph.D. (Joining after B.Tech.) – The maximum and minimum credits that an M.Tech.-Ph.D. dual degree student can register are equivalent to that of an M.Tech. (Regular/External/Part-time) student. Ph.D.: A Ph.D. student can register for maximum and minimum credits as per Table 21"
+          },
+          {
+            "rank": 5,
+            "id": "c7f4c12e57afbea44facb03157eb63cf0e5e3e88cf2d1129cf815c26860c54fb",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "score": 0.0,
+            "rrf_score": 0.01387820512820513,
+            "rrf_rank": null,
+            "semantic_match": 0.0,
+            "coverage": 0.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "* M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. M.Tech.: An M.Tech. student can register for maximum and minimum credits as per Table 21.1. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term M.Tech. student registered under different categories Maximum Credits Minimum Credits Regular Semester Executive (Accelerated) 24 10 Executive (Normal) 17 10 Executive (Slow-Paced) 12 3 Executive (Part-Time) 12 3 Full-time (Regular/Sponsored) 17 10 External 20 10 Part-time 12 3 Summer Term Executive (Accelerated) 16 0 Executive (Normal) 9 0 Executive (Slow-Paced) 6 0 Full-time (Re"
+          },
+          {
+            "rank": 6,
+            "id": "5cd57e0bc6405d1261d4a48dbdfee1beb804ec4150a1f1e946a188796925123c",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "score": 0.0,
+            "rrf_score": 0.013792061117378724,
+            "rrf_rank": null,
+            "semantic_match": 0.0,
+            "coverage": 0.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.6%20Assistantship%20for%20B.Tech.%20-M.%20Tech.%20Dual-degree%20Programmes) The students of dual-degree programmes will be considered for award of institute research/ teaching assistantship if they have earned 150 credits by the end of the eighth semester. Only those students who have either qualified GATE or have a CGPA more than 8.0 will be eligible for this assistantship. The assistantship will be provided for a maximum period of 14 months beginning from the summer semester following the eighth semester, provided the student is registered for M.Tech. Major Project in that semester"
+          }
+        ],
+        "fuse_elapsed_ms": 7.3
+      },
+      "verification": {
+        "elapsed_ms": 934.4,
+        "verified_count": 64,
+        "rejected_count": 11,
+        "uncertain_count": 0,
+        "ranked_count": 10,
+        "top_ranked": [
+          {
+            "rank": 1,
+            "id": "4a73d1e31dc83f06eec6cb92bf124fd8e48234a16ad16227b3ffe4b60161b706",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/physics/programs.docx",
+            "score": 8.881886668275778,
+            "rrf_score": 0.0017857142857142857,
+            "rrf_rank": null,
+            "semantic_match": 1.0,
+            "coverage": 1.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "Ques. 3 Is there an integrated M.Tech. program associated with the B.S. in Engineering Physics program? Ans. No. The B.S. in Engineering Physics is a standalone four-year undergraduate program and is not integrated with an M.Tech. degree. Ques. 4 Can graduates pursue a Ph.D. after completing the B.S. in Engineering Physics program? Ans. Yes. Graduates are eligible to apply directly for Ph.D. programs, subject to the admission requirements of the respective institutions. Ques. 5 Can students change their branch after enrolling in the B.S. in Engineering Physics program? Ans. No. Students admitted to the B.S. in Engineering Physics program cannot change their branch after enrollment. Ques. 6 I"
+          },
+          {
+            "rank": 2,
+            "id": "0da8ffbc65ab9f8a2d5ad512ee86c9c7efea88ca3056f134195559afdec6b3ec",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+            "score": 8.848570465852204,
+            "rrf_score": 0.007008599508599509,
+            "rrf_rank": null,
+            "semantic_match": 0.4,
+            "coverage": 0.5,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": ". This is applicable for General/OBC/EWS categories. (or) (ii). 6.0 CGPA (Cumulative Grade Point Average) on a 10-point scale, which should be equivalent to first class in the university conversion rule. This is applicable for General/OBC/EWS categories. Note: 1. The admission eligibility requirements may be relaxed for a qualifying degree by 5% on point B(i) for SC, ST and PwD candidates. 2. The admission eligibility requirements may be relaxed for a qualifying degree by 0.5 (on a 10-point scale) on point B(ii) for SC, ST and PwD candidates. 3. The above relaxation shall be considered only as Qualifying Criteria. C. A valid score in the Common Admission Test (CAT) 2025 conducted by the Indi"
+          },
+          {
+            "rank": 3,
+            "id": "8c69ce1130b3e935ad781fd49c486ef8a24824f87a63b4433d581b3c7090af8d",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+            "score": 8.706897414736137,
+            "rrf_score": 0.0018987341772151898,
+            "rrf_rank": null,
+            "semantic_match": 1.0,
+            "coverage": 1.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "OSN1020: Performing Arts I OSN1010: Social Connect and Responsibilities – I 27.4 No case of Disciplinary Action [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top27.4%20No%20case%20of%20Disciplinary%20Action) The student shall not be considered to have completed the Academic Requirements if there is any case of indiscipline pending against her/him. 11.2.1 Eligibility Criteria for opting (a) Major/Department Specialization, Minor/Interdisciplinary Specialization A student should have earned minimum 100 credits with the CGPA more than or equal to 6.0 at the end on 6th semester to opt for capability linked opportunity. (b) B.Tech. + M.Tech. Dual Degree in"
+          },
+          {
+            "rank": 4,
+            "id": "cb72bfc1d7756ef0836cc5739520792ba59709ea58d096ab9612ed75b6b12aca",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+            "score": 8.663593118190411,
+            "rrf_score": 0.008225,
+            "rrf_rank": null,
+            "semantic_match": 1.0,
+            "coverage": 1.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "* An accelerated fashion (minimum in 12 months), OR Accumulates credits as per convenience and petitions a degree in a maximum of 6 years. The part-time or full-time mode by attending courses offered in synchronized remote contact mode and limited direct interaction Minimum residential requirement S.No. Program Minimum Duration of Residence (in semesters) 1 B. Tech. (including minor/department/interdisciplinary area specialization) 6 2 B. Tech. – M.Tech. 8 24. Financial Assistance [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.%20Financial%20Assistance) Financial assistantship/scholarship will be provided to the eligible students admitted under r"
+          },
+          {
+            "rank": 5,
+            "id": "0990791a82e1728edd115f0839c8949386a5cdc2a1735dc111b088e6653680fc",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "score": 8.372237600758615,
+            "rrf_score": 0.01137148833351365,
+            "rrf_rank": null,
+            "semantic_match": 1.0,
+            "coverage": 1.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "18 17 6 16 4 61 M.Tech (Data and Computational Sciences) 20 15 6 16 4 61 21.6 Course Registration [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4. The DRC/ IRC must oversee that the student has not registered for a similar course during her/his Masters or Bachelors program. 3.4 Withdrawing from a Course"
+          },
+          {
+            "rank": 6,
+            "id": "0a63096de24b1021649d383b18d401d468dd8f373244489f0ae8900a93a2b52f",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+            "score": 8.337542160222185,
+            "rrf_score": 0.0022727272727272726,
+            "rrf_rank": null,
+            "semantic_match": 1.0,
+            "coverage": 1.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "IIT Jodhpur — Admissions — Mtech Admissions IIT Jodhpur • Admissions • Mtech Admissions 20.2.3 Admission to M Tech Program (Regular) * The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale "
+          },
+          {
+            "rank": 7,
+            "id": "3761f6c1111a6c0bd5ea33fdcd3aabc6adf3c533605f0ecbf7b8a9cc7325271e",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+            "score": 8.117976737945538,
+            "rrf_score": 0.002,
+            "rrf_rank": null,
+            "semantic_match": 1.0,
+            "coverage": 1.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "The applicants under the category (b) must have a minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category 4.4 for SC/ST) on a scale of 8) OR a first-class as specified by the university/institute. 20.2.4 Admission to MTech Program (Executive/Part-time/ External/Sponsored) * The applicant must have bachelor’s degree in engineering or science (4-year program) or a master’s degree in science, MCA, Pharmacy, Medical Science, Agricultural S"
+          },
+          {
+            "rank": 8,
+            "id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "score": 8.003658858224886,
+            "rrf_score": 0.01992652329749104,
+            "rrf_rank": null,
+            "semantic_match": 1.0,
+            "coverage": 1.0,
+            "target_match": null,
+            "attribute_match": 0.0,
+            "scope_match": 0.0,
+            "verification": "verified",
+            "preview": "IIT Jodhpur — Office of Academics — Curriculum IIT Jodhpur • Office of Academics • Curriculum 22.4 Academic Credit Requirements for M.Tech. Students/ Executive M.Tech. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech. students are given below in Table 22.4. Table 22.4 Minimum Credits to be earned For MTech students Programs Minimum Credits to be earned MC ME MO MP NG Total M.Tech (Sensors and Internet of Things) 19 17 6 16 4 62 M.Tech (Cyber Physical System) 18 18 6 16 4 62 M.Tech (Thermofluids Engineering) "
+          }
+        ],
+        "lexical_fallback_used": false,
+        "verification_trace": [
+          {
+            "candidate_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ],
+            "evidence": {
+              "target_score": 1.0,
+              "attribute_score": 1.0,
+              "relation_score": 1.0,
+              "entity_score": 0.0,
+              "query_overlap": 0.6666666666666666,
+              "semantic_score": 1.0,
+              "scope_score": 1.0,
+              "conflict": false,
+              "hard_evidence": true,
+              "factual_score": 0.9,
+              "ranking_score": 0.888,
+              "evidence_units": [
+                "IIT Jodhpur — Office of Academics — Curriculum",
+                "IIT Jodhpur • Office of Academics • Curriculum",
+                "22.4 Academic Credit Requirements for M.Tech.",
+                "Students/ Executive M.Tech.",
+                "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech.",
+                "students are given below in Table 22.4.",
+                "Table 22.4 Minimum Credits to be earned For MTech students",
+                "Programs",
+                "Minimum Credits to be earned",
+                "MC",
+                "ME",
+                "MO",
+                "MP",
+                "NG",
+                "Total",
+                "M.Tech (Sensors and Internet of Things)",
+                "19",
+                "17",
+                "6",
+                "16",
+                "4",
+                "62",
+                "M.Tech (Cyber Physical System)",
+                "18",
+                "18",
+                "6",
+                "16",
+                "4",
+                "62",
+                "M.Tech (Thermofluids Engineering)",
+                "17",
+                "17",
+                "6",
+                "16",
+                "4",
+                "60"
+              ],
+              "supporting_units": [
+                "22.4 Academic Credit Requirements for M.Tech.",
+                "Students/ Executive M.Tech.",
+                "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech.",
+                "Table 22.4 Minimum Credits to be earned For MTech students"
+              ],
+              "reasons": [
+                "target_supported",
+                "attribute_supported",
+                "target_attribute_relation_supported",
+                "semantic_compatibility_present"
+              ]
+            }
+          },
+          {
+            "candidate_id": "64ed59a1407e384621ea6a193c0d2f3747993760848b8be75e6ff85990c9156d",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.65,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.650"
+            ],
+            "evidence": {
+              "target_score": 1.0,
+              "attribute_score": 1.0,
+              "relation_score": 1.0,
+              "entity_score": 0.0,
+              "query_overlap": 0.3333333333333333,
+              "semantic_score": 0.6,
+              "scope_score": 1.0,
+              "conflict": false,
+              "hard_evidence": true,
+              "factual_score": 0.9,
+              "ranking_score": 0.8,
+              "evidence_units": [
+                "M.Tech."
+              ],
+              "supporting_units": [
+                "M.Tech."
+              ],
+              "reasons": [
+                "target_supported",
+                "attribute_supported",
+                "target_attribute_relation_supported",
+                "semantic_compatibility_weak"
+              ]
+            }
+          },
+          {
+            "candidate_id": "c28b0f105ce81d9610575e5659017ff5b95ee9b8ad0322c55f70f690ace5f117",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.65,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.650"
+            ],
+            "evidence": {
+              "target_score": 1.0,
+              "attribute_score": 1.0,
+              "relation_score": 1.0,
+              "entity_score": 0.0,
+              "query_overlap": 0.3333333333333333,
+              "semantic_score": 0.6,
+              "scope_score": 1.0,
+              "conflict": false,
+              "hard_evidence": true,
+              "factual_score": 0.9,
+              "ranking_score": 0.8,
+              "evidence_units": [
+                "* Master of Science (M.Sc.)",
+                "Dual degree: M.Sc.-M.Tech",
+                "Master of Technology (M.Tech.)",
+                "Dual degree: M.Tech.-PhD.",
+                "Doctor of Philosophy (Ph.D.)",
+                "BS Programs",
+                "[",
+                "Mathematics and Computing](https://www.iitj.ac.in/mathematics/en/undergraduate-programs)",
+                "Engineering Chemistry](https://www.iitj.ac.in/office-of-academics/en/bs-\\(chemistry\\)-with-specialization)",
+                "Engineering Physics](https://www.iitj.ac.in/office-of-academics/en/bs-physics-with-specialization)",
+                "24.3 M.Tech.",
+                "Program",
+                "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.3%20M.Tech.%20Program) A regular M.Tech.",
+                "student with GATE can have financial support from MHRD or project fund.",
+                "A student may be exempted from GATE as per MHRD guidelines."
+              ],
+              "supporting_units": [
+                "Dual degree: M.Sc.-M.Tech",
+                "Master of Technology (M.Tech.)",
+                "Dual degree: M.Tech.-PhD.",
+                "24.3 M.Tech."
+              ],
+              "reasons": [
+                "target_supported",
+                "attribute_supported",
+                "target_attribute_relation_supported",
+                "semantic_compatibility_weak"
+              ]
+            }
+          },
+          {
+            "candidate_id": "d7655a4c30148ea882f4c9ee881e65a3ee635cb4ed5d4112318c84a6308af5a1",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.65,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.650"
+            ],
+            "evidence": {
+              "target_score": 1.0,
+              "attribute_score": 1.0,
+              "relation_score": 1.0,
+              "entity_score": 0.0,
+              "query_overlap": 0.3333333333333333,
+              "semantic_score": 0.6,
+              "scope_score": 1.0,
+              "conflict": false,
+              "hard_evidence": true,
+              "factual_score": 0.9,
+              "ranking_score": 0.8,
+              "evidence_units": [
+                "Executive (Accelerated)",
+                "16",
+                "0",
+                "Executive (Normal)",
+                "9",
+                "0",
+                "Executive (Slow-Paced)",
+                "6",
+                "0",
+                "Full-time (Regular)",
+                "9",
+                "5",
+                "Full-time (Sponsored)",
+                "9",
+                "0",
+                "External",
+                "9",
+                "0",
+                "Part-time",
+                "6",
+                "0",
+                "Maximum and Minimum Credits an M.Tech.",
+                "student can register for during the Regular semester/Summer Term[Insert TableTable 21.1 Maximum and Minimum Credits an M.Tech.",
+                "student can register for during the Regular semester/Summer Term]",
+                "* M.Tech.-Ph.D.",
+                "dual degree/Direct Ph.D.",
+                "(Joining after B.Tech.) – The maximum and minimum credits that an M.Tech.-Ph.D.",
+                "dual degree student can register are equivalent to that of an M.Tech.",
+                "(Regular/External/Part-time) student.",
+                "Ph.D.: A Ph.D.",
+                "student can register for maximum and minimum credits as per Table 21.2."
+              ],
+              "supporting_units": [
+                "Maximum and Minimum Credits an M.Tech.",
+                "student can register for during the Regular semester/Summer Term[Insert TableTable 21.1 Maximum and Minimum Credits an M.Tech.",
+                "* M.Tech.-Ph.D.",
+                "(Joining after B.Tech.) – The maximum and minimum credits that an M.Tech.-Ph.D."
+              ],
+              "reasons": [
+                "target_supported",
+                "attribute_supported",
+                "target_attribute_relation_supported",
+                "semantic_compatibility_weak"
+              ]
+            }
+          },
+          {
+            "candidate_id": "c7f4c12e57afbea44facb03157eb63cf0e5e3e88cf2d1129cf815c26860c54fb",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.65,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.650"
+            ],
+            "evidence": {
+              "target_score": 1.0,
+              "attribute_score": 1.0,
+              "relation_score": 1.0,
+              "entity_score": 0.0,
+              "query_overlap": 0.3333333333333333,
+              "semantic_score": 0.6,
+              "scope_score": 1.0,
+              "conflict": false,
+              "hard_evidence": true,
+              "factual_score": 0.9,
+              "ranking_score": 0.8,
+              "evidence_units": [
+                "* M.Sc.: An M.Sc.",
+                "student can register for a maximum of 24 credits and a minimum of 10 credits in a semester.",
+                "M.Tech.: An M.Tech.",
+                "student can register for maximum and minimum credits as per Table 21.1.",
+                "Table 21.1 Maximum and Minimum Credits an M.Tech.",
+                "student can register for during the Regular semester/Summer Term",
+                "M.Tech.",
+                "student registered under different categories",
+                "Maximum Credits",
+                "Minimum Credits",
+                "Regular Semester",
+                "Executive (Accelerated)",
+                "24",
+                "10",
+                "Executive (Normal)",
+                "17",
+                "10",
+                "Executive (Slow-Paced)",
+                "12",
+                "3",
+                "Executive (Part-Time)",
+                "12",
+                "3",
+                "Full-time (Regular/Sponsored)",
+                "17",
+                "10",
+                "External",
+                "20",
+                "10",
+                "Part-time",
+                "12",
+                "3",
+                "Summer Term",
+                "Executive (Accelerated)",
+                "16",
+                "0",
+                "Executive (Normal)",
+                "9",
+                "0",
+                "Executive (Slow-Paced)",
+                "6",
+                "0",
+                "Full-time (Regular)",
+                "9",
+                "5",
+                "Full-time (Sponsored)",
+                "9"
+              ],
+              "supporting_units": [
+                "M.Tech.: An M.Tech.",
+                "Table 21.1 Maximum and Minimum Credits an M.Tech.",
+                "M.Tech."
+              ],
+              "reasons": [
+                "target_supported",
+                "attribute_supported",
+                "target_attribute_relation_supported",
+                "semantic_compatibility_weak"
+              ]
+            }
+          },
+          {
+            "candidate_id": "5cd57e0bc6405d1261d4a48dbdfee1beb804ec4150a1f1e946a188796925123c",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ],
+            "evidence": {
+              "target_score": 1.0,
+              "attribute_score": 1.0,
+              "relation_score": 1.0,
+              "entity_score": 0.0,
+              "query_overlap": 0.3333333333333333,
+              "semantic_score": 1.0,
+              "scope_score": 1.0,
+              "conflict": false,
+              "hard_evidence": true,
+              "factual_score": 0.9,
+              "ranking_score": 0.8480000000000001,
+              "evidence_units": [
+                "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.6%20Assistantship%20for%20B.Tech.%20-M.%20Tech.%20Dual-degree%20Programmes) The students of dual-degree programmes will be considered for award of institute research/ teaching assistantship if they have earned 150 credits by the end of the eighth semester.",
+                "Only those students who have either qualified GATE or have a CGPA more than 8.0 will be eligible for this assistantship.",
+                "The assistantship will be provided for a maximum period of 14 months beginning from the summer semester following the eighth semester, provided the student is registered for M.Tech.",
+                "Major Project in that semester"
+              ],
+              "supporting_units": [
+                "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top11.6%20Assistantship%20for%20B.Tech.%20-M.%20Tech.%20Dual-degree%20Programmes) The students of dual-degree programmes will be considered for award of institute research/ teaching assistantship if they have earned 150 credits by the end of the eighth semester.",
+                "The assistantship will be provided for a maximum period of 14 months beginning from the summer semester following the eighth semester, provided the student is registered for M.Tech."
+              ],
+              "reasons": [
+                "target_supported",
+                "attribute_supported",
+                "target_attribute_relation_supported",
+                "semantic_compatibility_present"
+              ]
+            }
+          },
+          {
+            "candidate_id": "d1ac96410ed2a59958b1a79de2bf06d2cb13394ef380fc0f41c0fe4f8f41300f",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.65,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.650"
+            ],
+            "evidence": {
+              "target_score": 1.0,
+              "attribute_score": 1.0,
+              "relation_score": 1.0,
+              "entity_score": 0.0,
+              "query_overlap": 0.3333333333333333,
+              "semantic_score": 0.6,
+              "scope_score": 1.0,
+              "conflict": false,
+              "hard_evidence": true,
+              "factual_score": 0.9,
+              "ranking_score": 0.8,
+              "evidence_units": [
+                "Programs",
+                "Minimum Credits to be earned",
+                "MC",
+                "ME",
+                "MO",
+                "MP",
+                "NG",
+                "Total",
+                "M.Tech-Ph.D Dual Degree (Sensors and Internet of Things)",
+                "19",
+                "17",
+                "6",
+                "16",
+                "4",
+                "62",
+                "M.Tech-Ph.D Dual Degree (Cyber Physical System)",
+                "18",
+                "18",
+                "6",
+                "16",
+                "4",
+                "62",
+                "M.Tech-Ph.D Dual Degree (Communication and Signal Processing)",
+                "17",
+                "17",
+                "6",
+                "16",
+                "4",
+                "60",
+                "M.Tech-Ph.D Dual Degree (Thermofluids Engineering)",
+                "17",
+                "17",
+                "6",
+                "16",
+                "4",
+                "60",
+                "M.Tech-Ph.D Dual Degree (Manufacturing Engineering)",
+                "17",
+                "17",
+                "6",
+                "16",
+                "4",
+                "60",
+                "M.Tech-Ph.D Dual Degree (Design Engineering)",
+                "17",
+                "17",
+                "6",
+                "16",
+                "4",
+                "60",
+                "M.Tech-Ph.D Dual Degree (Metallurgical and Materials Engineering)",
+                "16",
+                "18",
+                "6",
+                "16",
+                "4",
+                "60",
+                "M.Tech-Ph.D Dual Degree (Computer Science and Engineering)",
+                "18",
+                "18",
+                "6",
+                "16",
+                "4",
+                "62",
+                "M.Tech-Ph.D Dual Degree (Artificial Intelligence)",
+                "18",
+                "18",
+                "6",
+                "16",
+                "4",
+                "62"
+              ],
+              "supporting_units": [
+                "M.Tech-Ph.D Dual Degree (Sensors and Internet of Things)",
+                "M.Tech-Ph.D Dual Degree (Cyber Physical System)",
+                "M.Tech-Ph.D Dual Degree (Communication and Signal Processing)",
+                "M.Tech-Ph.D Dual Degree (Thermofluids Engineering)"
+              ],
+              "reasons": [
+                "target_supported",
+                "attribute_supported",
+                "target_attribute_relation_supported",
+                "semantic_compatibility_weak"
+              ]
+            }
+          },
+          {
+            "candidate_id": "032a8c68a8f66a3a49c2d856571555464fd715b5ff3f27cd9ec525ee7216efca",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ],
+            "evidence": {
+              "target_score": 1.0,
+              "attribute_score": 1.0,
+              "relation_score": 1.0,
+              "entity_score": 0.0,
+              "query_overlap": 0.6666666666666666,
+              "semantic_score": 1.0,
+              "scope_score": 1.0,
+              "conflict": false,
+              "hard_evidence": true,
+              "factual_score": 0.9,
+              "ranking_score": 0.888,
+              "evidence_units": [
+                "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.4%20Change%20of%20Registration%20from%20B.%20Tech.%20Programme%20to%20B.Tech.-%20M.%20Tech.%20dual%20degree%20Programme) A B.Tech.",
+                "Student having opted for major/minor specialization with CGPA 6 or more at the end of the seventh semester and fulfilling requirements mentioned earlier may be allowed to switch to B.Tech.- M.",
+                "Tech.",
+                "dual degree program in the chosen specialization at the beginning of the eighth semester.",
+                "The M.Tech degree can be any one of the approved programmes of the institute.",
+                "All requirements of M.Tech.",
+                "Degree will be applicable to all such students.",
+                "All such changes of registration shall be reported to the Senate.",
+                "3.2 Late Registration"
+              ],
+              "supporting_units": [
+                "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.4%20Change%20of%20Registration%20from%20B.%20Tech.%20Programme%20to%20B.Tech.-%20M.%20Tech.%20dual%20degree%20Programme) A B.Tech.",
+                "Student having opted for major/minor specialization with CGPA 6 or more at the end of the seventh semester and fulfilling requirements mentioned earlier may be allowed to switch to B.Tech.- M.",
+                "Tech.",
+                "The M.Tech degree can be any one of the approved programmes of the institute."
+              ],
+              "reasons": [
+                "target_supported",
+                "attribute_supported",
+                "target_attribute_relation_supported",
+                "semantic_compatibility_present"
+              ]
+            }
+          }
+        ]
+      },
+      "evidence_assessment": {
+        "elapsed_ms": 0.0,
+        "status": "insufficient",
+        "score": 0.0,
+        "relevant_documents": 0
+      },
+      "coverage": {
+        "elapsed_ms": 0.1,
+        "status": "insufficient",
+        "question_type": "requirements"
+      },
+      "context": {
+        "elapsed_ms": 34.8,
+        "evidence_candidate_count": 10,
+        "evidence_document_count": 10,
+        "final_context_chars": 1905,
+        "preview": "The admission eligibility requirements may be relaxed for a qualifying degree by 5% on point B(i) for SC, ST and PwD candidates. A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute. 22.4 Academic Credit Requirements for M.Tech. Programs Students/ Executive M.Tech. Table 22.4 Minimum Credits to be earned For MTech students [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech. students are given below in Table 22.4. programs, subject to the admission requirements of the respective institutions. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top27.4%20No%20case%20of%20Disciplinary%20Action) The student shall not be considered to have completed the Academic Requirements if there is any case of indiscipline pending against her/him. + M.Tech. * The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field degree. 2. Note: 1. The above relaxation shall be considered only as Qualifying Criteria. 6.0 CGPA (Cumulative Grade Point Average) on a 10-point scale, which should be equivalent to first class in the university conversion rule. This is applicable fo"
+      },
+      "context_fit": {
+        "status": "FIT",
+        "query_token_overlap": 1.0,
+        "target_hits": {
+          "M.Tech": true
+        },
+        "facet_hits": {
+          "eligibility": true,
+          "requirements": true
+        },
+        "forbidden_term_hits": {},
+        "query_frame": {
+          "target": "M.Tech",
+          "request_type": "eligibility",
+          "requirement_mode": "focused",
+          "require_target": true,
+          "require_attribute": true,
+          "require_scope": false,
+          "facets": [
+            "QueryFacet(name='target', value='M.Tech', required=True, importance=1.0)",
+            "QueryFacet(name='attribute', value='eligibility', required=True, importance=1.0)"
+          ],
+          "qualifiers": []
+        }
+      },
+      "context_package_items": [
+        {
+          "rank": 1,
+          "evidence_id": "0da8ffbc65ab9f8a2d5ad512ee86c9c7efea88ca3056f134195559afdec6b3ec",
+          "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+          "heading": "",
+          "text_preview": "The admission eligibility requirements may be relaxed for a qualifying degree by 5% on point B(i) for SC, ST and PwD candidates."
+        },
+        {
+          "rank": 2,
+          "evidence_id": "0a63096de24b1021649d383b18d401d468dd8f373244489f0ae8900a93a2b52f",
+          "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+          "heading": "",
+          "text_preview": "A minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category (4.4 for SC/ST) on a scale of 8) or a first-class as specified by the university/institute."
+        },
+        {
+          "rank": 3,
+          "evidence_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+          "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+          "heading": "",
+          "text_preview": "22.4 Academic Credit Requirements for M.Tech."
+        },
+        {
+          "rank": 4,
+          "evidence_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+          "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+          "heading": "",
+          "text_preview": "Programs"
+        },
+        {
+          "rank": 5,
+          "evidence_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+          "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+          "heading": "",
+          "text_preview": "Students/ Executive M.Tech."
+        },
+        {
+          "rank": 6,
+          "evidence_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+          "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+          "heading": "",
+          "text_preview": "Table 22.4 Minimum Credits to be earned For MTech students"
+        },
+        {
+          "rank": 7,
+          "evidence_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+          "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+          "heading": "",
+          "text_preview": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech."
+        },
+        {
+          "rank": 8,
+          "evidence_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+          "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+          "heading": "",
+          "text_preview": "students are given below in Table 22.4."
+        }
+      ],
+      "claim_audit": {
+        "elapsed_ms": 18.3,
+        "status": "supported",
+        "claims": 1,
+        "matches": 89,
+        "supported": [
+          "request_1"
+        ],
+        "partial": [],
+        "unsupported": [],
+        "conflicting": []
+      },
+      "package": {
+        "elapsed_ms": 1.1,
+        "status": "ready",
+        "ready_for_generation": true,
+        "selected_count": 10,
+        "source_count": 6,
+        "context_chars": 1870,
+        "items": [
+          {
+            "rank": 1,
+            "evidence_id": "4a73d1e31dc83f06eec6cb92bf124fd8e48234a16ad16227b3ffe4b60161b706:17",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/departments/physics/programs.docx",
+            "heading": "",
+            "text_preview": "Graduates are eligible to apply directly for Ph.D."
+          },
+          {
+            "rank": 2,
+            "evidence_id": "0da8ffbc65ab9f8a2d5ad512ee86c9c7efea88ca3056f134195559afdec6b3ec:6",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+            "heading": "",
+            "text_preview": "The admission eligibility requirements may be relaxed for a qualifying degree by 5% on point B(i) for SC, ST and PwD candidates."
+          },
+          {
+            "rank": 3,
+            "evidence_id": "0da8ffbc65ab9f8a2d5ad512ee86c9c7efea88ca3056f134195559afdec6b3ec:8",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/schools/management_and_entrepreneurship/general_information.docx",
+            "heading": "",
+            "text_preview": "The admission eligibility requirements may be relaxed for a qualifying degree by 0.5 (on a 10-point scale) on point B(ii) for SC, ST and PwD candidates."
+          },
+          {
+            "rank": 4,
+            "evidence_id": "8c69ce1130b3e935ad781fd49c486ef8a24824f87a63b4433d581b3c7090af8d:4",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+            "heading": "",
+            "text_preview": "11.2.1 Eligibility Criteria for opting"
+          },
+          {
+            "rank": 5,
+            "evidence_id": "cb72bfc1d7756ef0836cc5739520792ba59709ea58d096ab9612ed75b6b12aca:18",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/general_information.docx",
+            "heading": "",
+            "text_preview": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.%20Financial%20Assistance) Financial assistantship/scholarship will be provided to the eligible students admitted under regular full-time program."
+          },
+          {
+            "rank": 6,
+            "evidence_id": "0990791a82e1728edd115f0839c8949386a5cdc2a1735dc111b088e6653680fc:14",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "heading": "",
+            "text_preview": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.6%20Course%20Registration) Students will be eligible to register for courses as per the criterion specified in Section 21.1 and Table 4.4."
+          },
+          {
+            "rank": 7,
+            "evidence_id": "0a63096de24b1021649d383b18d401d468dd8f373244489f0ae8900a93a2b52f:3",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+            "heading": "",
+            "text_preview": "* The applicant must have bachelor’s degree in engineering or science (4 year program) or a master’s degree in science, MCA, Pharmacy, Medical Sciences, Agricultural Sciences and Veterinary Sciences or in a related field"
+          },
+          {
+            "rank": 8,
+            "evidence_id": "3761f6c1111a6c0bd5ea33fdcd3aabc6adf3c533605f0ecbf7b8a9cc7325271e:0",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+            "heading": "",
+            "text_preview": "The applicants under the category (b) must have a minimum of 60% marks for GEN/OBC (55% for SC/ST) category in aggregate or as specified by the university/institute or a minimum CGPA of 6.0 for GEN/OBC (5.5 for SC/ST) category on the scale of 10; with corresponding proportional requirements when the scales are other than on 10 (for example 4.8 for GEN/OBC category 4.4 for SC/ST) on a scale of 8) OR a first-class as specified by the university/institute."
+          }
+        ]
+      },
+      "answer": {
+        "elapsed_ms": 6755.7,
+        "answer": "For M.Tech eligibility at IIT Jodhpur, candidates need to have a bachelor’s degree in engineering or science (a 4-year program) or a master’s degree in a related field such as MCA, Pharmacy, Medical Sciences, Agricultural Sciences, or Veterinary Sciences. Additionally, the CGPA must be 6.0 on a 10-point scale, equivalent to a first class under the university's conversion rule. The university may also relax admission eligibility requirements by 5% for SC, ST, and PwD candidates. There is no consideration for cases of disciplinary action.",
+        "grounding_status": "grounded",
+        "guard_status": "clean",
+        "guard_fallback_used": false,
+        "model_calls": 1
+      },
+      "diagnosis": {
+        "first_failure": "EVIDENCE_COVERAGE",
+        "status": "REVIEW"
+      },
+      "elapsed_ms_total": 27203.4
+    }
+  ],
+  "diagnosis_counts": {
+    "EVIDENCE_COVERAGE": 1
+  }
+}

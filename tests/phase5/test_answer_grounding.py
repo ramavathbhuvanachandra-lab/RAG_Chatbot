@@ -5,7 +5,7 @@ These tests target semantic relationship failures rather than simple
 number presence.
 """
 
-from backend.core.answering.grounding (
+from ai_platform.core.answering.grounding import (
     assess_answer_grounding,
     has_grounding_issue,
 )

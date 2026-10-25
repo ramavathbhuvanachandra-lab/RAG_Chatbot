@@ -1,0 +1,134 @@
+[
+  {
+    "id": "diag_01_leave_approval",
+    "category": "Easy factual",
+    "is_story_style": false,
+    "question": "To whom must an undergraduate student address an application for leave of absence, and whose prior approval is usually required?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "Application must be addressed to the Convener DUGC, and prior approval of the DUGC is usually required.",
+    "expected_key_facts": ["Convener DUGC", "DUGC", "leave"],
+    "forbidden_inversions": ["Director", "Dean of Students"],
+    "authoritative_source": "rules_and_regulations.docx Section 15"
+  },
+  {
+    "id": "diag_02_probation_credit_limit",
+    "category": "Easy factual",
+    "is_story_style": false,
+    "question": "What is the maximum credit limit per semester for a student placed on academic probation due to academic deficiency?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "A maximum of 16 credits under the under-load rule for academically deficient students on probation.",
+    "expected_key_facts": ["16", "credits", "probation"],
+    "forbidden_inversions": ["20 credits", "no limit"],
+    "authoritative_source": "rules_and_regulations.docx Section 12.3"
+  },
+  {
+    "id": "diag_03_mtech_exec_experience",
+    "category": "Hard",
+    "is_story_style": true,
+    "question": "I am a working engineer who completed my 4-year B.Tech in Electrical Engineering three years ago. I am currently employed at an automotive R&D lab and want to apply for the Executive/Part-Time M.Tech program at IIT Jodhpur without quitting my job. Do I meet the minimum work experience requirement to register, and is an entrance test or interview mandatory for admission?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "Yes, the applicant meets the work experience requirement (minimum 2 years required after qualifying degree; applicant has 3 years). Yes, qualifying the written test and/or interview conducted by IIT Jodhpur is mandatory.",
+    "expected_key_facts": ["two years", "2 years", "written test", "interview"],
+    "forbidden_inversions": ["not meet", "exempt from interview"],
+    "authoritative_source": "mtech_admissions.docx Section 20.2.4"
+  },
+  {
+    "id": "diag_04_msc_mtech_scale8_comparison",
+    "category": "Hard",
+    "is_story_style": true,
+    "question": "I am an OBC category applicant comparing the regular M.Tech and regular M.Sc. programs at IIT Jodhpur. If my undergraduate university graded on a scale of 8 rather than 10, what is the exact minimum qualifying CGPA requirement for OBC candidates in each of these two programs, and is the threshold the same or different between M.Sc. and M.Tech?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "The minimum requirement for GEN/OBC on a scale of 8 is 4.8 for both regular M.Sc. and regular M.Tech programs (corresponding to 6.0 on a scale of 10). The threshold is the same for both programs.",
+    "expected_key_facts": ["4.8", "scale of 8", "same"],
+    "forbidden_inversions": ["4.4 for OBC", "different threshold"],
+    "authoritative_source": "msc_admissions.docx Section 20.2.1 & mtech_admissions.docx Section 20.2.3"
+  },
+  {
+    "id": "diag_05_provisional_admission_cancellation",
+    "category": "Hard",
+    "is_story_style": true,
+    "question": "A student who was admitted provisionally in the autumn semester missed the academic calendar deadline to submit their final degree certificates and marks sheets because their previous university delayed graduation results. Can the Senate cancel their admission solely for failing to submit these documents by the specified deadline, and does the Senate retain authority to cancel admission later if documents contain false information?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "Yes, the Senate reserves the right to cancel admission for failing to submit prescribed documents by the specified date. The Senate also reserves the right to cancel admission at any later time if false information was provided or relevant information was suppressed.",
+    "expected_key_facts": ["Senate", "cancel", "admission", "false information"],
+    "forbidden_inversions": ["cannot cancel", "Senate has no right"],
+    "authoritative_source": "general_admissions.docx Section 10.5"
+  },
+  {
+    "id": "diag_06_overload_conditions",
+    "category": "Hard",
+    "is_story_style": false,
+    "question": "Under what specific conditions regarding completed credits and CGPA is an undergraduate student who is NOT on academic probation permitted to take an academic overload beyond the regular credit limit?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "Overloading is allowed for non-probation students if they satisfy either: (1) they need 70 or less additional credits to complete all programme requirements, OR (2) beyond the second semester, they have a CGPA of 7.5 or higher.",
+    "expected_key_facts": ["70", "credits", "7.5", "CGPA"],
+    "forbidden_inversions": ["probation allowed", "any semester"],
+    "authoritative_source": "rules_and_regulations.docx Section 12.3"
+  },
+  {
+    "id": "diag_07_phd_four_year_bachelor_sc_threshold",
+    "category": "Numerical reasoning",
+    "is_story_style": true,
+    "question": "I am an SC category student with a 4-year B.Tech degree holding a 66% aggregate score. I want to apply directly for regular Ph.D. admission at IIT Jodhpur without having a Master's degree. Given the 70% requirement for General candidates with a 4-year bachelor's degree, what is the relaxed percentage cutoff for SC/ST candidates, and does my 66% score satisfy that minimum threshold?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "The relaxed percentage cutoff for SC/ST candidates with a 4-year bachelor's degree applying for regular Ph.D. is 65% (or 6.5/10). The applicant's 66% score meets/satisfies this minimum threshold.",
+    "expected_key_facts": ["65%", "SC", "satisfies", "eligible"],
+    "forbidden_inversions": ["60% for 4-year", "does not satisfy", "not eligible"],
+    "authoritative_source": "phd_admissions.docx Section 20.2.6"
+  },
+  {
+    "id": "diag_08_hostel_short_term_bedding_calculation",
+    "category": "Numerical reasoning",
+    "is_story_style": true,
+    "question": "If an enrolled student stays in an IIT Jodhpur hostel for a short-term period of 5 days and chooses a double-occupancy room with 1 bedding set, what is the total room rent charge before GST, and how does this daily rate compare to staying without bedding?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "For enrolled students, double-occupancy room rent with 1 bedding set is ₹400/- per day, totaling ₹2,000/- for 5 days (excluding GST). Without bedding, the rate is ₹300/- per day (totaling ₹1,500/- for 5 days), which is ₹100/- less per day.",
+    "expected_key_facts": ["400", "2000", "300"],
+    "forbidden_inversions": ["450 per day", "750 per day"],
+    "authoritative_source": "fees_and_finance.docx Accommodation Charges"
+  },
+  {
+    "id": "diag_09_hostel_discount_unsupported_premise",
+    "category": "Adversarial",
+    "is_story_style": false,
+    "question": "Under IIT Jodhpur's 2026 hostel regulations, does an undergraduate student receive an automatic 50% discount on mess and accommodation charges if they maintain a CGPA above 9.5?",
+    "expected_behavior": "abstain",
+    "expected_answer_summary": "Appropriate abstention: the corpus contains no rule or policy granting an automatic 50% discount on hostel or mess fees for CGPA above 9.5.",
+    "expected_key_facts": [],
+    "forbidden_inversions": ["Yes, students receive a 50% discount", "discount is granted"],
+    "authoritative_source": "corpus absent (unsupported policy)"
+  },
+  {
+    "id": "diag_10_mtech_bsc_contradictory_constraints",
+    "category": "Adversarial",
+    "is_story_style": false,
+    "question": "Can a candidate who completed a 3-year B.Sc. degree with 58% in the General category apply for regular M.Tech admission under Section 20.2.3, given that 55% is accepted for SC/ST applicants?",
+    "expected_behavior": "answer",
+    "expected_answer_summary": "No. Under Section 20.2.3, regular M.Tech requires a 4-year bachelor's degree in engineering/science (or a master's degree), not a 3-year bachelor's degree. Additionally, 58% does not meet the 60% requirement for General category applicants; the 55% cutoff applies strictly to SC/ST.",
+    "expected_key_facts": ["4-year", "60%", "not eligible"],
+    "forbidden_inversions": ["is eligible", "can apply with 3-year B.Sc."],
+    "authoritative_source": "mtech_admissions.docx Section 20.2.3"
+  },
+  {
+    "id": "diag_11_nonexistent_bds_program",
+    "category": "Adversarial",
+    "is_story_style": false,
+    "question": "What are the core course requirements and semester-wise credit distribution for the Bachelor of Dental Surgery (BDS) degree program at IIT Jodhpur?",
+    "expected_behavior": "abstain",
+    "expected_answer_summary": "Appropriate abstention: IIT Jodhpur does not offer a Bachelor of Dental Surgery (BDS) degree program; no curriculum or credit distribution exists in the corpus.",
+    "expected_key_facts": [],
+    "forbidden_inversions": ["The BDS curriculum requires", "BDS core courses include"],
+    "authoritative_source": "corpus absent (nonexistent degree program)"
+  },
+  {
+    "id": "diag_12_gymkhana_override_senate",
+    "category": "Adversarial",
+    "is_story_style": false,
+    "question": "Can the President of the Student Gymkhana override the Senate's decision regarding cancellation of a student's provisional admission under Section 10.5?",
+    "expected_behavior": "abstain",
+    "expected_answer_summary": "Appropriate abstention / denial: Section 10.5 gives the Senate sole reservation to cancel admission; the regulations contain no provision allowing the Student Gymkhana President to override Senate decisions.",
+    "expected_key_facts": [],
+    "forbidden_inversions": ["Yes, the Gymkhana President can override", "Gymkhana has authority to override"],
+    "authoritative_source": "general_admissions.docx Section 10.5 & corpus boundary"
+  }
+]

@@ -1,0 +1,3650 @@
+{
+  "summary": {
+    "cases": 1,
+    "diagnosis_counts": {
+      "GOOD": 1
+    },
+    "levels": {
+      "medium": {
+        "GOOD": 1
+      }
+    },
+    "timings_ms": {
+      "claim_audit": {
+        "median_ms": 20.92,
+        "p95_ms": 20.92,
+        "max_ms": 20.92
+      },
+      "evidence_assessment": {
+        "median_ms": 0.07,
+        "p95_ms": 0.07,
+        "max_ms": 0.07
+      },
+      "evidence_boundary": {
+        "median_ms": 8.12,
+        "p95_ms": 8.12,
+        "max_ms": 8.12
+      },
+      "evidence_coverage": {
+        "median_ms": 1.6,
+        "p95_ms": 1.6,
+        "max_ms": 1.6
+      },
+      "evidence_packaging": {
+        "median_ms": 0.95,
+        "p95_ms": 0.95,
+        "max_ms": 0.95
+      },
+      "hybrid_retrieval": {
+        "median_ms": 7197.88,
+        "p95_ms": 7197.88,
+        "max_ms": 7197.88
+      },
+      "query_understanding": {
+        "median_ms": 6261.97,
+        "p95_ms": 6261.97,
+        "max_ms": 6261.97
+      },
+      "rrf_fusion": {
+        "median_ms": 5.95,
+        "p95_ms": 5.95,
+        "max_ms": 5.95
+      },
+      "total_preanswer": {
+        "median_ms": 14288.13,
+        "p95_ms": 14288.13,
+        "max_ms": 14288.13
+      },
+      "verification_ranking": {
+        "median_ms": 790.67,
+        "p95_ms": 790.67,
+        "max_ms": 790.67
+      },
+      "wall_time": {
+        "median_ms": 14289.71,
+        "p95_ms": 14289.71,
+        "max_ms": 14289.71
+      }
+    },
+    "invariant_failures": {},
+    "ready_for_generation_positive": 1,
+    "safe_negative_cases": 0
+  },
+  "cases": [
+    {
+      "case_id": "M01",
+      "level": "medium",
+      "question": "M.Tech admission ke liye GATE compulsory hai kya?",
+      "positive": true,
+      "notes": "",
+      "timings_ms": {
+        "query_understanding": 6261.97,
+        "hybrid_retrieval": 7197.88,
+        "rrf_fusion": 5.95,
+        "verification_ranking": 790.67,
+        "evidence_boundary": 8.12,
+        "evidence_assessment": 0.07,
+        "evidence_coverage": 1.6,
+        "claim_audit": 20.92,
+        "evidence_packaging": 0.95,
+        "total_preanswer": 14288.13,
+        "wall_time": 14289.71
+      },
+      "query": {
+        "resolved_question": "M.Tech admission ke liye GATE compulsory hai kya?",
+        "retrieval_queries": [
+          "M.Tech admission ke liye GATE compulsory hai kya?",
+          "M.Tech GATE"
+        ],
+        "semantic_query": "M.Tech GATE",
+        "confidence": 1.0,
+        "target": "Target(text='M.Tech', entity_id=None, entity_type=None, scope_id=None, confidence=1.0, resolution_state='unresolved')",
+        "request_type": "eligibility",
+        "frame_target": "M.Tech",
+        "frame_request_type": "eligibility",
+        "facets": [
+          "M.Tech",
+          "GATE"
+        ],
+        "constraints": []
+      },
+      "retrieval": {
+        "query_count": 2,
+        "retrieval_list_count": 6,
+        "retrieval_list_sizes": [
+          20,
+          20,
+          30,
+          20,
+          20,
+          0
+        ],
+        "retrieval_weights": [
+          0.55,
+          0.3,
+          0.15,
+          0.35750000000000004,
+          0.195,
+          0.0975
+        ],
+        "fused_count": 64,
+        "fused_target_coverage": {
+          "M.Tech": true
+        },
+        "fused_facet_coverage": {
+          "GATE": true
+        },
+        "fused_pair_coverage": {
+          "GATE": true
+        },
+        "top_fused": [
+          {
+            "rank": 1,
+            "document_id": "c8c3ade9adfdfecf0bbe1fd99e66b4dd8869b84e4df5c7f1064600df2a19b37d",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.02431202324221477,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 3,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 17,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 4,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": "View (Page opens in intranet only) 4 Mathematics and Computing View (Page opens in intranet only) 24.6 Ph.D. Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.6%20Ph.D.%20Program) A regular Ph.D. student admitted to the Institute will be eligible for financial assistance as per the norms of IIT Jodhpur. * (a) A candidate having B.Tech./B.S. (four-year program)/Master"
+          },
+          {
+            "rank": 2,
+            "document_id": "c28b0f105ce81d9610575e5659017ff5b95ee9b8ad0322c55f70f690ace5f117",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.022995030554565976,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 7,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 12,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 19,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": "* Master of Science (M.Sc.) Dual degree: M.Sc.-M.Tech Master of Technology (M.Tech.) Dual degree: M.Tech.-PhD. Doctor of Philosophy (Ph.D.) BS Programs [ Mathematics and Computing](https://www.iitj.ac.in/mathematics/en/undergraduate-programs) Engineering Chemistry](https://www.iitj.ac.in/office-of-academics/en/bs-\\(chemistry\\)-with-specialization) Engineering Physics](https://www.iitj.ac.in/office-of-academics/en/bs-"
+          },
+          {
+            "rank": 3,
+            "document_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.022440313549145982,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 5,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 13,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 26,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 8,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 8,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "text_preview": "IIT Jodhpur — Office of Academics — Curriculum IIT Jodhpur • Office of Academics • Curriculum 22.4 Academic Credit Requirements for M.Tech. Students/ Executive M.Tech. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech. students are gi"
+          },
+          {
+            "rank": 4,
+            "document_id": "8efc84ec324bded4fee0cb572f636213c4cad2325ad6eb39e385aa403bfe615e",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.01709741902834008,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 16,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 18,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 5,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 20,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": "(c) A student may be exempted from GATE as per MHRD guidelines. A Ph.D. student would be eligible for enhancement in the scholarship after two years provided the student has met qualifier requirement. The enhanced fellowship will commence from the date of completion of both the conditions. No arrears will be provided due to delay in completing the qualifier requirement. The Teaching/Research Assistantship of a Ph.D. "
+          },
+          {
+            "rank": 5,
+            "document_id": "64ed59a1407e384621ea6a193c0d2f3747993760848b8be75e6ff85990c9156d",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/research_platforms/quantum_information_and_computation/research.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.014193989071038252,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 1,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/research_platforms/quantum_information_and_computation/research.docx",
+            "text_preview": "M.Tech."
+          },
+          {
+            "rank": 6,
+            "document_id": "d666c90ac51416119ab9645c62d6f8c914081d7b334f19c6b60642c85425dbf6",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.013373015873015873,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 3,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 17,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": ". Persons interested in these Programs are required to apply through the Indian High Commission/Embassy in their respective countries. 10.1.3 Change/Enhancement of Program A student already admitted to a B.Tech. programme may switch to another department through branch change. A student can enhance his/her programme to a Minor/Interdisciplinary Area Specialization leading to M. Tech. in Minor/Interdisciplinary Area, "
+          },
+          {
+            "rank": 7,
+            "document_id": "cd3a1d10ab7dbe1a76e2f51afba4897d0c05f84d5ca0902f1734e7ba4f796d11",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.012859730848861283,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_2",
+                  "rank": 9,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 3,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "text_preview": "19 17 6 16 4 62 M.Tech (Cyber Physical System) 18 18 6 16 4 62 M.Tech (Thermofluids Engineering) 17 17 6 16 4 60 M.Tech (Advanced Manufacturing Engineering and Design) 19 15 6 16 4 60 M.Tech (Metallurgical and Materials Engineering) 16 18 6 16 4 60 M.Tech (Artificial Intelligence) 18 18 6 16 4 62 M.Tech (Computer Science and Engineering) 18 18 6 16 4 62 M.Tech (Bioscience and Bioengineering) 18 17 6 16 4 61 M.Tech (D"
+          },
+          {
+            "rank": 8,
+            "document_id": "032a8c68a8f66a3a49c2d856571555464fd715b5ff3f27cd9ec525ee7216efca",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.01251449275362319,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 15,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 9,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "text_preview": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.4%20Change%20of%20Registration%20from%20B.%20Tech.%20Programme%20to%20B.Tech.-%20M.%20Tech.%20dual%20degree%20Programme) A B.Tech. Student having opted for major/minor specialization with CGPA 6 or more at the end of the seventh semester and fulfilling requirements mentioned earlier may be allowed to switch to B.Tech.- M. Tec"
+          },
+          {
+            "rank": 9,
+            "document_id": "c7f4c12e57afbea44facb03157eb63cf0e5e3e88cf2d1129cf815c26860c54fb",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.01215842490842491,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 18,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 10,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "text_preview": "* M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. M.Tech.: An M.Tech. student can register for maximum and minimum credits as per Table 21.1. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term M.Tech. student registered under different categories Maximum Credits Minimum Credits Regular Semester "
+          },
+          {
+            "rank": 10,
+            "document_id": "cf3e8cb2027ddd98c22abc95025a057f495a839ce4ea3d001de991b494631494",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.012059563031038669,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 13,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 19,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "text_preview": "30 48 B.Tech., B.E. or B.Sc. (Engineering) in an Engineering discipline 30 48 2.0 Science, Humanities or Social Science discipline M.Sc., M.A. and M.Phil. degree in a Science, Humanities or Social Science discipline 12 48 Course Categories and Academic requirements Table 11.3 Course Categories and Academic requirements S.N. Course Type Course Category B.Tech.Regular B.Tech.with Specialization Dual Degree 1 Institute "
+          },
+          {
+            "rank": 11,
+            "document_id": "dc31c16ff0bcc46abaa9e767cac5134ed3c442adf222c9fd06e9c015cd946a2a",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.011846804511278196,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 17,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 16,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": "24.4 Executive M Tech Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.4%20Executive%20M%20Tech%20Program) Students admitted in this category will not be provided any financial assistance from the Institute. 9. Undergraduate Programs"
+          },
+          {
+            "rank": 12,
+            "document_id": "7f65890c4e09416021458a928fd74387cb2fe3f4663392171e796a99520bc143",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/research_platforms/quantum_information_and_computation/research.docx",
+            "final_score": 0.0,
+            "rrf_score": 0.0,
+            "semantic_match": 0.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [],
+              "entities": [],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.011592632719393283,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 11,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 18,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/research_platforms/quantum_information_and_computation/research.docx",
+            "text_preview": ". IIT Jodhpur faculty members in departments of Computer Science and Engineering, Electrical Engineering, Physics, Chemistry, Mathematics, Chemical Engineering, and Materials Engineering are working on various aspects of quantum technology. In view of the technological development and importance of the area, the Institute already offers a compulsory course for B.Tech. students on Quantum Information and Computation f"
+          }
+        ],
+        "lexical_recall_count": 30
+      },
+      "verification": {
+        "verified_count": 43,
+        "uncertain_count": 0,
+        "rejected_count": 21,
+        "verified_target_coverage": {
+          "M.Tech": true
+        },
+        "verified_facet_coverage": {
+          "GATE": true
+        },
+        "verified_pair_coverage": {
+          "GATE": true
+        },
+        "ranked_count": 10,
+        "ranked_target_coverage": {
+          "M.Tech": true
+        },
+        "ranked_facet_coverage": {
+          "GATE": true
+        },
+        "ranked_pair_coverage": {
+          "GATE": true
+        },
+        "top_ranked": [
+          {
+            "rank": 1,
+            "document_id": "5c4d296e4e24cd5422da88e0d1722ed0a3685837a24bb142ec977d13ad3d1151",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+            "final_score": 6.940234645586761,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "msc",
+                "mtech"
+              ],
+              "entities": [
+                "admission"
+              ],
+              "topics": [
+                "admission"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.009790185224611454,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_2",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 1,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 10,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+            "text_preview": "The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. 20.2.2 Admission to M Sc – M Tech Dual Degree Program (Regular) The admission to the M. Sc.-M.Tech. Dual Degree Programs offered by the Institute will be through any one of the following two av"
+          },
+          {
+            "rank": 2,
+            "document_id": "c8c3ade9adfdfecf0bbe1fd99e66b4dd8869b84e4df5c7f1064600df2a19b37d",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.7787712701872637,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "btech",
+                "mtech",
+                "phd"
+              ],
+              "entities": [],
+              "topics": [
+                "department",
+                "eligibility"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.02431202324221477,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 3,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 17,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 4,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": "View (Page opens in intranet only) 4 Mathematics and Computing View (Page opens in intranet only) 24.6 Ph.D. Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.6%20Ph.D.%20Program) A regular Ph.D. student admitted to the Institute will be eligible for financial assistance as per the norms of IIT Jodhpur. * (a) A candidate having B.Tech./B.S. (four-year program)/Master"
+          },
+          {
+            "rank": 3,
+            "document_id": "c28b0f105ce81d9610575e5659017ff5b95ee9b8ad0322c55f70f690ace5f117",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.7787712701872637,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "msc",
+                "mtech",
+                "phd"
+              ],
+              "entities": [
+                "physics"
+              ],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.022995030554565976,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 7,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 12,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 19,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": "* Master of Science (M.Sc.) Dual degree: M.Sc.-M.Tech Master of Technology (M.Tech.) Dual degree: M.Tech.-PhD. Doctor of Philosophy (Ph.D.) BS Programs [ Mathematics and Computing](https://www.iitj.ac.in/mathematics/en/undergraduate-programs) Engineering Chemistry](https://www.iitj.ac.in/office-of-academics/en/bs-\\(chemistry\\)-with-specialization) Engineering Physics](https://www.iitj.ac.in/office-of-academics/en/bs-"
+          },
+          {
+            "rank": 4,
+            "document_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "final_score": 0.38754254037452684,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "mtech"
+              ],
+              "entities": [],
+              "topics": [
+                "curriculum",
+                "eligibility"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.022440313549145982,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 5,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 13,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 26,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 8,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 8,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "text_preview": "IIT Jodhpur — Office of Academics — Curriculum IIT Jodhpur • Office of Academics • Curriculum 22.4 Academic Credit Requirements for M.Tech. Students/ Executive M.Tech. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech. students are gi"
+          },
+          {
+            "rank": 5,
+            "document_id": "c882b517ea0e84662c4c9e6a8c77cacafccd5418d2a1135c336461de4b395aa5",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/examinations_and_grading.docx",
+            "final_score": 0.3167955407599804,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "btech",
+                "mtech",
+                "phd"
+              ],
+              "entities": [],
+              "topics": [
+                "department"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.001764705882352941,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_3",
+                  "rank": 25,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/examinations_and_grading.docx",
+            "text_preview": "For clearing of the comprehensive examination, a student must perform satisfactorily in all papers. Comprehensive Examination to be completed by the students: * Ph.D. : within 3 semesters Direct Ph.D. and MTech – PhD Dual Degree: within 5 semesters 13.4 Design Project Evaluation [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top13.4%20Design%20Project%20Evaluation) At the compl"
+          },
+          {
+            "rank": 6,
+            "document_id": "cd3a1d10ab7dbe1a76e2f51afba4897d0c05f84d5ca0902f1734e7ba4f796d11",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "final_score": 0.28418122963335224,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "mtech"
+              ],
+              "entities": [
+                "registration"
+              ],
+              "topics": [
+                "curriculum",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.012859730848861283,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_2",
+                  "rank": 9,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 3,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "text_preview": "19 17 6 16 4 62 M.Tech (Cyber Physical System) 18 18 6 16 4 62 M.Tech (Thermofluids Engineering) 17 17 6 16 4 60 M.Tech (Advanced Manufacturing Engineering and Design) 19 15 6 16 4 60 M.Tech (Metallurgical and Materials Engineering) 16 18 6 16 4 60 M.Tech (Artificial Intelligence) 18 18 6 16 4 62 M.Tech (Computer Science and Engineering) 18 18 6 16 4 62 M.Tech (Bioscience and Bioengineering) 18 17 6 16 4 61 M.Tech (D"
+          },
+          {
+            "rank": 7,
+            "document_id": "032a8c68a8f66a3a49c2d856571555464fd715b5ff3f27cd9ec525ee7216efca",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "final_score": 0.2740907471265125,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "btech",
+                "mtech"
+              ],
+              "entities": [
+                "registration"
+              ],
+              "topics": [
+                "eligibility",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.01251449275362319,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 15,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 9,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "text_preview": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.4%20Change%20of%20Registration%20from%20B.%20Tech.%20Programme%20to%20B.Tech.-%20M.%20Tech.%20dual%20degree%20Programme) A B.Tech. Student having opted for major/minor specialization with CGPA 6 or more at the end of the seventh semester and fulfilling requirements mentioned earlier may be allowed to switch to B.Tech.- M. Tec"
+          },
+          {
+            "rank": 8,
+            "document_id": "c7f4c12e57afbea44facb03157eb63cf0e5e3e88cf2d1129cf815c26860c54fb",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "final_score": 0.26353683772142766,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "msc",
+                "mtech"
+              ],
+              "entities": [
+                "registration"
+              ],
+              "topics": [
+                "curriculum",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.01215842490842491,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 18,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 10,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "text_preview": "* M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. M.Tech.: An M.Tech. student can register for maximum and minimum credits as per Table 21.1. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term M.Tech. student registered under different categories Maximum Credits Minimum Credits Regular Semester "
+          },
+          {
+            "rank": 9,
+            "document_id": "3fde5c9139393377b94fd6c212be392b405940b72e4efecd37134137199a8a7b",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+            "final_score": 0.08346492496779512,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "msc",
+                "mtech"
+              ],
+              "entities": [
+                "registration"
+              ],
+              "topics": [
+                "eligibility",
+                "fees",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.006875000000000001,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 20,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+            "text_preview": "17. Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top17.%20Requirements) A student is deemed to have completed the requirements for graduation if she/he has met the conditions laid down in the following Clauses 17.1 to 17.4 21.5 Maximum Duration of a Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.5%20Maximum%20"
+          },
+          {
+            "rank": 10,
+            "document_id": "14ef313b1f339e3f989b43b18dd7237d88e57075129c7bbc65b26dd8c20c9999",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+            "final_score": 0.0731882873548525,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "mtech"
+              ],
+              "entities": [
+                "medical"
+              ],
+              "topics": [
+                "admission",
+                "medical",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.00661860129776496,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_2",
+                  "rank": 16,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 13,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+            "text_preview": "A regular full-time student must register for M.Tech Project Part-1 in the summer semester following 2 nd semester. He must obtain a satisfactory grade to continue M.Tech project part-1 in the next semester. His performance in the summer semester will be evaluated by his supervisor. 23. Leave Rules [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top23.%20Leave%20Rules) Applicati"
+          }
+        ],
+        "verification_trace": [
+          {
+            "candidate_id": "c8c3ade9adfdfecf0bbe1fd99e66b4dd8869b84e4df5c7f1064600df2a19b37d",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ]
+          },
+          {
+            "candidate_id": "c28b0f105ce81d9610575e5659017ff5b95ee9b8ad0322c55f70f690ace5f117",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ]
+          },
+          {
+            "candidate_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "8efc84ec324bded4fee0cb572f636213c4cad2325ad6eb39e385aa403bfe615e",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ]
+          },
+          {
+            "candidate_id": "64ed59a1407e384621ea6a193c0d2f3747993760848b8be75e6ff85990c9156d",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "d666c90ac51416119ab9645c62d6f8c914081d7b334f19c6b60642c85425dbf6",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.600"
+            ]
+          },
+          {
+            "candidate_id": "cd3a1d10ab7dbe1a76e2f51afba4897d0c05f84d5ca0902f1734e7ba4f796d11",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "032a8c68a8f66a3a49c2d856571555464fd715b5ff3f27cd9ec525ee7216efca",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "c7f4c12e57afbea44facb03157eb63cf0e5e3e88cf2d1129cf815c26860c54fb",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "cf3e8cb2027ddd98c22abc95025a057f495a839ce4ea3d001de991b494631494",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.500"
+            ]
+          },
+          {
+            "candidate_id": "dc31c16ff0bcc46abaa9e767cac5134ed3c442adf222c9fd06e9c015cd946a2a",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "7f65890c4e09416021458a928fd74387cb2fe3f4663392171e796a99520bc143",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.500"
+            ]
+          },
+          {
+            "candidate_id": "fc673b7308ac4222ac4e9d6de7a8cb1579371834409795515a9491cceb40f179",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "d79f63b103d76d547a1ba53d76cf0e7cf9a46be25fd9874d71de7c183a71b2b3",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ]
+          },
+          {
+            "candidate_id": "5c4d296e4e24cd5422da88e0d1722ed0a3685837a24bb142ec977d13ad3d1151",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ]
+          },
+          {
+            "candidate_id": "1032bc52cb4e41cc5d9461b6ea3d470b6e34cb09c3d0cae41ae17ec8a72e543e",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "6755da0d497ad581c73d4f0d67033b327a4f5627ff8026484a9effe02f95be5d",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "0c9178e69b5a3f408aa785772c5b8459df040cc8a8101f6df74b55891b60837f",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "2217fbf653c098c84b4ce8f23a585121214d3032a7f85f415697fbabe889b302",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "eaa820549cc1d081b3a85903668fa438ddb65e199f21b4ed259af8eb12b288c7",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.600"
+            ]
+          },
+          {
+            "candidate_id": "9db6198d221e868a2c5e9222b88d18048c6a1e823e271bbe23712e7ea07300e1",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.500"
+            ]
+          },
+          {
+            "candidate_id": "81025cd34c81cb7c8ac1bb8503035908532ac6cd9bebb7b5d0b480382fe456c4",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "4b2bd94ba60ead223276141ce1e8be74c203ee2deb8552fda99fdc83cfeb679c",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "9e7c194dd351e310b110c869e0d256eae1bc1750e6a7b2b93c1c6704d9f9bac4",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.500"
+            ]
+          },
+          {
+            "candidate_id": "a4dd4680247b3d4a0a981c7e6e912241bdd3f629b9ac70525982306a58874ab9",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.27,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_supported",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.250"
+            ]
+          },
+          {
+            "candidate_id": "6b20ea65e162361809c22aed6c045a75de80b1b772d3afe9847584e43132a596",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "9524ac5b6c9d2785a6826e7a3860915460955de459a5fc84e496b14a0e6dcbfd",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "2c6df212432d72db4537e02562bcb3af41c4ba25116b228ff54a742576d9fbd5",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.27,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_supported",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.250"
+            ]
+          },
+          {
+            "candidate_id": "90bf7d9fb103f759cebb744d610a314e2727e0e6dbc7d8dff9b2d0c14cd68cde",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": false,
+            "conflict_detected": false,
+            "coverage": 0.27,
+            "score": 0.15,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_supported",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.150",
+              "insufficient_relevance"
+            ]
+          },
+          {
+            "candidate_id": "3fde5c9139393377b94fd6c212be392b405940b72e4efecd37134137199a8a7b",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "211a99cf8eca6dd461c1158406140e6be4b23d00901ca2454c601b8de04bbf7d",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "14ef313b1f339e3f989b43b18dd7237d88e57075129c7bbc65b26dd8c20c9999",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "d7655a4c30148ea882f4c9ee881e65a3ee635cb4ed5d4112318c84a6308af5a1",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "0643b9e9a43e9beff88119dc92c3a47c0f9d423ab0491f244fcf090f9e0a4cb2",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.500"
+            ]
+          },
+          {
+            "candidate_id": "eb916c69905cc181f71666dbf2af332ba241358bbcfe2bec9cadda2389586631",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": false,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.0,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_weak_or_missing",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.000"
+            ]
+          },
+          {
+            "candidate_id": "f6e63518e5e5ce19512eedf45e5c29c4074d19e1775c0a84ea3de3cd260ee0a9",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": false,
+            "scope_compatible": true,
+            "semantic_compatible": false,
+            "conflict_detected": false,
+            "coverage": 0.0,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_weak_or_missing",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.000",
+              "insufficient_relevance"
+            ]
+          },
+          {
+            "candidate_id": "d1ac96410ed2a59958b1a79de2bf06d2cb13394ef380fc0f41c0fe4f8f41300f",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "ff381c7dc94ac0b19e0cc083baa8aec4a27411b98f3c991571156fa635fea56a",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "9d553cf42e591b9a772a98b40c285d7eb4698efa4c459a94cb33dd61d7a77565",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "5b2b58dda9bd3cdeeb37892dac2212d636e4d40663dc3b3f6091dd027be2204a",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": false,
+            "scope_compatible": true,
+            "semantic_compatible": false,
+            "conflict_detected": false,
+            "coverage": 0.0,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_weak_or_missing",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.000",
+              "insufficient_relevance"
+            ]
+          },
+          {
+            "candidate_id": "32d064a784dd0026a0573b6815ea4296fde732289dd4e4478efdca3b02622d19",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": false,
+            "scope_compatible": true,
+            "semantic_compatible": false,
+            "conflict_detected": false,
+            "coverage": 0.0,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_weak_or_missing",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.000",
+              "insufficient_relevance"
+            ]
+          },
+          {
+            "candidate_id": "26eae8fc93fe74a33c257c56dcdce125ceebf7691716195a3d85915def6b2b2f",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "aa5c95b801aeb2137af209bd9800fdc35d291cba909a401bd09e26a2a8195fda",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": true,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ]
+          },
+          {
+            "candidate_id": "5cd57e0bc6405d1261d4a48dbdfee1beb804ec4150a1f1e946a188796925123c",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ]
+          },
+          {
+            "candidate_id": "4a5b367b64c7a0fde77f0942002173bbd71006c3e21eb063ae64913b35dd9524",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "61844d32b1ba8b36f986045b11b16025c728ceaaa1d74a6172260c62f857dc65",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": false,
+            "scope_compatible": true,
+            "semantic_compatible": false,
+            "conflict_detected": false,
+            "coverage": 0.0,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_weak_or_missing",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.000",
+              "insufficient_relevance"
+            ]
+          },
+          {
+            "candidate_id": "9e579d10ea324b9996b6a47bf191e6456b9f8059d69a58eccc58376eab659c7d",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": false,
+            "scope_compatible": true,
+            "semantic_compatible": false,
+            "conflict_detected": false,
+            "coverage": 0.0,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_weak_or_missing",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.000",
+              "insufficient_relevance"
+            ]
+          },
+          {
+            "candidate_id": "1425ef50e9322ddde8f2ad9b4f1f69a2014a729dae55b5638ee42efba96529cb",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": false,
+            "conflict_detected": false,
+            "coverage": 0.27,
+            "score": 0.15,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_supported",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.150",
+              "insufficient_relevance"
+            ]
+          },
+          {
+            "candidate_id": "da1079fce4875ccf9e854d9ef8d2b6a6a6a4f540aa5c46b0087579d2c9efe591",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": false,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.27,
+            "score": 0.0,
+            "reasons": [
+              "target_weak_or_missing",
+              "attribute_supported",
+              "target_attribute_relation_weak_or_missing",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.150"
+            ]
+          },
+          {
+            "candidate_id": "2089a470ceabd221f3ef65ec9a97bac20b7803fa72101f34c069307d3308e67d",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "842ce5710c6e117e8a4d2a6510f6fc352fbe3cb2dfd637ad0d35f3a4611aaeff",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.65,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.650"
+            ]
+          },
+          {
+            "candidate_id": "930b09e89103dd0ac7e052ed9b36107be0ca146994869b4ef307379ad107ecdd",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.65,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.650"
+            ]
+          },
+          {
+            "candidate_id": "3761f6c1111a6c0bd5ea33fdcd3aabc6adf3c533605f0ecbf7b8a9cc7325271e",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.65,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.650"
+            ]
+          },
+          {
+            "candidate_id": "29ef81b6400388d3e0669c0ff6f73102358f794d13da570d2c24615b37282121",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "0a63096de24b1021649d383b18d401d468dd8f373244489f0ae8900a93a2b52f",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "8c99d57dd427b1bed590eeec3b7ab6ce1f68149d7404e79f1dc384879c0b3f27",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": false,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.5,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.500"
+            ]
+          },
+          {
+            "candidate_id": "4a73d1e31dc83f06eec6cb92bf124fd8e48234a16ad16227b3ffe4b60161b706",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "4d2ed94948bea9e22af939a9a0cbcdfaee5bf7c0d6445a57600315bcaed98c82",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "e70c1842670c09cbda1eda5a3f32fead6c36f56f81c98e310b1323c98e4f6a90",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.500"
+            ]
+          },
+          {
+            "candidate_id": "26a3ff17b49cf6dc943faf3c794716e9d22267956975d1546c7e2c7bfe77614e",
+            "status": "rejected",
+            "accepted": false,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": false,
+            "semantic_compatible": false,
+            "conflict_detected": true,
+            "coverage": 0.9,
+            "score": 0.0,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_weak",
+              "explicit_conflict",
+              "scope_mismatch",
+              "partial_evidence_allowed",
+              "verification_relevance=0.500"
+            ]
+          },
+          {
+            "candidate_id": "2e1da79b7171ea96003b6f4576f4b5d618e5eede4b53558ab510e79e713761d8",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.85,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.850"
+            ]
+          },
+          {
+            "candidate_id": "c882b517ea0e84662c4c9e6a8c77cacafccd5418d2a1135c336461de4b395aa5",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "454d8001d1575ef97051b9b69cf2125449497d41d14f936df639d03dc8dcdf44",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          },
+          {
+            "candidate_id": "1f037cc1ed8e8800eb21943d1e4acccc42dbbaa64336e739c96d60a81bd6db2d",
+            "status": "verified",
+            "accepted": true,
+            "target_grounded": true,
+            "attribute_grounded": true,
+            "scope_compatible": true,
+            "semantic_compatible": true,
+            "conflict_detected": false,
+            "coverage": 0.9,
+            "score": 0.75,
+            "reasons": [
+              "target_supported",
+              "attribute_supported",
+              "target_attribute_relation_supported",
+              "semantic_compatibility_present",
+              "scope_compatible",
+              "partial_evidence_allowed",
+              "verification_relevance=0.750"
+            ]
+          }
+        ],
+        "lexical_fallback_used": false,
+        "lexical_fallback_candidates": 0
+      },
+      "evidence": {
+        "group_count": 0,
+        "evidence_candidate_count": 10,
+        "evidence_document_count": 10,
+        "evidence_target_coverage": {
+          "M.Tech": true
+        },
+        "evidence_facet_coverage": {
+          "GATE": true
+        },
+        "evidence_pair_coverage": {
+          "GATE": true
+        },
+        "boundary_trace": {},
+        "evidence_preview": [
+          {
+            "rank": 1,
+            "document_id": "5c4d296e4e24cd5422da88e0d1722ed0a3685837a24bb142ec977d13ad3d1151",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+            "final_score": 6.940234645586761,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "msc",
+                "mtech"
+              ],
+              "entities": [
+                "admission"
+              ],
+              "topics": [
+                "admission"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.009790185224611454,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_2",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 1,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 10,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/admissions/mtech_admissions.docx",
+            "text_preview": "The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. 20.2.2 Admission to M Sc – M Tech Dual Degree Program (Regular) The admission to the M. Sc.-M.Tech. Dual Degree Programs offered by the Institute will be through any one of the following two av"
+          },
+          {
+            "rank": 2,
+            "document_id": "c8c3ade9adfdfecf0bbe1fd99e66b4dd8869b84e4df5c7f1064600df2a19b37d",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.7787712701872637,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "btech",
+                "mtech",
+                "phd"
+              ],
+              "entities": [],
+              "topics": [
+                "department",
+                "eligibility"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.02431202324221477,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 3,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 17,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 4,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": "View (Page opens in intranet only) 4 Mathematics and Computing View (Page opens in intranet only) 24.6 Ph.D. Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top24.6%20Ph.D.%20Program) A regular Ph.D. student admitted to the Institute will be eligible for financial assistance as per the norms of IIT Jodhpur. * (a) A candidate having B.Tech./B.S. (four-year program)/Master"
+          },
+          {
+            "rank": 3,
+            "document_id": "c28b0f105ce81d9610575e5659017ff5b95ee9b8ad0322c55f70f690ace5f117",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "final_score": 0.7787712701872637,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "msc",
+                "mtech",
+                "phd"
+              ],
+              "entities": [
+                "physics"
+              ],
+              "topics": [],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.022995030554565976,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 7,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 12,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 19,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 2,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/programs.docx",
+            "text_preview": "* Master of Science (M.Sc.) Dual degree: M.Sc.-M.Tech Master of Technology (M.Tech.) Dual degree: M.Tech.-PhD. Doctor of Philosophy (Ph.D.) BS Programs [ Mathematics and Computing](https://www.iitj.ac.in/mathematics/en/undergraduate-programs) Engineering Chemistry](https://www.iitj.ac.in/office-of-academics/en/bs-\\(chemistry\\)-with-specialization) Engineering Physics](https://www.iitj.ac.in/office-of-academics/en/bs-"
+          },
+          {
+            "rank": 4,
+            "document_id": "8a7c6e6304717a77b09d922150653e4e052fdea6fe7f9355e4e6f4eb67762f23",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "final_score": 0.38754254037452684,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "mtech"
+              ],
+              "entities": [],
+              "topics": [
+                "curriculum",
+                "eligibility"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.022440313549145982,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 5,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_2",
+                  "rank": 13,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_3",
+                  "rank": 26,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 8,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 8,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "text_preview": "IIT Jodhpur — Office of Academics — Curriculum IIT Jodhpur • Office of Academics • Curriculum 22.4 Academic Credit Requirements for M.Tech. Students/ Executive M.Tech. [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top22.4%20Academic%20Credit%20Requirements%20for%20M.Tech.%20Students/%20Executive%20M.Tech.) Course categories and academic requirements for M.Tech. students are gi"
+          },
+          {
+            "rank": 5,
+            "document_id": "c882b517ea0e84662c4c9e6a8c77cacafccd5418d2a1135c336461de4b395aa5",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/examinations_and_grading.docx",
+            "final_score": 0.3167955407599804,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "btech",
+                "mtech",
+                "phd"
+              ],
+              "entities": [],
+              "topics": [
+                "department"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.001764705882352941,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_3",
+                  "rank": 25,
+                  "score": null,
+                  "weight": 0.15,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/examinations_and_grading.docx",
+            "text_preview": "For clearing of the comprehensive examination, a student must perform satisfactorily in all papers. Comprehensive Examination to be completed by the students: * Ph.D. : within 3 semesters Direct Ph.D. and MTech – PhD Dual Degree: within 5 semesters 13.4 Design Project Evaluation [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top13.4%20Design%20Project%20Evaluation) At the compl"
+          },
+          {
+            "rank": 6,
+            "document_id": "cd3a1d10ab7dbe1a76e2f51afba4897d0c05f84d5ca0902f1734e7ba4f796d11",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "final_score": 0.28418122963335224,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "mtech"
+              ],
+              "entities": [
+                "registration"
+              ],
+              "topics": [
+                "curriculum",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.012859730848861283,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_2",
+                  "rank": 9,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 6,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 3,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/curriculum.docx",
+            "text_preview": "19 17 6 16 4 62 M.Tech (Cyber Physical System) 18 18 6 16 4 62 M.Tech (Thermofluids Engineering) 17 17 6 16 4 60 M.Tech (Advanced Manufacturing Engineering and Design) 19 15 6 16 4 60 M.Tech (Metallurgical and Materials Engineering) 16 18 6 16 4 60 M.Tech (Artificial Intelligence) 18 18 6 16 4 62 M.Tech (Computer Science and Engineering) 18 18 6 16 4 62 M.Tech (Bioscience and Bioengineering) 18 17 6 16 4 61 M.Tech (D"
+          },
+          {
+            "rank": 7,
+            "document_id": "032a8c68a8f66a3a49c2d856571555464fd715b5ff3f27cd9ec525ee7216efca",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "final_score": 0.2740907471265125,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "btech",
+                "mtech"
+              ],
+              "entities": [
+                "registration"
+              ],
+              "topics": [
+                "eligibility",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.01251449275362319,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 15,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 9,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "text_preview": "[ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top12.4%20Change%20of%20Registration%20from%20B.%20Tech.%20Programme%20to%20B.Tech.-%20M.%20Tech.%20dual%20degree%20Programme) A B.Tech. Student having opted for major/minor specialization with CGPA 6 or more at the end of the seventh semester and fulfilling requirements mentioned earlier may be allowed to switch to B.Tech.- M. Tec"
+          },
+          {
+            "rank": 8,
+            "document_id": "c7f4c12e57afbea44facb03157eb63cf0e5e3e88cf2d1129cf815c26860c54fb",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "final_score": 0.26353683772142766,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "msc",
+                "mtech"
+              ],
+              "entities": [
+                "registration"
+              ],
+              "topics": [
+                "curriculum",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.01215842490842491,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 18,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                },
+                {
+                  "channel": "channel_4",
+                  "rank": 10,
+                  "score": null,
+                  "weight": 0.35750000000000004,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/registration.docx",
+            "text_preview": "* M.Sc.: An M.Sc. student can register for a maximum of 24 credits and a minimum of 10 credits in a semester. M.Tech.: An M.Tech. student can register for maximum and minimum credits as per Table 21.1. Table 21.1 Maximum and Minimum Credits an M.Tech. student can register for during the Regular semester/Summer Term M.Tech. student registered under different categories Maximum Credits Minimum Credits Regular Semester "
+          },
+          {
+            "rank": 9,
+            "document_id": "3fde5c9139393377b94fd6c212be392b405940b72e4efecd37134137199a8a7b",
+            "source": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+            "final_score": 0.08346492496779512,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "msc",
+                "mtech"
+              ],
+              "entities": [
+                "registration"
+              ],
+              "topics": [
+                "eligibility",
+                "fees",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.006875000000000001,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_1",
+                  "rank": 20,
+                  "score": null,
+                  "weight": 0.55,
+                  "query": "M.Tech admission ke liye GATE compulsory hai kya?"
+                }
+              ]
+            },
+            "source_preview": "data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/academic_progression.docx",
+            "text_preview": "17. Requirements [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top17.%20Requirements) A student is deemed to have completed the requirements for graduation if she/he has met the conditions laid down in the following Clauses 17.1 to 17.4 21.5 Maximum Duration of a Program [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top21.5%20Maximum%20"
+          },
+          {
+            "rank": 10,
+            "document_id": "14ef313b1f339e3f989b43b18dd7237d88e57075129c7bbc65b26dd8c20c9999",
+            "source": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+            "final_score": 0.0731882873548525,
+            "rrf_score": 0.0,
+            "semantic_match": 1.0,
+            "target_match": 0.0,
+            "attribute_match": 0.0,
+            "topic_match": 0.0,
+            "scope_match": 0.0,
+            "conflicts": [],
+            "meaning": {
+              "programs": [
+                "mtech"
+              ],
+              "entities": [
+                "medical"
+              ],
+              "topics": [
+                "admission",
+                "medical",
+                "registration"
+              ],
+              "attributes": [],
+              "intent": null,
+              "scope": [],
+              "qualifiers": [],
+              "constraints": []
+            },
+            "retrieval": {
+              "dense_rank": null,
+              "dense_score": null,
+              "bm25_rank": null,
+              "bm25_score": null,
+              "rrf_score": 0.00661860129776496,
+              "alternate_score_contribution": 0.0,
+              "primary_query": "M.Tech admission ke liye GATE compulsory hai kya?",
+              "retrieval_queries": [
+                "M.Tech admission ke liye GATE compulsory hai kya?",
+                "M.Tech GATE"
+              ],
+              "signals": [
+                {
+                  "channel": "channel_2",
+                  "rank": 16,
+                  "score": null,
+                  "weight": 0.3,
+                  "query": "M.Tech GATE"
+                },
+                {
+                  "channel": "channel_5",
+                  "rank": 13,
+                  "score": null,
+                  "weight": 0.195,
+                  "query": null
+                }
+              ]
+            },
+            "source_preview": "/Users/bhuvanachandra/Desktop/RAG_Chatbot/data/data_iitj/iitj_rag_v1_docs_production/offices_and_administration/office_of_academics/rules_and_regulations.docx",
+            "text_preview": "A regular full-time student must register for M.Tech Project Part-1 in the summer semester following 2 nd semester. He must obtain a satisfactory grade to continue M.Tech project part-1 in the next semester. His performance in the summer semester will be evaluated by his supervisor. 23. Leave Rules [ [Back to index] ](https://www.iitj.ac.in/office-of-academics/en/academic-regulations#top23.%20Leave%20Rules) Applicati"
+          }
+        ],
+        "evidence_status": "supported",
+        "evidence_score": 0.8663636363636364,
+        "coverage_status": "supported",
+        "coverage_type": "requirements",
+        "claim_audit_status": "supported",
+        "package_status": "ready",
+        "ready_for_generation": true,
+        "final_context_chars": 974,
+        "final_context_preview": "Evidence 1 The applicant must either have a valid GATE score or exempted from GATE as per MHRD circular or have qualified an equivalent National Examination or have qualified in the written test and/or interview conducted by IIT Jodhpur. Evidence 2 * The applicants qualified through the Joint Admission Test for Master (JAM) organized by IITs. Evidence 3 student admitted to the Institute will be eligible for financial assistance as per the norms of IIT Jodhpur. Evidence 4 (b) The requirement of GATE is exempted for an applicant with M.Tech or equivalent post-bachelor’s degree Evidence 5 IIT Jodhpur — Office of Academics — Curriculum Evidence 6 IIT Jodhpur • Office of Academics • Curriculum Evidence 7 For clearing of the comprehensive examination, a student must perform satisfactorily in all papers. Evidence 8 Comprehensive Examination to be completed by the students: * Ph.D. Evidence 9 M.Tech (Cyber Physical System) Evidence 10 M.Tech (Thermofluids Engineering)"
+      },
+      "diagnosis": "GOOD",
+      "diagnosis_reason": "Required evidence survived retrieval → verification/ranking → evidence boundary → packaging.",
+      "invariant_failures": []
+    }
+  ]
+}

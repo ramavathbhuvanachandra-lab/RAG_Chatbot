@@ -1,0 +1,77 @@
+RETRIEVAL / EVIDENCE FORENSIC SUMMARY
+
+CASES: 3
+DIAGNOSIS COUNTS: {'GOOD': 3}
+POSITIVE READY FOR GENERATION: 3
+SAFE NEGATIVE CASES: 0
+
+LEVELS:
+{
+  "easy": {
+    "GOOD": 3
+  }
+}
+
+TIMINGS:
+{
+  "claim_audit": {
+    "median_ms": 12.55,
+    "p95_ms": 12.55,
+    "max_ms": 19.97
+  },
+  "evidence_assessment": {
+    "median_ms": 0.07,
+    "p95_ms": 0.07,
+    "max_ms": 0.32
+  },
+  "evidence_boundary": {
+    "median_ms": 2.05,
+    "p95_ms": 2.05,
+    "max_ms": 25.53
+  },
+  "evidence_coverage": {
+    "median_ms": 0.35,
+    "p95_ms": 0.35,
+    "max_ms": 1.07
+  },
+  "evidence_packaging": {
+    "median_ms": 0.64,
+    "p95_ms": 0.64,
+    "max_ms": 1.14
+  },
+  "hybrid_retrieval": {
+    "median_ms": 7757.0,
+    "p95_ms": 7757.0,
+    "max_ms": 9015.62
+  },
+  "query_understanding": {
+    "median_ms": 6052.56,
+    "p95_ms": 6052.56,
+    "max_ms": 11963.02
+  },
+  "rrf_fusion": {
+    "median_ms": 4.93,
+    "p95_ms": 4.93,
+    "max_ms": 29.49
+  },
+  "total_preanswer": {
+    "median_ms": 14264.21,
+    "p95_ms": 14264.21,
+    "max_ms": 21785.58
+  },
+  "verification_ranking": {
+    "median_ms": 730.19,
+    "p95_ms": 730.19,
+    "max_ms": 930.38
+  },
+  "wall_time": {
+    "median_ms": 14265.41,
+    "p95_ms": 14265.41,
+    "max_ms": 21793.01
+  }
+}
+
+INVARIANT FAILURES:
+{}
+
+FULL REPORT: reports/retrieval_evidence_stage2/retrieval_evidence_forensics_48_20261006_004757_checkpoint.json

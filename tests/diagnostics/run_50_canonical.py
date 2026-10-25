@@ -1,5 +1,5 @@
-from __future__ import annotations
-
+import argparse
+from datetime import datetime
 import json
 import re
 import time
@@ -14,8 +14,33 @@ from ai_platform.runtime.engine import ask_with_diagnostics
 ROOT = Path(__file__).resolve().parents[2]
 
 QUESTIONS_FILE = ROOT / "tests" / "regression_questions.json"
-REPORT_JSON = ROOT / "tests" / "diagnostics_50_canonical.json"
-REPORT_TXT = ROOT / "tests" / "diagnostics_50_canonical.txt"
+DEFAULT_OUTPUT_BASE = ROOT / "test_outputs" / "rag_quality"
+REPORT_JSON_NAME = "diagnostics_50_canonical.json"
+REPORT_TXT_NAME = "diagnostics_50_canonical.txt"
+REPORT_JSON = ROOT / "tests" / REPORT_JSON_NAME
+REPORT_TXT = ROOT / "tests" / REPORT_TXT_NAME
+
+
+def resolve_output_dir(output_dir_arg: str | Path | None = None, force: bool = False) -> Path:
+    if output_dir_arg:
+        out_dir = Path(output_dir_arg).resolve()
+    else:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        out_dir = (DEFAULT_OUTPUT_BASE / f"run_{timestamp}").resolve()
+
+    if out_dir.exists() and not out_dir.is_dir():
+        raise NotADirectoryError(f"STOP: Output path {out_dir} is an existing file, not a directory.")
+
+    json_target = out_dir / REPORT_JSON_NAME
+    txt_target = out_dir / REPORT_TXT_NAME
+    if not force and (json_target.exists() or txt_target.exists()):
+        raise FileExistsError(
+            f"STOP: Refusing to overwrite existing diagnostic run files in {out_dir}."
+        )
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    return out_dir
+
 
 
 INTERNAL_LEAK_MARKERS = (
@@ -580,7 +605,27 @@ def render_summary(results: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(
+        description="Run canonical 50-question diagnostic benchmark."
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=str,
+        default=None,
+        help="Directory to write JSON and TXT reports (default: timestamped dir under test_outputs/rag_quality/)",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Allow overwriting existing files in output-dir",
+    )
+    args = parser.parse_args(argv)
+
+    out_dir = resolve_output_dir(args.output_dir, force=args.force)
+    report_json = out_dir / REPORT_JSON_NAME
+    report_txt = out_dir / REPORT_TXT_NAME
+
     if not QUESTIONS_FILE.exists():
         raise SystemExit(
             f"STOP: missing question file: {QUESTIONS_FILE}"
@@ -613,6 +658,9 @@ def main() -> None:
         f"Question file: {QUESTIONS_FILE}"
     )
     print(
+        f"Output directory: {out_dir}"
+    )
+    print(
         "Execution path: ai_platform.runtime.engine -> canonical ai_platform graph"
     )
     print()
@@ -639,7 +687,24 @@ def main() -> None:
             f"{result['elapsed_seconds']:.2f}s"
         )
 
-    REPORT_JSON.write_text(
+        # Incremental save after each question so interrupted runs do not lose data
+        partial_payload = {
+            "total": len(results),
+            "target_total": len(cases),
+            "in_progress": True,
+            "results": results,
+        }
+        report_json.write_text(
+            json.dumps(
+                partial_payload,
+                indent=2,
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+
+    # Final reports
+    report_json.write_text(
         json.dumps(
             {
                 "total": len(results),
@@ -653,7 +718,7 @@ def main() -> None:
 
     summary = render_summary(results)
 
-    REPORT_TXT.write_text(
+    report_txt.write_text(
         summary,
         encoding="utf-8",
     )
@@ -662,11 +727,12 @@ def main() -> None:
     print(summary)
     print()
     print(
-        f"JSON REPORT: {REPORT_JSON}"
+        f"JSON REPORT: {report_json}"
     )
     print(
-        f"TEXT REPORT: {REPORT_TXT}"
+        f"TEXT REPORT: {report_txt}"
     )
+
 
 
 if __name__ == "__main__":

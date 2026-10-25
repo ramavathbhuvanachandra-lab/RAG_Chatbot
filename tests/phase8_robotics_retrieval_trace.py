@@ -31,7 +31,7 @@ def main():
     print(QUESTION)
 
     print("\nNORMALIZED:")
-https://www.youtube.com/    print(normalize_text(QUESTION))
+    print(normalize_text(QUESTION))
 
     print("\nTOPICS:")
     print(detect_topics(QUESTION))
